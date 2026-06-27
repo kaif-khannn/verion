@@ -10,20 +10,21 @@ interface ShopifyProduct {
   status: string;
 }
 
-export default function OptimizeTab({ onSelectProduct }: { onSelectProduct: (desc: string, title: string) => void }) {
+export default function OptimizeTab({ onSelectProduct }: { onSelectProduct: (desc: string, title: string, image: string | null) => void }) {
   const [products, setProducts] = useState<ShopifyProduct[]>([]);
+  const [platform, setPlatform] = useState<'shopify' | 'woocommerce'>('shopify');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     fetchProducts();
-  }, []);
+  }, [platform]);
 
   const fetchProducts = async () => {
     setLoading(true);
     setError(null);
     try {
-      const res = await fetch(`${API}/api/products`, {
+      const res = await fetch(`${API}/api/products?platform=${platform}`, {
         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
       });
       if (!res.ok) {
@@ -46,36 +47,52 @@ export default function OptimizeTab({ onSelectProduct }: { onSelectProduct: (des
           <h2 className="text-3xl font-semibold text-white">Optimize Existing</h2>
           <p className="text-neutral-500 mt-2 text-lg">Select an active product from your store to run through the AI pipeline.</p>
         </div>
-        <button 
-          onClick={fetchProducts}
-          disabled={loading}
-          className="px-6 py-3 bg-white text-black font-medium rounded-full hover:bg-neutral-200 transition-colors disabled:opacity-50 flex items-center gap-2"
-        >
-          {loading ? (
-            <>
-              <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-              </svg>
-              Fetching...
-            </>
-          ) : (
-            <>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
-              Refresh
-            </>
-          )}
-        </button>
+        <div className="flex items-center gap-4">
+          <div className="flex bg-[#0f0f0f] border border-white/5 rounded-full p-1">
+            <button 
+              onClick={() => setPlatform('shopify')}
+              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${platform === 'shopify' ? 'bg-[#95bf47] text-white shadow-lg' : 'text-neutral-400 hover:text-white'}`}
+            >
+              Shopify
+            </button>
+            <button 
+              onClick={() => setPlatform('woocommerce')}
+              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${platform === 'woocommerce' ? 'bg-[#96588a] text-white shadow-lg' : 'text-neutral-400 hover:text-white'}`}
+            >
+              WooCommerce
+            </button>
+          </div>
+          <button 
+            onClick={fetchProducts}
+            disabled={loading}
+            className="px-6 py-3 bg-white text-black font-medium rounded-full hover:bg-neutral-200 transition-colors disabled:opacity-50 flex items-center gap-2"
+          >
+            {loading ? (
+              <>
+                <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                Fetching...
+              </>
+            ) : (
+              <>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+                Refresh
+              </>
+            )}
+          </button>
+        </div>
       </div>
 
       {error && (
         <div className="bg-red-500/10 border border-red-500/30 rounded-[2rem] p-6 text-red-400">
-          {error.includes('Shopify not connected') ? (
+          {error.includes('not connected') ? (
             <div className="flex flex-col items-center justify-center text-center py-6">
-              <div className="w-16 h-16 bg-[#0f0f0f] rounded-2xl flex items-center justify-center mb-4 border border-white/5 shadow-lg">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22v-5"/><path d="M9 8V2"/><path d="M15 8V2"/><path d="M18 8v5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V8Z"/></svg>
+              <div className="w-16 h-16 bg-[#0f0f0f] rounded-2xl flex items-center justify-center mb-4 border border-white/5 shadow-lg text-3xl">
+                {platform === 'shopify' ? '🛍️' : '🛒'}
               </div>
-              <h3 className="text-xl font-medium text-white mb-2">Shopify not connected</h3>
+              <h3 className="text-xl font-medium text-white mb-2">{platform === 'shopify' ? 'Shopify' : 'WooCommerce'} not connected</h3>
               <p className="text-neutral-400">Please go to the Integrations tab to connect your store.</p>
             </div>
           ) : (
@@ -118,7 +135,7 @@ export default function OptimizeTab({ onSelectProduct }: { onSelectProduct: (des
                   temp.innerHTML = product.description;
                   const cleanDesc = temp.textContent || temp.innerText || "";
                   const combined = `Title: ${product.title}\n\nDescription:\n${cleanDesc}`;
-                  onSelectProduct(combined, product.title);
+                  onSelectProduct(combined, product.title, product.image);
                 }}
                 className="mt-auto w-full py-2.5 bg-[#0f0f0f] border border-white/5 text-neutral-300 hover:bg-white hover:text-black font-medium rounded-full text-sm transition-all flex items-center justify-center gap-2"
               >
@@ -133,7 +150,7 @@ export default function OptimizeTab({ onSelectProduct }: { onSelectProduct: (des
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg>
               </div>
               <h3 className="text-xl font-medium text-white mb-2">No products found</h3>
-              <p className="text-neutral-500">There are no products in your Shopify store.</p>
+              <p className="text-neutral-500">There are no products in your {platform === 'shopify' ? 'Shopify' : 'WooCommerce'} store.</p>
             </div>
           )}
         </div>

@@ -66,7 +66,7 @@ class ShopifyPublisher:
         # Namespace "custom" for free-form specs
         inline_metafields = []
 
-        def _mf(key: str, value: str, namespace: str = "product_info", value_type: str = "single_line_text_field"):
+        def _mf(key: str, value: str, namespace: str = "custom", value_type: str = "single_line_text_field"):
             if value:
                 inline_metafields.append({
                     "namespace": namespace,
@@ -83,13 +83,13 @@ class ShopifyPublisher:
         _mf("dimensions", dimensions)
         _mf("category",   category)
 
-        # Add each spec key-value pair under the "specs" namespace
+        # Add each spec key-value pair under the "custom" namespace
         if specs and isinstance(specs, dict):
             for spec_key, spec_val in specs.items():
                 if spec_val and str(spec_val).lower() not in ("null", "none", "unknown", ""):
                     # Sanitize key: lowercase, underscores
                     safe_key = spec_key.lower().replace(" ", "_").replace("-", "_")[:30]
-                    _mf(safe_key, str(spec_val), namespace="specs")
+                    _mf(safe_key, str(spec_val))
 
         payload = {
             "product": {

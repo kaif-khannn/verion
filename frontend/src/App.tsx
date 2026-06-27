@@ -5,6 +5,7 @@ import AuthPage from './pages/AuthPage'
 
 export default function App() {
   const [view, setView] = useState<'landing' | 'auth' | 'app'>('landing');
+  const [authMode, setAuthMode] = useState<'login' | 'signup'>('login');
 
   useEffect(() => {
     const token = localStorage.getItem('token');
@@ -26,14 +27,16 @@ export default function App() {
   }, []);
 
   if (view === 'landing') {
-    return <LandingPage onGetStarted={() => {
+    return <LandingPage onGetStarted={(mode) => {
       window.history.pushState({}, '', '/auth');
+      setAuthMode(mode);
       setView('auth');
     }} />
   }
 
   if (view === 'auth') {
     return <AuthPage 
+      initialIsLogin={authMode === 'login'}
       onSuccess={(token) => {
         localStorage.setItem('token', token);
         window.history.pushState({}, '', '/');

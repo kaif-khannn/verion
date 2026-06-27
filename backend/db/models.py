@@ -48,6 +48,10 @@ class PlatformConnection(Base):
     amazon_refresh_token = Column(Text, nullable=True)
     amazon_marketplace_id = Column(String(50), nullable=True)
 
+    # WooCommerce fields
+    woo_consumer_key = Column(Text, nullable=True)
+    woo_consumer_secret = Column(Text, nullable=True)
+
     # Generic / future platforms
     extra_config = Column(Text, nullable=True)   # JSON blob for extra fields
 

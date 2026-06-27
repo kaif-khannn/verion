@@ -14,6 +14,12 @@ export default function IntegrationsTab() {
   const [showConnectModal, setShowConnectModal] = useState(false);
   const [shopifyDomain, setShopifyDomain] = useState('');
   const [shopifyToken, setShopifyToken] = useState('');
+  
+  const [showWooModal, setShowWooModal] = useState(false);
+  const [wooUrl, setWooUrl] = useState('');
+  const [wooKey, setWooKey] = useState('');
+  const [wooSecret, setWooSecret] = useState('');
+
   const [connectError, setConnectError] = useState<string | null>(null);
   const [connectLoading, setConnectLoading] = useState(false);
 
@@ -41,6 +47,25 @@ export default function IntegrationsTab() {
       const data = await r.json();
       setConnections(prev => [...prev.filter(c => c.platform !== 'shopify'), data]);
       setShowConnectModal(false);
+    } catch (e: any) { setConnectError(e.message); }
+    finally { setConnectLoading(false); }
+  };
+
+  const handleWooConnect = async () => {
+    setConnectLoading(true); setConnectError(null);
+    try {
+      const r = await fetch(`${API}/api/connections/woocommerce`, {
+        method: 'POST', 
+        headers: { 
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${localStorage.getItem('token')}`
+        },
+        body: JSON.stringify({ shop_url: wooUrl, consumer_key: wooKey, consumer_secret: wooSecret }),
+      });
+      if (!r.ok) { const d = await r.json(); throw new Error(d.detail); }
+      const data = await r.json();
+      setConnections(prev => [...prev.filter(c => c.platform !== 'woocommerce'), data]);
+      setShowWooModal(false);
     } catch (e: any) { setConnectError(e.message); }
     finally { setConnectLoading(false); }
   };
@@ -116,6 +141,62 @@ export default function IntegrationsTab() {
         </div>
       )}
 
+      {showWooModal && (
+        <div className="fixed inset-0 z-[60] flex items-center justify-center bg-black/60 backdrop-blur-sm">
+          <div className="bg-neutral-900 border border-white/10 shadow-2xl rounded-[2rem] p-8 w-full max-w-md mx-4 space-y-6 relative">
+            <div className="flex items-center justify-between">
+              <h2 className="text-xl font-semibold text-white flex items-center gap-2">
+                <span className="text-2xl">🛒</span>
+                Connect WooCommerce
+              </h2>
+              <button onClick={() => setShowWooModal(false)} className="text-neutral-500 hover:text-white transition-colors">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" /></svg>
+              </button>
+            </div>
+            <div className="text-neutral-400 text-sm leading-relaxed bg-[#0f0f0f] border border-white/5 p-4 rounded-xl">
+              <strong>1.</strong> Go to your WordPress Admin → WooCommerce → Settings.<br />
+              <strong>2.</strong> Click the <strong>Advanced</strong> tab, then <strong>REST API</strong>.<br />
+              <strong>3.</strong> Click <strong>Add Key</strong>. Give it Read/Write permissions and generate.<br />
+              <strong>4.</strong> Copy the Consumer Key and Consumer Secret below.
+            </div>
+            <div className="space-y-4">
+              <div>
+                <label className="text-xs text-neutral-500 uppercase tracking-widest mb-1 block">Store URL</label>
+                <input
+                  value={wooUrl} onChange={e => setWooUrl(e.target.value)}
+                  placeholder="https://your-store.com"
+                  className="w-full p-3 rounded-xl bg-[#0f0f0f] border border-white/10 text-white text-sm focus:border-white/20 outline-none transition-colors"
+                />
+              </div>
+              <div>
+                <label className="text-xs text-neutral-500 uppercase tracking-widest mb-1 block">Consumer Key</label>
+                <input
+                  value={wooKey} onChange={e => setWooKey(e.target.value)}
+                  placeholder="ck_..."
+                  className="w-full p-3 rounded-xl bg-[#0f0f0f] border border-white/10 text-white text-sm focus:border-white/20 outline-none transition-colors"
+                />
+              </div>
+              <div>
+                <label className="text-xs text-neutral-500 uppercase tracking-widest mb-1 block">Consumer Secret</label>
+                <input
+                  type="password" value={wooSecret} onChange={e => setWooSecret(e.target.value)}
+                  placeholder="cs_..."
+                  className="w-full p-3 rounded-xl bg-[#0f0f0f] border border-white/10 text-white text-sm focus:border-white/20 outline-none transition-colors"
+                />
+              </div>
+            </div>
+            {connectError && <p className="text-red-400 text-xs bg-red-500/10 p-3 rounded-xl border border-red-500/30">{connectError}</p>}
+            <button
+              disabled={connectLoading || !wooUrl || !wooKey || !wooSecret}
+              onClick={handleWooConnect}
+              className="w-full py-3 bg-[#96588a] text-white font-medium rounded-full disabled:opacity-50 transition-opacity flex justify-center items-center gap-2 hover:bg-[#7b4671]"
+            >
+              {connectLoading ? 'Connecting...' : 'Connect WooCommerce'}
+            </button>
+          </div>
+        </div>
+      )}
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Shopify Card */}
         <div className="bg-neutral-900 border border-white/5 rounded-[2rem] p-8 shadow-xl relative overflow-hidden group hover:border-white/10 transition-colors">
@@ -140,6 +221,34 @@ export default function IntegrationsTab() {
             ) : (
               <button onClick={() => setShowConnectModal(true)} className="w-full py-3 rounded-full bg-white text-black hover:bg-neutral-200 transition-colors font-medium">
                 Connect Shopify
+              </button>
+            )}
+          </div>
+        </div>
+
+        {/* WooCommerce Card */}
+        <div className="bg-neutral-900 border border-white/5 rounded-[2rem] p-8 shadow-xl relative overflow-hidden group hover:border-white/10 transition-colors">
+          <div className="absolute top-0 right-0 w-32 h-32 bg-[#96588a] rounded-full blur-[80px] opacity-10 group-hover:opacity-20 transition-opacity"></div>
+          <div className="flex items-start justify-between mb-8 relative z-10">
+            <div className="w-14 h-14 rounded-2xl bg-[#0f0f0f] flex items-center justify-center text-3xl border border-white/5 shadow-lg">
+              🛒
+            </div>
+            {connections.some(c => c.platform === 'woocommerce') ? (
+              <span className="text-xs px-3 py-1.5 rounded-full bg-[#96588a]/20 text-[#96588a] border border-[#96588a]/30 font-medium">Connected</span>
+            ) : (
+              <span className="text-xs px-3 py-1.5 rounded-full bg-white/5 text-neutral-400 border border-white/5 font-medium">Not Connected</span>
+            )}
+          </div>
+          <div className="relative z-10">
+            <h3 className="text-2xl font-medium text-white mb-2">WooCommerce</h3>
+            <p className="text-neutral-500 mb-8">Publish products directly to your WooCommerce store using the REST API.</p>
+            {connections.some(c => c.platform === 'woocommerce') ? (
+              <button onClick={() => handleDelete(connections.find(c => c.platform === 'woocommerce')!.id)} className="w-full py-3 rounded-full border border-red-500/30 text-red-400 hover:bg-red-500 hover:text-white transition-colors font-medium">
+                Disconnect
+              </button>
+            ) : (
+              <button onClick={() => setShowWooModal(true)} className="w-full py-3 rounded-full bg-[#96588a] text-white hover:bg-[#7b4671] transition-colors font-medium">
+                Connect WooCommerce
               </button>
             )}
           </div>

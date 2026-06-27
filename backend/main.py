@@ -18,6 +18,7 @@ from db import crud
 from db.models import User
 from publishers.imagekit_uploader import ImageKitUploader
 from publishers.shopify_publisher import ShopifyPublisher
+from publishers.woocommerce_publisher import WooCommercePublisher
 from agents.rag_agent import RAGAgent
 from auth_utils import get_password_hash, verify_password, create_access_token, decode_access_token, ACCESS_TOKEN_EXPIRE_MINUTES
 from datetime import timedelta
@@ -81,13 +82,19 @@ class ShopifyConnectionRequest(BaseModel):
     shop_domain: str
     access_token: str
 
+class WooCommerceConnectionRequest(BaseModel):
+    shop_url: str
+    consumer_key: str
+    consumer_secret: str
+
 
 class PublishRequest(BaseModel):
-    platform: str                      # 'shopify' | 'amazon'
+    platform: str                      # 'shopify' | 'woocommerce'
     title: str
     description: str
     tags: List[str] = []
     price: str = "0.00"
+    sale_price: Optional[str] = None
     image_urls: List[str] = []         # already-uploaded ImageKit URLs
     vendor: str = "Verion AI"          # Store vendor
     quantity: Optional[int] = None     # Inventory units
@@ -144,6 +151,7 @@ async def generate_listing(
     raw_description: str = Form(...),
     platform: str = Form("olx"),
     images: Optional[List[UploadFile]] = File(None),
+    image_url: Optional[str] = Form(None),
 ):
     pil_images = []
     if images:
@@ -153,6 +161,16 @@ async def generate_listing(
                 pil_images.append(Image.open(io.BytesIO(contents)))
             except Exception:
                 pass
+
+    if image_url:
+        import httpx
+        try:
+            async with httpx.AsyncClient() as client:
+                resp = await client.get(image_url)
+                if resp.status_code == 200:
+                    pil_images.append(Image.open(io.BytesIO(resp.content)))
+        except Exception:
+            pass
 
     result = orchestrator.process_request(
         raw_input=raw_description,
@@ -207,6 +225,37 @@ async def connect_shopify(body: ShopifyConnectionRequest, db=Depends(get_db), cu
     return {
         "status": "connected",
         "platform": "shopify",
+        "shop_domain": conn.shop_domain,
+        "id": str(conn.id),
+    }
+
+@app.post("/api/connections/woocommerce")
+async def connect_woocommerce(body: WooCommerceConnectionRequest, db=Depends(get_db), current_user: User = Depends(get_current_user)):
+    """Save (or update) WooCommerce credentials for this user."""
+    publisher = WooCommercePublisher(body.shop_url, body.consumer_key, body.consumer_secret)
+    if not publisher.test_connection():
+        raise HTTPException(
+            status_code=401,
+            detail="Could not connect to WooCommerce. Please check your URL and keys.",
+        )
+
+    # Reusing shop_domain for the shop URL, but saving specific keys
+    conn = await crud.upsert_connection(
+        db,
+        user_id=current_user.id,
+        platform="woocommerce",
+        shop_domain=body.shop_url,
+    )
+    
+    # Store keys in the newly added database columns
+    conn.woo_consumer_key = body.consumer_key
+    conn.woo_consumer_secret = body.consumer_secret
+    db.add(conn)
+    await db.commit()
+
+    return {
+        "status": "connected",
+        "platform": "woocommerce",
         "shop_domain": conn.shop_domain,
         "id": str(conn.id),
     }
@@ -278,10 +327,44 @@ async def publish_listing(body: PublishRequest, db=Depends(get_db), current_user
 
         return {"status": "published", "platform": "shopify", "result": result}
 
+    elif body.platform == "woocommerce":
+        conn = await crud.get_connection(db, current_user.id, "woocommerce")
+        if not conn or not conn.woo_consumer_key or not conn.woo_consumer_secret:
+            raise HTTPException(
+                status_code=404,
+                detail="No WooCommerce connection found. Please connect your store.",
+            )
+
+        publisher = WooCommercePublisher(conn.shop_domain, conn.woo_consumer_key, conn.woo_consumer_secret)
+        
+        # Combine all metafields into meta_data
+        meta_data = body.specs or {}
+        for k in ['color', 'condition', 'weight', 'brand', 'material', 'dimensions']:
+            v = getattr(body, k)
+            if v:
+                meta_data[k] = v
+
+        try:
+            result = publisher.publish_product(
+                title=body.title,
+                description=body.description,
+                regular_price=body.price,
+                sale_price=body.sale_price,
+                tags=body.tags,
+                categories=[body.category] if body.category else [],
+                image_urls=body.image_urls,
+                quantity=body.quantity,
+                meta_data=meta_data,
+            )
+        except RuntimeError as e:
+            raise HTTPException(status_code=502, detail=str(e))
+
+        return {"status": "published", "platform": "woocommerce", "result": result}
+
     else:
         raise HTTPException(
             status_code=400,
-            detail=f"Publishing to '{body.platform}' is not yet supported. Currently available: shopify",
+            detail=f"Publishing to '{body.platform}' is not yet supported.",
         )
 
 # ── Stats & Data Routes ────────────────────────────────────────────────────────
@@ -302,39 +385,68 @@ async def get_stats():
     }
 
 @app.get("/api/products")
-async def fetch_shopify_products(db=Depends(get_db), current_user: User = Depends(get_current_user)):
-    """Fetch existing products from the connected Shopify store."""
-    conn = await crud.get_connection(db, current_user.id, "shopify")
-    shop_domain = conn.shop_domain if conn else os.environ.get("SHOPIFY_SHOP_DOMAIN")
-    access_token = conn.access_token if conn else os.environ.get("SHOPIFY_ACCESS_TOKEN")
-
-    if not shop_domain or not access_token:
-        raise HTTPException(status_code=404, detail="Shopify not connected.")
-    
+async def fetch_products(platform: str = "shopify", db=Depends(get_db), current_user: User = Depends(get_current_user)):
+    """Fetch existing products from the connected store."""
     import httpx
-    try:
-        url = f"https://{shop_domain}/admin/api/2024-01/products.json?limit=10"
-        headers = {
-            "X-Shopify-Access-Token": access_token,
-            "Content-Type": "application/json"
-        }
-        async with httpx.AsyncClient() as client:
-            response = await client.get(url, headers=headers)
-            response.raise_for_status()
-            data = response.json()
+
+    if platform == "shopify":
+        conn = await crud.get_connection(db, current_user.id, "shopify")
+        shop_domain = conn.shop_domain if conn else os.environ.get("SHOPIFY_SHOP_DOMAIN")
+        access_token = conn.access_token if conn else os.environ.get("SHOPIFY_ACCESS_TOKEN")
+
+        if not shop_domain or not access_token:
+            raise HTTPException(status_code=404, detail="Shopify not connected.")
+        
+        try:
+            url = f"https://{shop_domain}/admin/api/2024-01/products.json?limit=10"
+            headers = {
+                "X-Shopify-Access-Token": access_token,
+                "Content-Type": "application/json"
+            }
+            async with httpx.AsyncClient() as client:
+                response = await client.get(url, headers=headers)
+                response.raise_for_status()
+                data = response.json()
+                
+                formatted_products = []
+                for p in data.get("products", []):
+                    image_url = p.get("image", {}).get("src") if p.get("image") else None
+                    formatted_products.append({
+                        "id": str(p["id"]),
+                        "title": p["title"],
+                        "description": p.get("body_html", ""),
+                        "image": image_url,
+                        "status": p.get("status")
+                    })
+                return {"status": "success", "products": formatted_products}
+        except Exception as e:
+            raise HTTPException(status_code=500, detail=str(e))
             
-            # Format product data
-            formatted_products = []
-            for p in data.get("products", []):
-                image_url = p.get("image", {}).get("src") if p.get("image") else None
-                formatted_products.append({
-                    "id": str(p["id"]),
-                    "title": p["title"],
-                    "description": p.get("body_html", ""),
-                    "image": image_url,
-                    "status": p.get("status")
-                })
-            return {"status": "success", "products": formatted_products}
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+    elif platform == "woocommerce":
+        conn = await crud.get_connection(db, current_user.id, "woocommerce")
+        if not conn or not conn.woo_consumer_key or not conn.woo_consumer_secret:
+            raise HTTPException(status_code=404, detail="WooCommerce not connected.")
+            
+        try:
+            url = f"{conn.shop_domain}/wp-json/wc/v3/products?per_page=10"
+            async with httpx.AsyncClient() as client:
+                response = await client.get(url, auth=(conn.woo_consumer_key, conn.woo_consumer_secret))
+                response.raise_for_status()
+                data = response.json()
+                
+                formatted_products = []
+                for p in data:
+                    image_url = p.get("images", [{}])[0].get("src") if p.get("images") else None
+                    formatted_products.append({
+                        "id": str(p["id"]),
+                        "title": p["name"],
+                        "description": p.get("description", ""),
+                        "image": image_url,
+                        "status": p.get("status")
+                    })
+                return {"status": "success", "products": formatted_products}
+        except Exception as e:
+            raise HTTPException(status_code=500, detail=str(e))
+    else:
+        raise HTTPException(status_code=400, detail="Invalid platform specified")
 

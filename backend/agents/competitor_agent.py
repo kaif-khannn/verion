@@ -17,7 +17,7 @@ class CompetitorAgent:
         prompt = f"""
         Given the following product context, generate a competitor intelligence analysis in JSON format with the following keys:
         - "market_positioning": A short sentence on how to position this product against competitors based on the provided RAG market data.
-        - "recommended_price": A strictly numeric price recommendation (e.g. "25.00") based on similar market products retrieved in the context. If no market context is given, suggest a fair baseline.
+        - "recommended_price": A strictly numeric price recommendation in Indian Rupees (INR) (e.g. "80000"). Ensure the price reflects realistic Indian market values (e.g., high-end electronics should be tens of thousands of INR, not just a direct USD numerical copy). If no market context is given, suggest a fair baseline in INR.
         - "pricing_strategy": Explanation of why you chose this recommended_price.
         - "competitor_insights": 2-3 bullet points analyzing typical competitor weaknesses or pricing trends we can exploit.
 

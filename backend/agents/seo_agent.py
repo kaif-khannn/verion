@@ -27,7 +27,7 @@ class SEOAgent:
         - "title": SEO-optimized product title (max 70 chars)
         - "keywords": list of 6 high-ranking target keywords (array of strings)
         - "bullet_points": 4-6 engaging bullet points highlighting key features (array of strings)
-        - "price": numeric price string (e.g. "19.99"). Extract from user input or infer from similar RAG products. Default "0.00".
+        - "price": numeric price string in Indian Rupees (INR) (e.g. "4999.00"). Extract from user input or infer from similar RAG products. Ensure realistic Indian market values (do not copy USD numeric values directly). Default "0.00".
         - "color": detected/inferred color (string or null)
         - "condition": product condition e.g. "New", "Used - Like New", "Refurbished" (string or null)
         - "weight": weight with unit e.g. "1.2 kg" (string or null)

@@ -3,12 +3,13 @@ import React, { useState } from 'react';
 const API = 'http://localhost:8000';
 
 interface AuthPageProps {
+  initialIsLogin?: boolean;
   onSuccess: (token: string) => void;
   onBack: () => void;
 }
 
-export default function AuthPage({ onSuccess, onBack }: AuthPageProps) {
-  const [isLogin, setIsLogin] = useState(true);
+export default function AuthPage({ initialIsLogin = true, onSuccess, onBack }: AuthPageProps) {
+  const [isLogin, setIsLogin] = useState(initialIsLogin);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');

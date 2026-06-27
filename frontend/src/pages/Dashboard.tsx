@@ -9,9 +9,11 @@ type Tab = 'generate' | 'optimize' | 'integrations' | 'statistics';
 export default function Dashboard({ onLogout }: { onLogout?: () => void }) {
   const [activeTab, setActiveTab] = useState<Tab>('generate');
   const [generateInput, setGenerateInput] = useState('');
+  const [generateImage, setGenerateImage] = useState<string | null>(null);
 
-  const handleSelectProductForOptimization = (rawInput: string, title: string) => {
+  const handleSelectProductForOptimization = (rawInput: string, title: string, image: string | null) => {
     setGenerateInput(rawInput);
+    setGenerateImage(image);
     setActiveTab('generate');
   };
 
@@ -95,7 +97,7 @@ export default function Dashboard({ onLogout }: { onLogout?: () => void }) {
 
       {/* ── Main Content Area ── */}
       <main className="flex-1 overflow-y-auto pt-24 pb-10 px-4 md:px-8 max-w-[1400px] mx-auto w-full">
-        {activeTab === 'generate' && <GenerateTab initialInput={generateInput} />}
+        {activeTab === 'generate' && <GenerateTab initialInput={generateInput} initialImage={generateImage} />}
         {activeTab === 'optimize' && <OptimizeTab onSelectProduct={handleSelectProductForOptimization} />}
         {activeTab === 'integrations' && <IntegrationsTab />}
         {activeTab === 'statistics' && <StatisticsTab />}

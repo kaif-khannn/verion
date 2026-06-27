@@ -1,6 +1,7 @@
 import os
 from datetime import datetime, timedelta, timezone
 import bcrypt
+# pyrefly: ignore [missing-import]
 import jwt
 
 SECRET_KEY = os.getenv("JWT_SECRET_KEY", "supersecretkey-change-in-production")

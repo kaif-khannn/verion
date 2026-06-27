@@ -16,9 +16,38 @@ interface MarketingData {
   platform_description?: string; call_to_action?: string; error?: string;
 }
 
+interface CompetitorData {
+  market_positioning?: string;
+  recommended_price?: string;
+  pricing_strategy?: string;
+  competitor_insights?: string[];
+  error?: string;
+}
+
+interface ValidationData {
+  status?: string;
+  missing_elements?: string[];
+  warnings?: string[];
+  error?: string;
+}
+
+interface ScoreData {
+  seo_score?: number;
+  marketing_score?: number;
+  overall_score?: number;
+  feedback?: string;
+  error?: string;
+}
+
 interface ResultData {
-  sanitized_input?: string; vision_analysis?: string;
-  seo?: SeoData; marketing?: MarketingData;
+  sanitized_input?: string; 
+  vision_analysis?: string;
+  rag_context?: string;
+  seo?: SeoData; 
+  marketing?: MarketingData;
+  competitor_analysis?: CompetitorData;
+  validation?: ValidationData;
+  scores?: ScoreData;
 }
 
 interface ApiResult { status: string; data: ResultData; }
@@ -26,9 +55,9 @@ interface ApiResult { status: string; data: ResultData; }
 type PublishState = 'idle' | 'uploading' | 'publishing' | 'success' | 'error';
 
 const PLATFORMS = [
-  { id: 'shopify', label: 'Shopify', emoji: '🛍️', color: 'from-neutral-700 to-neutral-900' },
-  { id: 'amazon', label: 'Amazon', emoji: '📦', color: 'from-neutral-700 to-neutral-900' },
-  { id: 'instagram', label: 'Instagram', emoji: '📸', color: 'from-neutral-700 to-neutral-900' },
+  { id: 'shopify', label: 'Shopify', emoji: '🛍️', color: 'from-[#95bf47] to-[#739931]' },
+  { id: 'woocommerce', label: 'WooCommerce', emoji: '🛒', color: 'from-[#96588a] to-[#7b4671]' },
+  { id: 'amazon', label: 'Amazon', emoji: '📦', color: 'from-[#ff9900] to-[#e68a00]' },
 ];
 
 function CopyButton({ text }: { text: string }) {
@@ -45,8 +74,9 @@ function CopyButton({ text }: { text: string }) {
   );
 }
 
-export default function GenerateTab({ initialInput = '' }: { initialInput?: string }) {
+export default function GenerateTab({ initialInput = '', initialImage = null }: { initialInput?: string, initialImage?: string | null }) {
   const [rawInput, setRawInput] = useState(initialInput);
+  const [existingImageUrl, setExistingImageUrl] = useState<string | null>(initialImage);
   const [platform, setPlatform] = useState('shopify');
   const [imageFiles, setImageFiles] = useState<File[]>([]);
   const [imagePreviews, setImagePreviews] = useState<string[]>([]);
@@ -59,11 +89,16 @@ export default function GenerateTab({ initialInput = '' }: { initialInput?: stri
     if (initialInput) setRawInput(initialInput);
   }, [initialInput]);
 
+  useEffect(() => {
+    setExistingImageUrl(initialImage || null);
+  }, [initialImage]);
+
   const [publishState, setPublishState] = useState<PublishState>('idle');
   const [publishResult, setPublishResult] = useState<{ admin_url?: string } | null>(null);
   const [publishError, setPublishError] = useState<string | null>(null);
   const [publishVendor, setPublishVendor] = useState('Verion AI');
   const [publishPrice, setPublishPrice] = useState('0.00');
+  const [publishSalePrice, setPublishSalePrice] = useState('');
   const [publishQuantity, setPublishQuantity] = useState<number | ''>(1);
 
   const addImages = useCallback((files: File[]) => {
@@ -95,11 +130,16 @@ export default function GenerateTab({ initialInput = '' }: { initialInput?: stri
       formData.append('raw_description', rawInput);
       formData.append('platform', platform);
       imageFiles.forEach(f => formData.append('images', f));
+      if (existingImageUrl) formData.append('image_url', existingImageUrl);
       const response = await fetch(`${API}/api/generate`, { method: 'POST', body: formData });
       const data = await response.json();
       setPipelineStatus({ step: 6, loading: false });
       setResults(data);
-      if (data.data?.seo?.price) setPublishPrice(data.data.seo.price);
+      if (data.data?.competitor_analysis?.recommended_price) {
+        setPublishPrice(data.data.competitor_analysis.recommended_price);
+      } else if (data.data?.seo?.price) {
+        setPublishPrice(data.data.seo.price);
+      }
     } catch {
       setError('Failed to connect to backend.');
       setPipelineStatus({ step: 0, loading: false });
@@ -138,7 +178,7 @@ export default function GenerateTab({ initialInput = '' }: { initialInput?: stri
             onClick={() => fileInputRef.current?.click()} onDrop={handleDrop} onDragOver={e => e.preventDefault()}
             className="group cursor-pointer rounded-xl border-2 border-dashed border-white/10 bg-[#0f0f0f] hover:border-white/20 transition-all p-4 text-center"
           >
-            {imagePreviews.length === 0 ? (
+            {imagePreviews.length === 0 && !existingImageUrl ? (
               <div className="py-4 flex flex-col items-center gap-2 text-neutral-500">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2" /><circle cx="9" cy="9" r="2" /><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" /></svg>
                 <p className="text-sm font-medium text-neutral-400">Drop images or click</p>
@@ -146,6 +186,12 @@ export default function GenerateTab({ initialInput = '' }: { initialInput?: stri
             ) : (
               <div>
                 <div className="grid grid-cols-3 gap-2 mb-3">
+                  {existingImageUrl && (
+                    <div className="relative group/img aspect-square">
+                      <img src={existingImageUrl} alt="existing" className="w-full h-full object-cover rounded-lg" />
+                      <button onClick={e => { e.stopPropagation(); setExistingImageUrl(null); }} className="absolute top-1 right-1 w-5 h-5 rounded-full bg-black text-white text-xs opacity-0 group-hover/img:opacity-100 transition-opacity">×</button>
+                    </div>
+                  )}
                   {imagePreviews.map((src, i) => (
                     <div key={i} className="relative group/img aspect-square">
                       <img src={src} alt="preview" className="w-full h-full object-cover rounded-lg" />
@@ -197,14 +243,24 @@ export default function GenerateTab({ initialInput = '' }: { initialInput?: stri
               </div>
             )}
 
+            {resultData.vision_analysis && (
+              <div className="bg-neutral-900 border border-white/5 rounded-[2rem] p-5 shadow-lg">
+                <div className="flex items-center gap-2 mb-3">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-white"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg>
+                  <h3 className="font-semibold text-white">Vision Agent</h3>
+                </div>
+                <p className="text-neutral-300 text-sm bg-[#0f0f0f] rounded-xl p-4 border border-white/5 leading-relaxed">{resultData.vision_analysis}</p>
+              </div>
+            )}
+
             {resultData.seo && (
               <div className="bg-neutral-900 border border-white/5 rounded-[2rem] p-5 shadow-lg space-y-4">
                 <div className="flex items-center gap-2">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-white"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" /></svg>
                   <h3 className="font-semibold text-white">SEO Optimized Output</h3>
                 </div>
-                {resultData.seo.title && <div><p className="text-xs text-neutral-500 uppercase">Title</p><p className="text-xl font-bold text-white">{resultData.seo.title}</p></div>}
-                {resultData.seo.keywords && <div className="flex flex-wrap gap-2">{resultData.seo.keywords.map(kw => <span key={kw} className="text-xs px-2 py-1 rounded-full bg-white/10 text-neutral-300 border border-white/5">#{kw}</span>)}</div>}
+                {resultData.seo.title && <div><p className="text-xs text-neutral-500 uppercase mb-1">Title</p><p className="text-xl font-bold text-white">{resultData.seo.title}</p></div>}
+                {resultData.seo.keywords && <div className="flex flex-wrap gap-2">{resultData.seo.keywords.map(kw => <span key={kw} className="text-xs px-2.5 py-1 rounded-full bg-white/10 text-neutral-300 border border-white/5">#{kw}</span>)}</div>}
               </div>
             )}
 
@@ -220,44 +276,130 @@ export default function GenerateTab({ initialInput = '' }: { initialInput?: stri
               </div>
             )}
 
+            {resultData.competitor_analysis && !resultData.competitor_analysis.error && (
+              <div className="bg-neutral-900 border border-white/5 rounded-[2rem] p-5 shadow-lg space-y-4 relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-[#ff0055] rounded-full blur-[80px] opacity-10 pointer-events-none"></div>
+                <div className="flex items-center gap-2 relative z-10">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-white"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+                  <h3 className="font-semibold text-white">Competitor Intelligence (RAG)</h3>
+                </div>
+                <div className="grid grid-cols-2 gap-4 relative z-10">
+                  <div className="bg-[#0f0f0f] rounded-xl p-4 border border-white/5">
+                    <p className="text-xs text-neutral-500 uppercase mb-1">Recommended Price</p>
+                    <p className="text-2xl font-bold text-green-400">₹{resultData.competitor_analysis.recommended_price || 'N/A'}</p>
+                  </div>
+                  <div className="bg-[#0f0f0f] rounded-xl p-4 border border-white/5">
+                    <p className="text-xs text-neutral-500 uppercase mb-1">Market Positioning</p>
+                    <p className="text-sm text-neutral-300 line-clamp-2">{resultData.competitor_analysis.market_positioning}</p>
+                  </div>
+                </div>
+                {resultData.competitor_analysis.pricing_strategy && (
+                  <div className="bg-[#0f0f0f] rounded-xl p-4 border border-white/5 relative z-10">
+                    <p className="text-xs text-neutral-500 uppercase mb-1">Pricing Strategy</p>
+                    <p className="text-sm text-neutral-300">{resultData.competitor_analysis.pricing_strategy}</p>
+                  </div>
+                )}
+                {resultData.competitor_analysis.competitor_insights && resultData.competitor_analysis.competitor_insights.length > 0 && (
+                  <div className="relative z-10">
+                    <p className="text-xs text-neutral-500 uppercase mb-2">Market Insights</p>
+                    <ul className="space-y-2">
+                      {resultData.competitor_analysis.competitor_insights.map((insight, idx) => (
+                        <li key={idx} className="flex gap-2 text-sm text-neutral-300"><span className="text-neutral-500">•</span> {insight}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </div>
+            )}
+
+            {resultData.scores && !resultData.scores.error && (
+               <div className="bg-neutral-900 border border-white/5 rounded-[2rem] p-5 shadow-lg space-y-4">
+                 <div className="flex items-center gap-2">
+                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-white"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+                   <h3 className="font-semibold text-white">Quality Score</h3>
+                 </div>
+                 <div className="flex items-center gap-6">
+                   <div className="flex flex-col items-center">
+                     <div className="text-3xl font-bold text-white">{resultData.scores.overall_score}<span className="text-sm text-neutral-500 font-normal">/100</span></div>
+                     <p className="text-xs text-neutral-500 uppercase mt-1">Overall</p>
+                   </div>
+                   <div className="h-10 w-px bg-white/10"></div>
+                   <div className="flex flex-col items-center">
+                     <div className="text-xl font-bold text-neutral-300">{resultData.scores.seo_score}<span className="text-xs text-neutral-600 font-normal">/100</span></div>
+                     <p className="text-xs text-neutral-500 uppercase mt-1">SEO</p>
+                   </div>
+                   <div className="h-10 w-px bg-white/10"></div>
+                   <div className="flex flex-col items-center">
+                     <div className="text-xl font-bold text-neutral-300">{resultData.scores.marketing_score}<span className="text-xs text-neutral-600 font-normal">/100</span></div>
+                     <p className="text-xs text-neutral-500 uppercase mt-1">Marketing</p>
+                   </div>
+                 </div>
+                 {resultData.scores.feedback && <p className="text-sm text-neutral-400 bg-[#0f0f0f] rounded-xl p-3 border border-white/5">{resultData.scores.feedback}</p>}
+               </div>
+            )}
+
             {/* Publish Section */}
-            {platform === 'shopify' && (
+            {(platform === 'shopify' || platform === 'woocommerce') && (
               <div className="bg-neutral-900 border border-white/5 rounded-[2rem] p-5 shadow-lg space-y-4">
-                <div className="flex items-center gap-2"><span className="text-lg"></span><h3 className="font-semibold text-white">Publish to Shopify</h3></div>
-                <div className="grid grid-cols-2 gap-3 mb-4">
-                  <div><label className="text-xs text-neutral-500 uppercase mb-1 block">Price</label><input value={publishPrice} onChange={e => setPublishPrice(e.target.value)} className="w-full p-2.5 rounded-lg bg-[#0f0f0f] border border-white/10 text-white text-sm outline-none focus:border-white/20 transition-colors" /></div>
+                <div className="flex items-center gap-2">
+                  <span className="text-lg">{activePlatform.emoji}</span>
+                  <h3 className="font-semibold text-white">Publish to {activePlatform.label}</h3>
+                </div>
+                <div className="grid grid-cols-3 gap-3 mb-4">
+                  <div><label className="text-xs text-neutral-500 uppercase mb-1 block">Regular Price</label><input value={publishPrice} onChange={e => setPublishPrice(e.target.value)} className="w-full p-2.5 rounded-lg bg-[#0f0f0f] border border-white/10 text-white text-sm outline-none focus:border-white/20 transition-colors" /></div>
+                  <div><label className="text-xs text-neutral-500 uppercase mb-1 block">Sale Price</label><input value={publishSalePrice} onChange={e => setPublishSalePrice(e.target.value)} placeholder="Optional" className="w-full p-2.5 rounded-lg bg-[#0f0f0f] border border-white/10 text-white text-sm outline-none focus:border-white/20 transition-colors" /></div>
                   <div><label className="text-xs text-neutral-500 uppercase mb-1 block">Units</label><input type="number" value={publishQuantity} onChange={e => setPublishQuantity(e.target.value ? parseInt(e.target.value) : '')} className="w-full p-2.5 rounded-lg bg-[#0f0f0f] border border-white/10 text-white text-sm outline-none focus:border-white/20 transition-colors" /></div>
                 </div>
                 {publishResult ? (
-                  <div className="bg-white/5 border border-white/10 rounded-xl p-4"><p className="text-white font-semibold text-sm">Published!</p><a href={publishResult.admin_url} target="_blank" rel="noreferrer" className="text-xs text-neutral-400 underline mt-2 block">View in Shopify →</a></div>
+                  <div className="bg-white/5 border border-white/10 rounded-xl p-4"><p className="text-white font-semibold text-sm">Published!</p><a href={publishResult.admin_url} target="_blank" rel="noreferrer" className="text-xs text-neutral-400 underline mt-2 block">View in {activePlatform.label} →</a></div>
                 ) : (
                   <button onClick={async () => {
                     setPublishError(null); setPublishState('uploading');
                     try {
                       let imageUrls: string[] = [];
+                      if (existingImageUrl) imageUrls.push(existingImageUrl);
                       if (imageFiles.length > 0) {
                         const fd = new FormData(); imageFiles.forEach(f => fd.append('images', f));
                         const r = await fetch(`${API}/api/upload-images`, { method: 'POST', body: fd });
                         if (!r.ok) throw new Error('Image upload failed');
-                        imageUrls = (await r.json()).image_urls;
+                        imageUrls = [...imageUrls, ...(await r.json()).image_urls];
                       }
                       setPublishState('publishing');
+                      
+                      const payload = {
+                        platform: platform,
+                        title: resultData.seo?.title ? String(resultData.seo.title) : 'New Product',
+                        description: resultData.marketing?.platform_description ? String(resultData.marketing.platform_description) : '',
+                        tags: Array.isArray(resultData.seo?.keywords) ? resultData.seo.keywords : (typeof resultData.seo?.keywords === 'string' ? (resultData.seo.keywords as any).split(',').map((k: string) => k.trim()) : []),
+                        price: publishPrice ? String(publishPrice).replace(/[^0-9.]/g, '') || '0.00' : '0.00',
+                        sale_price: publishSalePrice ? String(publishSalePrice).replace(/[^0-9.]/g, '') || null : null,
+                        image_urls: Array.isArray(imageUrls) ? imageUrls : [],
+                        vendor: publishVendor ? String(publishVendor) : 'Verion AI',
+                        quantity: typeof publishQuantity === 'number' && !isNaN(publishQuantity) ? publishQuantity : undefined,
+                        color: resultData.seo?.color || null,
+                        condition: resultData.seo?.condition || null,
+                        weight: resultData.seo?.weight || null,
+                        brand: resultData.seo?.brand || null,
+                        material: resultData.seo?.material || null,
+                        dimensions: resultData.seo?.dimensions || null,
+                        category: resultData.seo?.category || null,
+                        product_type: resultData.seo?.product_type || "",
+                        specs: resultData.seo?.specs || null
+                      };
+
                       const r = await fetch(`${API}/api/publish`, {
                         method: 'POST', 
                         headers: { 
                           'Content-Type': 'application/json',
                           'Authorization': `Bearer ${localStorage.getItem('token')}`
                         },
-                        body: JSON.stringify({
-                          platform: 'shopify', title: resultData.seo?.title || 'New Product', description: resultData.marketing?.platform_description || '',
-                          tags: resultData.seo?.keywords || [], price: publishPrice || '0.00', image_urls: imageUrls, vendor: publishVendor, quantity: publishQuantity !== '' ? publishQuantity : undefined
-                        })
+                        body: JSON.stringify(payload)
                       });
                       if (!r.ok) { const d = await r.json(); throw new Error(d.detail); }
                       setPublishResult((await r.json()).result); setPublishState('success');
                     } catch (e: any) { setPublishError(e.message); setPublishState('idle'); }
-                  }} disabled={publishState !== 'idle'} className="w-full py-3 bg-white text-black font-medium rounded-full disabled:opacity-50 transition-opacity">
-                    {publishState === 'uploading' ? 'Uploading Images...' : publishState === 'publishing' ? 'Publishing...' : 'Publish to Shopify'}
+                  }} disabled={publishState !== 'idle'} className={`w-full py-3 text-white font-medium rounded-full disabled:opacity-50 transition-opacity bg-gradient-to-r ${activePlatform.color}`}>
+                    {publishState === 'uploading' ? 'Uploading Images...' : publishState === 'publishing' ? 'Publishing...' : `Publish to ${activePlatform.label}`}
                   </button>
                 )}
                 {publishError && <p className="text-red-400 text-xs mt-2">{publishError}</p>}

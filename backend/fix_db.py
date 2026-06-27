@@ -12,11 +12,11 @@ async def fix_schema():
     async with engine.begin() as conn:
         from sqlalchemy import text
         try:
-            # Try to add the name column
-            await conn.execute(text("ALTER TABLE users ADD COLUMN name VARCHAR(255);"))
-            print("Successfully added name column.")
+            await conn.execute(text("ALTER TABLE platform_connections ADD COLUMN woo_consumer_key TEXT;"))
+            await conn.execute(text("ALTER TABLE platform_connections ADD COLUMN woo_consumer_secret TEXT;"))
+            print("Successfully added WooCommerce columns.")
         except Exception as e:
-            print(f"Error adding column: {e}")
+            print(f"Error adding columns: {e}")
 
 if __name__ == "__main__":
     asyncio.run(fix_schema())

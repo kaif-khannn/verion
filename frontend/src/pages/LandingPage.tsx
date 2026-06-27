@@ -1,7 +1,7 @@
 import React from 'react';
 
 interface LandingPageProps {
-  onGetStarted: () => void;
+  onGetStarted: (mode: 'login' | 'signup') => void;
 }
 
 export default function LandingPage({ onGetStarted }: LandingPageProps) {
@@ -17,19 +17,19 @@ export default function LandingPage({ onGetStarted }: LandingPageProps) {
             <span className="font-medium text-xl tracking-tight text-neutral-500">Verion</span>
           </div>
           <div className="hidden md:flex items-center gap-10 text-sm font-medium text-neutral-500 uppercase tracking-wide">
-            <a href="#product" className="hover:text-white transition-colors">about us</a>
-            <a href="#features" className="hover:text-white transition-colors"></a>
-            <a href="#pricing" className="hover:text-white transition-colors">Pricing</a>
+            <a href="#" className="hover:text-neutral-900 transition-colors">Home</a>
+            <a href="#about" className="hover:text-neutral-900 transition-colors">About Us</a>
+            <a href="#faq" className="hover:text-neutral-900 transition-colors">FAQ</a>
           </div>
           <div className="flex items-center gap-2">
             <button
-              onClick={onGetStarted}
+              onClick={() => onGetStarted('login')}
               className="text-sm font-medium bg-white/90 backdrop-blur-sm rounded-full px-6 py-2 text-neutral-600 hover:text-white transition-colors"
             >
               Login
             </button>
             <button
-              onClick={onGetStarted}
+              onClick={() => onGetStarted('signup')}
               className="px-6 py-2.5 rounded-full bg-black text-white text-sm font-medium hover:bg-neutral-200 transition-all"
             >
               Sign Up
@@ -112,7 +112,7 @@ export default function LandingPage({ onGetStarted }: LandingPageProps) {
         </section>
 
         {/* ── CARD 2: Introduction ── */}
-        <section className="bg-neutral-900 rounded-[3rem] p-12 md:p-24 border border-white/5 flex flex-col md:flex-row items-center gap-16 overflow-hidden relative">
+        <section id="about" className="bg-neutral-900 rounded-[3rem] p-12 md:p-24 border border-white/5 flex flex-col md:flex-row items-center gap-16 overflow-hidden relative">
           <div className="md:w-1/2 space-y-8 z-10">
             <h2 className="text-4xl md:text-5xl font-medium tracking-tight text-gray-100 leading-snug">
               <span className="text-white font-semibold ">Verion</span> is a powerful <br /> multi-agent platform
@@ -122,15 +122,74 @@ export default function LandingPage({ onGetStarted }: LandingPageProps) {
               <p>For every product uploaded, our AI agents analyze images, extract specs, evaluate competitors, and write pristine SEO content.</p>
             </div>
           </div>
-          <div className="md:w-1/2 relative h-[500px] w-full rounded-[2rem] overflow-hidden bg-gradient-to-br from-neutral-700 via-neutral-800 to-neutral-900 border border-white/5">
-            <div className="absolute inset-0 bg-white/[0.02] backdrop-blur-3xl mix-blend-overlay"></div>
-            <div className="absolute bottom-[-10%] right-[-10%] w-[400px] h-[400px] bg-white/[0.03] rounded-full blur-[80px]"></div>
-            <div className="absolute top-[20%] left-[10%] w-[300px] h-[300px] bg-white/[0.05] rounded-full blur-[60px]"></div>
+          <div className="md:w-1/2 relative h-[500px] w-full rounded-[2rem] overflow-hidden bg-gradient-to-br from-neutral-800 via-neutral-900 to-black border border-white/10 shadow-2xl">
+            {/* Background elements */}
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-white/[0.05] via-transparent to-transparent pointer-events-none"></div>
+            <div className="absolute bottom-[-20%] right-[-10%] w-[300px] h-[300px] bg-white/[0.03] rounded-full blur-[80px] pointer-events-none"></div>
+            <div className="absolute top-[10%] left-[-10%] w-[250px] h-[250px] bg-white/[0.04] rounded-full blur-[60px] pointer-events-none"></div>
+            
+            {/* Multi-Agent Network Visualization */}
             <div className="absolute inset-0 flex items-center justify-center">
-              <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="0.5" strokeLinecap="round" strokeLinejoin="round" className="opacity-20">
-                <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
-                <path d="M5 3v4" /><path d="M19 17v4" /><path d="M3 5h4" /><path d="M17 19h4" />
+              
+              {/* Connecting Lines (SVG) */}
+              <svg className="absolute w-full h-full inset-0 pointer-events-none opacity-40" style={{ zIndex: 0 }}>
+                {/* Central point is at 50% 50% */}
+                <line x1="50%" y1="50%" x2="50%" y2="25%" stroke="url(#line-grad-1)" strokeWidth="1.5" strokeDasharray="4 4" className="animate-pulse" />
+                <line x1="50%" y1="50%" x2="25%" y2="70%" stroke="url(#line-grad-2)" strokeWidth="1.5" strokeDasharray="4 4" className="animate-pulse" style={{ animationDelay: '200ms' }} />
+                <line x1="50%" y1="50%" x2="75%" y2="70%" stroke="url(#line-grad-3)" strokeWidth="1.5" strokeDasharray="4 4" className="animate-pulse" style={{ animationDelay: '400ms' }} />
+                
+                <defs>
+                  <linearGradient id="line-grad-1" x1="50%" y1="50%" x2="50%" y2="25%">
+                    <stop offset="0%" stopColor="#ffffff" stopOpacity="0.8" />
+                    <stop offset="100%" stopColor="#ffffff" stopOpacity="0" />
+                  </linearGradient>
+                  <linearGradient id="line-grad-2" x1="50%" y1="50%" x2="25%" y2="70%">
+                    <stop offset="0%" stopColor="#ffffff" stopOpacity="0.8" />
+                    <stop offset="100%" stopColor="#ffffff" stopOpacity="0" />
+                  </linearGradient>
+                  <linearGradient id="line-grad-3" x1="50%" y1="50%" x2="75%" y2="70%">
+                    <stop offset="0%" stopColor="#ffffff" stopOpacity="0.8" />
+                    <stop offset="100%" stopColor="#ffffff" stopOpacity="0" />
+                  </linearGradient>
+                </defs>
               </svg>
+
+              {/* Central Hub: Orchestrator */}
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 flex flex-col items-center">
+                <div className="w-20 h-20 bg-white/10 backdrop-blur-md rounded-3xl border border-white/20 flex items-center justify-center shadow-[0_0_50px_rgba(255,255,255,0.15)] relative group cursor-pointer hover:border-white/40 transition-colors">
+                  <div className="absolute inset-0 rounded-3xl bg-white/20 animate-ping opacity-20"></div>
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="group-hover:scale-110 transition-transform">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    <path d="m9 12 2 2 4-4"/>
+                  </svg>
+                </div>
+                <div className="mt-4 bg-white/10 backdrop-blur-md border border-white/10 px-4 py-1.5 rounded-full text-xs text-white font-medium shadow-xl">Orchestrator</div>
+              </div>
+
+              {/* Node 1: Vision Agent (Top) */}
+              <div className="absolute top-[25%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 flex flex-col items-center group cursor-pointer">
+                <div className="w-14 h-14 bg-[#141414] rounded-2xl border border-white/10 flex items-center justify-center group-hover:border-white/30 group-hover:scale-110 group-hover:-translate-y-1 transition-all shadow-xl">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-neutral-400 group-hover:text-white transition-colors"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+                </div>
+                <div className="mt-3 text-[10px] uppercase tracking-widest text-neutral-500 font-bold group-hover:text-white transition-colors">Vision Agent</div>
+              </div>
+
+              {/* Node 2: SEO Agent (Bottom Left) */}
+              <div className="absolute top-[70%] left-[25%] -translate-x-1/2 -translate-y-1/2 z-10 flex flex-col items-center group cursor-pointer">
+                <div className="w-14 h-14 bg-[#141414] rounded-2xl border border-white/10 flex items-center justify-center group-hover:border-white/30 group-hover:scale-110 group-hover:-translate-y-1 transition-all shadow-xl">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-neutral-400 group-hover:text-white transition-colors"><path d="M12 2a4 4 0 0 1 4 4c0 2-2 3-2 6h-4c0-3-2-4-2-6a4 4 0 0 1 4-4Z"/><path d="M10 18h4"/><path d="M10 22h4"/></svg>
+                </div>
+                <div className="mt-3 text-[10px] uppercase tracking-widest text-neutral-500 font-bold group-hover:text-white transition-colors">SEO Agent</div>
+              </div>
+
+              {/* Node 3: Market Agent (Bottom Right) */}
+              <div className="absolute top-[70%] left-[75%] -translate-x-1/2 -translate-y-1/2 z-10 flex flex-col items-center group cursor-pointer">
+                <div className="w-14 h-14 bg-[#141414] rounded-2xl border border-white/10 flex items-center justify-center group-hover:border-white/30 group-hover:scale-110 group-hover:-translate-y-1 transition-all shadow-xl">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-neutral-400 group-hover:text-white transition-colors"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                </div>
+                <div className="mt-3 text-[10px] uppercase tracking-widest text-neutral-500 font-bold group-hover:text-white transition-colors">Market Agent</div>
+              </div>
+
             </div>
           </div>
         </section>
@@ -277,7 +336,7 @@ export default function LandingPage({ onGetStarted }: LandingPageProps) {
           Your first 100 generations are totally free.
         </p>
         <button
-          onClick={onGetStarted}
+          onClick={() => onGetStarted('signup')}
           className="relative z-10 px-8 py-3 rounded-full bg-white text-black font-medium hover:bg-neutral-200 transition-colors"
         >
           Sign Up
@@ -305,7 +364,48 @@ export default function LandingPage({ onGetStarted }: LandingPageProps) {
               <button className="flex-1 py-2 bg-[#222] rounded text-white text-xs hover:bg-[#2a2a2a] transition-colors border border-white/5">Apple</button>
             </div>
             <input type="text" placeholder="Enter your email" className="w-full bg-[#0f0f0f] border border-white/10 rounded p-3 text-xs text-white mb-3 outline-none focus:border-white/20 transition-colors" />
-            <button onClick={onGetStarted} className="w-full py-3 bg-white text-black text-xs rounded font-medium hover:bg-neutral-200 transition-colors">Continue with email</button>
+            <button onClick={() => onGetStarted('signup')} className="w-full py-3 bg-white text-black text-xs rounded font-medium hover:bg-neutral-200 transition-colors">Continue with email</button>
+          </div>
+        </div>
+      </section>
+
+      {/* ── FAQ Section ── */}
+      <section id="faq" className="py-16 px-6 mx-8 mt-8 mb-4 rounded-[3rem] bg-neutral-200/50 relative overflow-hidden">
+        <div className="max-w-3xl mx-auto relative z-10">
+          <h2 className="text-4xl md:text-5xl font-medium text-black tracking-tight mb-12 text-center">
+            Frequently Asked Questions
+          </h2>
+          <div className="space-y-4">
+            {[
+              {
+                q: "What is Verion AI?",
+                a: "Verion AI is a powerful multi-agent platform designed to help e-commerce store owners automate and optimize their product listings. It generates high-converting, SEO-optimized content in seconds."
+              },
+              {
+                q: "Do I need technical skills to use Verion?",
+                a: "Not at all. Verion features an intuitive web interface. Simply upload your product images and a brief description, and our AI agents handle the rest."
+              },
+              {
+                q: "How does it connect to Shopify?",
+                a: "Verion seamlessly integrates with your Shopify store. Once your optimized listing is generated and reviewed, you can publish it directly to your storefront with a single click."
+              },
+              {
+                q: "Is there a free trial available?",
+                a: "Yes! Your first 100 generations are completely free. You can sign up and start optimizing your listings immediately without any upfront commitment."
+              }
+            ].map((faq, i) => (
+              <details key={i} className="group overflow-hidden border-b border-neutral-200 rounded-2xl transition-all duration-300 shadow-sm hover:shadow-md hover:border-neutral-300/50">
+                <summary className="flex gap-4 justify-between items-center font-medium cursor-pointer list-none p-4 text-lg text-neutral-800 hover:text-black">
+                  {faq.q}
+                  <span className="transition-transform duration-300 group-open:rotate-180 text-neutral-400 group-hover:text-black">
+                    <svg fill="none" height="24" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                  </span>
+                </summary>
+                <div className="text-neutral-600 px-6 pb-6 text-sm leading-relaxed border-t border-neutral-100 pt-4 mt-2">
+                  {faq.a}
+                </div>
+              </details>
+            ))}
           </div>
         </div>
       </section>
