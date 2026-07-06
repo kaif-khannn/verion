@@ -120,8 +120,7 @@ class ExperimentStartRequest(BaseModel):
     variants: List[dict] # The scored variants array
 
 class SimulationRequest(BaseModel):
-    variant_a: dict
-    variant_b: dict
+    variants: List[dict]
 
 class TrendDetailRequest(BaseModel):
     category: str
@@ -460,7 +459,7 @@ async def start_experiment(body: ExperimentStartRequest, db=Depends(get_db), cur
 async def simulate_experiment(body: SimulationRequest, current_user: User = Depends(get_current_user)):
     from agents.prediction_engine import PredictionEngine
     engine = PredictionEngine()
-    result = engine.run_synthetic_simulation(body.variant_a, body.variant_b)
+    result = engine.run_synthetic_simulation(body.variants)
     if "error" in result:
         raise HTTPException(status_code=500, detail=result["error"])
     return {"status": "success", "data": result}

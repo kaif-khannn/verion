@@ -96,9 +96,9 @@ class PredictionEngine:
                 }
             return variants
 
-    def run_synthetic_simulation(self, variant_a: dict, variant_b: dict) -> dict:
+    def run_synthetic_simulation(self, variants: list) -> dict:
         """
-        Runs a RAG-based synthetic AI simulation for A/B testing using 5 buyer personas
+        Runs a RAG-based synthetic AI simulation for A/B/C testing using 8 buyer personas
         and e-commerce psychology datasets as context.
         """
         if not self.client:
@@ -113,9 +113,14 @@ class PredictionEngine:
         except Exception as e:
             print(f"Could not load RAG dataset: {e}")
 
+        variants_text = ""
+        for i, v in enumerate(variants):
+            label = chr(65 + i) # A, B, C...
+            variants_text += f"\nVariant {label} (ID: {v.get('variant_id')}):\n{json.dumps(v.get('seo', {}), indent=2)}\n"
+
         prompt = f"""
         You are a highly advanced Synthetic AI Simulation Engine.
-        Your job is to simulate a live A/B test by instantiating 8 distinct E-commerce Buyer Personas:
+        Your job is to simulate a live Multivariate Test by instantiating 8 distinct E-commerce Buyer Personas:
         1. The Comparison Shopper (Pragmatic & Analytical)
         2. The Bargain Hunter (Price & Value Driven)
         3. The Impulse Buyer (Emotional & Immediate)
@@ -130,12 +135,8 @@ class PredictionEngine:
         {rag_context}
         ---
 
-        Evaluate these two product copy variants:
-        Variant A (ID: {variant_a.get('variant_id')}):
-        {json.dumps(variant_a.get('seo', {}), indent=2)}
-
-        Variant B (ID: {variant_b.get('variant_id')}):
-        {json.dumps(variant_b.get('seo', {}), indent=2)}
+        Evaluate these product copy variants:
+        {variants_text}
 
         For each of the 8 personas, determine which variant they would purchase and WHY (in 1 short sentence), strictly referencing the psychological ground truth rules provided.
         

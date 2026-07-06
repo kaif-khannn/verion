@@ -210,8 +210,7 @@ export default function GenerateTab({ initialInput = '', initialImage = null }: 
     setAbTestState('starting'); // Use starting as a loading state for the button
     try {
       const payload = {
-        variant_a: resultData.scored_variants[0],
-        variant_b: resultData.scored_variants.length > 1 ? resultData.scored_variants[1] : resultData.scored_variants[0]
+        variants: resultData.scored_variants
       };
       const r = await fetch(`${API}/api/experiments/simulate`, {
         method: 'POST',
