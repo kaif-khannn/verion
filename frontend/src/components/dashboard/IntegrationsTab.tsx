@@ -14,7 +14,7 @@ export default function IntegrationsTab() {
   const [showConnectModal, setShowConnectModal] = useState(false);
   const [shopifyDomain, setShopifyDomain] = useState('');
   const [shopifyToken, setShopifyToken] = useState('');
-  
+
   const [showWooModal, setShowWooModal] = useState(false);
   const [wooUrl, setWooUrl] = useState('');
   const [wooKey, setWooKey] = useState('');
@@ -27,17 +27,24 @@ export default function IntegrationsTab() {
     fetch(`${API}/api/connections`, {
       headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
     })
-      .then(r => r.json())
-      .then(data => setConnections(data))
-      .catch(() => { });
+      .then(r => {
+        if (!r.ok) throw new Error('Failed to fetch connections');
+        return r.json();
+      })
+      .then(data => {
+        if (Array.isArray(data)) {
+          setConnections(data);
+        }
+      })
+      .catch((e) => { console.error('Error fetching connections:', e); });
   }, []);
 
   const handleConnect = async () => {
     setConnectLoading(true); setConnectError(null);
     try {
       const r = await fetch(`${API}/api/connections/shopify`, {
-        method: 'POST', 
-        headers: { 
+        method: 'POST',
+        headers: {
           'Content-Type': 'application/json',
           'Authorization': `Bearer ${localStorage.getItem('token')}`
         },
@@ -55,8 +62,8 @@ export default function IntegrationsTab() {
     setConnectLoading(true); setConnectError(null);
     try {
       const r = await fetch(`${API}/api/connections/woocommerce`, {
-        method: 'POST', 
-        headers: { 
+        method: 'POST',
+        headers: {
           'Content-Type': 'application/json',
           'Authorization': `Bearer ${localStorage.getItem('token')}`
         },
@@ -72,7 +79,7 @@ export default function IntegrationsTab() {
 
   const handleDelete = async (id: string) => {
     try {
-      const r = await fetch(`${API}/api/connections/${id}`, { 
+      const r = await fetch(`${API}/api/connections/${id}`, {
         method: 'DELETE',
         headers: { 'Authorization': `Bearer ${localStorage.getItem('token')}` }
       });
@@ -80,9 +87,11 @@ export default function IntegrationsTab() {
     } catch (e) { console.error(e); }
   };
 
+  console.log("Current connections:", connections);
+
   return (
-    <div className="space-y-6 max-w-[1400px">
-      <div className="bg-neutral-900 border border-white/5 rounded-[2rem] p-8 shadow-xl">
+    <div className="space-y-6 max-w-[1400px]">
+      <div className="mb-8">
         <h2 className="text-3xl font-semibold text-white">Integrations</h2>
         <p className="text-neutral-500 mt-2 text-lg">Connect your store and external platforms.</p>
       </div>

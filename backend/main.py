@@ -9,6 +9,8 @@ import io
 import uuid
 from PIL import Image
 from pydantic import BaseModel
+from datetime import datetime, timedelta
+import random
 
 load_dotenv()
 
@@ -20,6 +22,8 @@ from publishers.imagekit_uploader import ImageKitUploader
 from publishers.shopify_publisher import ShopifyPublisher
 from publishers.woocommerce_publisher import WooCommercePublisher
 from agents.rag_agent import RAGAgent
+from agents.analytics_agent import AnalyticsAgent
+from agents.trend_agent import TrendAgent
 from auth_utils import get_password_hash, verify_password, create_access_token, decode_access_token, ACCESS_TOKEN_EXPIRE_MINUTES
 from datetime import timedelta
 
@@ -73,6 +77,7 @@ class UserCreate(BaseModel):
     name: str
     email: str
     password: str
+    preferred_niches: Optional[List[str]] = None
 
 class Token(BaseModel):
     access_token: str
@@ -109,6 +114,20 @@ class PublishRequest(BaseModel):
     product_type: str = ""
     specs: Optional[dict] = None       # Free-form spec k/v pairs
 
+class ExperimentStartRequest(BaseModel):
+    platform: str
+    product_id: str
+    variants: List[dict] # The scored variants array
+
+class SimulationRequest(BaseModel):
+    variant_a: dict
+    variant_b: dict
+
+class TrendDetailRequest(BaseModel):
+    category: str
+    description: str
+
+
 
 # ── Auth Routes ────────────────────────────────────────────────────────────────
 @app.post("/api/auth/register", response_model=Token)
@@ -117,7 +136,17 @@ async def register(user: UserCreate, db = Depends(get_db)):
     if db_user:
         raise HTTPException(status_code=400, detail="Email already registered")
     hashed_password = get_password_hash(user.password)
-    new_user = await crud.create_user(db=db, email=user.email, name=user.name, hashed_password=hashed_password)
+    
+    import json
+    niches_str = json.dumps(user.preferred_niches) if user.preferred_niches else None
+    
+    new_user = await crud.create_user(
+        db=db, 
+        email=user.email, 
+        name=user.name, 
+        hashed_password=hashed_password,
+        preferred_niches=niches_str
+    )
     
     access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
     access_token = create_access_token(
@@ -139,6 +168,22 @@ async def login(form_data: OAuth2PasswordRequestForm = Depends(), db = Depends(g
         data={"sub": str(user.id), "name": user.name}, expires_delta=access_token_expires
     )
     return {"access_token": access_token, "token_type": "bearer"}
+
+@app.get("/api/users/me")
+async def read_users_me(current_user: User = Depends(get_current_user)):
+    import json
+    niches = []
+    if current_user.preferred_niches:
+        try:
+            niches = json.loads(current_user.preferred_niches)
+        except Exception:
+            pass
+    return {
+        "id": current_user.id,
+        "name": current_user.name,
+        "email": current_user.email,
+        "preferred_niches": niches
+    }
 
 # ── Core Generate Route ────────────────────────────────────────────────────────
 @app.get("/")
@@ -265,7 +310,7 @@ async def connect_woocommerce(body: WooCommerceConnectionRequest, db=Depends(get
 async def list_connections(db=Depends(get_db), current_user: User = Depends(get_current_user)):
     """List all saved platform connections for the current user."""
     conns = await crud.list_connections(db, current_user.id)
-    return [
+    result = [
         {
             "id": str(c.id),
             "platform": c.platform,
@@ -274,6 +319,20 @@ async def list_connections(db=Depends(get_db), current_user: User = Depends(get_
         }
         for c in conns
     ]
+    
+    # Fallback to .env for Shopify if no DB connection exists
+    if not any(c["platform"] == "shopify" for c in result):
+        env_domain = os.environ.get("SHOPIFY_SHOP_DOMAIN")
+        env_token = os.environ.get("SHOPIFY_ACCESS_TOKEN")
+        if env_domain and env_token:
+            result.append({
+                "id": "00000000-0000-0000-0000-000000000000",
+                "platform": "shopify",
+                "shop_domain": env_domain,
+                "connected_at": None,
+            })
+            
+    return result
 
 
 @app.delete("/api/connections/{connection_id}")
@@ -367,7 +426,64 @@ async def publish_listing(body: PublishRequest, db=Depends(get_db), current_user
             detail=f"Publishing to '{body.platform}' is not yet supported.",
         )
 
+# ── Experiment Routes (COPE) ───────────────────────────────────────────────────
+@app.post("/api/experiments/start")
+async def start_experiment(body: ExperimentStartRequest, db=Depends(get_db), current_user: User = Depends(get_current_user)):
+    """
+    Start an autonomous A/B test with the COPE Decision Engine.
+    Creates an experiment record and saves variant performance baselines.
+    """
+    import json
+    
+    experiment = await crud.create_experiment(
+        db, 
+        user_id=current_user.id, 
+        platform=body.platform, 
+        product_id=body.product_id
+    )
+    
+    # Save the variants being tested
+    for variant in body.variants:
+        scores = variant.get("cope_scores", {})
+        await crud.add_variant_performance(
+            db,
+            experiment_id=experiment.id,
+            variant_id=variant.get("variant_id"),
+            content_blob=json.dumps(variant),
+            predicted_ctr=str(scores.get("expected_ctr", "0")),
+            predicted_conversion_prob=str(scores.get("purchase_probability", "0"))
+        )
+        
+    return {"status": "success", "experiment_id": str(experiment.id), "message": "A/B test initialized."}
+
+@app.post("/api/experiments/simulate")
+async def simulate_experiment(body: SimulationRequest, current_user: User = Depends(get_current_user)):
+    from agents.prediction_engine import PredictionEngine
+    engine = PredictionEngine()
+    result = engine.run_synthetic_simulation(body.variant_a, body.variant_b)
+    if "error" in result:
+        raise HTTPException(status_code=500, detail=result["error"])
+    return {"status": "success", "data": result}
+
+@app.get("/api/experiments/active")
+async def get_active_experiments(db=Depends(get_db), current_user: User = Depends(get_current_user)):
+    experiments = await crud.get_active_experiments(db, current_user.id)
+    return {"status": "success", "experiments": [{"id": str(e.id), "platform": e.platform, "product_id": e.product_id} for e in experiments]}
+
+
+
 # ── Stats & Data Routes ────────────────────────────────────────────────────────
+@app.get("/api/insights/trends")
+async def get_trends(niche: str):
+    agent = TrendAgent()
+    trends_data = agent.get_trending_products(niche)
+    return {"status": "success", "data": trends_data}
+
+@app.post("/api/insights/trend-details")
+async def get_trend_details(body: TrendDetailRequest):
+    agent = TrendAgent()
+    insights = agent.analyze_trend(body.category, body.description)
+    return {"status": "success", "insights": insights}
 @app.get("/api/stats")
 async def get_stats():
     """Return mock metrics and actual ChromaDB document count."""
@@ -382,6 +498,44 @@ async def get_stats():
         "avg_seo_score_increase": "10%",
         "time_saved_per_listing": "45 mins",
         "recent_optimizations": 124
+    }
+
+@app.get("/api/analytics")
+async def get_analytics():
+    """Return historical chart data and AI-generated insights."""
+    try:
+        rag = RAGAgent()
+        count = rag.vector_store._collection.count()
+    except Exception:
+        count = 0
+
+    current_stats = {
+        "rag_documents": count,
+        "avg_seo_score_increase": "10%",
+        "time_saved_per_listing": "45 mins",
+        "recent_optimizations": 124
+    }
+
+    # Generate mock chart data for the last 7 days
+    chart_data = []
+    base_optimizations = 10
+    base_seo = 70
+    for i in range(6, -1, -1):
+        date_str = (datetime.now() - timedelta(days=i)).strftime("%b %d")
+        chart_data.append({
+            "date": date_str,
+            "optimizations": base_optimizations + random.randint(-2, 5),
+            "seo_score": min(100, base_seo + random.randint(0, 10))
+        })
+        base_optimizations += random.randint(0, 3)
+        base_seo += random.randint(0, 2)
+
+    agent = AnalyticsAgent()
+    insights = agent.generate_insights(chart_data, current_stats)
+
+    return {
+        "chart_data": chart_data,
+        "insights": insights
     }
 
 @app.get("/api/products")

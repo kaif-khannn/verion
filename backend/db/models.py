@@ -18,6 +18,7 @@ class User(Base):
     email = Column(String(255), unique=True, index=True, nullable=False)
     name = Column(String(255), nullable=True)
     hashed_password = Column(String(255), nullable=False)
+    preferred_niches = Column(String, nullable=True) # JSON encoded list of niche IDs
 
     created_at = Column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc))
     updated_at = Column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc),
@@ -58,3 +59,45 @@ class PlatformConnection(Base):
     created_at = Column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc))
     updated_at = Column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc),
                         onupdate=lambda: datetime.now(timezone.utc))
+
+class Experiment(Base):
+    """
+    Tracks autonomous A/B tests managed by the COPE Decision Agent.
+    """
+    __tablename__ = "experiments"
+
+    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    user_id = Column(UUID(as_uuid=True), ForeignKey("users.id"), nullable=False)
+    platform = Column(String(50), nullable=False) # e.g., 'shopify'
+    product_id = Column(String(100), nullable=False) # ID of the product on the platform
+    status = Column(String(50), default="active") # 'active', 'completed', 'stopped'
+    winner_variant_id = Column(String(255), nullable=True)
+    
+    created_at = Column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc))
+    
+    variants = relationship("VariantPerformance", back_populates="experiment")
+
+class VariantPerformance(Base):
+    """
+    Tracks real-time performance of generated variants for continuous learning.
+    """
+    __tablename__ = "variant_performance"
+
+    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    experiment_id = Column(UUID(as_uuid=True), ForeignKey("experiments.id"), nullable=True)
+    variant_id = Column(String(255), nullable=False, index=True)
+    
+    # Store the actual generated JSON blob or specific fields
+    content_blob = Column(Text, nullable=True)
+    
+    # Live performance metrics
+    impressions = Column(String(255), default="0")
+    clicks = Column(String(255), default="0")
+    conversions = Column(String(255), default="0")
+    
+    # COPE Predicted metrics (for accuracy comparison)
+    predicted_ctr = Column(String(255), nullable=True)
+    predicted_conversion_prob = Column(String(255), nullable=True)
+
+    experiment = relationship("Experiment", back_populates="variants")
+

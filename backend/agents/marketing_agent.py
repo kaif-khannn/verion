@@ -32,6 +32,8 @@ class MarketingAgent:
         - {content_key}
         - "call_to_action": "A strong, urgent, and compelling Call to Action (CTA) sentence."
 
+        IMPORTANT: If you mention any prices, discounts, or revenue, MUST format them in Indian Rupees (₹ / INR), not US Dollars ($).
+
         Product Context:
         {product_context}
 

@@ -5,12 +5,13 @@ from groq import Groq
 
 class VisionAgent:
     def __init__(self):
-        # Configure Groq API
-        api_key = os.getenv("GROQ_API_KEY")
+        # Configure Groq API using the exclusive vision key
+        api_key = os.getenv("GROQ_VISION_API_KEY")
         if api_key:
             self.client = Groq(api_key=api_key)
             # Using Groq's brand new Llama 4 Scout multimodal model
             self.model = "meta-llama/llama-4-scout-17b-16e-instruct"
+
         else:
             self.client = None
 
@@ -24,7 +25,7 @@ class VisionAgent:
 
     def analyze_image(self, images: list, prompt: str = "") -> str:
         if not self.client:
-            return "Error: GROQ_API_KEY is not set."
+            return "Error: GROQ_VISION_API_KEY is not set."
 
         if not prompt:
             prompt = (

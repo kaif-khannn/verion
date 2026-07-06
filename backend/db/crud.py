@@ -6,8 +6,8 @@ import uuid
 from db.models import PlatformConnection, User
 
 # -- User CRUD --
-async def create_user(db: AsyncSession, email: str, name: str, hashed_password: str) -> User:
-    user = User(email=email, name=name, hashed_password=hashed_password)
+async def create_user(db: AsyncSession, email: str, name: str, hashed_password: str, preferred_niches: Optional[str] = None) -> User:
+    user = User(email=email, name=name, hashed_password=hashed_password, preferred_niches=preferred_niches)
     db.add(user)
     await db.commit()
     await db.refresh(user)
@@ -67,3 +67,32 @@ async def delete_connection(db: AsyncSession, user_id: uuid.UUID, connection_id:
     )
     await db.commit()
     return result.rowcount > 0
+
+# -- Experiment CRUD --
+from db.models import Experiment, VariantPerformance
+
+async def create_experiment(db: AsyncSession, user_id: uuid.UUID, platform: str, product_id: str) -> Experiment:
+    experiment = Experiment(user_id=user_id, platform=platform, product_id=product_id)
+    db.add(experiment)
+    await db.commit()
+    await db.refresh(experiment)
+    return experiment
+
+async def add_variant_performance(db: AsyncSession, experiment_id: uuid.UUID, variant_id: str, content_blob: str, predicted_ctr: str, predicted_conversion_prob: str) -> VariantPerformance:
+    variant = VariantPerformance(
+        experiment_id=experiment_id,
+        variant_id=variant_id,
+        content_blob=content_blob,
+        predicted_ctr=predicted_ctr,
+        predicted_conversion_prob=predicted_conversion_prob
+    )
+    db.add(variant)
+    await db.commit()
+    await db.refresh(variant)
+    return variant
+
+async def get_active_experiments(db: AsyncSession, user_id: uuid.UUID) -> list[Experiment]:
+    result = await db.execute(
+        select(Experiment).where(Experiment.user_id == user_id, Experiment.status == "active")
+    )
+    return list(result.scalars().all())

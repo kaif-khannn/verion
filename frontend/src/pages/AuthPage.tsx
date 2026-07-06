@@ -8,6 +8,13 @@ interface AuthPageProps {
   onBack: () => void;
 }
 
+const NICHES = [
+  { id: 'electronics', label: 'Electronics & Gadgets', icon: '💻' },
+  { id: 'fashion', label: 'Apparel & Fashion', icon: '👕' },
+  { id: 'home', label: 'Home & Kitchen', icon: '🍳' },
+  { id: 'beauty', label: 'Beauty & Personal Care', icon: '💄' },
+];
+
 export default function AuthPage({ initialIsLogin = true, onSuccess, onBack }: AuthPageProps) {
   const [isLogin, setIsLogin] = useState(initialIsLogin);
   const [name, setName] = useState('');
@@ -15,6 +22,7 @@ export default function AuthPage({ initialIsLogin = true, onSuccess, onBack }: A
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [preferredNiches, setPreferredNiches] = useState<string[]>([]);
 
   const [success, setSuccess] = useState<string | null>(null);
 
@@ -36,7 +44,7 @@ export default function AuthPage({ initialIsLogin = true, onSuccess, onBack }: A
         body.append('password', password);
         headers['Content-Type'] = 'application/x-www-form-urlencoded';
       } else {
-        body = JSON.stringify({ name, email, password });
+        body = JSON.stringify({ name, email, password, preferred_niches: preferredNiches });
         headers['Content-Type'] = 'application/json';
       }
 
@@ -125,6 +133,34 @@ export default function AuthPage({ initialIsLogin = true, onSuccess, onBack }: A
               className="w-full bg-[#0f0f0f] border border-white/10 rounded-xl p-3.5 text-sm text-white outline-none focus:border-white/30 transition-colors"
             />
           </div>
+
+          {!isLogin && (
+            <div className="pt-2">
+              <label className="text-xs font-medium text-neutral-400 uppercase tracking-wider mb-3 block">Market Focus (Optional)</label>
+              <div className="grid grid-cols-2 gap-2">
+                {NICHES.map(niche => {
+                  const isSelected = preferredNiches.includes(niche.id);
+                  return (
+                    <button
+                      key={niche.id}
+                      type="button"
+                      onClick={() => {
+                        setPreferredNiches(prev => 
+                          prev.includes(niche.id) 
+                            ? prev.filter(id => id !== niche.id)
+                            : [...prev, niche.id]
+                        );
+                      }}
+                      className={`p-3 rounded-xl border text-left text-xs transition-all flex items-center gap-2 ${isSelected ? 'bg-white text-black border-white font-medium' : 'bg-[#0f0f0f] text-neutral-400 border-white/5 hover:border-white/20'}`}
+                    >
+                      <span>{niche.icon}</span>
+                      <span className="truncate">{niche.label}</span>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          )}
 
           {error && (
             <div className="p-3 bg-red-500/10 border border-red-500/20 rounded-xl text-red-400 text-sm text-center">

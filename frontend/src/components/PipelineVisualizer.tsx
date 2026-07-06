@@ -11,6 +11,8 @@ const STEPS: Step[] = [
   { id: 4, name: "SEO Optimization", icon: "🚀" },
   { id: 5, name: "Marketing Content", icon: "📣" },
   { id: 6, name: "Validation & Quality", icon: "✅" },
+  { id: 7, name: "Conversion Optimization", icon: "📈" },
+  { id: 8, name: "Decision Engine", icon: "⚖️" },
 ]
 
 export default function PipelineVisualizer({ status }: { status: { step: number; loading: boolean } }) {

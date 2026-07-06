@@ -15,11 +15,14 @@ class CompetitorAgent:
             return {"error": "GROQ_API_KEY is not set."}
             
         prompt = f"""
-        Given the following product context, generate a competitor intelligence analysis in JSON format with the following keys:
-        - "market_positioning": A short sentence on how to position this product against competitors based on the provided RAG market data.
-        - "recommended_price": A strictly numeric price recommendation in Indian Rupees (INR) (e.g. "80000"). Ensure the price reflects realistic Indian market values (e.g., high-end electronics should be tens of thousands of INR, not just a direct USD numerical copy). If no market context is given, suggest a fair baseline in INR.
-        - "pricing_strategy": Explanation of why you chose this recommended_price.
-        - "competitor_insights": 2-3 bullet points analyzing typical competitor weaknesses or pricing trends we can exploit.
+        Given the following product context (which may include RAG market data), generate a competitor intelligence analysis in JSON format with the following keys:
+        - "market_positioning": A short sentence on how to position this product against competitors based on the provided data.
+        - "lowest_competitor_price": The lowest competitor price found in the context (strictly numeric in INR, e.g., "75000"). If none found, return null.
+        - "highest_competitor_price": The highest competitor price found in the context (strictly numeric in INR). If none found, return null.
+        - "average_market_price": The average competitor price (strictly numeric in INR). If none found, return null.
+        - "recommended_price": A strictly numeric price recommendation in INR (e.g. "74500"). Compare all available pricing so far and suggest the absolute best price to win the sale (usually slightly undercutting the lowest competitor price, or matching it with better positioning). Ensure the price reflects realistic Indian market values. If no market context is given, suggest a fair baseline in INR.
+        - "pricing_strategy": Explanation of how the recommended_price was calculated by comparing the best available competitor prices, and why it's the winning strategy.
+        - "competitor_insights": 2-3 bullet points analyzing typical competitor pricing trends or weaknesses we can exploit.
 
         Product Context:
         {product_context}
