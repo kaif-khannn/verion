@@ -583,7 +583,11 @@ async def fetch_products(platform: str = "shopify", db=Depends(get_db), current_
         try:
             url = f"{conn.shop_domain}/wp-json/wc/v3/products?per_page=10"
             async with httpx.AsyncClient() as client:
-                response = await client.get(url, auth=(conn.woo_consumer_key, conn.woo_consumer_secret))
+                params = {
+                    "consumer_key": conn.woo_consumer_key,
+                    "consumer_secret": conn.woo_consumer_secret
+                }
+                response = await client.get(url, auth=(conn.woo_consumer_key, conn.woo_consumer_secret), params=params)
                 response.raise_for_status()
                 data = response.json()
                 

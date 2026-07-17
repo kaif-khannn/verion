@@ -12,6 +12,10 @@ class WooCommercePublisher:
     def __init__(self, shop_url: str, consumer_key: str, consumer_secret: str):
         self.shop_url = shop_url.strip().rstrip("/")
         self.auth = (consumer_key, consumer_secret)
+        self.params = {
+            "consumer_key": consumer_key,
+            "consumer_secret": consumer_secret
+        }
         self.base_url = f"{self.shop_url}/wp-json/wc/v3"
         self.headers = {
             "Content-Type": "application/json",
@@ -76,6 +80,7 @@ class WooCommercePublisher:
         response = httpx.post(
             f"{self.base_url}/products",
             auth=self.auth,
+            params=self.params,
             headers=self.headers,
             json=payload,
             timeout=30,
@@ -105,6 +110,7 @@ class WooCommercePublisher:
             r = httpx.get(
                 f"{self.base_url}/system_status",
                 auth=self.auth,
+                params=self.params,
                 headers=self.headers,
                 timeout=10,
             )
