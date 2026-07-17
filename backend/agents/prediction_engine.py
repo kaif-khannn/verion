@@ -11,7 +11,7 @@ class PredictionEngine:
         api_key = os.getenv("GROQ_API_KEY")
         if api_key:
             self.client = Groq(api_key=api_key)
-            self.model = "llama-3.3-70b-versatile"
+            self.model = "llama-3.1-8b-instant"
         else:
             self.client = None
 
@@ -116,7 +116,9 @@ class PredictionEngine:
         variants_text = ""
         for i, v in enumerate(variants):
             label = chr(65 + i) # A, B, C...
-            variants_text += f"\nVariant {label} (ID: {v.get('variant_id')}):\n{json.dumps(v.get('seo', {}), indent=2)}\n"
+            seo_title = v.get('seo', {}).get('title', 'Unknown Title')
+            description = v.get('marketing', {}).get('platform_description', 'No description provided')
+            variants_text += f"\\nVariant {label} (ID: {v.get('variant_id')}):\\nTitle: {seo_title}\\nDescription: {description}\\n"
 
         prompt = f"""
         You are a highly advanced Synthetic AI Simulation Engine.
@@ -138,17 +140,18 @@ class PredictionEngine:
         Evaluate these product copy variants:
         {variants_text}
 
-        For each of the 8 personas, determine which variant they would purchase and WHY (in 1 short sentence), strictly referencing the psychological ground truth rules provided.
+        For each of the 8 personas, carefully read the descriptions and determine which variant they would purchase. 
+        You MUST provide a highly realistic and specific reason (2-3 sentences) that directly references the unique phrasing, tone, or specific details in the chosen variant's description that appealed to this persona's psychology. Avoid superficial or default choices.
         
         Return a JSON object strictly in this format:
         {{
             "agent_feed": [
                 {{
-                    "persona_name": "The Skeptic",
-                    "chosen_variant_id": "...",
-                    "reasoning": "..."
-                }},
-                ... (7 more personas)
+                    "persona_name": "[Insert Persona Name Here]",
+                    "chosen_variant_id": "[Insert Variant ID Here]",
+                    "reasoning": "[Insert 2-3 sentences of reasoning here]"
+                }}
+                // ... YOU MUST OUTPUT EXACTLY 8 COMPLETE OBJECTS IN THIS ARRAY, ONE FOR EACH PERSONA. DO NOT USE ELLIPSES, OUTPUT ALL 8.
             ]
         }}
         """

@@ -7,7 +7,7 @@ class SEOAgent:
         if api_key:
             self.client = Groq(api_key=api_key)
             # Using Llama 3.3 70B for fast, high-quality text generation
-            self.model = "llama-3.3-70b-versatile" 
+            self.model = "llama-3.1-8b-instant"
         else:
             self.client = None
 

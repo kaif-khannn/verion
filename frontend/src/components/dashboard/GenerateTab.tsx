@@ -181,9 +181,9 @@ export default function GenerateTab({ initialInput = '', initialImage = null }: 
     if (!resultData?.scored_variants || !resultData?.decision) return;
     setAbTestState('starting');
     try {
-      const variantsToTest = resultData.scored_variants.filter(v => 
-        resultData.decision?.variants_to_test?.includes(v.variant_id)
-      );
+      const variantsToTest = resultData.decision?.variants_to_test?.length
+        ? resultData.scored_variants.filter(v => resultData.decision.variants_to_test.includes(v.variant_id))
+        : resultData.scored_variants;
       const payload = {
         platform,
         product_id: 'prod_' + Math.random().toString(36).substring(7), // Mock ID for MVP
@@ -354,9 +354,6 @@ export default function GenerateTab({ initialInput = '', initialImage = null }: 
                       <p className="text-blue-300 text-sm">{resultData.decision.reason}</p>
                     </div>
                   </div>
-                  <div className="px-4 py-2 bg-blue-500/20 text-blue-300 font-bold uppercase tracking-widest text-xs rounded-full border border-blue-500/30">
-                    {resultData.decision.action.replace('_', ' ')}
-                  </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -409,24 +406,28 @@ export default function GenerateTab({ initialInput = '', initialImage = null }: 
                   </div>
                 )}
 
-                {/* Autonomous Action Buttons based on Decision */}
-                {resultData.decision.action === 'ab_test' && (
-                  <>
-                    {abTestState === 'idle' ? (
-                      <button onClick={startAbTest} className="w-full py-3 bg-blue-600 hover:bg-blue-500 text-white font-medium rounded-xl transition-colors flex items-center justify-center gap-2">
-                        Start Autonomous A/B Test
-                      </button>
-                    ) : abTestState === 'starting' ? (
-                       <button disabled className="w-full py-3 bg-neutral-700 text-white font-medium rounded-xl transition-colors flex items-center justify-center gap-2 opacity-70">
-                        Running Synthetic AI Simulation...
-                      </button>
-                    ) : (
-                      <button onClick={runLiveReview} className="w-full py-3 bg-green-600 hover:bg-green-500 text-white font-medium rounded-xl transition-colors flex items-center justify-center gap-2 shadow-[0_0_15px_rgba(22,163,74,0.4)] animate-pulse">
-                        <span className="w-2 h-2 rounded-full bg-white animate-ping"></span> Live Review
-                      </button>
-                    )}
-                  </>
-                )}
+                {/* Action Buttons (Always available so users can force tests) */}
+                <>
+                  <div className="flex items-center gap-4 mt-6 mb-2">
+                    <div className="flex-1 border-t border-white/5"></div>
+                    <span className="text-xs text-neutral-500 uppercase tracking-widest font-semibold">Simulation Override</span>
+                    <div className="flex-1 border-t border-white/5"></div>
+                  </div>
+                  {abTestState === 'idle' ? (
+                    <button onClick={startAbTest} className="w-full py-3 bg-[#0f0f0f] border border-blue-500/20 hover:border-blue-500/50 hover:bg-blue-500/5 text-blue-300 font-medium rounded-xl transition-all flex items-center justify-center gap-2">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                      {resultData.decision.action === 'ab_test' ? 'Start Autonomous A/B Test' : 'Force Synthetic A/B Test'}
+                    </button>
+                  ) : abTestState === 'starting' ? (
+                     <button disabled className="w-full py-3 bg-neutral-700 text-white font-medium rounded-xl transition-colors flex items-center justify-center gap-2 opacity-70">
+                      Running Synthetic AI Simulation...
+                    </button>
+                  ) : (
+                    <button onClick={runLiveReview} className="w-full py-3 bg-green-600 hover:bg-green-500 text-white font-medium rounded-xl transition-colors flex items-center justify-center gap-2 shadow-[0_0_15px_rgba(22,163,74,0.4)] animate-pulse">
+                      <span className="w-2 h-2 rounded-full bg-white animate-ping"></span> Live Review
+                    </button>
+                  )}
+                </>
               </div>
             )}
 

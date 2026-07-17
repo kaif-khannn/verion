@@ -31,7 +31,7 @@ export default function CopeSimulationModal({ variants, winningVariantId, onClos
   variants.forEach(v => voteCounts[v.variant_id] = 0);
   
   agentFeed.forEach(a => {
-    if (voteCounts[a.chosen_variant_id] !== undefined) {
+    if (a?.chosen_variant_id && voteCounts[a.chosen_variant_id] !== undefined) {
       voteCounts[a.chosen_variant_id]++;
     }
   });
@@ -56,11 +56,11 @@ export default function CopeSimulationModal({ variants, winningVariantId, onClos
       if (currentIndex < agentFeed.length) {
         setVisibleAgents(prev => [...prev, agentFeed[currentIndex]]);
         
-        // Update conversion rates based on votes so far
+        // Update scores based on votes so far (Base of 3, +1 per vote, max 10)
         const newRates = { ...conversionRates };
         variants.forEach(v => {
-           const votesSoFar = agentFeed.slice(0, currentIndex + 1).filter(a => a.chosen_variant_id === v.variant_id).length;
-           newRates[v.variant_id] = 2.0 + (votesSoFar * 0.5);
+           const votesSoFar = agentFeed.slice(0, currentIndex + 1).filter(a => a?.chosen_variant_id === v.variant_id).length;
+           newRates[v.variant_id] = Math.min(10, 3 + votesSoFar);
         });
         
         setConversionRates(newRates);
@@ -77,9 +77,9 @@ export default function CopeSimulationModal({ variants, winningVariantId, onClos
   // Calculate simulated lift (Winner vs average of losers)
   let lift = 0;
   if (phase === 'finished') {
-    const winnerConv = conversionRates[actualWinnerId] || 1.2;
-    const loserConvs = variants.filter(v => v.variant_id !== actualWinnerId).map(v => conversionRates[v.variant_id] || 1.2);
-    const avgLoserConv = loserConvs.length > 0 ? loserConvs.reduce((a,b) => a+b, 0) / loserConvs.length : 1.2;
+    const winnerConv = conversionRates[actualWinnerId] || 3;
+    const loserConvs = variants.filter(v => v.variant_id !== actualWinnerId).map(v => conversionRates[v.variant_id] || 3);
+    const avgLoserConv = loserConvs.length > 0 ? loserConvs.reduce((a,b) => a+b, 0) / loserConvs.length : 3;
     lift = ((winnerConv - avgLoserConv) / (avgLoserConv || 1)) * 100;
   }
 
@@ -131,21 +131,28 @@ export default function CopeSimulationModal({ variants, winningVariantId, onClos
               {variants.map((variant, idx) => {
                 const label = String.fromCharCode(65 + idx);
                 const isWin = variant.variant_id === actualWinnerId;
-                const convRate = conversionRates[variant.variant_id] || 1.2;
+                const convRate = conversionRates[variant.variant_id] || 3;
 
                 return (
-                  <div key={variant.variant_id} className={`border rounded-2xl p-6 transition-all duration-500 ${phase === 'finished' ? (isWin ? 'border-green-500/50 bg-green-500/5 scale-105 shadow-[0_0_20px_rgba(34,197,94,0.2)]' : 'border-white/5 bg-black/50 opacity-50 scale-95') : 'border-white/10 bg-[#0f0f0f]'}`}>
+                  <div key={variant.variant_id} className={`border rounded-2xl p-6 transition-all duration-500 relative ${phase === 'finished' ? (isWin ? 'border-green-500/50 bg-green-500/5 scale-105 shadow-[0_0_20px_rgba(34,197,94,0.2)] z-20' : 'border-white/5 bg-black/50 opacity-50 scale-95 z-10') : 'border-white/10 bg-[#0f0f0f]'}`}>
+                    {phase === 'finished' && isWin && (
+                      <div className="absolute -top-3 right-4 z-30">
+                        <span className="text-xs font-bold uppercase tracking-widest text-green-400 bg-green-950 border border-green-500/50 px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-lg shadow-green-500/20">
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" className="text-yellow-500"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                          Winner
+                        </span>
+                      </div>
+                    )}
                     <div className="flex justify-between items-start mb-4">
                       <span className="text-xs font-bold uppercase tracking-widest text-neutral-400 bg-white/5 px-3 py-1 rounded-full">Variant {label}</span>
-                      {phase === 'finished' && isWin && <span className="text-xs font-bold uppercase tracking-widest text-green-400 bg-green-500/10 border border-green-500/20 px-3 py-1 rounded-full flex items-center gap-1">🏆 Winner</span>}
                     </div>
                     <h3 className="text-lg text-white font-medium mb-6 line-clamp-3" title={variant.seo?.title}>{variant.seo?.title || 'Generated Copy'}</h3>
                     
                     <div className="space-y-4">
                       <div className="pt-4 border-t border-white/5">
-                        <p className="text-sm text-neutral-500 mb-1">Simulated Conv. Rate</p>
+                        <p className="text-sm text-neutral-500 mb-1">Simulated Score</p>
                         <p className={`text-3xl font-bold font-mono ${phase === 'finished' && isWin ? 'text-green-400' : 'text-white'}`}>
-                          {convRate.toFixed(2)}%
+                          {convRate}<span className="text-xl text-neutral-500 font-sans">/10</span>
                         </p>
                       </div>
                     </div>
@@ -172,27 +179,27 @@ export default function CopeSimulationModal({ variants, winningVariantId, onClos
           </div>
 
           {/* AI Agent Feed */}
-          <div className="bg-[#0a0a0a] border border-white/5 rounded-2xl p-5 flex flex-col h-full relative z-10">
+          <div className="bg-[#0a0a0a] border border-white/5 rounded-2xl p-5 flex flex-col lg:sticky lg:top-0 h-[586px] relative z-10">
             <h3 className="text-white font-semibold mb-4 flex items-center gap-2">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-blue-400"><path d="M12 2v20M2 12h20"/></svg>
               Live Agent Feed
             </h3>
             <div className="flex-1 space-y-4 overflow-y-auto pr-2 custom-scrollbar">
               {visibleAgents.map((agent, idx) => {
-                const variantIndex = variants.findIndex(v => v.variant_id === agent.chosen_variant_id);
+                const variantIndex = variants.findIndex(v => v.variant_id === agent?.chosen_variant_id);
                 const label = variantIndex >= 0 ? String.fromCharCode(65 + variantIndex) : '?';
                 
                 return (
                   <div key={idx} className="bg-neutral-900 border border-white/10 rounded-xl p-4 animate-in slide-in-from-bottom-2 fade-in duration-300">
                     <div className="flex items-center justify-between mb-2">
                       <span className="text-xs font-bold text-white uppercase tracking-widest bg-blue-500/20 text-blue-400 px-2 py-1 rounded">
-                        {agent.persona_name}
+                        {agent?.persona_name || 'Unknown Persona'}
                       </span>
                       <span className="text-xs font-bold px-2 py-1 rounded bg-indigo-500/20 text-indigo-400">
                         Chose Variant {label}
                       </span>
                     </div>
-                    <p className="text-sm text-neutral-400 italic">"{agent.reasoning}"</p>
+                    <p className="text-sm text-neutral-400 italic">"{agent?.reasoning || 'No reasoning provided.'}"</p>
                   </div>
                 );
               })}

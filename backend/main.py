@@ -12,7 +12,7 @@ from pydantic import BaseModel
 from datetime import datetime, timedelta
 import random
 
-load_dotenv()
+load_dotenv(override=True)
 
 from orchestrator import Orchestrator
 from db.database import get_db, init_db

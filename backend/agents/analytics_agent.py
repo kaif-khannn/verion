@@ -7,7 +7,7 @@ class AnalyticsAgent:
         api_key = os.getenv("GROQ_API_KEY")
         if api_key:
             self.client = Groq(api_key=api_key)
-            self.model = "llama-3.3-70b-versatile"
+            self.model = "llama-3.1-8b-instant"
         else:
             self.client = None
 
