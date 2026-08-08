@@ -1,23 +1,27 @@
 import os
-from groq import Groq
 import json
+import asyncio
+from typing import List, Dict, Any
+from services.llm_gateway import llm_gateway
+
 
 class PredictionEngine:
     """
-    Conversion Optimization Prediction Engine (COPE)
-    MVP version using LLM-as-a-judge heuristics.
+    Conversion Optimization Prediction Engine (COPE) & Neural Persona Engine.
+    Evaluates variants using LLM-as-a-judge scoring and runs synthetic 8-persona A/B simulations.
+    All calls are routed through LLMGateway asynchronously.
     """
-    def __init__(self):
-        api_key = os.getenv("GROQ_API_KEY")
-        if api_key:
-            self.client = Groq(api_key=api_key)
-            self.model = "llama-3.1-8b-instant"
-        else:
-            self.client = None
 
-    def score_variants(self, product_context: str, variants: list) -> list:
-        if not self.client:
-            return variants  # Fallback to unscored variants
+    def __init__(self, gateway=None):
+        self.gateway = gateway or llm_gateway
+        self.model = "llama-3.1-8b-instant"
+
+    async def score_variants(self, product_context: str, variants: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+        """
+        Scores generated variants on CTR, purchase probability, SEO, brand compliance.
+        """
+        if not variants:
+            return []
 
         prompt = f"""
         You are a Principal AI E-commerce Optimization Expert. 
@@ -42,30 +46,24 @@ class PredictionEngine:
         Return a JSON object containing a "scored_variants" array with the prediction objects.
         """
 
+        messages = [
+            {"role": "system", "content": "You are a specialized Conversion Optimization Engine. Always return valid JSON."},
+            {"role": "user", "content": prompt},
+        ]
+
         try:
-            chat_completion = self.client.chat.completions.create(
-                messages=[
-                    {
-                        "role": "system",
-                        "content": "You are a specialized Conversion Optimization Engine. Always return valid JSON."
-                    },
-                    {
-                        "role": "user",
-                        "content": prompt
-                    }
-                ],
+            raw_response = await self.gateway.generate_chat(
+                messages=messages,
                 model=self.model,
                 temperature=0.3,
                 max_tokens=2048,
-                response_format={"type": "json_object"}
+                response_format={"type": "json_object"},
             )
-            
-            predictions = json.loads(chat_completion.choices[0].message.content)
-            
-            # Merge predictions back into the variants
+            predictions = json.loads(raw_response)
+
             scored = []
             pred_map = {str(p.get("variant_id")): p for p in predictions.get("scored_variants", [])}
-            
+
             for v in variants:
                 vid = str(v.get("variant_id"))
                 v_copy = dict(v)
@@ -78,50 +76,54 @@ class PredictionEngine:
                         "expected_ctr": 2.0,
                         "seo_ranking_potential": "Medium",
                         "brand_compliance": 80,
-                        "confidence_score": 50
+                        "confidence_score": 50,
                     }
                 scored.append(v_copy)
-                
+
             # Sort by overall score descending
             scored.sort(key=lambda x: x.get("cope_scores", {}).get("overall_score", 0), reverse=True)
             return scored
-            
+
         except Exception as e:
-            print(f"PredictionEngine Error: {e}")
-            # Fallback with dummy scores if it fails
+            # Fallback with baseline scores if call fails
             for v in variants:
                 v["cope_scores"] = {
-                    "overall_score": 50, "purchase_probability": 50, "expected_ctr": 2.0,
-                    "seo_ranking_potential": "Medium", "brand_compliance": 80, "confidence_score": 50
+                    "overall_score": 50,
+                    "purchase_probability": 50,
+                    "expected_ctr": 2.0,
+                    "seo_ranking_potential": "Medium",
+                    "brand_compliance": 80,
+                    "confidence_score": 50,
                 }
             return variants
 
-    def run_synthetic_simulation(self, variants: list) -> dict:
+    async def run_synthetic_simulation(self, variants: List[Dict[str, Any]]) -> Dict[str, Any]:
         """
+        NEURAL PERSONA ENGINE:
         Runs a RAG-based synthetic AI simulation for A/B/C testing using 8 buyer personas
         and e-commerce psychology datasets as context.
         """
-        if not self.client:
-            return {"error": "Prediction Engine requires an API Key."}
-
         # Load RAG dataset
         rag_context = ""
         dataset_path = os.path.join(os.path.dirname(__file__), "..", "knowledge_base", "ecommerce_insights.txt")
         try:
-            with open(dataset_path, "r", encoding="utf-8") as f:
-                rag_context = f.read()
+            loop = asyncio.get_event_loop()
+            def _read_file():
+                with open(dataset_path, "r", encoding="utf-8") as f:
+                    return f.read()
+            rag_context = await loop.run_in_executor(None, _read_file)
         except Exception as e:
-            print(f"Could not load RAG dataset: {e}")
+            print(f"Could not load RAG dataset for simulation: {e}")
 
         variants_text = ""
         for i, v in enumerate(variants):
-            label = chr(65 + i) # A, B, C...
-            seo_title = v.get('seo', {}).get('title', 'Unknown Title')
-            description = v.get('marketing', {}).get('platform_description', 'No description provided')
-            variants_text += f"\\nVariant {label} (ID: {v.get('variant_id')}):\\nTitle: {seo_title}\\nDescription: {description}\\n"
+            label = chr(65 + i)  # A, B, C...
+            seo_title = v.get("seo", {}).get("title", "Unknown Title")
+            description = v.get("marketing", {}).get("platform_description", v.get("marketing", {}).get("whatsapp", v.get("marketing", {}).get("instagram_caption", "No description provided")))
+            variants_text += f"\nVariant {label} (ID: {v.get('variant_id')}):\nTitle: {seo_title}\nDescription: {description}\n"
 
         prompt = f"""
-        You are a highly advanced Synthetic AI Simulation Engine.
+        You are a highly advanced Synthetic AI Simulation Engine (Neural Persona Engine).
         Your job is to simulate a live Multivariate Test by instantiating 8 distinct E-commerce Buyer Personas:
         1. The Comparison Shopper (Pragmatic & Analytical)
         2. The Bargain Hunter (Price & Value Driven)
@@ -151,32 +153,24 @@ class PredictionEngine:
                     "chosen_variant_id": "[Insert Variant ID Here]",
                     "reasoning": "[Insert 2-3 sentences of reasoning here]"
                 }}
-                // ... YOU MUST OUTPUT EXACTLY 8 COMPLETE OBJECTS IN THIS ARRAY, ONE FOR EACH PERSONA. DO NOT USE ELLIPSES, OUTPUT ALL 8.
+                // MUST OUTPUT EXACTLY 8 COMPLETE OBJECTS IN THIS ARRAY, ONE FOR EACH PERSONA.
             ]
         }}
         """
 
+        messages = [
+            {"role": "system", "content": "You are a specialized Synthetic Simulation Engine. Always return valid JSON."},
+            {"role": "user", "content": prompt},
+        ]
+
         try:
-            chat_completion = self.client.chat.completions.create(
-                messages=[
-                    {
-                        "role": "system",
-                        "content": "You are a specialized Synthetic Simulation Engine. Always return valid JSON."
-                    },
-                    {
-                        "role": "user",
-                        "content": prompt
-                    }
-                ],
+            raw_response = await self.gateway.generate_chat(
+                messages=messages,
                 model=self.model,
                 temperature=0.7,
                 max_tokens=2048,
-                response_format={"type": "json_object"}
+                response_format={"type": "json_object"},
             )
-            
-            return json.loads(chat_completion.choices[0].message.content)
-            
+            return json.loads(raw_response)
         except Exception as e:
-            print(f"Simulation Error: {e}")
-            return {"error": str(e)}
-
+            return {"error": f"Neural Persona Engine Simulation Error: {str(e)}"}

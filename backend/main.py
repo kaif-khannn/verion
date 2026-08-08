@@ -14,6 +14,7 @@ import random
 
 load_dotenv(override=True)
 
+from services.llm_gateway import llm_gateway
 from orchestrator import Orchestrator
 from db.database import get_db, init_db
 from db import crud
@@ -216,12 +217,21 @@ async def generate_listing(
         except Exception:
             pass
 
-    result = orchestrator.process_request(
+    result = await orchestrator.process_request(
         raw_input=raw_description,
         images=pil_images if pil_images else None,
         platform=platform,
     )
     return result
+
+
+@app.get("/api/metrics")
+async def get_system_metrics():
+    """Returns real-time telemetry metrics from the LLM Gateway."""
+    return {
+        "status": "success",
+        "metrics": llm_gateway.get_metrics()
+    }
 
 
 # ── Image Upload Route (ImageKit) ──────────────────────────────────────────────
@@ -459,7 +469,7 @@ async def start_experiment(body: ExperimentStartRequest, db=Depends(get_db), cur
 async def simulate_experiment(body: SimulationRequest, current_user: User = Depends(get_current_user)):
     from agents.prediction_engine import PredictionEngine
     engine = PredictionEngine()
-    result = engine.run_synthetic_simulation(body.variants)
+    result = await engine.run_synthetic_simulation(body.variants)
     if "error" in result:
         raise HTTPException(status_code=500, detail=result["error"])
     return {"status": "success", "data": result}
@@ -475,13 +485,13 @@ async def get_active_experiments(db=Depends(get_db), current_user: User = Depend
 @app.get("/api/insights/trends")
 async def get_trends(niche: str):
     agent = TrendAgent()
-    trends_data = agent.get_trending_products(niche)
+    trends_data = await agent.get_trending_products(niche)
     return {"status": "success", "data": trends_data}
 
 @app.post("/api/insights/trend-details")
 async def get_trend_details(body: TrendDetailRequest):
     agent = TrendAgent()
-    insights = agent.analyze_trend(body.category, body.description)
+    insights = await agent.analyze_trend(body.category, body.description)
     return {"status": "success", "insights": insights}
 @app.get("/api/stats")
 async def get_stats():
@@ -530,7 +540,7 @@ async def get_analytics():
         base_seo += random.randint(0, 2)
 
     agent = AnalyticsAgent()
-    insights = agent.generate_insights(chart_data, current_stats)
+    insights = await agent.generate_insights(chart_data, current_stats)
 
     return {
         "chart_data": chart_data,
