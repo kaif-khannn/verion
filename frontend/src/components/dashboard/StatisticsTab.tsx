@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
 import { marked } from 'marked';
 import DOMPurify from 'dompurify';
 
@@ -151,30 +151,52 @@ export default function StatisticsTab() {
             </div>
           ) : (
             analytics?.chart_data && (
-              <div className="h-[300px] w-full">
-                <ResponsiveContainer width="100%" height="100%">
-                  <AreaChart data={analytics.chart_data} margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
-                    <defs>
-                      <linearGradient id="colorOpt" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="5%" stopColor="#8b5cf6" stopOpacity={0.3} />
-                        <stop offset="95%" stopColor="#8b5cf6" stopOpacity={0} />
-                      </linearGradient>
-                      <linearGradient id="colorSeo" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="5%" stopColor="#10b981" stopOpacity={0.3} />
-                        <stop offset="95%" stopColor="#10b981" stopOpacity={0} />
-                      </linearGradient>
-                    </defs>
-                    <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.05)" vertical={false} />
-                    <XAxis dataKey="date" stroke="#737373" fontSize={12} tickLine={false} axisLine={false} />
-                    <YAxis stroke="#737373" fontSize={12} tickLine={false} axisLine={false} />
-                    <Tooltip
-                      contentStyle={{ backgroundColor: '#171717', borderColor: 'rgba(255,255,255,0.1)', borderRadius: '12px' }}
-                      itemStyle={{ color: '#e5e5e5' }}
-                    />
-                    <Area type="monotone" dataKey="optimizations" stroke="#8b5cf6" strokeWidth={3} fillOpacity={1} fill="url(#colorOpt)" name="Optimizations" />
-                    <Area type="monotone" dataKey="seo_score" stroke="#10b981" strokeWidth={3} fillOpacity={1} fill="url(#colorSeo)" name="Avg SEO Score" />
-                  </AreaChart>
-                </ResponsiveContainer>
+              <div>
+                {/* Legend */}
+                <div className="flex items-center gap-6 mb-4">
+                  <div className="flex items-center gap-2">
+                    <div className="w-3 h-3 rounded-full bg-emerald-500"></div>
+                    <span className="text-xs text-neutral-400">Avg SEO Score <span className="text-neutral-500">(0–100 quality scale)</span></span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="w-3 h-3 rounded-full bg-violet-500"></div>
+                    <span className="text-xs text-neutral-400">Daily Optimizations <span className="text-neutral-500">(product listings generated)</span></span>
+                  </div>
+                </div>
+
+                <div className="h-[300px] w-full">
+                  <ResponsiveContainer width="100%" height="100%">
+                    <AreaChart data={analytics.chart_data} margin={{ top: 10, right: 40, left: 0, bottom: 0 }}>
+                      <defs>
+                        <linearGradient id="colorOpt" x1="0" y1="0" x2="0" y2="1">
+                          <stop offset="5%" stopColor="#8b5cf6" stopOpacity={0.25} />
+                          <stop offset="95%" stopColor="#8b5cf6" stopOpacity={0} />
+                        </linearGradient>
+                        <linearGradient id="colorSeo" x1="0" y1="0" x2="0" y2="1">
+                          <stop offset="5%" stopColor="#10b981" stopOpacity={0.3} />
+                          <stop offset="95%" stopColor="#10b981" stopOpacity={0} />
+                        </linearGradient>
+                      </defs>
+                      <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.05)" vertical={false} />
+                      <XAxis dataKey="date" stroke="#737373" fontSize={12} tickLine={false} axisLine={false} />
+                      {/* Left Y-axis: SEO Score (0-100) */}
+                      <YAxis yAxisId="seo" domain={[0, 100]} stroke="#10b981" fontSize={11} tickLine={false} axisLine={false} tickFormatter={(v) => `${v}`} label={{ value: 'SEO Score', angle: -90, position: 'insideLeft', fill: '#10b981', fontSize: 10, dx: -4 }} />
+                      {/* Right Y-axis: Optimizations (count) */}
+                      <YAxis yAxisId="opt" orientation="right" stroke="#8b5cf6" fontSize={11} tickLine={false} axisLine={false} label={{ value: 'Optimizations', angle: 90, position: 'insideRight', fill: '#8b5cf6', fontSize: 10, dx: 8 }} />
+                      <Tooltip
+                        contentStyle={{ backgroundColor: '#171717', borderColor: 'rgba(255,255,255,0.1)', borderRadius: '12px', padding: '10px 14px' }}
+                        labelStyle={{ color: '#fff', fontWeight: 600, marginBottom: 6 }}
+                        formatter={(value: number, name: string) => {
+                          if (name === 'seo_score') return [`${value} / 100`, '🟢 Avg SEO Score'];
+                          if (name === 'optimizations') return [value, '🟣 Daily Optimizations'];
+                          return [value, name];
+                        }}
+                      />
+                      <Area yAxisId="seo" type="monotone" dataKey="seo_score" stroke="#10b981" strokeWidth={2.5} fillOpacity={1} fill="url(#colorSeo)" dot={false} activeDot={{ r: 5, fill: '#10b981' }} />
+                      <Area yAxisId="opt" type="monotone" dataKey="optimizations" stroke="#8b5cf6" strokeWidth={2.5} fillOpacity={1} fill="url(#colorOpt)" dot={false} activeDot={{ r: 5, fill: '#8b5cf6' }} />
+                    </AreaChart>
+                  </ResponsiveContainer>
+                </div>
               </div>
             )
           )}

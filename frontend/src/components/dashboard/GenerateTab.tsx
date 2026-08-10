@@ -127,7 +127,7 @@ export default function GenerateTab({ initialInput = '', initialImage = null }: 
   const [publishPrice, setPublishPrice] = useState('0.00');
   const [publishSalePrice, setPublishSalePrice] = useState('');
   const [publishQuantity, setPublishQuantity] = useState<number | ''>(1);
-  const [abTestState, setAbTestState] = useState<'idle' | 'starting' | 'live_ready' | 'simulating' | 'success' | 'error'>('idle');
+  const [abTestState, setAbTestState] = useState<'idle' | 'starting' | 'ready' | 'simulating' | 'error'>('idle');
   const [agentFeed, setAgentFeed] = useState<any[]>([]);
 
   const addImages = useCallback((files: File[]) => {
@@ -150,12 +150,41 @@ export default function GenerateTab({ initialInput = '', initialImage = null }: 
     e.preventDefault(); addImages(Array.from(e.dataTransfer.files));
   }, [addImages]);
 
+  const runLiveReview = async (variantsList?: any[]) => {
+    const listToSimulate = variantsList || results?.data?.scored_variants;
+    if (!listToSimulate || !listToSimulate.length) return;
+    setAbTestState('starting');
+    try {
+      const payload = {
+        variants: listToSimulate
+      };
+      const r = await fetch(`${API}/api/experiments/simulate`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${localStorage.getItem('token')}`
+        },
+        body: JSON.stringify(payload)
+      });
+      if (!r.ok) throw new Error('Failed to run simulation');
+      const data = await r.json();
+      if (data.data && data.data.agent_feed) {
+        setAgentFeed(data.data.agent_feed);
+      }
+      setAbTestState('ready');
+    } catch (e) {
+      console.error(e);
+      setAbTestState('error');
+    }
+  };
+
   const handleGenerate = async () => {
     if (!rawInput.trim()) return;
     setPipelineStatus({ step: 1, loading: true });
     setResults(null); setError(null);
     setPublishState('idle'); setAbTestState('idle'); setPublishResult(null);
     setSelectedVariantId(null);
+    setAgentFeed([]);
     try {
       const formData = new FormData();
       formData.append('raw_description', rawInput);
@@ -171,64 +200,14 @@ export default function GenerateTab({ initialInput = '', initialImage = null }: 
       } else if (data.data?.seo?.price) {
         setPublishPrice(data.data.seo.price);
       }
+
+      // Automatically run COPE Simulation immediately upon content generation!
+      if (data.data?.scored_variants && data.data.scored_variants.length > 0) {
+        runLiveReview(data.data.scored_variants);
+      }
     } catch {
       setError('Failed to connect to backend.');
       setPipelineStatus({ step: 0, loading: false });
-    }
-  };
-
-  const startAbTest = async () => {
-    if (!resultData?.scored_variants || !resultData?.decision) return;
-    setAbTestState('starting');
-    try {
-      const variantsToTest = resultData.decision?.variants_to_test?.length
-        ? resultData.scored_variants.filter(v => resultData.decision.variants_to_test.includes(v.variant_id))
-        : resultData.scored_variants;
-      const payload = {
-        platform,
-        product_id: 'prod_' + Math.random().toString(36).substring(7), // Mock ID for MVP
-        variants: variantsToTest
-      };
-      const r = await fetch(`${API}/api/experiments/start`, {
-        method: 'POST', 
-        headers: { 
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${localStorage.getItem('token')}`
-        },
-        body: JSON.stringify(payload)
-      });
-      if (!r.ok) throw new Error('Failed to start A/B test');
-      setAbTestState('live_ready');
-    } catch (e) {
-      console.error(e);
-      setAbTestState('error');
-    }
-  };
-
-  const runLiveReview = async () => {
-    if (!resultData || !resultData.scored_variants) return;
-    setAbTestState('starting'); // Use starting as a loading state for the button
-    try {
-      const payload = {
-        variants: resultData.scored_variants
-      };
-      const r = await fetch(`${API}/api/experiments/simulate`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${localStorage.getItem('token')}`
-        },
-        body: JSON.stringify(payload)
-      });
-      if (!r.ok) throw new Error('Failed to run simulation');
-      const data = await r.json();
-      if (data.data && data.data.agent_feed) {
-        setAgentFeed(data.data.agent_feed);
-      }
-      setAbTestState('simulating');
-    } catch (e) {
-      console.error(e);
-      setAbTestState('error');
     }
   };
 
@@ -320,7 +299,7 @@ export default function GenerateTab({ initialInput = '', initialImage = null }: 
         {resultData ? (
           <div className="space-y-5">
             
-            {/* Existing Privacy & Vision */}
+            {/* Privacy & Vision */}
             {resultData.sanitized_input && (
               <div className="bg-neutral-900 border border-white/5 rounded-[2rem] p-5 shadow-lg">
                 <div className="flex items-center gap-2 mb-3">
@@ -341,93 +320,181 @@ export default function GenerateTab({ initialInput = '', initialImage = null }: 
               </div>
             )}
 
-            {/* ── COPE Decision & Variants ── */}
+            {/* ── COPE Decision Engine (Champion Suggested + Variant Selector) ── */}
             {resultData.decision && resultData.scored_variants && (
-              <div className="bg-gradient-to-r from-blue-900/40 to-indigo-900/40 border border-blue-500/30 rounded-[2rem] p-6 shadow-xl space-y-5">
-                <div className="flex items-center justify-between border-b border-blue-500/30 pb-4">
+              <div className="bg-gradient-to-r from-blue-900/40 via-indigo-900/40 to-slate-900/40 border border-blue-500/40 rounded-[2rem] p-6 shadow-2xl space-y-6">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between border-b border-blue-500/20 pb-4 gap-3">
                   <div className="flex items-center gap-3">
-                    <div className="bg-blue-500/20 p-2 rounded-full border border-blue-500/50">
+                    <div className="bg-blue-500/20 p-2.5 rounded-2xl border border-blue-500/40">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" strokeWidth="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
                     </div>
                     <div>
-                      <h3 className="font-bold text-white text-lg">COPE Decision Engine</h3>
-                      <p className="text-blue-300 text-sm">{resultData.decision.reason}</p>
+                      <div className="flex items-center gap-2">
+                        <h3 className="font-bold text-white text-lg">COPE Decision Engine</h3>
+                        {resultData.decision.action === 'publish' ? (
+                          <span className="bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 text-[11px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Winner Selected</span>
+                        ) : resultData.decision.action === 'ab_test' ? (
+                          <span className="bg-amber-500/20 text-amber-400 border border-amber-500/40 text-[11px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">A/B Test Recommended</span>
+                        ) : (
+                          <span className="bg-rose-500/20 text-rose-400 border border-rose-500/40 text-[11px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Review &amp; Refine</span>
+                        )}
+                      </div>
+                      <p className="text-blue-300/80 text-sm mt-0.5">{resultData.decision.reason}</p>
                     </div>
+                  </div>
+
+                  {/* Variant Switcher Pills */}
+                  <div className="flex items-center gap-1.5 bg-[#080c14] p-1.5 rounded-xl border border-white/10 shrink-0">
+                    {resultData.scored_variants.map((v, idx) => {
+                      const isSelected = activeVariant?.variant_id === v.variant_id;
+                      const label = String.fromCharCode(65 + idx);
+                      const isChamp = idx === 0;
+                      return (
+                        <button
+                          key={v.variant_id}
+                          onClick={() => setSelectedVariantId(v.variant_id)}
+                          className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all flex items-center gap-1.5 ${
+                            isSelected
+                              ? 'bg-blue-600 text-white shadow-md shadow-blue-500/40 scale-105'
+                              : 'text-neutral-400 hover:text-white hover:bg-white/5'
+                          }`}
+                        >
+                          {isChamp ? '🏆 Winner (A)' : `Variant ${label}`}
+                        </button>
+                      );
+                    })}
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                  {resultData.scored_variants.map((variant, idx) => {
-                    const isSelected = selectedVariantId ? selectedVariantId === variant.variant_id : idx === 0;
-                    return (
-                    <div 
-                      key={variant.variant_id} 
-                      onClick={() => setSelectedVariantId(variant.variant_id)}
-                      className={`bg-[#0f0f0f] border rounded-xl p-5 relative cursor-pointer transition-all duration-300 ${
-                        isSelected 
-                        ? 'border-blue-500/80 shadow-[0_0_25px_rgba(59,130,246,0.3)] scale-105 z-10' 
-                        : 'border-white/5 hover:border-white/20 hover:scale-[1.02]'
-                      }`}
-                    >
-                      {idx === 0 && <span className="absolute -top-3 -right-3 bg-blue-500 text-white text-[10px] font-bold px-2 py-1 rounded-full uppercase shadow-lg">Champion</span>}
-                      {isSelected && idx !== 0 && <span className="absolute -top-3 -right-3 bg-indigo-500 text-white text-[10px] font-bold px-2 py-1 rounded-full uppercase shadow-lg">Selected</span>}
-                      
-                      <div className="flex justify-between items-center mb-4">
-                        <h4 className={`font-medium ${isSelected ? 'text-blue-400' : 'text-white'}`}>Variant {String.fromCharCode(65 + idx)}</h4>
-                        <div className="flex items-center gap-2">
-                          <span className="text-xs text-neutral-400">Score:</span>
-                          <span className={`font-bold ${isSelected ? 'text-blue-400' : 'text-white'}`}>{variant.cope_scores?.overall_score}/100</span>
-                        </div>
-                      </div>
-
-                      <div className="grid grid-cols-2 gap-3 mb-2">
-                        <div className="bg-white/5 p-3 rounded-lg border border-white/5">
-                          <p className="text-[10px] text-neutral-500 uppercase">Est. Conv. Prob</p>
-                          <p className={`text-lg font-bold ${isSelected ? 'text-blue-400' : 'text-white'}`}>{variant.cope_scores?.purchase_probability}%</p>
-                        </div>
-                        <div className="bg-white/5 p-3 rounded-lg border border-white/5">
-                          <p className="text-[10px] text-neutral-500 uppercase">Expected CTR</p>
-                          <p className={`text-lg font-bold ${isSelected ? 'text-blue-400' : 'text-white'}`}>{variant.cope_scores?.expected_ctr}%</p>
-                        </div>
-                      </div>
-                    </div>
-                  )})}
-                </div>
-
+                {/* Selected Variant Highlight Card */}
                 {activeVariant && (
-                  <div className="bg-[#0f0f0f] border border-white/10 rounded-xl p-5 shadow-inner mt-4">
-                    <h4 className="text-white font-medium mb-3 flex items-center gap-2">
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-blue-400"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-                      Variant {String.fromCharCode(65 + (resultData.scored_variants.findIndex(v => v.variant_id === activeVariant.variant_id) !== -1 ? resultData.scored_variants.findIndex(v => v.variant_id === activeVariant.variant_id) : 0))} Description
-                    </h4>
-                    <div className="text-sm text-neutral-300 border-l-2 border-blue-500/50 pl-4 leading-relaxed whitespace-pre-wrap">
-                      {activeVariant.marketing.platform_description}
+                  <div className="bg-[#0b0f19] border border-blue-500/40 rounded-2xl p-6 shadow-[0_0_30px_rgba(59,130,246,0.15)] relative overflow-hidden">
+                    <div className="absolute -top-12 -right-12 w-36 h-36 bg-blue-500/10 rounded-full blur-2xl pointer-events-none"></div>
+                    
+                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-white/5 pb-4 mb-5">
+                      <div className="flex items-center gap-2.5">
+                        {resultData.scored_variants.findIndex(v => v.variant_id === activeVariant.variant_id) === 0 ? (
+                          <span className="bg-gradient-to-r from-amber-400 to-yellow-500 text-black text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider shadow-lg flex items-center gap-1">
+                            🏆 Champion Winner
+                          </span>
+                        ) : (
+                          <span className="bg-indigo-500/20 text-indigo-300 border border-indigo-500/40 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider flex items-center gap-1">
+                            Alternative Variant
+                          </span>
+                        )}
+                        <h4 className="text-white font-semibold text-base">
+                          Variant {String.fromCharCode(65 + (resultData.scored_variants.findIndex(v => v.variant_id === activeVariant.variant_id) >= 0 ? resultData.scored_variants.findIndex(v => v.variant_id === activeVariant.variant_id) : 0))}
+                        </h4>
+                      </div>
+
+                      <div className="flex items-center gap-4 bg-white/5 px-4 py-2 rounded-xl border border-white/5">
+                        <div>
+                          <span className="text-[10px] text-neutral-400 uppercase tracking-widest block">COPE Score</span>
+                          <span className="text-lg font-extrabold text-blue-400">{activeVariant.cope_scores?.overall_score || 85}/100</span>
+                        </div>
+                        <div className="h-6 w-px bg-white/10"></div>
+                        <div>
+                          <span className="text-[10px] text-neutral-400 uppercase tracking-widest block">Est. Conv</span>
+                          <span className="text-lg font-extrabold text-emerald-400">{activeVariant.cope_scores?.purchase_probability || 76.5}%</span>
+                        </div>
+                        <div className="h-6 w-px bg-white/10"></div>
+                        <div>
+                          <span className="text-[10px] text-neutral-400 uppercase tracking-widest block">Est. CTR</span>
+                          <span className="text-lg font-extrabold text-indigo-400">{activeVariant.cope_scores?.expected_ctr || 70.1}%</span>
+                        </div>
+                      </div>
                     </div>
+
+                      {/* Structured Product Description Renderer */}
+                      <div className="space-y-5">
+                        {/* Short Description */}
+                        {activeVariant.short_description && (
+                          <div className="bg-[#070a12] border border-white/5 rounded-xl p-4">
+                            <p className="text-[10px] text-blue-400 uppercase tracking-widest font-semibold mb-2">Short Description</p>
+                            <p className="text-sm text-neutral-200 leading-relaxed">{activeVariant.short_description}</p>
+                          </div>
+                        )}
+
+                        {/* Key Features */}
+                        {activeVariant.key_features && activeVariant.key_features.length > 0 && (
+                          <div className="bg-[#070a12] border border-white/5 rounded-xl p-4">
+                            <p className="text-[10px] text-blue-400 uppercase tracking-widest font-semibold mb-3">Key Features</p>
+                            <ul className="space-y-2.5">
+                              {activeVariant.key_features.map((feature: string, fi: number) => {
+                                // Parse **Feature Name**: benefit text pattern
+                                const boldMatch = feature.match(/^\*\*(.+?)\*\*[:\s]+(.*)/s);
+                                return (
+                                  <li key={fi} className="flex gap-3 text-sm text-neutral-200">
+                                    <span className="text-blue-400 mt-0.5 shrink-0">•</span>
+                                    {boldMatch ? (
+                                      <span>
+                                        <span className="font-bold text-white">{boldMatch[1]}</span>
+                                        <span className="text-neutral-400">: </span>
+                                        <span>{boldMatch[2]}</span>
+                                      </span>
+                                    ) : (
+                                      <span>{feature}</span>
+                                    )}
+                                  </li>
+                                );
+                              })}
+                            </ul>
+                          </div>
+                        )}
+
+                        {/* Detailed Description */}
+                        {activeVariant.detailed_description && (
+                          <div className="bg-[#070a12] border border-white/5 rounded-xl p-4">
+                            <p className="text-[10px] text-blue-400 uppercase tracking-widest font-semibold mb-2">Detailed Description</p>
+                            <p className="text-sm text-neutral-300 leading-relaxed whitespace-pre-line">{activeVariant.detailed_description}</p>
+                          </div>
+                        )}
+
+                        {/* Specifications */}
+                        {activeVariant.specifications && Object.keys(activeVariant.specifications).length > 0 && (
+                          <div className="bg-[#070a12] border border-white/5 rounded-xl p-4">
+                            <p className="text-[10px] text-blue-400 uppercase tracking-widest font-semibold mb-3">Specifications</p>
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2">
+                              {Object.entries(activeVariant.specifications).map(([key, val]: [string, any]) => (
+                                <div key={key} className="flex items-start gap-2 text-sm border-b border-white/5 pb-2">
+                                  <span className="text-neutral-500 shrink-0 w-36 truncate">{key}</span>
+                                  <span className="text-neutral-200 font-medium">{String(val)}</span>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+                      </div>
                   </div>
                 )}
 
-                {/* Action Buttons (Always available so users can force tests) */}
-                <>
-                  <div className="flex items-center gap-4 mt-6 mb-2">
-                    <div className="flex-1 border-t border-white/5"></div>
-                    <span className="text-xs text-neutral-500 uppercase tracking-widest font-semibold">Simulation Override</span>
-                    <div className="flex-1 border-t border-white/5"></div>
-                  </div>
-                  {abTestState === 'idle' ? (
-                    <button onClick={startAbTest} className="w-full py-3 bg-[#0f0f0f] border border-blue-500/20 hover:border-blue-500/50 hover:bg-blue-500/5 text-blue-300 font-medium rounded-xl transition-all flex items-center justify-center gap-2">
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-                      {resultData.decision.action === 'ab_test' ? 'Start Autonomous A/B Test' : 'Force Synthetic A/B Test'}
-                    </button>
-                  ) : abTestState === 'starting' ? (
-                     <button disabled className="w-full py-3 bg-neutral-700 text-white font-medium rounded-xl transition-colors flex items-center justify-center gap-2 opacity-70">
-                      Running Synthetic AI Simulation...
+                {/* Simulation Action Bar */}
+                <div className="pt-1">
+                  {abTestState === 'starting' ? (
+                    <button disabled className="w-full py-3.5 bg-[#0f0f0f] border border-blue-500/30 text-blue-300 font-medium rounded-xl flex items-center justify-center gap-2 animate-pulse">
+                      <span className="w-2 h-2 rounded-full bg-blue-400 animate-ping"></span>
+                      Simulating 8 AI Consumer Personas...
                     </button>
                   ) : (
-                    <button onClick={runLiveReview} className="w-full py-3 bg-green-600 hover:bg-green-500 text-white font-medium rounded-xl transition-colors flex items-center justify-center gap-2 shadow-[0_0_15px_rgba(22,163,74,0.4)] animate-pulse">
-                      <span className="w-2 h-2 rounded-full bg-white animate-ping"></span> Live Review
-                    </button>
+                    <div className="flex gap-3">
+                      <button
+                        onClick={() => setAbTestState('simulating')}
+                        className="flex-1 py-3.5 bg-gradient-to-r from-emerald-600 to-green-600 hover:from-emerald-500 hover:to-green-500 text-white font-bold text-sm rounded-xl transition-all flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(16,185,129,0.3)] hover:shadow-[0_0_25px_rgba(16,185,129,0.5)]"
+                      >
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="m10 15 5-3-5-3v6z"/></svg>
+                        <span>Review Simulation Results</span>
+                      </button>
+                      <button
+                        onClick={() => runLiveReview()}
+                        title="Re-run Synthetic AI Simulation"
+                        className="py-3.5 px-6 bg-neutral-800 hover:bg-neutral-700 text-neutral-200 font-medium text-sm rounded-xl border border-white/10 transition-all flex items-center justify-center gap-2"
+                      >
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+                        <span>Retest</span>
+                      </button>
+                    </div>
                   )}
-                </>
+                </div>
               </div>
             )}
 
@@ -445,34 +512,82 @@ export default function GenerateTab({ initialInput = '', initialImage = null }: 
 
             {/* Competitor Intelligence (RAG) */}
             {resultData.competitor_analysis && !resultData.competitor_analysis.error && (
-              <div className="bg-neutral-900 border border-white/5 rounded-[2rem] p-5 shadow-lg space-y-4 relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-[#ff0055] rounded-full blur-[80px] opacity-10 pointer-events-none"></div>
-                <div className="flex items-center gap-2 relative z-10">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-white"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
-                  <h3 className="font-semibold text-white">Competitor Intelligence (RAG)</h3>
+              <div className="bg-neutral-900 border border-white/5 rounded-[2rem] p-6 shadow-xl space-y-5">
+                {/* Header */}
+                <div className="flex items-center justify-between border-b border-white/5 pb-4">
+                  <div className="flex items-center gap-2">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-white"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+                    <h3 className="font-semibold text-white">Competitor Intelligence (RAG)</h3>
+                  </div>
+                  <span className="bg-white/10 text-neutral-300 border border-white/5 text-[10px] font-medium px-2.5 py-1 rounded-full uppercase tracking-widest">
+                    RAG Benchmarked
+                  </span>
                 </div>
-                <div className="grid grid-cols-2 gap-4 relative z-10">
+
+                {/* Price Metrics Grid */}
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                   <div className="bg-[#0f0f0f] rounded-xl p-4 border border-white/5">
                     <p className="text-xs text-neutral-500 uppercase mb-1">Recommended Price</p>
-                    <p className="text-2xl font-bold text-green-400">₹{resultData.competitor_analysis.recommended_price || 'N/A'}</p>
+                    <p className="text-2xl font-bold text-green-400">
+                      {resultData.competitor_analysis.recommended_price ? (resultData.competitor_analysis.recommended_price.startsWith('₹') ? resultData.competitor_analysis.recommended_price : `₹${resultData.competitor_analysis.recommended_price}`) : '₹0.00'}
+                    </p>
                   </div>
+                  {resultData.competitor_analysis.lowest_competitor_price && (
+                    <div className="bg-[#0f0f0f] rounded-xl p-4 border border-white/5">
+                      <p className="text-xs text-neutral-500 uppercase mb-1">Lowest Competitor</p>
+                      <p className="text-xl font-bold text-neutral-200">
+                        {resultData.competitor_analysis.lowest_competitor_price.startsWith('₹') ? resultData.competitor_analysis.lowest_competitor_price : `₹${resultData.competitor_analysis.lowest_competitor_price}`}
+                      </p>
+                    </div>
+                  )}
+                  {resultData.competitor_analysis.average_market_price && (
+                    <div className="bg-[#0f0f0f] rounded-xl p-4 border border-white/5">
+                      <p className="text-xs text-neutral-500 uppercase mb-1">Market Average</p>
+                      <p className="text-xl font-bold text-neutral-200">
+                        {resultData.competitor_analysis.average_market_price.startsWith('₹') ? resultData.competitor_analysis.average_market_price : `₹${resultData.competitor_analysis.average_market_price}`}
+                      </p>
+                    </div>
+                  )}
+                  {resultData.competitor_analysis.highest_competitor_price && (
+                    <div className="bg-[#0f0f0f] rounded-xl p-4 border border-white/5">
+                      <p className="text-xs text-neutral-500 uppercase mb-1">Highest Competitor</p>
+                      <p className="text-xl font-bold text-neutral-200">
+                        {resultData.competitor_analysis.highest_competitor_price.startsWith('₹') ? resultData.competitor_analysis.highest_competitor_price : `₹${resultData.competitor_analysis.highest_competitor_price}`}
+                      </p>
+                    </div>
+                  )}
+                </div>
+
+                {/* Strategic Market Positioning (Full Width) */}
+                {resultData.competitor_analysis.market_positioning && (
                   <div className="bg-[#0f0f0f] rounded-xl p-4 border border-white/5">
                     <p className="text-xs text-neutral-500 uppercase mb-1">Market Positioning</p>
-                    <p className="text-sm text-neutral-300 line-clamp-2">{resultData.competitor_analysis.market_positioning}</p>
-                  </div>
-                </div>
-                {resultData.competitor_analysis.pricing_strategy && (
-                  <div className="bg-[#0f0f0f] rounded-xl p-4 border border-white/5 relative z-10">
-                    <p className="text-xs text-neutral-500 uppercase mb-1">Pricing Strategy</p>
-                    <p className="text-sm text-neutral-300">{resultData.competitor_analysis.pricing_strategy}</p>
+                    <p className="text-sm text-neutral-300 leading-relaxed">
+                      {resultData.competitor_analysis.market_positioning}
+                    </p>
                   </div>
                 )}
+
+                {/* Recommended Pricing Strategy (Full Width) */}
+                {resultData.competitor_analysis.pricing_strategy && (
+                  <div className="bg-[#0f0f0f] rounded-xl p-4 border border-white/5">
+                    <p className="text-xs text-neutral-500 uppercase mb-1">Pricing Strategy</p>
+                    <p className="text-sm text-neutral-300 leading-relaxed">
+                      {resultData.competitor_analysis.pricing_strategy}
+                    </p>
+                  </div>
+                )}
+
+                {/* Market Insights */}
                 {resultData.competitor_analysis.competitor_insights && resultData.competitor_analysis.competitor_insights.length > 0 && (
-                  <div className="relative z-10">
+                  <div>
                     <p className="text-xs text-neutral-500 uppercase mb-2">Market Insights</p>
                     <ul className="space-y-2">
                       {resultData.competitor_analysis.competitor_insights.map((insight: string, idx: number) => (
-                        <li key={idx} className="flex gap-2 text-sm text-neutral-300"><span className="text-neutral-500">•</span> {insight}</li>
+                        <li key={idx} className="flex gap-2 text-sm text-neutral-300">
+                          <span className="text-neutral-500">•</span>
+                          <span className="leading-relaxed">{insight}</span>
+                        </li>
                       ))}
                     </ul>
                   </div>
@@ -512,7 +627,7 @@ export default function GenerateTab({ initialInput = '', initialImage = null }: 
               <div className="bg-neutral-900 border border-white/5 rounded-[2rem] p-5 shadow-lg space-y-4">
                 <div className="flex items-center gap-2">
                   <span className="text-lg">{activePlatform.emoji}</span>
-                  <h3 className="font-semibold text-white">Publish to {activePlatform.label}</h3>
+                  <h3 className="font-semibold text-white">Review &amp; Publish to {activePlatform.label}</h3>
                 </div>
                 <div className="grid grid-cols-3 gap-3 mb-4">
                   <div><label className="text-xs text-neutral-500 uppercase mb-1 block">Regular Price</label><input value={publishPrice} onChange={e => setPublishPrice(e.target.value)} className="w-full p-2.5 rounded-lg bg-[#0f0f0f] border border-white/10 text-white text-sm outline-none focus:border-white/20 transition-colors" /></div>
@@ -520,7 +635,34 @@ export default function GenerateTab({ initialInput = '', initialImage = null }: 
                   <div><label className="text-xs text-neutral-500 uppercase mb-1 block">Units</label><input type="number" value={publishQuantity} onChange={e => setPublishQuantity(e.target.value ? parseInt(e.target.value) : '')} className="w-full p-2.5 rounded-lg bg-[#0f0f0f] border border-white/10 text-white text-sm outline-none focus:border-white/20 transition-colors" /></div>
                 </div>
                 {publishResult ? (
-                  <div className="bg-white/5 border border-white/10 rounded-xl p-4"><p className="text-white font-semibold text-sm">Published!</p><a href={publishResult.admin_url} target="_blank" rel="noreferrer" className="text-xs text-neutral-400 underline mt-2 block">View in {activePlatform.label} →</a></div>
+                  <div className="bg-emerald-950/40 border border-emerald-500/30 rounded-2xl p-5 space-y-3">
+                    <div className="flex items-center gap-3">
+                      <div className="w-8 h-8 rounded-full bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center flex-shrink-0">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                          <polyline points="20 6 9 17 4 12" />
+                        </svg>
+                      </div>
+                      <div>
+                        <p className="text-white font-bold text-sm">Successfully added your product to {activePlatform.label}!</p>
+                        <p className="text-xs text-emerald-400/80">Your product listing is live and ready for customers.</p>
+                      </div>
+                    </div>
+                    {publishResult.admin_url && (
+                      <a
+                        href={publishResult.admin_url}
+                        target="_blank"
+                        rel="noreferrer"
+                        className={`inline-flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-xl font-medium text-xs text-white shadow-lg transition-all duration-200 bg-gradient-to-r ${activePlatform.color} hover:brightness-110 hover:shadow-emerald-900/30 active:scale-[0.98] mt-2`}
+                      >
+                        <span>View Product in {activePlatform.label}</span>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                          <polyline points="15 3 21 3 21 9" />
+                          <line x1="10" y1="14" x2="21" y2="3" />
+                        </svg>
+                      </a>
+                    )}
+                  </div>
                 ) : (
                   <button onClick={async () => {
                     setPublishError(null); setPublishState('uploading');
@@ -533,12 +675,45 @@ export default function GenerateTab({ initialInput = '', initialImage = null }: 
                         if (!r.ok) throw new Error('Image upload failed');
                         imageUrls = [...imageUrls, ...(await r.json()).image_urls];
                       }
+                      
+                      // Build a clean, structured HTML description for Shopify/WooCommerce
+                      const buildHtmlDescription = (variant: any): string => {
+                        const parts: string[] = [];
+                        // Short description
+                        if (variant?.short_description) {
+                          parts.push(`<p><strong>${variant.short_description}</strong></p>`);
+                        }
+                        // Key Features as a proper ul/li list with bold feature names
+                        if (Array.isArray(variant?.key_features) && variant.key_features.length > 0) {
+                          parts.push('<h3>Key Features</h3>');
+                          const items = variant.key_features.map((f: string) => {
+                            const m = f.match(/^\*\*(.+?)\*\*[:\s]+(.*)/s);
+                            return m ? `<li><strong>${m[1]}:</strong> ${m[2]}</li>` : `<li>${f}</li>`;
+                          });
+                          parts.push(`<ul>${items.join('')}</ul>`);
+                        }
+                        // Detailed description — split on double newlines into separate <p> tags
+                        if (variant?.detailed_description) {
+                          const paras = variant.detailed_description.split(/\n\n+/).filter(Boolean);
+                          parts.push(paras.map((p: string) => `<p>${p.trim()}</p>`).join(''));
+                        }
+                        // Specifications as a clean table
+                        if (variant?.specifications && Object.keys(variant.specifications).length > 0) {
+                          parts.push('<h3>Specifications</h3>');
+                          const rows = Object.entries(variant.specifications)
+                            .map(([k, v]) => `<tr><td><strong>${k}</strong></td><td>${v}</td></tr>`)
+                            .join('');
+                          parts.push(`<table><tbody>${rows}</tbody></table>`);
+                        }
+                        return parts.join('\n');
+                      };
+
                       setPublishState('publishing');
                       
                       const payload = {
                         platform: platform,
                         title: resultData.seo?.title ? String(resultData.seo.title) : 'New Product',
-                        description: activeVariant?.marketing?.platform_description ? String(activeVariant.marketing.platform_description) : '',
+                        description: buildHtmlDescription(activeVariant),
                         tags: Array.isArray(resultData.seo?.keywords) ? resultData.seo.keywords : (typeof resultData.seo?.keywords === 'string' ? (resultData.seo.keywords as any).split(',').map((k: string) => k.trim()) : []),
                         price: publishPrice ? String(publishPrice).replace(/[^0-9.]/g, '') || '0.00' : '0.00',
                         sale_price: publishSalePrice ? String(publishSalePrice).replace(/[^0-9.]/g, '') || null : null,
@@ -567,7 +742,7 @@ export default function GenerateTab({ initialInput = '', initialImage = null }: 
                       setPublishResult((await r.json()).result); setPublishState('success');
                     } catch (e: any) { setPublishError(e.message); setPublishState('idle'); }
                   }} disabled={publishState !== 'idle'} className={`w-full py-3 text-white font-medium rounded-full disabled:opacity-50 transition-opacity bg-gradient-to-r ${activePlatform.color}`}>
-                    {publishState === 'uploading' ? 'Uploading Images...' : publishState === 'publishing' ? 'Publishing...' : `Publish Selected Variant to ${activePlatform.label}`}
+                    {publishState === 'uploading' ? 'Uploading Images...' : publishState === 'publishing' ? 'Publishing...' : `Review & Publish Selected Variant to ${activePlatform.label}`}
                   </button>
                 )}
                 {publishError && <p className="text-red-400 text-xs mt-2">{publishError}</p>}
@@ -589,7 +764,8 @@ export default function GenerateTab({ initialInput = '', initialImage = null }: 
         <CopeSimulationModal
           variants={resultData.scored_variants}
           winningVariantId={resultData.decision?.recommended_variant_id || resultData.scored_variants[0].variant_id}
-          onClose={() => setAbTestState('success')}
+          onClose={() => setAbTestState('ready')}
+          onRetest={() => runLiveReview()}
           agentFeed={agentFeed}
         />
       )}

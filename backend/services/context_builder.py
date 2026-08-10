@@ -1,48 +1,35 @@
-from dataclasses import dataclass, field
 from typing import Optional, List, Any
+from models.product_context import ProductContext
 
-
-@dataclass
-class ProductContext:
-    """
-    Unified product context payload containing sanitized text, vision analysis,
-    RAG market data, target platform, and original images.
-    """
-    sanitized_input: str
-    vision_analysis: Optional[str] = None
-    rag_context: Optional[str] = None
-    platform: str = "olx"
-    raw_images: Optional[List[Any]] = field(default_factory=list)
-
-    def to_prompt_context(self) -> str:
-        """
-        Formats consolidated context into a single string for downstream LLM prompts.
-        """
-        context = f"Text Description:\n{self.sanitized_input}"
-        if self.vision_analysis:
-            context += f"\n\nVision Analysis:\n{self.vision_analysis}"
-        if self.rag_context:
-            context += f"\n\n{self.rag_context}"
-        return context
+__all__ = ["ProductContext", "ContextBuilder"]
 
 
 class ContextBuilder:
     """
-    Builder pattern for assembling a unified ProductContext object.
+    Builder pattern for assembling an immutable ProductContext object with Context Isolation.
+    Fully backwards-compatible with user_input, sanitized_input, and sanitized_text keyword parameters.
     """
 
     @staticmethod
     def build(
-        sanitized_input: str,
-        vision_analysis: Optional[str] = None,
-        rag_context: Optional[str] = None,
+        user_input: Optional[str] = None,
+        vision_data: Optional[str] = None,
+        market_data: Optional[str] = None,
         platform: str = "olx",
         raw_images: Optional[List[Any]] = None,
+        sanitized_input: Optional[str] = None,
+        sanitized_text: Optional[str] = None,
+        vision_analysis: Optional[str] = None,
+        rag_context: Optional[str] = None,
     ) -> ProductContext:
+        final_input = user_input or sanitized_input or sanitized_text or ""
+        final_vision = vision_data or vision_analysis
+        final_market = market_data or rag_context
+
         return ProductContext(
-            sanitized_input=sanitized_input,
-            vision_analysis=vision_analysis,
-            rag_context=rag_context,
+            user_input=final_input,
+            vision_data=final_vision,
+            market_data=final_market,
             platform=platform,
-            raw_images=raw_images or [],
+            raw_images=raw_images,
         )

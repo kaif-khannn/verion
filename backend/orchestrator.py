@@ -12,6 +12,7 @@ from agents.decision_agent import DecisionAgent
 from agents.quality_agent import QualityAgent
 from scoring.scoring_engine import ScoringEngine
 from services.context_builder import ContextBuilder
+from services.json_utils import validate_pipeline_output
 
 logger = logging.getLogger("orchestrator")
 
@@ -20,6 +21,7 @@ class Orchestrator:
     """
     Refactored Production Multi-Agent Orchestrator.
     Optimizes LLM API calls down to 3-4 per request while preserving full backward compatibility.
+    Includes Context Isolation and Output Validation.
     """
 
     def __init__(self):
@@ -45,7 +47,6 @@ class Orchestrator:
         results["sanitized_input"] = sanitized_input
 
         # ── Step 2: Parallel Pre-processing (VisionAgent + RAGAgent) ───────────
-        # Build initial query for RAG (text + image flag)
         rag_query = f"Text Description:\n{sanitized_input}"
 
         vision_task = self.vision_agent.analyze_image(images) if images else asyncio.sleep(0, result=None)
@@ -58,16 +59,16 @@ class Orchestrator:
             results["vision_analysis"] = vision_result
         results["rag_context"] = rag_context
 
-        # ── Step 3: Build Unified Shared Context ──────────────────────────────
+        # ── Step 3: Build Isolated ProductContext ─────────────────────────────
         product_context = ContextBuilder.build(
-            sanitized_input=sanitized_input,
-            vision_analysis=vision_result,
-            rag_context=rag_context,
+            user_input=sanitized_input,
+            vision_data=vision_result,
+            market_data=rag_context,
             platform=platform,
             raw_images=images,
         )
 
-        # ── Step 4: Content Generation (Single LLM Call for SEO + Marketing + Competitor) ──
+        # ── Step 4: Content Generation (Strict JSON Output + Parsing) ──────────
         gen_output = await self.content_gen_agent.generate_all(product_context)
 
         seo_result = gen_output.get("seo", {})
@@ -79,8 +80,7 @@ class Orchestrator:
         results["generated_variants"] = variants
 
         # ── Step 5: COPE Variant Scoring & Prediction (1 LLM Call) ───────────
-        combined_context_str = product_context.to_prompt_context()
-        scored_variants = await self.prediction_engine.score_variants(combined_context_str, variants)
+        scored_variants = await self.prediction_engine.score_variants(product_context, variants)
         results["scored_variants"] = scored_variants
 
         # ── Step 6: Decision Routing (Pure Python Rules) ──────────────────────
@@ -96,6 +96,9 @@ class Orchestrator:
 
         scores = self.scoring_engine.evaluate(seo_result, champion_marketing, sanitized_input)
         results["scores"] = scores
+
+        # ── Step 8: Strict Output Validation Layer ────────────────────────────
+        validate_pipeline_output(results)
 
         return {
             "status": "success",

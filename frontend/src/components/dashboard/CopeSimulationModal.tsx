@@ -9,10 +9,11 @@ interface CopeSimulationModalProps {
   variants: Variant[];
   winningVariantId: string;
   onClose: () => void;
+  onRetest?: () => void;
   agentFeed?: any[];
 }
 
-export default function CopeSimulationModal({ variants, winningVariantId, onClose, agentFeed = [] }: CopeSimulationModalProps) {
+export default function CopeSimulationModal({ variants, winningVariantId, onClose, onRetest, agentFeed = [] }: CopeSimulationModalProps) {
   const [phase, setPhase] = useState<'running' | 'finished'>('running');
   const [visibleAgents, setVisibleAgents] = useState<any[]>([]);
   
@@ -25,8 +26,13 @@ export default function CopeSimulationModal({ variants, winningVariantId, onClos
     setConversionRates(initialRates);
   }, [variants]);
 
-  // Determine the true winner
-  // Count votes from agent feed
+  // Whenever new agentFeed arrives (e.g. after retest), reset animation state
+  useEffect(() => {
+    setPhase('running');
+    setVisibleAgents([]);
+  }, [agentFeed]);
+
+  // Determine the true winner by counting votes from agent feed
   const voteCounts: Record<string, number> = {};
   variants.forEach(v => voteCounts[v.variant_id] = 0);
   
@@ -100,9 +106,20 @@ export default function CopeSimulationModal({ variants, winningVariantId, onClos
             </h2>
           </div>
           {phase === 'finished' && (
-            <button onClick={onClose} className="w-8 h-8 flex items-center justify-center rounded-full bg-white/5 hover:bg-white/10 text-neutral-400 hover:text-white transition-colors">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-            </button>
+            <div className="flex items-center gap-3">
+              {onRetest && (
+                <button
+                  onClick={onRetest}
+                  className="px-3.5 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-medium transition-all flex items-center gap-1.5 border border-white/10"
+                >
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+                  <span>Retest</span>
+                </button>
+              )}
+              <button onClick={onClose} className="w-8 h-8 flex items-center justify-center rounded-full bg-white/5 hover:bg-white/10 text-neutral-400 hover:text-white transition-colors">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              </button>
+            </div>
           )}
         </div>
 

@@ -1,6 +1,8 @@
 import os
 import json
-from services.llm_gateway import llm_gateway
+from typing import Optional, Dict, Any
+from services.llm_gateway import llm_gateway, LLMGateway
+from services.prompt_loader import prompt_loader as default_prompt_loader, PromptLoader
 
 
 class TrendAgent:
@@ -9,8 +11,9 @@ class TrendAgent:
     Analyzes product categories and generates trending product suggestions asynchronously via LLMGateway.
     """
 
-    def __init__(self, gateway=None):
+    def __init__(self, gateway: Optional[LLMGateway] = None, prompt_loader_service: Optional[PromptLoader] = None):
         self.gateway = gateway or llm_gateway
+        self.prompt_loader = prompt_loader_service or default_prompt_loader
         self.model = "llama-3.1-8b-instant"
 
     def _get_api_key(self) -> str:
@@ -20,19 +23,9 @@ class TrendAgent:
         return key
 
     async def analyze_trend(self, category: str, description: str) -> dict:
-        system_prompt = (
-            "You are a realistic eCommerce strategist advising an online store owner (an e-commerce seller). "
-            "Your task is to analyze a given product trend and provide highly realistic, actionable insights tailored directly to their store. "
-            "Speak directly to the seller (e.g., 'By adding this to your store...', 'You can capture...'). "
-            "You must return ONLY a raw JSON object with exactly these three keys: "
-            "1. 'positioning_strategy': A 2-3 sentence paragraph advising the seller on how to uniquely market and position this product in their store. "
-            "2. 'target_audience': A list of EXACTLY 3 plain string bullet points (e.g., 'Young professionals aged 25-34'). Do NOT use nested JSON objects or dictionaries for the audience items. "
-            "3. 'sales_impact': A 1-2 sentence realistic explanation of the expected conversion lift for their store. You MUST include grounded, realistic numerical metrics (e.g., 'expected 15% increase in conversion yielding an extra ₹75,000 monthly revenue'). Keep it realistic for a small-to-medium ecommerce store. "
-            "IMPORTANT: All pricing, revenue, and financial metrics MUST be formatted in Indian Rupees (₹ / INR), not US Dollars ($). "
-            "Output pure JSON."
-        )
+        system_prompt = self.prompt_loader.load("trend_analysis_system")
+        user_prompt = self.prompt_loader.render("trend_analysis_user", category=category, description=description)
 
-        user_prompt = f"Trend Category: {category}\nDescription: {description}\n\nGenerate the insights."
         messages = [
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_prompt},
@@ -45,6 +38,9 @@ class TrendAgent:
                 temperature=0.7,
                 response_format={"type": "json_object"},
                 api_key=self._get_api_key(),
+                task_type="trend",
+                prompt_template_content=system_prompt,
+                user_prompt_content=user_prompt,
             )
             return json.loads(raw_response)
         except Exception as e:
@@ -60,24 +56,9 @@ class TrendAgent:
             }
 
     async def get_trending_products(self, niche: str) -> dict:
-        system_prompt = (
-            "You are an expert eCommerce market researcher and trend spotter. "
-            "Your task is to identify 9 highly trending products in a given niche. "
-            "You must return ONLY a raw JSON object with EXACTLY this structure: "
-            "{\n"
-            '  "trends": [\n'
-            '    { "category": "Product Name", "growth": "+XX%", "desc": "1 sentence description." }\n'
-            "  ],\n"
-            '  "competitorMove": "1 sentence on what competitors are doing.",\n'
-            '  "growthImpact": 25.5,\n'
-            '  "salesImpact": "1-2 sentences on realistic revenue/conversion lift for this niche, e.g., \'Expected 15% increase yielding an extra ₹75,000 monthly revenue\'.",\n'
-            '  "idea": "A specific product idea to generate based on these trends."\n'
-            "}\n"
-            "IMPORTANT: All pricing, revenue, and financial metrics MUST be formatted in Indian Rupees (₹ / INR), not US Dollars ($). "
-            "Output pure JSON."
-        )
+        system_prompt = self.prompt_loader.load("trending_products_system")
+        user_prompt = self.prompt_loader.render("trending_products_user", niche=niche)
 
-        user_prompt = f"Niche: {niche}\n\nGenerate the trending products JSON."
         messages = [
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_prompt},
@@ -90,6 +71,9 @@ class TrendAgent:
                 temperature=0.7,
                 response_format={"type": "json_object"},
                 api_key=self._get_api_key(),
+                task_type="trend",
+                prompt_template_content=system_prompt,
+                user_prompt_content=user_prompt,
             )
             return json.loads(raw_response)
         except Exception as e:

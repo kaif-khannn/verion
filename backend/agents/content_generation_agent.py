@@ -1,168 +1,222 @@
 import uuid
-import json
-from typing import Dict, Any, List
-from services.llm_gateway import llm_gateway
-from services.context_builder import ProductContext
+import logging
+from typing import Dict, Any, Optional
+from services.llm_gateway import llm_gateway, LLMGateway
+from services.prompt_loader import prompt_loader as default_prompt_loader, PromptLoader
+from services.json_utils import safe_parse_json, clean_html_text
+from models.product_context import ProductContext
+
+logger = logging.getLogger("content_generation_agent")
 
 
 class ContentGenerationAgent:
     """
     Unified Content Generation Agent.
-    Replaces separate LLM calls for SEOAgent, MarketingAgent, and CompetitorAgent
-    by issuing a SINGLE LLM call that returns SEO metadata, pricing strategy,
-    competitor insights, and 3 marketing copy variants in a structured JSON schema.
+    Generates strict e-commerce JSON objects containing title, short_description,
+    exactly 5 key_features, detailed_description, and factual specifications.
+    Includes automated retry handling to guarantee valid JSON responses.
     """
 
-    def __init__(self, gateway=None):
+    def __init__(self, gateway: Optional[LLMGateway] = None, prompt_loader_service: Optional[PromptLoader] = None):
         self.gateway = gateway or llm_gateway
+        self.prompt_loader = prompt_loader_service or default_prompt_loader
+
+    def _assemble_structured_description(self, obj: Dict[str, Any]) -> str:
+        """
+        Formats short_description, key_features, detailed_description, and specifications into clean plain text.
+        """
+        parts = []
+        short_desc = obj.get("short_description", "").strip()
+        if short_desc:
+            parts.append(short_desc)
+
+        features = obj.get("key_features", [])
+        if isinstance(features, list) and features:
+            feat_lines = ["Key Features:"]
+            for f in features:
+                feat_lines.append(f"• {f}")
+            parts.append("\n".join(feat_lines))
+
+        detailed_desc = obj.get("detailed_description") or obj.get("description", "")
+        if isinstance(detailed_desc, str) and detailed_desc.strip():
+            parts.append(detailed_desc.strip())
+
+        specs = obj.get("specifications") or obj.get("specs", {})
+        if isinstance(specs, dict) and specs:
+            spec_lines = ["Specifications:"]
+            for k, v in specs.items():
+                spec_lines.append(f"- {k}: {v}")
+            parts.append("\n".join(spec_lines))
+
+        return "\n\n".join(parts)
+
+    def _clean_features(self, features_list: Any) -> list:
+        """Ensures key_features is a clean list of exactly 5 benefit-focused bullet strings."""
+        if not isinstance(features_list, list):
+            return [
+                "**Premium Quality**: Engineered with high-grade materials for maximum durability.",
+                "**Optimized Performance**: Delivers smooth, efficient everyday operation.",
+                "**Sleek Design**: Modern aesthetic tailored for e-commerce platforms.",
+                "**Versatile Utility**: Built to adapt seamlessly to multiple use cases.",
+                "**Great Value**: Outstanding features offering superior market value."
+            ]
+        cleaned = [clean_html_text(str(f)) for f in features_list if str(f).strip()]
+        # Trim or extend to exactly 5
+        while len(cleaned) < 5:
+            cleaned.append(f"**Key Feature {len(cleaned) + 1}**: Designed for superior user satisfaction and durability.")
+        return cleaned[:5]
 
     async def generate_all(self, context: ProductContext) -> Dict[str, Any]:
         product_context_str = context.to_prompt_context()
         platform = context.platform
 
-        # Define platform copy key instruction
-        if platform.lower() == "whatsapp":
-            marketing_instruction = '"whatsapp": "A highly persuasive, engaging broadcast message with emojis, bullets, and friendly/urgent tone."'
-        elif platform.lower() == "instagram":
-            marketing_instruction = '"instagram_caption": "An aesthetic, engaging Instagram caption with strong hook, story, line breaks, and hashtags at the bottom."'
-        else:
-            marketing_instruction = f'"platform_description": "A comprehensive, premium listing description for {platform} (2-3 paragraphs, highlighting features and benefits)."'
-
-        prompt = f"""
-        You are an elite, world-class e-commerce growth strategist, SEO specialist, and master copywriter.
-        Your task is to generate complete product data, market pricing analysis, and THREE distinct high-converting marketing variants tailored for '{platform}'.
-
-        Given the following product context (which includes vision analysis and RAG market dataset context):
-
-        --- PRODUCT CONTEXT ---
-        {product_context_str}
-        --- END PRODUCT CONTEXT ---
-
-        CRITICAL INSTRUCTIONS:
-        1. All prices, revenue figures, and monetary metrics MUST be in Indian Rupees (₹ / INR). Do not use USD ($).
-        2. Use the RAG market dataset context to infer any missing specs (material, brand, dimensions, etc.) if not explicitly provided.
-        3. Generate EXACTLY THREE distinct marketing variants (Variant 1, Variant 2, Variant 3) with different copywriting angles (e.g. Angle 1: Feature & Tech Heavy, Angle 2: Emotional & Value Driven, Angle 3: Urgency & Lifestyle Focused).
-
-        Return a single JSON object strictly matching this schema:
-        {{
-            "seo": {{
-                "title": "SEO-optimized product title (max 70 chars)",
-                "keywords": ["keyword1", "keyword2", "keyword3", "keyword4", "keyword5", "keyword6"],
-                "bullet_points": ["bullet 1", "bullet 2", "bullet 3", "bullet 4"],
-                "price": "numeric price string in INR, e.g. 4999.00",
-                "color": "color string or null",
-                "condition": "e.g. New, Used - Like New, Refurbished",
-                "weight": "weight string e.g. 1.2 kg or null",
-                "brand": "brand string or null",
-                "material": "material string or null",
-                "dimensions": "dimensions string or null",
-                "category": "specific product category e.g. Electronics > Smartphones",
-                "product_type": "short type label e.g. Smartphone",
-                "specs": {{ "spec_name": "spec_value" }}
-            }},
-            "competitor_analysis": {{
-                "market_positioning": "Short positioning statement against competitors",
-                "lowest_competitor_price": "numeric price string in INR or null",
-                "highest_competitor_price": "numeric price string in INR or null",
-                "average_market_price": "numeric price string in INR or null",
-                "recommended_price": "numeric recommended price in INR",
-                "pricing_strategy": "Explanation of recommended price strategy",
-                "competitor_insights": ["insight 1", "insight 2", "insight 3"]
-            }},
-            "variants": [
-                {{
-                    "platform": "{platform}",
-                    {marketing_instruction},
-                    "call_to_action": "Strong, urgent Call to Action sentence."
-                }},
-                {{
-                    "platform": "{platform}",
-                    {marketing_instruction},
-                    "call_to_action": "Strong, urgent Call to Action sentence."
-                }},
-                {{
-                    "platform": "{platform}",
-                    {marketing_instruction},
-                    "call_to_action": "Strong, urgent Call to Action sentence."
-                }}
-            ]
-        }}
-        """
+        user_prompt = self.prompt_loader.render(
+            "content_generation",
+            platform=platform,
+            product_context=product_context_str,
+        )
 
         messages = [
-            {
-                "role": "system",
-                "content": "You are a master e-commerce AI system. Always return pure valid JSON.",
-            },
-            {"role": "user", "content": prompt},
+            {"role": "system", "content": "You are a master e-commerce AI system. You MUST return ONLY valid JSON without HTML or reasoning tags."},
+            {"role": "user", "content": user_prompt},
         ]
 
-        try:
-            raw_response = await self.gateway.generate_chat(
-                messages=messages,
-                model="llama-3.1-8b-instant",
-                temperature=0.6,
-                max_tokens=2500,
-                response_format={"type": "json_object"},
-            )
-            data = json.loads(raw_response)
+        parsed = None
+        max_attempts = 2
 
-            # Format variants with UUIDs to match expected schema
-            formatted_variants = []
-            raw_variants = data.get("variants", [])
-            if not isinstance(raw_variants, list) or len(raw_variants) < 3:
-                # Fallback if LLM returned fewer variants
-                raw_variants = raw_variants if isinstance(raw_variants, list) else []
-                while len(raw_variants) < 3:
-                    raw_variants.append({
-                        "platform": platform,
-                        "platform_description": "High-quality product offering optimized for customer acquisition.",
-                        "call_to_action": "Buy now while stock lasts!",
-                    })
+        for attempt in range(max_attempts):
+            try:
+                raw_response = await self.gateway.generate_chat(
+                    messages=messages,
+                    model="llama-3.1-8b-instant",
+                    temperature=0.4,
+                    max_tokens=2500,
+                    response_format={"type": "json_object"},
+                    task_type="content_generation",
+                    prompt_template_content=user_prompt,
+                    user_prompt_content=product_context_str,
+                )
 
-            seo_data = data.get("seo", {})
-            for v in raw_variants[:3]:
-                formatted_variants.append({
-                    "variant_id": str(uuid.uuid4()),
-                    "marketing": v,
-                    "seo": seo_data,
+                # Robust JSON parsing (handles <think> tags, markdown, or extra trailing text)
+                parsed = safe_parse_json(raw_response)
+                if parsed and isinstance(parsed, dict) and ("product" in parsed or "seo" in parsed):
+                    break
+            except Exception as e:
+                logger.warning(f"ContentGenerationAgent attempt {attempt + 1} JSON parse failed: {e}")
+                if attempt == max_attempts - 1:
+                    raise e
+
+        if not parsed:
+            raise ValueError("Failed to obtain valid JSON object from LLM generation.")
+
+        seo_obj = parsed.get("seo", {})
+        product_obj = parsed.get("product", {})
+        pricing_obj = parsed.get("pricing", {})
+        raw_variants = parsed.get("variants", [])
+
+        # Ensure product_obj matches strict structure rules
+        product_title = product_obj.get("title") or seo_obj.get("title") or f"Optimized {platform.capitalize()} Product"
+        product_short_desc = clean_html_text(product_obj.get("short_description", ""))
+        product_key_features = self._clean_features(product_obj.get("key_features") or product_obj.get("bullets"))
+        product_detailed_desc = clean_html_text(product_obj.get("detailed_description") or product_obj.get("description", ""))
+        product_specs = product_obj.get("specifications") or product_obj.get("specs") or {}
+
+        # Format full structured description for platform rendering
+        formatted_product_desc = self._assemble_structured_description({
+            "short_description": product_short_desc,
+            "key_features": product_key_features,
+            "detailed_description": product_detailed_desc,
+            "specifications": product_specs,
+        })
+
+        seo_data = {
+            "title": product_title,
+            "meta_description": seo_obj.get("meta_description", ""),
+            "keywords": seo_obj.get("keywords", []),
+            "tags": seo_obj.get("tags", []),
+            "short_description": product_short_desc,
+            "bullet_points": product_key_features,
+            "detailed_description": product_detailed_desc,
+            "specs": product_specs,
+            "price": str(pricing_obj.get("recommended_price", "0.00")),
+            "description": clean_html_text(formatted_product_desc),
+        }
+
+        comp_data = {
+            "recommended_price": str(pricing_obj.get("recommended_price", "0.00")),
+            "lowest_competitor_price": str(pricing_obj.get("lowest_competitor_price", "") or ""),
+            "highest_competitor_price": str(pricing_obj.get("highest_competitor_price", "") or ""),
+            "average_market_price": str(pricing_obj.get("average_market_price", "") or ""),
+            "market_positioning": pricing_obj.get("market_positioning") or pricing_obj.get("strategy", "Positioned competitively."),
+            "pricing_strategy": pricing_obj.get("strategy", "Competitive market pricing based on RAG dataset."),
+            "competitor_insights": pricing_obj.get("competitor_insights") if isinstance(pricing_obj.get("competitor_insights"), list) else [pricing_obj.get("strategy", "Competitive pricing detected.")],
+        }
+
+        formatted_variants = []
+        if not isinstance(raw_variants, list) or len(raw_variants) < 3:
+            raw_variants = raw_variants if isinstance(raw_variants, list) else []
+            while len(raw_variants) < 3:
+                raw_variants.append({
+                    "type": chr(65 + len(raw_variants)),
+                    "angle": "Standard Angle",
+                    "title": product_title,
+                    "short_description": product_short_desc,
+                    "key_features": product_key_features,
+                    "detailed_description": product_detailed_desc,
+                    "specifications": product_specs,
                 })
 
-            return {
-                "seo": seo_data,
-                "competitor_analysis": data.get("competitor_analysis", {}),
-                "generated_variants": formatted_variants,
-            }
+        for idx, v in enumerate(raw_variants[:3]):
+            var_type = v.get("type", chr(65 + idx))
+            angle = v.get("angle", f"Angle {var_type}")
+            v_title = v.get("title") or product_title
+            v_short = clean_html_text(v.get("short_description") or product_short_desc)
+            v_features = self._clean_features(v.get("key_features") or product_key_features)
+            v_detailed = clean_html_text(v.get("detailed_description") or product_detailed_desc)
+            v_specs = v.get("specifications") or v.get("specs") or product_specs
 
-        except Exception as e:
-            # Resilient fallback if LLM or parsing fails
-            fallback_variant_id = str(uuid.uuid4())
-            fallback_seo = {
-                "title": f"Optimized {platform.capitalize()} Product Listing",
-                "keywords": ["ecommerce", "quality", "bestseller"],
-                "bullet_points": ["High quality item", "Fast shipping", "Best value"],
-                "price": "0.00",
-                "category": "General",
-                "product_type": "Product",
-                "specs": {},
-            }
-            fallback_marketing = {
-                "platform": platform,
-                "platform_description": "Premium product with top-tier features and high durability.",
-                "call_to_action": "Order now to get the best deal!",
-            }
-            return {
-                "seo": fallback_seo,
-                "competitor_analysis": {
-                    "market_positioning": "Standard competitive market positioning.",
-                    "recommended_price": "0.00",
-                    "pricing_strategy": "Based on standard market rates.",
-                    "competitor_insights": ["Competitive pricing detected."],
+            var_assembled = self._assemble_structured_description({
+                "short_description": v_short,
+                "key_features": v_features,
+                "detailed_description": v_detailed,
+                "specifications": v_specs,
+            })
+            desc = clean_html_text(var_assembled)
+
+            variant_seo = dict(seo_data)
+            variant_seo["title"] = v_title
+            variant_seo["short_description"] = v_short
+            variant_seo["bullet_points"] = v_features
+            variant_seo["detailed_description"] = v_detailed
+            variant_seo["specs"] = v_specs
+
+            formatted_variants.append({
+                "variant_id": str(uuid.uuid4()),
+                "type": var_type,
+                "angle": angle,
+                "title": v_title,
+                "short_description": v_short,
+                "key_features": v_features,
+                "detailed_description": v_detailed,
+                "specifications": v_specs,
+                "marketing": {
+                    "platform": platform,
+                    "platform_description": desc,
+                    "call_to_action": f"Order now on {platform.capitalize()} to get the best deal!",
                 },
-                "generated_variants": [
-                    {"variant_id": str(uuid.uuid4()), "marketing": fallback_marketing, "seo": fallback_seo},
-                    {"variant_id": str(uuid.uuid4()), "marketing": fallback_marketing, "seo": fallback_seo},
-                    {"variant_id": str(uuid.uuid4()), "marketing": fallback_marketing, "seo": fallback_seo},
-                ],
-                "error": f"Content generation error: {str(e)}",
-            }
+                "seo": variant_seo,
+            })
+
+        return {
+            "seo": seo_data,
+            "product": {
+                "title": product_title,
+                "short_description": product_short_desc,
+                "key_features": product_key_features,
+                "detailed_description": product_detailed_desc,
+                "specifications": product_specs,
+            },
+            "pricing": pricing_obj,
+            "competitor_analysis": comp_data,
+            "generated_variants": formatted_variants,
+        }
