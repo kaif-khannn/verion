@@ -160,10 +160,19 @@ class LLMGateway:
 
             except Exception as e:
                 last_exception = e
+                err_str = str(e).lower()
                 logger.warning(f"LLMGateway attempt {attempt}/{max_retries} failed for model {model}: {e}")
+                
+                # If Payload Too Large (413), fallback to model with higher TPM token limit or reduce prompt
+                if ("413" in err_str or "payload too large" in err_str or "rate_limit_exceeded" in err_str) and model == "llama-3.1-8b-instant":
+                    model = "llama-3.3-70b-versatile"
+                    logger.info(f"Switching model to {model} due to payload/TPM limits.")
+
                 if attempt < max_retries:
                     self.metrics["retries"] += 1
-                    sleep_time = initial_backoff * (2 ** (attempt - 1))
+                    # Double wait time if 429 rate limit
+                    sleep_multiplier = 4.0 if ("429" in err_str or "rate" in err_str) else 1.0
+                    sleep_time = initial_backoff * (2 ** (attempt - 1)) * sleep_multiplier
                     await asyncio.sleep(sleep_time)
 
         self.metrics["failed_requests"] += 1

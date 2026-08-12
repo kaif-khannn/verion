@@ -31,6 +31,9 @@ class VisionAgent:
         if not images:
             return ""
 
+        # Groq vision models support up to 3 images maximum per request
+        images = images[:3]
+
         vision_api_key = os.getenv("GROQ_VISION_API_KEY") or os.getenv("GROQ_API_KEY")
         if not vision_api_key:
             return "Error: GROQ_VISION_API_KEY / GROQ_API_KEY is not set."

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import HomeTab from '../components/dashboard/HomeTab';
 import GenerateTab from '../components/dashboard/GenerateTab';
 import IntegrationsTab from '../components/dashboard/IntegrationsTab';
@@ -12,7 +12,7 @@ export default function Dashboard({ onLogout }: { onLogout?: () => void }) {
   const [generateInput, setGenerateInput] = useState('');
   const [generateImage, setGenerateImage] = useState<string | null>(null);
 
-  const handleSelectProductForOptimization = (rawInput: string, title: string, image: string | null) => {
+  const handleSelectProductForOptimization = (rawInput: string, _title: string, image: string | null) => {
     setGenerateInput(rawInput);
     setGenerateImage(image);
     setActiveTab('generate');

@@ -1,4 +1,4 @@
-import React, { useState, useRef, useCallback, useEffect } from 'react';
+import { useState, useRef, useCallback, useEffect } from 'react';
 import PipelineVisualizer from '../PipelineVisualizer';
 import CopeSimulationModal from './CopeSimulationModal';
 
@@ -22,6 +22,9 @@ interface CompetitorData {
   recommended_price?: string;
   pricing_strategy?: string;
   competitor_insights?: string[];
+  lowest_competitor_price?: string;
+  average_market_price?: string;
+  highest_competitor_price?: string;
   error?: string;
 }
 
@@ -54,6 +57,10 @@ interface Variant {
   marketing: MarketingData;
   seo: SeoData;
   cope_scores?: CopeScores;
+  short_description?: string;
+  key_features?: string[];
+  detailed_description?: string;
+  specifications?: Record<string, string>;
 }
 
 interface CopeDecision {
@@ -86,7 +93,7 @@ const PLATFORMS = [
   { id: 'amazon', label: 'Amazon', emoji: '📦', color: 'from-[#ff9900] to-[#e68a00]' },
 ];
 
-function CopyButton({ text }: { text: string }) {
+export function CopyButton({ text }: { text: string }) {
   const [copied, setCopied] = useState(false);
   const copy = () => {
     navigator.clipboard.writeText(text);
@@ -123,12 +130,14 @@ export default function GenerateTab({ initialInput = '', initialImage = null }: 
   const [publishState, setPublishState] = useState<PublishState>('idle');
   const [publishResult, setPublishResult] = useState<{ admin_url?: string } | null>(null);
   const [publishError, setPublishError] = useState<string | null>(null);
-  const [publishVendor, setPublishVendor] = useState('Verion AI');
+  const [publishVendor] = useState('Verion AI');
   const [publishPrice, setPublishPrice] = useState('0.00');
   const [publishSalePrice, setPublishSalePrice] = useState('');
   const [publishQuantity, setPublishQuantity] = useState<number | ''>(1);
   const [abTestState, setAbTestState] = useState<'idle' | 'starting' | 'ready' | 'simulating' | 'error'>('idle');
   const [agentFeed, setAgentFeed] = useState<any[]>([]);
+  const [simulationFinished, setSimulationFinished] = useState(false);
+  const [winningVariantId, setWinningVariantId] = useState<string | null>(null);
 
   const addImages = useCallback((files: File[]) => {
     const valid = files.filter(f => f.type.startsWith('image/'));
@@ -154,6 +163,7 @@ export default function GenerateTab({ initialInput = '', initialImage = null }: 
     const listToSimulate = variantsList || results?.data?.scored_variants;
     if (!listToSimulate || !listToSimulate.length) return;
     setAbTestState('starting');
+    setSimulationFinished(false);
     try {
       const payload = {
         variants: listToSimulate
@@ -170,6 +180,25 @@ export default function GenerateTab({ initialInput = '', initialImage = null }: 
       const data = await r.json();
       if (data.data && data.data.agent_feed) {
         setAgentFeed(data.data.agent_feed);
+        // Determine winner from agent feed
+        const voteCounts: Record<string, number> = {};
+        listToSimulate.forEach((v: any) => voteCounts[v.variant_id] = 0);
+        data.data.agent_feed.forEach((a: any) => {
+          if (a?.chosen_variant_id && voteCounts[a.chosen_variant_id] !== undefined) {
+            voteCounts[a.chosen_variant_id]++;
+          }
+        });
+        let maxVotes = -1;
+        let topWinner = listToSimulate[0].variant_id;
+        for (const [vId, votes] of Object.entries(voteCounts)) {
+          if (votes > maxVotes) {
+            maxVotes = votes;
+            topWinner = vId;
+          }
+        }
+        setWinningVariantId(topWinner);
+        setSimulationFinished(true);
+        setSelectedVariantId(topWinner);
       }
       setAbTestState('ready');
     } catch (e) {
@@ -185,6 +214,8 @@ export default function GenerateTab({ initialInput = '', initialImage = null }: 
     setPublishState('idle'); setAbTestState('idle'); setPublishResult(null);
     setSelectedVariantId(null);
     setAgentFeed([]);
+    setSimulationFinished(false);
+    setWinningVariantId(null);
     try {
       const formData = new FormData();
       formData.append('raw_description', rawInput);
@@ -331,15 +362,28 @@ export default function GenerateTab({ initialInput = '', initialImage = null }: 
                     <div>
                       <div className="flex items-center gap-2">
                         <h3 className="font-bold text-white text-lg">COPE Decision Engine</h3>
-                        {resultData.decision.action === 'publish' ? (
-                          <span className="bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 text-[11px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Winner Selected</span>
-                        ) : resultData.decision.action === 'ab_test' ? (
-                          <span className="bg-amber-500/20 text-amber-400 border border-amber-500/40 text-[11px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">A/B Test Recommended</span>
+                        {simulationFinished ? (
+                          <span className="bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 text-[11px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider flex items-center gap-1.5 shadow-sm">
+                            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                            Winner Selected
+                          </span>
+                        ) : abTestState === 'starting' ? (
+                          <span className="bg-blue-500/20 text-blue-400 border border-blue-500/40 text-[11px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider flex items-center gap-1.5">
+                            <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-ping"></span>
+                            Simulation Running
+                          </span>
                         ) : (
-                          <span className="bg-rose-500/20 text-rose-400 border border-rose-500/40 text-[11px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Review &amp; Refine</span>
+                          <span className="bg-amber-500/20 text-amber-400 border border-amber-500/40 text-[11px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider flex items-center gap-1.5">
+                            <span className="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+                            Simulation Pending
+                          </span>
                         )}
                       </div>
-                      <p className="text-blue-300/80 text-sm mt-0.5">{resultData.decision.reason}</p>
+                      <p className="text-blue-300/80 text-sm mt-0.5">
+                        {simulationFinished
+                          ? "Consumer persona simulation complete. Champion winner identified."
+                          : resultData.decision.reason}
+                      </p>
                     </div>
                   </div>
 
@@ -348,7 +392,7 @@ export default function GenerateTab({ initialInput = '', initialImage = null }: 
                     {resultData.scored_variants.map((v, idx) => {
                       const isSelected = activeVariant?.variant_id === v.variant_id;
                       const label = String.fromCharCode(65 + idx);
-                      const isChamp = idx === 0;
+                      const isWinner = simulationFinished && (winningVariantId ? v.variant_id === winningVariantId : idx === 0);
                       return (
                         <button
                           key={v.variant_id}
@@ -359,7 +403,7 @@ export default function GenerateTab({ initialInput = '', initialImage = null }: 
                               : 'text-neutral-400 hover:text-white hover:bg-white/5'
                           }`}
                         >
-                          {isChamp ? '🏆 Winner (A)' : `Variant ${label}`}
+                          {isWinner ? `🏆 Winner (${label})` : `Variant ${label}`}
                         </button>
                       );
                     })}
@@ -373,13 +417,13 @@ export default function GenerateTab({ initialInput = '', initialImage = null }: 
                     
                     <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-white/5 pb-4 mb-5">
                       <div className="flex items-center gap-2.5">
-                        {resultData.scored_variants.findIndex(v => v.variant_id === activeVariant.variant_id) === 0 ? (
+                        {simulationFinished && (winningVariantId ? activeVariant.variant_id === winningVariantId : resultData.scored_variants.findIndex(v => v.variant_id === activeVariant.variant_id) === 0) ? (
                           <span className="bg-gradient-to-r from-amber-400 to-yellow-500 text-black text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider shadow-lg flex items-center gap-1">
                             🏆 Champion Winner
                           </span>
                         ) : (
                           <span className="bg-indigo-500/20 text-indigo-300 border border-indigo-500/40 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider flex items-center gap-1">
-                            Alternative Variant
+                            {simulationFinished ? 'Alternative Variant' : `Candidate Variant ${String.fromCharCode(65 + (resultData.scored_variants.findIndex(v => v.variant_id === activeVariant.variant_id) >= 0 ? resultData.scored_variants.findIndex(v => v.variant_id === activeVariant.variant_id) : 0))}`}
                           </span>
                         )}
                         <h4 className="text-white font-semibold text-base">
@@ -763,9 +807,14 @@ export default function GenerateTab({ initialInput = '', initialImage = null }: 
       {abTestState === 'simulating' && resultData && resultData.scored_variants && (
         <CopeSimulationModal
           variants={resultData.scored_variants}
-          winningVariantId={resultData.decision?.recommended_variant_id || resultData.scored_variants[0].variant_id}
+          winningVariantId={winningVariantId || resultData.decision?.recommended_variant_id || resultData.scored_variants[0].variant_id}
           onClose={() => setAbTestState('ready')}
           onRetest={() => runLiveReview()}
+          onSimulationComplete={(winId) => {
+            setSimulationFinished(true);
+            setWinningVariantId(winId);
+            setSelectedVariantId(winId);
+          }}
           agentFeed={agentFeed}
         />
       )}

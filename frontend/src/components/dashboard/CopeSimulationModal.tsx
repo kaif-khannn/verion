@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 interface Variant {
   variant_id: string;
@@ -10,10 +10,11 @@ interface CopeSimulationModalProps {
   winningVariantId: string;
   onClose: () => void;
   onRetest?: () => void;
+  onSimulationComplete?: (winningVariantId: string) => void;
   agentFeed?: any[];
 }
 
-export default function CopeSimulationModal({ variants, winningVariantId, onClose, onRetest, agentFeed = [] }: CopeSimulationModalProps) {
+export default function CopeSimulationModal({ variants, winningVariantId, onClose, onRetest, onSimulationComplete, agentFeed = [] }: CopeSimulationModalProps) {
   const [phase, setPhase] = useState<'running' | 'finished'>('running');
   const [visibleAgents, setVisibleAgents] = useState<any[]>([]);
   
@@ -53,6 +54,12 @@ export default function CopeSimulationModal({ variants, winningVariantId, onClos
       }
     }
   }
+
+  useEffect(() => {
+    if (phase === 'finished' && onSimulationComplete) {
+      onSimulationComplete(actualWinnerId);
+    }
+  }, [phase, actualWinnerId, onSimulationComplete]);
 
   useEffect(() => {
     if (phase !== 'running') return;

@@ -1,7 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
-import { marked } from 'marked';
-import DOMPurify from 'dompurify';
+import { useState, useEffect } from 'react';
+import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
 const API = 'http://localhost:8000';
 
@@ -27,7 +25,6 @@ export default function StatisticsTab() {
   const [stats, setStats] = useState<StatsData | null>(null);
   const [analytics, setAnalytics] = useState<AnalyticsData | null>(null);
   const [isLoadingAnalytics, setIsLoadingAnalytics] = useState(true);
-  const [experiments, setExperiments] = useState<any[]>([]);
 
   useEffect(() => {
     // Fetch top level stats
@@ -47,21 +44,7 @@ export default function StatisticsTab() {
         console.error(err);
         setIsLoadingAnalytics(false);
       });
-
-    // Fetch active experiments
-    fetch(`${API}/api/experiments/active`, {
-      headers: { 'Authorization': `Bearer ${localStorage.getItem('token')}` }
-    })
-      .then(res => res.json())
-      .then(data => setExperiments(data.experiments || []))
-      .catch(console.error);
   }, []);
-
-  const getCleanedMarkdown = (markdown: string) => {
-    // Parse markdown into HTML safely
-    const rawHtml = marked.parse(markdown) as string;
-    return DOMPurify.sanitize(rawHtml);
-  };
 
   return (
     <div className="space-y-6 max-w-[1400px]">
@@ -186,7 +169,7 @@ export default function StatisticsTab() {
                       <Tooltip
                         contentStyle={{ backgroundColor: '#171717', borderColor: 'rgba(255,255,255,0.1)', borderRadius: '12px', padding: '10px 14px' }}
                         labelStyle={{ color: '#fff', fontWeight: 600, marginBottom: 6 }}
-                        formatter={(value: number, name: string) => {
+                        formatter={(value: any, name: any) => {
                           if (name === 'seo_score') return [`${value} / 100`, '🟢 Avg SEO Score'];
                           if (name === 'optimizations') return [value, '🟣 Daily Optimizations'];
                           return [value, name];
