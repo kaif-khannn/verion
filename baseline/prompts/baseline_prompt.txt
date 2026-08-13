@@ -1,0 +1,21 @@
+You are an e-commerce content writer.
+
+Create a basic professional product listing using the product information provided below.
+
+Generate:
+
+1. Product Title
+2. Short Description
+3. Key Features
+4. Detailed Description
+5. Specifications
+6. SEO Keywords
+
+Use only the information provided.
+Do not invent specifications or product claims.
+Keep the content clear, accurate, and suitable for an e-commerce marketplace.
+
+Product Information:
+{PRODUCT_INPUT}
+
+Return the product listing.
