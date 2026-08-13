@@ -1,0 +1,67 @@
+{
+  "test_case_id": "TC007",
+  "product_name": "Philips Airfryer",
+  "brand": "Philips",
+  "category": "Air Fryer",
+  "description": "A compact air fryer designed for everyday cooking with adjustable temperature control, timer functionality, and Rapid Air technology.",
+  "specifications": {
+    "capacity": "4.1L",
+    "power": "1400W",
+    "temperature_range": "80°C–200°C",
+    "features": "Rapid Air technology, Adjustable temperature, Timer, Removable basket",
+    "color": "Black"
+  },
+  "images": [
+    "images/1.webp",
+    "images/2.webp",
+    "images/3.webp",
+    "images/4.webp"
+  ],
+  "product": "Air Fryer",
+  "niche": "Kitchen & Home",
+  "input_condition": "Complete",
+  "pii": {
+    "present": false,
+    "fields": []
+  },
+  "product_input": {
+    "name": "Philips Airfryer",
+    "brand": "Philips",
+    "category": "Air Fryer",
+    "capacity": "4.1L",
+    "power": "1400W",
+    "temperature_range": "80°C–200°C",
+    "features": [
+      "Rapid Air technology",
+      "Adjustable temperature",
+      "Timer",
+      "Removable basket"
+    ],
+    "color": "Black",
+    "description": "A compact air fryer designed for everyday cooking with adjustable temperature control, timer functionality, and Rapid Air technology."
+  },
+  "image": {
+    "provided": true,
+    "path": "images/1.webp"
+  },
+  "expected_facts": {
+    "name": "Philips Airfryer",
+    "brand": "Philips",
+    "category": "Air Fryer",
+    "capacity": "4.1L",
+    "power": "1400W",
+    "temperature_range": "80°C–200°C",
+    "color": "Black",
+    "features": [
+      "Rapid Air technology",
+      "Adjustable temperature",
+      "Timer",
+      "Removable basket"
+    ]
+  },
+  "visual_facts": [
+    "Air fryer",
+    "Black color",
+    "Philips logo"
+  ]
+}

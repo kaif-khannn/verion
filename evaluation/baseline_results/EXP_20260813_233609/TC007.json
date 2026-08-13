@@ -1,0 +1,19 @@
+{
+  "experiment_id": "EXP_20260813_233609",
+  "test_case_id": "TC007",
+  "system": "baseline",
+  "timestamp": "2026-08-13T23:41:10.300064",
+  "success": true,
+  "latency_ms": 559.78,
+  "model": "llama-3.1-8b-instant",
+  "raw_output": "**Product Title:** Philips Airfryer - Compact 4.1L Air Fryer with Rapid Air Technology and Adjustable Temperature Control\n\n**Short Description:** Achieve crispy results without the added oil with the Philips Airfryer, featuring Rapid Air technology and adjustable temperature control for perfect everyday cooking.\n\n**Key Features:**\n\n- Compact design for easy storage\n- Adjustable temperature control (80\u00b0C\u2013200\u00b0C)\n- Timer for precise cooking\n- Rapid Air technology for healthy cooking\n- Removable basket for easy cleaning\n- Black finish\n\n**Detailed Description:** Experience the convenience of healthier cooking with the Philips Airfryer, perfect for everyday meals. This compact air fryer uses Rapid Air technology to circulate hot air, resulting in crispy results without the need for added oil. The adjustable temperature control and timer allow for precise cooking, while the removable basket makes cleaning a breeze. With a 4.1L capacity and 1400W power, this air fryer is suitable for cooking a variety of dishes for you and your family.\n\n**Specifications:**\n\n- Capacity: 4.1L\n- Power: 1400W\n- Temperature Range: 80\u00b0C\u2013200\u00b0C\n- Features: Rapid Air technology, Adjustable temperature, Timer, Removable basket\n- Color: Black\n\n**SEO Keywords:** Philips Airfryer, Air Fryer, Rapid Air technology, Adjustable temperature control, Timer, Compact air fryer, Healthy cooking, Low oil cooking, Kitchen appliances.",
+  "token_usage": null,
+  "estimated_cost": null,
+  "error": null,
+  "capability_metadata": {
+    "image_processing_supported": false,
+    "privacy_anonymization": false,
+    "rag_context": false,
+    "multi_agent_workflow": false
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "experiment_id": "EXP_20260813_233609",
+  "test_case_id": "TC006",
+  "system": "baseline",
+  "timestamp": "2026-08-13T23:39:42.925681",
+  "success": true,
+  "latency_ms": 516.49,
+  "model": "llama-3.1-8b-instant",
+  "raw_output": "**Product Title:** Beige Foundation Makeup, Medium Coverage, Matte Finish\n\n**Short Description:** Get flawless skin with this beige foundation. Medium coverage and matte finish make it perfect for everyday use. May contain SPF for added protection.\n\n**Key Features:**\n\n- Beige shade for a natural look\n- Medium coverage for balanced skin tone\n- Matte finish for a smooth appearance\n- May contain SPF for sun protection\n- Brand logo displayed on the packaging\n\n**Detailed Description:** Enhance your natural beauty with this beige foundation. The medium coverage provides a balanced look, while the matte finish helps to minimize pores and fine lines. This foundation may also contain SPF for added protection against the sun's harmful rays. The beige shade is perfect for those with a neutral skin tone.\n\n**Specifications:**\n\n- Shade: Beige\n- Coverage: Medium (probable)\n- Finish: Matte (probable)\n- Features: SPF included (probable)\n\n**SEO Keywords:** foundation, makeup, skin care, beige shade, medium coverage, matte finish, SPF, beauty products, cosmetics.",
+  "token_usage": null,
+  "estimated_cost": null,
+  "error": null,
+  "capability_metadata": {
+    "image_processing_supported": false,
+    "privacy_anonymization": false,
+    "rag_context": false,
+    "multi_agent_workflow": false
+  }
+}

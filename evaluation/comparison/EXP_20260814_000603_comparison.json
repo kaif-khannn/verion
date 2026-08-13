@@ -1,0 +1,76 @@
+{
+  "experiment_id": "EXP_20260814_000603",
+  "metrics_source": "EXP_20260814_000603_metrics.json",
+  "comparisons": {
+    "success_rate_pct": {
+      "baseline_value": 100.0,
+      "verion_value": 100.0,
+      "absolute_difference": 0.0,
+      "directional_improvement_pct": 0.0,
+      "direction": "higher_is_better"
+    },
+    "avg_latency_ms": {
+      "baseline_value": 5636.59,
+      "verion_value": 21861.68,
+      "absolute_difference": 16225.09,
+      "directional_improvement_pct": -287.85,
+      "direction": "lower_is_better"
+    },
+    "p95_latency_ms": {
+      "baseline_value": 5773.34,
+      "verion_value": 27960.72,
+      "absolute_difference": 22187.38,
+      "directional_improvement_pct": -384.31,
+      "direction": "lower_is_better"
+    },
+    "overall_completeness_pct": {
+      "baseline_value": 100.0,
+      "verion_value": 100.0,
+      "absolute_difference": 0.0,
+      "directional_improvement_pct": 0.0,
+      "direction": "higher_is_better"
+    },
+    "information_coverage_pct": {
+      "baseline_value": 88.17,
+      "verion_value": 95.0,
+      "absolute_difference": 6.83,
+      "directional_improvement_pct": 7.75,
+      "direction": "higher_is_better"
+    },
+    "specification_accuracy_pct": {
+      "baseline_value": 88.17,
+      "verion_value": 95.0,
+      "absolute_difference": 6.83,
+      "directional_improvement_pct": 7.75,
+      "direction": "higher_is_better"
+    },
+    "unsupported_claim_rate_pct": {
+      "baseline_value": 0.0,
+      "verion_value": 0.0,
+      "absolute_difference": 0.0,
+      "directional_improvement_pct": 0.0,
+      "direction": "lower_is_better"
+    },
+    "visual_attribute_recall_pct": {
+      "baseline_value": 90.83,
+      "verion_value": 90.83,
+      "absolute_difference": 0.0,
+      "directional_improvement_pct": 0.0,
+      "direction": "higher_is_better"
+    },
+    "pii_protection_rate_pct": {
+      "baseline_value": 50.0,
+      "verion_value": 100.0,
+      "absolute_difference": 50.0,
+      "directional_improvement_pct": 100.0,
+      "direction": "higher_is_better"
+    },
+    "pii_leakage_rate_pct": {
+      "baseline_value": 50.0,
+      "verion_value": 0.0,
+      "absolute_difference": -50.0,
+      "directional_improvement_pct": 100.0,
+      "direction": "lower_is_better"
+    }
+  }
+}

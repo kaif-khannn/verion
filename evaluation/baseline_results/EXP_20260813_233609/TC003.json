@@ -1,0 +1,19 @@
+{
+  "experiment_id": "EXP_20260813_233609",
+  "test_case_id": "TC003",
+  "system": "baseline",
+  "timestamp": "2026-08-13T23:37:31.715288",
+  "success": true,
+  "latency_ms": 679.9,
+  "model": "llama-3.1-8b-instant",
+  "raw_output": "**Product Title:** Sony WH-1000XM5 Over-ear Wireless Headphones\n\n**Short Description:** Experience exceptional sound quality and advanced noise cancellation with the Sony WH-1000XM5 over-ear wireless headphones.\n\n**Key Features:**\n\n- Advanced noise cancellation technology\n- High-quality audio for immersive sound experience\n- Long battery life with up to 30 hours of playback\n- Wireless connectivity via Bluetooth\n- Comfortable earcups for extended wear\n\n**Detailed Description:** Elevate your music listening experience with the Sony WH-1000XM5 over-ear wireless headphones. Designed for comfort and style, these headphones feature advanced noise cancellation technology that blocks out ambient noise, allowing you to focus on your music. With high-quality audio and long battery life, you can enjoy your favorite tracks for hours on end. The Sony WH-1000XM5 also features wireless connectivity via Bluetooth, making it easy to pair with your device and start listening.\n\n**Specifications:**\n\n- Color: Black\n- Features: Active Noise Cancellation, Bluetooth, Multipoint\n- Battery Life: Up to 30 hours\n\n**SEO Keywords:** Sony WH-1000XM5, over-ear wireless headphones, noise cancellation, high-quality audio, long battery life, Bluetooth connectivity, Sony headphones\n\nNote: The contact information provided in the product description has been removed as it may not be relevant to the product listing. If you need to contact the seller, please use the website's messaging system or contact information provided by the seller.",
+  "token_usage": null,
+  "estimated_cost": null,
+  "error": null,
+  "capability_metadata": {
+    "image_processing_supported": false,
+    "privacy_anonymization": false,
+    "rag_context": false,
+    "multi_agent_workflow": false
+  }
+}

@@ -1,0 +1,1047 @@
+{
+  "experiment_id": "EXP_20260814_000603",
+  "test_case_id": "TC001",
+  "system": "verion",
+  "timestamp": "2026-08-14T00:06:32.222966",
+  "success": true,
+  "latency_ms": 21184.26,
+  "model": "multi-agent",
+  "raw_output": {
+    "status": "success",
+    "message": "Workflow completed",
+    "data": {
+      "sanitized_input": "Product Name: Samsung Galaxy S25\nBrand: Samsung\nPrice: \u20b974,999\nCategory: Smartphone\nDescription: A premium compact smartphone with a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.\nSpecifications: display: 6.2-inch Dynamic AMOLED 2X, 120Hz, processor: Snapdragon 8 Elite, ram: 12GB, storage: 256GB, camera: 50MP main + 12MP ultrawide + 10MP telephoto, battery: 4000mAh, os: Android",
+      "vision_analysis": "Error analyzing image with Groq Vision: LLMGateway call failed after 3 retries. Error: Error code: 413 - {'error': {'message': 'Request too large for model `qwen/qwen3.6-27b` in organization `org_01kvb5wdg5eq99np00tsjmwhtg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 8286, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "rag_context": "RAG database is empty. Please run the ingestion script first.",
+      "seo": {
+        "title": "Samsung Galaxy S25 - Premium Compact Smartphone",
+        "meta_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+        "keywords": [
+          "Samsung Galaxy S25",
+          "Premium Compact Smartphone",
+          "High-Refresh-Rate AMOLED Display",
+          "Flagship Processor",
+          "Versatile Camera System",
+          "All-Day Battery Performance"
+        ],
+        "tags": [
+          "Smartphone",
+          "Samsung",
+          "Galaxy S25",
+          "Android"
+        ],
+        "short_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+        "bullet_points": [
+          "**High-Refresh-Rate AMOLED Display**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.",
+          "**Flagship Processor**: Experience lightning-fast performance with our powerful flagship processor.",
+          "**Versatile Camera System**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.",
+          "**All-Day Battery Performance**: Stay connected all day with our long-lasting battery.",
+          "**Android Operating System**: Experience the latest Android operating system with our Samsung Galaxy S25."
+        ],
+        "detailed_description": "The Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.",
+        "specs": {
+          "display": "6.2-inch Dynamic AMOLED 2X",
+          "processor": "Snapdragon 8 Elite",
+          "ram": "12GB",
+          "storage": "256GB",
+          "camera": "50MP main + 12MP ultrawide + 10MP telephoto",
+          "battery": "4000mAh",
+          "os": "Android"
+        },
+        "price": "\u20b974,999.00",
+        "description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.\n\nKey Features:\n\n\u2022 **High-Refresh-Rate AMOLED Display**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.\n\n\u2022 **Flagship Processor**: Experience lightning-fast performance with our powerful flagship processor.\n\n\u2022 **Versatile Camera System**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.\n\n\u2022 **All-Day Battery Performance**: Stay connected all day with our long-lasting battery.\n\n\u2022 **Android Operating System**: Experience the latest Android operating system with our Samsung Galaxy S25.\n\nThe Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.\n\nSpecifications:\n\n- display: 6.2-inch Dynamic AMOLED 2X\n\n- processor: Snapdragon 8 Elite\n\n- ram: 12GB\n\n- storage: 256GB\n\n- camera: 50MP main + 12MP ultrawide + 10MP telephoto\n\n- battery: 4000mAh\n\n- os: Android"
+      },
+      "competitor_analysis": {
+        "recommended_price": "\u20b974,999.00",
+        "lowest_competitor_price": "\u20b969,900.00",
+        "highest_competitor_price": "\u20b979,999.00",
+        "average_market_price": "\u20b973,499.50",
+        "market_positioning": "The Samsung Galaxy S25 is positioned as a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+        "pricing_strategy": "Our pricing strategy is to position the Samsung Galaxy S25 as a premium product that offers a unique combination of features and performance. We will price the product competitively to ensure that it appeals to a wide range of customers.",
+        "competitor_insights": [
+          "The Samsung Galaxy S25 has a higher refresh rate display than its competitors, making it a better choice for gamers and video enthusiasts.",
+          "The Samsung Galaxy S25 has a more powerful processor than its competitors, making it a better choice for heavy users.",
+          "The Samsung Galaxy S25 has a more versatile camera system than its competitors, making it a better choice for photography enthusiasts."
+        ]
+      },
+      "generated_variants": [
+        {
+          "variant_id": "3927ce41-f76c-4db0-adc1-1bb89779f205",
+          "type": "A",
+          "angle": "Feature & Tech Heavy",
+          "title": "Samsung Galaxy S25 - Premium Compact Smartphone with High-Refresh-Rate AMOLED Display",
+          "short_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+          "key_features": [
+            "**High-Refresh-Rate AMOLED Display**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.",
+            "**Flagship Processor**: Experience lightning-fast performance with our powerful flagship processor.",
+            "**Versatile Camera System**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.",
+            "**All-Day Battery Performance**: Stay connected all day with our long-lasting battery.",
+            "**Android Operating System**: Experience the latest Android operating system with our Samsung Galaxy S25."
+          ],
+          "detailed_description": "The Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.",
+          "specifications": {
+            "display": "6.2-inch Dynamic AMOLED 2X",
+            "processor": "Snapdragon 8 Elite",
+            "ram": "12GB",
+            "storage": "256GB",
+            "camera": "50MP main + 12MP ultrawide + 10MP telephoto",
+            "battery": "4000mAh",
+            "os": "Android"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.\n\nKey Features:\n\n\u2022 **High-Refresh-Rate AMOLED Display**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.\n\n\u2022 **Flagship Processor**: Experience lightning-fast performance with our powerful flagship processor.\n\n\u2022 **Versatile Camera System**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.\n\n\u2022 **All-Day Battery Performance**: Stay connected all day with our long-lasting battery.\n\n\u2022 **Android Operating System**: Experience the latest Android operating system with our Samsung Galaxy S25.\n\nThe Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.\n\nSpecifications:\n\n- display: 6.2-inch Dynamic AMOLED 2X\n\n- processor: Snapdragon 8 Elite\n\n- ram: 12GB\n\n- storage: 256GB\n\n- camera: 50MP main + 12MP ultrawide + 10MP telephoto\n\n- battery: 4000mAh\n\n- os: Android",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Samsung Galaxy S25 - Premium Compact Smartphone with High-Refresh-Rate AMOLED Display",
+            "meta_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+            "keywords": [
+              "Samsung Galaxy S25",
+              "Premium Compact Smartphone",
+              "High-Refresh-Rate AMOLED Display",
+              "Flagship Processor",
+              "Versatile Camera System",
+              "All-Day Battery Performance"
+            ],
+            "tags": [
+              "Smartphone",
+              "Samsung",
+              "Galaxy S25",
+              "Android"
+            ],
+            "short_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+            "bullet_points": [
+              "**High-Refresh-Rate AMOLED Display**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.",
+              "**Flagship Processor**: Experience lightning-fast performance with our powerful flagship processor.",
+              "**Versatile Camera System**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.",
+              "**All-Day Battery Performance**: Stay connected all day with our long-lasting battery.",
+              "**Android Operating System**: Experience the latest Android operating system with our Samsung Galaxy S25."
+            ],
+            "detailed_description": "The Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.",
+            "specs": {
+              "display": "6.2-inch Dynamic AMOLED 2X",
+              "processor": "Snapdragon 8 Elite",
+              "ram": "12GB",
+              "storage": "256GB",
+              "camera": "50MP main + 12MP ultrawide + 10MP telephoto",
+              "battery": "4000mAh",
+              "os": "Android"
+            },
+            "price": "\u20b974,999.00",
+            "description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.\n\nKey Features:\n\n\u2022 **High-Refresh-Rate AMOLED Display**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.\n\n\u2022 **Flagship Processor**: Experience lightning-fast performance with our powerful flagship processor.\n\n\u2022 **Versatile Camera System**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.\n\n\u2022 **All-Day Battery Performance**: Stay connected all day with our long-lasting battery.\n\n\u2022 **Android Operating System**: Experience the latest Android operating system with our Samsung Galaxy S25.\n\nThe Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.\n\nSpecifications:\n\n- display: 6.2-inch Dynamic AMOLED 2X\n\n- processor: Snapdragon 8 Elite\n\n- ram: 12GB\n\n- storage: 256GB\n\n- camera: 50MP main + 12MP ultrawide + 10MP telephoto\n\n- battery: 4000mAh\n\n- os: Android"
+          }
+        },
+        {
+          "variant_id": "43a9f6a8-d625-4b9d-8a76-1ab34d0984b4",
+          "type": "B",
+          "angle": "Emotional & Value Driven",
+          "title": "Samsung Galaxy S25 - Unlock Your Potential",
+          "short_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+          "key_features": [
+            "**Unlock Your Potential**: Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+            "**Seamless Viewing Experience**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.",
+            "**Lightning-Fast Performance**: Experience lightning-fast performance with our powerful flagship processor.",
+            "**Capture Life's Moments**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.",
+            "**Stay Connected All Day**: Stay connected all day with our long-lasting battery."
+          ],
+          "detailed_description": "The Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.",
+          "specifications": {
+            "display": "6.2-inch Dynamic AMOLED 2X",
+            "processor": "Snapdragon 8 Elite",
+            "ram": "12GB",
+            "storage": "256GB",
+            "camera": "50MP main + 12MP ultrawide + 10MP telephoto",
+            "battery": "4000mAh",
+            "os": "Android"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.\n\nKey Features:\n\n\u2022 **Unlock Your Potential**: Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.\n\n\u2022 **Seamless Viewing Experience**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.\n\n\u2022 **Lightning-Fast Performance**: Experience lightning-fast performance with our powerful flagship processor.\n\n\u2022 **Capture Life's Moments**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.\n\n\u2022 **Stay Connected All Day**: Stay connected all day with our long-lasting battery.\n\nThe Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.\n\nSpecifications:\n\n- display: 6.2-inch Dynamic AMOLED 2X\n\n- processor: Snapdragon 8 Elite\n\n- ram: 12GB\n\n- storage: 256GB\n\n- camera: 50MP main + 12MP ultrawide + 10MP telephoto\n\n- battery: 4000mAh\n\n- os: Android",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Samsung Galaxy S25 - Unlock Your Potential",
+            "meta_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+            "keywords": [
+              "Samsung Galaxy S25",
+              "Premium Compact Smartphone",
+              "High-Refresh-Rate AMOLED Display",
+              "Flagship Processor",
+              "Versatile Camera System",
+              "All-Day Battery Performance"
+            ],
+            "tags": [
+              "Smartphone",
+              "Samsung",
+              "Galaxy S25",
+              "Android"
+            ],
+            "short_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+            "bullet_points": [
+              "**Unlock Your Potential**: Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+              "**Seamless Viewing Experience**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.",
+              "**Lightning-Fast Performance**: Experience lightning-fast performance with our powerful flagship processor.",
+              "**Capture Life's Moments**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.",
+              "**Stay Connected All Day**: Stay connected all day with our long-lasting battery."
+            ],
+            "detailed_description": "The Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.",
+            "specs": {
+              "display": "6.2-inch Dynamic AMOLED 2X",
+              "processor": "Snapdragon 8 Elite",
+              "ram": "12GB",
+              "storage": "256GB",
+              "camera": "50MP main + 12MP ultrawide + 10MP telephoto",
+              "battery": "4000mAh",
+              "os": "Android"
+            },
+            "price": "\u20b974,999.00",
+            "description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.\n\nKey Features:\n\n\u2022 **High-Refresh-Rate AMOLED Display**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.\n\n\u2022 **Flagship Processor**: Experience lightning-fast performance with our powerful flagship processor.\n\n\u2022 **Versatile Camera System**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.\n\n\u2022 **All-Day Battery Performance**: Stay connected all day with our long-lasting battery.\n\n\u2022 **Android Operating System**: Experience the latest Android operating system with our Samsung Galaxy S25.\n\nThe Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.\n\nSpecifications:\n\n- display: 6.2-inch Dynamic AMOLED 2X\n\n- processor: Snapdragon 8 Elite\n\n- ram: 12GB\n\n- storage: 256GB\n\n- camera: 50MP main + 12MP ultrawide + 10MP telephoto\n\n- battery: 4000mAh\n\n- os: Android"
+          }
+        },
+        {
+          "variant_id": "bc5e7a09-e861-4025-b0f5-2ec002e907ca",
+          "type": "C",
+          "angle": "Urgency & Lifestyle Focused",
+          "title": "Samsung Galaxy S25 - Limited Time Offer",
+          "short_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+          "key_features": [
+            "**Limited Time Offer**: Get the Samsung Galaxy S25 now and experience the ultimate smartphone experience with our high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+            "**Seamless Viewing Experience**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.",
+            "**Lightning-Fast Performance**: Experience lightning-fast performance with our powerful flagship processor.",
+            "**Capture Life's Moments**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.",
+            "**Stay Connected All Day**: Stay connected all day with our long-lasting battery."
+          ],
+          "detailed_description": "The Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.",
+          "specifications": {
+            "display": "6.2-inch Dynamic AMOLED 2X",
+            "processor": "Snapdragon 8 Elite",
+            "ram": "12GB",
+            "storage": "256GB",
+            "camera": "50MP main + 12MP ultrawide + 10MP telephoto",
+            "battery": "4000mAh",
+            "os": "Android"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.\n\nKey Features:\n\n\u2022 **Limited Time Offer**: Get the Samsung Galaxy S25 now and experience the ultimate smartphone experience with our high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.\n\n\u2022 **Seamless Viewing Experience**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.\n\n\u2022 **Lightning-Fast Performance**: Experience lightning-fast performance with our powerful flagship processor.\n\n\u2022 **Capture Life's Moments**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.\n\n\u2022 **Stay Connected All Day**: Stay connected all day with our long-lasting battery.\n\nThe Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.\n\nSpecifications:\n\n- display: 6.2-inch Dynamic AMOLED 2X\n\n- processor: Snapdragon 8 Elite\n\n- ram: 12GB\n\n- storage: 256GB\n\n- camera: 50MP main + 12MP ultrawide + 10MP telephoto\n\n- battery: 4000mAh\n\n- os: Android",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Samsung Galaxy S25 - Limited Time Offer",
+            "meta_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+            "keywords": [
+              "Samsung Galaxy S25",
+              "Premium Compact Smartphone",
+              "High-Refresh-Rate AMOLED Display",
+              "Flagship Processor",
+              "Versatile Camera System",
+              "All-Day Battery Performance"
+            ],
+            "tags": [
+              "Smartphone",
+              "Samsung",
+              "Galaxy S25",
+              "Android"
+            ],
+            "short_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+            "bullet_points": [
+              "**Limited Time Offer**: Get the Samsung Galaxy S25 now and experience the ultimate smartphone experience with our high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+              "**Seamless Viewing Experience**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.",
+              "**Lightning-Fast Performance**: Experience lightning-fast performance with our powerful flagship processor.",
+              "**Capture Life's Moments**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.",
+              "**Stay Connected All Day**: Stay connected all day with our long-lasting battery."
+            ],
+            "detailed_description": "The Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.",
+            "specs": {
+              "display": "6.2-inch Dynamic AMOLED 2X",
+              "processor": "Snapdragon 8 Elite",
+              "ram": "12GB",
+              "storage": "256GB",
+              "camera": "50MP main + 12MP ultrawide + 10MP telephoto",
+              "battery": "4000mAh",
+              "os": "Android"
+            },
+            "price": "\u20b974,999.00",
+            "description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.\n\nKey Features:\n\n\u2022 **High-Refresh-Rate AMOLED Display**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.\n\n\u2022 **Flagship Processor**: Experience lightning-fast performance with our powerful flagship processor.\n\n\u2022 **Versatile Camera System**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.\n\n\u2022 **All-Day Battery Performance**: Stay connected all day with our long-lasting battery.\n\n\u2022 **Android Operating System**: Experience the latest Android operating system with our Samsung Galaxy S25.\n\nThe Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.\n\nSpecifications:\n\n- display: 6.2-inch Dynamic AMOLED 2X\n\n- processor: Snapdragon 8 Elite\n\n- ram: 12GB\n\n- storage: 256GB\n\n- camera: 50MP main + 12MP ultrawide + 10MP telephoto\n\n- battery: 4000mAh\n\n- os: Android"
+          }
+        }
+      ],
+      "scored_variants": [
+        {
+          "variant_id": "3927ce41-f76c-4db0-adc1-1bb89779f205",
+          "type": "A",
+          "angle": "Feature & Tech Heavy",
+          "title": "Samsung Galaxy S25 - Premium Compact Smartphone with High-Refresh-Rate AMOLED Display",
+          "short_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+          "key_features": [
+            "**High-Refresh-Rate AMOLED Display**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.",
+            "**Flagship Processor**: Experience lightning-fast performance with our powerful flagship processor.",
+            "**Versatile Camera System**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.",
+            "**All-Day Battery Performance**: Stay connected all day with our long-lasting battery.",
+            "**Android Operating System**: Experience the latest Android operating system with our Samsung Galaxy S25."
+          ],
+          "detailed_description": "The Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.",
+          "specifications": {
+            "display": "6.2-inch Dynamic AMOLED 2X",
+            "processor": "Snapdragon 8 Elite",
+            "ram": "12GB",
+            "storage": "256GB",
+            "camera": "50MP main + 12MP ultrawide + 10MP telephoto",
+            "battery": "4000mAh",
+            "os": "Android"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.\n\nKey Features:\n\n\u2022 **High-Refresh-Rate AMOLED Display**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.\n\n\u2022 **Flagship Processor**: Experience lightning-fast performance with our powerful flagship processor.\n\n\u2022 **Versatile Camera System**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.\n\n\u2022 **All-Day Battery Performance**: Stay connected all day with our long-lasting battery.\n\n\u2022 **Android Operating System**: Experience the latest Android operating system with our Samsung Galaxy S25.\n\nThe Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.\n\nSpecifications:\n\n- display: 6.2-inch Dynamic AMOLED 2X\n\n- processor: Snapdragon 8 Elite\n\n- ram: 12GB\n\n- storage: 256GB\n\n- camera: 50MP main + 12MP ultrawide + 10MP telephoto\n\n- battery: 4000mAh\n\n- os: Android",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Samsung Galaxy S25 - Premium Compact Smartphone with High-Refresh-Rate AMOLED Display",
+            "meta_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+            "keywords": [
+              "Samsung Galaxy S25",
+              "Premium Compact Smartphone",
+              "High-Refresh-Rate AMOLED Display",
+              "Flagship Processor",
+              "Versatile Camera System",
+              "All-Day Battery Performance"
+            ],
+            "tags": [
+              "Smartphone",
+              "Samsung",
+              "Galaxy S25",
+              "Android"
+            ],
+            "short_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+            "bullet_points": [
+              "**High-Refresh-Rate AMOLED Display**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.",
+              "**Flagship Processor**: Experience lightning-fast performance with our powerful flagship processor.",
+              "**Versatile Camera System**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.",
+              "**All-Day Battery Performance**: Stay connected all day with our long-lasting battery.",
+              "**Android Operating System**: Experience the latest Android operating system with our Samsung Galaxy S25."
+            ],
+            "detailed_description": "The Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.",
+            "specs": {
+              "display": "6.2-inch Dynamic AMOLED 2X",
+              "processor": "Snapdragon 8 Elite",
+              "ram": "12GB",
+              "storage": "256GB",
+              "camera": "50MP main + 12MP ultrawide + 10MP telephoto",
+              "battery": "4000mAh",
+              "os": "Android"
+            },
+            "price": "\u20b974,999.00",
+            "description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.\n\nKey Features:\n\n\u2022 **High-Refresh-Rate AMOLED Display**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.\n\n\u2022 **Flagship Processor**: Experience lightning-fast performance with our powerful flagship processor.\n\n\u2022 **Versatile Camera System**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.\n\n\u2022 **All-Day Battery Performance**: Stay connected all day with our long-lasting battery.\n\n\u2022 **Android Operating System**: Experience the latest Android operating system with our Samsung Galaxy S25.\n\nThe Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.\n\nSpecifications:\n\n- display: 6.2-inch Dynamic AMOLED 2X\n\n- processor: Snapdragon 8 Elite\n\n- ram: 12GB\n\n- storage: 256GB\n\n- camera: 50MP main + 12MP ultrawide + 10MP telephoto\n\n- battery: 4000mAh\n\n- os: Android"
+          },
+          "cope_scores": {
+            "variant_id": "3927ce41-f76c-4db0-adc1-1bb89779f205",
+            "overall_score": 90,
+            "purchase_probability": 85.0,
+            "expected_ctr": 80.0,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 95,
+            "confidence_score": 92
+          }
+        },
+        {
+          "variant_id": "43a9f6a8-d625-4b9d-8a76-1ab34d0984b4",
+          "type": "B",
+          "angle": "Emotional & Value Driven",
+          "title": "Samsung Galaxy S25 - Unlock Your Potential",
+          "short_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+          "key_features": [
+            "**Unlock Your Potential**: Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+            "**Seamless Viewing Experience**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.",
+            "**Lightning-Fast Performance**: Experience lightning-fast performance with our powerful flagship processor.",
+            "**Capture Life's Moments**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.",
+            "**Stay Connected All Day**: Stay connected all day with our long-lasting battery."
+          ],
+          "detailed_description": "The Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.",
+          "specifications": {
+            "display": "6.2-inch Dynamic AMOLED 2X",
+            "processor": "Snapdragon 8 Elite",
+            "ram": "12GB",
+            "storage": "256GB",
+            "camera": "50MP main + 12MP ultrawide + 10MP telephoto",
+            "battery": "4000mAh",
+            "os": "Android"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.\n\nKey Features:\n\n\u2022 **Unlock Your Potential**: Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.\n\n\u2022 **Seamless Viewing Experience**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.\n\n\u2022 **Lightning-Fast Performance**: Experience lightning-fast performance with our powerful flagship processor.\n\n\u2022 **Capture Life's Moments**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.\n\n\u2022 **Stay Connected All Day**: Stay connected all day with our long-lasting battery.\n\nThe Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.\n\nSpecifications:\n\n- display: 6.2-inch Dynamic AMOLED 2X\n\n- processor: Snapdragon 8 Elite\n\n- ram: 12GB\n\n- storage: 256GB\n\n- camera: 50MP main + 12MP ultrawide + 10MP telephoto\n\n- battery: 4000mAh\n\n- os: Android",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Samsung Galaxy S25 - Unlock Your Potential",
+            "meta_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+            "keywords": [
+              "Samsung Galaxy S25",
+              "Premium Compact Smartphone",
+              "High-Refresh-Rate AMOLED Display",
+              "Flagship Processor",
+              "Versatile Camera System",
+              "All-Day Battery Performance"
+            ],
+            "tags": [
+              "Smartphone",
+              "Samsung",
+              "Galaxy S25",
+              "Android"
+            ],
+            "short_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+            "bullet_points": [
+              "**Unlock Your Potential**: Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+              "**Seamless Viewing Experience**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.",
+              "**Lightning-Fast Performance**: Experience lightning-fast performance with our powerful flagship processor.",
+              "**Capture Life's Moments**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.",
+              "**Stay Connected All Day**: Stay connected all day with our long-lasting battery."
+            ],
+            "detailed_description": "The Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.",
+            "specs": {
+              "display": "6.2-inch Dynamic AMOLED 2X",
+              "processor": "Snapdragon 8 Elite",
+              "ram": "12GB",
+              "storage": "256GB",
+              "camera": "50MP main + 12MP ultrawide + 10MP telephoto",
+              "battery": "4000mAh",
+              "os": "Android"
+            },
+            "price": "\u20b974,999.00",
+            "description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.\n\nKey Features:\n\n\u2022 **High-Refresh-Rate AMOLED Display**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.\n\n\u2022 **Flagship Processor**: Experience lightning-fast performance with our powerful flagship processor.\n\n\u2022 **Versatile Camera System**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.\n\n\u2022 **All-Day Battery Performance**: Stay connected all day with our long-lasting battery.\n\n\u2022 **Android Operating System**: Experience the latest Android operating system with our Samsung Galaxy S25.\n\nThe Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.\n\nSpecifications:\n\n- display: 6.2-inch Dynamic AMOLED 2X\n\n- processor: Snapdragon 8 Elite\n\n- ram: 12GB\n\n- storage: 256GB\n\n- camera: 50MP main + 12MP ultrawide + 10MP telephoto\n\n- battery: 4000mAh\n\n- os: Android"
+          },
+          "cope_scores": {
+            "variant_id": "43a9f6a8-d625-4b9d-8a76-1ab34d0984b4",
+            "overall_score": 88,
+            "purchase_probability": 82.0,
+            "expected_ctr": 78.0,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 92,
+            "confidence_score": 90
+          }
+        },
+        {
+          "variant_id": "bc5e7a09-e861-4025-b0f5-2ec002e907ca",
+          "type": "C",
+          "angle": "Urgency & Lifestyle Focused",
+          "title": "Samsung Galaxy S25 - Limited Time Offer",
+          "short_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+          "key_features": [
+            "**Limited Time Offer**: Get the Samsung Galaxy S25 now and experience the ultimate smartphone experience with our high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+            "**Seamless Viewing Experience**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.",
+            "**Lightning-Fast Performance**: Experience lightning-fast performance with our powerful flagship processor.",
+            "**Capture Life's Moments**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.",
+            "**Stay Connected All Day**: Stay connected all day with our long-lasting battery."
+          ],
+          "detailed_description": "The Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.",
+          "specifications": {
+            "display": "6.2-inch Dynamic AMOLED 2X",
+            "processor": "Snapdragon 8 Elite",
+            "ram": "12GB",
+            "storage": "256GB",
+            "camera": "50MP main + 12MP ultrawide + 10MP telephoto",
+            "battery": "4000mAh",
+            "os": "Android"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.\n\nKey Features:\n\n\u2022 **Limited Time Offer**: Get the Samsung Galaxy S25 now and experience the ultimate smartphone experience with our high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.\n\n\u2022 **Seamless Viewing Experience**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.\n\n\u2022 **Lightning-Fast Performance**: Experience lightning-fast performance with our powerful flagship processor.\n\n\u2022 **Capture Life's Moments**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.\n\n\u2022 **Stay Connected All Day**: Stay connected all day with our long-lasting battery.\n\nThe Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.\n\nSpecifications:\n\n- display: 6.2-inch Dynamic AMOLED 2X\n\n- processor: Snapdragon 8 Elite\n\n- ram: 12GB\n\n- storage: 256GB\n\n- camera: 50MP main + 12MP ultrawide + 10MP telephoto\n\n- battery: 4000mAh\n\n- os: Android",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Samsung Galaxy S25 - Limited Time Offer",
+            "meta_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+            "keywords": [
+              "Samsung Galaxy S25",
+              "Premium Compact Smartphone",
+              "High-Refresh-Rate AMOLED Display",
+              "Flagship Processor",
+              "Versatile Camera System",
+              "All-Day Battery Performance"
+            ],
+            "tags": [
+              "Smartphone",
+              "Samsung",
+              "Galaxy S25",
+              "Android"
+            ],
+            "short_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+            "bullet_points": [
+              "**Limited Time Offer**: Get the Samsung Galaxy S25 now and experience the ultimate smartphone experience with our high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+              "**Seamless Viewing Experience**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.",
+              "**Lightning-Fast Performance**: Experience lightning-fast performance with our powerful flagship processor.",
+              "**Capture Life's Moments**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.",
+              "**Stay Connected All Day**: Stay connected all day with our long-lasting battery."
+            ],
+            "detailed_description": "The Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.",
+            "specs": {
+              "display": "6.2-inch Dynamic AMOLED 2X",
+              "processor": "Snapdragon 8 Elite",
+              "ram": "12GB",
+              "storage": "256GB",
+              "camera": "50MP main + 12MP ultrawide + 10MP telephoto",
+              "battery": "4000mAh",
+              "os": "Android"
+            },
+            "price": "\u20b974,999.00",
+            "description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.\n\nKey Features:\n\n\u2022 **High-Refresh-Rate AMOLED Display**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.\n\n\u2022 **Flagship Processor**: Experience lightning-fast performance with our powerful flagship processor.\n\n\u2022 **Versatile Camera System**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.\n\n\u2022 **All-Day Battery Performance**: Stay connected all day with our long-lasting battery.\n\n\u2022 **Android Operating System**: Experience the latest Android operating system with our Samsung Galaxy S25.\n\nThe Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.\n\nSpecifications:\n\n- display: 6.2-inch Dynamic AMOLED 2X\n\n- processor: Snapdragon 8 Elite\n\n- ram: 12GB\n\n- storage: 256GB\n\n- camera: 50MP main + 12MP ultrawide + 10MP telephoto\n\n- battery: 4000mAh\n\n- os: Android"
+          },
+          "cope_scores": {
+            "variant_id": "bc5e7a09-e861-4025-b0f5-2ec002e907ca",
+            "overall_score": 85,
+            "purchase_probability": 79.0,
+            "expected_ctr": 75.0,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 90,
+            "confidence_score": 88
+          }
+        }
+      ],
+      "decision": {
+        "action": "publish",
+        "reason": "Clear winner identified with high confidence.",
+        "recommended_variant_id": "3927ce41-f76c-4db0-adc1-1bb89779f205"
+      },
+      "marketing": {
+        "platform": "olx",
+        "platform_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.\n\nKey Features:\n\n\u2022 **High-Refresh-Rate AMOLED Display**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.\n\n\u2022 **Flagship Processor**: Experience lightning-fast performance with our powerful flagship processor.\n\n\u2022 **Versatile Camera System**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.\n\n\u2022 **All-Day Battery Performance**: Stay connected all day with our long-lasting battery.\n\n\u2022 **Android Operating System**: Experience the latest Android operating system with our Samsung Galaxy S25.\n\nThe Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.\n\nSpecifications:\n\n- display: 6.2-inch Dynamic AMOLED 2X\n\n- processor: Snapdragon 8 Elite\n\n- ram: 12GB\n\n- storage: 256GB\n\n- camera: 50MP main + 12MP ultrawide + 10MP telephoto\n\n- battery: 4000mAh\n\n- os: Android",
+        "call_to_action": "Order now on Olx to get the best deal!"
+      },
+      "validation": {
+        "is_valid": true,
+        "issues": []
+      },
+      "scores": {
+        "privacy_score": 98,
+        "seo_score": 100,
+        "marketing_score": 90,
+        "overall_score": 94,
+        "feedback": "Excellent optimization. Copy is highly persuasive and well-structured."
+      }
+    }
+  },
+  "complete_response": {
+    "status": "success",
+    "message": "Workflow completed",
+    "data": {
+      "sanitized_input": "Product Name: Samsung Galaxy S25\nBrand: Samsung\nPrice: \u20b974,999\nCategory: Smartphone\nDescription: A premium compact smartphone with a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.\nSpecifications: display: 6.2-inch Dynamic AMOLED 2X, 120Hz, processor: Snapdragon 8 Elite, ram: 12GB, storage: 256GB, camera: 50MP main + 12MP ultrawide + 10MP telephoto, battery: 4000mAh, os: Android",
+      "vision_analysis": "Error analyzing image with Groq Vision: LLMGateway call failed after 3 retries. Error: Error code: 413 - {'error': {'message': 'Request too large for model `qwen/qwen3.6-27b` in organization `org_01kvb5wdg5eq99np00tsjmwhtg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 8286, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "rag_context": "RAG database is empty. Please run the ingestion script first.",
+      "seo": {
+        "title": "Samsung Galaxy S25 - Premium Compact Smartphone",
+        "meta_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+        "keywords": [
+          "Samsung Galaxy S25",
+          "Premium Compact Smartphone",
+          "High-Refresh-Rate AMOLED Display",
+          "Flagship Processor",
+          "Versatile Camera System",
+          "All-Day Battery Performance"
+        ],
+        "tags": [
+          "Smartphone",
+          "Samsung",
+          "Galaxy S25",
+          "Android"
+        ],
+        "short_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+        "bullet_points": [
+          "**High-Refresh-Rate AMOLED Display**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.",
+          "**Flagship Processor**: Experience lightning-fast performance with our powerful flagship processor.",
+          "**Versatile Camera System**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.",
+          "**All-Day Battery Performance**: Stay connected all day with our long-lasting battery.",
+          "**Android Operating System**: Experience the latest Android operating system with our Samsung Galaxy S25."
+        ],
+        "detailed_description": "The Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.",
+        "specs": {
+          "display": "6.2-inch Dynamic AMOLED 2X",
+          "processor": "Snapdragon 8 Elite",
+          "ram": "12GB",
+          "storage": "256GB",
+          "camera": "50MP main + 12MP ultrawide + 10MP telephoto",
+          "battery": "4000mAh",
+          "os": "Android"
+        },
+        "price": "\u20b974,999.00",
+        "description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.\n\nKey Features:\n\n\u2022 **High-Refresh-Rate AMOLED Display**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.\n\n\u2022 **Flagship Processor**: Experience lightning-fast performance with our powerful flagship processor.\n\n\u2022 **Versatile Camera System**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.\n\n\u2022 **All-Day Battery Performance**: Stay connected all day with our long-lasting battery.\n\n\u2022 **Android Operating System**: Experience the latest Android operating system with our Samsung Galaxy S25.\n\nThe Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.\n\nSpecifications:\n\n- display: 6.2-inch Dynamic AMOLED 2X\n\n- processor: Snapdragon 8 Elite\n\n- ram: 12GB\n\n- storage: 256GB\n\n- camera: 50MP main + 12MP ultrawide + 10MP telephoto\n\n- battery: 4000mAh\n\n- os: Android"
+      },
+      "competitor_analysis": {
+        "recommended_price": "\u20b974,999.00",
+        "lowest_competitor_price": "\u20b969,900.00",
+        "highest_competitor_price": "\u20b979,999.00",
+        "average_market_price": "\u20b973,499.50",
+        "market_positioning": "The Samsung Galaxy S25 is positioned as a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+        "pricing_strategy": "Our pricing strategy is to position the Samsung Galaxy S25 as a premium product that offers a unique combination of features and performance. We will price the product competitively to ensure that it appeals to a wide range of customers.",
+        "competitor_insights": [
+          "The Samsung Galaxy S25 has a higher refresh rate display than its competitors, making it a better choice for gamers and video enthusiasts.",
+          "The Samsung Galaxy S25 has a more powerful processor than its competitors, making it a better choice for heavy users.",
+          "The Samsung Galaxy S25 has a more versatile camera system than its competitors, making it a better choice for photography enthusiasts."
+        ]
+      },
+      "generated_variants": [
+        {
+          "variant_id": "3927ce41-f76c-4db0-adc1-1bb89779f205",
+          "type": "A",
+          "angle": "Feature & Tech Heavy",
+          "title": "Samsung Galaxy S25 - Premium Compact Smartphone with High-Refresh-Rate AMOLED Display",
+          "short_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+          "key_features": [
+            "**High-Refresh-Rate AMOLED Display**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.",
+            "**Flagship Processor**: Experience lightning-fast performance with our powerful flagship processor.",
+            "**Versatile Camera System**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.",
+            "**All-Day Battery Performance**: Stay connected all day with our long-lasting battery.",
+            "**Android Operating System**: Experience the latest Android operating system with our Samsung Galaxy S25."
+          ],
+          "detailed_description": "The Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.",
+          "specifications": {
+            "display": "6.2-inch Dynamic AMOLED 2X",
+            "processor": "Snapdragon 8 Elite",
+            "ram": "12GB",
+            "storage": "256GB",
+            "camera": "50MP main + 12MP ultrawide + 10MP telephoto",
+            "battery": "4000mAh",
+            "os": "Android"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.\n\nKey Features:\n\n\u2022 **High-Refresh-Rate AMOLED Display**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.\n\n\u2022 **Flagship Processor**: Experience lightning-fast performance with our powerful flagship processor.\n\n\u2022 **Versatile Camera System**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.\n\n\u2022 **All-Day Battery Performance**: Stay connected all day with our long-lasting battery.\n\n\u2022 **Android Operating System**: Experience the latest Android operating system with our Samsung Galaxy S25.\n\nThe Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.\n\nSpecifications:\n\n- display: 6.2-inch Dynamic AMOLED 2X\n\n- processor: Snapdragon 8 Elite\n\n- ram: 12GB\n\n- storage: 256GB\n\n- camera: 50MP main + 12MP ultrawide + 10MP telephoto\n\n- battery: 4000mAh\n\n- os: Android",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Samsung Galaxy S25 - Premium Compact Smartphone with High-Refresh-Rate AMOLED Display",
+            "meta_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+            "keywords": [
+              "Samsung Galaxy S25",
+              "Premium Compact Smartphone",
+              "High-Refresh-Rate AMOLED Display",
+              "Flagship Processor",
+              "Versatile Camera System",
+              "All-Day Battery Performance"
+            ],
+            "tags": [
+              "Smartphone",
+              "Samsung",
+              "Galaxy S25",
+              "Android"
+            ],
+            "short_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+            "bullet_points": [
+              "**High-Refresh-Rate AMOLED Display**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.",
+              "**Flagship Processor**: Experience lightning-fast performance with our powerful flagship processor.",
+              "**Versatile Camera System**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.",
+              "**All-Day Battery Performance**: Stay connected all day with our long-lasting battery.",
+              "**Android Operating System**: Experience the latest Android operating system with our Samsung Galaxy S25."
+            ],
+            "detailed_description": "The Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.",
+            "specs": {
+              "display": "6.2-inch Dynamic AMOLED 2X",
+              "processor": "Snapdragon 8 Elite",
+              "ram": "12GB",
+              "storage": "256GB",
+              "camera": "50MP main + 12MP ultrawide + 10MP telephoto",
+              "battery": "4000mAh",
+              "os": "Android"
+            },
+            "price": "\u20b974,999.00",
+            "description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.\n\nKey Features:\n\n\u2022 **High-Refresh-Rate AMOLED Display**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.\n\n\u2022 **Flagship Processor**: Experience lightning-fast performance with our powerful flagship processor.\n\n\u2022 **Versatile Camera System**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.\n\n\u2022 **All-Day Battery Performance**: Stay connected all day with our long-lasting battery.\n\n\u2022 **Android Operating System**: Experience the latest Android operating system with our Samsung Galaxy S25.\n\nThe Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.\n\nSpecifications:\n\n- display: 6.2-inch Dynamic AMOLED 2X\n\n- processor: Snapdragon 8 Elite\n\n- ram: 12GB\n\n- storage: 256GB\n\n- camera: 50MP main + 12MP ultrawide + 10MP telephoto\n\n- battery: 4000mAh\n\n- os: Android"
+          }
+        },
+        {
+          "variant_id": "43a9f6a8-d625-4b9d-8a76-1ab34d0984b4",
+          "type": "B",
+          "angle": "Emotional & Value Driven",
+          "title": "Samsung Galaxy S25 - Unlock Your Potential",
+          "short_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+          "key_features": [
+            "**Unlock Your Potential**: Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+            "**Seamless Viewing Experience**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.",
+            "**Lightning-Fast Performance**: Experience lightning-fast performance with our powerful flagship processor.",
+            "**Capture Life's Moments**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.",
+            "**Stay Connected All Day**: Stay connected all day with our long-lasting battery."
+          ],
+          "detailed_description": "The Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.",
+          "specifications": {
+            "display": "6.2-inch Dynamic AMOLED 2X",
+            "processor": "Snapdragon 8 Elite",
+            "ram": "12GB",
+            "storage": "256GB",
+            "camera": "50MP main + 12MP ultrawide + 10MP telephoto",
+            "battery": "4000mAh",
+            "os": "Android"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.\n\nKey Features:\n\n\u2022 **Unlock Your Potential**: Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.\n\n\u2022 **Seamless Viewing Experience**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.\n\n\u2022 **Lightning-Fast Performance**: Experience lightning-fast performance with our powerful flagship processor.\n\n\u2022 **Capture Life's Moments**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.\n\n\u2022 **Stay Connected All Day**: Stay connected all day with our long-lasting battery.\n\nThe Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.\n\nSpecifications:\n\n- display: 6.2-inch Dynamic AMOLED 2X\n\n- processor: Snapdragon 8 Elite\n\n- ram: 12GB\n\n- storage: 256GB\n\n- camera: 50MP main + 12MP ultrawide + 10MP telephoto\n\n- battery: 4000mAh\n\n- os: Android",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Samsung Galaxy S25 - Unlock Your Potential",
+            "meta_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+            "keywords": [
+              "Samsung Galaxy S25",
+              "Premium Compact Smartphone",
+              "High-Refresh-Rate AMOLED Display",
+              "Flagship Processor",
+              "Versatile Camera System",
+              "All-Day Battery Performance"
+            ],
+            "tags": [
+              "Smartphone",
+              "Samsung",
+              "Galaxy S25",
+              "Android"
+            ],
+            "short_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+            "bullet_points": [
+              "**Unlock Your Potential**: Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+              "**Seamless Viewing Experience**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.",
+              "**Lightning-Fast Performance**: Experience lightning-fast performance with our powerful flagship processor.",
+              "**Capture Life's Moments**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.",
+              "**Stay Connected All Day**: Stay connected all day with our long-lasting battery."
+            ],
+            "detailed_description": "The Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.",
+            "specs": {
+              "display": "6.2-inch Dynamic AMOLED 2X",
+              "processor": "Snapdragon 8 Elite",
+              "ram": "12GB",
+              "storage": "256GB",
+              "camera": "50MP main + 12MP ultrawide + 10MP telephoto",
+              "battery": "4000mAh",
+              "os": "Android"
+            },
+            "price": "\u20b974,999.00",
+            "description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.\n\nKey Features:\n\n\u2022 **High-Refresh-Rate AMOLED Display**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.\n\n\u2022 **Flagship Processor**: Experience lightning-fast performance with our powerful flagship processor.\n\n\u2022 **Versatile Camera System**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.\n\n\u2022 **All-Day Battery Performance**: Stay connected all day with our long-lasting battery.\n\n\u2022 **Android Operating System**: Experience the latest Android operating system with our Samsung Galaxy S25.\n\nThe Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.\n\nSpecifications:\n\n- display: 6.2-inch Dynamic AMOLED 2X\n\n- processor: Snapdragon 8 Elite\n\n- ram: 12GB\n\n- storage: 256GB\n\n- camera: 50MP main + 12MP ultrawide + 10MP telephoto\n\n- battery: 4000mAh\n\n- os: Android"
+          }
+        },
+        {
+          "variant_id": "bc5e7a09-e861-4025-b0f5-2ec002e907ca",
+          "type": "C",
+          "angle": "Urgency & Lifestyle Focused",
+          "title": "Samsung Galaxy S25 - Limited Time Offer",
+          "short_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+          "key_features": [
+            "**Limited Time Offer**: Get the Samsung Galaxy S25 now and experience the ultimate smartphone experience with our high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+            "**Seamless Viewing Experience**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.",
+            "**Lightning-Fast Performance**: Experience lightning-fast performance with our powerful flagship processor.",
+            "**Capture Life's Moments**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.",
+            "**Stay Connected All Day**: Stay connected all day with our long-lasting battery."
+          ],
+          "detailed_description": "The Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.",
+          "specifications": {
+            "display": "6.2-inch Dynamic AMOLED 2X",
+            "processor": "Snapdragon 8 Elite",
+            "ram": "12GB",
+            "storage": "256GB",
+            "camera": "50MP main + 12MP ultrawide + 10MP telephoto",
+            "battery": "4000mAh",
+            "os": "Android"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.\n\nKey Features:\n\n\u2022 **Limited Time Offer**: Get the Samsung Galaxy S25 now and experience the ultimate smartphone experience with our high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.\n\n\u2022 **Seamless Viewing Experience**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.\n\n\u2022 **Lightning-Fast Performance**: Experience lightning-fast performance with our powerful flagship processor.\n\n\u2022 **Capture Life's Moments**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.\n\n\u2022 **Stay Connected All Day**: Stay connected all day with our long-lasting battery.\n\nThe Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.\n\nSpecifications:\n\n- display: 6.2-inch Dynamic AMOLED 2X\n\n- processor: Snapdragon 8 Elite\n\n- ram: 12GB\n\n- storage: 256GB\n\n- camera: 50MP main + 12MP ultrawide + 10MP telephoto\n\n- battery: 4000mAh\n\n- os: Android",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Samsung Galaxy S25 - Limited Time Offer",
+            "meta_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+            "keywords": [
+              "Samsung Galaxy S25",
+              "Premium Compact Smartphone",
+              "High-Refresh-Rate AMOLED Display",
+              "Flagship Processor",
+              "Versatile Camera System",
+              "All-Day Battery Performance"
+            ],
+            "tags": [
+              "Smartphone",
+              "Samsung",
+              "Galaxy S25",
+              "Android"
+            ],
+            "short_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+            "bullet_points": [
+              "**Limited Time Offer**: Get the Samsung Galaxy S25 now and experience the ultimate smartphone experience with our high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+              "**Seamless Viewing Experience**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.",
+              "**Lightning-Fast Performance**: Experience lightning-fast performance with our powerful flagship processor.",
+              "**Capture Life's Moments**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.",
+              "**Stay Connected All Day**: Stay connected all day with our long-lasting battery."
+            ],
+            "detailed_description": "The Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.",
+            "specs": {
+              "display": "6.2-inch Dynamic AMOLED 2X",
+              "processor": "Snapdragon 8 Elite",
+              "ram": "12GB",
+              "storage": "256GB",
+              "camera": "50MP main + 12MP ultrawide + 10MP telephoto",
+              "battery": "4000mAh",
+              "os": "Android"
+            },
+            "price": "\u20b974,999.00",
+            "description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.\n\nKey Features:\n\n\u2022 **High-Refresh-Rate AMOLED Display**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.\n\n\u2022 **Flagship Processor**: Experience lightning-fast performance with our powerful flagship processor.\n\n\u2022 **Versatile Camera System**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.\n\n\u2022 **All-Day Battery Performance**: Stay connected all day with our long-lasting battery.\n\n\u2022 **Android Operating System**: Experience the latest Android operating system with our Samsung Galaxy S25.\n\nThe Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.\n\nSpecifications:\n\n- display: 6.2-inch Dynamic AMOLED 2X\n\n- processor: Snapdragon 8 Elite\n\n- ram: 12GB\n\n- storage: 256GB\n\n- camera: 50MP main + 12MP ultrawide + 10MP telephoto\n\n- battery: 4000mAh\n\n- os: Android"
+          }
+        }
+      ],
+      "scored_variants": [
+        {
+          "variant_id": "3927ce41-f76c-4db0-adc1-1bb89779f205",
+          "type": "A",
+          "angle": "Feature & Tech Heavy",
+          "title": "Samsung Galaxy S25 - Premium Compact Smartphone with High-Refresh-Rate AMOLED Display",
+          "short_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+          "key_features": [
+            "**High-Refresh-Rate AMOLED Display**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.",
+            "**Flagship Processor**: Experience lightning-fast performance with our powerful flagship processor.",
+            "**Versatile Camera System**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.",
+            "**All-Day Battery Performance**: Stay connected all day with our long-lasting battery.",
+            "**Android Operating System**: Experience the latest Android operating system with our Samsung Galaxy S25."
+          ],
+          "detailed_description": "The Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.",
+          "specifications": {
+            "display": "6.2-inch Dynamic AMOLED 2X",
+            "processor": "Snapdragon 8 Elite",
+            "ram": "12GB",
+            "storage": "256GB",
+            "camera": "50MP main + 12MP ultrawide + 10MP telephoto",
+            "battery": "4000mAh",
+            "os": "Android"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.\n\nKey Features:\n\n\u2022 **High-Refresh-Rate AMOLED Display**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.\n\n\u2022 **Flagship Processor**: Experience lightning-fast performance with our powerful flagship processor.\n\n\u2022 **Versatile Camera System**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.\n\n\u2022 **All-Day Battery Performance**: Stay connected all day with our long-lasting battery.\n\n\u2022 **Android Operating System**: Experience the latest Android operating system with our Samsung Galaxy S25.\n\nThe Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.\n\nSpecifications:\n\n- display: 6.2-inch Dynamic AMOLED 2X\n\n- processor: Snapdragon 8 Elite\n\n- ram: 12GB\n\n- storage: 256GB\n\n- camera: 50MP main + 12MP ultrawide + 10MP telephoto\n\n- battery: 4000mAh\n\n- os: Android",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Samsung Galaxy S25 - Premium Compact Smartphone with High-Refresh-Rate AMOLED Display",
+            "meta_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+            "keywords": [
+              "Samsung Galaxy S25",
+              "Premium Compact Smartphone",
+              "High-Refresh-Rate AMOLED Display",
+              "Flagship Processor",
+              "Versatile Camera System",
+              "All-Day Battery Performance"
+            ],
+            "tags": [
+              "Smartphone",
+              "Samsung",
+              "Galaxy S25",
+              "Android"
+            ],
+            "short_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+            "bullet_points": [
+              "**High-Refresh-Rate AMOLED Display**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.",
+              "**Flagship Processor**: Experience lightning-fast performance with our powerful flagship processor.",
+              "**Versatile Camera System**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.",
+              "**All-Day Battery Performance**: Stay connected all day with our long-lasting battery.",
+              "**Android Operating System**: Experience the latest Android operating system with our Samsung Galaxy S25."
+            ],
+            "detailed_description": "The Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.",
+            "specs": {
+              "display": "6.2-inch Dynamic AMOLED 2X",
+              "processor": "Snapdragon 8 Elite",
+              "ram": "12GB",
+              "storage": "256GB",
+              "camera": "50MP main + 12MP ultrawide + 10MP telephoto",
+              "battery": "4000mAh",
+              "os": "Android"
+            },
+            "price": "\u20b974,999.00",
+            "description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.\n\nKey Features:\n\n\u2022 **High-Refresh-Rate AMOLED Display**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.\n\n\u2022 **Flagship Processor**: Experience lightning-fast performance with our powerful flagship processor.\n\n\u2022 **Versatile Camera System**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.\n\n\u2022 **All-Day Battery Performance**: Stay connected all day with our long-lasting battery.\n\n\u2022 **Android Operating System**: Experience the latest Android operating system with our Samsung Galaxy S25.\n\nThe Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.\n\nSpecifications:\n\n- display: 6.2-inch Dynamic AMOLED 2X\n\n- processor: Snapdragon 8 Elite\n\n- ram: 12GB\n\n- storage: 256GB\n\n- camera: 50MP main + 12MP ultrawide + 10MP telephoto\n\n- battery: 4000mAh\n\n- os: Android"
+          },
+          "cope_scores": {
+            "variant_id": "3927ce41-f76c-4db0-adc1-1bb89779f205",
+            "overall_score": 90,
+            "purchase_probability": 85.0,
+            "expected_ctr": 80.0,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 95,
+            "confidence_score": 92
+          }
+        },
+        {
+          "variant_id": "43a9f6a8-d625-4b9d-8a76-1ab34d0984b4",
+          "type": "B",
+          "angle": "Emotional & Value Driven",
+          "title": "Samsung Galaxy S25 - Unlock Your Potential",
+          "short_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+          "key_features": [
+            "**Unlock Your Potential**: Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+            "**Seamless Viewing Experience**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.",
+            "**Lightning-Fast Performance**: Experience lightning-fast performance with our powerful flagship processor.",
+            "**Capture Life's Moments**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.",
+            "**Stay Connected All Day**: Stay connected all day with our long-lasting battery."
+          ],
+          "detailed_description": "The Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.",
+          "specifications": {
+            "display": "6.2-inch Dynamic AMOLED 2X",
+            "processor": "Snapdragon 8 Elite",
+            "ram": "12GB",
+            "storage": "256GB",
+            "camera": "50MP main + 12MP ultrawide + 10MP telephoto",
+            "battery": "4000mAh",
+            "os": "Android"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.\n\nKey Features:\n\n\u2022 **Unlock Your Potential**: Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.\n\n\u2022 **Seamless Viewing Experience**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.\n\n\u2022 **Lightning-Fast Performance**: Experience lightning-fast performance with our powerful flagship processor.\n\n\u2022 **Capture Life's Moments**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.\n\n\u2022 **Stay Connected All Day**: Stay connected all day with our long-lasting battery.\n\nThe Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.\n\nSpecifications:\n\n- display: 6.2-inch Dynamic AMOLED 2X\n\n- processor: Snapdragon 8 Elite\n\n- ram: 12GB\n\n- storage: 256GB\n\n- camera: 50MP main + 12MP ultrawide + 10MP telephoto\n\n- battery: 4000mAh\n\n- os: Android",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Samsung Galaxy S25 - Unlock Your Potential",
+            "meta_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+            "keywords": [
+              "Samsung Galaxy S25",
+              "Premium Compact Smartphone",
+              "High-Refresh-Rate AMOLED Display",
+              "Flagship Processor",
+              "Versatile Camera System",
+              "All-Day Battery Performance"
+            ],
+            "tags": [
+              "Smartphone",
+              "Samsung",
+              "Galaxy S25",
+              "Android"
+            ],
+            "short_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+            "bullet_points": [
+              "**Unlock Your Potential**: Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+              "**Seamless Viewing Experience**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.",
+              "**Lightning-Fast Performance**: Experience lightning-fast performance with our powerful flagship processor.",
+              "**Capture Life's Moments**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.",
+              "**Stay Connected All Day**: Stay connected all day with our long-lasting battery."
+            ],
+            "detailed_description": "The Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.",
+            "specs": {
+              "display": "6.2-inch Dynamic AMOLED 2X",
+              "processor": "Snapdragon 8 Elite",
+              "ram": "12GB",
+              "storage": "256GB",
+              "camera": "50MP main + 12MP ultrawide + 10MP telephoto",
+              "battery": "4000mAh",
+              "os": "Android"
+            },
+            "price": "\u20b974,999.00",
+            "description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.\n\nKey Features:\n\n\u2022 **High-Refresh-Rate AMOLED Display**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.\n\n\u2022 **Flagship Processor**: Experience lightning-fast performance with our powerful flagship processor.\n\n\u2022 **Versatile Camera System**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.\n\n\u2022 **All-Day Battery Performance**: Stay connected all day with our long-lasting battery.\n\n\u2022 **Android Operating System**: Experience the latest Android operating system with our Samsung Galaxy S25.\n\nThe Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.\n\nSpecifications:\n\n- display: 6.2-inch Dynamic AMOLED 2X\n\n- processor: Snapdragon 8 Elite\n\n- ram: 12GB\n\n- storage: 256GB\n\n- camera: 50MP main + 12MP ultrawide + 10MP telephoto\n\n- battery: 4000mAh\n\n- os: Android"
+          },
+          "cope_scores": {
+            "variant_id": "43a9f6a8-d625-4b9d-8a76-1ab34d0984b4",
+            "overall_score": 88,
+            "purchase_probability": 82.0,
+            "expected_ctr": 78.0,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 92,
+            "confidence_score": 90
+          }
+        },
+        {
+          "variant_id": "bc5e7a09-e861-4025-b0f5-2ec002e907ca",
+          "type": "C",
+          "angle": "Urgency & Lifestyle Focused",
+          "title": "Samsung Galaxy S25 - Limited Time Offer",
+          "short_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+          "key_features": [
+            "**Limited Time Offer**: Get the Samsung Galaxy S25 now and experience the ultimate smartphone experience with our high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+            "**Seamless Viewing Experience**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.",
+            "**Lightning-Fast Performance**: Experience lightning-fast performance with our powerful flagship processor.",
+            "**Capture Life's Moments**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.",
+            "**Stay Connected All Day**: Stay connected all day with our long-lasting battery."
+          ],
+          "detailed_description": "The Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.",
+          "specifications": {
+            "display": "6.2-inch Dynamic AMOLED 2X",
+            "processor": "Snapdragon 8 Elite",
+            "ram": "12GB",
+            "storage": "256GB",
+            "camera": "50MP main + 12MP ultrawide + 10MP telephoto",
+            "battery": "4000mAh",
+            "os": "Android"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.\n\nKey Features:\n\n\u2022 **Limited Time Offer**: Get the Samsung Galaxy S25 now and experience the ultimate smartphone experience with our high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.\n\n\u2022 **Seamless Viewing Experience**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.\n\n\u2022 **Lightning-Fast Performance**: Experience lightning-fast performance with our powerful flagship processor.\n\n\u2022 **Capture Life's Moments**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.\n\n\u2022 **Stay Connected All Day**: Stay connected all day with our long-lasting battery.\n\nThe Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.\n\nSpecifications:\n\n- display: 6.2-inch Dynamic AMOLED 2X\n\n- processor: Snapdragon 8 Elite\n\n- ram: 12GB\n\n- storage: 256GB\n\n- camera: 50MP main + 12MP ultrawide + 10MP telephoto\n\n- battery: 4000mAh\n\n- os: Android",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Samsung Galaxy S25 - Limited Time Offer",
+            "meta_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+            "keywords": [
+              "Samsung Galaxy S25",
+              "Premium Compact Smartphone",
+              "High-Refresh-Rate AMOLED Display",
+              "Flagship Processor",
+              "Versatile Camera System",
+              "All-Day Battery Performance"
+            ],
+            "tags": [
+              "Smartphone",
+              "Samsung",
+              "Galaxy S25",
+              "Android"
+            ],
+            "short_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+            "bullet_points": [
+              "**Limited Time Offer**: Get the Samsung Galaxy S25 now and experience the ultimate smartphone experience with our high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+              "**Seamless Viewing Experience**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.",
+              "**Lightning-Fast Performance**: Experience lightning-fast performance with our powerful flagship processor.",
+              "**Capture Life's Moments**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.",
+              "**Stay Connected All Day**: Stay connected all day with our long-lasting battery."
+            ],
+            "detailed_description": "The Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.",
+            "specs": {
+              "display": "6.2-inch Dynamic AMOLED 2X",
+              "processor": "Snapdragon 8 Elite",
+              "ram": "12GB",
+              "storage": "256GB",
+              "camera": "50MP main + 12MP ultrawide + 10MP telephoto",
+              "battery": "4000mAh",
+              "os": "Android"
+            },
+            "price": "\u20b974,999.00",
+            "description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.\n\nKey Features:\n\n\u2022 **High-Refresh-Rate AMOLED Display**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.\n\n\u2022 **Flagship Processor**: Experience lightning-fast performance with our powerful flagship processor.\n\n\u2022 **Versatile Camera System**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.\n\n\u2022 **All-Day Battery Performance**: Stay connected all day with our long-lasting battery.\n\n\u2022 **Android Operating System**: Experience the latest Android operating system with our Samsung Galaxy S25.\n\nThe Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.\n\nSpecifications:\n\n- display: 6.2-inch Dynamic AMOLED 2X\n\n- processor: Snapdragon 8 Elite\n\n- ram: 12GB\n\n- storage: 256GB\n\n- camera: 50MP main + 12MP ultrawide + 10MP telephoto\n\n- battery: 4000mAh\n\n- os: Android"
+          },
+          "cope_scores": {
+            "variant_id": "bc5e7a09-e861-4025-b0f5-2ec002e907ca",
+            "overall_score": 85,
+            "purchase_probability": 79.0,
+            "expected_ctr": 75.0,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 90,
+            "confidence_score": 88
+          }
+        }
+      ],
+      "decision": {
+        "action": "publish",
+        "reason": "Clear winner identified with high confidence.",
+        "recommended_variant_id": "3927ce41-f76c-4db0-adc1-1bb89779f205"
+      },
+      "marketing": {
+        "platform": "olx",
+        "platform_description": "Experience the ultimate smartphone experience with Samsung Galaxy S25's high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.\n\nKey Features:\n\n\u2022 **High-Refresh-Rate AMOLED Display**: Enjoy a seamless viewing experience with our high-refresh-rate AMOLED display.\n\n\u2022 **Flagship Processor**: Experience lightning-fast performance with our powerful flagship processor.\n\n\u2022 **Versatile Camera System**: Capture life's moments with our versatile camera system featuring a 50MP main camera, 12MP ultrawide camera, and 10MP telephoto camera.\n\n\u2022 **All-Day Battery Performance**: Stay connected all day with our long-lasting battery.\n\n\u2022 **Android Operating System**: Experience the latest Android operating system with our Samsung Galaxy S25.\n\nThe Samsung Galaxy S25 is a premium compact smartphone that offers a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance. With its sleek design and powerful features, this smartphone is perfect for those who want a seamless viewing experience, lightning-fast performance, and a versatile camera system. The Samsung Galaxy S25 also features an all-day battery that keeps you connected all day long. Experience the latest Android operating system with our Samsung Galaxy S25.\n\nSpecifications:\n\n- display: 6.2-inch Dynamic AMOLED 2X\n\n- processor: Snapdragon 8 Elite\n\n- ram: 12GB\n\n- storage: 256GB\n\n- camera: 50MP main + 12MP ultrawide + 10MP telephoto\n\n- battery: 4000mAh\n\n- os: Android",
+        "call_to_action": "Order now on Olx to get the best deal!"
+      },
+      "validation": {
+        "is_valid": true,
+        "issues": []
+      },
+      "scores": {
+        "privacy_score": 98,
+        "seo_score": 100,
+        "marketing_score": 90,
+        "overall_score": 94,
+        "feedback": "Excellent optimization. Copy is highly persuasive and well-structured."
+      }
+    }
+  },
+  "token_usage": null,
+  "estimated_cost": null,
+  "cache_hit": null,
+  "error": null,
+  "capability_metadata": {
+    "image_processing_supported": true,
+    "privacy_anonymization": true,
+    "rag_context": true,
+    "multi_agent_workflow": true
+  }
+}

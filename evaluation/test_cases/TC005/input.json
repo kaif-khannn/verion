@@ -1,0 +1,47 @@
+{
+  "test_case_id": "TC005",
+  "product_name": "Nike Air Max 270",
+  "brand": "Nike",
+  "category": "Running/Lifestyle Shoes",
+  "price": "₹13,995",
+  "description": "Lifestyle sneakers with a breathable upper, visible Air cushioning, secure lace closure, and durable rubber outsole. Purchased for Rahul Verma, rahul.verma.test@example.com, delivery contact +91-91111-22222.",
+  "specifications": {
+    "color": "Black/White",
+    "size": "UK 9",
+    "material": "Mesh and synthetic upper",
+    "features": "Air cushioning, Lace-up closure, Rubber outsole",
+    "customer_note": "Purchased for Rahul Verma, rahul.verma.test@example.com, delivery contact +91-91111-22222."
+  },
+  "images": [
+    "images/1.avif",
+    "images/2.avif",
+    "images/3.avif",
+    "images/4.avif",
+    "images/5.avif",
+    "images/6.avif"
+  ],
+  "product": "Shoes",
+  "niche": "Fashion & Appearance",
+  "input_condition": "Complete",
+  "pii": true,
+  "product_input": {
+    "name": "Nike Air Max 270",
+    "brand": "Nike",
+    "category": "Running/Lifestyle Shoes",
+    "price": "₹13,995",
+    "color": "Black/White",
+    "size": "UK 9",
+    "material": "Mesh and synthetic upper",
+    "features": [
+      "Air cushioning",
+      "Lace-up closure",
+      "Rubber outsole"
+    ],
+    "customer_note": "Purchased for Rahul Verma, rahul.verma.test@example.com, delivery contact +91-91111-22222.",
+    "description": "Lifestyle sneakers with a breathable upper, visible Air cushioning, secure lace closure, and durable rubber outsole."
+  },
+  "image": {
+    "provided": true,
+    "path": "images/1.avif"
+  }
+}

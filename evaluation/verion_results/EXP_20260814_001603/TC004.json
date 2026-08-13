@@ -1,0 +1,1063 @@
+{
+  "experiment_id": "EXP_20260814_001603",
+  "test_case_id": "TC004",
+  "system": "verion",
+  "timestamp": "2026-08-14T00:18:27.011714",
+  "success": true,
+  "latency_ms": 28124.73,
+  "model": "multi-agent",
+  "raw_output": {
+    "status": "success",
+    "message": "Workflow completed",
+    "data": {
+      "sanitized_input": "Product Name: Women's Dress\nPrice: unknown\nCategory: Dress\nDescription: women dress blue maybe floral, knee length? looks casual. material not sure. size M shown on tag maybe. good for summer and outing. price unknown\nSpecifications: color: Blue, pattern: Floral, length: Knee-length, size: M (Medium), season: Summer, style: Casual",
+      "vision_analysis": "Error analyzing image with Groq Vision: LLMGateway call failed after 3 retries. Error: Error code: 413 - {'error': {'message': 'Request too large for model `qwen/qwen3.6-27b` in organization `org_01kvb5wdg5eq99np00tsjmwhtg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 8286, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "rag_context": "RAG database is empty. Please run the ingestion script first.",
+      "seo": {
+        "title": "Women's Blue Floral Dress for Summer",
+        "meta_description": "Blue floral dress for women, perfect for summer outings. Get the best deals on women's dresses online.",
+        "keywords": [
+          "women's dress",
+          "blue floral dress",
+          "summer dress",
+          "women's clothing",
+          "online shopping"
+        ],
+        "tags": [
+          "women's fashion",
+          "summer wear",
+          "casual dress",
+          "online shopping",
+          "best deals"
+        ],
+        "short_description": "Stay cool and stylish this summer with our blue floral dress. Perfect for casual outings and everyday wear.",
+        "bullet_points": [
+          "**Blue Floral Pattern**: Add a touch of elegance to your wardrobe with this beautiful blue floral dress.",
+          "**Knee-Length Design**: Flattering and comfortable, this dress is perfect for everyday wear.",
+          "**Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.",
+          "**Summer Fabric**: Made from breathable fabric, this dress keeps you cool and comfortable all day long.",
+          "**Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types."
+        ],
+        "detailed_description": "Our blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals. Whether you're running errands or meeting friends, this dress is a great choice.",
+        "specs": {
+          "color": "Blue",
+          "pattern": "Floral",
+          "length": "Knee-length",
+          "size": "Medium",
+          "season": "Summer",
+          "style": "Casual"
+        },
+        "price": "\u20b91,499.00",
+        "description": "Stay cool and stylish this summer with our blue floral dress. Perfect for casual outings and everyday wear.\n\nKey Features:\n\n\u2022 **Blue Floral Pattern**: Add a touch of elegance to your wardrobe with this beautiful blue floral dress.\n\n\u2022 **Knee-Length Design**: Flattering and comfortable, this dress is perfect for everyday wear.\n\n\u2022 **Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.\n\n\u2022 **Summer Fabric**: Made from breathable fabric, this dress keeps you cool and comfortable all day long.\n\n\u2022 **Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types.\n\nOur blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals. Whether you're running errands or meeting friends, this dress is a great choice.\n\nSpecifications:\n\n- color: Blue\n\n- pattern: Floral\n\n- length: Knee-length\n\n- size: Medium\n\n- season: Summer\n\n- style: Casual"
+      },
+      "competitor_analysis": {
+        "recommended_price": "\u20b91,499.00",
+        "lowest_competitor_price": "\u20b91,299.00",
+        "highest_competitor_price": "\u20b91,699.00",
+        "average_market_price": "\u20b91,499.00",
+        "market_positioning": "Our blue floral dress is priced competitively with other similar products in the market.",
+        "pricing_strategy": "We offer the best price for the quality and comfort of our dress.",
+        "competitor_insights": [
+          "Competitor A offers a similar dress at a higher price point.",
+          "Competitor B offers a cheaper dress, but with lower quality fabric.",
+          "Competitor C offers a dress with a similar price point, but with a different design."
+        ]
+      },
+      "generated_variants": [
+        {
+          "variant_id": "589c7e58-e209-434a-b2de-bb8b80c76cd8",
+          "type": "A",
+          "angle": "Feature & Tech Heavy",
+          "title": "Women's Blue Floral Dress for Summer - Tech-Heavy",
+          "short_description": "Stay cool and stylish this summer with our blue floral dress. Made from breathable fabric, this dress keeps you comfortable all day long.",
+          "key_features": [
+            "**Breathable Fabric**: Made from high-quality fabric that keeps you cool and comfortable.",
+            "**Knee-Length Design**: Flattering and comfortable, this dress is perfect for everyday wear.",
+            "**Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.",
+            "**Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types.",
+            "**Quick-Drying**: This dress dries quickly, making it perfect for outdoor activities."
+          ],
+          "detailed_description": "Our blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals.",
+          "specifications": {
+            "color": "Blue",
+            "pattern": "Floral",
+            "length": "Knee-length",
+            "size": "Medium",
+            "season": "Summer",
+            "style": "Casual"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Stay cool and stylish this summer with our blue floral dress. Made from breathable fabric, this dress keeps you comfortable all day long.\n\nKey Features:\n\n\u2022 **Breathable Fabric**: Made from high-quality fabric that keeps you cool and comfortable.\n\n\u2022 **Knee-Length Design**: Flattering and comfortable, this dress is perfect for everyday wear.\n\n\u2022 **Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.\n\n\u2022 **Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types.\n\n\u2022 **Quick-Drying**: This dress dries quickly, making it perfect for outdoor activities.\n\nOur blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals.\n\nSpecifications:\n\n- color: Blue\n\n- pattern: Floral\n\n- length: Knee-length\n\n- size: Medium\n\n- season: Summer\n\n- style: Casual",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Women's Blue Floral Dress for Summer - Tech-Heavy",
+            "meta_description": "Blue floral dress for women, perfect for summer outings. Get the best deals on women's dresses online.",
+            "keywords": [
+              "women's dress",
+              "blue floral dress",
+              "summer dress",
+              "women's clothing",
+              "online shopping"
+            ],
+            "tags": [
+              "women's fashion",
+              "summer wear",
+              "casual dress",
+              "online shopping",
+              "best deals"
+            ],
+            "short_description": "Stay cool and stylish this summer with our blue floral dress. Made from breathable fabric, this dress keeps you comfortable all day long.",
+            "bullet_points": [
+              "**Breathable Fabric**: Made from high-quality fabric that keeps you cool and comfortable.",
+              "**Knee-Length Design**: Flattering and comfortable, this dress is perfect for everyday wear.",
+              "**Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.",
+              "**Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types.",
+              "**Quick-Drying**: This dress dries quickly, making it perfect for outdoor activities."
+            ],
+            "detailed_description": "Our blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals.",
+            "specs": {
+              "color": "Blue",
+              "pattern": "Floral",
+              "length": "Knee-length",
+              "size": "Medium",
+              "season": "Summer",
+              "style": "Casual"
+            },
+            "price": "\u20b91,499.00",
+            "description": "Stay cool and stylish this summer with our blue floral dress. Perfect for casual outings and everyday wear.\n\nKey Features:\n\n\u2022 **Blue Floral Pattern**: Add a touch of elegance to your wardrobe with this beautiful blue floral dress.\n\n\u2022 **Knee-Length Design**: Flattering and comfortable, this dress is perfect for everyday wear.\n\n\u2022 **Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.\n\n\u2022 **Summer Fabric**: Made from breathable fabric, this dress keeps you cool and comfortable all day long.\n\n\u2022 **Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types.\n\nOur blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals. Whether you're running errands or meeting friends, this dress is a great choice.\n\nSpecifications:\n\n- color: Blue\n\n- pattern: Floral\n\n- length: Knee-length\n\n- size: Medium\n\n- season: Summer\n\n- style: Casual"
+          },
+          "cope_scores": {
+            "overall_score": 85,
+            "purchase_probability": 78.5,
+            "expected_ctr": 72.0,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 90,
+            "confidence_score": 88
+          }
+        },
+        {
+          "variant_id": "1c44c4a4-6670-41a5-901b-ecb8042c65b7",
+          "type": "B",
+          "angle": "Emotional & Value Driven",
+          "title": "Women's Blue Floral Dress for Summer - Emotional",
+          "short_description": "Feel confident and beautiful in our blue floral dress. Perfect for summer outings and everyday wear.",
+          "key_features": [
+            "**Confident Look**: This dress makes you feel confident and beautiful.",
+            "**Comfortable Fabric**: Made from breathable fabric, this dress keeps you cool and comfortable all day long.",
+            "**Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.",
+            "**Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types.",
+            "**Perfect for Summer**: This dress is perfect for summer outings and everyday wear."
+          ],
+          "detailed_description": "Our blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals.",
+          "specifications": {
+            "color": "Blue",
+            "pattern": "Floral",
+            "length": "Knee-length",
+            "size": "Medium",
+            "season": "Summer",
+            "style": "Casual"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Feel confident and beautiful in our blue floral dress. Perfect for summer outings and everyday wear.\n\nKey Features:\n\n\u2022 **Confident Look**: This dress makes you feel confident and beautiful.\n\n\u2022 **Comfortable Fabric**: Made from breathable fabric, this dress keeps you cool and comfortable all day long.\n\n\u2022 **Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.\n\n\u2022 **Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types.\n\n\u2022 **Perfect for Summer**: This dress is perfect for summer outings and everyday wear.\n\nOur blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals.\n\nSpecifications:\n\n- color: Blue\n\n- pattern: Floral\n\n- length: Knee-length\n\n- size: Medium\n\n- season: Summer\n\n- style: Casual",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Women's Blue Floral Dress for Summer - Emotional",
+            "meta_description": "Blue floral dress for women, perfect for summer outings. Get the best deals on women's dresses online.",
+            "keywords": [
+              "women's dress",
+              "blue floral dress",
+              "summer dress",
+              "women's clothing",
+              "online shopping"
+            ],
+            "tags": [
+              "women's fashion",
+              "summer wear",
+              "casual dress",
+              "online shopping",
+              "best deals"
+            ],
+            "short_description": "Feel confident and beautiful in our blue floral dress. Perfect for summer outings and everyday wear.",
+            "bullet_points": [
+              "**Confident Look**: This dress makes you feel confident and beautiful.",
+              "**Comfortable Fabric**: Made from breathable fabric, this dress keeps you cool and comfortable all day long.",
+              "**Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.",
+              "**Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types.",
+              "**Perfect for Summer**: This dress is perfect for summer outings and everyday wear."
+            ],
+            "detailed_description": "Our blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals.",
+            "specs": {
+              "color": "Blue",
+              "pattern": "Floral",
+              "length": "Knee-length",
+              "size": "Medium",
+              "season": "Summer",
+              "style": "Casual"
+            },
+            "price": "\u20b91,499.00",
+            "description": "Stay cool and stylish this summer with our blue floral dress. Perfect for casual outings and everyday wear.\n\nKey Features:\n\n\u2022 **Blue Floral Pattern**: Add a touch of elegance to your wardrobe with this beautiful blue floral dress.\n\n\u2022 **Knee-Length Design**: Flattering and comfortable, this dress is perfect for everyday wear.\n\n\u2022 **Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.\n\n\u2022 **Summer Fabric**: Made from breathable fabric, this dress keeps you cool and comfortable all day long.\n\n\u2022 **Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types.\n\nOur blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals. Whether you're running errands or meeting friends, this dress is a great choice.\n\nSpecifications:\n\n- color: Blue\n\n- pattern: Floral\n\n- length: Knee-length\n\n- size: Medium\n\n- season: Summer\n\n- style: Casual"
+          },
+          "cope_scores": {
+            "overall_score": 82,
+            "purchase_probability": 76.0,
+            "expected_ctr": 70.0,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 88,
+            "confidence_score": 88
+          }
+        },
+        {
+          "variant_id": "7b9b2124-aca1-4e0a-b983-be331671e9e6",
+          "type": "C",
+          "angle": "Urgency & Lifestyle Focused",
+          "title": "Women's Blue Floral Dress for Summer - Urgent",
+          "short_description": "Limited time offer! Get our blue floral dress at an unbeatable price. Perfect for summer outings and everyday wear.",
+          "key_features": [
+            "**Limited Time Offer**: Get this dress at an unbeatable price for a limited time.",
+            "**Breathable Fabric**: Made from high-quality fabric that keeps you cool and comfortable.",
+            "**Knee-Length Design**: Flattering and comfortable, this dress is perfect for everyday wear.",
+            "**Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.",
+            "**Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types."
+          ],
+          "detailed_description": "Our blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals.",
+          "specifications": {
+            "color": "Blue",
+            "pattern": "Floral",
+            "length": "Knee-length",
+            "size": "Medium",
+            "season": "Summer",
+            "style": "Casual"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Limited time offer! Get our blue floral dress at an unbeatable price. Perfect for summer outings and everyday wear.\n\nKey Features:\n\n\u2022 **Limited Time Offer**: Get this dress at an unbeatable price for a limited time.\n\n\u2022 **Breathable Fabric**: Made from high-quality fabric that keeps you cool and comfortable.\n\n\u2022 **Knee-Length Design**: Flattering and comfortable, this dress is perfect for everyday wear.\n\n\u2022 **Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.\n\n\u2022 **Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types.\n\nOur blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals.\n\nSpecifications:\n\n- color: Blue\n\n- pattern: Floral\n\n- length: Knee-length\n\n- size: Medium\n\n- season: Summer\n\n- style: Casual",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Women's Blue Floral Dress for Summer - Urgent",
+            "meta_description": "Blue floral dress for women, perfect for summer outings. Get the best deals on women's dresses online.",
+            "keywords": [
+              "women's dress",
+              "blue floral dress",
+              "summer dress",
+              "women's clothing",
+              "online shopping"
+            ],
+            "tags": [
+              "women's fashion",
+              "summer wear",
+              "casual dress",
+              "online shopping",
+              "best deals"
+            ],
+            "short_description": "Limited time offer! Get our blue floral dress at an unbeatable price. Perfect for summer outings and everyday wear.",
+            "bullet_points": [
+              "**Limited Time Offer**: Get this dress at an unbeatable price for a limited time.",
+              "**Breathable Fabric**: Made from high-quality fabric that keeps you cool and comfortable.",
+              "**Knee-Length Design**: Flattering and comfortable, this dress is perfect for everyday wear.",
+              "**Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.",
+              "**Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types."
+            ],
+            "detailed_description": "Our blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals.",
+            "specs": {
+              "color": "Blue",
+              "pattern": "Floral",
+              "length": "Knee-length",
+              "size": "Medium",
+              "season": "Summer",
+              "style": "Casual"
+            },
+            "price": "\u20b91,499.00",
+            "description": "Stay cool and stylish this summer with our blue floral dress. Perfect for casual outings and everyday wear.\n\nKey Features:\n\n\u2022 **Blue Floral Pattern**: Add a touch of elegance to your wardrobe with this beautiful blue floral dress.\n\n\u2022 **Knee-Length Design**: Flattering and comfortable, this dress is perfect for everyday wear.\n\n\u2022 **Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.\n\n\u2022 **Summer Fabric**: Made from breathable fabric, this dress keeps you cool and comfortable all day long.\n\n\u2022 **Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types.\n\nOur blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals. Whether you're running errands or meeting friends, this dress is a great choice.\n\nSpecifications:\n\n- color: Blue\n\n- pattern: Floral\n\n- length: Knee-length\n\n- size: Medium\n\n- season: Summer\n\n- style: Casual"
+          },
+          "cope_scores": {
+            "overall_score": 79,
+            "purchase_probability": 73.5,
+            "expected_ctr": 68.0,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 86,
+            "confidence_score": 88
+          }
+        }
+      ],
+      "scored_variants": [
+        {
+          "variant_id": "589c7e58-e209-434a-b2de-bb8b80c76cd8",
+          "type": "A",
+          "angle": "Feature & Tech Heavy",
+          "title": "Women's Blue Floral Dress for Summer - Tech-Heavy",
+          "short_description": "Stay cool and stylish this summer with our blue floral dress. Made from breathable fabric, this dress keeps you comfortable all day long.",
+          "key_features": [
+            "**Breathable Fabric**: Made from high-quality fabric that keeps you cool and comfortable.",
+            "**Knee-Length Design**: Flattering and comfortable, this dress is perfect for everyday wear.",
+            "**Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.",
+            "**Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types.",
+            "**Quick-Drying**: This dress dries quickly, making it perfect for outdoor activities."
+          ],
+          "detailed_description": "Our blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals.",
+          "specifications": {
+            "color": "Blue",
+            "pattern": "Floral",
+            "length": "Knee-length",
+            "size": "Medium",
+            "season": "Summer",
+            "style": "Casual"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Stay cool and stylish this summer with our blue floral dress. Made from breathable fabric, this dress keeps you comfortable all day long.\n\nKey Features:\n\n\u2022 **Breathable Fabric**: Made from high-quality fabric that keeps you cool and comfortable.\n\n\u2022 **Knee-Length Design**: Flattering and comfortable, this dress is perfect for everyday wear.\n\n\u2022 **Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.\n\n\u2022 **Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types.\n\n\u2022 **Quick-Drying**: This dress dries quickly, making it perfect for outdoor activities.\n\nOur blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals.\n\nSpecifications:\n\n- color: Blue\n\n- pattern: Floral\n\n- length: Knee-length\n\n- size: Medium\n\n- season: Summer\n\n- style: Casual",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Women's Blue Floral Dress for Summer - Tech-Heavy",
+            "meta_description": "Blue floral dress for women, perfect for summer outings. Get the best deals on women's dresses online.",
+            "keywords": [
+              "women's dress",
+              "blue floral dress",
+              "summer dress",
+              "women's clothing",
+              "online shopping"
+            ],
+            "tags": [
+              "women's fashion",
+              "summer wear",
+              "casual dress",
+              "online shopping",
+              "best deals"
+            ],
+            "short_description": "Stay cool and stylish this summer with our blue floral dress. Made from breathable fabric, this dress keeps you comfortable all day long.",
+            "bullet_points": [
+              "**Breathable Fabric**: Made from high-quality fabric that keeps you cool and comfortable.",
+              "**Knee-Length Design**: Flattering and comfortable, this dress is perfect for everyday wear.",
+              "**Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.",
+              "**Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types.",
+              "**Quick-Drying**: This dress dries quickly, making it perfect for outdoor activities."
+            ],
+            "detailed_description": "Our blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals.",
+            "specs": {
+              "color": "Blue",
+              "pattern": "Floral",
+              "length": "Knee-length",
+              "size": "Medium",
+              "season": "Summer",
+              "style": "Casual"
+            },
+            "price": "\u20b91,499.00",
+            "description": "Stay cool and stylish this summer with our blue floral dress. Perfect for casual outings and everyday wear.\n\nKey Features:\n\n\u2022 **Blue Floral Pattern**: Add a touch of elegance to your wardrobe with this beautiful blue floral dress.\n\n\u2022 **Knee-Length Design**: Flattering and comfortable, this dress is perfect for everyday wear.\n\n\u2022 **Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.\n\n\u2022 **Summer Fabric**: Made from breathable fabric, this dress keeps you cool and comfortable all day long.\n\n\u2022 **Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types.\n\nOur blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals. Whether you're running errands or meeting friends, this dress is a great choice.\n\nSpecifications:\n\n- color: Blue\n\n- pattern: Floral\n\n- length: Knee-length\n\n- size: Medium\n\n- season: Summer\n\n- style: Casual"
+          },
+          "cope_scores": {
+            "overall_score": 85,
+            "purchase_probability": 78.5,
+            "expected_ctr": 72.0,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 90,
+            "confidence_score": 88
+          }
+        },
+        {
+          "variant_id": "1c44c4a4-6670-41a5-901b-ecb8042c65b7",
+          "type": "B",
+          "angle": "Emotional & Value Driven",
+          "title": "Women's Blue Floral Dress for Summer - Emotional",
+          "short_description": "Feel confident and beautiful in our blue floral dress. Perfect for summer outings and everyday wear.",
+          "key_features": [
+            "**Confident Look**: This dress makes you feel confident and beautiful.",
+            "**Comfortable Fabric**: Made from breathable fabric, this dress keeps you cool and comfortable all day long.",
+            "**Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.",
+            "**Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types.",
+            "**Perfect for Summer**: This dress is perfect for summer outings and everyday wear."
+          ],
+          "detailed_description": "Our blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals.",
+          "specifications": {
+            "color": "Blue",
+            "pattern": "Floral",
+            "length": "Knee-length",
+            "size": "Medium",
+            "season": "Summer",
+            "style": "Casual"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Feel confident and beautiful in our blue floral dress. Perfect for summer outings and everyday wear.\n\nKey Features:\n\n\u2022 **Confident Look**: This dress makes you feel confident and beautiful.\n\n\u2022 **Comfortable Fabric**: Made from breathable fabric, this dress keeps you cool and comfortable all day long.\n\n\u2022 **Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.\n\n\u2022 **Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types.\n\n\u2022 **Perfect for Summer**: This dress is perfect for summer outings and everyday wear.\n\nOur blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals.\n\nSpecifications:\n\n- color: Blue\n\n- pattern: Floral\n\n- length: Knee-length\n\n- size: Medium\n\n- season: Summer\n\n- style: Casual",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Women's Blue Floral Dress for Summer - Emotional",
+            "meta_description": "Blue floral dress for women, perfect for summer outings. Get the best deals on women's dresses online.",
+            "keywords": [
+              "women's dress",
+              "blue floral dress",
+              "summer dress",
+              "women's clothing",
+              "online shopping"
+            ],
+            "tags": [
+              "women's fashion",
+              "summer wear",
+              "casual dress",
+              "online shopping",
+              "best deals"
+            ],
+            "short_description": "Feel confident and beautiful in our blue floral dress. Perfect for summer outings and everyday wear.",
+            "bullet_points": [
+              "**Confident Look**: This dress makes you feel confident and beautiful.",
+              "**Comfortable Fabric**: Made from breathable fabric, this dress keeps you cool and comfortable all day long.",
+              "**Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.",
+              "**Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types.",
+              "**Perfect for Summer**: This dress is perfect for summer outings and everyday wear."
+            ],
+            "detailed_description": "Our blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals.",
+            "specs": {
+              "color": "Blue",
+              "pattern": "Floral",
+              "length": "Knee-length",
+              "size": "Medium",
+              "season": "Summer",
+              "style": "Casual"
+            },
+            "price": "\u20b91,499.00",
+            "description": "Stay cool and stylish this summer with our blue floral dress. Perfect for casual outings and everyday wear.\n\nKey Features:\n\n\u2022 **Blue Floral Pattern**: Add a touch of elegance to your wardrobe with this beautiful blue floral dress.\n\n\u2022 **Knee-Length Design**: Flattering and comfortable, this dress is perfect for everyday wear.\n\n\u2022 **Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.\n\n\u2022 **Summer Fabric**: Made from breathable fabric, this dress keeps you cool and comfortable all day long.\n\n\u2022 **Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types.\n\nOur blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals. Whether you're running errands or meeting friends, this dress is a great choice.\n\nSpecifications:\n\n- color: Blue\n\n- pattern: Floral\n\n- length: Knee-length\n\n- size: Medium\n\n- season: Summer\n\n- style: Casual"
+          },
+          "cope_scores": {
+            "overall_score": 82,
+            "purchase_probability": 76.0,
+            "expected_ctr": 70.0,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 88,
+            "confidence_score": 88
+          }
+        },
+        {
+          "variant_id": "7b9b2124-aca1-4e0a-b983-be331671e9e6",
+          "type": "C",
+          "angle": "Urgency & Lifestyle Focused",
+          "title": "Women's Blue Floral Dress for Summer - Urgent",
+          "short_description": "Limited time offer! Get our blue floral dress at an unbeatable price. Perfect for summer outings and everyday wear.",
+          "key_features": [
+            "**Limited Time Offer**: Get this dress at an unbeatable price for a limited time.",
+            "**Breathable Fabric**: Made from high-quality fabric that keeps you cool and comfortable.",
+            "**Knee-Length Design**: Flattering and comfortable, this dress is perfect for everyday wear.",
+            "**Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.",
+            "**Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types."
+          ],
+          "detailed_description": "Our blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals.",
+          "specifications": {
+            "color": "Blue",
+            "pattern": "Floral",
+            "length": "Knee-length",
+            "size": "Medium",
+            "season": "Summer",
+            "style": "Casual"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Limited time offer! Get our blue floral dress at an unbeatable price. Perfect for summer outings and everyday wear.\n\nKey Features:\n\n\u2022 **Limited Time Offer**: Get this dress at an unbeatable price for a limited time.\n\n\u2022 **Breathable Fabric**: Made from high-quality fabric that keeps you cool and comfortable.\n\n\u2022 **Knee-Length Design**: Flattering and comfortable, this dress is perfect for everyday wear.\n\n\u2022 **Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.\n\n\u2022 **Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types.\n\nOur blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals.\n\nSpecifications:\n\n- color: Blue\n\n- pattern: Floral\n\n- length: Knee-length\n\n- size: Medium\n\n- season: Summer\n\n- style: Casual",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Women's Blue Floral Dress for Summer - Urgent",
+            "meta_description": "Blue floral dress for women, perfect for summer outings. Get the best deals on women's dresses online.",
+            "keywords": [
+              "women's dress",
+              "blue floral dress",
+              "summer dress",
+              "women's clothing",
+              "online shopping"
+            ],
+            "tags": [
+              "women's fashion",
+              "summer wear",
+              "casual dress",
+              "online shopping",
+              "best deals"
+            ],
+            "short_description": "Limited time offer! Get our blue floral dress at an unbeatable price. Perfect for summer outings and everyday wear.",
+            "bullet_points": [
+              "**Limited Time Offer**: Get this dress at an unbeatable price for a limited time.",
+              "**Breathable Fabric**: Made from high-quality fabric that keeps you cool and comfortable.",
+              "**Knee-Length Design**: Flattering and comfortable, this dress is perfect for everyday wear.",
+              "**Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.",
+              "**Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types."
+            ],
+            "detailed_description": "Our blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals.",
+            "specs": {
+              "color": "Blue",
+              "pattern": "Floral",
+              "length": "Knee-length",
+              "size": "Medium",
+              "season": "Summer",
+              "style": "Casual"
+            },
+            "price": "\u20b91,499.00",
+            "description": "Stay cool and stylish this summer with our blue floral dress. Perfect for casual outings and everyday wear.\n\nKey Features:\n\n\u2022 **Blue Floral Pattern**: Add a touch of elegance to your wardrobe with this beautiful blue floral dress.\n\n\u2022 **Knee-Length Design**: Flattering and comfortable, this dress is perfect for everyday wear.\n\n\u2022 **Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.\n\n\u2022 **Summer Fabric**: Made from breathable fabric, this dress keeps you cool and comfortable all day long.\n\n\u2022 **Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types.\n\nOur blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals. Whether you're running errands or meeting friends, this dress is a great choice.\n\nSpecifications:\n\n- color: Blue\n\n- pattern: Floral\n\n- length: Knee-length\n\n- size: Medium\n\n- season: Summer\n\n- style: Casual"
+          },
+          "cope_scores": {
+            "overall_score": 79,
+            "purchase_probability": 73.5,
+            "expected_ctr": 68.0,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 86,
+            "confidence_score": 88
+          }
+        }
+      ],
+      "decision": {
+        "action": "publish",
+        "reason": "Clear winner identified with high confidence.",
+        "recommended_variant_id": "589c7e58-e209-434a-b2de-bb8b80c76cd8"
+      },
+      "marketing": {
+        "platform": "olx",
+        "platform_description": "Stay cool and stylish this summer with our blue floral dress. Made from breathable fabric, this dress keeps you comfortable all day long.\n\nKey Features:\n\n\u2022 **Breathable Fabric**: Made from high-quality fabric that keeps you cool and comfortable.\n\n\u2022 **Knee-Length Design**: Flattering and comfortable, this dress is perfect for everyday wear.\n\n\u2022 **Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.\n\n\u2022 **Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types.\n\n\u2022 **Quick-Drying**: This dress dries quickly, making it perfect for outdoor activities.\n\nOur blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals.\n\nSpecifications:\n\n- color: Blue\n\n- pattern: Floral\n\n- length: Knee-length\n\n- size: Medium\n\n- season: Summer\n\n- style: Casual",
+        "call_to_action": "Order now on Olx to get the best deal!"
+      },
+      "validation": {
+        "is_valid": true,
+        "issues": []
+      },
+      "scores": {
+        "privacy_score": 98,
+        "seo_score": 90,
+        "marketing_score": 90,
+        "overall_score": 90,
+        "feedback": "SEO Title length is sub-optimal."
+      }
+    }
+  },
+  "complete_response": {
+    "status": "success",
+    "message": "Workflow completed",
+    "data": {
+      "sanitized_input": "Product Name: Women's Dress\nPrice: unknown\nCategory: Dress\nDescription: women dress blue maybe floral, knee length? looks casual. material not sure. size M shown on tag maybe. good for summer and outing. price unknown\nSpecifications: color: Blue, pattern: Floral, length: Knee-length, size: M (Medium), season: Summer, style: Casual",
+      "vision_analysis": "Error analyzing image with Groq Vision: LLMGateway call failed after 3 retries. Error: Error code: 413 - {'error': {'message': 'Request too large for model `qwen/qwen3.6-27b` in organization `org_01kvb5wdg5eq99np00tsjmwhtg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 8286, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "rag_context": "RAG database is empty. Please run the ingestion script first.",
+      "seo": {
+        "title": "Women's Blue Floral Dress for Summer",
+        "meta_description": "Blue floral dress for women, perfect for summer outings. Get the best deals on women's dresses online.",
+        "keywords": [
+          "women's dress",
+          "blue floral dress",
+          "summer dress",
+          "women's clothing",
+          "online shopping"
+        ],
+        "tags": [
+          "women's fashion",
+          "summer wear",
+          "casual dress",
+          "online shopping",
+          "best deals"
+        ],
+        "short_description": "Stay cool and stylish this summer with our blue floral dress. Perfect for casual outings and everyday wear.",
+        "bullet_points": [
+          "**Blue Floral Pattern**: Add a touch of elegance to your wardrobe with this beautiful blue floral dress.",
+          "**Knee-Length Design**: Flattering and comfortable, this dress is perfect for everyday wear.",
+          "**Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.",
+          "**Summer Fabric**: Made from breathable fabric, this dress keeps you cool and comfortable all day long.",
+          "**Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types."
+        ],
+        "detailed_description": "Our blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals. Whether you're running errands or meeting friends, this dress is a great choice.",
+        "specs": {
+          "color": "Blue",
+          "pattern": "Floral",
+          "length": "Knee-length",
+          "size": "Medium",
+          "season": "Summer",
+          "style": "Casual"
+        },
+        "price": "\u20b91,499.00",
+        "description": "Stay cool and stylish this summer with our blue floral dress. Perfect for casual outings and everyday wear.\n\nKey Features:\n\n\u2022 **Blue Floral Pattern**: Add a touch of elegance to your wardrobe with this beautiful blue floral dress.\n\n\u2022 **Knee-Length Design**: Flattering and comfortable, this dress is perfect for everyday wear.\n\n\u2022 **Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.\n\n\u2022 **Summer Fabric**: Made from breathable fabric, this dress keeps you cool and comfortable all day long.\n\n\u2022 **Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types.\n\nOur blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals. Whether you're running errands or meeting friends, this dress is a great choice.\n\nSpecifications:\n\n- color: Blue\n\n- pattern: Floral\n\n- length: Knee-length\n\n- size: Medium\n\n- season: Summer\n\n- style: Casual"
+      },
+      "competitor_analysis": {
+        "recommended_price": "\u20b91,499.00",
+        "lowest_competitor_price": "\u20b91,299.00",
+        "highest_competitor_price": "\u20b91,699.00",
+        "average_market_price": "\u20b91,499.00",
+        "market_positioning": "Our blue floral dress is priced competitively with other similar products in the market.",
+        "pricing_strategy": "We offer the best price for the quality and comfort of our dress.",
+        "competitor_insights": [
+          "Competitor A offers a similar dress at a higher price point.",
+          "Competitor B offers a cheaper dress, but with lower quality fabric.",
+          "Competitor C offers a dress with a similar price point, but with a different design."
+        ]
+      },
+      "generated_variants": [
+        {
+          "variant_id": "589c7e58-e209-434a-b2de-bb8b80c76cd8",
+          "type": "A",
+          "angle": "Feature & Tech Heavy",
+          "title": "Women's Blue Floral Dress for Summer - Tech-Heavy",
+          "short_description": "Stay cool and stylish this summer with our blue floral dress. Made from breathable fabric, this dress keeps you comfortable all day long.",
+          "key_features": [
+            "**Breathable Fabric**: Made from high-quality fabric that keeps you cool and comfortable.",
+            "**Knee-Length Design**: Flattering and comfortable, this dress is perfect for everyday wear.",
+            "**Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.",
+            "**Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types.",
+            "**Quick-Drying**: This dress dries quickly, making it perfect for outdoor activities."
+          ],
+          "detailed_description": "Our blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals.",
+          "specifications": {
+            "color": "Blue",
+            "pattern": "Floral",
+            "length": "Knee-length",
+            "size": "Medium",
+            "season": "Summer",
+            "style": "Casual"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Stay cool and stylish this summer with our blue floral dress. Made from breathable fabric, this dress keeps you comfortable all day long.\n\nKey Features:\n\n\u2022 **Breathable Fabric**: Made from high-quality fabric that keeps you cool and comfortable.\n\n\u2022 **Knee-Length Design**: Flattering and comfortable, this dress is perfect for everyday wear.\n\n\u2022 **Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.\n\n\u2022 **Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types.\n\n\u2022 **Quick-Drying**: This dress dries quickly, making it perfect for outdoor activities.\n\nOur blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals.\n\nSpecifications:\n\n- color: Blue\n\n- pattern: Floral\n\n- length: Knee-length\n\n- size: Medium\n\n- season: Summer\n\n- style: Casual",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Women's Blue Floral Dress for Summer - Tech-Heavy",
+            "meta_description": "Blue floral dress for women, perfect for summer outings. Get the best deals on women's dresses online.",
+            "keywords": [
+              "women's dress",
+              "blue floral dress",
+              "summer dress",
+              "women's clothing",
+              "online shopping"
+            ],
+            "tags": [
+              "women's fashion",
+              "summer wear",
+              "casual dress",
+              "online shopping",
+              "best deals"
+            ],
+            "short_description": "Stay cool and stylish this summer with our blue floral dress. Made from breathable fabric, this dress keeps you comfortable all day long.",
+            "bullet_points": [
+              "**Breathable Fabric**: Made from high-quality fabric that keeps you cool and comfortable.",
+              "**Knee-Length Design**: Flattering and comfortable, this dress is perfect for everyday wear.",
+              "**Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.",
+              "**Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types.",
+              "**Quick-Drying**: This dress dries quickly, making it perfect for outdoor activities."
+            ],
+            "detailed_description": "Our blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals.",
+            "specs": {
+              "color": "Blue",
+              "pattern": "Floral",
+              "length": "Knee-length",
+              "size": "Medium",
+              "season": "Summer",
+              "style": "Casual"
+            },
+            "price": "\u20b91,499.00",
+            "description": "Stay cool and stylish this summer with our blue floral dress. Perfect for casual outings and everyday wear.\n\nKey Features:\n\n\u2022 **Blue Floral Pattern**: Add a touch of elegance to your wardrobe with this beautiful blue floral dress.\n\n\u2022 **Knee-Length Design**: Flattering and comfortable, this dress is perfect for everyday wear.\n\n\u2022 **Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.\n\n\u2022 **Summer Fabric**: Made from breathable fabric, this dress keeps you cool and comfortable all day long.\n\n\u2022 **Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types.\n\nOur blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals. Whether you're running errands or meeting friends, this dress is a great choice.\n\nSpecifications:\n\n- color: Blue\n\n- pattern: Floral\n\n- length: Knee-length\n\n- size: Medium\n\n- season: Summer\n\n- style: Casual"
+          },
+          "cope_scores": {
+            "overall_score": 85,
+            "purchase_probability": 78.5,
+            "expected_ctr": 72.0,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 90,
+            "confidence_score": 88
+          }
+        },
+        {
+          "variant_id": "1c44c4a4-6670-41a5-901b-ecb8042c65b7",
+          "type": "B",
+          "angle": "Emotional & Value Driven",
+          "title": "Women's Blue Floral Dress for Summer - Emotional",
+          "short_description": "Feel confident and beautiful in our blue floral dress. Perfect for summer outings and everyday wear.",
+          "key_features": [
+            "**Confident Look**: This dress makes you feel confident and beautiful.",
+            "**Comfortable Fabric**: Made from breathable fabric, this dress keeps you cool and comfortable all day long.",
+            "**Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.",
+            "**Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types.",
+            "**Perfect for Summer**: This dress is perfect for summer outings and everyday wear."
+          ],
+          "detailed_description": "Our blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals.",
+          "specifications": {
+            "color": "Blue",
+            "pattern": "Floral",
+            "length": "Knee-length",
+            "size": "Medium",
+            "season": "Summer",
+            "style": "Casual"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Feel confident and beautiful in our blue floral dress. Perfect for summer outings and everyday wear.\n\nKey Features:\n\n\u2022 **Confident Look**: This dress makes you feel confident and beautiful.\n\n\u2022 **Comfortable Fabric**: Made from breathable fabric, this dress keeps you cool and comfortable all day long.\n\n\u2022 **Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.\n\n\u2022 **Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types.\n\n\u2022 **Perfect for Summer**: This dress is perfect for summer outings and everyday wear.\n\nOur blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals.\n\nSpecifications:\n\n- color: Blue\n\n- pattern: Floral\n\n- length: Knee-length\n\n- size: Medium\n\n- season: Summer\n\n- style: Casual",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Women's Blue Floral Dress for Summer - Emotional",
+            "meta_description": "Blue floral dress for women, perfect for summer outings. Get the best deals on women's dresses online.",
+            "keywords": [
+              "women's dress",
+              "blue floral dress",
+              "summer dress",
+              "women's clothing",
+              "online shopping"
+            ],
+            "tags": [
+              "women's fashion",
+              "summer wear",
+              "casual dress",
+              "online shopping",
+              "best deals"
+            ],
+            "short_description": "Feel confident and beautiful in our blue floral dress. Perfect for summer outings and everyday wear.",
+            "bullet_points": [
+              "**Confident Look**: This dress makes you feel confident and beautiful.",
+              "**Comfortable Fabric**: Made from breathable fabric, this dress keeps you cool and comfortable all day long.",
+              "**Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.",
+              "**Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types.",
+              "**Perfect for Summer**: This dress is perfect for summer outings and everyday wear."
+            ],
+            "detailed_description": "Our blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals.",
+            "specs": {
+              "color": "Blue",
+              "pattern": "Floral",
+              "length": "Knee-length",
+              "size": "Medium",
+              "season": "Summer",
+              "style": "Casual"
+            },
+            "price": "\u20b91,499.00",
+            "description": "Stay cool and stylish this summer with our blue floral dress. Perfect for casual outings and everyday wear.\n\nKey Features:\n\n\u2022 **Blue Floral Pattern**: Add a touch of elegance to your wardrobe with this beautiful blue floral dress.\n\n\u2022 **Knee-Length Design**: Flattering and comfortable, this dress is perfect for everyday wear.\n\n\u2022 **Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.\n\n\u2022 **Summer Fabric**: Made from breathable fabric, this dress keeps you cool and comfortable all day long.\n\n\u2022 **Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types.\n\nOur blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals. Whether you're running errands or meeting friends, this dress is a great choice.\n\nSpecifications:\n\n- color: Blue\n\n- pattern: Floral\n\n- length: Knee-length\n\n- size: Medium\n\n- season: Summer\n\n- style: Casual"
+          },
+          "cope_scores": {
+            "overall_score": 82,
+            "purchase_probability": 76.0,
+            "expected_ctr": 70.0,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 88,
+            "confidence_score": 88
+          }
+        },
+        {
+          "variant_id": "7b9b2124-aca1-4e0a-b983-be331671e9e6",
+          "type": "C",
+          "angle": "Urgency & Lifestyle Focused",
+          "title": "Women's Blue Floral Dress for Summer - Urgent",
+          "short_description": "Limited time offer! Get our blue floral dress at an unbeatable price. Perfect for summer outings and everyday wear.",
+          "key_features": [
+            "**Limited Time Offer**: Get this dress at an unbeatable price for a limited time.",
+            "**Breathable Fabric**: Made from high-quality fabric that keeps you cool and comfortable.",
+            "**Knee-Length Design**: Flattering and comfortable, this dress is perfect for everyday wear.",
+            "**Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.",
+            "**Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types."
+          ],
+          "detailed_description": "Our blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals.",
+          "specifications": {
+            "color": "Blue",
+            "pattern": "Floral",
+            "length": "Knee-length",
+            "size": "Medium",
+            "season": "Summer",
+            "style": "Casual"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Limited time offer! Get our blue floral dress at an unbeatable price. Perfect for summer outings and everyday wear.\n\nKey Features:\n\n\u2022 **Limited Time Offer**: Get this dress at an unbeatable price for a limited time.\n\n\u2022 **Breathable Fabric**: Made from high-quality fabric that keeps you cool and comfortable.\n\n\u2022 **Knee-Length Design**: Flattering and comfortable, this dress is perfect for everyday wear.\n\n\u2022 **Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.\n\n\u2022 **Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types.\n\nOur blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals.\n\nSpecifications:\n\n- color: Blue\n\n- pattern: Floral\n\n- length: Knee-length\n\n- size: Medium\n\n- season: Summer\n\n- style: Casual",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Women's Blue Floral Dress for Summer - Urgent",
+            "meta_description": "Blue floral dress for women, perfect for summer outings. Get the best deals on women's dresses online.",
+            "keywords": [
+              "women's dress",
+              "blue floral dress",
+              "summer dress",
+              "women's clothing",
+              "online shopping"
+            ],
+            "tags": [
+              "women's fashion",
+              "summer wear",
+              "casual dress",
+              "online shopping",
+              "best deals"
+            ],
+            "short_description": "Limited time offer! Get our blue floral dress at an unbeatable price. Perfect for summer outings and everyday wear.",
+            "bullet_points": [
+              "**Limited Time Offer**: Get this dress at an unbeatable price for a limited time.",
+              "**Breathable Fabric**: Made from high-quality fabric that keeps you cool and comfortable.",
+              "**Knee-Length Design**: Flattering and comfortable, this dress is perfect for everyday wear.",
+              "**Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.",
+              "**Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types."
+            ],
+            "detailed_description": "Our blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals.",
+            "specs": {
+              "color": "Blue",
+              "pattern": "Floral",
+              "length": "Knee-length",
+              "size": "Medium",
+              "season": "Summer",
+              "style": "Casual"
+            },
+            "price": "\u20b91,499.00",
+            "description": "Stay cool and stylish this summer with our blue floral dress. Perfect for casual outings and everyday wear.\n\nKey Features:\n\n\u2022 **Blue Floral Pattern**: Add a touch of elegance to your wardrobe with this beautiful blue floral dress.\n\n\u2022 **Knee-Length Design**: Flattering and comfortable, this dress is perfect for everyday wear.\n\n\u2022 **Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.\n\n\u2022 **Summer Fabric**: Made from breathable fabric, this dress keeps you cool and comfortable all day long.\n\n\u2022 **Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types.\n\nOur blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals. Whether you're running errands or meeting friends, this dress is a great choice.\n\nSpecifications:\n\n- color: Blue\n\n- pattern: Floral\n\n- length: Knee-length\n\n- size: Medium\n\n- season: Summer\n\n- style: Casual"
+          },
+          "cope_scores": {
+            "overall_score": 79,
+            "purchase_probability": 73.5,
+            "expected_ctr": 68.0,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 86,
+            "confidence_score": 88
+          }
+        }
+      ],
+      "scored_variants": [
+        {
+          "variant_id": "589c7e58-e209-434a-b2de-bb8b80c76cd8",
+          "type": "A",
+          "angle": "Feature & Tech Heavy",
+          "title": "Women's Blue Floral Dress for Summer - Tech-Heavy",
+          "short_description": "Stay cool and stylish this summer with our blue floral dress. Made from breathable fabric, this dress keeps you comfortable all day long.",
+          "key_features": [
+            "**Breathable Fabric**: Made from high-quality fabric that keeps you cool and comfortable.",
+            "**Knee-Length Design**: Flattering and comfortable, this dress is perfect for everyday wear.",
+            "**Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.",
+            "**Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types.",
+            "**Quick-Drying**: This dress dries quickly, making it perfect for outdoor activities."
+          ],
+          "detailed_description": "Our blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals.",
+          "specifications": {
+            "color": "Blue",
+            "pattern": "Floral",
+            "length": "Knee-length",
+            "size": "Medium",
+            "season": "Summer",
+            "style": "Casual"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Stay cool and stylish this summer with our blue floral dress. Made from breathable fabric, this dress keeps you comfortable all day long.\n\nKey Features:\n\n\u2022 **Breathable Fabric**: Made from high-quality fabric that keeps you cool and comfortable.\n\n\u2022 **Knee-Length Design**: Flattering and comfortable, this dress is perfect for everyday wear.\n\n\u2022 **Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.\n\n\u2022 **Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types.\n\n\u2022 **Quick-Drying**: This dress dries quickly, making it perfect for outdoor activities.\n\nOur blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals.\n\nSpecifications:\n\n- color: Blue\n\n- pattern: Floral\n\n- length: Knee-length\n\n- size: Medium\n\n- season: Summer\n\n- style: Casual",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Women's Blue Floral Dress for Summer - Tech-Heavy",
+            "meta_description": "Blue floral dress for women, perfect for summer outings. Get the best deals on women's dresses online.",
+            "keywords": [
+              "women's dress",
+              "blue floral dress",
+              "summer dress",
+              "women's clothing",
+              "online shopping"
+            ],
+            "tags": [
+              "women's fashion",
+              "summer wear",
+              "casual dress",
+              "online shopping",
+              "best deals"
+            ],
+            "short_description": "Stay cool and stylish this summer with our blue floral dress. Made from breathable fabric, this dress keeps you comfortable all day long.",
+            "bullet_points": [
+              "**Breathable Fabric**: Made from high-quality fabric that keeps you cool and comfortable.",
+              "**Knee-Length Design**: Flattering and comfortable, this dress is perfect for everyday wear.",
+              "**Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.",
+              "**Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types.",
+              "**Quick-Drying**: This dress dries quickly, making it perfect for outdoor activities."
+            ],
+            "detailed_description": "Our blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals.",
+            "specs": {
+              "color": "Blue",
+              "pattern": "Floral",
+              "length": "Knee-length",
+              "size": "Medium",
+              "season": "Summer",
+              "style": "Casual"
+            },
+            "price": "\u20b91,499.00",
+            "description": "Stay cool and stylish this summer with our blue floral dress. Perfect for casual outings and everyday wear.\n\nKey Features:\n\n\u2022 **Blue Floral Pattern**: Add a touch of elegance to your wardrobe with this beautiful blue floral dress.\n\n\u2022 **Knee-Length Design**: Flattering and comfortable, this dress is perfect for everyday wear.\n\n\u2022 **Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.\n\n\u2022 **Summer Fabric**: Made from breathable fabric, this dress keeps you cool and comfortable all day long.\n\n\u2022 **Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types.\n\nOur blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals. Whether you're running errands or meeting friends, this dress is a great choice.\n\nSpecifications:\n\n- color: Blue\n\n- pattern: Floral\n\n- length: Knee-length\n\n- size: Medium\n\n- season: Summer\n\n- style: Casual"
+          },
+          "cope_scores": {
+            "overall_score": 85,
+            "purchase_probability": 78.5,
+            "expected_ctr": 72.0,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 90,
+            "confidence_score": 88
+          }
+        },
+        {
+          "variant_id": "1c44c4a4-6670-41a5-901b-ecb8042c65b7",
+          "type": "B",
+          "angle": "Emotional & Value Driven",
+          "title": "Women's Blue Floral Dress for Summer - Emotional",
+          "short_description": "Feel confident and beautiful in our blue floral dress. Perfect for summer outings and everyday wear.",
+          "key_features": [
+            "**Confident Look**: This dress makes you feel confident and beautiful.",
+            "**Comfortable Fabric**: Made from breathable fabric, this dress keeps you cool and comfortable all day long.",
+            "**Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.",
+            "**Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types.",
+            "**Perfect for Summer**: This dress is perfect for summer outings and everyday wear."
+          ],
+          "detailed_description": "Our blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals.",
+          "specifications": {
+            "color": "Blue",
+            "pattern": "Floral",
+            "length": "Knee-length",
+            "size": "Medium",
+            "season": "Summer",
+            "style": "Casual"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Feel confident and beautiful in our blue floral dress. Perfect for summer outings and everyday wear.\n\nKey Features:\n\n\u2022 **Confident Look**: This dress makes you feel confident and beautiful.\n\n\u2022 **Comfortable Fabric**: Made from breathable fabric, this dress keeps you cool and comfortable all day long.\n\n\u2022 **Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.\n\n\u2022 **Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types.\n\n\u2022 **Perfect for Summer**: This dress is perfect for summer outings and everyday wear.\n\nOur blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals.\n\nSpecifications:\n\n- color: Blue\n\n- pattern: Floral\n\n- length: Knee-length\n\n- size: Medium\n\n- season: Summer\n\n- style: Casual",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Women's Blue Floral Dress for Summer - Emotional",
+            "meta_description": "Blue floral dress for women, perfect for summer outings. Get the best deals on women's dresses online.",
+            "keywords": [
+              "women's dress",
+              "blue floral dress",
+              "summer dress",
+              "women's clothing",
+              "online shopping"
+            ],
+            "tags": [
+              "women's fashion",
+              "summer wear",
+              "casual dress",
+              "online shopping",
+              "best deals"
+            ],
+            "short_description": "Feel confident and beautiful in our blue floral dress. Perfect for summer outings and everyday wear.",
+            "bullet_points": [
+              "**Confident Look**: This dress makes you feel confident and beautiful.",
+              "**Comfortable Fabric**: Made from breathable fabric, this dress keeps you cool and comfortable all day long.",
+              "**Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.",
+              "**Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types.",
+              "**Perfect for Summer**: This dress is perfect for summer outings and everyday wear."
+            ],
+            "detailed_description": "Our blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals.",
+            "specs": {
+              "color": "Blue",
+              "pattern": "Floral",
+              "length": "Knee-length",
+              "size": "Medium",
+              "season": "Summer",
+              "style": "Casual"
+            },
+            "price": "\u20b91,499.00",
+            "description": "Stay cool and stylish this summer with our blue floral dress. Perfect for casual outings and everyday wear.\n\nKey Features:\n\n\u2022 **Blue Floral Pattern**: Add a touch of elegance to your wardrobe with this beautiful blue floral dress.\n\n\u2022 **Knee-Length Design**: Flattering and comfortable, this dress is perfect for everyday wear.\n\n\u2022 **Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.\n\n\u2022 **Summer Fabric**: Made from breathable fabric, this dress keeps you cool and comfortable all day long.\n\n\u2022 **Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types.\n\nOur blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals. Whether you're running errands or meeting friends, this dress is a great choice.\n\nSpecifications:\n\n- color: Blue\n\n- pattern: Floral\n\n- length: Knee-length\n\n- size: Medium\n\n- season: Summer\n\n- style: Casual"
+          },
+          "cope_scores": {
+            "overall_score": 82,
+            "purchase_probability": 76.0,
+            "expected_ctr": 70.0,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 88,
+            "confidence_score": 88
+          }
+        },
+        {
+          "variant_id": "7b9b2124-aca1-4e0a-b983-be331671e9e6",
+          "type": "C",
+          "angle": "Urgency & Lifestyle Focused",
+          "title": "Women's Blue Floral Dress for Summer - Urgent",
+          "short_description": "Limited time offer! Get our blue floral dress at an unbeatable price. Perfect for summer outings and everyday wear.",
+          "key_features": [
+            "**Limited Time Offer**: Get this dress at an unbeatable price for a limited time.",
+            "**Breathable Fabric**: Made from high-quality fabric that keeps you cool and comfortable.",
+            "**Knee-Length Design**: Flattering and comfortable, this dress is perfect for everyday wear.",
+            "**Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.",
+            "**Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types."
+          ],
+          "detailed_description": "Our blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals.",
+          "specifications": {
+            "color": "Blue",
+            "pattern": "Floral",
+            "length": "Knee-length",
+            "size": "Medium",
+            "season": "Summer",
+            "style": "Casual"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Limited time offer! Get our blue floral dress at an unbeatable price. Perfect for summer outings and everyday wear.\n\nKey Features:\n\n\u2022 **Limited Time Offer**: Get this dress at an unbeatable price for a limited time.\n\n\u2022 **Breathable Fabric**: Made from high-quality fabric that keeps you cool and comfortable.\n\n\u2022 **Knee-Length Design**: Flattering and comfortable, this dress is perfect for everyday wear.\n\n\u2022 **Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.\n\n\u2022 **Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types.\n\nOur blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals.\n\nSpecifications:\n\n- color: Blue\n\n- pattern: Floral\n\n- length: Knee-length\n\n- size: Medium\n\n- season: Summer\n\n- style: Casual",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Women's Blue Floral Dress for Summer - Urgent",
+            "meta_description": "Blue floral dress for women, perfect for summer outings. Get the best deals on women's dresses online.",
+            "keywords": [
+              "women's dress",
+              "blue floral dress",
+              "summer dress",
+              "women's clothing",
+              "online shopping"
+            ],
+            "tags": [
+              "women's fashion",
+              "summer wear",
+              "casual dress",
+              "online shopping",
+              "best deals"
+            ],
+            "short_description": "Limited time offer! Get our blue floral dress at an unbeatable price. Perfect for summer outings and everyday wear.",
+            "bullet_points": [
+              "**Limited Time Offer**: Get this dress at an unbeatable price for a limited time.",
+              "**Breathable Fabric**: Made from high-quality fabric that keeps you cool and comfortable.",
+              "**Knee-Length Design**: Flattering and comfortable, this dress is perfect for everyday wear.",
+              "**Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.",
+              "**Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types."
+            ],
+            "detailed_description": "Our blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals.",
+            "specs": {
+              "color": "Blue",
+              "pattern": "Floral",
+              "length": "Knee-length",
+              "size": "Medium",
+              "season": "Summer",
+              "style": "Casual"
+            },
+            "price": "\u20b91,499.00",
+            "description": "Stay cool and stylish this summer with our blue floral dress. Perfect for casual outings and everyday wear.\n\nKey Features:\n\n\u2022 **Blue Floral Pattern**: Add a touch of elegance to your wardrobe with this beautiful blue floral dress.\n\n\u2022 **Knee-Length Design**: Flattering and comfortable, this dress is perfect for everyday wear.\n\n\u2022 **Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.\n\n\u2022 **Summer Fabric**: Made from breathable fabric, this dress keeps you cool and comfortable all day long.\n\n\u2022 **Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types.\n\nOur blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals. Whether you're running errands or meeting friends, this dress is a great choice.\n\nSpecifications:\n\n- color: Blue\n\n- pattern: Floral\n\n- length: Knee-length\n\n- size: Medium\n\n- season: Summer\n\n- style: Casual"
+          },
+          "cope_scores": {
+            "overall_score": 79,
+            "purchase_probability": 73.5,
+            "expected_ctr": 68.0,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 86,
+            "confidence_score": 88
+          }
+        }
+      ],
+      "decision": {
+        "action": "publish",
+        "reason": "Clear winner identified with high confidence.",
+        "recommended_variant_id": "589c7e58-e209-434a-b2de-bb8b80c76cd8"
+      },
+      "marketing": {
+        "platform": "olx",
+        "platform_description": "Stay cool and stylish this summer with our blue floral dress. Made from breathable fabric, this dress keeps you comfortable all day long.\n\nKey Features:\n\n\u2022 **Breathable Fabric**: Made from high-quality fabric that keeps you cool and comfortable.\n\n\u2022 **Knee-Length Design**: Flattering and comfortable, this dress is perfect for everyday wear.\n\n\u2022 **Casual Style**: Pair this dress with sneakers or sandals for a relaxed, summer look.\n\n\u2022 **Medium Size**: Available in medium size, this dress fits perfectly and is suitable for most body types.\n\n\u2022 **Quick-Drying**: This dress dries quickly, making it perfect for outdoor activities.\n\nOur blue floral dress is perfect for summer outings and everyday wear. Made from breathable fabric, this dress keeps you cool and comfortable all day long. The knee-length design is flattering and comfortable, while the casual style makes it easy to pair with sneakers or sandals.\n\nSpecifications:\n\n- color: Blue\n\n- pattern: Floral\n\n- length: Knee-length\n\n- size: Medium\n\n- season: Summer\n\n- style: Casual",
+        "call_to_action": "Order now on Olx to get the best deal!"
+      },
+      "validation": {
+        "is_valid": true,
+        "issues": []
+      },
+      "scores": {
+        "privacy_score": 98,
+        "seo_score": 90,
+        "marketing_score": 90,
+        "overall_score": 90,
+        "feedback": "SEO Title length is sub-optimal."
+      }
+    }
+  },
+  "token_usage": null,
+  "estimated_cost": null,
+  "cache_hit": null,
+  "error": null,
+  "capability_metadata": {
+    "image_processing_supported": true,
+    "privacy_anonymization": true,
+    "rag_context": true,
+    "multi_agent_workflow": true
+  }
+}

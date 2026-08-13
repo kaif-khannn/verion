@@ -1,0 +1,66 @@
+{
+  "test_case_id": "TC010",
+  "product_name": "Smartwatch",
+  "category": "Smartwatch",
+  "price": "₹4,999 or ₹5,499",
+  "description": "smartwatch, AMOLED 1.78 or 1.9 inch, 7 days battery maybe 10, Bluetooth calling, IP68. says 2GB storage on one listing but 4GB on another. customer Sameer Khan sameer.khan.test@example.com +91-93333-44444. GPS built in? listing says yes, box says connected GPS. price ₹4,999 or ₹5,499.",
+  "specifications": {
+    "display": "AMOLED 1.78 or 1.9 inch (conflicting)",
+    "battery_life": "7 to 10 days (conflicting)",
+    "storage": "2GB or 4GB (conflicting)",
+    "gps": "Built-in or Connected GPS (conflicting)",
+    "features": "Bluetooth calling, IP68",
+    "customer_note": "Sameer Khan sameer.khan.test@example.com +91-93333-44444"
+  },
+  "images": [
+    "images/1.jpg",
+    "images/2.jpg",
+    "images/3.jpg",
+    "images/4.jpg",
+    "images/5.jpg",
+    "images/6.jpg"
+  ],
+  "product": "Smartwatch",
+  "niche": "Electronics & Smartphone",
+  "input_condition": "Conflicting/messy specs",
+  "pii": {
+    "present": true,
+    "fields": [
+      "name",
+      "email",
+      "phone"
+    ]
+  },
+  "product_input": {
+    "raw_description": "smartwatch, AMOLED 1.78 or 1.9 inch, 7 days battery maybe 10, Bluetooth calling, IP68. says 2GB storage on one listing but 4GB on another. customer Sameer Khan sameer.khan.test@example.com +91-93333-44444. GPS built in? listing says yes, box says connected GPS. price ₹4,999 or ₹5,499."
+  },
+  "image": {
+    "provided": true,
+    "path": "images/1.jpg"
+  },
+  "expected_checks": {
+    "detect_conflicts": [
+      "display_size",
+      "battery_life",
+      "storage",
+      "gps",
+      "price"
+    ],
+    "do_not_hallucinate": true
+  },
+  "expected_facts": {
+    "product_name": "Smartwatch",
+    "category": "Smartwatch",
+    "display": "AMOLED 1.78 or 1.9 inch (conflicting)",
+    "battery_life": "7 to 10 days (conflicting)",
+    "storage": "2GB or 4GB (conflicting)",
+    "gps": "Built-in or Connected GPS (conflicting)",
+    "price": "₹4,999 or ₹5,499 (conflicting)",
+    "features": "Bluetooth calling, IP68"
+  },
+  "visual_facts": [
+    "Smartwatch",
+    "Digital display",
+    "Watch strap"
+  ]
+}

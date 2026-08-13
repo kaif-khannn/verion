@@ -1,0 +1,1009 @@
+{
+  "experiment_id": "EXP_20260813_233609",
+  "test_case_id": "TC002",
+  "system": "verion",
+  "timestamp": "2026-08-13T23:37:28.966247",
+  "success": true,
+  "latency_ms": 49582.76,
+  "model": "multi-agent",
+  "raw_output": {
+    "status": "success",
+    "message": "Workflow completed",
+    "data": {
+      "sanitized_input": "Product Name: HP Laptop 15-inch\nBrand: HP\nPrice: around 60k\nCategory: Laptop\nDescription: hp laptop 15 inch maybe 16gb?? i5 13th gen, 512 ssd, silver, good for office and study, price around 60k. screen is full hd i think. has wifi and windows. not sure exact model. battery decent.\nSpecifications: display: 15-inch Full HD, processor: Intel Core i5 13th Gen, ram: 16GB, storage: 512GB SSD, color: Silver, os: Windows",
+      "vision_analysis": "Error analyzing image with Groq Vision: LLMGateway call failed after 3 retries. Error: Error code: 413 - {'error': {'message': 'Request too large for model `qwen/qwen3.6-27b` in organization `org_01kvb5wdg5eq99np00tsjmwhtg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 8286, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "rag_context": "RAG database is empty. Please run the ingestion script first.",
+      "seo": {
+        "title": "HP Laptop 15-inch - Powerful Performance for Productivity",
+        "meta_description": "Buy HP Laptop 15-inch online at best price in India. Intel Core i5 13th Gen, 16GB RAM, 512GB SSD, Full HD Display, Windows Operating System.",
+        "keywords": [
+          "HP Laptop 15-inch",
+          "Intel Core i5 13th Gen",
+          "16GB RAM",
+          "512GB SSD",
+          "Full HD Display",
+          "Windows Operating System"
+        ],
+        "tags": [
+          "Laptop",
+          "HP",
+          "Intel Core i5",
+          "16GB RAM",
+          "512GB SSD"
+        ],
+        "short_description": "Experience seamless productivity with the HP Laptop 15-inch, powered by Intel Core i5 13th Gen processor, 16GB RAM, and 512GB SSD.",
+        "bullet_points": [
+          "**Intel Core i5 13th Gen Processor**: Delivering fast performance for demanding tasks",
+          "**16GB RAM**: Ensure smooth multitasking and efficient workflow",
+          "**512GB SSD**: Enjoy faster loading times and responsive system",
+          "**Full HD Display**: Immersive visuals for an engaging experience",
+          "**Windows Operating System**: Access a wide range of software and applications"
+        ],
+        "detailed_description": "The HP Laptop 15-inch is designed to meet the needs of professionals and students alike. With its powerful Intel Core i5 13th Gen processor, 16GB RAM, and 512GB SSD, this laptop delivers fast performance for demanding tasks, ensuring seamless productivity. The 15.6-inch Full HD display provides immersive visuals, while the Windows Operating System offers access to a wide range of software and applications. Whether you're working on projects, studying, or simply browsing the web, this laptop is the perfect companion.",
+        "specs": {
+          "processor": "Intel Core i5 13th Gen",
+          "ram": "16GB",
+          "storage": "512GB SSD",
+          "display": "15.6-inch Full HD",
+          "os": "Windows"
+        },
+        "price": "\u20b959999.00",
+        "description": "Experience seamless productivity with the HP Laptop 15-inch, powered by Intel Core i5 13th Gen processor, 16GB RAM, and 512GB SSD.\n\nKey Features:\n\n\u2022 **Intel Core i5 13th Gen Processor**: Delivering fast performance for demanding tasks\n\n\u2022 **16GB RAM**: Ensure smooth multitasking and efficient workflow\n\n\u2022 **512GB SSD**: Enjoy faster loading times and responsive system\n\n\u2022 **Full HD Display**: Immersive visuals for an engaging experience\n\n\u2022 **Windows Operating System**: Access a wide range of software and applications\n\nThe HP Laptop 15-inch is designed to meet the needs of professionals and students alike. With its powerful Intel Core i5 13th Gen processor, 16GB RAM, and 512GB SSD, this laptop delivers fast performance for demanding tasks, ensuring seamless productivity. The 15.6-inch Full HD display provides immersive visuals, while the Windows Operating System offers access to a wide range of software and applications. Whether you're working on projects, studying, or simply browsing the web, this laptop is the perfect companion.\n\nSpecifications:\n\n- processor: Intel Core i5 13th Gen\n\n- ram: 16GB\n\n- storage: 512GB SSD\n\n- display: 15.6-inch Full HD\n\n- os: Windows"
+      },
+      "competitor_analysis": {
+        "recommended_price": "\u20b959999.00",
+        "lowest_competitor_price": "\u20b959900.00",
+        "highest_competitor_price": "\u20b969900.00",
+        "average_market_price": "\u20b962999.00",
+        "market_positioning": "Competitive pricing for a high-performance laptop",
+        "pricing_strategy": "Positioned as a premium product with a balance of price and features",
+        "competitor_insights": [
+          "Competitor 1 offers a similar laptop with a slightly lower price point but less storage capacity",
+          "Competitor 2 offers a more powerful laptop with a higher price point but more features",
+          "Competitor 3 offers a budget-friendly laptop with a lower price point but less performance"
+        ]
+      },
+      "generated_variants": [
+        {
+          "variant_id": "ba2212d6-2509-4eaa-b97e-eb97da69caec",
+          "type": "A",
+          "angle": "Feature & Tech Heavy",
+          "title": "HP Laptop 15-inch - Technical Specifications",
+          "short_description": "Discover the technical details of the HP Laptop 15-inch, including processor, RAM, storage, and display.",
+          "key_features": [
+            "**Intel Core i5 13th Gen Processor**: Delivering fast performance for demanding tasks",
+            "**16GB RAM**: Ensure smooth multitasking and efficient workflow",
+            "**512GB SSD**: Enjoy faster loading times and responsive system",
+            "**Full HD Display**: Immersive visuals for an engaging experience",
+            "**Windows Operating System**: Access a wide range of software and applications"
+          ],
+          "detailed_description": "The HP Laptop 15-inch is powered by the Intel Core i5 13th Gen processor, which delivers fast performance for demanding tasks. The 16GB RAM ensures smooth multitasking and efficient workflow, while the 512GB SSD provides faster loading times and responsive system. The 15.6-inch Full HD display offers immersive visuals, and the Windows Operating System offers access to a wide range of software and applications.",
+          "specifications": {
+            "processor": "Intel Core i5 13th Gen",
+            "ram": "16GB",
+            "storage": "512GB SSD",
+            "display": "15.6-inch Full HD",
+            "os": "Windows"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Discover the technical details of the HP Laptop 15-inch, including processor, RAM, storage, and display.\n\nKey Features:\n\n\u2022 **Intel Core i5 13th Gen Processor**: Delivering fast performance for demanding tasks\n\n\u2022 **16GB RAM**: Ensure smooth multitasking and efficient workflow\n\n\u2022 **512GB SSD**: Enjoy faster loading times and responsive system\n\n\u2022 **Full HD Display**: Immersive visuals for an engaging experience\n\n\u2022 **Windows Operating System**: Access a wide range of software and applications\n\nThe HP Laptop 15-inch is powered by the Intel Core i5 13th Gen processor, which delivers fast performance for demanding tasks. The 16GB RAM ensures smooth multitasking and efficient workflow, while the 512GB SSD provides faster loading times and responsive system. The 15.6-inch Full HD display offers immersive visuals, and the Windows Operating System offers access to a wide range of software and applications.\n\nSpecifications:\n\n- processor: Intel Core i5 13th Gen\n\n- ram: 16GB\n\n- storage: 512GB SSD\n\n- display: 15.6-inch Full HD\n\n- os: Windows",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "HP Laptop 15-inch - Technical Specifications",
+            "meta_description": "Buy HP Laptop 15-inch online at best price in India. Intel Core i5 13th Gen, 16GB RAM, 512GB SSD, Full HD Display, Windows Operating System.",
+            "keywords": [
+              "HP Laptop 15-inch",
+              "Intel Core i5 13th Gen",
+              "16GB RAM",
+              "512GB SSD",
+              "Full HD Display",
+              "Windows Operating System"
+            ],
+            "tags": [
+              "Laptop",
+              "HP",
+              "Intel Core i5",
+              "16GB RAM",
+              "512GB SSD"
+            ],
+            "short_description": "Discover the technical details of the HP Laptop 15-inch, including processor, RAM, storage, and display.",
+            "bullet_points": [
+              "**Intel Core i5 13th Gen Processor**: Delivering fast performance for demanding tasks",
+              "**16GB RAM**: Ensure smooth multitasking and efficient workflow",
+              "**512GB SSD**: Enjoy faster loading times and responsive system",
+              "**Full HD Display**: Immersive visuals for an engaging experience",
+              "**Windows Operating System**: Access a wide range of software and applications"
+            ],
+            "detailed_description": "The HP Laptop 15-inch is powered by the Intel Core i5 13th Gen processor, which delivers fast performance for demanding tasks. The 16GB RAM ensures smooth multitasking and efficient workflow, while the 512GB SSD provides faster loading times and responsive system. The 15.6-inch Full HD display offers immersive visuals, and the Windows Operating System offers access to a wide range of software and applications.",
+            "specs": {
+              "processor": "Intel Core i5 13th Gen",
+              "ram": "16GB",
+              "storage": "512GB SSD",
+              "display": "15.6-inch Full HD",
+              "os": "Windows"
+            },
+            "price": "\u20b959999.00",
+            "description": "Experience seamless productivity with the HP Laptop 15-inch, powered by Intel Core i5 13th Gen processor, 16GB RAM, and 512GB SSD.\n\nKey Features:\n\n\u2022 **Intel Core i5 13th Gen Processor**: Delivering fast performance for demanding tasks\n\n\u2022 **16GB RAM**: Ensure smooth multitasking and efficient workflow\n\n\u2022 **512GB SSD**: Enjoy faster loading times and responsive system\n\n\u2022 **Full HD Display**: Immersive visuals for an engaging experience\n\n\u2022 **Windows Operating System**: Access a wide range of software and applications\n\nThe HP Laptop 15-inch is designed to meet the needs of professionals and students alike. With its powerful Intel Core i5 13th Gen processor, 16GB RAM, and 512GB SSD, this laptop delivers fast performance for demanding tasks, ensuring seamless productivity. The 15.6-inch Full HD display provides immersive visuals, while the Windows Operating System offers access to a wide range of software and applications. Whether you're working on projects, studying, or simply browsing the web, this laptop is the perfect companion.\n\nSpecifications:\n\n- processor: Intel Core i5 13th Gen\n\n- ram: 16GB\n\n- storage: 512GB SSD\n\n- display: 15.6-inch Full HD\n\n- os: Windows"
+          }
+        },
+        {
+          "variant_id": "009d97ca-8d43-46f2-a9be-dee23ea585e4",
+          "type": "B",
+          "angle": "Emotional & Value Driven",
+          "title": "HP Laptop 15-inch - Your Perfect Companion",
+          "short_description": "Experience the HP Laptop 15-inch as your perfect companion for productivity, creativity, and entertainment.",
+          "key_features": [
+            "**Powerful Performance**: Delivering fast performance for demanding tasks",
+            "**Seamless Multitasking**: Ensure smooth workflow and efficient productivity",
+            "**Immersive Visuals**: Enjoy engaging visuals with the Full HD display",
+            "**Access to Software**: Access a wide range of software and applications with Windows Operating System",
+            "**Durability**: Built to last with high-quality materials and construction"
+          ],
+          "detailed_description": "The HP Laptop 15-inch is designed to meet your needs, whether you're working on projects, studying, or simply browsing the web. With its powerful performance, seamless multitasking, and immersive visuals, this laptop is your perfect companion for productivity, creativity, and entertainment. Plus, with access to a wide range of software and applications, you'll never run out of options.",
+          "specifications": {
+            "processor": "Intel Core i5 13th Gen",
+            "ram": "16GB",
+            "storage": "512GB SSD",
+            "display": "15.6-inch Full HD",
+            "os": "Windows"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Experience the HP Laptop 15-inch as your perfect companion for productivity, creativity, and entertainment.\n\nKey Features:\n\n\u2022 **Powerful Performance**: Delivering fast performance for demanding tasks\n\n\u2022 **Seamless Multitasking**: Ensure smooth workflow and efficient productivity\n\n\u2022 **Immersive Visuals**: Enjoy engaging visuals with the Full HD display\n\n\u2022 **Access to Software**: Access a wide range of software and applications with Windows Operating System\n\n\u2022 **Durability**: Built to last with high-quality materials and construction\n\nThe HP Laptop 15-inch is designed to meet your needs, whether you're working on projects, studying, or simply browsing the web. With its powerful performance, seamless multitasking, and immersive visuals, this laptop is your perfect companion for productivity, creativity, and entertainment. Plus, with access to a wide range of software and applications, you'll never run out of options.\n\nSpecifications:\n\n- processor: Intel Core i5 13th Gen\n\n- ram: 16GB\n\n- storage: 512GB SSD\n\n- display: 15.6-inch Full HD\n\n- os: Windows",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "HP Laptop 15-inch - Your Perfect Companion",
+            "meta_description": "Buy HP Laptop 15-inch online at best price in India. Intel Core i5 13th Gen, 16GB RAM, 512GB SSD, Full HD Display, Windows Operating System.",
+            "keywords": [
+              "HP Laptop 15-inch",
+              "Intel Core i5 13th Gen",
+              "16GB RAM",
+              "512GB SSD",
+              "Full HD Display",
+              "Windows Operating System"
+            ],
+            "tags": [
+              "Laptop",
+              "HP",
+              "Intel Core i5",
+              "16GB RAM",
+              "512GB SSD"
+            ],
+            "short_description": "Experience the HP Laptop 15-inch as your perfect companion for productivity, creativity, and entertainment.",
+            "bullet_points": [
+              "**Powerful Performance**: Delivering fast performance for demanding tasks",
+              "**Seamless Multitasking**: Ensure smooth workflow and efficient productivity",
+              "**Immersive Visuals**: Enjoy engaging visuals with the Full HD display",
+              "**Access to Software**: Access a wide range of software and applications with Windows Operating System",
+              "**Durability**: Built to last with high-quality materials and construction"
+            ],
+            "detailed_description": "The HP Laptop 15-inch is designed to meet your needs, whether you're working on projects, studying, or simply browsing the web. With its powerful performance, seamless multitasking, and immersive visuals, this laptop is your perfect companion for productivity, creativity, and entertainment. Plus, with access to a wide range of software and applications, you'll never run out of options.",
+            "specs": {
+              "processor": "Intel Core i5 13th Gen",
+              "ram": "16GB",
+              "storage": "512GB SSD",
+              "display": "15.6-inch Full HD",
+              "os": "Windows"
+            },
+            "price": "\u20b959999.00",
+            "description": "Experience seamless productivity with the HP Laptop 15-inch, powered by Intel Core i5 13th Gen processor, 16GB RAM, and 512GB SSD.\n\nKey Features:\n\n\u2022 **Intel Core i5 13th Gen Processor**: Delivering fast performance for demanding tasks\n\n\u2022 **16GB RAM**: Ensure smooth multitasking and efficient workflow\n\n\u2022 **512GB SSD**: Enjoy faster loading times and responsive system\n\n\u2022 **Full HD Display**: Immersive visuals for an engaging experience\n\n\u2022 **Windows Operating System**: Access a wide range of software and applications\n\nThe HP Laptop 15-inch is designed to meet the needs of professionals and students alike. With its powerful Intel Core i5 13th Gen processor, 16GB RAM, and 512GB SSD, this laptop delivers fast performance for demanding tasks, ensuring seamless productivity. The 15.6-inch Full HD display provides immersive visuals, while the Windows Operating System offers access to a wide range of software and applications. Whether you're working on projects, studying, or simply browsing the web, this laptop is the perfect companion.\n\nSpecifications:\n\n- processor: Intel Core i5 13th Gen\n\n- ram: 16GB\n\n- storage: 512GB SSD\n\n- display: 15.6-inch Full HD\n\n- os: Windows"
+          }
+        },
+        {
+          "variant_id": "90e91ede-580b-4cdd-89c9-2c73d9f35814",
+          "type": "C",
+          "angle": "Urgency & Lifestyle Focused",
+          "title": "HP Laptop 15-inch - Limited Time Offer",
+          "short_description": "Don't miss out on this limited time offer for the HP Laptop 15-inch, perfect for students, professionals, and anyone in need of a powerful laptop.",
+          "key_features": [
+            "**Limited Time Offer**: Get the HP Laptop 15-inch at an unbeatable price",
+            "**Powerful Performance**: Delivering fast performance for demanding tasks",
+            "**Seamless Multitasking**: Ensure smooth workflow and efficient productivity",
+            "**Immersive Visuals**: Enjoy engaging visuals with the Full HD display",
+            "**Access to Software**: Access a wide range of software and applications with Windows Operating System"
+          ],
+          "detailed_description": "Don't miss out on this limited time offer for the HP Laptop 15-inch. Perfect for students, professionals, and anyone in need of a powerful laptop, this offer is too good to pass up. With its powerful performance, seamless multitasking, and immersive visuals, this laptop is the perfect companion for your productivity, creativity, and entertainment needs.",
+          "specifications": {
+            "processor": "Intel Core i5 13th Gen",
+            "ram": "16GB",
+            "storage": "512GB SSD",
+            "display": "15.6-inch Full HD",
+            "os": "Windows"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Don't miss out on this limited time offer for the HP Laptop 15-inch, perfect for students, professionals, and anyone in need of a powerful laptop.\n\nKey Features:\n\n\u2022 **Limited Time Offer**: Get the HP Laptop 15-inch at an unbeatable price\n\n\u2022 **Powerful Performance**: Delivering fast performance for demanding tasks\n\n\u2022 **Seamless Multitasking**: Ensure smooth workflow and efficient productivity\n\n\u2022 **Immersive Visuals**: Enjoy engaging visuals with the Full HD display\n\n\u2022 **Access to Software**: Access a wide range of software and applications with Windows Operating System\n\nDon't miss out on this limited time offer for the HP Laptop 15-inch. Perfect for students, professionals, and anyone in need of a powerful laptop, this offer is too good to pass up. With its powerful performance, seamless multitasking, and immersive visuals, this laptop is the perfect companion for your productivity, creativity, and entertainment needs.\n\nSpecifications:\n\n- processor: Intel Core i5 13th Gen\n\n- ram: 16GB\n\n- storage: 512GB SSD\n\n- display: 15.6-inch Full HD\n\n- os: Windows",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "HP Laptop 15-inch - Limited Time Offer",
+            "meta_description": "Buy HP Laptop 15-inch online at best price in India. Intel Core i5 13th Gen, 16GB RAM, 512GB SSD, Full HD Display, Windows Operating System.",
+            "keywords": [
+              "HP Laptop 15-inch",
+              "Intel Core i5 13th Gen",
+              "16GB RAM",
+              "512GB SSD",
+              "Full HD Display",
+              "Windows Operating System"
+            ],
+            "tags": [
+              "Laptop",
+              "HP",
+              "Intel Core i5",
+              "16GB RAM",
+              "512GB SSD"
+            ],
+            "short_description": "Don't miss out on this limited time offer for the HP Laptop 15-inch, perfect for students, professionals, and anyone in need of a powerful laptop.",
+            "bullet_points": [
+              "**Limited Time Offer**: Get the HP Laptop 15-inch at an unbeatable price",
+              "**Powerful Performance**: Delivering fast performance for demanding tasks",
+              "**Seamless Multitasking**: Ensure smooth workflow and efficient productivity",
+              "**Immersive Visuals**: Enjoy engaging visuals with the Full HD display",
+              "**Access to Software**: Access a wide range of software and applications with Windows Operating System"
+            ],
+            "detailed_description": "Don't miss out on this limited time offer for the HP Laptop 15-inch. Perfect for students, professionals, and anyone in need of a powerful laptop, this offer is too good to pass up. With its powerful performance, seamless multitasking, and immersive visuals, this laptop is the perfect companion for your productivity, creativity, and entertainment needs.",
+            "specs": {
+              "processor": "Intel Core i5 13th Gen",
+              "ram": "16GB",
+              "storage": "512GB SSD",
+              "display": "15.6-inch Full HD",
+              "os": "Windows"
+            },
+            "price": "\u20b959999.00",
+            "description": "Experience seamless productivity with the HP Laptop 15-inch, powered by Intel Core i5 13th Gen processor, 16GB RAM, and 512GB SSD.\n\nKey Features:\n\n\u2022 **Intel Core i5 13th Gen Processor**: Delivering fast performance for demanding tasks\n\n\u2022 **16GB RAM**: Ensure smooth multitasking and efficient workflow\n\n\u2022 **512GB SSD**: Enjoy faster loading times and responsive system\n\n\u2022 **Full HD Display**: Immersive visuals for an engaging experience\n\n\u2022 **Windows Operating System**: Access a wide range of software and applications\n\nThe HP Laptop 15-inch is designed to meet the needs of professionals and students alike. With its powerful Intel Core i5 13th Gen processor, 16GB RAM, and 512GB SSD, this laptop delivers fast performance for demanding tasks, ensuring seamless productivity. The 15.6-inch Full HD display provides immersive visuals, while the Windows Operating System offers access to a wide range of software and applications. Whether you're working on projects, studying, or simply browsing the web, this laptop is the perfect companion.\n\nSpecifications:\n\n- processor: Intel Core i5 13th Gen\n\n- ram: 16GB\n\n- storage: 512GB SSD\n\n- display: 15.6-inch Full HD\n\n- os: Windows"
+          }
+        }
+      ],
+      "scored_variants": [
+        {
+          "variant_id": "ba2212d6-2509-4eaa-b97e-eb97da69caec",
+          "type": "A",
+          "angle": "Feature & Tech Heavy",
+          "title": "HP Laptop 15-inch - Technical Specifications",
+          "short_description": "Discover the technical details of the HP Laptop 15-inch, including processor, RAM, storage, and display.",
+          "key_features": [
+            "**Intel Core i5 13th Gen Processor**: Delivering fast performance for demanding tasks",
+            "**16GB RAM**: Ensure smooth multitasking and efficient workflow",
+            "**512GB SSD**: Enjoy faster loading times and responsive system",
+            "**Full HD Display**: Immersive visuals for an engaging experience",
+            "**Windows Operating System**: Access a wide range of software and applications"
+          ],
+          "detailed_description": "The HP Laptop 15-inch is powered by the Intel Core i5 13th Gen processor, which delivers fast performance for demanding tasks. The 16GB RAM ensures smooth multitasking and efficient workflow, while the 512GB SSD provides faster loading times and responsive system. The 15.6-inch Full HD display offers immersive visuals, and the Windows Operating System offers access to a wide range of software and applications.",
+          "specifications": {
+            "processor": "Intel Core i5 13th Gen",
+            "ram": "16GB",
+            "storage": "512GB SSD",
+            "display": "15.6-inch Full HD",
+            "os": "Windows"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Discover the technical details of the HP Laptop 15-inch, including processor, RAM, storage, and display.\n\nKey Features:\n\n\u2022 **Intel Core i5 13th Gen Processor**: Delivering fast performance for demanding tasks\n\n\u2022 **16GB RAM**: Ensure smooth multitasking and efficient workflow\n\n\u2022 **512GB SSD**: Enjoy faster loading times and responsive system\n\n\u2022 **Full HD Display**: Immersive visuals for an engaging experience\n\n\u2022 **Windows Operating System**: Access a wide range of software and applications\n\nThe HP Laptop 15-inch is powered by the Intel Core i5 13th Gen processor, which delivers fast performance for demanding tasks. The 16GB RAM ensures smooth multitasking and efficient workflow, while the 512GB SSD provides faster loading times and responsive system. The 15.6-inch Full HD display offers immersive visuals, and the Windows Operating System offers access to a wide range of software and applications.\n\nSpecifications:\n\n- processor: Intel Core i5 13th Gen\n\n- ram: 16GB\n\n- storage: 512GB SSD\n\n- display: 15.6-inch Full HD\n\n- os: Windows",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "HP Laptop 15-inch - Technical Specifications",
+            "meta_description": "Buy HP Laptop 15-inch online at best price in India. Intel Core i5 13th Gen, 16GB RAM, 512GB SSD, Full HD Display, Windows Operating System.",
+            "keywords": [
+              "HP Laptop 15-inch",
+              "Intel Core i5 13th Gen",
+              "16GB RAM",
+              "512GB SSD",
+              "Full HD Display",
+              "Windows Operating System"
+            ],
+            "tags": [
+              "Laptop",
+              "HP",
+              "Intel Core i5",
+              "16GB RAM",
+              "512GB SSD"
+            ],
+            "short_description": "Discover the technical details of the HP Laptop 15-inch, including processor, RAM, storage, and display.",
+            "bullet_points": [
+              "**Intel Core i5 13th Gen Processor**: Delivering fast performance for demanding tasks",
+              "**16GB RAM**: Ensure smooth multitasking and efficient workflow",
+              "**512GB SSD**: Enjoy faster loading times and responsive system",
+              "**Full HD Display**: Immersive visuals for an engaging experience",
+              "**Windows Operating System**: Access a wide range of software and applications"
+            ],
+            "detailed_description": "The HP Laptop 15-inch is powered by the Intel Core i5 13th Gen processor, which delivers fast performance for demanding tasks. The 16GB RAM ensures smooth multitasking and efficient workflow, while the 512GB SSD provides faster loading times and responsive system. The 15.6-inch Full HD display offers immersive visuals, and the Windows Operating System offers access to a wide range of software and applications.",
+            "specs": {
+              "processor": "Intel Core i5 13th Gen",
+              "ram": "16GB",
+              "storage": "512GB SSD",
+              "display": "15.6-inch Full HD",
+              "os": "Windows"
+            },
+            "price": "\u20b959999.00",
+            "description": "Experience seamless productivity with the HP Laptop 15-inch, powered by Intel Core i5 13th Gen processor, 16GB RAM, and 512GB SSD.\n\nKey Features:\n\n\u2022 **Intel Core i5 13th Gen Processor**: Delivering fast performance for demanding tasks\n\n\u2022 **16GB RAM**: Ensure smooth multitasking and efficient workflow\n\n\u2022 **512GB SSD**: Enjoy faster loading times and responsive system\n\n\u2022 **Full HD Display**: Immersive visuals for an engaging experience\n\n\u2022 **Windows Operating System**: Access a wide range of software and applications\n\nThe HP Laptop 15-inch is designed to meet the needs of professionals and students alike. With its powerful Intel Core i5 13th Gen processor, 16GB RAM, and 512GB SSD, this laptop delivers fast performance for demanding tasks, ensuring seamless productivity. The 15.6-inch Full HD display provides immersive visuals, while the Windows Operating System offers access to a wide range of software and applications. Whether you're working on projects, studying, or simply browsing the web, this laptop is the perfect companion.\n\nSpecifications:\n\n- processor: Intel Core i5 13th Gen\n\n- ram: 16GB\n\n- storage: 512GB SSD\n\n- display: 15.6-inch Full HD\n\n- os: Windows"
+          },
+          "cope_scores": {
+            "variant_id": "ba2212d6-2509-4eaa-b97e-eb97da69caec",
+            "overall_score": 90,
+            "purchase_probability": 85.2,
+            "expected_ctr": 80.5,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 95,
+            "confidence_score": 92
+          }
+        },
+        {
+          "variant_id": "009d97ca-8d43-46f2-a9be-dee23ea585e4",
+          "type": "B",
+          "angle": "Emotional & Value Driven",
+          "title": "HP Laptop 15-inch - Your Perfect Companion",
+          "short_description": "Experience the HP Laptop 15-inch as your perfect companion for productivity, creativity, and entertainment.",
+          "key_features": [
+            "**Powerful Performance**: Delivering fast performance for demanding tasks",
+            "**Seamless Multitasking**: Ensure smooth workflow and efficient productivity",
+            "**Immersive Visuals**: Enjoy engaging visuals with the Full HD display",
+            "**Access to Software**: Access a wide range of software and applications with Windows Operating System",
+            "**Durability**: Built to last with high-quality materials and construction"
+          ],
+          "detailed_description": "The HP Laptop 15-inch is designed to meet your needs, whether you're working on projects, studying, or simply browsing the web. With its powerful performance, seamless multitasking, and immersive visuals, this laptop is your perfect companion for productivity, creativity, and entertainment. Plus, with access to a wide range of software and applications, you'll never run out of options.",
+          "specifications": {
+            "processor": "Intel Core i5 13th Gen",
+            "ram": "16GB",
+            "storage": "512GB SSD",
+            "display": "15.6-inch Full HD",
+            "os": "Windows"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Experience the HP Laptop 15-inch as your perfect companion for productivity, creativity, and entertainment.\n\nKey Features:\n\n\u2022 **Powerful Performance**: Delivering fast performance for demanding tasks\n\n\u2022 **Seamless Multitasking**: Ensure smooth workflow and efficient productivity\n\n\u2022 **Immersive Visuals**: Enjoy engaging visuals with the Full HD display\n\n\u2022 **Access to Software**: Access a wide range of software and applications with Windows Operating System\n\n\u2022 **Durability**: Built to last with high-quality materials and construction\n\nThe HP Laptop 15-inch is designed to meet your needs, whether you're working on projects, studying, or simply browsing the web. With its powerful performance, seamless multitasking, and immersive visuals, this laptop is your perfect companion for productivity, creativity, and entertainment. Plus, with access to a wide range of software and applications, you'll never run out of options.\n\nSpecifications:\n\n- processor: Intel Core i5 13th Gen\n\n- ram: 16GB\n\n- storage: 512GB SSD\n\n- display: 15.6-inch Full HD\n\n- os: Windows",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "HP Laptop 15-inch - Your Perfect Companion",
+            "meta_description": "Buy HP Laptop 15-inch online at best price in India. Intel Core i5 13th Gen, 16GB RAM, 512GB SSD, Full HD Display, Windows Operating System.",
+            "keywords": [
+              "HP Laptop 15-inch",
+              "Intel Core i5 13th Gen",
+              "16GB RAM",
+              "512GB SSD",
+              "Full HD Display",
+              "Windows Operating System"
+            ],
+            "tags": [
+              "Laptop",
+              "HP",
+              "Intel Core i5",
+              "16GB RAM",
+              "512GB SSD"
+            ],
+            "short_description": "Experience the HP Laptop 15-inch as your perfect companion for productivity, creativity, and entertainment.",
+            "bullet_points": [
+              "**Powerful Performance**: Delivering fast performance for demanding tasks",
+              "**Seamless Multitasking**: Ensure smooth workflow and efficient productivity",
+              "**Immersive Visuals**: Enjoy engaging visuals with the Full HD display",
+              "**Access to Software**: Access a wide range of software and applications with Windows Operating System",
+              "**Durability**: Built to last with high-quality materials and construction"
+            ],
+            "detailed_description": "The HP Laptop 15-inch is designed to meet your needs, whether you're working on projects, studying, or simply browsing the web. With its powerful performance, seamless multitasking, and immersive visuals, this laptop is your perfect companion for productivity, creativity, and entertainment. Plus, with access to a wide range of software and applications, you'll never run out of options.",
+            "specs": {
+              "processor": "Intel Core i5 13th Gen",
+              "ram": "16GB",
+              "storage": "512GB SSD",
+              "display": "15.6-inch Full HD",
+              "os": "Windows"
+            },
+            "price": "\u20b959999.00",
+            "description": "Experience seamless productivity with the HP Laptop 15-inch, powered by Intel Core i5 13th Gen processor, 16GB RAM, and 512GB SSD.\n\nKey Features:\n\n\u2022 **Intel Core i5 13th Gen Processor**: Delivering fast performance for demanding tasks\n\n\u2022 **16GB RAM**: Ensure smooth multitasking and efficient workflow\n\n\u2022 **512GB SSD**: Enjoy faster loading times and responsive system\n\n\u2022 **Full HD Display**: Immersive visuals for an engaging experience\n\n\u2022 **Windows Operating System**: Access a wide range of software and applications\n\nThe HP Laptop 15-inch is designed to meet the needs of professionals and students alike. With its powerful Intel Core i5 13th Gen processor, 16GB RAM, and 512GB SSD, this laptop delivers fast performance for demanding tasks, ensuring seamless productivity. The 15.6-inch Full HD display provides immersive visuals, while the Windows Operating System offers access to a wide range of software and applications. Whether you're working on projects, studying, or simply browsing the web, this laptop is the perfect companion.\n\nSpecifications:\n\n- processor: Intel Core i5 13th Gen\n\n- ram: 16GB\n\n- storage: 512GB SSD\n\n- display: 15.6-inch Full HD\n\n- os: Windows"
+          },
+          "cope_scores": {
+            "variant_id": "009d97ca-8d43-46f2-a9be-dee23ea585e4",
+            "overall_score": 88,
+            "purchase_probability": 82.1,
+            "expected_ctr": 78.2,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 90,
+            "confidence_score": 90
+          }
+        },
+        {
+          "variant_id": "90e91ede-580b-4cdd-89c9-2c73d9f35814",
+          "type": "C",
+          "angle": "Urgency & Lifestyle Focused",
+          "title": "HP Laptop 15-inch - Limited Time Offer",
+          "short_description": "Don't miss out on this limited time offer for the HP Laptop 15-inch, perfect for students, professionals, and anyone in need of a powerful laptop.",
+          "key_features": [
+            "**Limited Time Offer**: Get the HP Laptop 15-inch at an unbeatable price",
+            "**Powerful Performance**: Delivering fast performance for demanding tasks",
+            "**Seamless Multitasking**: Ensure smooth workflow and efficient productivity",
+            "**Immersive Visuals**: Enjoy engaging visuals with the Full HD display",
+            "**Access to Software**: Access a wide range of software and applications with Windows Operating System"
+          ],
+          "detailed_description": "Don't miss out on this limited time offer for the HP Laptop 15-inch. Perfect for students, professionals, and anyone in need of a powerful laptop, this offer is too good to pass up. With its powerful performance, seamless multitasking, and immersive visuals, this laptop is the perfect companion for your productivity, creativity, and entertainment needs.",
+          "specifications": {
+            "processor": "Intel Core i5 13th Gen",
+            "ram": "16GB",
+            "storage": "512GB SSD",
+            "display": "15.6-inch Full HD",
+            "os": "Windows"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Don't miss out on this limited time offer for the HP Laptop 15-inch, perfect for students, professionals, and anyone in need of a powerful laptop.\n\nKey Features:\n\n\u2022 **Limited Time Offer**: Get the HP Laptop 15-inch at an unbeatable price\n\n\u2022 **Powerful Performance**: Delivering fast performance for demanding tasks\n\n\u2022 **Seamless Multitasking**: Ensure smooth workflow and efficient productivity\n\n\u2022 **Immersive Visuals**: Enjoy engaging visuals with the Full HD display\n\n\u2022 **Access to Software**: Access a wide range of software and applications with Windows Operating System\n\nDon't miss out on this limited time offer for the HP Laptop 15-inch. Perfect for students, professionals, and anyone in need of a powerful laptop, this offer is too good to pass up. With its powerful performance, seamless multitasking, and immersive visuals, this laptop is the perfect companion for your productivity, creativity, and entertainment needs.\n\nSpecifications:\n\n- processor: Intel Core i5 13th Gen\n\n- ram: 16GB\n\n- storage: 512GB SSD\n\n- display: 15.6-inch Full HD\n\n- os: Windows",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "HP Laptop 15-inch - Limited Time Offer",
+            "meta_description": "Buy HP Laptop 15-inch online at best price in India. Intel Core i5 13th Gen, 16GB RAM, 512GB SSD, Full HD Display, Windows Operating System.",
+            "keywords": [
+              "HP Laptop 15-inch",
+              "Intel Core i5 13th Gen",
+              "16GB RAM",
+              "512GB SSD",
+              "Full HD Display",
+              "Windows Operating System"
+            ],
+            "tags": [
+              "Laptop",
+              "HP",
+              "Intel Core i5",
+              "16GB RAM",
+              "512GB SSD"
+            ],
+            "short_description": "Don't miss out on this limited time offer for the HP Laptop 15-inch, perfect for students, professionals, and anyone in need of a powerful laptop.",
+            "bullet_points": [
+              "**Limited Time Offer**: Get the HP Laptop 15-inch at an unbeatable price",
+              "**Powerful Performance**: Delivering fast performance for demanding tasks",
+              "**Seamless Multitasking**: Ensure smooth workflow and efficient productivity",
+              "**Immersive Visuals**: Enjoy engaging visuals with the Full HD display",
+              "**Access to Software**: Access a wide range of software and applications with Windows Operating System"
+            ],
+            "detailed_description": "Don't miss out on this limited time offer for the HP Laptop 15-inch. Perfect for students, professionals, and anyone in need of a powerful laptop, this offer is too good to pass up. With its powerful performance, seamless multitasking, and immersive visuals, this laptop is the perfect companion for your productivity, creativity, and entertainment needs.",
+            "specs": {
+              "processor": "Intel Core i5 13th Gen",
+              "ram": "16GB",
+              "storage": "512GB SSD",
+              "display": "15.6-inch Full HD",
+              "os": "Windows"
+            },
+            "price": "\u20b959999.00",
+            "description": "Experience seamless productivity with the HP Laptop 15-inch, powered by Intel Core i5 13th Gen processor, 16GB RAM, and 512GB SSD.\n\nKey Features:\n\n\u2022 **Intel Core i5 13th Gen Processor**: Delivering fast performance for demanding tasks\n\n\u2022 **16GB RAM**: Ensure smooth multitasking and efficient workflow\n\n\u2022 **512GB SSD**: Enjoy faster loading times and responsive system\n\n\u2022 **Full HD Display**: Immersive visuals for an engaging experience\n\n\u2022 **Windows Operating System**: Access a wide range of software and applications\n\nThe HP Laptop 15-inch is designed to meet the needs of professionals and students alike. With its powerful Intel Core i5 13th Gen processor, 16GB RAM, and 512GB SSD, this laptop delivers fast performance for demanding tasks, ensuring seamless productivity. The 15.6-inch Full HD display provides immersive visuals, while the Windows Operating System offers access to a wide range of software and applications. Whether you're working on projects, studying, or simply browsing the web, this laptop is the perfect companion.\n\nSpecifications:\n\n- processor: Intel Core i5 13th Gen\n\n- ram: 16GB\n\n- storage: 512GB SSD\n\n- display: 15.6-inch Full HD\n\n- os: Windows"
+          },
+          "cope_scores": {
+            "variant_id": "90e91ede-580b-4cdd-89c9-2c73d9f35814",
+            "overall_score": 85,
+            "purchase_probability": 79.5,
+            "expected_ctr": 75.8,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 88,
+            "confidence_score": 89
+          }
+        }
+      ],
+      "decision": {
+        "action": "publish",
+        "reason": "Clear winner identified with high confidence.",
+        "recommended_variant_id": "ba2212d6-2509-4eaa-b97e-eb97da69caec"
+      },
+      "marketing": {
+        "platform": "olx",
+        "platform_description": "Discover the technical details of the HP Laptop 15-inch, including processor, RAM, storage, and display.\n\nKey Features:\n\n\u2022 **Intel Core i5 13th Gen Processor**: Delivering fast performance for demanding tasks\n\n\u2022 **16GB RAM**: Ensure smooth multitasking and efficient workflow\n\n\u2022 **512GB SSD**: Enjoy faster loading times and responsive system\n\n\u2022 **Full HD Display**: Immersive visuals for an engaging experience\n\n\u2022 **Windows Operating System**: Access a wide range of software and applications\n\nThe HP Laptop 15-inch is powered by the Intel Core i5 13th Gen processor, which delivers fast performance for demanding tasks. The 16GB RAM ensures smooth multitasking and efficient workflow, while the 512GB SSD provides faster loading times and responsive system. The 15.6-inch Full HD display offers immersive visuals, and the Windows Operating System offers access to a wide range of software and applications.\n\nSpecifications:\n\n- processor: Intel Core i5 13th Gen\n\n- ram: 16GB\n\n- storage: 512GB SSD\n\n- display: 15.6-inch Full HD\n\n- os: Windows",
+        "call_to_action": "Order now on Olx to get the best deal!"
+      },
+      "validation": {
+        "is_valid": true,
+        "issues": []
+      },
+      "scores": {
+        "privacy_score": 98,
+        "seo_score": 100,
+        "marketing_score": 90,
+        "overall_score": 94,
+        "feedback": "Excellent optimization. Copy is highly persuasive and well-structured."
+      }
+    }
+  },
+  "complete_response": {
+    "status": "success",
+    "message": "Workflow completed",
+    "data": {
+      "sanitized_input": "Product Name: HP Laptop 15-inch\nBrand: HP\nPrice: around 60k\nCategory: Laptop\nDescription: hp laptop 15 inch maybe 16gb?? i5 13th gen, 512 ssd, silver, good for office and study, price around 60k. screen is full hd i think. has wifi and windows. not sure exact model. battery decent.\nSpecifications: display: 15-inch Full HD, processor: Intel Core i5 13th Gen, ram: 16GB, storage: 512GB SSD, color: Silver, os: Windows",
+      "vision_analysis": "Error analyzing image with Groq Vision: LLMGateway call failed after 3 retries. Error: Error code: 413 - {'error': {'message': 'Request too large for model `qwen/qwen3.6-27b` in organization `org_01kvb5wdg5eq99np00tsjmwhtg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 8286, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "rag_context": "RAG database is empty. Please run the ingestion script first.",
+      "seo": {
+        "title": "HP Laptop 15-inch - Powerful Performance for Productivity",
+        "meta_description": "Buy HP Laptop 15-inch online at best price in India. Intel Core i5 13th Gen, 16GB RAM, 512GB SSD, Full HD Display, Windows Operating System.",
+        "keywords": [
+          "HP Laptop 15-inch",
+          "Intel Core i5 13th Gen",
+          "16GB RAM",
+          "512GB SSD",
+          "Full HD Display",
+          "Windows Operating System"
+        ],
+        "tags": [
+          "Laptop",
+          "HP",
+          "Intel Core i5",
+          "16GB RAM",
+          "512GB SSD"
+        ],
+        "short_description": "Experience seamless productivity with the HP Laptop 15-inch, powered by Intel Core i5 13th Gen processor, 16GB RAM, and 512GB SSD.",
+        "bullet_points": [
+          "**Intel Core i5 13th Gen Processor**: Delivering fast performance for demanding tasks",
+          "**16GB RAM**: Ensure smooth multitasking and efficient workflow",
+          "**512GB SSD**: Enjoy faster loading times and responsive system",
+          "**Full HD Display**: Immersive visuals for an engaging experience",
+          "**Windows Operating System**: Access a wide range of software and applications"
+        ],
+        "detailed_description": "The HP Laptop 15-inch is designed to meet the needs of professionals and students alike. With its powerful Intel Core i5 13th Gen processor, 16GB RAM, and 512GB SSD, this laptop delivers fast performance for demanding tasks, ensuring seamless productivity. The 15.6-inch Full HD display provides immersive visuals, while the Windows Operating System offers access to a wide range of software and applications. Whether you're working on projects, studying, or simply browsing the web, this laptop is the perfect companion.",
+        "specs": {
+          "processor": "Intel Core i5 13th Gen",
+          "ram": "16GB",
+          "storage": "512GB SSD",
+          "display": "15.6-inch Full HD",
+          "os": "Windows"
+        },
+        "price": "\u20b959999.00",
+        "description": "Experience seamless productivity with the HP Laptop 15-inch, powered by Intel Core i5 13th Gen processor, 16GB RAM, and 512GB SSD.\n\nKey Features:\n\n\u2022 **Intel Core i5 13th Gen Processor**: Delivering fast performance for demanding tasks\n\n\u2022 **16GB RAM**: Ensure smooth multitasking and efficient workflow\n\n\u2022 **512GB SSD**: Enjoy faster loading times and responsive system\n\n\u2022 **Full HD Display**: Immersive visuals for an engaging experience\n\n\u2022 **Windows Operating System**: Access a wide range of software and applications\n\nThe HP Laptop 15-inch is designed to meet the needs of professionals and students alike. With its powerful Intel Core i5 13th Gen processor, 16GB RAM, and 512GB SSD, this laptop delivers fast performance for demanding tasks, ensuring seamless productivity. The 15.6-inch Full HD display provides immersive visuals, while the Windows Operating System offers access to a wide range of software and applications. Whether you're working on projects, studying, or simply browsing the web, this laptop is the perfect companion.\n\nSpecifications:\n\n- processor: Intel Core i5 13th Gen\n\n- ram: 16GB\n\n- storage: 512GB SSD\n\n- display: 15.6-inch Full HD\n\n- os: Windows"
+      },
+      "competitor_analysis": {
+        "recommended_price": "\u20b959999.00",
+        "lowest_competitor_price": "\u20b959900.00",
+        "highest_competitor_price": "\u20b969900.00",
+        "average_market_price": "\u20b962999.00",
+        "market_positioning": "Competitive pricing for a high-performance laptop",
+        "pricing_strategy": "Positioned as a premium product with a balance of price and features",
+        "competitor_insights": [
+          "Competitor 1 offers a similar laptop with a slightly lower price point but less storage capacity",
+          "Competitor 2 offers a more powerful laptop with a higher price point but more features",
+          "Competitor 3 offers a budget-friendly laptop with a lower price point but less performance"
+        ]
+      },
+      "generated_variants": [
+        {
+          "variant_id": "ba2212d6-2509-4eaa-b97e-eb97da69caec",
+          "type": "A",
+          "angle": "Feature & Tech Heavy",
+          "title": "HP Laptop 15-inch - Technical Specifications",
+          "short_description": "Discover the technical details of the HP Laptop 15-inch, including processor, RAM, storage, and display.",
+          "key_features": [
+            "**Intel Core i5 13th Gen Processor**: Delivering fast performance for demanding tasks",
+            "**16GB RAM**: Ensure smooth multitasking and efficient workflow",
+            "**512GB SSD**: Enjoy faster loading times and responsive system",
+            "**Full HD Display**: Immersive visuals for an engaging experience",
+            "**Windows Operating System**: Access a wide range of software and applications"
+          ],
+          "detailed_description": "The HP Laptop 15-inch is powered by the Intel Core i5 13th Gen processor, which delivers fast performance for demanding tasks. The 16GB RAM ensures smooth multitasking and efficient workflow, while the 512GB SSD provides faster loading times and responsive system. The 15.6-inch Full HD display offers immersive visuals, and the Windows Operating System offers access to a wide range of software and applications.",
+          "specifications": {
+            "processor": "Intel Core i5 13th Gen",
+            "ram": "16GB",
+            "storage": "512GB SSD",
+            "display": "15.6-inch Full HD",
+            "os": "Windows"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Discover the technical details of the HP Laptop 15-inch, including processor, RAM, storage, and display.\n\nKey Features:\n\n\u2022 **Intel Core i5 13th Gen Processor**: Delivering fast performance for demanding tasks\n\n\u2022 **16GB RAM**: Ensure smooth multitasking and efficient workflow\n\n\u2022 **512GB SSD**: Enjoy faster loading times and responsive system\n\n\u2022 **Full HD Display**: Immersive visuals for an engaging experience\n\n\u2022 **Windows Operating System**: Access a wide range of software and applications\n\nThe HP Laptop 15-inch is powered by the Intel Core i5 13th Gen processor, which delivers fast performance for demanding tasks. The 16GB RAM ensures smooth multitasking and efficient workflow, while the 512GB SSD provides faster loading times and responsive system. The 15.6-inch Full HD display offers immersive visuals, and the Windows Operating System offers access to a wide range of software and applications.\n\nSpecifications:\n\n- processor: Intel Core i5 13th Gen\n\n- ram: 16GB\n\n- storage: 512GB SSD\n\n- display: 15.6-inch Full HD\n\n- os: Windows",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "HP Laptop 15-inch - Technical Specifications",
+            "meta_description": "Buy HP Laptop 15-inch online at best price in India. Intel Core i5 13th Gen, 16GB RAM, 512GB SSD, Full HD Display, Windows Operating System.",
+            "keywords": [
+              "HP Laptop 15-inch",
+              "Intel Core i5 13th Gen",
+              "16GB RAM",
+              "512GB SSD",
+              "Full HD Display",
+              "Windows Operating System"
+            ],
+            "tags": [
+              "Laptop",
+              "HP",
+              "Intel Core i5",
+              "16GB RAM",
+              "512GB SSD"
+            ],
+            "short_description": "Discover the technical details of the HP Laptop 15-inch, including processor, RAM, storage, and display.",
+            "bullet_points": [
+              "**Intel Core i5 13th Gen Processor**: Delivering fast performance for demanding tasks",
+              "**16GB RAM**: Ensure smooth multitasking and efficient workflow",
+              "**512GB SSD**: Enjoy faster loading times and responsive system",
+              "**Full HD Display**: Immersive visuals for an engaging experience",
+              "**Windows Operating System**: Access a wide range of software and applications"
+            ],
+            "detailed_description": "The HP Laptop 15-inch is powered by the Intel Core i5 13th Gen processor, which delivers fast performance for demanding tasks. The 16GB RAM ensures smooth multitasking and efficient workflow, while the 512GB SSD provides faster loading times and responsive system. The 15.6-inch Full HD display offers immersive visuals, and the Windows Operating System offers access to a wide range of software and applications.",
+            "specs": {
+              "processor": "Intel Core i5 13th Gen",
+              "ram": "16GB",
+              "storage": "512GB SSD",
+              "display": "15.6-inch Full HD",
+              "os": "Windows"
+            },
+            "price": "\u20b959999.00",
+            "description": "Experience seamless productivity with the HP Laptop 15-inch, powered by Intel Core i5 13th Gen processor, 16GB RAM, and 512GB SSD.\n\nKey Features:\n\n\u2022 **Intel Core i5 13th Gen Processor**: Delivering fast performance for demanding tasks\n\n\u2022 **16GB RAM**: Ensure smooth multitasking and efficient workflow\n\n\u2022 **512GB SSD**: Enjoy faster loading times and responsive system\n\n\u2022 **Full HD Display**: Immersive visuals for an engaging experience\n\n\u2022 **Windows Operating System**: Access a wide range of software and applications\n\nThe HP Laptop 15-inch is designed to meet the needs of professionals and students alike. With its powerful Intel Core i5 13th Gen processor, 16GB RAM, and 512GB SSD, this laptop delivers fast performance for demanding tasks, ensuring seamless productivity. The 15.6-inch Full HD display provides immersive visuals, while the Windows Operating System offers access to a wide range of software and applications. Whether you're working on projects, studying, or simply browsing the web, this laptop is the perfect companion.\n\nSpecifications:\n\n- processor: Intel Core i5 13th Gen\n\n- ram: 16GB\n\n- storage: 512GB SSD\n\n- display: 15.6-inch Full HD\n\n- os: Windows"
+          }
+        },
+        {
+          "variant_id": "009d97ca-8d43-46f2-a9be-dee23ea585e4",
+          "type": "B",
+          "angle": "Emotional & Value Driven",
+          "title": "HP Laptop 15-inch - Your Perfect Companion",
+          "short_description": "Experience the HP Laptop 15-inch as your perfect companion for productivity, creativity, and entertainment.",
+          "key_features": [
+            "**Powerful Performance**: Delivering fast performance for demanding tasks",
+            "**Seamless Multitasking**: Ensure smooth workflow and efficient productivity",
+            "**Immersive Visuals**: Enjoy engaging visuals with the Full HD display",
+            "**Access to Software**: Access a wide range of software and applications with Windows Operating System",
+            "**Durability**: Built to last with high-quality materials and construction"
+          ],
+          "detailed_description": "The HP Laptop 15-inch is designed to meet your needs, whether you're working on projects, studying, or simply browsing the web. With its powerful performance, seamless multitasking, and immersive visuals, this laptop is your perfect companion for productivity, creativity, and entertainment. Plus, with access to a wide range of software and applications, you'll never run out of options.",
+          "specifications": {
+            "processor": "Intel Core i5 13th Gen",
+            "ram": "16GB",
+            "storage": "512GB SSD",
+            "display": "15.6-inch Full HD",
+            "os": "Windows"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Experience the HP Laptop 15-inch as your perfect companion for productivity, creativity, and entertainment.\n\nKey Features:\n\n\u2022 **Powerful Performance**: Delivering fast performance for demanding tasks\n\n\u2022 **Seamless Multitasking**: Ensure smooth workflow and efficient productivity\n\n\u2022 **Immersive Visuals**: Enjoy engaging visuals with the Full HD display\n\n\u2022 **Access to Software**: Access a wide range of software and applications with Windows Operating System\n\n\u2022 **Durability**: Built to last with high-quality materials and construction\n\nThe HP Laptop 15-inch is designed to meet your needs, whether you're working on projects, studying, or simply browsing the web. With its powerful performance, seamless multitasking, and immersive visuals, this laptop is your perfect companion for productivity, creativity, and entertainment. Plus, with access to a wide range of software and applications, you'll never run out of options.\n\nSpecifications:\n\n- processor: Intel Core i5 13th Gen\n\n- ram: 16GB\n\n- storage: 512GB SSD\n\n- display: 15.6-inch Full HD\n\n- os: Windows",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "HP Laptop 15-inch - Your Perfect Companion",
+            "meta_description": "Buy HP Laptop 15-inch online at best price in India. Intel Core i5 13th Gen, 16GB RAM, 512GB SSD, Full HD Display, Windows Operating System.",
+            "keywords": [
+              "HP Laptop 15-inch",
+              "Intel Core i5 13th Gen",
+              "16GB RAM",
+              "512GB SSD",
+              "Full HD Display",
+              "Windows Operating System"
+            ],
+            "tags": [
+              "Laptop",
+              "HP",
+              "Intel Core i5",
+              "16GB RAM",
+              "512GB SSD"
+            ],
+            "short_description": "Experience the HP Laptop 15-inch as your perfect companion for productivity, creativity, and entertainment.",
+            "bullet_points": [
+              "**Powerful Performance**: Delivering fast performance for demanding tasks",
+              "**Seamless Multitasking**: Ensure smooth workflow and efficient productivity",
+              "**Immersive Visuals**: Enjoy engaging visuals with the Full HD display",
+              "**Access to Software**: Access a wide range of software and applications with Windows Operating System",
+              "**Durability**: Built to last with high-quality materials and construction"
+            ],
+            "detailed_description": "The HP Laptop 15-inch is designed to meet your needs, whether you're working on projects, studying, or simply browsing the web. With its powerful performance, seamless multitasking, and immersive visuals, this laptop is your perfect companion for productivity, creativity, and entertainment. Plus, with access to a wide range of software and applications, you'll never run out of options.",
+            "specs": {
+              "processor": "Intel Core i5 13th Gen",
+              "ram": "16GB",
+              "storage": "512GB SSD",
+              "display": "15.6-inch Full HD",
+              "os": "Windows"
+            },
+            "price": "\u20b959999.00",
+            "description": "Experience seamless productivity with the HP Laptop 15-inch, powered by Intel Core i5 13th Gen processor, 16GB RAM, and 512GB SSD.\n\nKey Features:\n\n\u2022 **Intel Core i5 13th Gen Processor**: Delivering fast performance for demanding tasks\n\n\u2022 **16GB RAM**: Ensure smooth multitasking and efficient workflow\n\n\u2022 **512GB SSD**: Enjoy faster loading times and responsive system\n\n\u2022 **Full HD Display**: Immersive visuals for an engaging experience\n\n\u2022 **Windows Operating System**: Access a wide range of software and applications\n\nThe HP Laptop 15-inch is designed to meet the needs of professionals and students alike. With its powerful Intel Core i5 13th Gen processor, 16GB RAM, and 512GB SSD, this laptop delivers fast performance for demanding tasks, ensuring seamless productivity. The 15.6-inch Full HD display provides immersive visuals, while the Windows Operating System offers access to a wide range of software and applications. Whether you're working on projects, studying, or simply browsing the web, this laptop is the perfect companion.\n\nSpecifications:\n\n- processor: Intel Core i5 13th Gen\n\n- ram: 16GB\n\n- storage: 512GB SSD\n\n- display: 15.6-inch Full HD\n\n- os: Windows"
+          }
+        },
+        {
+          "variant_id": "90e91ede-580b-4cdd-89c9-2c73d9f35814",
+          "type": "C",
+          "angle": "Urgency & Lifestyle Focused",
+          "title": "HP Laptop 15-inch - Limited Time Offer",
+          "short_description": "Don't miss out on this limited time offer for the HP Laptop 15-inch, perfect for students, professionals, and anyone in need of a powerful laptop.",
+          "key_features": [
+            "**Limited Time Offer**: Get the HP Laptop 15-inch at an unbeatable price",
+            "**Powerful Performance**: Delivering fast performance for demanding tasks",
+            "**Seamless Multitasking**: Ensure smooth workflow and efficient productivity",
+            "**Immersive Visuals**: Enjoy engaging visuals with the Full HD display",
+            "**Access to Software**: Access a wide range of software and applications with Windows Operating System"
+          ],
+          "detailed_description": "Don't miss out on this limited time offer for the HP Laptop 15-inch. Perfect for students, professionals, and anyone in need of a powerful laptop, this offer is too good to pass up. With its powerful performance, seamless multitasking, and immersive visuals, this laptop is the perfect companion for your productivity, creativity, and entertainment needs.",
+          "specifications": {
+            "processor": "Intel Core i5 13th Gen",
+            "ram": "16GB",
+            "storage": "512GB SSD",
+            "display": "15.6-inch Full HD",
+            "os": "Windows"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Don't miss out on this limited time offer for the HP Laptop 15-inch, perfect for students, professionals, and anyone in need of a powerful laptop.\n\nKey Features:\n\n\u2022 **Limited Time Offer**: Get the HP Laptop 15-inch at an unbeatable price\n\n\u2022 **Powerful Performance**: Delivering fast performance for demanding tasks\n\n\u2022 **Seamless Multitasking**: Ensure smooth workflow and efficient productivity\n\n\u2022 **Immersive Visuals**: Enjoy engaging visuals with the Full HD display\n\n\u2022 **Access to Software**: Access a wide range of software and applications with Windows Operating System\n\nDon't miss out on this limited time offer for the HP Laptop 15-inch. Perfect for students, professionals, and anyone in need of a powerful laptop, this offer is too good to pass up. With its powerful performance, seamless multitasking, and immersive visuals, this laptop is the perfect companion for your productivity, creativity, and entertainment needs.\n\nSpecifications:\n\n- processor: Intel Core i5 13th Gen\n\n- ram: 16GB\n\n- storage: 512GB SSD\n\n- display: 15.6-inch Full HD\n\n- os: Windows",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "HP Laptop 15-inch - Limited Time Offer",
+            "meta_description": "Buy HP Laptop 15-inch online at best price in India. Intel Core i5 13th Gen, 16GB RAM, 512GB SSD, Full HD Display, Windows Operating System.",
+            "keywords": [
+              "HP Laptop 15-inch",
+              "Intel Core i5 13th Gen",
+              "16GB RAM",
+              "512GB SSD",
+              "Full HD Display",
+              "Windows Operating System"
+            ],
+            "tags": [
+              "Laptop",
+              "HP",
+              "Intel Core i5",
+              "16GB RAM",
+              "512GB SSD"
+            ],
+            "short_description": "Don't miss out on this limited time offer for the HP Laptop 15-inch, perfect for students, professionals, and anyone in need of a powerful laptop.",
+            "bullet_points": [
+              "**Limited Time Offer**: Get the HP Laptop 15-inch at an unbeatable price",
+              "**Powerful Performance**: Delivering fast performance for demanding tasks",
+              "**Seamless Multitasking**: Ensure smooth workflow and efficient productivity",
+              "**Immersive Visuals**: Enjoy engaging visuals with the Full HD display",
+              "**Access to Software**: Access a wide range of software and applications with Windows Operating System"
+            ],
+            "detailed_description": "Don't miss out on this limited time offer for the HP Laptop 15-inch. Perfect for students, professionals, and anyone in need of a powerful laptop, this offer is too good to pass up. With its powerful performance, seamless multitasking, and immersive visuals, this laptop is the perfect companion for your productivity, creativity, and entertainment needs.",
+            "specs": {
+              "processor": "Intel Core i5 13th Gen",
+              "ram": "16GB",
+              "storage": "512GB SSD",
+              "display": "15.6-inch Full HD",
+              "os": "Windows"
+            },
+            "price": "\u20b959999.00",
+            "description": "Experience seamless productivity with the HP Laptop 15-inch, powered by Intel Core i5 13th Gen processor, 16GB RAM, and 512GB SSD.\n\nKey Features:\n\n\u2022 **Intel Core i5 13th Gen Processor**: Delivering fast performance for demanding tasks\n\n\u2022 **16GB RAM**: Ensure smooth multitasking and efficient workflow\n\n\u2022 **512GB SSD**: Enjoy faster loading times and responsive system\n\n\u2022 **Full HD Display**: Immersive visuals for an engaging experience\n\n\u2022 **Windows Operating System**: Access a wide range of software and applications\n\nThe HP Laptop 15-inch is designed to meet the needs of professionals and students alike. With its powerful Intel Core i5 13th Gen processor, 16GB RAM, and 512GB SSD, this laptop delivers fast performance for demanding tasks, ensuring seamless productivity. The 15.6-inch Full HD display provides immersive visuals, while the Windows Operating System offers access to a wide range of software and applications. Whether you're working on projects, studying, or simply browsing the web, this laptop is the perfect companion.\n\nSpecifications:\n\n- processor: Intel Core i5 13th Gen\n\n- ram: 16GB\n\n- storage: 512GB SSD\n\n- display: 15.6-inch Full HD\n\n- os: Windows"
+          }
+        }
+      ],
+      "scored_variants": [
+        {
+          "variant_id": "ba2212d6-2509-4eaa-b97e-eb97da69caec",
+          "type": "A",
+          "angle": "Feature & Tech Heavy",
+          "title": "HP Laptop 15-inch - Technical Specifications",
+          "short_description": "Discover the technical details of the HP Laptop 15-inch, including processor, RAM, storage, and display.",
+          "key_features": [
+            "**Intel Core i5 13th Gen Processor**: Delivering fast performance for demanding tasks",
+            "**16GB RAM**: Ensure smooth multitasking and efficient workflow",
+            "**512GB SSD**: Enjoy faster loading times and responsive system",
+            "**Full HD Display**: Immersive visuals for an engaging experience",
+            "**Windows Operating System**: Access a wide range of software and applications"
+          ],
+          "detailed_description": "The HP Laptop 15-inch is powered by the Intel Core i5 13th Gen processor, which delivers fast performance for demanding tasks. The 16GB RAM ensures smooth multitasking and efficient workflow, while the 512GB SSD provides faster loading times and responsive system. The 15.6-inch Full HD display offers immersive visuals, and the Windows Operating System offers access to a wide range of software and applications.",
+          "specifications": {
+            "processor": "Intel Core i5 13th Gen",
+            "ram": "16GB",
+            "storage": "512GB SSD",
+            "display": "15.6-inch Full HD",
+            "os": "Windows"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Discover the technical details of the HP Laptop 15-inch, including processor, RAM, storage, and display.\n\nKey Features:\n\n\u2022 **Intel Core i5 13th Gen Processor**: Delivering fast performance for demanding tasks\n\n\u2022 **16GB RAM**: Ensure smooth multitasking and efficient workflow\n\n\u2022 **512GB SSD**: Enjoy faster loading times and responsive system\n\n\u2022 **Full HD Display**: Immersive visuals for an engaging experience\n\n\u2022 **Windows Operating System**: Access a wide range of software and applications\n\nThe HP Laptop 15-inch is powered by the Intel Core i5 13th Gen processor, which delivers fast performance for demanding tasks. The 16GB RAM ensures smooth multitasking and efficient workflow, while the 512GB SSD provides faster loading times and responsive system. The 15.6-inch Full HD display offers immersive visuals, and the Windows Operating System offers access to a wide range of software and applications.\n\nSpecifications:\n\n- processor: Intel Core i5 13th Gen\n\n- ram: 16GB\n\n- storage: 512GB SSD\n\n- display: 15.6-inch Full HD\n\n- os: Windows",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "HP Laptop 15-inch - Technical Specifications",
+            "meta_description": "Buy HP Laptop 15-inch online at best price in India. Intel Core i5 13th Gen, 16GB RAM, 512GB SSD, Full HD Display, Windows Operating System.",
+            "keywords": [
+              "HP Laptop 15-inch",
+              "Intel Core i5 13th Gen",
+              "16GB RAM",
+              "512GB SSD",
+              "Full HD Display",
+              "Windows Operating System"
+            ],
+            "tags": [
+              "Laptop",
+              "HP",
+              "Intel Core i5",
+              "16GB RAM",
+              "512GB SSD"
+            ],
+            "short_description": "Discover the technical details of the HP Laptop 15-inch, including processor, RAM, storage, and display.",
+            "bullet_points": [
+              "**Intel Core i5 13th Gen Processor**: Delivering fast performance for demanding tasks",
+              "**16GB RAM**: Ensure smooth multitasking and efficient workflow",
+              "**512GB SSD**: Enjoy faster loading times and responsive system",
+              "**Full HD Display**: Immersive visuals for an engaging experience",
+              "**Windows Operating System**: Access a wide range of software and applications"
+            ],
+            "detailed_description": "The HP Laptop 15-inch is powered by the Intel Core i5 13th Gen processor, which delivers fast performance for demanding tasks. The 16GB RAM ensures smooth multitasking and efficient workflow, while the 512GB SSD provides faster loading times and responsive system. The 15.6-inch Full HD display offers immersive visuals, and the Windows Operating System offers access to a wide range of software and applications.",
+            "specs": {
+              "processor": "Intel Core i5 13th Gen",
+              "ram": "16GB",
+              "storage": "512GB SSD",
+              "display": "15.6-inch Full HD",
+              "os": "Windows"
+            },
+            "price": "\u20b959999.00",
+            "description": "Experience seamless productivity with the HP Laptop 15-inch, powered by Intel Core i5 13th Gen processor, 16GB RAM, and 512GB SSD.\n\nKey Features:\n\n\u2022 **Intel Core i5 13th Gen Processor**: Delivering fast performance for demanding tasks\n\n\u2022 **16GB RAM**: Ensure smooth multitasking and efficient workflow\n\n\u2022 **512GB SSD**: Enjoy faster loading times and responsive system\n\n\u2022 **Full HD Display**: Immersive visuals for an engaging experience\n\n\u2022 **Windows Operating System**: Access a wide range of software and applications\n\nThe HP Laptop 15-inch is designed to meet the needs of professionals and students alike. With its powerful Intel Core i5 13th Gen processor, 16GB RAM, and 512GB SSD, this laptop delivers fast performance for demanding tasks, ensuring seamless productivity. The 15.6-inch Full HD display provides immersive visuals, while the Windows Operating System offers access to a wide range of software and applications. Whether you're working on projects, studying, or simply browsing the web, this laptop is the perfect companion.\n\nSpecifications:\n\n- processor: Intel Core i5 13th Gen\n\n- ram: 16GB\n\n- storage: 512GB SSD\n\n- display: 15.6-inch Full HD\n\n- os: Windows"
+          },
+          "cope_scores": {
+            "variant_id": "ba2212d6-2509-4eaa-b97e-eb97da69caec",
+            "overall_score": 90,
+            "purchase_probability": 85.2,
+            "expected_ctr": 80.5,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 95,
+            "confidence_score": 92
+          }
+        },
+        {
+          "variant_id": "009d97ca-8d43-46f2-a9be-dee23ea585e4",
+          "type": "B",
+          "angle": "Emotional & Value Driven",
+          "title": "HP Laptop 15-inch - Your Perfect Companion",
+          "short_description": "Experience the HP Laptop 15-inch as your perfect companion for productivity, creativity, and entertainment.",
+          "key_features": [
+            "**Powerful Performance**: Delivering fast performance for demanding tasks",
+            "**Seamless Multitasking**: Ensure smooth workflow and efficient productivity",
+            "**Immersive Visuals**: Enjoy engaging visuals with the Full HD display",
+            "**Access to Software**: Access a wide range of software and applications with Windows Operating System",
+            "**Durability**: Built to last with high-quality materials and construction"
+          ],
+          "detailed_description": "The HP Laptop 15-inch is designed to meet your needs, whether you're working on projects, studying, or simply browsing the web. With its powerful performance, seamless multitasking, and immersive visuals, this laptop is your perfect companion for productivity, creativity, and entertainment. Plus, with access to a wide range of software and applications, you'll never run out of options.",
+          "specifications": {
+            "processor": "Intel Core i5 13th Gen",
+            "ram": "16GB",
+            "storage": "512GB SSD",
+            "display": "15.6-inch Full HD",
+            "os": "Windows"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Experience the HP Laptop 15-inch as your perfect companion for productivity, creativity, and entertainment.\n\nKey Features:\n\n\u2022 **Powerful Performance**: Delivering fast performance for demanding tasks\n\n\u2022 **Seamless Multitasking**: Ensure smooth workflow and efficient productivity\n\n\u2022 **Immersive Visuals**: Enjoy engaging visuals with the Full HD display\n\n\u2022 **Access to Software**: Access a wide range of software and applications with Windows Operating System\n\n\u2022 **Durability**: Built to last with high-quality materials and construction\n\nThe HP Laptop 15-inch is designed to meet your needs, whether you're working on projects, studying, or simply browsing the web. With its powerful performance, seamless multitasking, and immersive visuals, this laptop is your perfect companion for productivity, creativity, and entertainment. Plus, with access to a wide range of software and applications, you'll never run out of options.\n\nSpecifications:\n\n- processor: Intel Core i5 13th Gen\n\n- ram: 16GB\n\n- storage: 512GB SSD\n\n- display: 15.6-inch Full HD\n\n- os: Windows",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "HP Laptop 15-inch - Your Perfect Companion",
+            "meta_description": "Buy HP Laptop 15-inch online at best price in India. Intel Core i5 13th Gen, 16GB RAM, 512GB SSD, Full HD Display, Windows Operating System.",
+            "keywords": [
+              "HP Laptop 15-inch",
+              "Intel Core i5 13th Gen",
+              "16GB RAM",
+              "512GB SSD",
+              "Full HD Display",
+              "Windows Operating System"
+            ],
+            "tags": [
+              "Laptop",
+              "HP",
+              "Intel Core i5",
+              "16GB RAM",
+              "512GB SSD"
+            ],
+            "short_description": "Experience the HP Laptop 15-inch as your perfect companion for productivity, creativity, and entertainment.",
+            "bullet_points": [
+              "**Powerful Performance**: Delivering fast performance for demanding tasks",
+              "**Seamless Multitasking**: Ensure smooth workflow and efficient productivity",
+              "**Immersive Visuals**: Enjoy engaging visuals with the Full HD display",
+              "**Access to Software**: Access a wide range of software and applications with Windows Operating System",
+              "**Durability**: Built to last with high-quality materials and construction"
+            ],
+            "detailed_description": "The HP Laptop 15-inch is designed to meet your needs, whether you're working on projects, studying, or simply browsing the web. With its powerful performance, seamless multitasking, and immersive visuals, this laptop is your perfect companion for productivity, creativity, and entertainment. Plus, with access to a wide range of software and applications, you'll never run out of options.",
+            "specs": {
+              "processor": "Intel Core i5 13th Gen",
+              "ram": "16GB",
+              "storage": "512GB SSD",
+              "display": "15.6-inch Full HD",
+              "os": "Windows"
+            },
+            "price": "\u20b959999.00",
+            "description": "Experience seamless productivity with the HP Laptop 15-inch, powered by Intel Core i5 13th Gen processor, 16GB RAM, and 512GB SSD.\n\nKey Features:\n\n\u2022 **Intel Core i5 13th Gen Processor**: Delivering fast performance for demanding tasks\n\n\u2022 **16GB RAM**: Ensure smooth multitasking and efficient workflow\n\n\u2022 **512GB SSD**: Enjoy faster loading times and responsive system\n\n\u2022 **Full HD Display**: Immersive visuals for an engaging experience\n\n\u2022 **Windows Operating System**: Access a wide range of software and applications\n\nThe HP Laptop 15-inch is designed to meet the needs of professionals and students alike. With its powerful Intel Core i5 13th Gen processor, 16GB RAM, and 512GB SSD, this laptop delivers fast performance for demanding tasks, ensuring seamless productivity. The 15.6-inch Full HD display provides immersive visuals, while the Windows Operating System offers access to a wide range of software and applications. Whether you're working on projects, studying, or simply browsing the web, this laptop is the perfect companion.\n\nSpecifications:\n\n- processor: Intel Core i5 13th Gen\n\n- ram: 16GB\n\n- storage: 512GB SSD\n\n- display: 15.6-inch Full HD\n\n- os: Windows"
+          },
+          "cope_scores": {
+            "variant_id": "009d97ca-8d43-46f2-a9be-dee23ea585e4",
+            "overall_score": 88,
+            "purchase_probability": 82.1,
+            "expected_ctr": 78.2,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 90,
+            "confidence_score": 90
+          }
+        },
+        {
+          "variant_id": "90e91ede-580b-4cdd-89c9-2c73d9f35814",
+          "type": "C",
+          "angle": "Urgency & Lifestyle Focused",
+          "title": "HP Laptop 15-inch - Limited Time Offer",
+          "short_description": "Don't miss out on this limited time offer for the HP Laptop 15-inch, perfect for students, professionals, and anyone in need of a powerful laptop.",
+          "key_features": [
+            "**Limited Time Offer**: Get the HP Laptop 15-inch at an unbeatable price",
+            "**Powerful Performance**: Delivering fast performance for demanding tasks",
+            "**Seamless Multitasking**: Ensure smooth workflow and efficient productivity",
+            "**Immersive Visuals**: Enjoy engaging visuals with the Full HD display",
+            "**Access to Software**: Access a wide range of software and applications with Windows Operating System"
+          ],
+          "detailed_description": "Don't miss out on this limited time offer for the HP Laptop 15-inch. Perfect for students, professionals, and anyone in need of a powerful laptop, this offer is too good to pass up. With its powerful performance, seamless multitasking, and immersive visuals, this laptop is the perfect companion for your productivity, creativity, and entertainment needs.",
+          "specifications": {
+            "processor": "Intel Core i5 13th Gen",
+            "ram": "16GB",
+            "storage": "512GB SSD",
+            "display": "15.6-inch Full HD",
+            "os": "Windows"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Don't miss out on this limited time offer for the HP Laptop 15-inch, perfect for students, professionals, and anyone in need of a powerful laptop.\n\nKey Features:\n\n\u2022 **Limited Time Offer**: Get the HP Laptop 15-inch at an unbeatable price\n\n\u2022 **Powerful Performance**: Delivering fast performance for demanding tasks\n\n\u2022 **Seamless Multitasking**: Ensure smooth workflow and efficient productivity\n\n\u2022 **Immersive Visuals**: Enjoy engaging visuals with the Full HD display\n\n\u2022 **Access to Software**: Access a wide range of software and applications with Windows Operating System\n\nDon't miss out on this limited time offer for the HP Laptop 15-inch. Perfect for students, professionals, and anyone in need of a powerful laptop, this offer is too good to pass up. With its powerful performance, seamless multitasking, and immersive visuals, this laptop is the perfect companion for your productivity, creativity, and entertainment needs.\n\nSpecifications:\n\n- processor: Intel Core i5 13th Gen\n\n- ram: 16GB\n\n- storage: 512GB SSD\n\n- display: 15.6-inch Full HD\n\n- os: Windows",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "HP Laptop 15-inch - Limited Time Offer",
+            "meta_description": "Buy HP Laptop 15-inch online at best price in India. Intel Core i5 13th Gen, 16GB RAM, 512GB SSD, Full HD Display, Windows Operating System.",
+            "keywords": [
+              "HP Laptop 15-inch",
+              "Intel Core i5 13th Gen",
+              "16GB RAM",
+              "512GB SSD",
+              "Full HD Display",
+              "Windows Operating System"
+            ],
+            "tags": [
+              "Laptop",
+              "HP",
+              "Intel Core i5",
+              "16GB RAM",
+              "512GB SSD"
+            ],
+            "short_description": "Don't miss out on this limited time offer for the HP Laptop 15-inch, perfect for students, professionals, and anyone in need of a powerful laptop.",
+            "bullet_points": [
+              "**Limited Time Offer**: Get the HP Laptop 15-inch at an unbeatable price",
+              "**Powerful Performance**: Delivering fast performance for demanding tasks",
+              "**Seamless Multitasking**: Ensure smooth workflow and efficient productivity",
+              "**Immersive Visuals**: Enjoy engaging visuals with the Full HD display",
+              "**Access to Software**: Access a wide range of software and applications with Windows Operating System"
+            ],
+            "detailed_description": "Don't miss out on this limited time offer for the HP Laptop 15-inch. Perfect for students, professionals, and anyone in need of a powerful laptop, this offer is too good to pass up. With its powerful performance, seamless multitasking, and immersive visuals, this laptop is the perfect companion for your productivity, creativity, and entertainment needs.",
+            "specs": {
+              "processor": "Intel Core i5 13th Gen",
+              "ram": "16GB",
+              "storage": "512GB SSD",
+              "display": "15.6-inch Full HD",
+              "os": "Windows"
+            },
+            "price": "\u20b959999.00",
+            "description": "Experience seamless productivity with the HP Laptop 15-inch, powered by Intel Core i5 13th Gen processor, 16GB RAM, and 512GB SSD.\n\nKey Features:\n\n\u2022 **Intel Core i5 13th Gen Processor**: Delivering fast performance for demanding tasks\n\n\u2022 **16GB RAM**: Ensure smooth multitasking and efficient workflow\n\n\u2022 **512GB SSD**: Enjoy faster loading times and responsive system\n\n\u2022 **Full HD Display**: Immersive visuals for an engaging experience\n\n\u2022 **Windows Operating System**: Access a wide range of software and applications\n\nThe HP Laptop 15-inch is designed to meet the needs of professionals and students alike. With its powerful Intel Core i5 13th Gen processor, 16GB RAM, and 512GB SSD, this laptop delivers fast performance for demanding tasks, ensuring seamless productivity. The 15.6-inch Full HD display provides immersive visuals, while the Windows Operating System offers access to a wide range of software and applications. Whether you're working on projects, studying, or simply browsing the web, this laptop is the perfect companion.\n\nSpecifications:\n\n- processor: Intel Core i5 13th Gen\n\n- ram: 16GB\n\n- storage: 512GB SSD\n\n- display: 15.6-inch Full HD\n\n- os: Windows"
+          },
+          "cope_scores": {
+            "variant_id": "90e91ede-580b-4cdd-89c9-2c73d9f35814",
+            "overall_score": 85,
+            "purchase_probability": 79.5,
+            "expected_ctr": 75.8,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 88,
+            "confidence_score": 89
+          }
+        }
+      ],
+      "decision": {
+        "action": "publish",
+        "reason": "Clear winner identified with high confidence.",
+        "recommended_variant_id": "ba2212d6-2509-4eaa-b97e-eb97da69caec"
+      },
+      "marketing": {
+        "platform": "olx",
+        "platform_description": "Discover the technical details of the HP Laptop 15-inch, including processor, RAM, storage, and display.\n\nKey Features:\n\n\u2022 **Intel Core i5 13th Gen Processor**: Delivering fast performance for demanding tasks\n\n\u2022 **16GB RAM**: Ensure smooth multitasking and efficient workflow\n\n\u2022 **512GB SSD**: Enjoy faster loading times and responsive system\n\n\u2022 **Full HD Display**: Immersive visuals for an engaging experience\n\n\u2022 **Windows Operating System**: Access a wide range of software and applications\n\nThe HP Laptop 15-inch is powered by the Intel Core i5 13th Gen processor, which delivers fast performance for demanding tasks. The 16GB RAM ensures smooth multitasking and efficient workflow, while the 512GB SSD provides faster loading times and responsive system. The 15.6-inch Full HD display offers immersive visuals, and the Windows Operating System offers access to a wide range of software and applications.\n\nSpecifications:\n\n- processor: Intel Core i5 13th Gen\n\n- ram: 16GB\n\n- storage: 512GB SSD\n\n- display: 15.6-inch Full HD\n\n- os: Windows",
+        "call_to_action": "Order now on Olx to get the best deal!"
+      },
+      "validation": {
+        "is_valid": true,
+        "issues": []
+      },
+      "scores": {
+        "privacy_score": 98,
+        "seo_score": 100,
+        "marketing_score": 90,
+        "overall_score": 94,
+        "feedback": "Excellent optimization. Copy is highly persuasive and well-structured."
+      }
+    }
+  },
+  "token_usage": null,
+  "estimated_cost": null,
+  "cache_hit": null,
+  "error": null,
+  "capability_metadata": {
+    "image_processing_supported": true,
+    "privacy_anonymization": true,
+    "rag_context": true,
+    "multi_agent_workflow": true
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "test_case_id": "TC004",
+  "product_name": "Women's Dress",
+  "category": "Dress",
+  "price": "unknown",
+  "description": "women dress blue maybe floral, knee length? looks casual. material not sure. size M shown on tag maybe. good for summer and outing. price unknown",
+  "specifications": {
+    "color": "Blue",
+    "pattern": "Floral",
+    "length": "Knee-length",
+    "size": "M (Medium)",
+    "season": "Summer",
+    "style": "Casual"
+  },
+  "images": [
+    "images/1.jpg",
+    "images/2.jpg",
+    "images/3.jpg",
+    "images/4.jpg",
+    "images/5.jpg"
+  ],
+  "product": "Dress",
+  "niche": "Fashion & Appearance",
+  "input_condition": "Messy/incomplete",
+  "pii": {
+    "present": false,
+    "fields": []
+  },
+  "product_input": {
+    "raw_description": "women dress blue maybe floral, knee length? looks casual. material not sure. size M shown on tag maybe. good for summer and outing. price unknown"
+  },
+  "image": {
+    "provided": true,
+    "path": "images/1.jpg"
+  },
+  "expected_facts": {
+    "product_name": "Women's Dress",
+    "category": "Dress",
+    "color": "Blue",
+    "pattern": "Floral (probable)",
+    "length": "Knee-length (probable)",
+    "size": "M (Medium, probable)",
+    "season": "Summer",
+    "style": "Casual"
+  },
+  "visual_facts": [
+    "Dress",
+    "Blue color",
+    "Floral pattern",
+    "Knee-length"
+  ]
+}

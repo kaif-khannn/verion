@@ -1,0 +1,19 @@
+{
+  "experiment_id": "EXP_20260814_001603",
+  "test_case_id": "TC010",
+  "system": "baseline",
+  "timestamp": "2026-08-14T00:21:10.274098",
+  "success": true,
+  "latency_ms": 5712.51,
+  "model": "llama-3.1-8b-instant",
+  "raw_output": "**Product Name:** Smartwatch\n**Price:** \u20b94,999 / \u20b95,499\n\nExperience the ultimate in wearable technology with our sleek and feature-rich Smartwatch. This cutting-edge device is designed to keep you connected and on top of your fitness goals.\n\n**Key Features:**\n\n- **Stunning Display:** Enjoy a crisp and vibrant AMOLED display on a 1.78-inch or 1.9-inch screen, perfect for navigating through your day.\n- **Long-Lasting Battery:** Get up to 7 to 10 days of battery life on a single charge, so you can wear it all day and night without worrying about running out of power.\n- **Stay Connected:** Make hands-free calls with Bluetooth calling and stay connected to the world around you.\n- **Durable Design:** With an IP68 rating, this smartwatch is designed to withstand the elements and last for years to come.\n- **Built-in GPS:** Seamlessly track your fitness goals with built-in GPS, allowing you to map your runs, hikes, and more with precision.\n- **Storage:** Enjoy ample storage space to store your favorite music, photos, and more with 2GB or 4GB of internal storage (varies by listing).\n- **Water-Resistant:** Don't let water hold you back. This smartwatch is designed to be worn in the shower, pool, or ocean without worrying about damage.\n\n**Order Now:** Get your Smartwatch today and experience the future of wearable technology. Please note that the customer who has purchased this product is Sameer Khan (sameer.khan.test@example.com, +91-93333-44444).\n\n**Price:** \u20b94,999 or \u20b95,499 - which one will you choose? Order now and start experiencing the power of this cutting-edge smartwatch!",
+  "token_usage": null,
+  "estimated_cost": null,
+  "error": null,
+  "capability_metadata": {
+    "image_processing_supported": false,
+    "privacy_anonymization": false,
+    "rag_context": false,
+    "multi_agent_workflow": false
+  }
+}

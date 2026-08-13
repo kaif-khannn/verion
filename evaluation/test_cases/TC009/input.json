@@ -1,0 +1,87 @@
+{
+  "test_case_id": "TC009",
+  "product_name": "Prestige Omega Deluxe Cookware Set",
+  "brand": "Prestige",
+  "category": "Cookware Set",
+  "description": "A multi-piece non-stick cookware set suitable for everyday cooking and compatible with both gas and induction cooktops.",
+  "specifications": {
+    "pieces": 5,
+    "material": "Non-stick coated aluminium",
+    "items": "Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula",
+    "compatibility": "Gas stove, Induction",
+    "features": "Non-stick coating, Heat-resistant handles, Dishwasher-friendly"
+  },
+  "images": [
+    "images/1.jpg",
+    "images/2.jpg",
+    "images/3.jpg",
+    "images/4.jpg",
+    "images/5.jpg",
+    "images/6.jpg",
+    "images/7.jpg"
+  ],
+  "product": "Cookware set",
+  "niche": "Kitchen & Home",
+  "input_condition": "Complete",
+  "pii": {
+    "present": false,
+    "fields": []
+  },
+  "product_input": {
+    "name": "Prestige Omega Deluxe Cookware Set",
+    "brand": "Prestige",
+    "category": "Cookware Set",
+    "pieces": 5,
+    "material": "Non-stick coated aluminium",
+    "items": [
+      "Fry pan",
+      "Sauce pan",
+      "Kadai",
+      "Glass lid",
+      "Frying spatula"
+    ],
+    "compatibility": [
+      "Gas stove",
+      "Induction"
+    ],
+    "features": [
+      "Non-stick coating",
+      "Heat-resistant handles",
+      "Dishwasher-friendly"
+    ],
+    "description": "A multi-piece non-stick cookware set suitable for everyday cooking and compatible with both gas and induction cooktops."
+  },
+  "image": {
+    "provided": true,
+    "path": "images/1.jpg"
+  },
+  "expected_facts": {
+    "name": "Prestige Omega Deluxe Cookware Set",
+    "brand": "Prestige",
+    "category": "Cookware Set",
+    "pieces": 5,
+    "material": "Non-stick coated aluminium",
+    "compatibility": [
+      "Gas stove",
+      "Induction"
+    ],
+    "items": [
+      "Fry pan",
+      "Sauce pan",
+      "Kadai",
+      "Glass lid",
+      "Frying spatula"
+    ],
+    "features": [
+      "Non-stick coating",
+      "Heat-resistant handles",
+      "Dishwasher-friendly"
+    ]
+  },
+  "visual_facts": [
+    "Multiple pans and pots",
+    "Glass lid",
+    "Spatula",
+    "Prestige logo"
+  ]
+}

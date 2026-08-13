@@ -1,0 +1,19 @@
+{
+  "experiment_id": "EXP_20260814_001603",
+  "test_case_id": "TC002",
+  "system": "baseline",
+  "timestamp": "2026-08-14T00:16:47.494043",
+  "success": true,
+  "latency_ms": 5786.14,
+  "model": "llama-3.1-8b-instant",
+  "raw_output": "**HP Laptop 15-inch: Power and Portability for Your Productivity Needs**\n\nTake your work and studies to the next level with the HP Laptop 15-inch, a powerful and portable companion that is designed to meet your everyday demands. This sleek and stylish laptop is equipped with a 15-inch Full HD display, perfect for multitasking and enjoying crisp visuals.\n\n**Performance Boost**\n\nAt the heart of this laptop is the Intel Core i5 13th Gen processor, a high-performance chip that provides the speed and efficiency you need to tackle complex tasks and projects. With 16GB of RAM, you can confidently run multiple applications simultaneously without worrying about lag or slowdown.\n\n**Storage and Speed**\n\nThe HP Laptop 15-inch comes with a 512GB SSD (Solid-State Drive), providing fast storage and quick access to your files. This means you can load applications, open files, and switch between tasks in no time.\n\n**Connectivity and Convenience**\n\nStay connected with Wi-Fi and enjoy the flexibility of working or studying anywhere, anytime. The laptop also features a silver finish, giving it a sleek and modern look that's perfect for any setting.\n\n**Battery Life and Windows OS**\n\nEnjoy a decent battery life that lets you work or study for hours without needing to recharge. Plus, the laptop comes with Windows operating system, providing a familiar and intuitive interface that makes it easy to navigate and get started.\n\n**Ideal for Office and Study**\n\nWhether you're working on office projects or studying for exams, the HP Laptop 15-inch is the perfect companion. Its powerful performance, fast storage, and reliable connectivity make it an ideal choice for anyone who needs a reliable and efficient laptop.\n\n**Key Specifications:**\n\n- Display: 15-inch Full HD\n- Processor: Intel Core i5 13th Gen\n- RAM: 16GB\n- Storage: 512GB SSD\n- Color: Silver\n- OS: Windows\n\n**Price:** Rs. 60,000\n\nGet your hands on the HP Laptop 15-inch today and experience the power and portability that it has to offer!",
+  "token_usage": null,
+  "estimated_cost": null,
+  "error": null,
+  "capability_metadata": {
+    "image_processing_supported": false,
+    "privacy_anonymization": false,
+    "rag_context": false,
+    "multi_agent_workflow": false
+  }
+}

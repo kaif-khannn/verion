@@ -1,0 +1,981 @@
+{
+  "experiment_id": "EXP_20260813_233609",
+  "test_case_id": "TC007",
+  "system": "verion",
+  "timestamp": "2026-08-13T23:41:45.611997",
+  "success": true,
+  "latency_ms": 35306.12,
+  "model": "multi-agent",
+  "raw_output": {
+    "status": "success",
+    "message": "Workflow completed",
+    "data": {
+      "sanitized_input": "Product Name: Philips Airfryer\nBrand: Philips\nCategory: Air Fryer\nDescription: A compact air fryer designed for everyday cooking with adjustable temperature control, timer functionality, and Rapid Air technology.\nSpecifications: capacity: 4.1L, power: 1400W, temperature_range: 80\u00b0C\u2013200\u00b0C, features: Rapid Air technology, Adjustable temperature, Timer, Removable basket, color: Black",
+      "vision_analysis": "Error analyzing image with Groq Vision: LLMGateway call failed after 3 retries. Error: Error code: 413 - {'error': {'message': 'Request too large for model `qwen/qwen3.6-27b` in organization `org_01kvb5wdg5eq99np00tsjmwhtg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 8286, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "rag_context": "RAG database is empty. Please run the ingestion script first.",
+      "seo": {
+        "title": "Philips Airfryer - 4.1L, 1400W, Rapid Air Technology, Black",
+        "meta_description": "Philips Airfryer for everyday cooking with adjustable temperature control, timer functionality, and Rapid Air technology.",
+        "keywords": [
+          "Philips Airfryer",
+          "Airfryer",
+          "Rapid Air Technology",
+          "Cooking",
+          "Kitchen"
+        ],
+        "tags": [
+          "Cooking",
+          "Kitchen",
+          "Air Fryer",
+          "Philips"
+        ],
+        "short_description": "Cook healthier with Philips Airfryer's Rapid Air technology, adjustable temperature control, and timer functionality.",
+        "bullet_points": [
+          "**Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.",
+          "**Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.",
+          "**Timer Functionality**: Cook food to perfection with our built-in timer.",
+          "**Removable Basket**: Easy cleaning and food release.",
+          "**Compact Design**: Perfect for small kitchens and countertops."
+        ],
+        "detailed_description": "The Philips Airfryer is a compact air fryer designed for everyday cooking. With its adjustable temperature control and timer functionality, you can cook a variety of dishes with ease. The Rapid Air technology ensures that your food is cooked up to 50% faster with minimal oil, making it a healthier alternative to deep-frying. The removable basket makes cleaning and food release a breeze. Whether you're a health-conscious individual or a busy professional, the Philips Airfryer is the perfect addition to your kitchen.",
+        "specs": {
+          "capacity": "4.1L",
+          "power": "1400W",
+          "temperature_range": "80\u00b0C\u2013200\u00b0C",
+          "features": "Rapid Air technology, Adjustable temperature, Timer, Removable basket",
+          "color": "Black"
+        },
+        "price": "\u20b914,999.00",
+        "description": "Cook healthier with Philips Airfryer's Rapid Air technology, adjustable temperature control, and timer functionality.\n\nKey Features:\n\n\u2022 **Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.\n\n\u2022 **Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.\n\n\u2022 **Timer Functionality**: Cook food to perfection with our built-in timer.\n\n\u2022 **Removable Basket**: Easy cleaning and food release.\n\n\u2022 **Compact Design**: Perfect for small kitchens and countertops.\n\nThe Philips Airfryer is a compact air fryer designed for everyday cooking. With its adjustable temperature control and timer functionality, you can cook a variety of dishes with ease. The Rapid Air technology ensures that your food is cooked up to 50% faster with minimal oil, making it a healthier alternative to deep-frying. The removable basket makes cleaning and food release a breeze. Whether you're a health-conscious individual or a busy professional, the Philips Airfryer is the perfect addition to your kitchen.\n\nSpecifications:\n\n- capacity: 4.1L\n\n- power: 1400W\n\n- temperature_range: 80\u00b0C\u2013200\u00b0C\n\n- features: Rapid Air technology, Adjustable temperature, Timer, Removable basket\n\n- color: Black"
+      },
+      "competitor_analysis": {
+        "recommended_price": "\u20b914,999.00",
+        "lowest_competitor_price": "\u20b912,999.00",
+        "highest_competitor_price": "\u20b916,999.00",
+        "average_market_price": "\u20b914,499.00",
+        "market_positioning": "The Philips Airfryer is a premium product that offers exceptional cooking performance and health benefits. It is priced competitively with other high-end air fryers in the market.",
+        "pricing_strategy": "Our pricing strategy is based on the value proposition of the Philips Airfryer. We believe that the product's unique features and benefits justify a premium price. We will continue to monitor the market and adjust our pricing strategy accordingly.",
+        "competitor_insights": [
+          "The Philips Airfryer has a unique feature set that differentiates it from other air fryers in the market.",
+          "The product's premium pricing is justified by its exceptional cooking performance and health benefits.",
+          "The Philips Airfryer has a strong brand reputation and is associated with high-quality products."
+        ]
+      },
+      "generated_variants": [
+        {
+          "variant_id": "d9032b3b-0393-40fd-a6d4-4220ae7303df",
+          "type": "A",
+          "angle": "Feature & Tech Heavy",
+          "title": "Philips Airfryer - Feature-Rich Air Fryer for Health-Conscious Individuals",
+          "short_description": "Experience the power of Rapid Air technology and adjustable temperature control with the Philips Airfryer.",
+          "key_features": [
+            "**Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.",
+            "**Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.",
+            "**Timer Functionality**: Cook food to perfection with our built-in timer.",
+            "**Removable Basket**: Easy cleaning and food release.",
+            "**Compact Design**: Perfect for small kitchens and countertops."
+          ],
+          "detailed_description": "The Philips Airfryer is a feature-rich air fryer that offers exceptional cooking performance and health benefits. With its Rapid Air technology and adjustable temperature control, you can cook a variety of dishes with ease. The built-in timer ensures that your food is cooked to perfection, and the removable basket makes cleaning and food release a breeze.",
+          "specifications": {
+            "capacity": "4.1L",
+            "power": "1400W",
+            "temperature_range": "80\u00b0C\u2013200\u00b0C",
+            "features": "Rapid Air technology, Adjustable temperature, Timer, Removable basket",
+            "color": "Black"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Experience the power of Rapid Air technology and adjustable temperature control with the Philips Airfryer.\n\nKey Features:\n\n\u2022 **Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.\n\n\u2022 **Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.\n\n\u2022 **Timer Functionality**: Cook food to perfection with our built-in timer.\n\n\u2022 **Removable Basket**: Easy cleaning and food release.\n\n\u2022 **Compact Design**: Perfect for small kitchens and countertops.\n\nThe Philips Airfryer is a feature-rich air fryer that offers exceptional cooking performance and health benefits. With its Rapid Air technology and adjustable temperature control, you can cook a variety of dishes with ease. The built-in timer ensures that your food is cooked to perfection, and the removable basket makes cleaning and food release a breeze.\n\nSpecifications:\n\n- capacity: 4.1L\n\n- power: 1400W\n\n- temperature_range: 80\u00b0C\u2013200\u00b0C\n\n- features: Rapid Air technology, Adjustable temperature, Timer, Removable basket\n\n- color: Black",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Philips Airfryer - Feature-Rich Air Fryer for Health-Conscious Individuals",
+            "meta_description": "Philips Airfryer for everyday cooking with adjustable temperature control, timer functionality, and Rapid Air technology.",
+            "keywords": [
+              "Philips Airfryer",
+              "Airfryer",
+              "Rapid Air Technology",
+              "Cooking",
+              "Kitchen"
+            ],
+            "tags": [
+              "Cooking",
+              "Kitchen",
+              "Air Fryer",
+              "Philips"
+            ],
+            "short_description": "Experience the power of Rapid Air technology and adjustable temperature control with the Philips Airfryer.",
+            "bullet_points": [
+              "**Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.",
+              "**Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.",
+              "**Timer Functionality**: Cook food to perfection with our built-in timer.",
+              "**Removable Basket**: Easy cleaning and food release.",
+              "**Compact Design**: Perfect for small kitchens and countertops."
+            ],
+            "detailed_description": "The Philips Airfryer is a feature-rich air fryer that offers exceptional cooking performance and health benefits. With its Rapid Air technology and adjustable temperature control, you can cook a variety of dishes with ease. The built-in timer ensures that your food is cooked to perfection, and the removable basket makes cleaning and food release a breeze.",
+            "specs": {
+              "capacity": "4.1L",
+              "power": "1400W",
+              "temperature_range": "80\u00b0C\u2013200\u00b0C",
+              "features": "Rapid Air technology, Adjustable temperature, Timer, Removable basket",
+              "color": "Black"
+            },
+            "price": "\u20b914,999.00",
+            "description": "Cook healthier with Philips Airfryer's Rapid Air technology, adjustable temperature control, and timer functionality.\n\nKey Features:\n\n\u2022 **Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.\n\n\u2022 **Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.\n\n\u2022 **Timer Functionality**: Cook food to perfection with our built-in timer.\n\n\u2022 **Removable Basket**: Easy cleaning and food release.\n\n\u2022 **Compact Design**: Perfect for small kitchens and countertops.\n\nThe Philips Airfryer is a compact air fryer designed for everyday cooking. With its adjustable temperature control and timer functionality, you can cook a variety of dishes with ease. The Rapid Air technology ensures that your food is cooked up to 50% faster with minimal oil, making it a healthier alternative to deep-frying. The removable basket makes cleaning and food release a breeze. Whether you're a health-conscious individual or a busy professional, the Philips Airfryer is the perfect addition to your kitchen.\n\nSpecifications:\n\n- capacity: 4.1L\n\n- power: 1400W\n\n- temperature_range: 80\u00b0C\u2013200\u00b0C\n\n- features: Rapid Air technology, Adjustable temperature, Timer, Removable basket\n\n- color: Black"
+          }
+        },
+        {
+          "variant_id": "99b40b7b-249a-40a3-9f74-46bf12cac922",
+          "type": "B",
+          "angle": "Emotional & Value Driven",
+          "title": "Philips Airfryer - Cook Healthier, Live Happier",
+          "short_description": "Experience the joy of cooking healthier with the Philips Airfryer.",
+          "key_features": [
+            "**Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.",
+            "**Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.",
+            "**Timer Functionality**: Cook food to perfection with our built-in timer.",
+            "**Removable Basket**: Easy cleaning and food release.",
+            "**Compact Design**: Perfect for small kitchens and countertops."
+          ],
+          "detailed_description": "The Philips Airfryer is more than just an air fryer - it's a key to a healthier lifestyle. With its Rapid Air technology and adjustable temperature control, you can cook a variety of dishes with ease, without sacrificing flavor or nutrition. The built-in timer ensures that your food is cooked to perfection, and the removable basket makes cleaning and food release a breeze.",
+          "specifications": {
+            "capacity": "4.1L",
+            "power": "1400W",
+            "temperature_range": "80\u00b0C\u2013200\u00b0C",
+            "features": "Rapid Air technology, Adjustable temperature, Timer, Removable basket",
+            "color": "Black"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Experience the joy of cooking healthier with the Philips Airfryer.\n\nKey Features:\n\n\u2022 **Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.\n\n\u2022 **Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.\n\n\u2022 **Timer Functionality**: Cook food to perfection with our built-in timer.\n\n\u2022 **Removable Basket**: Easy cleaning and food release.\n\n\u2022 **Compact Design**: Perfect for small kitchens and countertops.\n\nThe Philips Airfryer is more than just an air fryer - it's a key to a healthier lifestyle. With its Rapid Air technology and adjustable temperature control, you can cook a variety of dishes with ease, without sacrificing flavor or nutrition. The built-in timer ensures that your food is cooked to perfection, and the removable basket makes cleaning and food release a breeze.\n\nSpecifications:\n\n- capacity: 4.1L\n\n- power: 1400W\n\n- temperature_range: 80\u00b0C\u2013200\u00b0C\n\n- features: Rapid Air technology, Adjustable temperature, Timer, Removable basket\n\n- color: Black",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Philips Airfryer - Cook Healthier, Live Happier",
+            "meta_description": "Philips Airfryer for everyday cooking with adjustable temperature control, timer functionality, and Rapid Air technology.",
+            "keywords": [
+              "Philips Airfryer",
+              "Airfryer",
+              "Rapid Air Technology",
+              "Cooking",
+              "Kitchen"
+            ],
+            "tags": [
+              "Cooking",
+              "Kitchen",
+              "Air Fryer",
+              "Philips"
+            ],
+            "short_description": "Experience the joy of cooking healthier with the Philips Airfryer.",
+            "bullet_points": [
+              "**Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.",
+              "**Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.",
+              "**Timer Functionality**: Cook food to perfection with our built-in timer.",
+              "**Removable Basket**: Easy cleaning and food release.",
+              "**Compact Design**: Perfect for small kitchens and countertops."
+            ],
+            "detailed_description": "The Philips Airfryer is more than just an air fryer - it's a key to a healthier lifestyle. With its Rapid Air technology and adjustable temperature control, you can cook a variety of dishes with ease, without sacrificing flavor or nutrition. The built-in timer ensures that your food is cooked to perfection, and the removable basket makes cleaning and food release a breeze.",
+            "specs": {
+              "capacity": "4.1L",
+              "power": "1400W",
+              "temperature_range": "80\u00b0C\u2013200\u00b0C",
+              "features": "Rapid Air technology, Adjustable temperature, Timer, Removable basket",
+              "color": "Black"
+            },
+            "price": "\u20b914,999.00",
+            "description": "Cook healthier with Philips Airfryer's Rapid Air technology, adjustable temperature control, and timer functionality.\n\nKey Features:\n\n\u2022 **Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.\n\n\u2022 **Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.\n\n\u2022 **Timer Functionality**: Cook food to perfection with our built-in timer.\n\n\u2022 **Removable Basket**: Easy cleaning and food release.\n\n\u2022 **Compact Design**: Perfect for small kitchens and countertops.\n\nThe Philips Airfryer is a compact air fryer designed for everyday cooking. With its adjustable temperature control and timer functionality, you can cook a variety of dishes with ease. The Rapid Air technology ensures that your food is cooked up to 50% faster with minimal oil, making it a healthier alternative to deep-frying. The removable basket makes cleaning and food release a breeze. Whether you're a health-conscious individual or a busy professional, the Philips Airfryer is the perfect addition to your kitchen.\n\nSpecifications:\n\n- capacity: 4.1L\n\n- power: 1400W\n\n- temperature_range: 80\u00b0C\u2013200\u00b0C\n\n- features: Rapid Air technology, Adjustable temperature, Timer, Removable basket\n\n- color: Black"
+          }
+        },
+        {
+          "variant_id": "a64e4dbe-cf2b-412b-ad1f-ee1c8778d52e",
+          "type": "C",
+          "angle": "Urgency & Lifestyle Focused",
+          "title": "Philips Airfryer - Limited Time Offer: Cook Healthier, Live Happier",
+          "short_description": "Don't miss out on this limited time offer - cook healthier with the Philips Airfryer.",
+          "key_features": [
+            "**Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.",
+            "**Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.",
+            "**Timer Functionality**: Cook food to perfection with our built-in timer.",
+            "**Removable Basket**: Easy cleaning and food release.",
+            "**Compact Design**: Perfect for small kitchens and countertops."
+          ],
+          "detailed_description": "The Philips Airfryer is a game-changer for anyone looking to cook healthier. With its Rapid Air technology and adjustable temperature control, you can cook a variety of dishes with ease, without sacrificing flavor or nutrition. Don't miss out on this limited time offer - order now and start cooking healthier, living happier.",
+          "specifications": {
+            "capacity": "4.1L",
+            "power": "1400W",
+            "temperature_range": "80\u00b0C\u2013200\u00b0C",
+            "features": "Rapid Air technology, Adjustable temperature, Timer, Removable basket",
+            "color": "Black"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Don't miss out on this limited time offer - cook healthier with the Philips Airfryer.\n\nKey Features:\n\n\u2022 **Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.\n\n\u2022 **Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.\n\n\u2022 **Timer Functionality**: Cook food to perfection with our built-in timer.\n\n\u2022 **Removable Basket**: Easy cleaning and food release.\n\n\u2022 **Compact Design**: Perfect for small kitchens and countertops.\n\nThe Philips Airfryer is a game-changer for anyone looking to cook healthier. With its Rapid Air technology and adjustable temperature control, you can cook a variety of dishes with ease, without sacrificing flavor or nutrition. Don't miss out on this limited time offer - order now and start cooking healthier, living happier.\n\nSpecifications:\n\n- capacity: 4.1L\n\n- power: 1400W\n\n- temperature_range: 80\u00b0C\u2013200\u00b0C\n\n- features: Rapid Air technology, Adjustable temperature, Timer, Removable basket\n\n- color: Black",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Philips Airfryer - Limited Time Offer: Cook Healthier, Live Happier",
+            "meta_description": "Philips Airfryer for everyday cooking with adjustable temperature control, timer functionality, and Rapid Air technology.",
+            "keywords": [
+              "Philips Airfryer",
+              "Airfryer",
+              "Rapid Air Technology",
+              "Cooking",
+              "Kitchen"
+            ],
+            "tags": [
+              "Cooking",
+              "Kitchen",
+              "Air Fryer",
+              "Philips"
+            ],
+            "short_description": "Don't miss out on this limited time offer - cook healthier with the Philips Airfryer.",
+            "bullet_points": [
+              "**Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.",
+              "**Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.",
+              "**Timer Functionality**: Cook food to perfection with our built-in timer.",
+              "**Removable Basket**: Easy cleaning and food release.",
+              "**Compact Design**: Perfect for small kitchens and countertops."
+            ],
+            "detailed_description": "The Philips Airfryer is a game-changer for anyone looking to cook healthier. With its Rapid Air technology and adjustable temperature control, you can cook a variety of dishes with ease, without sacrificing flavor or nutrition. Don't miss out on this limited time offer - order now and start cooking healthier, living happier.",
+            "specs": {
+              "capacity": "4.1L",
+              "power": "1400W",
+              "temperature_range": "80\u00b0C\u2013200\u00b0C",
+              "features": "Rapid Air technology, Adjustable temperature, Timer, Removable basket",
+              "color": "Black"
+            },
+            "price": "\u20b914,999.00",
+            "description": "Cook healthier with Philips Airfryer's Rapid Air technology, adjustable temperature control, and timer functionality.\n\nKey Features:\n\n\u2022 **Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.\n\n\u2022 **Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.\n\n\u2022 **Timer Functionality**: Cook food to perfection with our built-in timer.\n\n\u2022 **Removable Basket**: Easy cleaning and food release.\n\n\u2022 **Compact Design**: Perfect for small kitchens and countertops.\n\nThe Philips Airfryer is a compact air fryer designed for everyday cooking. With its adjustable temperature control and timer functionality, you can cook a variety of dishes with ease. The Rapid Air technology ensures that your food is cooked up to 50% faster with minimal oil, making it a healthier alternative to deep-frying. The removable basket makes cleaning and food release a breeze. Whether you're a health-conscious individual or a busy professional, the Philips Airfryer is the perfect addition to your kitchen.\n\nSpecifications:\n\n- capacity: 4.1L\n\n- power: 1400W\n\n- temperature_range: 80\u00b0C\u2013200\u00b0C\n\n- features: Rapid Air technology, Adjustable temperature, Timer, Removable basket\n\n- color: Black"
+          }
+        }
+      ],
+      "scored_variants": [
+        {
+          "variant_id": "a64e4dbe-cf2b-412b-ad1f-ee1c8778d52e",
+          "type": "C",
+          "angle": "Urgency & Lifestyle Focused",
+          "title": "Philips Airfryer - Limited Time Offer: Cook Healthier, Live Happier",
+          "short_description": "Don't miss out on this limited time offer - cook healthier with the Philips Airfryer.",
+          "key_features": [
+            "**Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.",
+            "**Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.",
+            "**Timer Functionality**: Cook food to perfection with our built-in timer.",
+            "**Removable Basket**: Easy cleaning and food release.",
+            "**Compact Design**: Perfect for small kitchens and countertops."
+          ],
+          "detailed_description": "The Philips Airfryer is a game-changer for anyone looking to cook healthier. With its Rapid Air technology and adjustable temperature control, you can cook a variety of dishes with ease, without sacrificing flavor or nutrition. Don't miss out on this limited time offer - order now and start cooking healthier, living happier.",
+          "specifications": {
+            "capacity": "4.1L",
+            "power": "1400W",
+            "temperature_range": "80\u00b0C\u2013200\u00b0C",
+            "features": "Rapid Air technology, Adjustable temperature, Timer, Removable basket",
+            "color": "Black"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Don't miss out on this limited time offer - cook healthier with the Philips Airfryer.\n\nKey Features:\n\n\u2022 **Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.\n\n\u2022 **Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.\n\n\u2022 **Timer Functionality**: Cook food to perfection with our built-in timer.\n\n\u2022 **Removable Basket**: Easy cleaning and food release.\n\n\u2022 **Compact Design**: Perfect for small kitchens and countertops.\n\nThe Philips Airfryer is a game-changer for anyone looking to cook healthier. With its Rapid Air technology and adjustable temperature control, you can cook a variety of dishes with ease, without sacrificing flavor or nutrition. Don't miss out on this limited time offer - order now and start cooking healthier, living happier.\n\nSpecifications:\n\n- capacity: 4.1L\n\n- power: 1400W\n\n- temperature_range: 80\u00b0C\u2013200\u00b0C\n\n- features: Rapid Air technology, Adjustable temperature, Timer, Removable basket\n\n- color: Black",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Philips Airfryer - Limited Time Offer: Cook Healthier, Live Happier",
+            "meta_description": "Philips Airfryer for everyday cooking with adjustable temperature control, timer functionality, and Rapid Air technology.",
+            "keywords": [
+              "Philips Airfryer",
+              "Airfryer",
+              "Rapid Air Technology",
+              "Cooking",
+              "Kitchen"
+            ],
+            "tags": [
+              "Cooking",
+              "Kitchen",
+              "Air Fryer",
+              "Philips"
+            ],
+            "short_description": "Don't miss out on this limited time offer - cook healthier with the Philips Airfryer.",
+            "bullet_points": [
+              "**Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.",
+              "**Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.",
+              "**Timer Functionality**: Cook food to perfection with our built-in timer.",
+              "**Removable Basket**: Easy cleaning and food release.",
+              "**Compact Design**: Perfect for small kitchens and countertops."
+            ],
+            "detailed_description": "The Philips Airfryer is a game-changer for anyone looking to cook healthier. With its Rapid Air technology and adjustable temperature control, you can cook a variety of dishes with ease, without sacrificing flavor or nutrition. Don't miss out on this limited time offer - order now and start cooking healthier, living happier.",
+            "specs": {
+              "capacity": "4.1L",
+              "power": "1400W",
+              "temperature_range": "80\u00b0C\u2013200\u00b0C",
+              "features": "Rapid Air technology, Adjustable temperature, Timer, Removable basket",
+              "color": "Black"
+            },
+            "price": "\u20b914,999.00",
+            "description": "Cook healthier with Philips Airfryer's Rapid Air technology, adjustable temperature control, and timer functionality.\n\nKey Features:\n\n\u2022 **Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.\n\n\u2022 **Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.\n\n\u2022 **Timer Functionality**: Cook food to perfection with our built-in timer.\n\n\u2022 **Removable Basket**: Easy cleaning and food release.\n\n\u2022 **Compact Design**: Perfect for small kitchens and countertops.\n\nThe Philips Airfryer is a compact air fryer designed for everyday cooking. With its adjustable temperature control and timer functionality, you can cook a variety of dishes with ease. The Rapid Air technology ensures that your food is cooked up to 50% faster with minimal oil, making it a healthier alternative to deep-frying. The removable basket makes cleaning and food release a breeze. Whether you're a health-conscious individual or a busy professional, the Philips Airfryer is the perfect addition to your kitchen.\n\nSpecifications:\n\n- capacity: 4.1L\n\n- power: 1400W\n\n- temperature_range: 80\u00b0C\u2013200\u00b0C\n\n- features: Rapid Air technology, Adjustable temperature, Timer, Removable basket\n\n- color: Black"
+          },
+          "cope_scores": {
+            "variant_id": "a64e4dbe-cf2b-412b-ad1f-ee1c8778d52e",
+            "overall_score": 92,
+            "purchase_probability": 87.8,
+            "expected_ctr": 84.2,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 96,
+            "confidence_score": 93
+          }
+        },
+        {
+          "variant_id": "d9032b3b-0393-40fd-a6d4-4220ae7303df",
+          "type": "A",
+          "angle": "Feature & Tech Heavy",
+          "title": "Philips Airfryer - Feature-Rich Air Fryer for Health-Conscious Individuals",
+          "short_description": "Experience the power of Rapid Air technology and adjustable temperature control with the Philips Airfryer.",
+          "key_features": [
+            "**Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.",
+            "**Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.",
+            "**Timer Functionality**: Cook food to perfection with our built-in timer.",
+            "**Removable Basket**: Easy cleaning and food release.",
+            "**Compact Design**: Perfect for small kitchens and countertops."
+          ],
+          "detailed_description": "The Philips Airfryer is a feature-rich air fryer that offers exceptional cooking performance and health benefits. With its Rapid Air technology and adjustable temperature control, you can cook a variety of dishes with ease. The built-in timer ensures that your food is cooked to perfection, and the removable basket makes cleaning and food release a breeze.",
+          "specifications": {
+            "capacity": "4.1L",
+            "power": "1400W",
+            "temperature_range": "80\u00b0C\u2013200\u00b0C",
+            "features": "Rapid Air technology, Adjustable temperature, Timer, Removable basket",
+            "color": "Black"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Experience the power of Rapid Air technology and adjustable temperature control with the Philips Airfryer.\n\nKey Features:\n\n\u2022 **Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.\n\n\u2022 **Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.\n\n\u2022 **Timer Functionality**: Cook food to perfection with our built-in timer.\n\n\u2022 **Removable Basket**: Easy cleaning and food release.\n\n\u2022 **Compact Design**: Perfect for small kitchens and countertops.\n\nThe Philips Airfryer is a feature-rich air fryer that offers exceptional cooking performance and health benefits. With its Rapid Air technology and adjustable temperature control, you can cook a variety of dishes with ease. The built-in timer ensures that your food is cooked to perfection, and the removable basket makes cleaning and food release a breeze.\n\nSpecifications:\n\n- capacity: 4.1L\n\n- power: 1400W\n\n- temperature_range: 80\u00b0C\u2013200\u00b0C\n\n- features: Rapid Air technology, Adjustable temperature, Timer, Removable basket\n\n- color: Black",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Philips Airfryer - Feature-Rich Air Fryer for Health-Conscious Individuals",
+            "meta_description": "Philips Airfryer for everyday cooking with adjustable temperature control, timer functionality, and Rapid Air technology.",
+            "keywords": [
+              "Philips Airfryer",
+              "Airfryer",
+              "Rapid Air Technology",
+              "Cooking",
+              "Kitchen"
+            ],
+            "tags": [
+              "Cooking",
+              "Kitchen",
+              "Air Fryer",
+              "Philips"
+            ],
+            "short_description": "Experience the power of Rapid Air technology and adjustable temperature control with the Philips Airfryer.",
+            "bullet_points": [
+              "**Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.",
+              "**Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.",
+              "**Timer Functionality**: Cook food to perfection with our built-in timer.",
+              "**Removable Basket**: Easy cleaning and food release.",
+              "**Compact Design**: Perfect for small kitchens and countertops."
+            ],
+            "detailed_description": "The Philips Airfryer is a feature-rich air fryer that offers exceptional cooking performance and health benefits. With its Rapid Air technology and adjustable temperature control, you can cook a variety of dishes with ease. The built-in timer ensures that your food is cooked to perfection, and the removable basket makes cleaning and food release a breeze.",
+            "specs": {
+              "capacity": "4.1L",
+              "power": "1400W",
+              "temperature_range": "80\u00b0C\u2013200\u00b0C",
+              "features": "Rapid Air technology, Adjustable temperature, Timer, Removable basket",
+              "color": "Black"
+            },
+            "price": "\u20b914,999.00",
+            "description": "Cook healthier with Philips Airfryer's Rapid Air technology, adjustable temperature control, and timer functionality.\n\nKey Features:\n\n\u2022 **Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.\n\n\u2022 **Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.\n\n\u2022 **Timer Functionality**: Cook food to perfection with our built-in timer.\n\n\u2022 **Removable Basket**: Easy cleaning and food release.\n\n\u2022 **Compact Design**: Perfect for small kitchens and countertops.\n\nThe Philips Airfryer is a compact air fryer designed for everyday cooking. With its adjustable temperature control and timer functionality, you can cook a variety of dishes with ease. The Rapid Air technology ensures that your food is cooked up to 50% faster with minimal oil, making it a healthier alternative to deep-frying. The removable basket makes cleaning and food release a breeze. Whether you're a health-conscious individual or a busy professional, the Philips Airfryer is the perfect addition to your kitchen.\n\nSpecifications:\n\n- capacity: 4.1L\n\n- power: 1400W\n\n- temperature_range: 80\u00b0C\u2013200\u00b0C\n\n- features: Rapid Air technology, Adjustable temperature, Timer, Removable basket\n\n- color: Black"
+          },
+          "cope_scores": {
+            "variant_id": "d9032b3b-0393-40fd-a6d4-4220ae7303df",
+            "overall_score": 90,
+            "purchase_probability": 85.2,
+            "expected_ctr": 80.1,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 95,
+            "confidence_score": 92
+          }
+        },
+        {
+          "variant_id": "99b40b7b-249a-40a3-9f74-46bf12cac922",
+          "type": "B",
+          "angle": "Emotional & Value Driven",
+          "title": "Philips Airfryer - Cook Healthier, Live Happier",
+          "short_description": "Experience the joy of cooking healthier with the Philips Airfryer.",
+          "key_features": [
+            "**Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.",
+            "**Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.",
+            "**Timer Functionality**: Cook food to perfection with our built-in timer.",
+            "**Removable Basket**: Easy cleaning and food release.",
+            "**Compact Design**: Perfect for small kitchens and countertops."
+          ],
+          "detailed_description": "The Philips Airfryer is more than just an air fryer - it's a key to a healthier lifestyle. With its Rapid Air technology and adjustable temperature control, you can cook a variety of dishes with ease, without sacrificing flavor or nutrition. The built-in timer ensures that your food is cooked to perfection, and the removable basket makes cleaning and food release a breeze.",
+          "specifications": {
+            "capacity": "4.1L",
+            "power": "1400W",
+            "temperature_range": "80\u00b0C\u2013200\u00b0C",
+            "features": "Rapid Air technology, Adjustable temperature, Timer, Removable basket",
+            "color": "Black"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Experience the joy of cooking healthier with the Philips Airfryer.\n\nKey Features:\n\n\u2022 **Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.\n\n\u2022 **Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.\n\n\u2022 **Timer Functionality**: Cook food to perfection with our built-in timer.\n\n\u2022 **Removable Basket**: Easy cleaning and food release.\n\n\u2022 **Compact Design**: Perfect for small kitchens and countertops.\n\nThe Philips Airfryer is more than just an air fryer - it's a key to a healthier lifestyle. With its Rapid Air technology and adjustable temperature control, you can cook a variety of dishes with ease, without sacrificing flavor or nutrition. The built-in timer ensures that your food is cooked to perfection, and the removable basket makes cleaning and food release a breeze.\n\nSpecifications:\n\n- capacity: 4.1L\n\n- power: 1400W\n\n- temperature_range: 80\u00b0C\u2013200\u00b0C\n\n- features: Rapid Air technology, Adjustable temperature, Timer, Removable basket\n\n- color: Black",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Philips Airfryer - Cook Healthier, Live Happier",
+            "meta_description": "Philips Airfryer for everyday cooking with adjustable temperature control, timer functionality, and Rapid Air technology.",
+            "keywords": [
+              "Philips Airfryer",
+              "Airfryer",
+              "Rapid Air Technology",
+              "Cooking",
+              "Kitchen"
+            ],
+            "tags": [
+              "Cooking",
+              "Kitchen",
+              "Air Fryer",
+              "Philips"
+            ],
+            "short_description": "Experience the joy of cooking healthier with the Philips Airfryer.",
+            "bullet_points": [
+              "**Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.",
+              "**Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.",
+              "**Timer Functionality**: Cook food to perfection with our built-in timer.",
+              "**Removable Basket**: Easy cleaning and food release.",
+              "**Compact Design**: Perfect for small kitchens and countertops."
+            ],
+            "detailed_description": "The Philips Airfryer is more than just an air fryer - it's a key to a healthier lifestyle. With its Rapid Air technology and adjustable temperature control, you can cook a variety of dishes with ease, without sacrificing flavor or nutrition. The built-in timer ensures that your food is cooked to perfection, and the removable basket makes cleaning and food release a breeze.",
+            "specs": {
+              "capacity": "4.1L",
+              "power": "1400W",
+              "temperature_range": "80\u00b0C\u2013200\u00b0C",
+              "features": "Rapid Air technology, Adjustable temperature, Timer, Removable basket",
+              "color": "Black"
+            },
+            "price": "\u20b914,999.00",
+            "description": "Cook healthier with Philips Airfryer's Rapid Air technology, adjustable temperature control, and timer functionality.\n\nKey Features:\n\n\u2022 **Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.\n\n\u2022 **Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.\n\n\u2022 **Timer Functionality**: Cook food to perfection with our built-in timer.\n\n\u2022 **Removable Basket**: Easy cleaning and food release.\n\n\u2022 **Compact Design**: Perfect for small kitchens and countertops.\n\nThe Philips Airfryer is a compact air fryer designed for everyday cooking. With its adjustable temperature control and timer functionality, you can cook a variety of dishes with ease. The Rapid Air technology ensures that your food is cooked up to 50% faster with minimal oil, making it a healthier alternative to deep-frying. The removable basket makes cleaning and food release a breeze. Whether you're a health-conscious individual or a busy professional, the Philips Airfryer is the perfect addition to your kitchen.\n\nSpecifications:\n\n- capacity: 4.1L\n\n- power: 1400W\n\n- temperature_range: 80\u00b0C\u2013200\u00b0C\n\n- features: Rapid Air technology, Adjustable temperature, Timer, Removable basket\n\n- color: Black"
+          },
+          "cope_scores": {
+            "variant_id": "99b40b7b-249a-40a3-9f74-46bf12cac922",
+            "overall_score": 88,
+            "purchase_probability": 81.5,
+            "expected_ctr": 78.3,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 90,
+            "confidence_score": 89
+          }
+        }
+      ],
+      "decision": {
+        "action": "publish",
+        "reason": "Clear winner identified with high confidence.",
+        "recommended_variant_id": "a64e4dbe-cf2b-412b-ad1f-ee1c8778d52e"
+      },
+      "marketing": {
+        "platform": "olx",
+        "platform_description": "Don't miss out on this limited time offer - cook healthier with the Philips Airfryer.\n\nKey Features:\n\n\u2022 **Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.\n\n\u2022 **Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.\n\n\u2022 **Timer Functionality**: Cook food to perfection with our built-in timer.\n\n\u2022 **Removable Basket**: Easy cleaning and food release.\n\n\u2022 **Compact Design**: Perfect for small kitchens and countertops.\n\nThe Philips Airfryer is a game-changer for anyone looking to cook healthier. With its Rapid Air technology and adjustable temperature control, you can cook a variety of dishes with ease, without sacrificing flavor or nutrition. Don't miss out on this limited time offer - order now and start cooking healthier, living happier.\n\nSpecifications:\n\n- capacity: 4.1L\n\n- power: 1400W\n\n- temperature_range: 80\u00b0C\u2013200\u00b0C\n\n- features: Rapid Air technology, Adjustable temperature, Timer, Removable basket\n\n- color: Black",
+        "call_to_action": "Order now on Olx to get the best deal!"
+      },
+      "validation": {
+        "is_valid": true,
+        "issues": []
+      },
+      "scores": {
+        "privacy_score": 98,
+        "seo_score": 100,
+        "marketing_score": 85,
+        "overall_score": 92,
+        "feedback": "Excellent optimization. Copy is highly persuasive and well-structured."
+      }
+    }
+  },
+  "complete_response": {
+    "status": "success",
+    "message": "Workflow completed",
+    "data": {
+      "sanitized_input": "Product Name: Philips Airfryer\nBrand: Philips\nCategory: Air Fryer\nDescription: A compact air fryer designed for everyday cooking with adjustable temperature control, timer functionality, and Rapid Air technology.\nSpecifications: capacity: 4.1L, power: 1400W, temperature_range: 80\u00b0C\u2013200\u00b0C, features: Rapid Air technology, Adjustable temperature, Timer, Removable basket, color: Black",
+      "vision_analysis": "Error analyzing image with Groq Vision: LLMGateway call failed after 3 retries. Error: Error code: 413 - {'error': {'message': 'Request too large for model `qwen/qwen3.6-27b` in organization `org_01kvb5wdg5eq99np00tsjmwhtg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 8286, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "rag_context": "RAG database is empty. Please run the ingestion script first.",
+      "seo": {
+        "title": "Philips Airfryer - 4.1L, 1400W, Rapid Air Technology, Black",
+        "meta_description": "Philips Airfryer for everyday cooking with adjustable temperature control, timer functionality, and Rapid Air technology.",
+        "keywords": [
+          "Philips Airfryer",
+          "Airfryer",
+          "Rapid Air Technology",
+          "Cooking",
+          "Kitchen"
+        ],
+        "tags": [
+          "Cooking",
+          "Kitchen",
+          "Air Fryer",
+          "Philips"
+        ],
+        "short_description": "Cook healthier with Philips Airfryer's Rapid Air technology, adjustable temperature control, and timer functionality.",
+        "bullet_points": [
+          "**Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.",
+          "**Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.",
+          "**Timer Functionality**: Cook food to perfection with our built-in timer.",
+          "**Removable Basket**: Easy cleaning and food release.",
+          "**Compact Design**: Perfect for small kitchens and countertops."
+        ],
+        "detailed_description": "The Philips Airfryer is a compact air fryer designed for everyday cooking. With its adjustable temperature control and timer functionality, you can cook a variety of dishes with ease. The Rapid Air technology ensures that your food is cooked up to 50% faster with minimal oil, making it a healthier alternative to deep-frying. The removable basket makes cleaning and food release a breeze. Whether you're a health-conscious individual or a busy professional, the Philips Airfryer is the perfect addition to your kitchen.",
+        "specs": {
+          "capacity": "4.1L",
+          "power": "1400W",
+          "temperature_range": "80\u00b0C\u2013200\u00b0C",
+          "features": "Rapid Air technology, Adjustable temperature, Timer, Removable basket",
+          "color": "Black"
+        },
+        "price": "\u20b914,999.00",
+        "description": "Cook healthier with Philips Airfryer's Rapid Air technology, adjustable temperature control, and timer functionality.\n\nKey Features:\n\n\u2022 **Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.\n\n\u2022 **Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.\n\n\u2022 **Timer Functionality**: Cook food to perfection with our built-in timer.\n\n\u2022 **Removable Basket**: Easy cleaning and food release.\n\n\u2022 **Compact Design**: Perfect for small kitchens and countertops.\n\nThe Philips Airfryer is a compact air fryer designed for everyday cooking. With its adjustable temperature control and timer functionality, you can cook a variety of dishes with ease. The Rapid Air technology ensures that your food is cooked up to 50% faster with minimal oil, making it a healthier alternative to deep-frying. The removable basket makes cleaning and food release a breeze. Whether you're a health-conscious individual or a busy professional, the Philips Airfryer is the perfect addition to your kitchen.\n\nSpecifications:\n\n- capacity: 4.1L\n\n- power: 1400W\n\n- temperature_range: 80\u00b0C\u2013200\u00b0C\n\n- features: Rapid Air technology, Adjustable temperature, Timer, Removable basket\n\n- color: Black"
+      },
+      "competitor_analysis": {
+        "recommended_price": "\u20b914,999.00",
+        "lowest_competitor_price": "\u20b912,999.00",
+        "highest_competitor_price": "\u20b916,999.00",
+        "average_market_price": "\u20b914,499.00",
+        "market_positioning": "The Philips Airfryer is a premium product that offers exceptional cooking performance and health benefits. It is priced competitively with other high-end air fryers in the market.",
+        "pricing_strategy": "Our pricing strategy is based on the value proposition of the Philips Airfryer. We believe that the product's unique features and benefits justify a premium price. We will continue to monitor the market and adjust our pricing strategy accordingly.",
+        "competitor_insights": [
+          "The Philips Airfryer has a unique feature set that differentiates it from other air fryers in the market.",
+          "The product's premium pricing is justified by its exceptional cooking performance and health benefits.",
+          "The Philips Airfryer has a strong brand reputation and is associated with high-quality products."
+        ]
+      },
+      "generated_variants": [
+        {
+          "variant_id": "d9032b3b-0393-40fd-a6d4-4220ae7303df",
+          "type": "A",
+          "angle": "Feature & Tech Heavy",
+          "title": "Philips Airfryer - Feature-Rich Air Fryer for Health-Conscious Individuals",
+          "short_description": "Experience the power of Rapid Air technology and adjustable temperature control with the Philips Airfryer.",
+          "key_features": [
+            "**Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.",
+            "**Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.",
+            "**Timer Functionality**: Cook food to perfection with our built-in timer.",
+            "**Removable Basket**: Easy cleaning and food release.",
+            "**Compact Design**: Perfect for small kitchens and countertops."
+          ],
+          "detailed_description": "The Philips Airfryer is a feature-rich air fryer that offers exceptional cooking performance and health benefits. With its Rapid Air technology and adjustable temperature control, you can cook a variety of dishes with ease. The built-in timer ensures that your food is cooked to perfection, and the removable basket makes cleaning and food release a breeze.",
+          "specifications": {
+            "capacity": "4.1L",
+            "power": "1400W",
+            "temperature_range": "80\u00b0C\u2013200\u00b0C",
+            "features": "Rapid Air technology, Adjustable temperature, Timer, Removable basket",
+            "color": "Black"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Experience the power of Rapid Air technology and adjustable temperature control with the Philips Airfryer.\n\nKey Features:\n\n\u2022 **Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.\n\n\u2022 **Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.\n\n\u2022 **Timer Functionality**: Cook food to perfection with our built-in timer.\n\n\u2022 **Removable Basket**: Easy cleaning and food release.\n\n\u2022 **Compact Design**: Perfect for small kitchens and countertops.\n\nThe Philips Airfryer is a feature-rich air fryer that offers exceptional cooking performance and health benefits. With its Rapid Air technology and adjustable temperature control, you can cook a variety of dishes with ease. The built-in timer ensures that your food is cooked to perfection, and the removable basket makes cleaning and food release a breeze.\n\nSpecifications:\n\n- capacity: 4.1L\n\n- power: 1400W\n\n- temperature_range: 80\u00b0C\u2013200\u00b0C\n\n- features: Rapid Air technology, Adjustable temperature, Timer, Removable basket\n\n- color: Black",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Philips Airfryer - Feature-Rich Air Fryer for Health-Conscious Individuals",
+            "meta_description": "Philips Airfryer for everyday cooking with adjustable temperature control, timer functionality, and Rapid Air technology.",
+            "keywords": [
+              "Philips Airfryer",
+              "Airfryer",
+              "Rapid Air Technology",
+              "Cooking",
+              "Kitchen"
+            ],
+            "tags": [
+              "Cooking",
+              "Kitchen",
+              "Air Fryer",
+              "Philips"
+            ],
+            "short_description": "Experience the power of Rapid Air technology and adjustable temperature control with the Philips Airfryer.",
+            "bullet_points": [
+              "**Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.",
+              "**Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.",
+              "**Timer Functionality**: Cook food to perfection with our built-in timer.",
+              "**Removable Basket**: Easy cleaning and food release.",
+              "**Compact Design**: Perfect for small kitchens and countertops."
+            ],
+            "detailed_description": "The Philips Airfryer is a feature-rich air fryer that offers exceptional cooking performance and health benefits. With its Rapid Air technology and adjustable temperature control, you can cook a variety of dishes with ease. The built-in timer ensures that your food is cooked to perfection, and the removable basket makes cleaning and food release a breeze.",
+            "specs": {
+              "capacity": "4.1L",
+              "power": "1400W",
+              "temperature_range": "80\u00b0C\u2013200\u00b0C",
+              "features": "Rapid Air technology, Adjustable temperature, Timer, Removable basket",
+              "color": "Black"
+            },
+            "price": "\u20b914,999.00",
+            "description": "Cook healthier with Philips Airfryer's Rapid Air technology, adjustable temperature control, and timer functionality.\n\nKey Features:\n\n\u2022 **Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.\n\n\u2022 **Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.\n\n\u2022 **Timer Functionality**: Cook food to perfection with our built-in timer.\n\n\u2022 **Removable Basket**: Easy cleaning and food release.\n\n\u2022 **Compact Design**: Perfect for small kitchens and countertops.\n\nThe Philips Airfryer is a compact air fryer designed for everyday cooking. With its adjustable temperature control and timer functionality, you can cook a variety of dishes with ease. The Rapid Air technology ensures that your food is cooked up to 50% faster with minimal oil, making it a healthier alternative to deep-frying. The removable basket makes cleaning and food release a breeze. Whether you're a health-conscious individual or a busy professional, the Philips Airfryer is the perfect addition to your kitchen.\n\nSpecifications:\n\n- capacity: 4.1L\n\n- power: 1400W\n\n- temperature_range: 80\u00b0C\u2013200\u00b0C\n\n- features: Rapid Air technology, Adjustable temperature, Timer, Removable basket\n\n- color: Black"
+          }
+        },
+        {
+          "variant_id": "99b40b7b-249a-40a3-9f74-46bf12cac922",
+          "type": "B",
+          "angle": "Emotional & Value Driven",
+          "title": "Philips Airfryer - Cook Healthier, Live Happier",
+          "short_description": "Experience the joy of cooking healthier with the Philips Airfryer.",
+          "key_features": [
+            "**Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.",
+            "**Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.",
+            "**Timer Functionality**: Cook food to perfection with our built-in timer.",
+            "**Removable Basket**: Easy cleaning and food release.",
+            "**Compact Design**: Perfect for small kitchens and countertops."
+          ],
+          "detailed_description": "The Philips Airfryer is more than just an air fryer - it's a key to a healthier lifestyle. With its Rapid Air technology and adjustable temperature control, you can cook a variety of dishes with ease, without sacrificing flavor or nutrition. The built-in timer ensures that your food is cooked to perfection, and the removable basket makes cleaning and food release a breeze.",
+          "specifications": {
+            "capacity": "4.1L",
+            "power": "1400W",
+            "temperature_range": "80\u00b0C\u2013200\u00b0C",
+            "features": "Rapid Air technology, Adjustable temperature, Timer, Removable basket",
+            "color": "Black"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Experience the joy of cooking healthier with the Philips Airfryer.\n\nKey Features:\n\n\u2022 **Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.\n\n\u2022 **Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.\n\n\u2022 **Timer Functionality**: Cook food to perfection with our built-in timer.\n\n\u2022 **Removable Basket**: Easy cleaning and food release.\n\n\u2022 **Compact Design**: Perfect for small kitchens and countertops.\n\nThe Philips Airfryer is more than just an air fryer - it's a key to a healthier lifestyle. With its Rapid Air technology and adjustable temperature control, you can cook a variety of dishes with ease, without sacrificing flavor or nutrition. The built-in timer ensures that your food is cooked to perfection, and the removable basket makes cleaning and food release a breeze.\n\nSpecifications:\n\n- capacity: 4.1L\n\n- power: 1400W\n\n- temperature_range: 80\u00b0C\u2013200\u00b0C\n\n- features: Rapid Air technology, Adjustable temperature, Timer, Removable basket\n\n- color: Black",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Philips Airfryer - Cook Healthier, Live Happier",
+            "meta_description": "Philips Airfryer for everyday cooking with adjustable temperature control, timer functionality, and Rapid Air technology.",
+            "keywords": [
+              "Philips Airfryer",
+              "Airfryer",
+              "Rapid Air Technology",
+              "Cooking",
+              "Kitchen"
+            ],
+            "tags": [
+              "Cooking",
+              "Kitchen",
+              "Air Fryer",
+              "Philips"
+            ],
+            "short_description": "Experience the joy of cooking healthier with the Philips Airfryer.",
+            "bullet_points": [
+              "**Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.",
+              "**Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.",
+              "**Timer Functionality**: Cook food to perfection with our built-in timer.",
+              "**Removable Basket**: Easy cleaning and food release.",
+              "**Compact Design**: Perfect for small kitchens and countertops."
+            ],
+            "detailed_description": "The Philips Airfryer is more than just an air fryer - it's a key to a healthier lifestyle. With its Rapid Air technology and adjustable temperature control, you can cook a variety of dishes with ease, without sacrificing flavor or nutrition. The built-in timer ensures that your food is cooked to perfection, and the removable basket makes cleaning and food release a breeze.",
+            "specs": {
+              "capacity": "4.1L",
+              "power": "1400W",
+              "temperature_range": "80\u00b0C\u2013200\u00b0C",
+              "features": "Rapid Air technology, Adjustable temperature, Timer, Removable basket",
+              "color": "Black"
+            },
+            "price": "\u20b914,999.00",
+            "description": "Cook healthier with Philips Airfryer's Rapid Air technology, adjustable temperature control, and timer functionality.\n\nKey Features:\n\n\u2022 **Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.\n\n\u2022 **Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.\n\n\u2022 **Timer Functionality**: Cook food to perfection with our built-in timer.\n\n\u2022 **Removable Basket**: Easy cleaning and food release.\n\n\u2022 **Compact Design**: Perfect for small kitchens and countertops.\n\nThe Philips Airfryer is a compact air fryer designed for everyday cooking. With its adjustable temperature control and timer functionality, you can cook a variety of dishes with ease. The Rapid Air technology ensures that your food is cooked up to 50% faster with minimal oil, making it a healthier alternative to deep-frying. The removable basket makes cleaning and food release a breeze. Whether you're a health-conscious individual or a busy professional, the Philips Airfryer is the perfect addition to your kitchen.\n\nSpecifications:\n\n- capacity: 4.1L\n\n- power: 1400W\n\n- temperature_range: 80\u00b0C\u2013200\u00b0C\n\n- features: Rapid Air technology, Adjustable temperature, Timer, Removable basket\n\n- color: Black"
+          }
+        },
+        {
+          "variant_id": "a64e4dbe-cf2b-412b-ad1f-ee1c8778d52e",
+          "type": "C",
+          "angle": "Urgency & Lifestyle Focused",
+          "title": "Philips Airfryer - Limited Time Offer: Cook Healthier, Live Happier",
+          "short_description": "Don't miss out on this limited time offer - cook healthier with the Philips Airfryer.",
+          "key_features": [
+            "**Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.",
+            "**Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.",
+            "**Timer Functionality**: Cook food to perfection with our built-in timer.",
+            "**Removable Basket**: Easy cleaning and food release.",
+            "**Compact Design**: Perfect for small kitchens and countertops."
+          ],
+          "detailed_description": "The Philips Airfryer is a game-changer for anyone looking to cook healthier. With its Rapid Air technology and adjustable temperature control, you can cook a variety of dishes with ease, without sacrificing flavor or nutrition. Don't miss out on this limited time offer - order now and start cooking healthier, living happier.",
+          "specifications": {
+            "capacity": "4.1L",
+            "power": "1400W",
+            "temperature_range": "80\u00b0C\u2013200\u00b0C",
+            "features": "Rapid Air technology, Adjustable temperature, Timer, Removable basket",
+            "color": "Black"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Don't miss out on this limited time offer - cook healthier with the Philips Airfryer.\n\nKey Features:\n\n\u2022 **Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.\n\n\u2022 **Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.\n\n\u2022 **Timer Functionality**: Cook food to perfection with our built-in timer.\n\n\u2022 **Removable Basket**: Easy cleaning and food release.\n\n\u2022 **Compact Design**: Perfect for small kitchens and countertops.\n\nThe Philips Airfryer is a game-changer for anyone looking to cook healthier. With its Rapid Air technology and adjustable temperature control, you can cook a variety of dishes with ease, without sacrificing flavor or nutrition. Don't miss out on this limited time offer - order now and start cooking healthier, living happier.\n\nSpecifications:\n\n- capacity: 4.1L\n\n- power: 1400W\n\n- temperature_range: 80\u00b0C\u2013200\u00b0C\n\n- features: Rapid Air technology, Adjustable temperature, Timer, Removable basket\n\n- color: Black",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Philips Airfryer - Limited Time Offer: Cook Healthier, Live Happier",
+            "meta_description": "Philips Airfryer for everyday cooking with adjustable temperature control, timer functionality, and Rapid Air technology.",
+            "keywords": [
+              "Philips Airfryer",
+              "Airfryer",
+              "Rapid Air Technology",
+              "Cooking",
+              "Kitchen"
+            ],
+            "tags": [
+              "Cooking",
+              "Kitchen",
+              "Air Fryer",
+              "Philips"
+            ],
+            "short_description": "Don't miss out on this limited time offer - cook healthier with the Philips Airfryer.",
+            "bullet_points": [
+              "**Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.",
+              "**Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.",
+              "**Timer Functionality**: Cook food to perfection with our built-in timer.",
+              "**Removable Basket**: Easy cleaning and food release.",
+              "**Compact Design**: Perfect for small kitchens and countertops."
+            ],
+            "detailed_description": "The Philips Airfryer is a game-changer for anyone looking to cook healthier. With its Rapid Air technology and adjustable temperature control, you can cook a variety of dishes with ease, without sacrificing flavor or nutrition. Don't miss out on this limited time offer - order now and start cooking healthier, living happier.",
+            "specs": {
+              "capacity": "4.1L",
+              "power": "1400W",
+              "temperature_range": "80\u00b0C\u2013200\u00b0C",
+              "features": "Rapid Air technology, Adjustable temperature, Timer, Removable basket",
+              "color": "Black"
+            },
+            "price": "\u20b914,999.00",
+            "description": "Cook healthier with Philips Airfryer's Rapid Air technology, adjustable temperature control, and timer functionality.\n\nKey Features:\n\n\u2022 **Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.\n\n\u2022 **Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.\n\n\u2022 **Timer Functionality**: Cook food to perfection with our built-in timer.\n\n\u2022 **Removable Basket**: Easy cleaning and food release.\n\n\u2022 **Compact Design**: Perfect for small kitchens and countertops.\n\nThe Philips Airfryer is a compact air fryer designed for everyday cooking. With its adjustable temperature control and timer functionality, you can cook a variety of dishes with ease. The Rapid Air technology ensures that your food is cooked up to 50% faster with minimal oil, making it a healthier alternative to deep-frying. The removable basket makes cleaning and food release a breeze. Whether you're a health-conscious individual or a busy professional, the Philips Airfryer is the perfect addition to your kitchen.\n\nSpecifications:\n\n- capacity: 4.1L\n\n- power: 1400W\n\n- temperature_range: 80\u00b0C\u2013200\u00b0C\n\n- features: Rapid Air technology, Adjustable temperature, Timer, Removable basket\n\n- color: Black"
+          }
+        }
+      ],
+      "scored_variants": [
+        {
+          "variant_id": "a64e4dbe-cf2b-412b-ad1f-ee1c8778d52e",
+          "type": "C",
+          "angle": "Urgency & Lifestyle Focused",
+          "title": "Philips Airfryer - Limited Time Offer: Cook Healthier, Live Happier",
+          "short_description": "Don't miss out on this limited time offer - cook healthier with the Philips Airfryer.",
+          "key_features": [
+            "**Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.",
+            "**Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.",
+            "**Timer Functionality**: Cook food to perfection with our built-in timer.",
+            "**Removable Basket**: Easy cleaning and food release.",
+            "**Compact Design**: Perfect for small kitchens and countertops."
+          ],
+          "detailed_description": "The Philips Airfryer is a game-changer for anyone looking to cook healthier. With its Rapid Air technology and adjustable temperature control, you can cook a variety of dishes with ease, without sacrificing flavor or nutrition. Don't miss out on this limited time offer - order now and start cooking healthier, living happier.",
+          "specifications": {
+            "capacity": "4.1L",
+            "power": "1400W",
+            "temperature_range": "80\u00b0C\u2013200\u00b0C",
+            "features": "Rapid Air technology, Adjustable temperature, Timer, Removable basket",
+            "color": "Black"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Don't miss out on this limited time offer - cook healthier with the Philips Airfryer.\n\nKey Features:\n\n\u2022 **Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.\n\n\u2022 **Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.\n\n\u2022 **Timer Functionality**: Cook food to perfection with our built-in timer.\n\n\u2022 **Removable Basket**: Easy cleaning and food release.\n\n\u2022 **Compact Design**: Perfect for small kitchens and countertops.\n\nThe Philips Airfryer is a game-changer for anyone looking to cook healthier. With its Rapid Air technology and adjustable temperature control, you can cook a variety of dishes with ease, without sacrificing flavor or nutrition. Don't miss out on this limited time offer - order now and start cooking healthier, living happier.\n\nSpecifications:\n\n- capacity: 4.1L\n\n- power: 1400W\n\n- temperature_range: 80\u00b0C\u2013200\u00b0C\n\n- features: Rapid Air technology, Adjustable temperature, Timer, Removable basket\n\n- color: Black",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Philips Airfryer - Limited Time Offer: Cook Healthier, Live Happier",
+            "meta_description": "Philips Airfryer for everyday cooking with adjustable temperature control, timer functionality, and Rapid Air technology.",
+            "keywords": [
+              "Philips Airfryer",
+              "Airfryer",
+              "Rapid Air Technology",
+              "Cooking",
+              "Kitchen"
+            ],
+            "tags": [
+              "Cooking",
+              "Kitchen",
+              "Air Fryer",
+              "Philips"
+            ],
+            "short_description": "Don't miss out on this limited time offer - cook healthier with the Philips Airfryer.",
+            "bullet_points": [
+              "**Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.",
+              "**Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.",
+              "**Timer Functionality**: Cook food to perfection with our built-in timer.",
+              "**Removable Basket**: Easy cleaning and food release.",
+              "**Compact Design**: Perfect for small kitchens and countertops."
+            ],
+            "detailed_description": "The Philips Airfryer is a game-changer for anyone looking to cook healthier. With its Rapid Air technology and adjustable temperature control, you can cook a variety of dishes with ease, without sacrificing flavor or nutrition. Don't miss out on this limited time offer - order now and start cooking healthier, living happier.",
+            "specs": {
+              "capacity": "4.1L",
+              "power": "1400W",
+              "temperature_range": "80\u00b0C\u2013200\u00b0C",
+              "features": "Rapid Air technology, Adjustable temperature, Timer, Removable basket",
+              "color": "Black"
+            },
+            "price": "\u20b914,999.00",
+            "description": "Cook healthier with Philips Airfryer's Rapid Air technology, adjustable temperature control, and timer functionality.\n\nKey Features:\n\n\u2022 **Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.\n\n\u2022 **Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.\n\n\u2022 **Timer Functionality**: Cook food to perfection with our built-in timer.\n\n\u2022 **Removable Basket**: Easy cleaning and food release.\n\n\u2022 **Compact Design**: Perfect for small kitchens and countertops.\n\nThe Philips Airfryer is a compact air fryer designed for everyday cooking. With its adjustable temperature control and timer functionality, you can cook a variety of dishes with ease. The Rapid Air technology ensures that your food is cooked up to 50% faster with minimal oil, making it a healthier alternative to deep-frying. The removable basket makes cleaning and food release a breeze. Whether you're a health-conscious individual or a busy professional, the Philips Airfryer is the perfect addition to your kitchen.\n\nSpecifications:\n\n- capacity: 4.1L\n\n- power: 1400W\n\n- temperature_range: 80\u00b0C\u2013200\u00b0C\n\n- features: Rapid Air technology, Adjustable temperature, Timer, Removable basket\n\n- color: Black"
+          },
+          "cope_scores": {
+            "variant_id": "a64e4dbe-cf2b-412b-ad1f-ee1c8778d52e",
+            "overall_score": 92,
+            "purchase_probability": 87.8,
+            "expected_ctr": 84.2,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 96,
+            "confidence_score": 93
+          }
+        },
+        {
+          "variant_id": "d9032b3b-0393-40fd-a6d4-4220ae7303df",
+          "type": "A",
+          "angle": "Feature & Tech Heavy",
+          "title": "Philips Airfryer - Feature-Rich Air Fryer for Health-Conscious Individuals",
+          "short_description": "Experience the power of Rapid Air technology and adjustable temperature control with the Philips Airfryer.",
+          "key_features": [
+            "**Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.",
+            "**Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.",
+            "**Timer Functionality**: Cook food to perfection with our built-in timer.",
+            "**Removable Basket**: Easy cleaning and food release.",
+            "**Compact Design**: Perfect for small kitchens and countertops."
+          ],
+          "detailed_description": "The Philips Airfryer is a feature-rich air fryer that offers exceptional cooking performance and health benefits. With its Rapid Air technology and adjustable temperature control, you can cook a variety of dishes with ease. The built-in timer ensures that your food is cooked to perfection, and the removable basket makes cleaning and food release a breeze.",
+          "specifications": {
+            "capacity": "4.1L",
+            "power": "1400W",
+            "temperature_range": "80\u00b0C\u2013200\u00b0C",
+            "features": "Rapid Air technology, Adjustable temperature, Timer, Removable basket",
+            "color": "Black"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Experience the power of Rapid Air technology and adjustable temperature control with the Philips Airfryer.\n\nKey Features:\n\n\u2022 **Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.\n\n\u2022 **Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.\n\n\u2022 **Timer Functionality**: Cook food to perfection with our built-in timer.\n\n\u2022 **Removable Basket**: Easy cleaning and food release.\n\n\u2022 **Compact Design**: Perfect for small kitchens and countertops.\n\nThe Philips Airfryer is a feature-rich air fryer that offers exceptional cooking performance and health benefits. With its Rapid Air technology and adjustable temperature control, you can cook a variety of dishes with ease. The built-in timer ensures that your food is cooked to perfection, and the removable basket makes cleaning and food release a breeze.\n\nSpecifications:\n\n- capacity: 4.1L\n\n- power: 1400W\n\n- temperature_range: 80\u00b0C\u2013200\u00b0C\n\n- features: Rapid Air technology, Adjustable temperature, Timer, Removable basket\n\n- color: Black",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Philips Airfryer - Feature-Rich Air Fryer for Health-Conscious Individuals",
+            "meta_description": "Philips Airfryer for everyday cooking with adjustable temperature control, timer functionality, and Rapid Air technology.",
+            "keywords": [
+              "Philips Airfryer",
+              "Airfryer",
+              "Rapid Air Technology",
+              "Cooking",
+              "Kitchen"
+            ],
+            "tags": [
+              "Cooking",
+              "Kitchen",
+              "Air Fryer",
+              "Philips"
+            ],
+            "short_description": "Experience the power of Rapid Air technology and adjustable temperature control with the Philips Airfryer.",
+            "bullet_points": [
+              "**Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.",
+              "**Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.",
+              "**Timer Functionality**: Cook food to perfection with our built-in timer.",
+              "**Removable Basket**: Easy cleaning and food release.",
+              "**Compact Design**: Perfect for small kitchens and countertops."
+            ],
+            "detailed_description": "The Philips Airfryer is a feature-rich air fryer that offers exceptional cooking performance and health benefits. With its Rapid Air technology and adjustable temperature control, you can cook a variety of dishes with ease. The built-in timer ensures that your food is cooked to perfection, and the removable basket makes cleaning and food release a breeze.",
+            "specs": {
+              "capacity": "4.1L",
+              "power": "1400W",
+              "temperature_range": "80\u00b0C\u2013200\u00b0C",
+              "features": "Rapid Air technology, Adjustable temperature, Timer, Removable basket",
+              "color": "Black"
+            },
+            "price": "\u20b914,999.00",
+            "description": "Cook healthier with Philips Airfryer's Rapid Air technology, adjustable temperature control, and timer functionality.\n\nKey Features:\n\n\u2022 **Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.\n\n\u2022 **Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.\n\n\u2022 **Timer Functionality**: Cook food to perfection with our built-in timer.\n\n\u2022 **Removable Basket**: Easy cleaning and food release.\n\n\u2022 **Compact Design**: Perfect for small kitchens and countertops.\n\nThe Philips Airfryer is a compact air fryer designed for everyday cooking. With its adjustable temperature control and timer functionality, you can cook a variety of dishes with ease. The Rapid Air technology ensures that your food is cooked up to 50% faster with minimal oil, making it a healthier alternative to deep-frying. The removable basket makes cleaning and food release a breeze. Whether you're a health-conscious individual or a busy professional, the Philips Airfryer is the perfect addition to your kitchen.\n\nSpecifications:\n\n- capacity: 4.1L\n\n- power: 1400W\n\n- temperature_range: 80\u00b0C\u2013200\u00b0C\n\n- features: Rapid Air technology, Adjustable temperature, Timer, Removable basket\n\n- color: Black"
+          },
+          "cope_scores": {
+            "variant_id": "d9032b3b-0393-40fd-a6d4-4220ae7303df",
+            "overall_score": 90,
+            "purchase_probability": 85.2,
+            "expected_ctr": 80.1,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 95,
+            "confidence_score": 92
+          }
+        },
+        {
+          "variant_id": "99b40b7b-249a-40a3-9f74-46bf12cac922",
+          "type": "B",
+          "angle": "Emotional & Value Driven",
+          "title": "Philips Airfryer - Cook Healthier, Live Happier",
+          "short_description": "Experience the joy of cooking healthier with the Philips Airfryer.",
+          "key_features": [
+            "**Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.",
+            "**Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.",
+            "**Timer Functionality**: Cook food to perfection with our built-in timer.",
+            "**Removable Basket**: Easy cleaning and food release.",
+            "**Compact Design**: Perfect for small kitchens and countertops."
+          ],
+          "detailed_description": "The Philips Airfryer is more than just an air fryer - it's a key to a healthier lifestyle. With its Rapid Air technology and adjustable temperature control, you can cook a variety of dishes with ease, without sacrificing flavor or nutrition. The built-in timer ensures that your food is cooked to perfection, and the removable basket makes cleaning and food release a breeze.",
+          "specifications": {
+            "capacity": "4.1L",
+            "power": "1400W",
+            "temperature_range": "80\u00b0C\u2013200\u00b0C",
+            "features": "Rapid Air technology, Adjustable temperature, Timer, Removable basket",
+            "color": "Black"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Experience the joy of cooking healthier with the Philips Airfryer.\n\nKey Features:\n\n\u2022 **Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.\n\n\u2022 **Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.\n\n\u2022 **Timer Functionality**: Cook food to perfection with our built-in timer.\n\n\u2022 **Removable Basket**: Easy cleaning and food release.\n\n\u2022 **Compact Design**: Perfect for small kitchens and countertops.\n\nThe Philips Airfryer is more than just an air fryer - it's a key to a healthier lifestyle. With its Rapid Air technology and adjustable temperature control, you can cook a variety of dishes with ease, without sacrificing flavor or nutrition. The built-in timer ensures that your food is cooked to perfection, and the removable basket makes cleaning and food release a breeze.\n\nSpecifications:\n\n- capacity: 4.1L\n\n- power: 1400W\n\n- temperature_range: 80\u00b0C\u2013200\u00b0C\n\n- features: Rapid Air technology, Adjustable temperature, Timer, Removable basket\n\n- color: Black",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Philips Airfryer - Cook Healthier, Live Happier",
+            "meta_description": "Philips Airfryer for everyday cooking with adjustable temperature control, timer functionality, and Rapid Air technology.",
+            "keywords": [
+              "Philips Airfryer",
+              "Airfryer",
+              "Rapid Air Technology",
+              "Cooking",
+              "Kitchen"
+            ],
+            "tags": [
+              "Cooking",
+              "Kitchen",
+              "Air Fryer",
+              "Philips"
+            ],
+            "short_description": "Experience the joy of cooking healthier with the Philips Airfryer.",
+            "bullet_points": [
+              "**Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.",
+              "**Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.",
+              "**Timer Functionality**: Cook food to perfection with our built-in timer.",
+              "**Removable Basket**: Easy cleaning and food release.",
+              "**Compact Design**: Perfect for small kitchens and countertops."
+            ],
+            "detailed_description": "The Philips Airfryer is more than just an air fryer - it's a key to a healthier lifestyle. With its Rapid Air technology and adjustable temperature control, you can cook a variety of dishes with ease, without sacrificing flavor or nutrition. The built-in timer ensures that your food is cooked to perfection, and the removable basket makes cleaning and food release a breeze.",
+            "specs": {
+              "capacity": "4.1L",
+              "power": "1400W",
+              "temperature_range": "80\u00b0C\u2013200\u00b0C",
+              "features": "Rapid Air technology, Adjustable temperature, Timer, Removable basket",
+              "color": "Black"
+            },
+            "price": "\u20b914,999.00",
+            "description": "Cook healthier with Philips Airfryer's Rapid Air technology, adjustable temperature control, and timer functionality.\n\nKey Features:\n\n\u2022 **Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.\n\n\u2022 **Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.\n\n\u2022 **Timer Functionality**: Cook food to perfection with our built-in timer.\n\n\u2022 **Removable Basket**: Easy cleaning and food release.\n\n\u2022 **Compact Design**: Perfect for small kitchens and countertops.\n\nThe Philips Airfryer is a compact air fryer designed for everyday cooking. With its adjustable temperature control and timer functionality, you can cook a variety of dishes with ease. The Rapid Air technology ensures that your food is cooked up to 50% faster with minimal oil, making it a healthier alternative to deep-frying. The removable basket makes cleaning and food release a breeze. Whether you're a health-conscious individual or a busy professional, the Philips Airfryer is the perfect addition to your kitchen.\n\nSpecifications:\n\n- capacity: 4.1L\n\n- power: 1400W\n\n- temperature_range: 80\u00b0C\u2013200\u00b0C\n\n- features: Rapid Air technology, Adjustable temperature, Timer, Removable basket\n\n- color: Black"
+          },
+          "cope_scores": {
+            "variant_id": "99b40b7b-249a-40a3-9f74-46bf12cac922",
+            "overall_score": 88,
+            "purchase_probability": 81.5,
+            "expected_ctr": 78.3,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 90,
+            "confidence_score": 89
+          }
+        }
+      ],
+      "decision": {
+        "action": "publish",
+        "reason": "Clear winner identified with high confidence.",
+        "recommended_variant_id": "a64e4dbe-cf2b-412b-ad1f-ee1c8778d52e"
+      },
+      "marketing": {
+        "platform": "olx",
+        "platform_description": "Don't miss out on this limited time offer - cook healthier with the Philips Airfryer.\n\nKey Features:\n\n\u2022 **Rapid Air Technology**: Cooks food up to 50% faster with minimal oil.\n\n\u2022 **Adjustable Temperature Control**: Set the perfect temperature for your cooking needs.\n\n\u2022 **Timer Functionality**: Cook food to perfection with our built-in timer.\n\n\u2022 **Removable Basket**: Easy cleaning and food release.\n\n\u2022 **Compact Design**: Perfect for small kitchens and countertops.\n\nThe Philips Airfryer is a game-changer for anyone looking to cook healthier. With its Rapid Air technology and adjustable temperature control, you can cook a variety of dishes with ease, without sacrificing flavor or nutrition. Don't miss out on this limited time offer - order now and start cooking healthier, living happier.\n\nSpecifications:\n\n- capacity: 4.1L\n\n- power: 1400W\n\n- temperature_range: 80\u00b0C\u2013200\u00b0C\n\n- features: Rapid Air technology, Adjustable temperature, Timer, Removable basket\n\n- color: Black",
+        "call_to_action": "Order now on Olx to get the best deal!"
+      },
+      "validation": {
+        "is_valid": true,
+        "issues": []
+      },
+      "scores": {
+        "privacy_score": 98,
+        "seo_score": 100,
+        "marketing_score": 85,
+        "overall_score": 92,
+        "feedback": "Excellent optimization. Copy is highly persuasive and well-structured."
+      }
+    }
+  },
+  "token_usage": null,
+  "estimated_cost": null,
+  "cache_hit": null,
+  "error": null,
+  "capability_metadata": {
+    "image_processing_supported": true,
+    "privacy_anonymization": true,
+    "rag_context": true,
+    "multi_agent_workflow": true
+  }
+}

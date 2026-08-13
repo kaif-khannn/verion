@@ -1,0 +1,967 @@
+{
+  "experiment_id": "EXP_20260814_001603",
+  "test_case_id": "TC008",
+  "system": "verion",
+  "timestamp": "2026-08-14T00:20:26.824119",
+  "success": true,
+  "latency_ms": 16548.55,
+  "model": "multi-agent",
+  "raw_output": {
+    "status": "success",
+    "message": "Workflow completed",
+    "data": {
+      "sanitized_input": "Product Name: Preethi Mixer Grinder\nBrand: Preethi\nCategory: Mixer/Blender\nDescription: mixer grinder 750 watt i think, 3 jars maybe 4, stainless blades, white/black body, brand looks like Preethi? customer says call Priya at <EMAIL_ADDRESS> / <PHONE_NUMBER>. not sure exact model or jar sizes. looks like it has pulse button.\nSpecifications: power: 750W, jars: 3 or 4 jars, blades: Stainless steel, color: White/Black, features: Pulse button, customer_note: call Priya at <EMAIL_ADDRESS> / <PHONE_NUMBER>",
+      "vision_analysis": "Error analyzing image with Groq Vision: LLMGateway call failed after 3 retries. Error: Error code: 413 - {'error': {'message': 'Request too large for model `qwen/qwen3.6-27b` in organization `org_01kvb5wdg5eq99np00tsjmwhtg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 8286, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "rag_context": "RAG database is empty. Please run the ingestion script first.",
+      "seo": {
+        "title": "Preethi Mixer Grinder - Efficient and Easy to Use",
+        "meta_description": "Buy Preethi Mixer Grinder online at best price in India. 750W, 3/4 Jars, Stainless Steel Blades, White/Black Body. Free Shipping!",
+        "keywords": [
+          "Preethi Mixer Grinder",
+          "750W Mixer",
+          "3/4 Jars Mixer",
+          "Stainless Steel Blades",
+          "Mixer Grinder Online"
+        ],
+        "tags": [
+          "Kitchen Appliances",
+          "Mixer Grinders",
+          "Preethi Appliances"
+        ],
+        "short_description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.",
+        "bullet_points": [
+          "**750W Motor**: Powerful and efficient for easy mixing and grinding",
+          "**3/4 Jars**: Convenient and versatile for various cooking needs",
+          "**Stainless Steel Blades**: Durable and easy to clean for long-lasting performance",
+          "**Pulse Button**: Effortless mixing and grinding with just one touch",
+          "**White/Black Body**: Sleek and modern design for a stylish kitchen"
+        ],
+        "detailed_description": "The Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.",
+        "specs": {
+          "power": "750W",
+          "jars": "3/4",
+          "blades": "Stainless Steel",
+          "color": "White/Black",
+          "features": "Pulse Button"
+        },
+        "price": "\u20b9 6,499.00",
+        "description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.\n\nKey Features:\n\n\u2022 **750W Motor**: Powerful and efficient for easy mixing and grinding\n\n\u2022 **3/4 Jars**: Convenient and versatile for various cooking needs\n\n\u2022 **Stainless Steel Blades**: Durable and easy to clean for long-lasting performance\n\n\u2022 **Pulse Button**: Effortless mixing and grinding with just one touch\n\n\u2022 **White/Black Body**: Sleek and modern design for a stylish kitchen\n\nThe Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.\n\nSpecifications:\n\n- power: 750W\n\n- jars: 3/4\n\n- blades: Stainless Steel\n\n- color: White/Black\n\n- features: Pulse Button"
+      },
+      "competitor_analysis": {
+        "recommended_price": "\u20b9 6,499.00",
+        "lowest_competitor_price": "\u20b9 5,999.00",
+        "highest_competitor_price": "\u20b9 7,499.00",
+        "average_market_price": "\u20b9 6,499.00",
+        "market_positioning": "Mid-range mixer grinder with excellent performance and features",
+        "pricing_strategy": "Competitive pricing with a focus on quality and performance",
+        "competitor_insights": [
+          "Competitor X offers a similar product with a lower price point, but with fewer features",
+          "Competitor Y offers a higher-end product with more features, but at a higher price point",
+          "Our product offers the perfect balance of performance, features, and price"
+        ]
+      },
+      "generated_variants": [
+        {
+          "variant_id": "f7057b2b-3b15-4677-8ef1-dcee47fde733",
+          "type": "A",
+          "angle": "Feature & Tech Heavy",
+          "title": "Preethi Mixer Grinder - Powerful and Efficient",
+          "short_description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.",
+          "key_features": [
+            "**750W Motor**: Powerful and efficient for easy mixing and grinding",
+            "**3/4 Jars**: Convenient and versatile for various cooking needs",
+            "**Stainless Steel Blades**: Durable and easy to clean for long-lasting performance",
+            "**Pulse Button**: Effortless mixing and grinding with just one touch",
+            "**White/Black Body**: Sleek and modern design for a stylish kitchen"
+          ],
+          "detailed_description": "The Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.",
+          "specifications": {
+            "power": "750W",
+            "jars": "3/4",
+            "blades": "Stainless Steel",
+            "color": "White/Black",
+            "features": "Pulse Button"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.\n\nKey Features:\n\n\u2022 **750W Motor**: Powerful and efficient for easy mixing and grinding\n\n\u2022 **3/4 Jars**: Convenient and versatile for various cooking needs\n\n\u2022 **Stainless Steel Blades**: Durable and easy to clean for long-lasting performance\n\n\u2022 **Pulse Button**: Effortless mixing and grinding with just one touch\n\n\u2022 **White/Black Body**: Sleek and modern design for a stylish kitchen\n\nThe Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.\n\nSpecifications:\n\n- power: 750W\n\n- jars: 3/4\n\n- blades: Stainless Steel\n\n- color: White/Black\n\n- features: Pulse Button",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Preethi Mixer Grinder - Powerful and Efficient",
+            "meta_description": "Buy Preethi Mixer Grinder online at best price in India. 750W, 3/4 Jars, Stainless Steel Blades, White/Black Body. Free Shipping!",
+            "keywords": [
+              "Preethi Mixer Grinder",
+              "750W Mixer",
+              "3/4 Jars Mixer",
+              "Stainless Steel Blades",
+              "Mixer Grinder Online"
+            ],
+            "tags": [
+              "Kitchen Appliances",
+              "Mixer Grinders",
+              "Preethi Appliances"
+            ],
+            "short_description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.",
+            "bullet_points": [
+              "**750W Motor**: Powerful and efficient for easy mixing and grinding",
+              "**3/4 Jars**: Convenient and versatile for various cooking needs",
+              "**Stainless Steel Blades**: Durable and easy to clean for long-lasting performance",
+              "**Pulse Button**: Effortless mixing and grinding with just one touch",
+              "**White/Black Body**: Sleek and modern design for a stylish kitchen"
+            ],
+            "detailed_description": "The Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.",
+            "specs": {
+              "power": "750W",
+              "jars": "3/4",
+              "blades": "Stainless Steel",
+              "color": "White/Black",
+              "features": "Pulse Button"
+            },
+            "price": "\u20b9 6,499.00",
+            "description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.\n\nKey Features:\n\n\u2022 **750W Motor**: Powerful and efficient for easy mixing and grinding\n\n\u2022 **3/4 Jars**: Convenient and versatile for various cooking needs\n\n\u2022 **Stainless Steel Blades**: Durable and easy to clean for long-lasting performance\n\n\u2022 **Pulse Button**: Effortless mixing and grinding with just one touch\n\n\u2022 **White/Black Body**: Sleek and modern design for a stylish kitchen\n\nThe Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.\n\nSpecifications:\n\n- power: 750W\n\n- jars: 3/4\n\n- blades: Stainless Steel\n\n- color: White/Black\n\n- features: Pulse Button"
+          }
+        },
+        {
+          "variant_id": "cfc5789e-0e6a-4597-a6d1-395a48c7f928",
+          "type": "B",
+          "angle": "Emotional & Value Driven",
+          "title": "Preethi Mixer Grinder - A Kitchen Essential",
+          "short_description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.",
+          "key_features": [
+            "**Easy to Use**: Effortless mixing and grinding with just one touch",
+            "**Convenient**: 3/4 jars for various cooking needs",
+            "**Durable**: Stainless steel blades for long-lasting performance",
+            "**Sleek Design**: White/Black body for a stylish kitchen",
+            "**Value for Money**: Excellent performance and features at an affordable price"
+          ],
+          "detailed_description": "The Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.",
+          "specifications": {
+            "power": "750W",
+            "jars": "3/4",
+            "blades": "Stainless Steel",
+            "color": "White/Black",
+            "features": "Pulse Button"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.\n\nKey Features:\n\n\u2022 **Easy to Use**: Effortless mixing and grinding with just one touch\n\n\u2022 **Convenient**: 3/4 jars for various cooking needs\n\n\u2022 **Durable**: Stainless steel blades for long-lasting performance\n\n\u2022 **Sleek Design**: White/Black body for a stylish kitchen\n\n\u2022 **Value for Money**: Excellent performance and features at an affordable price\n\nThe Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.\n\nSpecifications:\n\n- power: 750W\n\n- jars: 3/4\n\n- blades: Stainless Steel\n\n- color: White/Black\n\n- features: Pulse Button",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Preethi Mixer Grinder - A Kitchen Essential",
+            "meta_description": "Buy Preethi Mixer Grinder online at best price in India. 750W, 3/4 Jars, Stainless Steel Blades, White/Black Body. Free Shipping!",
+            "keywords": [
+              "Preethi Mixer Grinder",
+              "750W Mixer",
+              "3/4 Jars Mixer",
+              "Stainless Steel Blades",
+              "Mixer Grinder Online"
+            ],
+            "tags": [
+              "Kitchen Appliances",
+              "Mixer Grinders",
+              "Preethi Appliances"
+            ],
+            "short_description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.",
+            "bullet_points": [
+              "**Easy to Use**: Effortless mixing and grinding with just one touch",
+              "**Convenient**: 3/4 jars for various cooking needs",
+              "**Durable**: Stainless steel blades for long-lasting performance",
+              "**Sleek Design**: White/Black body for a stylish kitchen",
+              "**Value for Money**: Excellent performance and features at an affordable price"
+            ],
+            "detailed_description": "The Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.",
+            "specs": {
+              "power": "750W",
+              "jars": "3/4",
+              "blades": "Stainless Steel",
+              "color": "White/Black",
+              "features": "Pulse Button"
+            },
+            "price": "\u20b9 6,499.00",
+            "description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.\n\nKey Features:\n\n\u2022 **750W Motor**: Powerful and efficient for easy mixing and grinding\n\n\u2022 **3/4 Jars**: Convenient and versatile for various cooking needs\n\n\u2022 **Stainless Steel Blades**: Durable and easy to clean for long-lasting performance\n\n\u2022 **Pulse Button**: Effortless mixing and grinding with just one touch\n\n\u2022 **White/Black Body**: Sleek and modern design for a stylish kitchen\n\nThe Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.\n\nSpecifications:\n\n- power: 750W\n\n- jars: 3/4\n\n- blades: Stainless Steel\n\n- color: White/Black\n\n- features: Pulse Button"
+          }
+        },
+        {
+          "variant_id": "1aa7ece5-3228-4302-ae3c-2cce5f5b146c",
+          "type": "C",
+          "angle": "Urgency & Lifestyle Focused",
+          "title": "Preethi Mixer Grinder - Limited Time Offer!",
+          "short_description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.",
+          "key_features": [
+            "**Limited Time Offer**: Get the Preethi Mixer Grinder at an unbeatable price!",
+            "**Perfect Blend**: 750W motor, 3/4 jars, stainless steel blades, and a pulse button",
+            "**Convenient**: 3/4 jars for various cooking needs",
+            "**Durable**: Stainless steel blades for long-lasting performance",
+            "**Sleek Design**: White/Black body for a stylish kitchen"
+          ],
+          "detailed_description": "The Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.",
+          "specifications": {
+            "power": "750W",
+            "jars": "3/4",
+            "blades": "Stainless Steel",
+            "color": "White/Black",
+            "features": "Pulse Button"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.\n\nKey Features:\n\n\u2022 **Limited Time Offer**: Get the Preethi Mixer Grinder at an unbeatable price!\n\n\u2022 **Perfect Blend**: 750W motor, 3/4 jars, stainless steel blades, and a pulse button\n\n\u2022 **Convenient**: 3/4 jars for various cooking needs\n\n\u2022 **Durable**: Stainless steel blades for long-lasting performance\n\n\u2022 **Sleek Design**: White/Black body for a stylish kitchen\n\nThe Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.\n\nSpecifications:\n\n- power: 750W\n\n- jars: 3/4\n\n- blades: Stainless Steel\n\n- color: White/Black\n\n- features: Pulse Button",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Preethi Mixer Grinder - Limited Time Offer!",
+            "meta_description": "Buy Preethi Mixer Grinder online at best price in India. 750W, 3/4 Jars, Stainless Steel Blades, White/Black Body. Free Shipping!",
+            "keywords": [
+              "Preethi Mixer Grinder",
+              "750W Mixer",
+              "3/4 Jars Mixer",
+              "Stainless Steel Blades",
+              "Mixer Grinder Online"
+            ],
+            "tags": [
+              "Kitchen Appliances",
+              "Mixer Grinders",
+              "Preethi Appliances"
+            ],
+            "short_description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.",
+            "bullet_points": [
+              "**Limited Time Offer**: Get the Preethi Mixer Grinder at an unbeatable price!",
+              "**Perfect Blend**: 750W motor, 3/4 jars, stainless steel blades, and a pulse button",
+              "**Convenient**: 3/4 jars for various cooking needs",
+              "**Durable**: Stainless steel blades for long-lasting performance",
+              "**Sleek Design**: White/Black body for a stylish kitchen"
+            ],
+            "detailed_description": "The Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.",
+            "specs": {
+              "power": "750W",
+              "jars": "3/4",
+              "blades": "Stainless Steel",
+              "color": "White/Black",
+              "features": "Pulse Button"
+            },
+            "price": "\u20b9 6,499.00",
+            "description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.\n\nKey Features:\n\n\u2022 **750W Motor**: Powerful and efficient for easy mixing and grinding\n\n\u2022 **3/4 Jars**: Convenient and versatile for various cooking needs\n\n\u2022 **Stainless Steel Blades**: Durable and easy to clean for long-lasting performance\n\n\u2022 **Pulse Button**: Effortless mixing and grinding with just one touch\n\n\u2022 **White/Black Body**: Sleek and modern design for a stylish kitchen\n\nThe Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.\n\nSpecifications:\n\n- power: 750W\n\n- jars: 3/4\n\n- blades: Stainless Steel\n\n- color: White/Black\n\n- features: Pulse Button"
+          }
+        }
+      ],
+      "scored_variants": [
+        {
+          "variant_id": "f7057b2b-3b15-4677-8ef1-dcee47fde733",
+          "type": "A",
+          "angle": "Feature & Tech Heavy",
+          "title": "Preethi Mixer Grinder - Powerful and Efficient",
+          "short_description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.",
+          "key_features": [
+            "**750W Motor**: Powerful and efficient for easy mixing and grinding",
+            "**3/4 Jars**: Convenient and versatile for various cooking needs",
+            "**Stainless Steel Blades**: Durable and easy to clean for long-lasting performance",
+            "**Pulse Button**: Effortless mixing and grinding with just one touch",
+            "**White/Black Body**: Sleek and modern design for a stylish kitchen"
+          ],
+          "detailed_description": "The Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.",
+          "specifications": {
+            "power": "750W",
+            "jars": "3/4",
+            "blades": "Stainless Steel",
+            "color": "White/Black",
+            "features": "Pulse Button"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.\n\nKey Features:\n\n\u2022 **750W Motor**: Powerful and efficient for easy mixing and grinding\n\n\u2022 **3/4 Jars**: Convenient and versatile for various cooking needs\n\n\u2022 **Stainless Steel Blades**: Durable and easy to clean for long-lasting performance\n\n\u2022 **Pulse Button**: Effortless mixing and grinding with just one touch\n\n\u2022 **White/Black Body**: Sleek and modern design for a stylish kitchen\n\nThe Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.\n\nSpecifications:\n\n- power: 750W\n\n- jars: 3/4\n\n- blades: Stainless Steel\n\n- color: White/Black\n\n- features: Pulse Button",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Preethi Mixer Grinder - Powerful and Efficient",
+            "meta_description": "Buy Preethi Mixer Grinder online at best price in India. 750W, 3/4 Jars, Stainless Steel Blades, White/Black Body. Free Shipping!",
+            "keywords": [
+              "Preethi Mixer Grinder",
+              "750W Mixer",
+              "3/4 Jars Mixer",
+              "Stainless Steel Blades",
+              "Mixer Grinder Online"
+            ],
+            "tags": [
+              "Kitchen Appliances",
+              "Mixer Grinders",
+              "Preethi Appliances"
+            ],
+            "short_description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.",
+            "bullet_points": [
+              "**750W Motor**: Powerful and efficient for easy mixing and grinding",
+              "**3/4 Jars**: Convenient and versatile for various cooking needs",
+              "**Stainless Steel Blades**: Durable and easy to clean for long-lasting performance",
+              "**Pulse Button**: Effortless mixing and grinding with just one touch",
+              "**White/Black Body**: Sleek and modern design for a stylish kitchen"
+            ],
+            "detailed_description": "The Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.",
+            "specs": {
+              "power": "750W",
+              "jars": "3/4",
+              "blades": "Stainless Steel",
+              "color": "White/Black",
+              "features": "Pulse Button"
+            },
+            "price": "\u20b9 6,499.00",
+            "description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.\n\nKey Features:\n\n\u2022 **750W Motor**: Powerful and efficient for easy mixing and grinding\n\n\u2022 **3/4 Jars**: Convenient and versatile for various cooking needs\n\n\u2022 **Stainless Steel Blades**: Durable and easy to clean for long-lasting performance\n\n\u2022 **Pulse Button**: Effortless mixing and grinding with just one touch\n\n\u2022 **White/Black Body**: Sleek and modern design for a stylish kitchen\n\nThe Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.\n\nSpecifications:\n\n- power: 750W\n\n- jars: 3/4\n\n- blades: Stainless Steel\n\n- color: White/Black\n\n- features: Pulse Button"
+          },
+          "cope_scores": {
+            "variant_id": "f7057b2b-3b15-4677-8ef1-dcee47fde733",
+            "overall_score": 92,
+            "purchase_probability": 82.1,
+            "expected_ctr": 78.9,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 95,
+            "confidence_score": 92
+          }
+        },
+        {
+          "variant_id": "cfc5789e-0e6a-4597-a6d1-395a48c7f928",
+          "type": "B",
+          "angle": "Emotional & Value Driven",
+          "title": "Preethi Mixer Grinder - A Kitchen Essential",
+          "short_description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.",
+          "key_features": [
+            "**Easy to Use**: Effortless mixing and grinding with just one touch",
+            "**Convenient**: 3/4 jars for various cooking needs",
+            "**Durable**: Stainless steel blades for long-lasting performance",
+            "**Sleek Design**: White/Black body for a stylish kitchen",
+            "**Value for Money**: Excellent performance and features at an affordable price"
+          ],
+          "detailed_description": "The Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.",
+          "specifications": {
+            "power": "750W",
+            "jars": "3/4",
+            "blades": "Stainless Steel",
+            "color": "White/Black",
+            "features": "Pulse Button"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.\n\nKey Features:\n\n\u2022 **Easy to Use**: Effortless mixing and grinding with just one touch\n\n\u2022 **Convenient**: 3/4 jars for various cooking needs\n\n\u2022 **Durable**: Stainless steel blades for long-lasting performance\n\n\u2022 **Sleek Design**: White/Black body for a stylish kitchen\n\n\u2022 **Value for Money**: Excellent performance and features at an affordable price\n\nThe Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.\n\nSpecifications:\n\n- power: 750W\n\n- jars: 3/4\n\n- blades: Stainless Steel\n\n- color: White/Black\n\n- features: Pulse Button",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Preethi Mixer Grinder - A Kitchen Essential",
+            "meta_description": "Buy Preethi Mixer Grinder online at best price in India. 750W, 3/4 Jars, Stainless Steel Blades, White/Black Body. Free Shipping!",
+            "keywords": [
+              "Preethi Mixer Grinder",
+              "750W Mixer",
+              "3/4 Jars Mixer",
+              "Stainless Steel Blades",
+              "Mixer Grinder Online"
+            ],
+            "tags": [
+              "Kitchen Appliances",
+              "Mixer Grinders",
+              "Preethi Appliances"
+            ],
+            "short_description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.",
+            "bullet_points": [
+              "**Easy to Use**: Effortless mixing and grinding with just one touch",
+              "**Convenient**: 3/4 jars for various cooking needs",
+              "**Durable**: Stainless steel blades for long-lasting performance",
+              "**Sleek Design**: White/Black body for a stylish kitchen",
+              "**Value for Money**: Excellent performance and features at an affordable price"
+            ],
+            "detailed_description": "The Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.",
+            "specs": {
+              "power": "750W",
+              "jars": "3/4",
+              "blades": "Stainless Steel",
+              "color": "White/Black",
+              "features": "Pulse Button"
+            },
+            "price": "\u20b9 6,499.00",
+            "description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.\n\nKey Features:\n\n\u2022 **750W Motor**: Powerful and efficient for easy mixing and grinding\n\n\u2022 **3/4 Jars**: Convenient and versatile for various cooking needs\n\n\u2022 **Stainless Steel Blades**: Durable and easy to clean for long-lasting performance\n\n\u2022 **Pulse Button**: Effortless mixing and grinding with just one touch\n\n\u2022 **White/Black Body**: Sleek and modern design for a stylish kitchen\n\nThe Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.\n\nSpecifications:\n\n- power: 750W\n\n- jars: 3/4\n\n- blades: Stainless Steel\n\n- color: White/Black\n\n- features: Pulse Button"
+          },
+          "cope_scores": {
+            "variant_id": "cfc5789e-0e6a-4597-a6d1-395a48c7f928",
+            "overall_score": 88,
+            "purchase_probability": 79.5,
+            "expected_ctr": 72.4,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 92,
+            "confidence_score": 90
+          }
+        },
+        {
+          "variant_id": "1aa7ece5-3228-4302-ae3c-2cce5f5b146c",
+          "type": "C",
+          "angle": "Urgency & Lifestyle Focused",
+          "title": "Preethi Mixer Grinder - Limited Time Offer!",
+          "short_description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.",
+          "key_features": [
+            "**Limited Time Offer**: Get the Preethi Mixer Grinder at an unbeatable price!",
+            "**Perfect Blend**: 750W motor, 3/4 jars, stainless steel blades, and a pulse button",
+            "**Convenient**: 3/4 jars for various cooking needs",
+            "**Durable**: Stainless steel blades for long-lasting performance",
+            "**Sleek Design**: White/Black body for a stylish kitchen"
+          ],
+          "detailed_description": "The Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.",
+          "specifications": {
+            "power": "750W",
+            "jars": "3/4",
+            "blades": "Stainless Steel",
+            "color": "White/Black",
+            "features": "Pulse Button"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.\n\nKey Features:\n\n\u2022 **Limited Time Offer**: Get the Preethi Mixer Grinder at an unbeatable price!\n\n\u2022 **Perfect Blend**: 750W motor, 3/4 jars, stainless steel blades, and a pulse button\n\n\u2022 **Convenient**: 3/4 jars for various cooking needs\n\n\u2022 **Durable**: Stainless steel blades for long-lasting performance\n\n\u2022 **Sleek Design**: White/Black body for a stylish kitchen\n\nThe Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.\n\nSpecifications:\n\n- power: 750W\n\n- jars: 3/4\n\n- blades: Stainless Steel\n\n- color: White/Black\n\n- features: Pulse Button",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Preethi Mixer Grinder - Limited Time Offer!",
+            "meta_description": "Buy Preethi Mixer Grinder online at best price in India. 750W, 3/4 Jars, Stainless Steel Blades, White/Black Body. Free Shipping!",
+            "keywords": [
+              "Preethi Mixer Grinder",
+              "750W Mixer",
+              "3/4 Jars Mixer",
+              "Stainless Steel Blades",
+              "Mixer Grinder Online"
+            ],
+            "tags": [
+              "Kitchen Appliances",
+              "Mixer Grinders",
+              "Preethi Appliances"
+            ],
+            "short_description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.",
+            "bullet_points": [
+              "**Limited Time Offer**: Get the Preethi Mixer Grinder at an unbeatable price!",
+              "**Perfect Blend**: 750W motor, 3/4 jars, stainless steel blades, and a pulse button",
+              "**Convenient**: 3/4 jars for various cooking needs",
+              "**Durable**: Stainless steel blades for long-lasting performance",
+              "**Sleek Design**: White/Black body for a stylish kitchen"
+            ],
+            "detailed_description": "The Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.",
+            "specs": {
+              "power": "750W",
+              "jars": "3/4",
+              "blades": "Stainless Steel",
+              "color": "White/Black",
+              "features": "Pulse Button"
+            },
+            "price": "\u20b9 6,499.00",
+            "description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.\n\nKey Features:\n\n\u2022 **750W Motor**: Powerful and efficient for easy mixing and grinding\n\n\u2022 **3/4 Jars**: Convenient and versatile for various cooking needs\n\n\u2022 **Stainless Steel Blades**: Durable and easy to clean for long-lasting performance\n\n\u2022 **Pulse Button**: Effortless mixing and grinding with just one touch\n\n\u2022 **White/Black Body**: Sleek and modern design for a stylish kitchen\n\nThe Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.\n\nSpecifications:\n\n- power: 750W\n\n- jars: 3/4\n\n- blades: Stainless Steel\n\n- color: White/Black\n\n- features: Pulse Button"
+          },
+          "cope_scores": {
+            "variant_id": "1aa7ece5-3228-4302-ae3c-2cce5f5b146c",
+            "overall_score": 85,
+            "purchase_probability": 76.9,
+            "expected_ctr": 69.5,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 90,
+            "confidence_score": 88
+          }
+        }
+      ],
+      "decision": {
+        "action": "publish",
+        "reason": "Clear winner identified with high confidence.",
+        "recommended_variant_id": "f7057b2b-3b15-4677-8ef1-dcee47fde733"
+      },
+      "marketing": {
+        "platform": "olx",
+        "platform_description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.\n\nKey Features:\n\n\u2022 **750W Motor**: Powerful and efficient for easy mixing and grinding\n\n\u2022 **3/4 Jars**: Convenient and versatile for various cooking needs\n\n\u2022 **Stainless Steel Blades**: Durable and easy to clean for long-lasting performance\n\n\u2022 **Pulse Button**: Effortless mixing and grinding with just one touch\n\n\u2022 **White/Black Body**: Sleek and modern design for a stylish kitchen\n\nThe Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.\n\nSpecifications:\n\n- power: 750W\n\n- jars: 3/4\n\n- blades: Stainless Steel\n\n- color: White/Black\n\n- features: Pulse Button",
+        "call_to_action": "Order now on Olx to get the best deal!"
+      },
+      "validation": {
+        "is_valid": true,
+        "issues": []
+      },
+      "scores": {
+        "privacy_score": 100,
+        "seo_score": 100,
+        "marketing_score": 90,
+        "overall_score": 95,
+        "feedback": "Excellent optimization. Copy is highly persuasive and well-structured."
+      }
+    }
+  },
+  "complete_response": {
+    "status": "success",
+    "message": "Workflow completed",
+    "data": {
+      "sanitized_input": "Product Name: Preethi Mixer Grinder\nBrand: Preethi\nCategory: Mixer/Blender\nDescription: mixer grinder 750 watt i think, 3 jars maybe 4, stainless blades, white/black body, brand looks like Preethi? customer says call Priya at <EMAIL_ADDRESS> / <PHONE_NUMBER>. not sure exact model or jar sizes. looks like it has pulse button.\nSpecifications: power: 750W, jars: 3 or 4 jars, blades: Stainless steel, color: White/Black, features: Pulse button, customer_note: call Priya at <EMAIL_ADDRESS> / <PHONE_NUMBER>",
+      "vision_analysis": "Error analyzing image with Groq Vision: LLMGateway call failed after 3 retries. Error: Error code: 413 - {'error': {'message': 'Request too large for model `qwen/qwen3.6-27b` in organization `org_01kvb5wdg5eq99np00tsjmwhtg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 8286, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "rag_context": "RAG database is empty. Please run the ingestion script first.",
+      "seo": {
+        "title": "Preethi Mixer Grinder - Efficient and Easy to Use",
+        "meta_description": "Buy Preethi Mixer Grinder online at best price in India. 750W, 3/4 Jars, Stainless Steel Blades, White/Black Body. Free Shipping!",
+        "keywords": [
+          "Preethi Mixer Grinder",
+          "750W Mixer",
+          "3/4 Jars Mixer",
+          "Stainless Steel Blades",
+          "Mixer Grinder Online"
+        ],
+        "tags": [
+          "Kitchen Appliances",
+          "Mixer Grinders",
+          "Preethi Appliances"
+        ],
+        "short_description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.",
+        "bullet_points": [
+          "**750W Motor**: Powerful and efficient for easy mixing and grinding",
+          "**3/4 Jars**: Convenient and versatile for various cooking needs",
+          "**Stainless Steel Blades**: Durable and easy to clean for long-lasting performance",
+          "**Pulse Button**: Effortless mixing and grinding with just one touch",
+          "**White/Black Body**: Sleek and modern design for a stylish kitchen"
+        ],
+        "detailed_description": "The Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.",
+        "specs": {
+          "power": "750W",
+          "jars": "3/4",
+          "blades": "Stainless Steel",
+          "color": "White/Black",
+          "features": "Pulse Button"
+        },
+        "price": "\u20b9 6,499.00",
+        "description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.\n\nKey Features:\n\n\u2022 **750W Motor**: Powerful and efficient for easy mixing and grinding\n\n\u2022 **3/4 Jars**: Convenient and versatile for various cooking needs\n\n\u2022 **Stainless Steel Blades**: Durable and easy to clean for long-lasting performance\n\n\u2022 **Pulse Button**: Effortless mixing and grinding with just one touch\n\n\u2022 **White/Black Body**: Sleek and modern design for a stylish kitchen\n\nThe Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.\n\nSpecifications:\n\n- power: 750W\n\n- jars: 3/4\n\n- blades: Stainless Steel\n\n- color: White/Black\n\n- features: Pulse Button"
+      },
+      "competitor_analysis": {
+        "recommended_price": "\u20b9 6,499.00",
+        "lowest_competitor_price": "\u20b9 5,999.00",
+        "highest_competitor_price": "\u20b9 7,499.00",
+        "average_market_price": "\u20b9 6,499.00",
+        "market_positioning": "Mid-range mixer grinder with excellent performance and features",
+        "pricing_strategy": "Competitive pricing with a focus on quality and performance",
+        "competitor_insights": [
+          "Competitor X offers a similar product with a lower price point, but with fewer features",
+          "Competitor Y offers a higher-end product with more features, but at a higher price point",
+          "Our product offers the perfect balance of performance, features, and price"
+        ]
+      },
+      "generated_variants": [
+        {
+          "variant_id": "f7057b2b-3b15-4677-8ef1-dcee47fde733",
+          "type": "A",
+          "angle": "Feature & Tech Heavy",
+          "title": "Preethi Mixer Grinder - Powerful and Efficient",
+          "short_description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.",
+          "key_features": [
+            "**750W Motor**: Powerful and efficient for easy mixing and grinding",
+            "**3/4 Jars**: Convenient and versatile for various cooking needs",
+            "**Stainless Steel Blades**: Durable and easy to clean for long-lasting performance",
+            "**Pulse Button**: Effortless mixing and grinding with just one touch",
+            "**White/Black Body**: Sleek and modern design for a stylish kitchen"
+          ],
+          "detailed_description": "The Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.",
+          "specifications": {
+            "power": "750W",
+            "jars": "3/4",
+            "blades": "Stainless Steel",
+            "color": "White/Black",
+            "features": "Pulse Button"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.\n\nKey Features:\n\n\u2022 **750W Motor**: Powerful and efficient for easy mixing and grinding\n\n\u2022 **3/4 Jars**: Convenient and versatile for various cooking needs\n\n\u2022 **Stainless Steel Blades**: Durable and easy to clean for long-lasting performance\n\n\u2022 **Pulse Button**: Effortless mixing and grinding with just one touch\n\n\u2022 **White/Black Body**: Sleek and modern design for a stylish kitchen\n\nThe Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.\n\nSpecifications:\n\n- power: 750W\n\n- jars: 3/4\n\n- blades: Stainless Steel\n\n- color: White/Black\n\n- features: Pulse Button",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Preethi Mixer Grinder - Powerful and Efficient",
+            "meta_description": "Buy Preethi Mixer Grinder online at best price in India. 750W, 3/4 Jars, Stainless Steel Blades, White/Black Body. Free Shipping!",
+            "keywords": [
+              "Preethi Mixer Grinder",
+              "750W Mixer",
+              "3/4 Jars Mixer",
+              "Stainless Steel Blades",
+              "Mixer Grinder Online"
+            ],
+            "tags": [
+              "Kitchen Appliances",
+              "Mixer Grinders",
+              "Preethi Appliances"
+            ],
+            "short_description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.",
+            "bullet_points": [
+              "**750W Motor**: Powerful and efficient for easy mixing and grinding",
+              "**3/4 Jars**: Convenient and versatile for various cooking needs",
+              "**Stainless Steel Blades**: Durable and easy to clean for long-lasting performance",
+              "**Pulse Button**: Effortless mixing and grinding with just one touch",
+              "**White/Black Body**: Sleek and modern design for a stylish kitchen"
+            ],
+            "detailed_description": "The Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.",
+            "specs": {
+              "power": "750W",
+              "jars": "3/4",
+              "blades": "Stainless Steel",
+              "color": "White/Black",
+              "features": "Pulse Button"
+            },
+            "price": "\u20b9 6,499.00",
+            "description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.\n\nKey Features:\n\n\u2022 **750W Motor**: Powerful and efficient for easy mixing and grinding\n\n\u2022 **3/4 Jars**: Convenient and versatile for various cooking needs\n\n\u2022 **Stainless Steel Blades**: Durable and easy to clean for long-lasting performance\n\n\u2022 **Pulse Button**: Effortless mixing and grinding with just one touch\n\n\u2022 **White/Black Body**: Sleek and modern design for a stylish kitchen\n\nThe Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.\n\nSpecifications:\n\n- power: 750W\n\n- jars: 3/4\n\n- blades: Stainless Steel\n\n- color: White/Black\n\n- features: Pulse Button"
+          }
+        },
+        {
+          "variant_id": "cfc5789e-0e6a-4597-a6d1-395a48c7f928",
+          "type": "B",
+          "angle": "Emotional & Value Driven",
+          "title": "Preethi Mixer Grinder - A Kitchen Essential",
+          "short_description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.",
+          "key_features": [
+            "**Easy to Use**: Effortless mixing and grinding with just one touch",
+            "**Convenient**: 3/4 jars for various cooking needs",
+            "**Durable**: Stainless steel blades for long-lasting performance",
+            "**Sleek Design**: White/Black body for a stylish kitchen",
+            "**Value for Money**: Excellent performance and features at an affordable price"
+          ],
+          "detailed_description": "The Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.",
+          "specifications": {
+            "power": "750W",
+            "jars": "3/4",
+            "blades": "Stainless Steel",
+            "color": "White/Black",
+            "features": "Pulse Button"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.\n\nKey Features:\n\n\u2022 **Easy to Use**: Effortless mixing and grinding with just one touch\n\n\u2022 **Convenient**: 3/4 jars for various cooking needs\n\n\u2022 **Durable**: Stainless steel blades for long-lasting performance\n\n\u2022 **Sleek Design**: White/Black body for a stylish kitchen\n\n\u2022 **Value for Money**: Excellent performance and features at an affordable price\n\nThe Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.\n\nSpecifications:\n\n- power: 750W\n\n- jars: 3/4\n\n- blades: Stainless Steel\n\n- color: White/Black\n\n- features: Pulse Button",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Preethi Mixer Grinder - A Kitchen Essential",
+            "meta_description": "Buy Preethi Mixer Grinder online at best price in India. 750W, 3/4 Jars, Stainless Steel Blades, White/Black Body. Free Shipping!",
+            "keywords": [
+              "Preethi Mixer Grinder",
+              "750W Mixer",
+              "3/4 Jars Mixer",
+              "Stainless Steel Blades",
+              "Mixer Grinder Online"
+            ],
+            "tags": [
+              "Kitchen Appliances",
+              "Mixer Grinders",
+              "Preethi Appliances"
+            ],
+            "short_description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.",
+            "bullet_points": [
+              "**Easy to Use**: Effortless mixing and grinding with just one touch",
+              "**Convenient**: 3/4 jars for various cooking needs",
+              "**Durable**: Stainless steel blades for long-lasting performance",
+              "**Sleek Design**: White/Black body for a stylish kitchen",
+              "**Value for Money**: Excellent performance and features at an affordable price"
+            ],
+            "detailed_description": "The Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.",
+            "specs": {
+              "power": "750W",
+              "jars": "3/4",
+              "blades": "Stainless Steel",
+              "color": "White/Black",
+              "features": "Pulse Button"
+            },
+            "price": "\u20b9 6,499.00",
+            "description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.\n\nKey Features:\n\n\u2022 **750W Motor**: Powerful and efficient for easy mixing and grinding\n\n\u2022 **3/4 Jars**: Convenient and versatile for various cooking needs\n\n\u2022 **Stainless Steel Blades**: Durable and easy to clean for long-lasting performance\n\n\u2022 **Pulse Button**: Effortless mixing and grinding with just one touch\n\n\u2022 **White/Black Body**: Sleek and modern design for a stylish kitchen\n\nThe Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.\n\nSpecifications:\n\n- power: 750W\n\n- jars: 3/4\n\n- blades: Stainless Steel\n\n- color: White/Black\n\n- features: Pulse Button"
+          }
+        },
+        {
+          "variant_id": "1aa7ece5-3228-4302-ae3c-2cce5f5b146c",
+          "type": "C",
+          "angle": "Urgency & Lifestyle Focused",
+          "title": "Preethi Mixer Grinder - Limited Time Offer!",
+          "short_description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.",
+          "key_features": [
+            "**Limited Time Offer**: Get the Preethi Mixer Grinder at an unbeatable price!",
+            "**Perfect Blend**: 750W motor, 3/4 jars, stainless steel blades, and a pulse button",
+            "**Convenient**: 3/4 jars for various cooking needs",
+            "**Durable**: Stainless steel blades for long-lasting performance",
+            "**Sleek Design**: White/Black body for a stylish kitchen"
+          ],
+          "detailed_description": "The Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.",
+          "specifications": {
+            "power": "750W",
+            "jars": "3/4",
+            "blades": "Stainless Steel",
+            "color": "White/Black",
+            "features": "Pulse Button"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.\n\nKey Features:\n\n\u2022 **Limited Time Offer**: Get the Preethi Mixer Grinder at an unbeatable price!\n\n\u2022 **Perfect Blend**: 750W motor, 3/4 jars, stainless steel blades, and a pulse button\n\n\u2022 **Convenient**: 3/4 jars for various cooking needs\n\n\u2022 **Durable**: Stainless steel blades for long-lasting performance\n\n\u2022 **Sleek Design**: White/Black body for a stylish kitchen\n\nThe Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.\n\nSpecifications:\n\n- power: 750W\n\n- jars: 3/4\n\n- blades: Stainless Steel\n\n- color: White/Black\n\n- features: Pulse Button",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Preethi Mixer Grinder - Limited Time Offer!",
+            "meta_description": "Buy Preethi Mixer Grinder online at best price in India. 750W, 3/4 Jars, Stainless Steel Blades, White/Black Body. Free Shipping!",
+            "keywords": [
+              "Preethi Mixer Grinder",
+              "750W Mixer",
+              "3/4 Jars Mixer",
+              "Stainless Steel Blades",
+              "Mixer Grinder Online"
+            ],
+            "tags": [
+              "Kitchen Appliances",
+              "Mixer Grinders",
+              "Preethi Appliances"
+            ],
+            "short_description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.",
+            "bullet_points": [
+              "**Limited Time Offer**: Get the Preethi Mixer Grinder at an unbeatable price!",
+              "**Perfect Blend**: 750W motor, 3/4 jars, stainless steel blades, and a pulse button",
+              "**Convenient**: 3/4 jars for various cooking needs",
+              "**Durable**: Stainless steel blades for long-lasting performance",
+              "**Sleek Design**: White/Black body for a stylish kitchen"
+            ],
+            "detailed_description": "The Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.",
+            "specs": {
+              "power": "750W",
+              "jars": "3/4",
+              "blades": "Stainless Steel",
+              "color": "White/Black",
+              "features": "Pulse Button"
+            },
+            "price": "\u20b9 6,499.00",
+            "description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.\n\nKey Features:\n\n\u2022 **750W Motor**: Powerful and efficient for easy mixing and grinding\n\n\u2022 **3/4 Jars**: Convenient and versatile for various cooking needs\n\n\u2022 **Stainless Steel Blades**: Durable and easy to clean for long-lasting performance\n\n\u2022 **Pulse Button**: Effortless mixing and grinding with just one touch\n\n\u2022 **White/Black Body**: Sleek and modern design for a stylish kitchen\n\nThe Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.\n\nSpecifications:\n\n- power: 750W\n\n- jars: 3/4\n\n- blades: Stainless Steel\n\n- color: White/Black\n\n- features: Pulse Button"
+          }
+        }
+      ],
+      "scored_variants": [
+        {
+          "variant_id": "f7057b2b-3b15-4677-8ef1-dcee47fde733",
+          "type": "A",
+          "angle": "Feature & Tech Heavy",
+          "title": "Preethi Mixer Grinder - Powerful and Efficient",
+          "short_description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.",
+          "key_features": [
+            "**750W Motor**: Powerful and efficient for easy mixing and grinding",
+            "**3/4 Jars**: Convenient and versatile for various cooking needs",
+            "**Stainless Steel Blades**: Durable and easy to clean for long-lasting performance",
+            "**Pulse Button**: Effortless mixing and grinding with just one touch",
+            "**White/Black Body**: Sleek and modern design for a stylish kitchen"
+          ],
+          "detailed_description": "The Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.",
+          "specifications": {
+            "power": "750W",
+            "jars": "3/4",
+            "blades": "Stainless Steel",
+            "color": "White/Black",
+            "features": "Pulse Button"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.\n\nKey Features:\n\n\u2022 **750W Motor**: Powerful and efficient for easy mixing and grinding\n\n\u2022 **3/4 Jars**: Convenient and versatile for various cooking needs\n\n\u2022 **Stainless Steel Blades**: Durable and easy to clean for long-lasting performance\n\n\u2022 **Pulse Button**: Effortless mixing and grinding with just one touch\n\n\u2022 **White/Black Body**: Sleek and modern design for a stylish kitchen\n\nThe Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.\n\nSpecifications:\n\n- power: 750W\n\n- jars: 3/4\n\n- blades: Stainless Steel\n\n- color: White/Black\n\n- features: Pulse Button",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Preethi Mixer Grinder - Powerful and Efficient",
+            "meta_description": "Buy Preethi Mixer Grinder online at best price in India. 750W, 3/4 Jars, Stainless Steel Blades, White/Black Body. Free Shipping!",
+            "keywords": [
+              "Preethi Mixer Grinder",
+              "750W Mixer",
+              "3/4 Jars Mixer",
+              "Stainless Steel Blades",
+              "Mixer Grinder Online"
+            ],
+            "tags": [
+              "Kitchen Appliances",
+              "Mixer Grinders",
+              "Preethi Appliances"
+            ],
+            "short_description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.",
+            "bullet_points": [
+              "**750W Motor**: Powerful and efficient for easy mixing and grinding",
+              "**3/4 Jars**: Convenient and versatile for various cooking needs",
+              "**Stainless Steel Blades**: Durable and easy to clean for long-lasting performance",
+              "**Pulse Button**: Effortless mixing and grinding with just one touch",
+              "**White/Black Body**: Sleek and modern design for a stylish kitchen"
+            ],
+            "detailed_description": "The Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.",
+            "specs": {
+              "power": "750W",
+              "jars": "3/4",
+              "blades": "Stainless Steel",
+              "color": "White/Black",
+              "features": "Pulse Button"
+            },
+            "price": "\u20b9 6,499.00",
+            "description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.\n\nKey Features:\n\n\u2022 **750W Motor**: Powerful and efficient for easy mixing and grinding\n\n\u2022 **3/4 Jars**: Convenient and versatile for various cooking needs\n\n\u2022 **Stainless Steel Blades**: Durable and easy to clean for long-lasting performance\n\n\u2022 **Pulse Button**: Effortless mixing and grinding with just one touch\n\n\u2022 **White/Black Body**: Sleek and modern design for a stylish kitchen\n\nThe Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.\n\nSpecifications:\n\n- power: 750W\n\n- jars: 3/4\n\n- blades: Stainless Steel\n\n- color: White/Black\n\n- features: Pulse Button"
+          },
+          "cope_scores": {
+            "variant_id": "f7057b2b-3b15-4677-8ef1-dcee47fde733",
+            "overall_score": 92,
+            "purchase_probability": 82.1,
+            "expected_ctr": 78.9,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 95,
+            "confidence_score": 92
+          }
+        },
+        {
+          "variant_id": "cfc5789e-0e6a-4597-a6d1-395a48c7f928",
+          "type": "B",
+          "angle": "Emotional & Value Driven",
+          "title": "Preethi Mixer Grinder - A Kitchen Essential",
+          "short_description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.",
+          "key_features": [
+            "**Easy to Use**: Effortless mixing and grinding with just one touch",
+            "**Convenient**: 3/4 jars for various cooking needs",
+            "**Durable**: Stainless steel blades for long-lasting performance",
+            "**Sleek Design**: White/Black body for a stylish kitchen",
+            "**Value for Money**: Excellent performance and features at an affordable price"
+          ],
+          "detailed_description": "The Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.",
+          "specifications": {
+            "power": "750W",
+            "jars": "3/4",
+            "blades": "Stainless Steel",
+            "color": "White/Black",
+            "features": "Pulse Button"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.\n\nKey Features:\n\n\u2022 **Easy to Use**: Effortless mixing and grinding with just one touch\n\n\u2022 **Convenient**: 3/4 jars for various cooking needs\n\n\u2022 **Durable**: Stainless steel blades for long-lasting performance\n\n\u2022 **Sleek Design**: White/Black body for a stylish kitchen\n\n\u2022 **Value for Money**: Excellent performance and features at an affordable price\n\nThe Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.\n\nSpecifications:\n\n- power: 750W\n\n- jars: 3/4\n\n- blades: Stainless Steel\n\n- color: White/Black\n\n- features: Pulse Button",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Preethi Mixer Grinder - A Kitchen Essential",
+            "meta_description": "Buy Preethi Mixer Grinder online at best price in India. 750W, 3/4 Jars, Stainless Steel Blades, White/Black Body. Free Shipping!",
+            "keywords": [
+              "Preethi Mixer Grinder",
+              "750W Mixer",
+              "3/4 Jars Mixer",
+              "Stainless Steel Blades",
+              "Mixer Grinder Online"
+            ],
+            "tags": [
+              "Kitchen Appliances",
+              "Mixer Grinders",
+              "Preethi Appliances"
+            ],
+            "short_description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.",
+            "bullet_points": [
+              "**Easy to Use**: Effortless mixing and grinding with just one touch",
+              "**Convenient**: 3/4 jars for various cooking needs",
+              "**Durable**: Stainless steel blades for long-lasting performance",
+              "**Sleek Design**: White/Black body for a stylish kitchen",
+              "**Value for Money**: Excellent performance and features at an affordable price"
+            ],
+            "detailed_description": "The Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.",
+            "specs": {
+              "power": "750W",
+              "jars": "3/4",
+              "blades": "Stainless Steel",
+              "color": "White/Black",
+              "features": "Pulse Button"
+            },
+            "price": "\u20b9 6,499.00",
+            "description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.\n\nKey Features:\n\n\u2022 **750W Motor**: Powerful and efficient for easy mixing and grinding\n\n\u2022 **3/4 Jars**: Convenient and versatile for various cooking needs\n\n\u2022 **Stainless Steel Blades**: Durable and easy to clean for long-lasting performance\n\n\u2022 **Pulse Button**: Effortless mixing and grinding with just one touch\n\n\u2022 **White/Black Body**: Sleek and modern design for a stylish kitchen\n\nThe Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.\n\nSpecifications:\n\n- power: 750W\n\n- jars: 3/4\n\n- blades: Stainless Steel\n\n- color: White/Black\n\n- features: Pulse Button"
+          },
+          "cope_scores": {
+            "variant_id": "cfc5789e-0e6a-4597-a6d1-395a48c7f928",
+            "overall_score": 88,
+            "purchase_probability": 79.5,
+            "expected_ctr": 72.4,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 92,
+            "confidence_score": 90
+          }
+        },
+        {
+          "variant_id": "1aa7ece5-3228-4302-ae3c-2cce5f5b146c",
+          "type": "C",
+          "angle": "Urgency & Lifestyle Focused",
+          "title": "Preethi Mixer Grinder - Limited Time Offer!",
+          "short_description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.",
+          "key_features": [
+            "**Limited Time Offer**: Get the Preethi Mixer Grinder at an unbeatable price!",
+            "**Perfect Blend**: 750W motor, 3/4 jars, stainless steel blades, and a pulse button",
+            "**Convenient**: 3/4 jars for various cooking needs",
+            "**Durable**: Stainless steel blades for long-lasting performance",
+            "**Sleek Design**: White/Black body for a stylish kitchen"
+          ],
+          "detailed_description": "The Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.",
+          "specifications": {
+            "power": "750W",
+            "jars": "3/4",
+            "blades": "Stainless Steel",
+            "color": "White/Black",
+            "features": "Pulse Button"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.\n\nKey Features:\n\n\u2022 **Limited Time Offer**: Get the Preethi Mixer Grinder at an unbeatable price!\n\n\u2022 **Perfect Blend**: 750W motor, 3/4 jars, stainless steel blades, and a pulse button\n\n\u2022 **Convenient**: 3/4 jars for various cooking needs\n\n\u2022 **Durable**: Stainless steel blades for long-lasting performance\n\n\u2022 **Sleek Design**: White/Black body for a stylish kitchen\n\nThe Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.\n\nSpecifications:\n\n- power: 750W\n\n- jars: 3/4\n\n- blades: Stainless Steel\n\n- color: White/Black\n\n- features: Pulse Button",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Preethi Mixer Grinder - Limited Time Offer!",
+            "meta_description": "Buy Preethi Mixer Grinder online at best price in India. 750W, 3/4 Jars, Stainless Steel Blades, White/Black Body. Free Shipping!",
+            "keywords": [
+              "Preethi Mixer Grinder",
+              "750W Mixer",
+              "3/4 Jars Mixer",
+              "Stainless Steel Blades",
+              "Mixer Grinder Online"
+            ],
+            "tags": [
+              "Kitchen Appliances",
+              "Mixer Grinders",
+              "Preethi Appliances"
+            ],
+            "short_description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.",
+            "bullet_points": [
+              "**Limited Time Offer**: Get the Preethi Mixer Grinder at an unbeatable price!",
+              "**Perfect Blend**: 750W motor, 3/4 jars, stainless steel blades, and a pulse button",
+              "**Convenient**: 3/4 jars for various cooking needs",
+              "**Durable**: Stainless steel blades for long-lasting performance",
+              "**Sleek Design**: White/Black body for a stylish kitchen"
+            ],
+            "detailed_description": "The Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.",
+            "specs": {
+              "power": "750W",
+              "jars": "3/4",
+              "blades": "Stainless Steel",
+              "color": "White/Black",
+              "features": "Pulse Button"
+            },
+            "price": "\u20b9 6,499.00",
+            "description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.\n\nKey Features:\n\n\u2022 **750W Motor**: Powerful and efficient for easy mixing and grinding\n\n\u2022 **3/4 Jars**: Convenient and versatile for various cooking needs\n\n\u2022 **Stainless Steel Blades**: Durable and easy to clean for long-lasting performance\n\n\u2022 **Pulse Button**: Effortless mixing and grinding with just one touch\n\n\u2022 **White/Black Body**: Sleek and modern design for a stylish kitchen\n\nThe Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.\n\nSpecifications:\n\n- power: 750W\n\n- jars: 3/4\n\n- blades: Stainless Steel\n\n- color: White/Black\n\n- features: Pulse Button"
+          },
+          "cope_scores": {
+            "variant_id": "1aa7ece5-3228-4302-ae3c-2cce5f5b146c",
+            "overall_score": 85,
+            "purchase_probability": 76.9,
+            "expected_ctr": 69.5,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 90,
+            "confidence_score": 88
+          }
+        }
+      ],
+      "decision": {
+        "action": "publish",
+        "reason": "Clear winner identified with high confidence.",
+        "recommended_variant_id": "f7057b2b-3b15-4677-8ef1-dcee47fde733"
+      },
+      "marketing": {
+        "platform": "olx",
+        "platform_description": "Get the perfect blend with Preethi Mixer Grinder. 750W motor, 3/4 jars, stainless steel blades, and a pulse button for effortless mixing.\n\nKey Features:\n\n\u2022 **750W Motor**: Powerful and efficient for easy mixing and grinding\n\n\u2022 **3/4 Jars**: Convenient and versatile for various cooking needs\n\n\u2022 **Stainless Steel Blades**: Durable and easy to clean for long-lasting performance\n\n\u2022 **Pulse Button**: Effortless mixing and grinding with just one touch\n\n\u2022 **White/Black Body**: Sleek and modern design for a stylish kitchen\n\nThe Preethi Mixer Grinder is a must-have for any kitchen. With its powerful 750W motor, you can easily mix and grind various ingredients. The 3/4 jars provide convenient and versatile cooking options. The stainless steel blades are durable and easy to clean, ensuring long-lasting performance. The pulse button allows for effortless mixing and grinding with just one touch. The sleek and modern design of the White/Black body adds a stylish touch to your kitchen.\n\nSpecifications:\n\n- power: 750W\n\n- jars: 3/4\n\n- blades: Stainless Steel\n\n- color: White/Black\n\n- features: Pulse Button",
+        "call_to_action": "Order now on Olx to get the best deal!"
+      },
+      "validation": {
+        "is_valid": true,
+        "issues": []
+      },
+      "scores": {
+        "privacy_score": 100,
+        "seo_score": 100,
+        "marketing_score": 90,
+        "overall_score": 95,
+        "feedback": "Excellent optimization. Copy is highly persuasive and well-structured."
+      }
+    }
+  },
+  "token_usage": null,
+  "estimated_cost": null,
+  "cache_hit": null,
+  "error": null,
+  "capability_metadata": {
+    "image_processing_supported": true,
+    "privacy_anonymization": true,
+    "rag_context": true,
+    "multi_agent_workflow": true
+  }
+}

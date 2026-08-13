@@ -1,0 +1,19 @@
+{
+  "experiment_id": "EXP_20260814_001603",
+  "test_case_id": "TC009",
+  "system": "baseline",
+  "timestamp": "2026-08-14T00:20:34.625369",
+  "success": true,
+  "latency_ms": 5747.78,
+  "model": "llama-3.1-8b-instant",
+  "raw_output": "**Introducing the Prestige Omega Deluxe Cookware Set**\n\nUnlock the art of effortless cooking with the Prestige Omega Deluxe Cookware Set, a comprehensive 5-piece non-stick cookware collection designed to elevate your culinary experience. Crafted with premium quality and durability in mind, this exceptional cookware set is perfect for everyday cooking and compatible with both gas and induction cooktops.\n\n**Key Features:**\n\n- **Non-Stick Coating**: Enjoy effortless food release and maintenance with our advanced non-stick coating, ensuring your dishes come out perfectly each time.\n- **Heat-Resistant Handles**: Stay safe and in control with our heat-resistant handles, designed for comfortable grip and secure handling.\n- **Dishwasher-Friendly**: Clean up is a breeze with our dishwasher-friendly cookware, saving you time and effort in the kitchen.\n\n**Complete Your Kitchen Essentials with:**\n\n- **Fry Pan**: Perfect for searing and cooking a variety of dishes, from omelets to stir-fries.\n- **Sauce Pan**: Ideal for heating sauces, soups, and other liquids, this pan is a versatile addition to any kitchen.\n- **Kadai**: A staple in Indian cuisine, this versatile Kadai is perfect for cooking curries, stews, and more.\n- **Glass Lid**: Enhance the cooking experience with our transparent glass lid, allowing you to monitor your dishes without lifting the lid.\n- **Frying Spatula**: Complete your cooking experience with our durable frying spatula, perfect for scraping the sides of the pan and serving your creations.\n\n**Experience the Prestige Difference:**\n\nWith its sleek design, premium materials, and exceptional performance, the Prestige Omega Deluxe Cookware Set is a must-have for any serious home cook or professional chef. Upgrade your cooking experience today and discover a world of culinary possibilities with the Prestige Omega Deluxe Cookware Set.\n\n**Order now and enjoy a lifetime of effortless cooking!**",
+  "token_usage": null,
+  "estimated_cost": null,
+  "error": null,
+  "capability_metadata": {
+    "image_processing_supported": false,
+    "privacy_anonymization": false,
+    "rag_context": false,
+    "multi_agent_workflow": false
+  }
+}

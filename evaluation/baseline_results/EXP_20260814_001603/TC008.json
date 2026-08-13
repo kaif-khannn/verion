@@ -1,0 +1,19 @@
+{
+  "experiment_id": "EXP_20260814_001603",
+  "test_case_id": "TC008",
+  "system": "baseline",
+  "timestamp": "2026-08-14T00:20:10.272244",
+  "success": true,
+  "latency_ms": 5577.59,
+  "model": "llama-3.1-8b-instant",
+  "raw_output": "**Effortless Cooking with the Preethi Mixer Grinder**\n\nExperience the perfect blend of power and convenience with the Preethi Mixer Grinder, designed to make your cooking tasks a breeze. This high-performance mixer grinder is equipped with a robust 750W motor that effortlessly handles even the toughest ingredients.\n\n**Multiple Jars for Versatility**\n\nThis Preethi Mixer Grinder comes with 3 or 4 jars, depending on the model, allowing you to mix, grind, and blend a wide variety of ingredients with ease. Whether you're making a delicious smoothie, grinding spices, or kneading dough, this mixer grinder has got you covered.\n\n**Durable Stainless Steel Blades**\n\nThe stainless steel blades of the Preethi Mixer Grinder are not only durable but also resistant to corrosion, ensuring that your mixer grinder remains in top condition for a long time.\n\n**Pulse Button for Precision Control**\n\nThe pulse button on this mixer grinder allows for precise control over the mixing process, giving you the flexibility to create the perfect texture and consistency for your recipes.\n\n** Sleek and Stylish Design**\n\nThe White/Black body of the Preethi Mixer Grinder not only looks stylish but also makes it easy to clean and maintain.\n\n**Technical Specifications:**\n\n- Power: 750W\n- Jars: 3 or 4 jars (dependent on model)\n- Blades: Stainless Steel\n- Color: White/Black\n- Features: Pulse button\n\n**For more information or to purchase this product, please contact Priya at priya.test@example.com or +91-98888-77777.**",
+  "token_usage": null,
+  "estimated_cost": null,
+  "error": null,
+  "capability_metadata": {
+    "image_processing_supported": false,
+    "privacy_anonymization": false,
+    "rag_context": false,
+    "multi_agent_workflow": false
+  }
+}

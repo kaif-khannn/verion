@@ -1,0 +1,19 @@
+{
+  "experiment_id": "EXP_20260814_000603",
+  "test_case_id": "TC003",
+  "system": "baseline",
+  "timestamp": "2026-08-14T00:07:08.998057",
+  "success": true,
+  "latency_ms": 5827.66,
+  "model": "llama-3.1-8b-instant",
+  "raw_output": "**Product Title:** Sony WH-1000XM5 Over-Ear Wireless Headphones\n\n**Short Description:** Upgrade your audio experience with the Sony WH-1000XM5, featuring advanced noise cancellation, high-quality sound, and long-lasting battery life.\n\n**Key Features:**\n\n- Advanced Noise Cancellation\n- High-Quality Audio\n- Wireless Connectivity via Bluetooth\n- Multipoint Connectivity for seamless switching between devices\n- Long Battery Life up to 30 hours\n- Sleek Black Design\n\n**Detailed Description:**\n\nExperience unparalleled sound quality and comfort with the Sony WH-1000XM5 over-ear wireless headphones. With its advanced noise cancellation technology, you can enjoy your favorite music, podcasts, or audiobooks without distractions. The high-quality audio delivers clear and detailed sound, while the comfortable earcups ensure hours of listening pleasure.\n\nEnjoy long battery life up to 30 hours, making it perfect for extended travel, commutes, or gaming sessions. The sleek black design adds a touch of sophistication to your daily routine. Whether you're working, relaxing, or exercising, the Sony WH-1000XM5 has got you covered.\n\n**Specifications:**\n\n- Features: Active Noise Cancellation, Bluetooth, Multipoint\n- Battery Life: Up to 30 hours\n- Color: Black\n\n**Contact Information:** For any queries or to place an order, please contact Arjun Mehta at arjun.mehta.test@example.com or +91-90000-12345.\n\n**SEO Keywords:** Sony WH-1000XM5, wireless headphones, over-ear headphones, noise cancellation, high-quality audio, long battery life, black design, Bluetooth, multipoint connectivity.",
+  "token_usage": null,
+  "estimated_cost": null,
+  "error": null,
+  "capability_metadata": {
+    "image_processing_supported": false,
+    "privacy_anonymization": false,
+    "rag_context": false,
+    "multi_agent_workflow": false
+  }
+}

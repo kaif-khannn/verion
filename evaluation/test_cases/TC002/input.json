@@ -1,0 +1,54 @@
+{
+  "test_case_id": "TC002",
+  "product_name": "HP Laptop 15-inch",
+  "brand": "HP",
+  "category": "Laptop",
+  "price": "around 60k",
+  "description": "hp laptop 15 inch maybe 16gb?? i5 13th gen, 512 ssd, silver, good for office and study, price around 60k. screen is full hd i think. has wifi and windows. not sure exact model. battery decent.",
+  "specifications": {
+    "display": "15-inch Full HD",
+    "processor": "Intel Core i5 13th Gen",
+    "ram": "16GB",
+    "storage": "512GB SSD",
+    "color": "Silver",
+    "os": "Windows"
+  },
+  "images": [
+    "images/717rxpTGT9L._SX679_.jpg",
+    "images/71J+OBadJCL.jpg",
+    "images/71QqUd3zfFL._SX679_.jpg",
+    "images/71xnBicOXwL._SX679_.jpg",
+    "images/81u1utr70JL._SX679_.jpg"
+  ],
+  "product": "Laptop",
+  "niche": "Electronics & Smartphone",
+  "input_condition": "Messy description",
+  "pii": {
+    "present": false,
+    "fields": []
+  },
+  "product_input": {
+    "raw_description": "hp laptop 15 inch maybe 16gb?? i5 13th gen, 512 ssd, silver, good for office and study, price around 60k. screen is full hd i think. has wifi and windows. not sure exact model. battery decent."
+  },
+  "image": {
+    "provided": true,
+    "path": "images/717rxpTGT9L._SX679_.jpg"
+  },
+  "expected_facts": {
+    "product_name": "HP Laptop 15-inch",
+    "brand": "HP",
+    "category": "Laptop",
+    "display": "15-inch Full HD (probable)",
+    "processor": "Intel Core i5 13th Gen",
+    "ram": "16GB (probable)",
+    "storage": "512GB SSD",
+    "color": "Silver",
+    "os": "Windows",
+    "price": "around 60k"
+  },
+  "visual_facts": [
+    "Laptop",
+    "Silver color",
+    "HP logo"
+  ]
+}

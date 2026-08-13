@@ -1,0 +1,55 @@
+{
+  "test_case_id": "TC008",
+  "product_name": "Preethi Mixer Grinder",
+  "brand": "Preethi",
+  "category": "Mixer/Blender",
+  "description": "mixer grinder 750 watt i think, 3 jars maybe 4, stainless blades, white/black body, brand looks like Preethi? customer says call Priya at priya.test@example.com / +91-98888-77777. not sure exact model or jar sizes. looks like it has pulse button.",
+  "specifications": {
+    "power": "750W",
+    "jars": "3 or 4 jars",
+    "blades": "Stainless steel",
+    "color": "White/Black",
+    "features": "Pulse button",
+    "customer_note": "call Priya at priya.test@example.com / +91-98888-77777"
+  },
+  "images": [
+    "images/1.jpg",
+    "images/2.jpg",
+    "images/3.jpg",
+    "images/4.jpg"
+  ],
+  "product": "Mixer/Blender",
+  "niche": "Kitchen & Home",
+  "input_condition": "Messy",
+  "pii": {
+    "present": true,
+    "fields": [
+      "name",
+      "email",
+      "phone"
+    ]
+  },
+  "product_input": {
+    "raw_description": "mixer grinder 750 watt i think, 3 jars maybe 4, stainless blades, white/black body, brand looks like Preethi? customer says call Priya at priya.test@example.com / +91-98888-77777. not sure exact model or jar sizes. looks like it has pulse button."
+  },
+  "image": {
+    "provided": true,
+    "path": "images/1.jpg"
+  },
+  "expected_facts": {
+    "product_name": "Preethi Mixer Grinder",
+    "brand": "Preethi",
+    "category": "Mixer/Blender",
+    "power": "750W (probable)",
+    "jars": "3 or 4 jars (probable)",
+    "blades": "Stainless steel",
+    "color": "White/Black",
+    "features": "Pulse button (probable)"
+  },
+  "visual_facts": [
+    "Mixer grinder body",
+    "White/Black color",
+    "Preethi brand text",
+    "Multiple jars"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "experiment_id": "EXP_20260814_000603",
+  "test_case_id": "TC002",
+  "system": "baseline",
+  "timestamp": "2026-08-14T00:06:39.864419",
+  "success": true,
+  "latency_ms": 5591.41,
+  "model": "llama-3.1-8b-instant",
+  "raw_output": "**Product Title:** HP 15-inch Laptop with Intel Core i5 13th Gen, 16GB RAM, 512GB SSD - Silver\n\n**Short Description:** Experience seamless performance and stunning visuals with the HP 15-inch Laptop, featuring an Intel Core i5 13th Gen processor, 16GB of RAM, and a 512GB SSD. Perfect for office work and study, this laptop is available in silver.\n\n**Key Features:**\n\n- 15-inch Full HD Display\n- Intel Core i5 13th Gen Processor\n- 16GB RAM for smooth multitasking\n- 512GB SSD for fast storage and loading\n- Windows Operating System\n- Silver Color\n\n**Detailed Description:** The HP 15-inch Laptop is an ideal choice for those who require a reliable and efficient device for office work and study. With its Intel Core i5 13th Gen processor, 16GB of RAM, and 512GB SSD, this laptop provides a seamless performance experience. The 15-inch Full HD display offers crisp and clear visuals, making it perfect for watching videos, browsing the web, and working on projects. The laptop also features WiFi connectivity, allowing you to stay connected and productive on the go.\n\n**Specifications:**\n\n- Display: 15-inch Full HD\n- Processor: Intel Core i5 13th Gen\n- RAM: 16GB\n- Storage: 512GB SSD\n- Color: Silver\n- Operating System: Windows\n\n**SEO Keywords:** HP laptop, 15-inch laptop, Intel Core i5 13th Gen, 16GB RAM, 512GB SSD, silver laptop, Windows laptop, office laptop, study laptop, HP laptop price in India.",
+  "token_usage": null,
+  "estimated_cost": null,
+  "error": null,
+  "capability_metadata": {
+    "image_processing_supported": false,
+    "privacy_anonymization": false,
+    "rag_context": false,
+    "multi_agent_workflow": false
+  }
+}

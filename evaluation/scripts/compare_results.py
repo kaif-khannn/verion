@@ -29,7 +29,12 @@ METRIC_DIRECTIONS = {
     "median_latency_ms": "lower_is_better",
     "p95_latency_ms": "lower_is_better",
     "overall_completeness_pct": "higher_is_better",
+    "information_coverage_pct": "higher_is_better",
+    "specification_accuracy_pct": "higher_is_better",
+    "unsupported_claim_rate_pct": "lower_is_better",
+    "visual_attribute_recall_pct": "higher_is_better",
     "pii_protection_rate_pct": "higher_is_better",
+    "pii_leakage_rate_pct": "lower_is_better"
 }
 
 def find_latest_metrics_file() -> Optional[Path]:
@@ -110,14 +115,29 @@ def run_comparison(exp_id: Optional[str] = None):
     b_comp = baseline_m.get("content_completeness", {})
     v_comp = verion_m.get("content_completeness", {})
     comparison_results["comparisons"]["overall_completeness_pct"] = calculate_metric_delta(
-        b_comp.get("overall_completeness_pct", 0.0), v_comp.get("overall_completeness_pct", 0.0), "higher_is_better"
+        b_comp.get("overall_completeness_pct", 0.0), v_comp.get("overall_completeness_pct", 0.0), METRIC_DIRECTIONS["overall_completeness_pct"]
+    )
+    comparison_results["comparisons"]["information_coverage_pct"] = calculate_metric_delta(
+        b_comp.get("information_coverage_pct", 0.0), v_comp.get("information_coverage_pct", 0.0), METRIC_DIRECTIONS["information_coverage_pct"]
+    )
+    comparison_results["comparisons"]["specification_accuracy_pct"] = calculate_metric_delta(
+        b_comp.get("specification_accuracy_pct", 0.0), v_comp.get("specification_accuracy_pct", 0.0), METRIC_DIRECTIONS["specification_accuracy_pct"]
+    )
+    comparison_results["comparisons"]["unsupported_claim_rate_pct"] = calculate_metric_delta(
+        b_comp.get("unsupported_claim_rate_pct", 0.0), v_comp.get("unsupported_claim_rate_pct", 0.0), METRIC_DIRECTIONS["unsupported_claim_rate_pct"]
+    )
+    comparison_results["comparisons"]["visual_attribute_recall_pct"] = calculate_metric_delta(
+        b_comp.get("visual_attribute_recall_pct", 0.0), v_comp.get("visual_attribute_recall_pct", 0.0), METRIC_DIRECTIONS["visual_attribute_recall_pct"]
     )
 
     # 4. Privacy Comparison
     b_priv = baseline_m.get("privacy", {})
     v_priv = verion_m.get("privacy", {})
     comparison_results["comparisons"]["pii_protection_rate_pct"] = calculate_metric_delta(
-        b_priv.get("pii_protection_rate_pct", 0.0), v_priv.get("pii_protection_rate_pct", 0.0), "higher_is_better"
+        b_priv.get("pii_protection_rate_pct", 0.0), v_priv.get("pii_protection_rate_pct", 0.0), METRIC_DIRECTIONS["pii_protection_rate_pct"]
+    )
+    comparison_results["comparisons"]["pii_leakage_rate_pct"] = calculate_metric_delta(
+        b_priv.get("pii_leakage_rate_pct", 0.0), v_priv.get("pii_leakage_rate_pct", 0.0), METRIC_DIRECTIONS["pii_leakage_rate_pct"]
     )
 
     COMPARISON_DIR.mkdir(parents=True, exist_ok=True)

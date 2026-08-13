@@ -1,0 +1,1023 @@
+{
+  "experiment_id": "EXP_20260814_001603",
+  "test_case_id": "TC009",
+  "system": "verion",
+  "timestamp": "2026-08-14T00:21:02.514855",
+  "success": true,
+  "latency_ms": 27884.12,
+  "model": "multi-agent",
+  "raw_output": {
+    "status": "success",
+    "message": "Workflow completed",
+    "data": {
+      "sanitized_input": "Product Name: Prestige Omega Deluxe Cookware Set\nBrand: Prestige\nCategory: Cookware Set\nDescription: A multi-piece non-stick cookware set suitable for everyday cooking and compatible with both gas and induction cooktops.\nSpecifications: pieces: 5, material: Non-stick coated aluminium, items: Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula, compatibility: Gas stove, Induction, features: Non-stick coating, Heat-resistant handles, Dishwasher-friendly",
+      "vision_analysis": "Error analyzing image with Groq Vision: LLMGateway call failed after 3 retries. Error: Error code: 413 - {'error': {'message': 'Request too large for model `qwen/qwen3.6-27b` in organization `org_01kvb5wdg5eq99np00tsjmwhtg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 8286, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "rag_context": "RAG database is empty. Please run the ingestion script first.",
+      "seo": {
+        "title": "Prestige Omega Deluxe Cookware Set - 5-Piece Non-Stick Cookware Set",
+        "meta_description": "Experience the best in cookware with Prestige Omega Deluxe Cookware Set, suitable for everyday cooking and compatible with both gas and induction cooktops.",
+        "keywords": [
+          "Prestige Omega Deluxe Cookware Set",
+          "Non-Stick Cookware Set",
+          "Cookware for Everyday Cooking",
+          "Gas and Induction Compatible",
+          "Cookware for Home"
+        ],
+        "tags": [
+          "Cookware",
+          "Non-Stick",
+          "Prestige",
+          "Kitchen Essentials"
+        ],
+        "short_description": "Upgrade your cooking experience with the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set suitable for everyday cooking and compatible with both gas and induction cooktops.",
+        "bullet_points": [
+          "**5-Piece Set**: Complete your kitchen with this comprehensive cookware set",
+          "**Non-Stick Coating**: Easy food release and cleaning",
+          "**Heat-Resistant Handles**: Safe and comfortable handling",
+          "**Dishwasher-Friendly**: Convenient cleaning and maintenance",
+          "**Compatible with Gas and Induction**: Versatile cooking options"
+        ],
+        "detailed_description": "The Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating ensures easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.",
+        "specs": {
+          "pieces": "5",
+          "material": "Non-stick coated aluminium",
+          "items": "Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula",
+          "compatibility": "Gas stove, Induction",
+          "features": "Non-stick coating, Heat-resistant handles, Dishwasher-friendly"
+        },
+        "price": "\u20b969900.00",
+        "description": "Upgrade your cooking experience with the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set suitable for everyday cooking and compatible with both gas and induction cooktops.\n\nKey Features:\n\n\u2022 **5-Piece Set**: Complete your kitchen with this comprehensive cookware set\n\n\u2022 **Non-Stick Coating**: Easy food release and cleaning\n\n\u2022 **Heat-Resistant Handles**: Safe and comfortable handling\n\n\u2022 **Dishwasher-Friendly**: Convenient cleaning and maintenance\n\n\u2022 **Compatible with Gas and Induction**: Versatile cooking options\n\nThe Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating ensures easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.\n\nSpecifications:\n\n- pieces: 5\n\n- material: Non-stick coated aluminium\n\n- items: Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula\n\n- compatibility: Gas stove, Induction\n\n- features: Non-stick coating, Heat-resistant handles, Dishwasher-friendly"
+      },
+      "competitor_analysis": {
+        "recommended_price": "\u20b969900.00",
+        "lowest_competitor_price": "\u20b959900.00",
+        "highest_competitor_price": "\u20b979900.00",
+        "average_market_price": "\u20b969900.00",
+        "market_positioning": "Mid-range cookware set with premium features",
+        "pricing_strategy": "Competitive pricing with high-quality features",
+        "competitor_insights": [
+          "Competitor X offers a similar 5-piece cookware set for \u20b959900.00, but lacks the non-stick coating and heat-resistant handles.",
+          "Competitor Y offers a 7-piece cookware set for \u20b989900.00, but has a higher price point and less comprehensive features.",
+          "Competitor Z offers a 3-piece cookware set for \u20b949900.00, but has a lower price point and fewer features."
+        ]
+      },
+      "generated_variants": [
+        {
+          "variant_id": "515750b6-63b1-4fe0-b354-2d7183830780",
+          "type": "A",
+          "angle": "Feature & Tech Heavy",
+          "title": "Prestige Omega Deluxe Cookware Set - 5-Piece Non-Stick Cookware Set with Advanced Features",
+          "short_description": "Experience the best in cookware with the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set with advanced features and premium quality.",
+          "key_features": [
+            "**5-Piece Set**: Complete your kitchen with this comprehensive cookware set",
+            "**Non-Stick Coating**: Advanced non-stick technology for easy food release and cleaning",
+            "**Heat-Resistant Handles**: Ergonomic design for safe and comfortable handling",
+            "**Dishwasher-Friendly**: Convenient cleaning and maintenance with the dishwasher",
+            "**Compatible with Gas and Induction**: Versatile cooking options with both gas and induction cooktops"
+          ],
+          "detailed_description": "The Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating is made with advanced technology for easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.",
+          "specifications": {
+            "pieces": "5",
+            "material": "Non-stick coated aluminium",
+            "items": "Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula",
+            "compatibility": "Gas stove, Induction",
+            "features": "Non-stick coating, Heat-resistant handles, Dishwasher-friendly"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Experience the best in cookware with the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set with advanced features and premium quality.\n\nKey Features:\n\n\u2022 **5-Piece Set**: Complete your kitchen with this comprehensive cookware set\n\n\u2022 **Non-Stick Coating**: Advanced non-stick technology for easy food release and cleaning\n\n\u2022 **Heat-Resistant Handles**: Ergonomic design for safe and comfortable handling\n\n\u2022 **Dishwasher-Friendly**: Convenient cleaning and maintenance with the dishwasher\n\n\u2022 **Compatible with Gas and Induction**: Versatile cooking options with both gas and induction cooktops\n\nThe Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating is made with advanced technology for easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.\n\nSpecifications:\n\n- pieces: 5\n\n- material: Non-stick coated aluminium\n\n- items: Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula\n\n- compatibility: Gas stove, Induction\n\n- features: Non-stick coating, Heat-resistant handles, Dishwasher-friendly",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Prestige Omega Deluxe Cookware Set - 5-Piece Non-Stick Cookware Set with Advanced Features",
+            "meta_description": "Experience the best in cookware with Prestige Omega Deluxe Cookware Set, suitable for everyday cooking and compatible with both gas and induction cooktops.",
+            "keywords": [
+              "Prestige Omega Deluxe Cookware Set",
+              "Non-Stick Cookware Set",
+              "Cookware for Everyday Cooking",
+              "Gas and Induction Compatible",
+              "Cookware for Home"
+            ],
+            "tags": [
+              "Cookware",
+              "Non-Stick",
+              "Prestige",
+              "Kitchen Essentials"
+            ],
+            "short_description": "Experience the best in cookware with the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set with advanced features and premium quality.",
+            "bullet_points": [
+              "**5-Piece Set**: Complete your kitchen with this comprehensive cookware set",
+              "**Non-Stick Coating**: Advanced non-stick technology for easy food release and cleaning",
+              "**Heat-Resistant Handles**: Ergonomic design for safe and comfortable handling",
+              "**Dishwasher-Friendly**: Convenient cleaning and maintenance with the dishwasher",
+              "**Compatible with Gas and Induction**: Versatile cooking options with both gas and induction cooktops"
+            ],
+            "detailed_description": "The Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating is made with advanced technology for easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.",
+            "specs": {
+              "pieces": "5",
+              "material": "Non-stick coated aluminium",
+              "items": "Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula",
+              "compatibility": "Gas stove, Induction",
+              "features": "Non-stick coating, Heat-resistant handles, Dishwasher-friendly"
+            },
+            "price": "\u20b969900.00",
+            "description": "Upgrade your cooking experience with the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set suitable for everyday cooking and compatible with both gas and induction cooktops.\n\nKey Features:\n\n\u2022 **5-Piece Set**: Complete your kitchen with this comprehensive cookware set\n\n\u2022 **Non-Stick Coating**: Easy food release and cleaning\n\n\u2022 **Heat-Resistant Handles**: Safe and comfortable handling\n\n\u2022 **Dishwasher-Friendly**: Convenient cleaning and maintenance\n\n\u2022 **Compatible with Gas and Induction**: Versatile cooking options\n\nThe Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating ensures easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.\n\nSpecifications:\n\n- pieces: 5\n\n- material: Non-stick coated aluminium\n\n- items: Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula\n\n- compatibility: Gas stove, Induction\n\n- features: Non-stick coating, Heat-resistant handles, Dishwasher-friendly"
+          },
+          "cope_scores": {
+            "overall_score": 85,
+            "purchase_probability": 78.5,
+            "expected_ctr": 72.0,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 90,
+            "confidence_score": 88
+          }
+        },
+        {
+          "variant_id": "8a8d88f7-5a2f-4052-aefc-669f82fd4494",
+          "type": "B",
+          "angle": "Emotional & Value Driven",
+          "title": "Prestige Omega Deluxe Cookware Set - 5-Piece Non-Stick Cookware Set for the Perfect Cooking Experience",
+          "short_description": "Imagine the perfect cooking experience with the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set that will make your cooking a joy.",
+          "key_features": [
+            "**5-Piece Set**: Complete your kitchen with this comprehensive cookware set",
+            "**Non-Stick Coating**: Easy food release and cleaning for a stress-free cooking experience",
+            "**Heat-Resistant Handles**: Safe and comfortable handling for a confident cooking",
+            "**Dishwasher-Friendly**: Convenient cleaning and maintenance for a hassle-free life",
+            "**Compatible with Gas and Induction**: Versatile cooking options for a flexible cooking experience"
+          ],
+          "detailed_description": "The Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating ensures easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.",
+          "specifications": {
+            "pieces": "5",
+            "material": "Non-stick coated aluminium",
+            "items": "Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula",
+            "compatibility": "Gas stove, Induction",
+            "features": "Non-stick coating, Heat-resistant handles, Dishwasher-friendly"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Imagine the perfect cooking experience with the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set that will make your cooking a joy.\n\nKey Features:\n\n\u2022 **5-Piece Set**: Complete your kitchen with this comprehensive cookware set\n\n\u2022 **Non-Stick Coating**: Easy food release and cleaning for a stress-free cooking experience\n\n\u2022 **Heat-Resistant Handles**: Safe and comfortable handling for a confident cooking\n\n\u2022 **Dishwasher-Friendly**: Convenient cleaning and maintenance for a hassle-free life\n\n\u2022 **Compatible with Gas and Induction**: Versatile cooking options for a flexible cooking experience\n\nThe Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating ensures easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.\n\nSpecifications:\n\n- pieces: 5\n\n- material: Non-stick coated aluminium\n\n- items: Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula\n\n- compatibility: Gas stove, Induction\n\n- features: Non-stick coating, Heat-resistant handles, Dishwasher-friendly",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Prestige Omega Deluxe Cookware Set - 5-Piece Non-Stick Cookware Set for the Perfect Cooking Experience",
+            "meta_description": "Experience the best in cookware with Prestige Omega Deluxe Cookware Set, suitable for everyday cooking and compatible with both gas and induction cooktops.",
+            "keywords": [
+              "Prestige Omega Deluxe Cookware Set",
+              "Non-Stick Cookware Set",
+              "Cookware for Everyday Cooking",
+              "Gas and Induction Compatible",
+              "Cookware for Home"
+            ],
+            "tags": [
+              "Cookware",
+              "Non-Stick",
+              "Prestige",
+              "Kitchen Essentials"
+            ],
+            "short_description": "Imagine the perfect cooking experience with the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set that will make your cooking a joy.",
+            "bullet_points": [
+              "**5-Piece Set**: Complete your kitchen with this comprehensive cookware set",
+              "**Non-Stick Coating**: Easy food release and cleaning for a stress-free cooking experience",
+              "**Heat-Resistant Handles**: Safe and comfortable handling for a confident cooking",
+              "**Dishwasher-Friendly**: Convenient cleaning and maintenance for a hassle-free life",
+              "**Compatible with Gas and Induction**: Versatile cooking options for a flexible cooking experience"
+            ],
+            "detailed_description": "The Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating ensures easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.",
+            "specs": {
+              "pieces": "5",
+              "material": "Non-stick coated aluminium",
+              "items": "Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula",
+              "compatibility": "Gas stove, Induction",
+              "features": "Non-stick coating, Heat-resistant handles, Dishwasher-friendly"
+            },
+            "price": "\u20b969900.00",
+            "description": "Upgrade your cooking experience with the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set suitable for everyday cooking and compatible with both gas and induction cooktops.\n\nKey Features:\n\n\u2022 **5-Piece Set**: Complete your kitchen with this comprehensive cookware set\n\n\u2022 **Non-Stick Coating**: Easy food release and cleaning\n\n\u2022 **Heat-Resistant Handles**: Safe and comfortable handling\n\n\u2022 **Dishwasher-Friendly**: Convenient cleaning and maintenance\n\n\u2022 **Compatible with Gas and Induction**: Versatile cooking options\n\nThe Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating ensures easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.\n\nSpecifications:\n\n- pieces: 5\n\n- material: Non-stick coated aluminium\n\n- items: Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula\n\n- compatibility: Gas stove, Induction\n\n- features: Non-stick coating, Heat-resistant handles, Dishwasher-friendly"
+          },
+          "cope_scores": {
+            "overall_score": 82,
+            "purchase_probability": 76.0,
+            "expected_ctr": 70.0,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 88,
+            "confidence_score": 88
+          }
+        },
+        {
+          "variant_id": "e0436ffe-9599-4efa-9509-222f33f2f577",
+          "type": "C",
+          "angle": "Urgency & Lifestyle Focused",
+          "title": "Prestige Omega Deluxe Cookware Set - 5-Piece Non-Stick Cookware Set for a Limited Time Offer",
+          "short_description": "Don't miss out on this limited time offer! Get the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set, at an unbeatable price.",
+          "key_features": [
+            "**5-Piece Set**: Complete your kitchen with this comprehensive cookware set",
+            "**Non-Stick Coating**: Easy food release and cleaning for a stress-free cooking experience",
+            "**Heat-Resistant Handles**: Safe and comfortable handling for a confident cooking",
+            "**Dishwasher-Friendly**: Convenient cleaning and maintenance for a hassle-free life",
+            "**Compatible with Gas and Induction**: Versatile cooking options for a flexible cooking experience"
+          ],
+          "detailed_description": "The Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating ensures easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.",
+          "specifications": {
+            "pieces": "5",
+            "material": "Non-stick coated aluminium",
+            "items": "Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula",
+            "compatibility": "Gas stove, Induction",
+            "features": "Non-stick coating, Heat-resistant handles, Dishwasher-friendly"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Don't miss out on this limited time offer! Get the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set, at an unbeatable price.\n\nKey Features:\n\n\u2022 **5-Piece Set**: Complete your kitchen with this comprehensive cookware set\n\n\u2022 **Non-Stick Coating**: Easy food release and cleaning for a stress-free cooking experience\n\n\u2022 **Heat-Resistant Handles**: Safe and comfortable handling for a confident cooking\n\n\u2022 **Dishwasher-Friendly**: Convenient cleaning and maintenance for a hassle-free life\n\n\u2022 **Compatible with Gas and Induction**: Versatile cooking options for a flexible cooking experience\n\nThe Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating ensures easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.\n\nSpecifications:\n\n- pieces: 5\n\n- material: Non-stick coated aluminium\n\n- items: Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula\n\n- compatibility: Gas stove, Induction\n\n- features: Non-stick coating, Heat-resistant handles, Dishwasher-friendly",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Prestige Omega Deluxe Cookware Set - 5-Piece Non-Stick Cookware Set for a Limited Time Offer",
+            "meta_description": "Experience the best in cookware with Prestige Omega Deluxe Cookware Set, suitable for everyday cooking and compatible with both gas and induction cooktops.",
+            "keywords": [
+              "Prestige Omega Deluxe Cookware Set",
+              "Non-Stick Cookware Set",
+              "Cookware for Everyday Cooking",
+              "Gas and Induction Compatible",
+              "Cookware for Home"
+            ],
+            "tags": [
+              "Cookware",
+              "Non-Stick",
+              "Prestige",
+              "Kitchen Essentials"
+            ],
+            "short_description": "Don't miss out on this limited time offer! Get the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set, at an unbeatable price.",
+            "bullet_points": [
+              "**5-Piece Set**: Complete your kitchen with this comprehensive cookware set",
+              "**Non-Stick Coating**: Easy food release and cleaning for a stress-free cooking experience",
+              "**Heat-Resistant Handles**: Safe and comfortable handling for a confident cooking",
+              "**Dishwasher-Friendly**: Convenient cleaning and maintenance for a hassle-free life",
+              "**Compatible with Gas and Induction**: Versatile cooking options for a flexible cooking experience"
+            ],
+            "detailed_description": "The Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating ensures easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.",
+            "specs": {
+              "pieces": "5",
+              "material": "Non-stick coated aluminium",
+              "items": "Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula",
+              "compatibility": "Gas stove, Induction",
+              "features": "Non-stick coating, Heat-resistant handles, Dishwasher-friendly"
+            },
+            "price": "\u20b969900.00",
+            "description": "Upgrade your cooking experience with the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set suitable for everyday cooking and compatible with both gas and induction cooktops.\n\nKey Features:\n\n\u2022 **5-Piece Set**: Complete your kitchen with this comprehensive cookware set\n\n\u2022 **Non-Stick Coating**: Easy food release and cleaning\n\n\u2022 **Heat-Resistant Handles**: Safe and comfortable handling\n\n\u2022 **Dishwasher-Friendly**: Convenient cleaning and maintenance\n\n\u2022 **Compatible with Gas and Induction**: Versatile cooking options\n\nThe Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating ensures easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.\n\nSpecifications:\n\n- pieces: 5\n\n- material: Non-stick coated aluminium\n\n- items: Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula\n\n- compatibility: Gas stove, Induction\n\n- features: Non-stick coating, Heat-resistant handles, Dishwasher-friendly"
+          },
+          "cope_scores": {
+            "overall_score": 79,
+            "purchase_probability": 73.5,
+            "expected_ctr": 68.0,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 86,
+            "confidence_score": 88
+          }
+        }
+      ],
+      "scored_variants": [
+        {
+          "variant_id": "515750b6-63b1-4fe0-b354-2d7183830780",
+          "type": "A",
+          "angle": "Feature & Tech Heavy",
+          "title": "Prestige Omega Deluxe Cookware Set - 5-Piece Non-Stick Cookware Set with Advanced Features",
+          "short_description": "Experience the best in cookware with the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set with advanced features and premium quality.",
+          "key_features": [
+            "**5-Piece Set**: Complete your kitchen with this comprehensive cookware set",
+            "**Non-Stick Coating**: Advanced non-stick technology for easy food release and cleaning",
+            "**Heat-Resistant Handles**: Ergonomic design for safe and comfortable handling",
+            "**Dishwasher-Friendly**: Convenient cleaning and maintenance with the dishwasher",
+            "**Compatible with Gas and Induction**: Versatile cooking options with both gas and induction cooktops"
+          ],
+          "detailed_description": "The Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating is made with advanced technology for easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.",
+          "specifications": {
+            "pieces": "5",
+            "material": "Non-stick coated aluminium",
+            "items": "Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula",
+            "compatibility": "Gas stove, Induction",
+            "features": "Non-stick coating, Heat-resistant handles, Dishwasher-friendly"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Experience the best in cookware with the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set with advanced features and premium quality.\n\nKey Features:\n\n\u2022 **5-Piece Set**: Complete your kitchen with this comprehensive cookware set\n\n\u2022 **Non-Stick Coating**: Advanced non-stick technology for easy food release and cleaning\n\n\u2022 **Heat-Resistant Handles**: Ergonomic design for safe and comfortable handling\n\n\u2022 **Dishwasher-Friendly**: Convenient cleaning and maintenance with the dishwasher\n\n\u2022 **Compatible with Gas and Induction**: Versatile cooking options with both gas and induction cooktops\n\nThe Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating is made with advanced technology for easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.\n\nSpecifications:\n\n- pieces: 5\n\n- material: Non-stick coated aluminium\n\n- items: Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula\n\n- compatibility: Gas stove, Induction\n\n- features: Non-stick coating, Heat-resistant handles, Dishwasher-friendly",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Prestige Omega Deluxe Cookware Set - 5-Piece Non-Stick Cookware Set with Advanced Features",
+            "meta_description": "Experience the best in cookware with Prestige Omega Deluxe Cookware Set, suitable for everyday cooking and compatible with both gas and induction cooktops.",
+            "keywords": [
+              "Prestige Omega Deluxe Cookware Set",
+              "Non-Stick Cookware Set",
+              "Cookware for Everyday Cooking",
+              "Gas and Induction Compatible",
+              "Cookware for Home"
+            ],
+            "tags": [
+              "Cookware",
+              "Non-Stick",
+              "Prestige",
+              "Kitchen Essentials"
+            ],
+            "short_description": "Experience the best in cookware with the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set with advanced features and premium quality.",
+            "bullet_points": [
+              "**5-Piece Set**: Complete your kitchen with this comprehensive cookware set",
+              "**Non-Stick Coating**: Advanced non-stick technology for easy food release and cleaning",
+              "**Heat-Resistant Handles**: Ergonomic design for safe and comfortable handling",
+              "**Dishwasher-Friendly**: Convenient cleaning and maintenance with the dishwasher",
+              "**Compatible with Gas and Induction**: Versatile cooking options with both gas and induction cooktops"
+            ],
+            "detailed_description": "The Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating is made with advanced technology for easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.",
+            "specs": {
+              "pieces": "5",
+              "material": "Non-stick coated aluminium",
+              "items": "Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula",
+              "compatibility": "Gas stove, Induction",
+              "features": "Non-stick coating, Heat-resistant handles, Dishwasher-friendly"
+            },
+            "price": "\u20b969900.00",
+            "description": "Upgrade your cooking experience with the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set suitable for everyday cooking and compatible with both gas and induction cooktops.\n\nKey Features:\n\n\u2022 **5-Piece Set**: Complete your kitchen with this comprehensive cookware set\n\n\u2022 **Non-Stick Coating**: Easy food release and cleaning\n\n\u2022 **Heat-Resistant Handles**: Safe and comfortable handling\n\n\u2022 **Dishwasher-Friendly**: Convenient cleaning and maintenance\n\n\u2022 **Compatible with Gas and Induction**: Versatile cooking options\n\nThe Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating ensures easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.\n\nSpecifications:\n\n- pieces: 5\n\n- material: Non-stick coated aluminium\n\n- items: Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula\n\n- compatibility: Gas stove, Induction\n\n- features: Non-stick coating, Heat-resistant handles, Dishwasher-friendly"
+          },
+          "cope_scores": {
+            "overall_score": 85,
+            "purchase_probability": 78.5,
+            "expected_ctr": 72.0,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 90,
+            "confidence_score": 88
+          }
+        },
+        {
+          "variant_id": "8a8d88f7-5a2f-4052-aefc-669f82fd4494",
+          "type": "B",
+          "angle": "Emotional & Value Driven",
+          "title": "Prestige Omega Deluxe Cookware Set - 5-Piece Non-Stick Cookware Set for the Perfect Cooking Experience",
+          "short_description": "Imagine the perfect cooking experience with the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set that will make your cooking a joy.",
+          "key_features": [
+            "**5-Piece Set**: Complete your kitchen with this comprehensive cookware set",
+            "**Non-Stick Coating**: Easy food release and cleaning for a stress-free cooking experience",
+            "**Heat-Resistant Handles**: Safe and comfortable handling for a confident cooking",
+            "**Dishwasher-Friendly**: Convenient cleaning and maintenance for a hassle-free life",
+            "**Compatible with Gas and Induction**: Versatile cooking options for a flexible cooking experience"
+          ],
+          "detailed_description": "The Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating ensures easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.",
+          "specifications": {
+            "pieces": "5",
+            "material": "Non-stick coated aluminium",
+            "items": "Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula",
+            "compatibility": "Gas stove, Induction",
+            "features": "Non-stick coating, Heat-resistant handles, Dishwasher-friendly"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Imagine the perfect cooking experience with the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set that will make your cooking a joy.\n\nKey Features:\n\n\u2022 **5-Piece Set**: Complete your kitchen with this comprehensive cookware set\n\n\u2022 **Non-Stick Coating**: Easy food release and cleaning for a stress-free cooking experience\n\n\u2022 **Heat-Resistant Handles**: Safe and comfortable handling for a confident cooking\n\n\u2022 **Dishwasher-Friendly**: Convenient cleaning and maintenance for a hassle-free life\n\n\u2022 **Compatible with Gas and Induction**: Versatile cooking options for a flexible cooking experience\n\nThe Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating ensures easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.\n\nSpecifications:\n\n- pieces: 5\n\n- material: Non-stick coated aluminium\n\n- items: Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula\n\n- compatibility: Gas stove, Induction\n\n- features: Non-stick coating, Heat-resistant handles, Dishwasher-friendly",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Prestige Omega Deluxe Cookware Set - 5-Piece Non-Stick Cookware Set for the Perfect Cooking Experience",
+            "meta_description": "Experience the best in cookware with Prestige Omega Deluxe Cookware Set, suitable for everyday cooking and compatible with both gas and induction cooktops.",
+            "keywords": [
+              "Prestige Omega Deluxe Cookware Set",
+              "Non-Stick Cookware Set",
+              "Cookware for Everyday Cooking",
+              "Gas and Induction Compatible",
+              "Cookware for Home"
+            ],
+            "tags": [
+              "Cookware",
+              "Non-Stick",
+              "Prestige",
+              "Kitchen Essentials"
+            ],
+            "short_description": "Imagine the perfect cooking experience with the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set that will make your cooking a joy.",
+            "bullet_points": [
+              "**5-Piece Set**: Complete your kitchen with this comprehensive cookware set",
+              "**Non-Stick Coating**: Easy food release and cleaning for a stress-free cooking experience",
+              "**Heat-Resistant Handles**: Safe and comfortable handling for a confident cooking",
+              "**Dishwasher-Friendly**: Convenient cleaning and maintenance for a hassle-free life",
+              "**Compatible with Gas and Induction**: Versatile cooking options for a flexible cooking experience"
+            ],
+            "detailed_description": "The Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating ensures easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.",
+            "specs": {
+              "pieces": "5",
+              "material": "Non-stick coated aluminium",
+              "items": "Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula",
+              "compatibility": "Gas stove, Induction",
+              "features": "Non-stick coating, Heat-resistant handles, Dishwasher-friendly"
+            },
+            "price": "\u20b969900.00",
+            "description": "Upgrade your cooking experience with the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set suitable for everyday cooking and compatible with both gas and induction cooktops.\n\nKey Features:\n\n\u2022 **5-Piece Set**: Complete your kitchen with this comprehensive cookware set\n\n\u2022 **Non-Stick Coating**: Easy food release and cleaning\n\n\u2022 **Heat-Resistant Handles**: Safe and comfortable handling\n\n\u2022 **Dishwasher-Friendly**: Convenient cleaning and maintenance\n\n\u2022 **Compatible with Gas and Induction**: Versatile cooking options\n\nThe Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating ensures easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.\n\nSpecifications:\n\n- pieces: 5\n\n- material: Non-stick coated aluminium\n\n- items: Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula\n\n- compatibility: Gas stove, Induction\n\n- features: Non-stick coating, Heat-resistant handles, Dishwasher-friendly"
+          },
+          "cope_scores": {
+            "overall_score": 82,
+            "purchase_probability": 76.0,
+            "expected_ctr": 70.0,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 88,
+            "confidence_score": 88
+          }
+        },
+        {
+          "variant_id": "e0436ffe-9599-4efa-9509-222f33f2f577",
+          "type": "C",
+          "angle": "Urgency & Lifestyle Focused",
+          "title": "Prestige Omega Deluxe Cookware Set - 5-Piece Non-Stick Cookware Set for a Limited Time Offer",
+          "short_description": "Don't miss out on this limited time offer! Get the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set, at an unbeatable price.",
+          "key_features": [
+            "**5-Piece Set**: Complete your kitchen with this comprehensive cookware set",
+            "**Non-Stick Coating**: Easy food release and cleaning for a stress-free cooking experience",
+            "**Heat-Resistant Handles**: Safe and comfortable handling for a confident cooking",
+            "**Dishwasher-Friendly**: Convenient cleaning and maintenance for a hassle-free life",
+            "**Compatible with Gas and Induction**: Versatile cooking options for a flexible cooking experience"
+          ],
+          "detailed_description": "The Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating ensures easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.",
+          "specifications": {
+            "pieces": "5",
+            "material": "Non-stick coated aluminium",
+            "items": "Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula",
+            "compatibility": "Gas stove, Induction",
+            "features": "Non-stick coating, Heat-resistant handles, Dishwasher-friendly"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Don't miss out on this limited time offer! Get the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set, at an unbeatable price.\n\nKey Features:\n\n\u2022 **5-Piece Set**: Complete your kitchen with this comprehensive cookware set\n\n\u2022 **Non-Stick Coating**: Easy food release and cleaning for a stress-free cooking experience\n\n\u2022 **Heat-Resistant Handles**: Safe and comfortable handling for a confident cooking\n\n\u2022 **Dishwasher-Friendly**: Convenient cleaning and maintenance for a hassle-free life\n\n\u2022 **Compatible with Gas and Induction**: Versatile cooking options for a flexible cooking experience\n\nThe Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating ensures easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.\n\nSpecifications:\n\n- pieces: 5\n\n- material: Non-stick coated aluminium\n\n- items: Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula\n\n- compatibility: Gas stove, Induction\n\n- features: Non-stick coating, Heat-resistant handles, Dishwasher-friendly",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Prestige Omega Deluxe Cookware Set - 5-Piece Non-Stick Cookware Set for a Limited Time Offer",
+            "meta_description": "Experience the best in cookware with Prestige Omega Deluxe Cookware Set, suitable for everyday cooking and compatible with both gas and induction cooktops.",
+            "keywords": [
+              "Prestige Omega Deluxe Cookware Set",
+              "Non-Stick Cookware Set",
+              "Cookware for Everyday Cooking",
+              "Gas and Induction Compatible",
+              "Cookware for Home"
+            ],
+            "tags": [
+              "Cookware",
+              "Non-Stick",
+              "Prestige",
+              "Kitchen Essentials"
+            ],
+            "short_description": "Don't miss out on this limited time offer! Get the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set, at an unbeatable price.",
+            "bullet_points": [
+              "**5-Piece Set**: Complete your kitchen with this comprehensive cookware set",
+              "**Non-Stick Coating**: Easy food release and cleaning for a stress-free cooking experience",
+              "**Heat-Resistant Handles**: Safe and comfortable handling for a confident cooking",
+              "**Dishwasher-Friendly**: Convenient cleaning and maintenance for a hassle-free life",
+              "**Compatible with Gas and Induction**: Versatile cooking options for a flexible cooking experience"
+            ],
+            "detailed_description": "The Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating ensures easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.",
+            "specs": {
+              "pieces": "5",
+              "material": "Non-stick coated aluminium",
+              "items": "Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula",
+              "compatibility": "Gas stove, Induction",
+              "features": "Non-stick coating, Heat-resistant handles, Dishwasher-friendly"
+            },
+            "price": "\u20b969900.00",
+            "description": "Upgrade your cooking experience with the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set suitable for everyday cooking and compatible with both gas and induction cooktops.\n\nKey Features:\n\n\u2022 **5-Piece Set**: Complete your kitchen with this comprehensive cookware set\n\n\u2022 **Non-Stick Coating**: Easy food release and cleaning\n\n\u2022 **Heat-Resistant Handles**: Safe and comfortable handling\n\n\u2022 **Dishwasher-Friendly**: Convenient cleaning and maintenance\n\n\u2022 **Compatible with Gas and Induction**: Versatile cooking options\n\nThe Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating ensures easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.\n\nSpecifications:\n\n- pieces: 5\n\n- material: Non-stick coated aluminium\n\n- items: Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula\n\n- compatibility: Gas stove, Induction\n\n- features: Non-stick coating, Heat-resistant handles, Dishwasher-friendly"
+          },
+          "cope_scores": {
+            "overall_score": 79,
+            "purchase_probability": 73.5,
+            "expected_ctr": 68.0,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 86,
+            "confidence_score": 88
+          }
+        }
+      ],
+      "decision": {
+        "action": "publish",
+        "reason": "Clear winner identified with high confidence.",
+        "recommended_variant_id": "515750b6-63b1-4fe0-b354-2d7183830780"
+      },
+      "marketing": {
+        "platform": "olx",
+        "platform_description": "Experience the best in cookware with the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set with advanced features and premium quality.\n\nKey Features:\n\n\u2022 **5-Piece Set**: Complete your kitchen with this comprehensive cookware set\n\n\u2022 **Non-Stick Coating**: Advanced non-stick technology for easy food release and cleaning\n\n\u2022 **Heat-Resistant Handles**: Ergonomic design for safe and comfortable handling\n\n\u2022 **Dishwasher-Friendly**: Convenient cleaning and maintenance with the dishwasher\n\n\u2022 **Compatible with Gas and Induction**: Versatile cooking options with both gas and induction cooktops\n\nThe Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating is made with advanced technology for easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.\n\nSpecifications:\n\n- pieces: 5\n\n- material: Non-stick coated aluminium\n\n- items: Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula\n\n- compatibility: Gas stove, Induction\n\n- features: Non-stick coating, Heat-resistant handles, Dishwasher-friendly",
+        "call_to_action": "Order now on Olx to get the best deal!"
+      },
+      "validation": {
+        "is_valid": true,
+        "issues": []
+      },
+      "scores": {
+        "privacy_score": 98,
+        "seo_score": 90,
+        "marketing_score": 90,
+        "overall_score": 90,
+        "feedback": "SEO Title length is sub-optimal."
+      }
+    }
+  },
+  "complete_response": {
+    "status": "success",
+    "message": "Workflow completed",
+    "data": {
+      "sanitized_input": "Product Name: Prestige Omega Deluxe Cookware Set\nBrand: Prestige\nCategory: Cookware Set\nDescription: A multi-piece non-stick cookware set suitable for everyday cooking and compatible with both gas and induction cooktops.\nSpecifications: pieces: 5, material: Non-stick coated aluminium, items: Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula, compatibility: Gas stove, Induction, features: Non-stick coating, Heat-resistant handles, Dishwasher-friendly",
+      "vision_analysis": "Error analyzing image with Groq Vision: LLMGateway call failed after 3 retries. Error: Error code: 413 - {'error': {'message': 'Request too large for model `qwen/qwen3.6-27b` in organization `org_01kvb5wdg5eq99np00tsjmwhtg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 8286, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "rag_context": "RAG database is empty. Please run the ingestion script first.",
+      "seo": {
+        "title": "Prestige Omega Deluxe Cookware Set - 5-Piece Non-Stick Cookware Set",
+        "meta_description": "Experience the best in cookware with Prestige Omega Deluxe Cookware Set, suitable for everyday cooking and compatible with both gas and induction cooktops.",
+        "keywords": [
+          "Prestige Omega Deluxe Cookware Set",
+          "Non-Stick Cookware Set",
+          "Cookware for Everyday Cooking",
+          "Gas and Induction Compatible",
+          "Cookware for Home"
+        ],
+        "tags": [
+          "Cookware",
+          "Non-Stick",
+          "Prestige",
+          "Kitchen Essentials"
+        ],
+        "short_description": "Upgrade your cooking experience with the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set suitable for everyday cooking and compatible with both gas and induction cooktops.",
+        "bullet_points": [
+          "**5-Piece Set**: Complete your kitchen with this comprehensive cookware set",
+          "**Non-Stick Coating**: Easy food release and cleaning",
+          "**Heat-Resistant Handles**: Safe and comfortable handling",
+          "**Dishwasher-Friendly**: Convenient cleaning and maintenance",
+          "**Compatible with Gas and Induction**: Versatile cooking options"
+        ],
+        "detailed_description": "The Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating ensures easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.",
+        "specs": {
+          "pieces": "5",
+          "material": "Non-stick coated aluminium",
+          "items": "Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula",
+          "compatibility": "Gas stove, Induction",
+          "features": "Non-stick coating, Heat-resistant handles, Dishwasher-friendly"
+        },
+        "price": "\u20b969900.00",
+        "description": "Upgrade your cooking experience with the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set suitable for everyday cooking and compatible with both gas and induction cooktops.\n\nKey Features:\n\n\u2022 **5-Piece Set**: Complete your kitchen with this comprehensive cookware set\n\n\u2022 **Non-Stick Coating**: Easy food release and cleaning\n\n\u2022 **Heat-Resistant Handles**: Safe and comfortable handling\n\n\u2022 **Dishwasher-Friendly**: Convenient cleaning and maintenance\n\n\u2022 **Compatible with Gas and Induction**: Versatile cooking options\n\nThe Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating ensures easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.\n\nSpecifications:\n\n- pieces: 5\n\n- material: Non-stick coated aluminium\n\n- items: Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula\n\n- compatibility: Gas stove, Induction\n\n- features: Non-stick coating, Heat-resistant handles, Dishwasher-friendly"
+      },
+      "competitor_analysis": {
+        "recommended_price": "\u20b969900.00",
+        "lowest_competitor_price": "\u20b959900.00",
+        "highest_competitor_price": "\u20b979900.00",
+        "average_market_price": "\u20b969900.00",
+        "market_positioning": "Mid-range cookware set with premium features",
+        "pricing_strategy": "Competitive pricing with high-quality features",
+        "competitor_insights": [
+          "Competitor X offers a similar 5-piece cookware set for \u20b959900.00, but lacks the non-stick coating and heat-resistant handles.",
+          "Competitor Y offers a 7-piece cookware set for \u20b989900.00, but has a higher price point and less comprehensive features.",
+          "Competitor Z offers a 3-piece cookware set for \u20b949900.00, but has a lower price point and fewer features."
+        ]
+      },
+      "generated_variants": [
+        {
+          "variant_id": "515750b6-63b1-4fe0-b354-2d7183830780",
+          "type": "A",
+          "angle": "Feature & Tech Heavy",
+          "title": "Prestige Omega Deluxe Cookware Set - 5-Piece Non-Stick Cookware Set with Advanced Features",
+          "short_description": "Experience the best in cookware with the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set with advanced features and premium quality.",
+          "key_features": [
+            "**5-Piece Set**: Complete your kitchen with this comprehensive cookware set",
+            "**Non-Stick Coating**: Advanced non-stick technology for easy food release and cleaning",
+            "**Heat-Resistant Handles**: Ergonomic design for safe and comfortable handling",
+            "**Dishwasher-Friendly**: Convenient cleaning and maintenance with the dishwasher",
+            "**Compatible with Gas and Induction**: Versatile cooking options with both gas and induction cooktops"
+          ],
+          "detailed_description": "The Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating is made with advanced technology for easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.",
+          "specifications": {
+            "pieces": "5",
+            "material": "Non-stick coated aluminium",
+            "items": "Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula",
+            "compatibility": "Gas stove, Induction",
+            "features": "Non-stick coating, Heat-resistant handles, Dishwasher-friendly"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Experience the best in cookware with the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set with advanced features and premium quality.\n\nKey Features:\n\n\u2022 **5-Piece Set**: Complete your kitchen with this comprehensive cookware set\n\n\u2022 **Non-Stick Coating**: Advanced non-stick technology for easy food release and cleaning\n\n\u2022 **Heat-Resistant Handles**: Ergonomic design for safe and comfortable handling\n\n\u2022 **Dishwasher-Friendly**: Convenient cleaning and maintenance with the dishwasher\n\n\u2022 **Compatible with Gas and Induction**: Versatile cooking options with both gas and induction cooktops\n\nThe Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating is made with advanced technology for easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.\n\nSpecifications:\n\n- pieces: 5\n\n- material: Non-stick coated aluminium\n\n- items: Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula\n\n- compatibility: Gas stove, Induction\n\n- features: Non-stick coating, Heat-resistant handles, Dishwasher-friendly",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Prestige Omega Deluxe Cookware Set - 5-Piece Non-Stick Cookware Set with Advanced Features",
+            "meta_description": "Experience the best in cookware with Prestige Omega Deluxe Cookware Set, suitable for everyday cooking and compatible with both gas and induction cooktops.",
+            "keywords": [
+              "Prestige Omega Deluxe Cookware Set",
+              "Non-Stick Cookware Set",
+              "Cookware for Everyday Cooking",
+              "Gas and Induction Compatible",
+              "Cookware for Home"
+            ],
+            "tags": [
+              "Cookware",
+              "Non-Stick",
+              "Prestige",
+              "Kitchen Essentials"
+            ],
+            "short_description": "Experience the best in cookware with the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set with advanced features and premium quality.",
+            "bullet_points": [
+              "**5-Piece Set**: Complete your kitchen with this comprehensive cookware set",
+              "**Non-Stick Coating**: Advanced non-stick technology for easy food release and cleaning",
+              "**Heat-Resistant Handles**: Ergonomic design for safe and comfortable handling",
+              "**Dishwasher-Friendly**: Convenient cleaning and maintenance with the dishwasher",
+              "**Compatible with Gas and Induction**: Versatile cooking options with both gas and induction cooktops"
+            ],
+            "detailed_description": "The Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating is made with advanced technology for easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.",
+            "specs": {
+              "pieces": "5",
+              "material": "Non-stick coated aluminium",
+              "items": "Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula",
+              "compatibility": "Gas stove, Induction",
+              "features": "Non-stick coating, Heat-resistant handles, Dishwasher-friendly"
+            },
+            "price": "\u20b969900.00",
+            "description": "Upgrade your cooking experience with the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set suitable for everyday cooking and compatible with both gas and induction cooktops.\n\nKey Features:\n\n\u2022 **5-Piece Set**: Complete your kitchen with this comprehensive cookware set\n\n\u2022 **Non-Stick Coating**: Easy food release and cleaning\n\n\u2022 **Heat-Resistant Handles**: Safe and comfortable handling\n\n\u2022 **Dishwasher-Friendly**: Convenient cleaning and maintenance\n\n\u2022 **Compatible with Gas and Induction**: Versatile cooking options\n\nThe Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating ensures easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.\n\nSpecifications:\n\n- pieces: 5\n\n- material: Non-stick coated aluminium\n\n- items: Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula\n\n- compatibility: Gas stove, Induction\n\n- features: Non-stick coating, Heat-resistant handles, Dishwasher-friendly"
+          },
+          "cope_scores": {
+            "overall_score": 85,
+            "purchase_probability": 78.5,
+            "expected_ctr": 72.0,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 90,
+            "confidence_score": 88
+          }
+        },
+        {
+          "variant_id": "8a8d88f7-5a2f-4052-aefc-669f82fd4494",
+          "type": "B",
+          "angle": "Emotional & Value Driven",
+          "title": "Prestige Omega Deluxe Cookware Set - 5-Piece Non-Stick Cookware Set for the Perfect Cooking Experience",
+          "short_description": "Imagine the perfect cooking experience with the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set that will make your cooking a joy.",
+          "key_features": [
+            "**5-Piece Set**: Complete your kitchen with this comprehensive cookware set",
+            "**Non-Stick Coating**: Easy food release and cleaning for a stress-free cooking experience",
+            "**Heat-Resistant Handles**: Safe and comfortable handling for a confident cooking",
+            "**Dishwasher-Friendly**: Convenient cleaning and maintenance for a hassle-free life",
+            "**Compatible with Gas and Induction**: Versatile cooking options for a flexible cooking experience"
+          ],
+          "detailed_description": "The Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating ensures easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.",
+          "specifications": {
+            "pieces": "5",
+            "material": "Non-stick coated aluminium",
+            "items": "Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula",
+            "compatibility": "Gas stove, Induction",
+            "features": "Non-stick coating, Heat-resistant handles, Dishwasher-friendly"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Imagine the perfect cooking experience with the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set that will make your cooking a joy.\n\nKey Features:\n\n\u2022 **5-Piece Set**: Complete your kitchen with this comprehensive cookware set\n\n\u2022 **Non-Stick Coating**: Easy food release and cleaning for a stress-free cooking experience\n\n\u2022 **Heat-Resistant Handles**: Safe and comfortable handling for a confident cooking\n\n\u2022 **Dishwasher-Friendly**: Convenient cleaning and maintenance for a hassle-free life\n\n\u2022 **Compatible with Gas and Induction**: Versatile cooking options for a flexible cooking experience\n\nThe Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating ensures easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.\n\nSpecifications:\n\n- pieces: 5\n\n- material: Non-stick coated aluminium\n\n- items: Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula\n\n- compatibility: Gas stove, Induction\n\n- features: Non-stick coating, Heat-resistant handles, Dishwasher-friendly",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Prestige Omega Deluxe Cookware Set - 5-Piece Non-Stick Cookware Set for the Perfect Cooking Experience",
+            "meta_description": "Experience the best in cookware with Prestige Omega Deluxe Cookware Set, suitable for everyday cooking and compatible with both gas and induction cooktops.",
+            "keywords": [
+              "Prestige Omega Deluxe Cookware Set",
+              "Non-Stick Cookware Set",
+              "Cookware for Everyday Cooking",
+              "Gas and Induction Compatible",
+              "Cookware for Home"
+            ],
+            "tags": [
+              "Cookware",
+              "Non-Stick",
+              "Prestige",
+              "Kitchen Essentials"
+            ],
+            "short_description": "Imagine the perfect cooking experience with the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set that will make your cooking a joy.",
+            "bullet_points": [
+              "**5-Piece Set**: Complete your kitchen with this comprehensive cookware set",
+              "**Non-Stick Coating**: Easy food release and cleaning for a stress-free cooking experience",
+              "**Heat-Resistant Handles**: Safe and comfortable handling for a confident cooking",
+              "**Dishwasher-Friendly**: Convenient cleaning and maintenance for a hassle-free life",
+              "**Compatible with Gas and Induction**: Versatile cooking options for a flexible cooking experience"
+            ],
+            "detailed_description": "The Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating ensures easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.",
+            "specs": {
+              "pieces": "5",
+              "material": "Non-stick coated aluminium",
+              "items": "Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula",
+              "compatibility": "Gas stove, Induction",
+              "features": "Non-stick coating, Heat-resistant handles, Dishwasher-friendly"
+            },
+            "price": "\u20b969900.00",
+            "description": "Upgrade your cooking experience with the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set suitable for everyday cooking and compatible with both gas and induction cooktops.\n\nKey Features:\n\n\u2022 **5-Piece Set**: Complete your kitchen with this comprehensive cookware set\n\n\u2022 **Non-Stick Coating**: Easy food release and cleaning\n\n\u2022 **Heat-Resistant Handles**: Safe and comfortable handling\n\n\u2022 **Dishwasher-Friendly**: Convenient cleaning and maintenance\n\n\u2022 **Compatible with Gas and Induction**: Versatile cooking options\n\nThe Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating ensures easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.\n\nSpecifications:\n\n- pieces: 5\n\n- material: Non-stick coated aluminium\n\n- items: Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula\n\n- compatibility: Gas stove, Induction\n\n- features: Non-stick coating, Heat-resistant handles, Dishwasher-friendly"
+          },
+          "cope_scores": {
+            "overall_score": 82,
+            "purchase_probability": 76.0,
+            "expected_ctr": 70.0,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 88,
+            "confidence_score": 88
+          }
+        },
+        {
+          "variant_id": "e0436ffe-9599-4efa-9509-222f33f2f577",
+          "type": "C",
+          "angle": "Urgency & Lifestyle Focused",
+          "title": "Prestige Omega Deluxe Cookware Set - 5-Piece Non-Stick Cookware Set for a Limited Time Offer",
+          "short_description": "Don't miss out on this limited time offer! Get the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set, at an unbeatable price.",
+          "key_features": [
+            "**5-Piece Set**: Complete your kitchen with this comprehensive cookware set",
+            "**Non-Stick Coating**: Easy food release and cleaning for a stress-free cooking experience",
+            "**Heat-Resistant Handles**: Safe and comfortable handling for a confident cooking",
+            "**Dishwasher-Friendly**: Convenient cleaning and maintenance for a hassle-free life",
+            "**Compatible with Gas and Induction**: Versatile cooking options for a flexible cooking experience"
+          ],
+          "detailed_description": "The Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating ensures easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.",
+          "specifications": {
+            "pieces": "5",
+            "material": "Non-stick coated aluminium",
+            "items": "Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula",
+            "compatibility": "Gas stove, Induction",
+            "features": "Non-stick coating, Heat-resistant handles, Dishwasher-friendly"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Don't miss out on this limited time offer! Get the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set, at an unbeatable price.\n\nKey Features:\n\n\u2022 **5-Piece Set**: Complete your kitchen with this comprehensive cookware set\n\n\u2022 **Non-Stick Coating**: Easy food release and cleaning for a stress-free cooking experience\n\n\u2022 **Heat-Resistant Handles**: Safe and comfortable handling for a confident cooking\n\n\u2022 **Dishwasher-Friendly**: Convenient cleaning and maintenance for a hassle-free life\n\n\u2022 **Compatible with Gas and Induction**: Versatile cooking options for a flexible cooking experience\n\nThe Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating ensures easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.\n\nSpecifications:\n\n- pieces: 5\n\n- material: Non-stick coated aluminium\n\n- items: Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula\n\n- compatibility: Gas stove, Induction\n\n- features: Non-stick coating, Heat-resistant handles, Dishwasher-friendly",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Prestige Omega Deluxe Cookware Set - 5-Piece Non-Stick Cookware Set for a Limited Time Offer",
+            "meta_description": "Experience the best in cookware with Prestige Omega Deluxe Cookware Set, suitable for everyday cooking and compatible with both gas and induction cooktops.",
+            "keywords": [
+              "Prestige Omega Deluxe Cookware Set",
+              "Non-Stick Cookware Set",
+              "Cookware for Everyday Cooking",
+              "Gas and Induction Compatible",
+              "Cookware for Home"
+            ],
+            "tags": [
+              "Cookware",
+              "Non-Stick",
+              "Prestige",
+              "Kitchen Essentials"
+            ],
+            "short_description": "Don't miss out on this limited time offer! Get the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set, at an unbeatable price.",
+            "bullet_points": [
+              "**5-Piece Set**: Complete your kitchen with this comprehensive cookware set",
+              "**Non-Stick Coating**: Easy food release and cleaning for a stress-free cooking experience",
+              "**Heat-Resistant Handles**: Safe and comfortable handling for a confident cooking",
+              "**Dishwasher-Friendly**: Convenient cleaning and maintenance for a hassle-free life",
+              "**Compatible with Gas and Induction**: Versatile cooking options for a flexible cooking experience"
+            ],
+            "detailed_description": "The Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating ensures easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.",
+            "specs": {
+              "pieces": "5",
+              "material": "Non-stick coated aluminium",
+              "items": "Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula",
+              "compatibility": "Gas stove, Induction",
+              "features": "Non-stick coating, Heat-resistant handles, Dishwasher-friendly"
+            },
+            "price": "\u20b969900.00",
+            "description": "Upgrade your cooking experience with the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set suitable for everyday cooking and compatible with both gas and induction cooktops.\n\nKey Features:\n\n\u2022 **5-Piece Set**: Complete your kitchen with this comprehensive cookware set\n\n\u2022 **Non-Stick Coating**: Easy food release and cleaning\n\n\u2022 **Heat-Resistant Handles**: Safe and comfortable handling\n\n\u2022 **Dishwasher-Friendly**: Convenient cleaning and maintenance\n\n\u2022 **Compatible with Gas and Induction**: Versatile cooking options\n\nThe Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating ensures easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.\n\nSpecifications:\n\n- pieces: 5\n\n- material: Non-stick coated aluminium\n\n- items: Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula\n\n- compatibility: Gas stove, Induction\n\n- features: Non-stick coating, Heat-resistant handles, Dishwasher-friendly"
+          },
+          "cope_scores": {
+            "overall_score": 79,
+            "purchase_probability": 73.5,
+            "expected_ctr": 68.0,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 86,
+            "confidence_score": 88
+          }
+        }
+      ],
+      "scored_variants": [
+        {
+          "variant_id": "515750b6-63b1-4fe0-b354-2d7183830780",
+          "type": "A",
+          "angle": "Feature & Tech Heavy",
+          "title": "Prestige Omega Deluxe Cookware Set - 5-Piece Non-Stick Cookware Set with Advanced Features",
+          "short_description": "Experience the best in cookware with the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set with advanced features and premium quality.",
+          "key_features": [
+            "**5-Piece Set**: Complete your kitchen with this comprehensive cookware set",
+            "**Non-Stick Coating**: Advanced non-stick technology for easy food release and cleaning",
+            "**Heat-Resistant Handles**: Ergonomic design for safe and comfortable handling",
+            "**Dishwasher-Friendly**: Convenient cleaning and maintenance with the dishwasher",
+            "**Compatible with Gas and Induction**: Versatile cooking options with both gas and induction cooktops"
+          ],
+          "detailed_description": "The Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating is made with advanced technology for easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.",
+          "specifications": {
+            "pieces": "5",
+            "material": "Non-stick coated aluminium",
+            "items": "Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula",
+            "compatibility": "Gas stove, Induction",
+            "features": "Non-stick coating, Heat-resistant handles, Dishwasher-friendly"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Experience the best in cookware with the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set with advanced features and premium quality.\n\nKey Features:\n\n\u2022 **5-Piece Set**: Complete your kitchen with this comprehensive cookware set\n\n\u2022 **Non-Stick Coating**: Advanced non-stick technology for easy food release and cleaning\n\n\u2022 **Heat-Resistant Handles**: Ergonomic design for safe and comfortable handling\n\n\u2022 **Dishwasher-Friendly**: Convenient cleaning and maintenance with the dishwasher\n\n\u2022 **Compatible with Gas and Induction**: Versatile cooking options with both gas and induction cooktops\n\nThe Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating is made with advanced technology for easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.\n\nSpecifications:\n\n- pieces: 5\n\n- material: Non-stick coated aluminium\n\n- items: Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula\n\n- compatibility: Gas stove, Induction\n\n- features: Non-stick coating, Heat-resistant handles, Dishwasher-friendly",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Prestige Omega Deluxe Cookware Set - 5-Piece Non-Stick Cookware Set with Advanced Features",
+            "meta_description": "Experience the best in cookware with Prestige Omega Deluxe Cookware Set, suitable for everyday cooking and compatible with both gas and induction cooktops.",
+            "keywords": [
+              "Prestige Omega Deluxe Cookware Set",
+              "Non-Stick Cookware Set",
+              "Cookware for Everyday Cooking",
+              "Gas and Induction Compatible",
+              "Cookware for Home"
+            ],
+            "tags": [
+              "Cookware",
+              "Non-Stick",
+              "Prestige",
+              "Kitchen Essentials"
+            ],
+            "short_description": "Experience the best in cookware with the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set with advanced features and premium quality.",
+            "bullet_points": [
+              "**5-Piece Set**: Complete your kitchen with this comprehensive cookware set",
+              "**Non-Stick Coating**: Advanced non-stick technology for easy food release and cleaning",
+              "**Heat-Resistant Handles**: Ergonomic design for safe and comfortable handling",
+              "**Dishwasher-Friendly**: Convenient cleaning and maintenance with the dishwasher",
+              "**Compatible with Gas and Induction**: Versatile cooking options with both gas and induction cooktops"
+            ],
+            "detailed_description": "The Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating is made with advanced technology for easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.",
+            "specs": {
+              "pieces": "5",
+              "material": "Non-stick coated aluminium",
+              "items": "Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula",
+              "compatibility": "Gas stove, Induction",
+              "features": "Non-stick coating, Heat-resistant handles, Dishwasher-friendly"
+            },
+            "price": "\u20b969900.00",
+            "description": "Upgrade your cooking experience with the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set suitable for everyday cooking and compatible with both gas and induction cooktops.\n\nKey Features:\n\n\u2022 **5-Piece Set**: Complete your kitchen with this comprehensive cookware set\n\n\u2022 **Non-Stick Coating**: Easy food release and cleaning\n\n\u2022 **Heat-Resistant Handles**: Safe and comfortable handling\n\n\u2022 **Dishwasher-Friendly**: Convenient cleaning and maintenance\n\n\u2022 **Compatible with Gas and Induction**: Versatile cooking options\n\nThe Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating ensures easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.\n\nSpecifications:\n\n- pieces: 5\n\n- material: Non-stick coated aluminium\n\n- items: Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula\n\n- compatibility: Gas stove, Induction\n\n- features: Non-stick coating, Heat-resistant handles, Dishwasher-friendly"
+          },
+          "cope_scores": {
+            "overall_score": 85,
+            "purchase_probability": 78.5,
+            "expected_ctr": 72.0,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 90,
+            "confidence_score": 88
+          }
+        },
+        {
+          "variant_id": "8a8d88f7-5a2f-4052-aefc-669f82fd4494",
+          "type": "B",
+          "angle": "Emotional & Value Driven",
+          "title": "Prestige Omega Deluxe Cookware Set - 5-Piece Non-Stick Cookware Set for the Perfect Cooking Experience",
+          "short_description": "Imagine the perfect cooking experience with the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set that will make your cooking a joy.",
+          "key_features": [
+            "**5-Piece Set**: Complete your kitchen with this comprehensive cookware set",
+            "**Non-Stick Coating**: Easy food release and cleaning for a stress-free cooking experience",
+            "**Heat-Resistant Handles**: Safe and comfortable handling for a confident cooking",
+            "**Dishwasher-Friendly**: Convenient cleaning and maintenance for a hassle-free life",
+            "**Compatible with Gas and Induction**: Versatile cooking options for a flexible cooking experience"
+          ],
+          "detailed_description": "The Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating ensures easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.",
+          "specifications": {
+            "pieces": "5",
+            "material": "Non-stick coated aluminium",
+            "items": "Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula",
+            "compatibility": "Gas stove, Induction",
+            "features": "Non-stick coating, Heat-resistant handles, Dishwasher-friendly"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Imagine the perfect cooking experience with the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set that will make your cooking a joy.\n\nKey Features:\n\n\u2022 **5-Piece Set**: Complete your kitchen with this comprehensive cookware set\n\n\u2022 **Non-Stick Coating**: Easy food release and cleaning for a stress-free cooking experience\n\n\u2022 **Heat-Resistant Handles**: Safe and comfortable handling for a confident cooking\n\n\u2022 **Dishwasher-Friendly**: Convenient cleaning and maintenance for a hassle-free life\n\n\u2022 **Compatible with Gas and Induction**: Versatile cooking options for a flexible cooking experience\n\nThe Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating ensures easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.\n\nSpecifications:\n\n- pieces: 5\n\n- material: Non-stick coated aluminium\n\n- items: Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula\n\n- compatibility: Gas stove, Induction\n\n- features: Non-stick coating, Heat-resistant handles, Dishwasher-friendly",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Prestige Omega Deluxe Cookware Set - 5-Piece Non-Stick Cookware Set for the Perfect Cooking Experience",
+            "meta_description": "Experience the best in cookware with Prestige Omega Deluxe Cookware Set, suitable for everyday cooking and compatible with both gas and induction cooktops.",
+            "keywords": [
+              "Prestige Omega Deluxe Cookware Set",
+              "Non-Stick Cookware Set",
+              "Cookware for Everyday Cooking",
+              "Gas and Induction Compatible",
+              "Cookware for Home"
+            ],
+            "tags": [
+              "Cookware",
+              "Non-Stick",
+              "Prestige",
+              "Kitchen Essentials"
+            ],
+            "short_description": "Imagine the perfect cooking experience with the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set that will make your cooking a joy.",
+            "bullet_points": [
+              "**5-Piece Set**: Complete your kitchen with this comprehensive cookware set",
+              "**Non-Stick Coating**: Easy food release and cleaning for a stress-free cooking experience",
+              "**Heat-Resistant Handles**: Safe and comfortable handling for a confident cooking",
+              "**Dishwasher-Friendly**: Convenient cleaning and maintenance for a hassle-free life",
+              "**Compatible with Gas and Induction**: Versatile cooking options for a flexible cooking experience"
+            ],
+            "detailed_description": "The Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating ensures easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.",
+            "specs": {
+              "pieces": "5",
+              "material": "Non-stick coated aluminium",
+              "items": "Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula",
+              "compatibility": "Gas stove, Induction",
+              "features": "Non-stick coating, Heat-resistant handles, Dishwasher-friendly"
+            },
+            "price": "\u20b969900.00",
+            "description": "Upgrade your cooking experience with the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set suitable for everyday cooking and compatible with both gas and induction cooktops.\n\nKey Features:\n\n\u2022 **5-Piece Set**: Complete your kitchen with this comprehensive cookware set\n\n\u2022 **Non-Stick Coating**: Easy food release and cleaning\n\n\u2022 **Heat-Resistant Handles**: Safe and comfortable handling\n\n\u2022 **Dishwasher-Friendly**: Convenient cleaning and maintenance\n\n\u2022 **Compatible with Gas and Induction**: Versatile cooking options\n\nThe Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating ensures easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.\n\nSpecifications:\n\n- pieces: 5\n\n- material: Non-stick coated aluminium\n\n- items: Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula\n\n- compatibility: Gas stove, Induction\n\n- features: Non-stick coating, Heat-resistant handles, Dishwasher-friendly"
+          },
+          "cope_scores": {
+            "overall_score": 82,
+            "purchase_probability": 76.0,
+            "expected_ctr": 70.0,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 88,
+            "confidence_score": 88
+          }
+        },
+        {
+          "variant_id": "e0436ffe-9599-4efa-9509-222f33f2f577",
+          "type": "C",
+          "angle": "Urgency & Lifestyle Focused",
+          "title": "Prestige Omega Deluxe Cookware Set - 5-Piece Non-Stick Cookware Set for a Limited Time Offer",
+          "short_description": "Don't miss out on this limited time offer! Get the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set, at an unbeatable price.",
+          "key_features": [
+            "**5-Piece Set**: Complete your kitchen with this comprehensive cookware set",
+            "**Non-Stick Coating**: Easy food release and cleaning for a stress-free cooking experience",
+            "**Heat-Resistant Handles**: Safe and comfortable handling for a confident cooking",
+            "**Dishwasher-Friendly**: Convenient cleaning and maintenance for a hassle-free life",
+            "**Compatible with Gas and Induction**: Versatile cooking options for a flexible cooking experience"
+          ],
+          "detailed_description": "The Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating ensures easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.",
+          "specifications": {
+            "pieces": "5",
+            "material": "Non-stick coated aluminium",
+            "items": "Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula",
+            "compatibility": "Gas stove, Induction",
+            "features": "Non-stick coating, Heat-resistant handles, Dishwasher-friendly"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Don't miss out on this limited time offer! Get the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set, at an unbeatable price.\n\nKey Features:\n\n\u2022 **5-Piece Set**: Complete your kitchen with this comprehensive cookware set\n\n\u2022 **Non-Stick Coating**: Easy food release and cleaning for a stress-free cooking experience\n\n\u2022 **Heat-Resistant Handles**: Safe and comfortable handling for a confident cooking\n\n\u2022 **Dishwasher-Friendly**: Convenient cleaning and maintenance for a hassle-free life\n\n\u2022 **Compatible with Gas and Induction**: Versatile cooking options for a flexible cooking experience\n\nThe Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating ensures easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.\n\nSpecifications:\n\n- pieces: 5\n\n- material: Non-stick coated aluminium\n\n- items: Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula\n\n- compatibility: Gas stove, Induction\n\n- features: Non-stick coating, Heat-resistant handles, Dishwasher-friendly",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Prestige Omega Deluxe Cookware Set - 5-Piece Non-Stick Cookware Set for a Limited Time Offer",
+            "meta_description": "Experience the best in cookware with Prestige Omega Deluxe Cookware Set, suitable for everyday cooking and compatible with both gas and induction cooktops.",
+            "keywords": [
+              "Prestige Omega Deluxe Cookware Set",
+              "Non-Stick Cookware Set",
+              "Cookware for Everyday Cooking",
+              "Gas and Induction Compatible",
+              "Cookware for Home"
+            ],
+            "tags": [
+              "Cookware",
+              "Non-Stick",
+              "Prestige",
+              "Kitchen Essentials"
+            ],
+            "short_description": "Don't miss out on this limited time offer! Get the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set, at an unbeatable price.",
+            "bullet_points": [
+              "**5-Piece Set**: Complete your kitchen with this comprehensive cookware set",
+              "**Non-Stick Coating**: Easy food release and cleaning for a stress-free cooking experience",
+              "**Heat-Resistant Handles**: Safe and comfortable handling for a confident cooking",
+              "**Dishwasher-Friendly**: Convenient cleaning and maintenance for a hassle-free life",
+              "**Compatible with Gas and Induction**: Versatile cooking options for a flexible cooking experience"
+            ],
+            "detailed_description": "The Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating ensures easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.",
+            "specs": {
+              "pieces": "5",
+              "material": "Non-stick coated aluminium",
+              "items": "Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula",
+              "compatibility": "Gas stove, Induction",
+              "features": "Non-stick coating, Heat-resistant handles, Dishwasher-friendly"
+            },
+            "price": "\u20b969900.00",
+            "description": "Upgrade your cooking experience with the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set suitable for everyday cooking and compatible with both gas and induction cooktops.\n\nKey Features:\n\n\u2022 **5-Piece Set**: Complete your kitchen with this comprehensive cookware set\n\n\u2022 **Non-Stick Coating**: Easy food release and cleaning\n\n\u2022 **Heat-Resistant Handles**: Safe and comfortable handling\n\n\u2022 **Dishwasher-Friendly**: Convenient cleaning and maintenance\n\n\u2022 **Compatible with Gas and Induction**: Versatile cooking options\n\nThe Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating ensures easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.\n\nSpecifications:\n\n- pieces: 5\n\n- material: Non-stick coated aluminium\n\n- items: Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula\n\n- compatibility: Gas stove, Induction\n\n- features: Non-stick coating, Heat-resistant handles, Dishwasher-friendly"
+          },
+          "cope_scores": {
+            "overall_score": 79,
+            "purchase_probability": 73.5,
+            "expected_ctr": 68.0,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 86,
+            "confidence_score": 88
+          }
+        }
+      ],
+      "decision": {
+        "action": "publish",
+        "reason": "Clear winner identified with high confidence.",
+        "recommended_variant_id": "515750b6-63b1-4fe0-b354-2d7183830780"
+      },
+      "marketing": {
+        "platform": "olx",
+        "platform_description": "Experience the best in cookware with the Prestige Omega Deluxe Cookware Set, a 5-piece non-stick cookware set with advanced features and premium quality.\n\nKey Features:\n\n\u2022 **5-Piece Set**: Complete your kitchen with this comprehensive cookware set\n\n\u2022 **Non-Stick Coating**: Advanced non-stick technology for easy food release and cleaning\n\n\u2022 **Heat-Resistant Handles**: Ergonomic design for safe and comfortable handling\n\n\u2022 **Dishwasher-Friendly**: Convenient cleaning and maintenance with the dishwasher\n\n\u2022 **Compatible with Gas and Induction**: Versatile cooking options with both gas and induction cooktops\n\nThe Prestige Omega Deluxe Cookware Set is a 5-piece non-stick cookware set designed for everyday cooking. The set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula. The non-stick coating is made with advanced technology for easy food release and cleaning, while the heat-resistant handles provide safe and comfortable handling. The set is dishwasher-friendly, making cleaning and maintenance a breeze. The Prestige Omega Deluxe Cookware Set is compatible with both gas and induction cooktops, offering versatile cooking options.\n\nSpecifications:\n\n- pieces: 5\n\n- material: Non-stick coated aluminium\n\n- items: Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula\n\n- compatibility: Gas stove, Induction\n\n- features: Non-stick coating, Heat-resistant handles, Dishwasher-friendly",
+        "call_to_action": "Order now on Olx to get the best deal!"
+      },
+      "validation": {
+        "is_valid": true,
+        "issues": []
+      },
+      "scores": {
+        "privacy_score": 98,
+        "seo_score": 90,
+        "marketing_score": 90,
+        "overall_score": 90,
+        "feedback": "SEO Title length is sub-optimal."
+      }
+    }
+  },
+  "token_usage": null,
+  "estimated_cost": null,
+  "cache_hit": null,
+  "error": null,
+  "capability_metadata": {
+    "image_processing_supported": true,
+    "privacy_anonymization": true,
+    "rag_context": true,
+    "multi_agent_workflow": true
+  }
+}

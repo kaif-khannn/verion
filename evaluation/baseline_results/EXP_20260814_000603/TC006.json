@@ -1,0 +1,19 @@
+{
+  "experiment_id": "EXP_20260814_000603",
+  "test_case_id": "TC006",
+  "system": "baseline",
+  "timestamp": "2026-08-14T00:08:34.385137",
+  "success": true,
+  "latency_ms": 5530.57,
+  "model": "llama-3.1-8b-instant",
+  "raw_output": "**Product Title:** Beige Shade Foundation Makeup (Medium Coverage, Matte Finish)\n\n**Short Description:** Achieve a flawless complexion with our medium coverage foundation in beige shade. This foundation provides a matte finish while protecting your skin with SPF. \n\n**Key Features:**\n\n- Beige shade foundation\n- Medium coverage\n- Matte finish\n- Includes SPF for sun protection\n- Brand logo partly visible\n\n**Detailed Description:** Get ready to look and feel your best with our beige shade foundation makeup. This medium coverage foundation is designed to provide a natural-looking finish while protecting your skin from the sun's harsh rays. With a matte finish, this foundation helps to minimize the appearance of pores and fine lines, leaving you with a smooth and even complexion. The SPF in this foundation helps to shield your skin from the sun's UV rays, reducing the risk of premature aging and skin damage.\n\n**Specifications:**\n\n- Shade: Beige\n- Coverage: Medium (probable)\n- Finish: Matte (probable)\n- Features: SPF included (probable)\n\n**SEO Keywords:** foundation makeup, beige shade foundation, medium coverage foundation, matte finish foundation, SPF foundation, natural-looking complexion, sun protection, skin care, beauty products.",
+  "token_usage": null,
+  "estimated_cost": null,
+  "error": null,
+  "capability_metadata": {
+    "image_processing_supported": false,
+    "privacy_anonymization": false,
+    "rag_context": false,
+    "multi_agent_workflow": false
+  }
+}

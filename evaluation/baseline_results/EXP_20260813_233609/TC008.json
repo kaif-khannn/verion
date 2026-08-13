@@ -1,0 +1,19 @@
+{
+  "experiment_id": "EXP_20260813_233609",
+  "test_case_id": "TC008",
+  "system": "baseline",
+  "timestamp": "2026-08-13T23:41:48.240701",
+  "success": true,
+  "latency_ms": 599.12,
+  "model": "llama-3.1-8b-instant",
+  "raw_output": "**Product Title:** Preethi 750W Mixer Grinder with 3/4 Stainless Steel Jars and Pulse Function\n\n**Short Description:** Get efficient and noise-free mixing with the Preethi 750W Mixer Grinder, featuring 3/4 stainless steel jars and a pulse function for perfect results every time.\n\n**Key Features:**\n\n- 750W Powerful Motor for Efficient Mixing\n- 3/4 Stainless Steel Jars for Durability\n- Pulse Function for Perfect Results\n- Stainless Steel Blades for Smooth Performance\n- White/Black Body for a Sleek Design\n\n**Detailed Description:** This Preethi 750W Mixer Grinder is a reliable and efficient addition to your kitchen. With a powerful 750W motor and stainless steel blades, it ensures smooth and effortless mixing, grinding, and blending of various ingredients. The 3/4 stainless steel jars provide ample space for preparing large quantities, while the pulse function allows for precise control over the mixing process. The white/black body of this mixer grinder adds a touch of elegance to your kitchen countertop.\n\n**Specifications:**\n\n- Power: 750W\n- Jars: 3 or 4 stainless steel jars\n- Blades: Stainless steel\n- Color: White/Black\n\n**SEO Keywords:** Preethi mixer grinder, 750W mixer grinder, stainless steel mixer grinder, 3/4 jars mixer grinder, pulse function mixer grinder, Preethi mixer grinder specifications.",
+  "token_usage": null,
+  "estimated_cost": null,
+  "error": null,
+  "capability_metadata": {
+    "image_processing_supported": false,
+    "privacy_anonymization": false,
+    "rag_context": false,
+    "multi_agent_workflow": false
+  }
+}

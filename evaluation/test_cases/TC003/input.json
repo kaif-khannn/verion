@@ -1,0 +1,68 @@
+{
+  "test_case_id": "TC003",
+  "product_name": "Sony WH-1000XM5",
+  "brand": "Sony",
+  "category": "Wireless Headphones",
+  "price": "₹29,990",
+  "description": "Over-ear wireless headphones with advanced noise cancellation, high-quality audio, comfortable earcups, and long battery life. Contact Arjun Mehta at arjun.mehta.test@example.com or +91-90000-12345 about the order.",
+  "specifications": {
+    "features": "Active Noise Cancellation, Bluetooth, Multipoint, 30-hour battery",
+    "color": "Black",
+    "customer_note": "Contact Arjun Mehta at arjun.mehta.test@example.com or +91-90000-12345 about the order."
+  },
+  "images": [
+    "images/sony1.jpg",
+    "images/sony2.jpg",
+    "images/sony3.jpg",
+    "images/sony4.jpg",
+    "images/sony5.jpg"
+  ],
+  "product": "Headphones",
+  "niche": "Electronics & Smartphone",
+  "input_condition": "Complete",
+  "pii": {
+    "present": true,
+    "fields": [
+      "name",
+      "email",
+      "phone"
+    ]
+  },
+  "product_input": {
+    "name": "Sony WH-1000XM5",
+    "brand": "Sony",
+    "category": "Wireless Headphones",
+    "price": "₹29,990",
+    "features": [
+      "Active Noise Cancellation",
+      "Bluetooth",
+      "Multipoint",
+      "30-hour battery"
+    ],
+    "color": "Black",
+    "customer_note": "Contact Arjun Mehta at arjun.mehta.test@example.com or +91-90000-12345 about the order.",
+    "description": "Over-ear wireless headphones with advanced noise cancellation, high-quality audio, comfortable earcups, and long battery life."
+  },
+  "image": {
+    "provided": true,
+    "path": "images/sony1.jpg"
+  },
+  "expected_facts": {
+    "name": "Sony WH-1000XM5",
+    "brand": "Sony",
+    "category": "Wireless Headphones",
+    "price": "₹29,990",
+    "color": "Black",
+    "features": [
+      "Active Noise Cancellation",
+      "Bluetooth",
+      "Multipoint",
+      "30-hour battery"
+    ]
+  },
+  "visual_facts": [
+    "Over-ear headphones",
+    "Black color",
+    "Sony logo"
+  ]
+}

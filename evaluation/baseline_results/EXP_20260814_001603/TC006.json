@@ -1,0 +1,19 @@
+{
+  "experiment_id": "EXP_20260814_001603",
+  "test_case_id": "TC006",
+  "system": "baseline",
+  "timestamp": "2026-08-14T00:19:10.405418",
+  "success": true,
+  "latency_ms": 5675.36,
+  "model": "llama-3.1-8b-instant",
+  "raw_output": "**Product Description**\n\nIntroducing our Foundation Makeup, a must-have for a flawless and radiant complexion. This versatile foundation bottle features a beautiful Beige shade, perfect for those with a medium skin tone looking for a natural-looking finish.\n\n**Key Features:**\n\n- **Medium Coverage**: Provides a balanced amount of coverage to even out your skin tone without looking too heavy or cakey.\n- **Matte Finish**: Leaves your skin with a smooth, matte finish that lasts all day, perfect for those who prefer a non-shiny look.\n- **SPF Included**: Helps protect your skin from the sun's harsh rays, giving you an added layer of protection against premature aging and skin damage.\n\n**Product Details:**\n\n- Brand logo is visible on the bottle, confirming the authenticity of the product.\n- Shade number is not visible, but the Beige shade ensures a natural-looking match for your skin tone.\n- The foundation comes in a convenient bottle design, making it easy to apply and carry around.\n\n**Perfect for:**\n\n- Everyday use for a natural-looking base\n- Special occasions when you want to look and feel your best\n- Those who prefer a matte finish and medium coverage\n\n**Note:** Please refer to the packaging for the most up-to-date information on the product's features and ingredients.",
+  "token_usage": null,
+  "estimated_cost": null,
+  "error": null,
+  "capability_metadata": {
+    "image_processing_supported": false,
+    "privacy_anonymization": false,
+    "rag_context": false,
+    "multi_agent_workflow": false
+  }
+}

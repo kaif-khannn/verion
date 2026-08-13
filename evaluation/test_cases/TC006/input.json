@@ -1,0 +1,46 @@
+{
+  "test_case_id": "TC006",
+  "product_name": "Foundation Makeup",
+  "category": "Foundation/Makeup",
+  "description": "foundation bottle, beige shade, maybe medium coverage, matte? brand logo partly visible. SPF might be included. shade number cannot be read.",
+  "specifications": {
+    "shade": "Beige",
+    "coverage": "Medium (probable)",
+    "finish": "Matte (probable)",
+    "features": "SPF included (probable)"
+  },
+  "images": [
+    "images/1.webp",
+    "images/2.webp",
+    "images/3.webp",
+    "images/PIF-4.webp",
+    "images/PIF-5.webp"
+  ],
+  "product": "Foundation/Makeup",
+  "niche": "Beauty & Makeup",
+  "input_condition": "Incomplete",
+  "pii": {
+    "present": false,
+    "fields": []
+  },
+  "product_input": {
+    "raw_description": "foundation bottle, beige shade, maybe medium coverage, matte? brand logo partly visible. SPF might be included. shade number cannot be read."
+  },
+  "image": {
+    "provided": true,
+    "path": "images/1.webp"
+  },
+  "expected_facts": {
+    "product_name": "Foundation Makeup",
+    "category": "Foundation/Makeup",
+    "shade": "Beige",
+    "coverage": "Medium (probable)",
+    "finish": "Matte (probable)",
+    "features": "SPF included (probable)"
+  },
+  "visual_facts": [
+    "Foundation bottle",
+    "Beige shade liquid",
+    "Partly visible brand logo"
+  ]
+}

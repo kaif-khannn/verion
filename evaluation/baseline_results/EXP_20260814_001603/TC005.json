@@ -1,0 +1,19 @@
+{
+  "experiment_id": "EXP_20260814_001603",
+  "test_case_id": "TC005",
+  "system": "baseline",
+  "timestamp": "2026-08-14T00:18:34.567521",
+  "success": true,
+  "latency_ms": 5501.76,
+  "model": "llama-3.1-8b-instant",
+  "raw_output": "**Nike Air Max 270 - Elevate Your Style with Every Step**\n\nUpgrade your footwear game with the iconic Nike Air Max 270, a sleek and stylish lifestyle sneaker designed to keep you comfortable and confident all day long. This versatile shoe features a breathable mesh and synthetic upper that allows for maximum airflow and flexibility, while the visible Air cushioning provides exceptional shock absorption and support.\n\nThe Nike Air Max 270 boasts a secure lace closure that ensures a snug fit, while the durable rubber outsole grips any surface, providing traction and stability. Whether you're running errands, hitting the gym, or just lounging around, this shoe has got you covered.\n\n**Key Features:**\n\n- Breathable mesh and synthetic upper for a comfortable fit\n- Visible Air cushioning for exceptional shock absorption and support\n- Secure lace closure for a snug fit\n- Durable rubber outsole for traction and stability\n- Color: Black/White\n- Size: UK 9\n\n**Order Details:**\n- Purchased for: Rahul Verma\n- Email: rahul.verma.test@example.com\n- Delivery Contact: +91-91111-22222\n\n**Order Price:** \u20b913,995",
+  "token_usage": null,
+  "estimated_cost": null,
+  "error": null,
+  "capability_metadata": {
+    "image_processing_supported": false,
+    "privacy_anonymization": false,
+    "rag_context": false,
+    "multi_agent_workflow": false
+  }
+}

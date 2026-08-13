@@ -1,0 +1,28 @@
+metrics:
+  # Reliability & Completeness
+  information_coverage:
+    description: "Percentage of expected facts accurately present in the output."
+    direction: "higher_is_better"
+  specification_accuracy:
+    description: "Percentage of facts present that are factually correct (no contradictions)."
+    direction: "higher_is_better"
+  
+  # Content Quality
+  unsupported_claim_rate:
+    description: "Rate of claims (hallucinations) in output not supported by input."
+    direction: "lower_is_better"
+  
+  # Privacy
+  pii_leakage_rate:
+    description: "Rate of PII elements leaked to the output."
+    direction: "lower_is_better"
+  
+  # Multimodal
+  visual_attribute_recall:
+    description: "Recall of visual attributes present in the output."
+    direction: "higher_is_better"
+  
+  # Latency
+  latency_s:
+    description: "Execution time in seconds."
+    direction: "lower_is_better"

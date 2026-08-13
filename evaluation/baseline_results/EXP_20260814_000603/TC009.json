@@ -1,0 +1,19 @@
+{
+  "experiment_id": "EXP_20260814_000603",
+  "test_case_id": "TC009",
+  "system": "baseline",
+  "timestamp": "2026-08-14T00:09:55.196759",
+  "success": true,
+  "latency_ms": 5593.02,
+  "model": "llama-3.1-8b-instant",
+  "raw_output": "**Product Listing: Prestige Omega Deluxe Cookware Set**\n\n### Product Title\nPrestige Omega Deluxe Cookware Set - 5 Piece Non-Stick Aluminum Set for Gas and Induction Stoves\n\n### Short Description\nCook with ease and convenience using the Prestige Omega Deluxe Cookware Set, featuring 5 non-stick pieces perfect for everyday cooking on gas and induction stoves.\n\n### Key Features\n- 5-piece non-stick cookware set ideal for everyday cooking\n- Compatible with gas and induction cooktops\n- Non-stick coating for effortless food release\n- Heat-resistant handles for secure grip\n- Dishwasher-friendly for easy cleaning\n\n### Detailed Description\nThe Prestige Omega Deluxe Cookware Set is a versatile and practical solution for home cooks. This 5-piece set includes a fry pan, sauce pan, kadai, glass lid, and frying spatula, providing everything you need to prepare a wide range of dishes. The non-stick coating ensures that food releases easily, while the heat-resistant handles provide a secure grip. Compatible with both gas and induction stoves, this cookware set is a great addition to any kitchen.\n\n### Specifications\n- Pieces: 5\n- Material: Non-stick coated aluminium\n- Items: Fry pan, Sauce pan, Kadai, Glass lid, Frying spatula\n- Compatibility: Gas stove, Induction\n- Features: Non-stick coating, Heat-resistant handles, Dishwasher-friendly\n\n### SEO Keywords\nPrestige Omega Deluxe Cookware Set, non-stick cookware, 5-piece cookware set, gas stove cookware, induction cookware, aluminium cookware, non-stick frying pan, sauce pan, kadai, glass lid, frying spatula.",
+  "token_usage": null,
+  "estimated_cost": null,
+  "error": null,
+  "capability_metadata": {
+    "image_processing_supported": false,
+    "privacy_anonymization": false,
+    "rag_context": false,
+    "multi_agent_workflow": false
+  }
+}

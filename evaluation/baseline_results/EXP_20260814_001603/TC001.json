@@ -1,0 +1,19 @@
+{
+  "experiment_id": "EXP_20260814_001603",
+  "test_case_id": "TC001",
+  "system": "baseline",
+  "timestamp": "2026-08-14T00:16:11.860097",
+  "success": true,
+  "latency_ms": 6139.64,
+  "model": "llama-3.1-8b-instant",
+  "raw_output": "**Introducing the Samsung Galaxy S25 - Elevate Your Mobile Experience**\n\nExperience unparalleled power and style with the Samsung Galaxy S25, a premium compact smartphone designed to exceed your expectations. Boasting a stunning 6.2-inch Dynamic AMOLED 2X display with a high-refresh-rate of 120Hz, you'll be treated to crystal-clear visuals and seamless navigation.\n\nAt the heart of the Galaxy S25 lies the mighty Snapdragon 8 Elite processor, delivering lightning-fast performance and efficient multitasking. Paired with 12GB of RAM and 256GB of storage, you'll have ample space to store your favorite apps, games, and memories.\n\nCapture life's precious moments with the versatile camera system, featuring a 50MP primary sensor, 12MP ultra-wide-angle lens, and 10MP telephoto lens. With advanced features like optical zoom, portrait mode, and more, you'll be able to capture stunning photos and videos every time.\n\nThe Galaxy S25 also boasts an all-day battery life, thanks to its 4000mAh battery, ensuring you stay connected and entertained throughout the day. With Android operating system, you'll have access to a world of apps, services, and features at your fingertips.\n\n**Key Features:**\n\n- 6.2-inch Dynamic AMOLED 2X display with 120Hz refresh rate\n- Powerful Snapdragon 8 Elite processor\n- 12GB RAM and 256GB storage\n- 50MP primary sensor, 12MP ultra-wide-angle lens, and 10MP telephoto lens\n- 4000mAh battery with all-day performance\n- Android operating system\n\n**Price:** \u20b974,999\n\n**Upgrade to the Samsung Galaxy S25 today and experience the ultimate in mobile technology.**",
+  "token_usage": null,
+  "estimated_cost": null,
+  "error": null,
+  "capability_metadata": {
+    "image_processing_supported": false,
+    "privacy_anonymization": false,
+    "rag_context": false,
+    "multi_agent_workflow": false
+  }
+}

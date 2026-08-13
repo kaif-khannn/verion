@@ -1,0 +1,19 @@
+{
+  "experiment_id": "EXP_20260813_233609",
+  "test_case_id": "TC002",
+  "system": "baseline",
+  "timestamp": "2026-08-13T23:36:39.374849",
+  "success": true,
+  "latency_ms": 724.24,
+  "model": "llama-3.1-8b-instant",
+  "raw_output": "**Product Title:** HP 15-inch Laptop with Intel Core i5 13th Gen, 16GB RAM, 512GB SSD\n\n**Short Description:** Get efficient and productive with the HP 15-inch laptop, featuring Intel Core i5 13th Gen processor, 16GB RAM, and 512GB SSD storage. Ideal for office and study needs, this laptop offers a full HD display and reliable performance.\n\n**Key Features:**\n\n- 15-inch Full HD display for clear visuals\n- Intel Core i5 13th Gen processor for smooth performance\n- 16GB RAM for seamless multitasking\n- 512GB SSD storage for fast data access\n- Silver color option for a sleek design\n- Windows operating system for a familiar interface\n- Wi-Fi connectivity for easy internet access\n\n**Detailed Description:** The HP 15-inch laptop is designed to meet the demands of office and study work. Equipped with a 13th Gen Intel Core i5 processor, it ensures efficient performance and reliable operation. With 16GB of RAM, you can easily multitask and switch between applications without experiencing lag. The 512GB SSD storage provides fast data access and efficient storage management. The 15-inch Full HD display offers clear visuals for a better viewing experience. The laptop comes in a sleek silver color and features Wi-Fi connectivity for easy internet access.\n\n**Specifications:**\n\n- **Display:** 15-inch Full HD\n- **Processor:** Intel Core i5 13th Gen\n- **RAM:** 16GB\n- **Storage:** 512GB SSD\n- **Color:** Silver\n- **OS:** Windows\n\n**SEO Keywords:** HP laptop 15-inch, Intel Core i5 13th Gen, 16GB RAM, 512GB SSD, full HD display, Windows laptop, office laptop, study laptop",
+  "token_usage": null,
+  "estimated_cost": null,
+  "error": null,
+  "capability_metadata": {
+    "image_processing_supported": false,
+    "privacy_anonymization": false,
+    "rag_context": false,
+    "multi_agent_workflow": false
+  }
+}

@@ -1,0 +1,10 @@
+Metric,Baseline,Verion AI
+Success Rate (%),100.0,100.0
+Average Latency (ms),5703.56,25702.9
+P95 Latency (ms),5980.57,28117.03
+Overall Completeness (%),85.0,100.0
+Information Coverage (%),91.08,95.0
+Specification Accuracy (%),91.08,95.0
+Unsupported Claim Rate (%),0.0,0.0
+Visual Attribute Recall (%),90.83,90.83
+PII Leakage Rate (%),100.0,0.0

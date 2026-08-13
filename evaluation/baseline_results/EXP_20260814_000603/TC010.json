@@ -1,0 +1,19 @@
+{
+  "experiment_id": "EXP_20260814_000603",
+  "test_case_id": "TC010",
+  "system": "baseline",
+  "timestamp": "2026-08-14T00:10:30.880029",
+  "success": true,
+  "latency_ms": 5699.52,
+  "model": "llama-3.1-8b-instant",
+  "raw_output": "**Product Title:** Smartwatch with AMOLED Display and Bluetooth Calling\n\n**Short Description:** Upgrade your lifestyle with this stylish smartwatch featuring an AMOLED display, Bluetooth calling, and IP68 water resistance. Get up to 10 days of battery life and enjoy seamless connectivity.\n\n**Key Features:**\n\n- AMOLED Display (1.78 or 1.9 inch)\n- Up to 10 days of battery life\n- Bluetooth Calling for hands-free conversations\n- IP68 Water Resistance for durability\n- Built-in GPS for precise navigation\n\n**Detailed Description:** Stay connected and on top of your fitness goals with this feature-packed smartwatch. Equipped with a vibrant AMOLED display, you can enjoy clear visuals and seamless navigation. With up to 10 days of battery life, you can wear it all day without worrying about running out of power. Make hands-free calls with Bluetooth calling and track your fitness progress with the built-in GPS. The IP68 water resistance ensures that your smartwatch can withstand everyday wear and tear.\n\n**Specifications:**\n\n- Display: AMOLED 1.78 or 1.9 inch\n- Battery Life: Up to 7 to 10 days\n- Storage: 2GB or 4GB\n- GPS: Built-in or Connected GPS\n- Features: Bluetooth calling, IP68 Water Resistance\n\n**SEO Keywords:** Smartwatch, AMOLED Display, Bluetooth Calling, IP68 Water Resistance, Built-in GPS, Fitness Tracking, Wearable Device, Smartwatch for Android, Smartwatch for iOS",
+  "token_usage": null,
+  "estimated_cost": null,
+  "error": null,
+  "capability_metadata": {
+    "image_processing_supported": false,
+    "privacy_anonymization": false,
+    "rag_context": false,
+    "multi_agent_workflow": false
+  }
+}

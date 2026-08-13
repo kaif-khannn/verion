@@ -1,0 +1,19 @@
+{
+  "experiment_id": "EXP_20260814_000603",
+  "test_case_id": "TC001",
+  "system": "baseline",
+  "timestamp": "2026-08-14T00:06:10.972338",
+  "success": true,
+  "latency_ms": 5706.94,
+  "model": "llama-3.1-8b-instant",
+  "raw_output": "**Product Title:** Samsung Galaxy S25 - Premium Compact Smartphone with High-Refresh-Rate AMOLED Display\n\n**Short Description:**\nExperience the ultimate smartphone experience with the Samsung Galaxy S25. This compact powerhouse boasts a high-refresh-rate AMOLED display, a flagship processor, and a versatile camera system, all packed into a sleek and durable design.\n\n**Key Features:**\n\n- High-refresh-rate 6.2-inch Dynamic AMOLED 2X display\n- Flagship Snapdragon 8 Elite processor\n- 12GB RAM and 256GB storage for seamless multitasking\n- Advanced camera system with 50MP main, 12MP ultrawide, and 10MP telephoto lenses\n- Long-lasting 4000mAh battery with all-day performance\n- Runs on Android operating system\n\n**Detailed Description:**\nThe Samsung Galaxy S25 is the perfect blend of style and substance. Its compact design makes it easy to carry around, while its high-refresh-rate display provides a smooth and immersive viewing experience. With a flagship processor and ample RAM, you can enjoy seamless multitasking and fast app loading times. The advanced camera system lets you capture stunning photos and videos, while the long-lasting battery ensures you stay connected throughout the day.\n\n**Specifications:**\n\n- Display: 6.2-inch Dynamic AMOLED 2X, 120Hz\n- Processor: Snapdragon 8 Elite\n- RAM: 12GB\n- Storage: 256GB\n- Camera: 50MP main + 12MP ultrawide + 10MP telephoto\n- Battery: 4000mAh\n- Operating System: Android\n\n**SEO Keywords:** Samsung Galaxy S25, premium compact smartphone, high-refresh-rate AMOLED display, flagship processor, versatile camera system, all-day battery performance, Android smartphone, Samsung mobile.",
+  "token_usage": null,
+  "estimated_cost": null,
+  "error": null,
+  "capability_metadata": {
+    "image_processing_supported": false,
+    "privacy_anonymization": false,
+    "rag_context": false,
+    "multi_agent_workflow": false
+  }
+}

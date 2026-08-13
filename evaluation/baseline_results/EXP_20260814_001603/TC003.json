@@ -1,0 +1,19 @@
+{
+  "experiment_id": "EXP_20260814_001603",
+  "test_case_id": "TC003",
+  "system": "baseline",
+  "timestamp": "2026-08-14T00:17:23.266439",
+  "success": true,
+  "latency_ms": 5659.16,
+  "model": "llama-3.1-8b-instant",
+  "raw_output": "**Immersive Sound Experience with Sony WH-1000XM5 Wireless Headphones**\n\nUpgrade your music experience with the Sony WH-1000XM5, a premium pair of over-ear wireless headphones designed to deliver exceptional sound quality, comfort, and convenience. Equipped with advanced noise cancellation technology, these headphones provide an immersive listening experience by minimizing external distractions.\n\n**Key Features:**\n\n- **Industry-leading Noise Cancellation**: Effectively blocks out background noise, allowing you to focus on your music or podcasts.\n- **High-quality Audio**: Enjoy crystal-clear sound with deep bass and precise treble, thanks to Sony's advanced audio technologies.\n- **Long-lasting Battery**: Enjoy up to 30 hours of non-stop music playback with a single charge.\n- **Comfortable Design**: Ergonomically designed earcups provide a snug fit, perfect for extended listening sessions.\n- **Convenient Connectivity**: Easily connect to your device via Bluetooth or enjoy multi-device connectivity with Multipoint technology.\n- **Available in Black**: A sleek and stylish design that complements any outfit.\n\n**Order Now and Experience the Future of Sound**\n\nGet your Sony WH-1000XM5 wireless headphones today and discover a new world of sound. For inquiries or to place an order, please contact Arjun Mehta at [arjun.mehta.test@example.com](mailto:arjun.mehta.test@example.com) or +91-90000-12345.\n\n**Price: \u20b929,990**\n\n**Hurry! Get ready to elevate your music experience with the Sony WH-1000XM5.**",
+  "token_usage": null,
+  "estimated_cost": null,
+  "error": null,
+  "capability_metadata": {
+    "image_processing_supported": false,
+    "privacy_anonymization": false,
+    "rag_context": false,
+    "multi_agent_workflow": false
+  }
+}

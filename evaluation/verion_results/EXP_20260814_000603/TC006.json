@@ -1,0 +1,955 @@
+{
+  "experiment_id": "EXP_20260814_000603",
+  "test_case_id": "TC006",
+  "system": "verion",
+  "timestamp": "2026-08-14T00:08:50.928876",
+  "success": true,
+  "latency_ms": 16538.83,
+  "model": "multi-agent",
+  "raw_output": {
+    "status": "success",
+    "message": "Workflow completed",
+    "data": {
+      "sanitized_input": "Product Name: Foundation Makeup\nCategory: Foundation/Makeup\nDescription: foundation bottle, beige shade, maybe medium coverage, matte? brand logo partly visible. SPF might be included. shade number cannot be read.\nSpecifications: shade: Beige, coverage: Medium (probable), finish: Matte (probable), features: SPF included (probable)",
+      "vision_analysis": "Error analyzing image with Groq Vision: LLMGateway call failed after 3 retries. Error: Error code: 413 - {'error': {'message': 'Request too large for model `qwen/qwen3.6-27b` in organization `org_01kvb5wdg5eq99np00tsjmwhtg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 8286, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "rag_context": "RAG database is empty. Please run the ingestion script first.",
+      "seo": {
+        "title": "Foundation Makeup | Beige Shade | Matte Finish | OLX",
+        "meta_description": "Buy Foundation Makeup online at OLX. Beige shade, matte finish, medium coverage. Browse our wide range of Foundation Makeup products.",
+        "keywords": [
+          "foundation makeup",
+          "beige shade",
+          "matte finish",
+          "medium coverage",
+          "OLX"
+        ],
+        "tags": [
+          "beauty",
+          "makeup",
+          "foundation",
+          "skincare"
+        ],
+        "short_description": "Get flawless skin with our Foundation Makeup. Beige shade, matte finish, medium coverage. Perfect for everyday use.",
+        "bullet_points": [
+          "**Shade:** Beige",
+          "**Coverage:** Medium",
+          "**Finish:** Matte",
+          "**Features:** SPF included",
+          "**Brand:** Not specified"
+        ],
+        "detailed_description": "Our Foundation Makeup is designed to provide a smooth, even finish. The beige shade is perfect for those with fair to medium skin tones. The matte finish helps to reduce shine and give your skin a natural look. With medium coverage, this foundation is perfect for everyday use.",
+        "specs": {
+          "shade": "Beige",
+          "coverage": "Medium",
+          "finish": "Matte",
+          "features": "SPF included"
+        },
+        "price": "\u20b9599.00",
+        "description": "Get flawless skin with our Foundation Makeup. Beige shade, matte finish, medium coverage. Perfect for everyday use.\n\nKey Features:\n\n\u2022 **Shade:** Beige\n\n\u2022 **Coverage:** Medium\n\n\u2022 **Finish:** Matte\n\n\u2022 **Features:** SPF included\n\n\u2022 **Brand:** Not specified\n\nOur Foundation Makeup is designed to provide a smooth, even finish. The beige shade is perfect for those with fair to medium skin tones. The matte finish helps to reduce shine and give your skin a natural look. With medium coverage, this foundation is perfect for everyday use.\n\nSpecifications:\n\n- shade: Beige\n\n- coverage: Medium\n\n- finish: Matte\n\n- features: SPF included"
+      },
+      "competitor_analysis": {
+        "recommended_price": "\u20b9599.00",
+        "lowest_competitor_price": "\u20b9499.00",
+        "highest_competitor_price": "\u20b9699.00",
+        "average_market_price": "\u20b9599.00",
+        "market_positioning": "Competitive pricing for a high-quality foundation",
+        "pricing_strategy": "Price competitively to attract price-conscious customers",
+        "competitor_insights": [
+          "Competitor A offers a similar product at a higher price point",
+          "Competitor B offers a lower-priced alternative with lower quality",
+          "Competitor C offers a premium product at a higher price point"
+        ]
+      },
+      "generated_variants": [
+        {
+          "variant_id": "f6a0d344-5b70-4e4a-99e2-4146dc596536",
+          "type": "A",
+          "angle": "Feature & Tech Heavy",
+          "title": "Foundation Makeup | Beige Shade | Matte Finish | OLX",
+          "short_description": "Get flawless skin with our Foundation Makeup. Beige shade, matte finish, medium coverage. Perfect for everyday use.",
+          "key_features": [
+            "**Shade:** Beige",
+            "**Coverage:** Medium",
+            "**Finish:** Matte",
+            "**Features:** SPF included",
+            "**Brand:** Not specified"
+          ],
+          "detailed_description": "Our Foundation Makeup is designed to provide a smooth, even finish. The beige shade is perfect for those with fair to medium skin tones. The matte finish helps to reduce shine and give your skin a natural look. With medium coverage, this foundation is perfect for everyday use.",
+          "specifications": {
+            "shade": "Beige",
+            "coverage": "Medium",
+            "finish": "Matte",
+            "features": "SPF included"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Get flawless skin with our Foundation Makeup. Beige shade, matte finish, medium coverage. Perfect for everyday use.\n\nKey Features:\n\n\u2022 **Shade:** Beige\n\n\u2022 **Coverage:** Medium\n\n\u2022 **Finish:** Matte\n\n\u2022 **Features:** SPF included\n\n\u2022 **Brand:** Not specified\n\nOur Foundation Makeup is designed to provide a smooth, even finish. The beige shade is perfect for those with fair to medium skin tones. The matte finish helps to reduce shine and give your skin a natural look. With medium coverage, this foundation is perfect for everyday use.\n\nSpecifications:\n\n- shade: Beige\n\n- coverage: Medium\n\n- finish: Matte\n\n- features: SPF included",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Foundation Makeup | Beige Shade | Matte Finish | OLX",
+            "meta_description": "Buy Foundation Makeup online at OLX. Beige shade, matte finish, medium coverage. Browse our wide range of Foundation Makeup products.",
+            "keywords": [
+              "foundation makeup",
+              "beige shade",
+              "matte finish",
+              "medium coverage",
+              "OLX"
+            ],
+            "tags": [
+              "beauty",
+              "makeup",
+              "foundation",
+              "skincare"
+            ],
+            "short_description": "Get flawless skin with our Foundation Makeup. Beige shade, matte finish, medium coverage. Perfect for everyday use.",
+            "bullet_points": [
+              "**Shade:** Beige",
+              "**Coverage:** Medium",
+              "**Finish:** Matte",
+              "**Features:** SPF included",
+              "**Brand:** Not specified"
+            ],
+            "detailed_description": "Our Foundation Makeup is designed to provide a smooth, even finish. The beige shade is perfect for those with fair to medium skin tones. The matte finish helps to reduce shine and give your skin a natural look. With medium coverage, this foundation is perfect for everyday use.",
+            "specs": {
+              "shade": "Beige",
+              "coverage": "Medium",
+              "finish": "Matte",
+              "features": "SPF included"
+            },
+            "price": "\u20b9599.00",
+            "description": "Get flawless skin with our Foundation Makeup. Beige shade, matte finish, medium coverage. Perfect for everyday use.\n\nKey Features:\n\n\u2022 **Shade:** Beige\n\n\u2022 **Coverage:** Medium\n\n\u2022 **Finish:** Matte\n\n\u2022 **Features:** SPF included\n\n\u2022 **Brand:** Not specified\n\nOur Foundation Makeup is designed to provide a smooth, even finish. The beige shade is perfect for those with fair to medium skin tones. The matte finish helps to reduce shine and give your skin a natural look. With medium coverage, this foundation is perfect for everyday use.\n\nSpecifications:\n\n- shade: Beige\n\n- coverage: Medium\n\n- finish: Matte\n\n- features: SPF included"
+          }
+        },
+        {
+          "variant_id": "54c67590-914c-4b49-ac9c-f62fa8591cae",
+          "type": "B",
+          "angle": "Emotional & Value Driven",
+          "title": "Get the Perfect Skin with Our Foundation Makeup",
+          "short_description": "Say goodbye to blemishes and hello to flawless skin with our Foundation Makeup. Beige shade, matte finish, medium coverage.",
+          "key_features": [
+            "**Flawless Finish:** Get a smooth, even finish with our Foundation Makeup",
+            "**Natural Look:** The matte finish helps to reduce shine and give your skin a natural look",
+            "**Everyday Use:** Perfect for everyday use, our foundation is easy to apply and blend",
+            "**SPF Included:** Protect your skin from the sun's harmful rays with our SPF included foundation",
+            "**Beige Shade:** Perfect for those with fair to medium skin tones"
+          ],
+          "detailed_description": "Our Foundation Makeup is designed to give you flawless skin. With a beige shade that's perfect for those with fair to medium skin tones, this foundation is easy to apply and blend. The matte finish helps to reduce shine and give your skin a natural look, making it perfect for everyday use.",
+          "specifications": {
+            "shade": "Beige",
+            "coverage": "Medium",
+            "finish": "Matte",
+            "features": "SPF included"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Say goodbye to blemishes and hello to flawless skin with our Foundation Makeup. Beige shade, matte finish, medium coverage.\n\nKey Features:\n\n\u2022 **Flawless Finish:** Get a smooth, even finish with our Foundation Makeup\n\n\u2022 **Natural Look:** The matte finish helps to reduce shine and give your skin a natural look\n\n\u2022 **Everyday Use:** Perfect for everyday use, our foundation is easy to apply and blend\n\n\u2022 **SPF Included:** Protect your skin from the sun's harmful rays with our SPF included foundation\n\n\u2022 **Beige Shade:** Perfect for those with fair to medium skin tones\n\nOur Foundation Makeup is designed to give you flawless skin. With a beige shade that's perfect for those with fair to medium skin tones, this foundation is easy to apply and blend. The matte finish helps to reduce shine and give your skin a natural look, making it perfect for everyday use.\n\nSpecifications:\n\n- shade: Beige\n\n- coverage: Medium\n\n- finish: Matte\n\n- features: SPF included",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Get the Perfect Skin with Our Foundation Makeup",
+            "meta_description": "Buy Foundation Makeup online at OLX. Beige shade, matte finish, medium coverage. Browse our wide range of Foundation Makeup products.",
+            "keywords": [
+              "foundation makeup",
+              "beige shade",
+              "matte finish",
+              "medium coverage",
+              "OLX"
+            ],
+            "tags": [
+              "beauty",
+              "makeup",
+              "foundation",
+              "skincare"
+            ],
+            "short_description": "Say goodbye to blemishes and hello to flawless skin with our Foundation Makeup. Beige shade, matte finish, medium coverage.",
+            "bullet_points": [
+              "**Flawless Finish:** Get a smooth, even finish with our Foundation Makeup",
+              "**Natural Look:** The matte finish helps to reduce shine and give your skin a natural look",
+              "**Everyday Use:** Perfect for everyday use, our foundation is easy to apply and blend",
+              "**SPF Included:** Protect your skin from the sun's harmful rays with our SPF included foundation",
+              "**Beige Shade:** Perfect for those with fair to medium skin tones"
+            ],
+            "detailed_description": "Our Foundation Makeup is designed to give you flawless skin. With a beige shade that's perfect for those with fair to medium skin tones, this foundation is easy to apply and blend. The matte finish helps to reduce shine and give your skin a natural look, making it perfect for everyday use.",
+            "specs": {
+              "shade": "Beige",
+              "coverage": "Medium",
+              "finish": "Matte",
+              "features": "SPF included"
+            },
+            "price": "\u20b9599.00",
+            "description": "Get flawless skin with our Foundation Makeup. Beige shade, matte finish, medium coverage. Perfect for everyday use.\n\nKey Features:\n\n\u2022 **Shade:** Beige\n\n\u2022 **Coverage:** Medium\n\n\u2022 **Finish:** Matte\n\n\u2022 **Features:** SPF included\n\n\u2022 **Brand:** Not specified\n\nOur Foundation Makeup is designed to provide a smooth, even finish. The beige shade is perfect for those with fair to medium skin tones. The matte finish helps to reduce shine and give your skin a natural look. With medium coverage, this foundation is perfect for everyday use.\n\nSpecifications:\n\n- shade: Beige\n\n- coverage: Medium\n\n- finish: Matte\n\n- features: SPF included"
+          }
+        },
+        {
+          "variant_id": "59874809-7b38-453c-893e-8badb030c0ce",
+          "type": "C",
+          "angle": "Urgency & Lifestyle Focused",
+          "title": "Limited Time Offer: Get Our Foundation Makeup at a Discounted Price",
+          "short_description": "Don't miss out on this amazing deal! Get our Foundation Makeup at a discounted price. Beige shade, matte finish, medium coverage.",
+          "key_features": [
+            "**Limited Time Offer:** Get our Foundation Makeup at a discounted price",
+            "**Beige Shade:** Perfect for those with fair to medium skin tones",
+            "**Matte Finish:** Helps to reduce shine and give your skin a natural look",
+            "**Medium Coverage:** Perfect for everyday use",
+            "**SPF Included:** Protect your skin from the sun's harmful rays"
+          ],
+          "detailed_description": "Don't miss out on this amazing deal! Get our Foundation Makeup at a discounted price. With a beige shade that's perfect for those with fair to medium skin tones, this foundation is easy to apply and blend. The matte finish helps to reduce shine and give your skin a natural look, making it perfect for everyday use.",
+          "specifications": {
+            "shade": "Beige",
+            "coverage": "Medium",
+            "finish": "Matte",
+            "features": "SPF included"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Don't miss out on this amazing deal! Get our Foundation Makeup at a discounted price. Beige shade, matte finish, medium coverage.\n\nKey Features:\n\n\u2022 **Limited Time Offer:** Get our Foundation Makeup at a discounted price\n\n\u2022 **Beige Shade:** Perfect for those with fair to medium skin tones\n\n\u2022 **Matte Finish:** Helps to reduce shine and give your skin a natural look\n\n\u2022 **Medium Coverage:** Perfect for everyday use\n\n\u2022 **SPF Included:** Protect your skin from the sun's harmful rays\n\nDon't miss out on this amazing deal! Get our Foundation Makeup at a discounted price. With a beige shade that's perfect for those with fair to medium skin tones, this foundation is easy to apply and blend. The matte finish helps to reduce shine and give your skin a natural look, making it perfect for everyday use.\n\nSpecifications:\n\n- shade: Beige\n\n- coverage: Medium\n\n- finish: Matte\n\n- features: SPF included",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Limited Time Offer: Get Our Foundation Makeup at a Discounted Price",
+            "meta_description": "Buy Foundation Makeup online at OLX. Beige shade, matte finish, medium coverage. Browse our wide range of Foundation Makeup products.",
+            "keywords": [
+              "foundation makeup",
+              "beige shade",
+              "matte finish",
+              "medium coverage",
+              "OLX"
+            ],
+            "tags": [
+              "beauty",
+              "makeup",
+              "foundation",
+              "skincare"
+            ],
+            "short_description": "Don't miss out on this amazing deal! Get our Foundation Makeup at a discounted price. Beige shade, matte finish, medium coverage.",
+            "bullet_points": [
+              "**Limited Time Offer:** Get our Foundation Makeup at a discounted price",
+              "**Beige Shade:** Perfect for those with fair to medium skin tones",
+              "**Matte Finish:** Helps to reduce shine and give your skin a natural look",
+              "**Medium Coverage:** Perfect for everyday use",
+              "**SPF Included:** Protect your skin from the sun's harmful rays"
+            ],
+            "detailed_description": "Don't miss out on this amazing deal! Get our Foundation Makeup at a discounted price. With a beige shade that's perfect for those with fair to medium skin tones, this foundation is easy to apply and blend. The matte finish helps to reduce shine and give your skin a natural look, making it perfect for everyday use.",
+            "specs": {
+              "shade": "Beige",
+              "coverage": "Medium",
+              "finish": "Matte",
+              "features": "SPF included"
+            },
+            "price": "\u20b9599.00",
+            "description": "Get flawless skin with our Foundation Makeup. Beige shade, matte finish, medium coverage. Perfect for everyday use.\n\nKey Features:\n\n\u2022 **Shade:** Beige\n\n\u2022 **Coverage:** Medium\n\n\u2022 **Finish:** Matte\n\n\u2022 **Features:** SPF included\n\n\u2022 **Brand:** Not specified\n\nOur Foundation Makeup is designed to provide a smooth, even finish. The beige shade is perfect for those with fair to medium skin tones. The matte finish helps to reduce shine and give your skin a natural look. With medium coverage, this foundation is perfect for everyday use.\n\nSpecifications:\n\n- shade: Beige\n\n- coverage: Medium\n\n- finish: Matte\n\n- features: SPF included"
+          }
+        }
+      ],
+      "scored_variants": [
+        {
+          "variant_id": "54c67590-914c-4b49-ac9c-f62fa8591cae",
+          "type": "B",
+          "angle": "Emotional & Value Driven",
+          "title": "Get the Perfect Skin with Our Foundation Makeup",
+          "short_description": "Say goodbye to blemishes and hello to flawless skin with our Foundation Makeup. Beige shade, matte finish, medium coverage.",
+          "key_features": [
+            "**Flawless Finish:** Get a smooth, even finish with our Foundation Makeup",
+            "**Natural Look:** The matte finish helps to reduce shine and give your skin a natural look",
+            "**Everyday Use:** Perfect for everyday use, our foundation is easy to apply and blend",
+            "**SPF Included:** Protect your skin from the sun's harmful rays with our SPF included foundation",
+            "**Beige Shade:** Perfect for those with fair to medium skin tones"
+          ],
+          "detailed_description": "Our Foundation Makeup is designed to give you flawless skin. With a beige shade that's perfect for those with fair to medium skin tones, this foundation is easy to apply and blend. The matte finish helps to reduce shine and give your skin a natural look, making it perfect for everyday use.",
+          "specifications": {
+            "shade": "Beige",
+            "coverage": "Medium",
+            "finish": "Matte",
+            "features": "SPF included"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Say goodbye to blemishes and hello to flawless skin with our Foundation Makeup. Beige shade, matte finish, medium coverage.\n\nKey Features:\n\n\u2022 **Flawless Finish:** Get a smooth, even finish with our Foundation Makeup\n\n\u2022 **Natural Look:** The matte finish helps to reduce shine and give your skin a natural look\n\n\u2022 **Everyday Use:** Perfect for everyday use, our foundation is easy to apply and blend\n\n\u2022 **SPF Included:** Protect your skin from the sun's harmful rays with our SPF included foundation\n\n\u2022 **Beige Shade:** Perfect for those with fair to medium skin tones\n\nOur Foundation Makeup is designed to give you flawless skin. With a beige shade that's perfect for those with fair to medium skin tones, this foundation is easy to apply and blend. The matte finish helps to reduce shine and give your skin a natural look, making it perfect for everyday use.\n\nSpecifications:\n\n- shade: Beige\n\n- coverage: Medium\n\n- finish: Matte\n\n- features: SPF included",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Get the Perfect Skin with Our Foundation Makeup",
+            "meta_description": "Buy Foundation Makeup online at OLX. Beige shade, matte finish, medium coverage. Browse our wide range of Foundation Makeup products.",
+            "keywords": [
+              "foundation makeup",
+              "beige shade",
+              "matte finish",
+              "medium coverage",
+              "OLX"
+            ],
+            "tags": [
+              "beauty",
+              "makeup",
+              "foundation",
+              "skincare"
+            ],
+            "short_description": "Say goodbye to blemishes and hello to flawless skin with our Foundation Makeup. Beige shade, matte finish, medium coverage.",
+            "bullet_points": [
+              "**Flawless Finish:** Get a smooth, even finish with our Foundation Makeup",
+              "**Natural Look:** The matte finish helps to reduce shine and give your skin a natural look",
+              "**Everyday Use:** Perfect for everyday use, our foundation is easy to apply and blend",
+              "**SPF Included:** Protect your skin from the sun's harmful rays with our SPF included foundation",
+              "**Beige Shade:** Perfect for those with fair to medium skin tones"
+            ],
+            "detailed_description": "Our Foundation Makeup is designed to give you flawless skin. With a beige shade that's perfect for those with fair to medium skin tones, this foundation is easy to apply and blend. The matte finish helps to reduce shine and give your skin a natural look, making it perfect for everyday use.",
+            "specs": {
+              "shade": "Beige",
+              "coverage": "Medium",
+              "finish": "Matte",
+              "features": "SPF included"
+            },
+            "price": "\u20b9599.00",
+            "description": "Get flawless skin with our Foundation Makeup. Beige shade, matte finish, medium coverage. Perfect for everyday use.\n\nKey Features:\n\n\u2022 **Shade:** Beige\n\n\u2022 **Coverage:** Medium\n\n\u2022 **Finish:** Matte\n\n\u2022 **Features:** SPF included\n\n\u2022 **Brand:** Not specified\n\nOur Foundation Makeup is designed to provide a smooth, even finish. The beige shade is perfect for those with fair to medium skin tones. The matte finish helps to reduce shine and give your skin a natural look. With medium coverage, this foundation is perfect for everyday use.\n\nSpecifications:\n\n- shade: Beige\n\n- coverage: Medium\n\n- finish: Matte\n\n- features: SPF included"
+          },
+          "cope_scores": {
+            "variant_id": "54c67590-914c-4b49-ac9c-f62fa8591cae",
+            "overall_score": 88,
+            "purchase_probability": 79.5,
+            "expected_ctr": 72.4,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 92,
+            "confidence_score": 90
+          }
+        },
+        {
+          "variant_id": "f6a0d344-5b70-4e4a-99e2-4146dc596536",
+          "type": "A",
+          "angle": "Feature & Tech Heavy",
+          "title": "Foundation Makeup | Beige Shade | Matte Finish | OLX",
+          "short_description": "Get flawless skin with our Foundation Makeup. Beige shade, matte finish, medium coverage. Perfect for everyday use.",
+          "key_features": [
+            "**Shade:** Beige",
+            "**Coverage:** Medium",
+            "**Finish:** Matte",
+            "**Features:** SPF included",
+            "**Brand:** Not specified"
+          ],
+          "detailed_description": "Our Foundation Makeup is designed to provide a smooth, even finish. The beige shade is perfect for those with fair to medium skin tones. The matte finish helps to reduce shine and give your skin a natural look. With medium coverage, this foundation is perfect for everyday use.",
+          "specifications": {
+            "shade": "Beige",
+            "coverage": "Medium",
+            "finish": "Matte",
+            "features": "SPF included"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Get flawless skin with our Foundation Makeup. Beige shade, matte finish, medium coverage. Perfect for everyday use.\n\nKey Features:\n\n\u2022 **Shade:** Beige\n\n\u2022 **Coverage:** Medium\n\n\u2022 **Finish:** Matte\n\n\u2022 **Features:** SPF included\n\n\u2022 **Brand:** Not specified\n\nOur Foundation Makeup is designed to provide a smooth, even finish. The beige shade is perfect for those with fair to medium skin tones. The matte finish helps to reduce shine and give your skin a natural look. With medium coverage, this foundation is perfect for everyday use.\n\nSpecifications:\n\n- shade: Beige\n\n- coverage: Medium\n\n- finish: Matte\n\n- features: SPF included",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Foundation Makeup | Beige Shade | Matte Finish | OLX",
+            "meta_description": "Buy Foundation Makeup online at OLX. Beige shade, matte finish, medium coverage. Browse our wide range of Foundation Makeup products.",
+            "keywords": [
+              "foundation makeup",
+              "beige shade",
+              "matte finish",
+              "medium coverage",
+              "OLX"
+            ],
+            "tags": [
+              "beauty",
+              "makeup",
+              "foundation",
+              "skincare"
+            ],
+            "short_description": "Get flawless skin with our Foundation Makeup. Beige shade, matte finish, medium coverage. Perfect for everyday use.",
+            "bullet_points": [
+              "**Shade:** Beige",
+              "**Coverage:** Medium",
+              "**Finish:** Matte",
+              "**Features:** SPF included",
+              "**Brand:** Not specified"
+            ],
+            "detailed_description": "Our Foundation Makeup is designed to provide a smooth, even finish. The beige shade is perfect for those with fair to medium skin tones. The matte finish helps to reduce shine and give your skin a natural look. With medium coverage, this foundation is perfect for everyday use.",
+            "specs": {
+              "shade": "Beige",
+              "coverage": "Medium",
+              "finish": "Matte",
+              "features": "SPF included"
+            },
+            "price": "\u20b9599.00",
+            "description": "Get flawless skin with our Foundation Makeup. Beige shade, matte finish, medium coverage. Perfect for everyday use.\n\nKey Features:\n\n\u2022 **Shade:** Beige\n\n\u2022 **Coverage:** Medium\n\n\u2022 **Finish:** Matte\n\n\u2022 **Features:** SPF included\n\n\u2022 **Brand:** Not specified\n\nOur Foundation Makeup is designed to provide a smooth, even finish. The beige shade is perfect for those with fair to medium skin tones. The matte finish helps to reduce shine and give your skin a natural look. With medium coverage, this foundation is perfect for everyday use.\n\nSpecifications:\n\n- shade: Beige\n\n- coverage: Medium\n\n- finish: Matte\n\n- features: SPF included"
+          },
+          "cope_scores": {
+            "variant_id": "f6a0d344-5b70-4e4a-99e2-4146dc596536",
+            "overall_score": 85,
+            "purchase_probability": 82.1,
+            "expected_ctr": 78.5,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 95,
+            "confidence_score": 92
+          }
+        },
+        {
+          "variant_id": "59874809-7b38-453c-893e-8badb030c0ce",
+          "type": "C",
+          "angle": "Urgency & Lifestyle Focused",
+          "title": "Limited Time Offer: Get Our Foundation Makeup at a Discounted Price",
+          "short_description": "Don't miss out on this amazing deal! Get our Foundation Makeup at a discounted price. Beige shade, matte finish, medium coverage.",
+          "key_features": [
+            "**Limited Time Offer:** Get our Foundation Makeup at a discounted price",
+            "**Beige Shade:** Perfect for those with fair to medium skin tones",
+            "**Matte Finish:** Helps to reduce shine and give your skin a natural look",
+            "**Medium Coverage:** Perfect for everyday use",
+            "**SPF Included:** Protect your skin from the sun's harmful rays"
+          ],
+          "detailed_description": "Don't miss out on this amazing deal! Get our Foundation Makeup at a discounted price. With a beige shade that's perfect for those with fair to medium skin tones, this foundation is easy to apply and blend. The matte finish helps to reduce shine and give your skin a natural look, making it perfect for everyday use.",
+          "specifications": {
+            "shade": "Beige",
+            "coverage": "Medium",
+            "finish": "Matte",
+            "features": "SPF included"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Don't miss out on this amazing deal! Get our Foundation Makeup at a discounted price. Beige shade, matte finish, medium coverage.\n\nKey Features:\n\n\u2022 **Limited Time Offer:** Get our Foundation Makeup at a discounted price\n\n\u2022 **Beige Shade:** Perfect for those with fair to medium skin tones\n\n\u2022 **Matte Finish:** Helps to reduce shine and give your skin a natural look\n\n\u2022 **Medium Coverage:** Perfect for everyday use\n\n\u2022 **SPF Included:** Protect your skin from the sun's harmful rays\n\nDon't miss out on this amazing deal! Get our Foundation Makeup at a discounted price. With a beige shade that's perfect for those with fair to medium skin tones, this foundation is easy to apply and blend. The matte finish helps to reduce shine and give your skin a natural look, making it perfect for everyday use.\n\nSpecifications:\n\n- shade: Beige\n\n- coverage: Medium\n\n- finish: Matte\n\n- features: SPF included",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Limited Time Offer: Get Our Foundation Makeup at a Discounted Price",
+            "meta_description": "Buy Foundation Makeup online at OLX. Beige shade, matte finish, medium coverage. Browse our wide range of Foundation Makeup products.",
+            "keywords": [
+              "foundation makeup",
+              "beige shade",
+              "matte finish",
+              "medium coverage",
+              "OLX"
+            ],
+            "tags": [
+              "beauty",
+              "makeup",
+              "foundation",
+              "skincare"
+            ],
+            "short_description": "Don't miss out on this amazing deal! Get our Foundation Makeup at a discounted price. Beige shade, matte finish, medium coverage.",
+            "bullet_points": [
+              "**Limited Time Offer:** Get our Foundation Makeup at a discounted price",
+              "**Beige Shade:** Perfect for those with fair to medium skin tones",
+              "**Matte Finish:** Helps to reduce shine and give your skin a natural look",
+              "**Medium Coverage:** Perfect for everyday use",
+              "**SPF Included:** Protect your skin from the sun's harmful rays"
+            ],
+            "detailed_description": "Don't miss out on this amazing deal! Get our Foundation Makeup at a discounted price. With a beige shade that's perfect for those with fair to medium skin tones, this foundation is easy to apply and blend. The matte finish helps to reduce shine and give your skin a natural look, making it perfect for everyday use.",
+            "specs": {
+              "shade": "Beige",
+              "coverage": "Medium",
+              "finish": "Matte",
+              "features": "SPF included"
+            },
+            "price": "\u20b9599.00",
+            "description": "Get flawless skin with our Foundation Makeup. Beige shade, matte finish, medium coverage. Perfect for everyday use.\n\nKey Features:\n\n\u2022 **Shade:** Beige\n\n\u2022 **Coverage:** Medium\n\n\u2022 **Finish:** Matte\n\n\u2022 **Features:** SPF included\n\n\u2022 **Brand:** Not specified\n\nOur Foundation Makeup is designed to provide a smooth, even finish. The beige shade is perfect for those with fair to medium skin tones. The matte finish helps to reduce shine and give your skin a natural look. With medium coverage, this foundation is perfect for everyday use.\n\nSpecifications:\n\n- shade: Beige\n\n- coverage: Medium\n\n- finish: Matte\n\n- features: SPF included"
+          },
+          "cope_scores": {
+            "variant_id": "59874809-7b38-453c-893e-8badb030c0ce",
+            "overall_score": 80,
+            "purchase_probability": 76.3,
+            "expected_ctr": 65.9,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 88,
+            "confidence_score": 88
+          }
+        }
+      ],
+      "decision": {
+        "action": "publish",
+        "reason": "Clear winner identified with high confidence.",
+        "recommended_variant_id": "54c67590-914c-4b49-ac9c-f62fa8591cae"
+      },
+      "marketing": {
+        "platform": "olx",
+        "platform_description": "Say goodbye to blemishes and hello to flawless skin with our Foundation Makeup. Beige shade, matte finish, medium coverage.\n\nKey Features:\n\n\u2022 **Flawless Finish:** Get a smooth, even finish with our Foundation Makeup\n\n\u2022 **Natural Look:** The matte finish helps to reduce shine and give your skin a natural look\n\n\u2022 **Everyday Use:** Perfect for everyday use, our foundation is easy to apply and blend\n\n\u2022 **SPF Included:** Protect your skin from the sun's harmful rays with our SPF included foundation\n\n\u2022 **Beige Shade:** Perfect for those with fair to medium skin tones\n\nOur Foundation Makeup is designed to give you flawless skin. With a beige shade that's perfect for those with fair to medium skin tones, this foundation is easy to apply and blend. The matte finish helps to reduce shine and give your skin a natural look, making it perfect for everyday use.\n\nSpecifications:\n\n- shade: Beige\n\n- coverage: Medium\n\n- finish: Matte\n\n- features: SPF included",
+        "call_to_action": "Order now on Olx to get the best deal!"
+      },
+      "validation": {
+        "is_valid": true,
+        "issues": []
+      },
+      "scores": {
+        "privacy_score": 98,
+        "seo_score": 100,
+        "marketing_score": 90,
+        "overall_score": 94,
+        "feedback": "Excellent optimization. Copy is highly persuasive and well-structured."
+      }
+    }
+  },
+  "complete_response": {
+    "status": "success",
+    "message": "Workflow completed",
+    "data": {
+      "sanitized_input": "Product Name: Foundation Makeup\nCategory: Foundation/Makeup\nDescription: foundation bottle, beige shade, maybe medium coverage, matte? brand logo partly visible. SPF might be included. shade number cannot be read.\nSpecifications: shade: Beige, coverage: Medium (probable), finish: Matte (probable), features: SPF included (probable)",
+      "vision_analysis": "Error analyzing image with Groq Vision: LLMGateway call failed after 3 retries. Error: Error code: 413 - {'error': {'message': 'Request too large for model `qwen/qwen3.6-27b` in organization `org_01kvb5wdg5eq99np00tsjmwhtg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 8286, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "rag_context": "RAG database is empty. Please run the ingestion script first.",
+      "seo": {
+        "title": "Foundation Makeup | Beige Shade | Matte Finish | OLX",
+        "meta_description": "Buy Foundation Makeup online at OLX. Beige shade, matte finish, medium coverage. Browse our wide range of Foundation Makeup products.",
+        "keywords": [
+          "foundation makeup",
+          "beige shade",
+          "matte finish",
+          "medium coverage",
+          "OLX"
+        ],
+        "tags": [
+          "beauty",
+          "makeup",
+          "foundation",
+          "skincare"
+        ],
+        "short_description": "Get flawless skin with our Foundation Makeup. Beige shade, matte finish, medium coverage. Perfect for everyday use.",
+        "bullet_points": [
+          "**Shade:** Beige",
+          "**Coverage:** Medium",
+          "**Finish:** Matte",
+          "**Features:** SPF included",
+          "**Brand:** Not specified"
+        ],
+        "detailed_description": "Our Foundation Makeup is designed to provide a smooth, even finish. The beige shade is perfect for those with fair to medium skin tones. The matte finish helps to reduce shine and give your skin a natural look. With medium coverage, this foundation is perfect for everyday use.",
+        "specs": {
+          "shade": "Beige",
+          "coverage": "Medium",
+          "finish": "Matte",
+          "features": "SPF included"
+        },
+        "price": "\u20b9599.00",
+        "description": "Get flawless skin with our Foundation Makeup. Beige shade, matte finish, medium coverage. Perfect for everyday use.\n\nKey Features:\n\n\u2022 **Shade:** Beige\n\n\u2022 **Coverage:** Medium\n\n\u2022 **Finish:** Matte\n\n\u2022 **Features:** SPF included\n\n\u2022 **Brand:** Not specified\n\nOur Foundation Makeup is designed to provide a smooth, even finish. The beige shade is perfect for those with fair to medium skin tones. The matte finish helps to reduce shine and give your skin a natural look. With medium coverage, this foundation is perfect for everyday use.\n\nSpecifications:\n\n- shade: Beige\n\n- coverage: Medium\n\n- finish: Matte\n\n- features: SPF included"
+      },
+      "competitor_analysis": {
+        "recommended_price": "\u20b9599.00",
+        "lowest_competitor_price": "\u20b9499.00",
+        "highest_competitor_price": "\u20b9699.00",
+        "average_market_price": "\u20b9599.00",
+        "market_positioning": "Competitive pricing for a high-quality foundation",
+        "pricing_strategy": "Price competitively to attract price-conscious customers",
+        "competitor_insights": [
+          "Competitor A offers a similar product at a higher price point",
+          "Competitor B offers a lower-priced alternative with lower quality",
+          "Competitor C offers a premium product at a higher price point"
+        ]
+      },
+      "generated_variants": [
+        {
+          "variant_id": "f6a0d344-5b70-4e4a-99e2-4146dc596536",
+          "type": "A",
+          "angle": "Feature & Tech Heavy",
+          "title": "Foundation Makeup | Beige Shade | Matte Finish | OLX",
+          "short_description": "Get flawless skin with our Foundation Makeup. Beige shade, matte finish, medium coverage. Perfect for everyday use.",
+          "key_features": [
+            "**Shade:** Beige",
+            "**Coverage:** Medium",
+            "**Finish:** Matte",
+            "**Features:** SPF included",
+            "**Brand:** Not specified"
+          ],
+          "detailed_description": "Our Foundation Makeup is designed to provide a smooth, even finish. The beige shade is perfect for those with fair to medium skin tones. The matte finish helps to reduce shine and give your skin a natural look. With medium coverage, this foundation is perfect for everyday use.",
+          "specifications": {
+            "shade": "Beige",
+            "coverage": "Medium",
+            "finish": "Matte",
+            "features": "SPF included"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Get flawless skin with our Foundation Makeup. Beige shade, matte finish, medium coverage. Perfect for everyday use.\n\nKey Features:\n\n\u2022 **Shade:** Beige\n\n\u2022 **Coverage:** Medium\n\n\u2022 **Finish:** Matte\n\n\u2022 **Features:** SPF included\n\n\u2022 **Brand:** Not specified\n\nOur Foundation Makeup is designed to provide a smooth, even finish. The beige shade is perfect for those with fair to medium skin tones. The matte finish helps to reduce shine and give your skin a natural look. With medium coverage, this foundation is perfect for everyday use.\n\nSpecifications:\n\n- shade: Beige\n\n- coverage: Medium\n\n- finish: Matte\n\n- features: SPF included",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Foundation Makeup | Beige Shade | Matte Finish | OLX",
+            "meta_description": "Buy Foundation Makeup online at OLX. Beige shade, matte finish, medium coverage. Browse our wide range of Foundation Makeup products.",
+            "keywords": [
+              "foundation makeup",
+              "beige shade",
+              "matte finish",
+              "medium coverage",
+              "OLX"
+            ],
+            "tags": [
+              "beauty",
+              "makeup",
+              "foundation",
+              "skincare"
+            ],
+            "short_description": "Get flawless skin with our Foundation Makeup. Beige shade, matte finish, medium coverage. Perfect for everyday use.",
+            "bullet_points": [
+              "**Shade:** Beige",
+              "**Coverage:** Medium",
+              "**Finish:** Matte",
+              "**Features:** SPF included",
+              "**Brand:** Not specified"
+            ],
+            "detailed_description": "Our Foundation Makeup is designed to provide a smooth, even finish. The beige shade is perfect for those with fair to medium skin tones. The matte finish helps to reduce shine and give your skin a natural look. With medium coverage, this foundation is perfect for everyday use.",
+            "specs": {
+              "shade": "Beige",
+              "coverage": "Medium",
+              "finish": "Matte",
+              "features": "SPF included"
+            },
+            "price": "\u20b9599.00",
+            "description": "Get flawless skin with our Foundation Makeup. Beige shade, matte finish, medium coverage. Perfect for everyday use.\n\nKey Features:\n\n\u2022 **Shade:** Beige\n\n\u2022 **Coverage:** Medium\n\n\u2022 **Finish:** Matte\n\n\u2022 **Features:** SPF included\n\n\u2022 **Brand:** Not specified\n\nOur Foundation Makeup is designed to provide a smooth, even finish. The beige shade is perfect for those with fair to medium skin tones. The matte finish helps to reduce shine and give your skin a natural look. With medium coverage, this foundation is perfect for everyday use.\n\nSpecifications:\n\n- shade: Beige\n\n- coverage: Medium\n\n- finish: Matte\n\n- features: SPF included"
+          }
+        },
+        {
+          "variant_id": "54c67590-914c-4b49-ac9c-f62fa8591cae",
+          "type": "B",
+          "angle": "Emotional & Value Driven",
+          "title": "Get the Perfect Skin with Our Foundation Makeup",
+          "short_description": "Say goodbye to blemishes and hello to flawless skin with our Foundation Makeup. Beige shade, matte finish, medium coverage.",
+          "key_features": [
+            "**Flawless Finish:** Get a smooth, even finish with our Foundation Makeup",
+            "**Natural Look:** The matte finish helps to reduce shine and give your skin a natural look",
+            "**Everyday Use:** Perfect for everyday use, our foundation is easy to apply and blend",
+            "**SPF Included:** Protect your skin from the sun's harmful rays with our SPF included foundation",
+            "**Beige Shade:** Perfect for those with fair to medium skin tones"
+          ],
+          "detailed_description": "Our Foundation Makeup is designed to give you flawless skin. With a beige shade that's perfect for those with fair to medium skin tones, this foundation is easy to apply and blend. The matte finish helps to reduce shine and give your skin a natural look, making it perfect for everyday use.",
+          "specifications": {
+            "shade": "Beige",
+            "coverage": "Medium",
+            "finish": "Matte",
+            "features": "SPF included"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Say goodbye to blemishes and hello to flawless skin with our Foundation Makeup. Beige shade, matte finish, medium coverage.\n\nKey Features:\n\n\u2022 **Flawless Finish:** Get a smooth, even finish with our Foundation Makeup\n\n\u2022 **Natural Look:** The matte finish helps to reduce shine and give your skin a natural look\n\n\u2022 **Everyday Use:** Perfect for everyday use, our foundation is easy to apply and blend\n\n\u2022 **SPF Included:** Protect your skin from the sun's harmful rays with our SPF included foundation\n\n\u2022 **Beige Shade:** Perfect for those with fair to medium skin tones\n\nOur Foundation Makeup is designed to give you flawless skin. With a beige shade that's perfect for those with fair to medium skin tones, this foundation is easy to apply and blend. The matte finish helps to reduce shine and give your skin a natural look, making it perfect for everyday use.\n\nSpecifications:\n\n- shade: Beige\n\n- coverage: Medium\n\n- finish: Matte\n\n- features: SPF included",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Get the Perfect Skin with Our Foundation Makeup",
+            "meta_description": "Buy Foundation Makeup online at OLX. Beige shade, matte finish, medium coverage. Browse our wide range of Foundation Makeup products.",
+            "keywords": [
+              "foundation makeup",
+              "beige shade",
+              "matte finish",
+              "medium coverage",
+              "OLX"
+            ],
+            "tags": [
+              "beauty",
+              "makeup",
+              "foundation",
+              "skincare"
+            ],
+            "short_description": "Say goodbye to blemishes and hello to flawless skin with our Foundation Makeup. Beige shade, matte finish, medium coverage.",
+            "bullet_points": [
+              "**Flawless Finish:** Get a smooth, even finish with our Foundation Makeup",
+              "**Natural Look:** The matte finish helps to reduce shine and give your skin a natural look",
+              "**Everyday Use:** Perfect for everyday use, our foundation is easy to apply and blend",
+              "**SPF Included:** Protect your skin from the sun's harmful rays with our SPF included foundation",
+              "**Beige Shade:** Perfect for those with fair to medium skin tones"
+            ],
+            "detailed_description": "Our Foundation Makeup is designed to give you flawless skin. With a beige shade that's perfect for those with fair to medium skin tones, this foundation is easy to apply and blend. The matte finish helps to reduce shine and give your skin a natural look, making it perfect for everyday use.",
+            "specs": {
+              "shade": "Beige",
+              "coverage": "Medium",
+              "finish": "Matte",
+              "features": "SPF included"
+            },
+            "price": "\u20b9599.00",
+            "description": "Get flawless skin with our Foundation Makeup. Beige shade, matte finish, medium coverage. Perfect for everyday use.\n\nKey Features:\n\n\u2022 **Shade:** Beige\n\n\u2022 **Coverage:** Medium\n\n\u2022 **Finish:** Matte\n\n\u2022 **Features:** SPF included\n\n\u2022 **Brand:** Not specified\n\nOur Foundation Makeup is designed to provide a smooth, even finish. The beige shade is perfect for those with fair to medium skin tones. The matte finish helps to reduce shine and give your skin a natural look. With medium coverage, this foundation is perfect for everyday use.\n\nSpecifications:\n\n- shade: Beige\n\n- coverage: Medium\n\n- finish: Matte\n\n- features: SPF included"
+          }
+        },
+        {
+          "variant_id": "59874809-7b38-453c-893e-8badb030c0ce",
+          "type": "C",
+          "angle": "Urgency & Lifestyle Focused",
+          "title": "Limited Time Offer: Get Our Foundation Makeup at a Discounted Price",
+          "short_description": "Don't miss out on this amazing deal! Get our Foundation Makeup at a discounted price. Beige shade, matte finish, medium coverage.",
+          "key_features": [
+            "**Limited Time Offer:** Get our Foundation Makeup at a discounted price",
+            "**Beige Shade:** Perfect for those with fair to medium skin tones",
+            "**Matte Finish:** Helps to reduce shine and give your skin a natural look",
+            "**Medium Coverage:** Perfect for everyday use",
+            "**SPF Included:** Protect your skin from the sun's harmful rays"
+          ],
+          "detailed_description": "Don't miss out on this amazing deal! Get our Foundation Makeup at a discounted price. With a beige shade that's perfect for those with fair to medium skin tones, this foundation is easy to apply and blend. The matte finish helps to reduce shine and give your skin a natural look, making it perfect for everyday use.",
+          "specifications": {
+            "shade": "Beige",
+            "coverage": "Medium",
+            "finish": "Matte",
+            "features": "SPF included"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Don't miss out on this amazing deal! Get our Foundation Makeup at a discounted price. Beige shade, matte finish, medium coverage.\n\nKey Features:\n\n\u2022 **Limited Time Offer:** Get our Foundation Makeup at a discounted price\n\n\u2022 **Beige Shade:** Perfect for those with fair to medium skin tones\n\n\u2022 **Matte Finish:** Helps to reduce shine and give your skin a natural look\n\n\u2022 **Medium Coverage:** Perfect for everyday use\n\n\u2022 **SPF Included:** Protect your skin from the sun's harmful rays\n\nDon't miss out on this amazing deal! Get our Foundation Makeup at a discounted price. With a beige shade that's perfect for those with fair to medium skin tones, this foundation is easy to apply and blend. The matte finish helps to reduce shine and give your skin a natural look, making it perfect for everyday use.\n\nSpecifications:\n\n- shade: Beige\n\n- coverage: Medium\n\n- finish: Matte\n\n- features: SPF included",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Limited Time Offer: Get Our Foundation Makeup at a Discounted Price",
+            "meta_description": "Buy Foundation Makeup online at OLX. Beige shade, matte finish, medium coverage. Browse our wide range of Foundation Makeup products.",
+            "keywords": [
+              "foundation makeup",
+              "beige shade",
+              "matte finish",
+              "medium coverage",
+              "OLX"
+            ],
+            "tags": [
+              "beauty",
+              "makeup",
+              "foundation",
+              "skincare"
+            ],
+            "short_description": "Don't miss out on this amazing deal! Get our Foundation Makeup at a discounted price. Beige shade, matte finish, medium coverage.",
+            "bullet_points": [
+              "**Limited Time Offer:** Get our Foundation Makeup at a discounted price",
+              "**Beige Shade:** Perfect for those with fair to medium skin tones",
+              "**Matte Finish:** Helps to reduce shine and give your skin a natural look",
+              "**Medium Coverage:** Perfect for everyday use",
+              "**SPF Included:** Protect your skin from the sun's harmful rays"
+            ],
+            "detailed_description": "Don't miss out on this amazing deal! Get our Foundation Makeup at a discounted price. With a beige shade that's perfect for those with fair to medium skin tones, this foundation is easy to apply and blend. The matte finish helps to reduce shine and give your skin a natural look, making it perfect for everyday use.",
+            "specs": {
+              "shade": "Beige",
+              "coverage": "Medium",
+              "finish": "Matte",
+              "features": "SPF included"
+            },
+            "price": "\u20b9599.00",
+            "description": "Get flawless skin with our Foundation Makeup. Beige shade, matte finish, medium coverage. Perfect for everyday use.\n\nKey Features:\n\n\u2022 **Shade:** Beige\n\n\u2022 **Coverage:** Medium\n\n\u2022 **Finish:** Matte\n\n\u2022 **Features:** SPF included\n\n\u2022 **Brand:** Not specified\n\nOur Foundation Makeup is designed to provide a smooth, even finish. The beige shade is perfect for those with fair to medium skin tones. The matte finish helps to reduce shine and give your skin a natural look. With medium coverage, this foundation is perfect for everyday use.\n\nSpecifications:\n\n- shade: Beige\n\n- coverage: Medium\n\n- finish: Matte\n\n- features: SPF included"
+          }
+        }
+      ],
+      "scored_variants": [
+        {
+          "variant_id": "54c67590-914c-4b49-ac9c-f62fa8591cae",
+          "type": "B",
+          "angle": "Emotional & Value Driven",
+          "title": "Get the Perfect Skin with Our Foundation Makeup",
+          "short_description": "Say goodbye to blemishes and hello to flawless skin with our Foundation Makeup. Beige shade, matte finish, medium coverage.",
+          "key_features": [
+            "**Flawless Finish:** Get a smooth, even finish with our Foundation Makeup",
+            "**Natural Look:** The matte finish helps to reduce shine and give your skin a natural look",
+            "**Everyday Use:** Perfect for everyday use, our foundation is easy to apply and blend",
+            "**SPF Included:** Protect your skin from the sun's harmful rays with our SPF included foundation",
+            "**Beige Shade:** Perfect for those with fair to medium skin tones"
+          ],
+          "detailed_description": "Our Foundation Makeup is designed to give you flawless skin. With a beige shade that's perfect for those with fair to medium skin tones, this foundation is easy to apply and blend. The matte finish helps to reduce shine and give your skin a natural look, making it perfect for everyday use.",
+          "specifications": {
+            "shade": "Beige",
+            "coverage": "Medium",
+            "finish": "Matte",
+            "features": "SPF included"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Say goodbye to blemishes and hello to flawless skin with our Foundation Makeup. Beige shade, matte finish, medium coverage.\n\nKey Features:\n\n\u2022 **Flawless Finish:** Get a smooth, even finish with our Foundation Makeup\n\n\u2022 **Natural Look:** The matte finish helps to reduce shine and give your skin a natural look\n\n\u2022 **Everyday Use:** Perfect for everyday use, our foundation is easy to apply and blend\n\n\u2022 **SPF Included:** Protect your skin from the sun's harmful rays with our SPF included foundation\n\n\u2022 **Beige Shade:** Perfect for those with fair to medium skin tones\n\nOur Foundation Makeup is designed to give you flawless skin. With a beige shade that's perfect for those with fair to medium skin tones, this foundation is easy to apply and blend. The matte finish helps to reduce shine and give your skin a natural look, making it perfect for everyday use.\n\nSpecifications:\n\n- shade: Beige\n\n- coverage: Medium\n\n- finish: Matte\n\n- features: SPF included",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Get the Perfect Skin with Our Foundation Makeup",
+            "meta_description": "Buy Foundation Makeup online at OLX. Beige shade, matte finish, medium coverage. Browse our wide range of Foundation Makeup products.",
+            "keywords": [
+              "foundation makeup",
+              "beige shade",
+              "matte finish",
+              "medium coverage",
+              "OLX"
+            ],
+            "tags": [
+              "beauty",
+              "makeup",
+              "foundation",
+              "skincare"
+            ],
+            "short_description": "Say goodbye to blemishes and hello to flawless skin with our Foundation Makeup. Beige shade, matte finish, medium coverage.",
+            "bullet_points": [
+              "**Flawless Finish:** Get a smooth, even finish with our Foundation Makeup",
+              "**Natural Look:** The matte finish helps to reduce shine and give your skin a natural look",
+              "**Everyday Use:** Perfect for everyday use, our foundation is easy to apply and blend",
+              "**SPF Included:** Protect your skin from the sun's harmful rays with our SPF included foundation",
+              "**Beige Shade:** Perfect for those with fair to medium skin tones"
+            ],
+            "detailed_description": "Our Foundation Makeup is designed to give you flawless skin. With a beige shade that's perfect for those with fair to medium skin tones, this foundation is easy to apply and blend. The matte finish helps to reduce shine and give your skin a natural look, making it perfect for everyday use.",
+            "specs": {
+              "shade": "Beige",
+              "coverage": "Medium",
+              "finish": "Matte",
+              "features": "SPF included"
+            },
+            "price": "\u20b9599.00",
+            "description": "Get flawless skin with our Foundation Makeup. Beige shade, matte finish, medium coverage. Perfect for everyday use.\n\nKey Features:\n\n\u2022 **Shade:** Beige\n\n\u2022 **Coverage:** Medium\n\n\u2022 **Finish:** Matte\n\n\u2022 **Features:** SPF included\n\n\u2022 **Brand:** Not specified\n\nOur Foundation Makeup is designed to provide a smooth, even finish. The beige shade is perfect for those with fair to medium skin tones. The matte finish helps to reduce shine and give your skin a natural look. With medium coverage, this foundation is perfect for everyday use.\n\nSpecifications:\n\n- shade: Beige\n\n- coverage: Medium\n\n- finish: Matte\n\n- features: SPF included"
+          },
+          "cope_scores": {
+            "variant_id": "54c67590-914c-4b49-ac9c-f62fa8591cae",
+            "overall_score": 88,
+            "purchase_probability": 79.5,
+            "expected_ctr": 72.4,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 92,
+            "confidence_score": 90
+          }
+        },
+        {
+          "variant_id": "f6a0d344-5b70-4e4a-99e2-4146dc596536",
+          "type": "A",
+          "angle": "Feature & Tech Heavy",
+          "title": "Foundation Makeup | Beige Shade | Matte Finish | OLX",
+          "short_description": "Get flawless skin with our Foundation Makeup. Beige shade, matte finish, medium coverage. Perfect for everyday use.",
+          "key_features": [
+            "**Shade:** Beige",
+            "**Coverage:** Medium",
+            "**Finish:** Matte",
+            "**Features:** SPF included",
+            "**Brand:** Not specified"
+          ],
+          "detailed_description": "Our Foundation Makeup is designed to provide a smooth, even finish. The beige shade is perfect for those with fair to medium skin tones. The matte finish helps to reduce shine and give your skin a natural look. With medium coverage, this foundation is perfect for everyday use.",
+          "specifications": {
+            "shade": "Beige",
+            "coverage": "Medium",
+            "finish": "Matte",
+            "features": "SPF included"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Get flawless skin with our Foundation Makeup. Beige shade, matte finish, medium coverage. Perfect for everyday use.\n\nKey Features:\n\n\u2022 **Shade:** Beige\n\n\u2022 **Coverage:** Medium\n\n\u2022 **Finish:** Matte\n\n\u2022 **Features:** SPF included\n\n\u2022 **Brand:** Not specified\n\nOur Foundation Makeup is designed to provide a smooth, even finish. The beige shade is perfect for those with fair to medium skin tones. The matte finish helps to reduce shine and give your skin a natural look. With medium coverage, this foundation is perfect for everyday use.\n\nSpecifications:\n\n- shade: Beige\n\n- coverage: Medium\n\n- finish: Matte\n\n- features: SPF included",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Foundation Makeup | Beige Shade | Matte Finish | OLX",
+            "meta_description": "Buy Foundation Makeup online at OLX. Beige shade, matte finish, medium coverage. Browse our wide range of Foundation Makeup products.",
+            "keywords": [
+              "foundation makeup",
+              "beige shade",
+              "matte finish",
+              "medium coverage",
+              "OLX"
+            ],
+            "tags": [
+              "beauty",
+              "makeup",
+              "foundation",
+              "skincare"
+            ],
+            "short_description": "Get flawless skin with our Foundation Makeup. Beige shade, matte finish, medium coverage. Perfect for everyday use.",
+            "bullet_points": [
+              "**Shade:** Beige",
+              "**Coverage:** Medium",
+              "**Finish:** Matte",
+              "**Features:** SPF included",
+              "**Brand:** Not specified"
+            ],
+            "detailed_description": "Our Foundation Makeup is designed to provide a smooth, even finish. The beige shade is perfect for those with fair to medium skin tones. The matte finish helps to reduce shine and give your skin a natural look. With medium coverage, this foundation is perfect for everyday use.",
+            "specs": {
+              "shade": "Beige",
+              "coverage": "Medium",
+              "finish": "Matte",
+              "features": "SPF included"
+            },
+            "price": "\u20b9599.00",
+            "description": "Get flawless skin with our Foundation Makeup. Beige shade, matte finish, medium coverage. Perfect for everyday use.\n\nKey Features:\n\n\u2022 **Shade:** Beige\n\n\u2022 **Coverage:** Medium\n\n\u2022 **Finish:** Matte\n\n\u2022 **Features:** SPF included\n\n\u2022 **Brand:** Not specified\n\nOur Foundation Makeup is designed to provide a smooth, even finish. The beige shade is perfect for those with fair to medium skin tones. The matte finish helps to reduce shine and give your skin a natural look. With medium coverage, this foundation is perfect for everyday use.\n\nSpecifications:\n\n- shade: Beige\n\n- coverage: Medium\n\n- finish: Matte\n\n- features: SPF included"
+          },
+          "cope_scores": {
+            "variant_id": "f6a0d344-5b70-4e4a-99e2-4146dc596536",
+            "overall_score": 85,
+            "purchase_probability": 82.1,
+            "expected_ctr": 78.5,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 95,
+            "confidence_score": 92
+          }
+        },
+        {
+          "variant_id": "59874809-7b38-453c-893e-8badb030c0ce",
+          "type": "C",
+          "angle": "Urgency & Lifestyle Focused",
+          "title": "Limited Time Offer: Get Our Foundation Makeup at a Discounted Price",
+          "short_description": "Don't miss out on this amazing deal! Get our Foundation Makeup at a discounted price. Beige shade, matte finish, medium coverage.",
+          "key_features": [
+            "**Limited Time Offer:** Get our Foundation Makeup at a discounted price",
+            "**Beige Shade:** Perfect for those with fair to medium skin tones",
+            "**Matte Finish:** Helps to reduce shine and give your skin a natural look",
+            "**Medium Coverage:** Perfect for everyday use",
+            "**SPF Included:** Protect your skin from the sun's harmful rays"
+          ],
+          "detailed_description": "Don't miss out on this amazing deal! Get our Foundation Makeup at a discounted price. With a beige shade that's perfect for those with fair to medium skin tones, this foundation is easy to apply and blend. The matte finish helps to reduce shine and give your skin a natural look, making it perfect for everyday use.",
+          "specifications": {
+            "shade": "Beige",
+            "coverage": "Medium",
+            "finish": "Matte",
+            "features": "SPF included"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Don't miss out on this amazing deal! Get our Foundation Makeup at a discounted price. Beige shade, matte finish, medium coverage.\n\nKey Features:\n\n\u2022 **Limited Time Offer:** Get our Foundation Makeup at a discounted price\n\n\u2022 **Beige Shade:** Perfect for those with fair to medium skin tones\n\n\u2022 **Matte Finish:** Helps to reduce shine and give your skin a natural look\n\n\u2022 **Medium Coverage:** Perfect for everyday use\n\n\u2022 **SPF Included:** Protect your skin from the sun's harmful rays\n\nDon't miss out on this amazing deal! Get our Foundation Makeup at a discounted price. With a beige shade that's perfect for those with fair to medium skin tones, this foundation is easy to apply and blend. The matte finish helps to reduce shine and give your skin a natural look, making it perfect for everyday use.\n\nSpecifications:\n\n- shade: Beige\n\n- coverage: Medium\n\n- finish: Matte\n\n- features: SPF included",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Limited Time Offer: Get Our Foundation Makeup at a Discounted Price",
+            "meta_description": "Buy Foundation Makeup online at OLX. Beige shade, matte finish, medium coverage. Browse our wide range of Foundation Makeup products.",
+            "keywords": [
+              "foundation makeup",
+              "beige shade",
+              "matte finish",
+              "medium coverage",
+              "OLX"
+            ],
+            "tags": [
+              "beauty",
+              "makeup",
+              "foundation",
+              "skincare"
+            ],
+            "short_description": "Don't miss out on this amazing deal! Get our Foundation Makeup at a discounted price. Beige shade, matte finish, medium coverage.",
+            "bullet_points": [
+              "**Limited Time Offer:** Get our Foundation Makeup at a discounted price",
+              "**Beige Shade:** Perfect for those with fair to medium skin tones",
+              "**Matte Finish:** Helps to reduce shine and give your skin a natural look",
+              "**Medium Coverage:** Perfect for everyday use",
+              "**SPF Included:** Protect your skin from the sun's harmful rays"
+            ],
+            "detailed_description": "Don't miss out on this amazing deal! Get our Foundation Makeup at a discounted price. With a beige shade that's perfect for those with fair to medium skin tones, this foundation is easy to apply and blend. The matte finish helps to reduce shine and give your skin a natural look, making it perfect for everyday use.",
+            "specs": {
+              "shade": "Beige",
+              "coverage": "Medium",
+              "finish": "Matte",
+              "features": "SPF included"
+            },
+            "price": "\u20b9599.00",
+            "description": "Get flawless skin with our Foundation Makeup. Beige shade, matte finish, medium coverage. Perfect for everyday use.\n\nKey Features:\n\n\u2022 **Shade:** Beige\n\n\u2022 **Coverage:** Medium\n\n\u2022 **Finish:** Matte\n\n\u2022 **Features:** SPF included\n\n\u2022 **Brand:** Not specified\n\nOur Foundation Makeup is designed to provide a smooth, even finish. The beige shade is perfect for those with fair to medium skin tones. The matte finish helps to reduce shine and give your skin a natural look. With medium coverage, this foundation is perfect for everyday use.\n\nSpecifications:\n\n- shade: Beige\n\n- coverage: Medium\n\n- finish: Matte\n\n- features: SPF included"
+          },
+          "cope_scores": {
+            "variant_id": "59874809-7b38-453c-893e-8badb030c0ce",
+            "overall_score": 80,
+            "purchase_probability": 76.3,
+            "expected_ctr": 65.9,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 88,
+            "confidence_score": 88
+          }
+        }
+      ],
+      "decision": {
+        "action": "publish",
+        "reason": "Clear winner identified with high confidence.",
+        "recommended_variant_id": "54c67590-914c-4b49-ac9c-f62fa8591cae"
+      },
+      "marketing": {
+        "platform": "olx",
+        "platform_description": "Say goodbye to blemishes and hello to flawless skin with our Foundation Makeup. Beige shade, matte finish, medium coverage.\n\nKey Features:\n\n\u2022 **Flawless Finish:** Get a smooth, even finish with our Foundation Makeup\n\n\u2022 **Natural Look:** The matte finish helps to reduce shine and give your skin a natural look\n\n\u2022 **Everyday Use:** Perfect for everyday use, our foundation is easy to apply and blend\n\n\u2022 **SPF Included:** Protect your skin from the sun's harmful rays with our SPF included foundation\n\n\u2022 **Beige Shade:** Perfect for those with fair to medium skin tones\n\nOur Foundation Makeup is designed to give you flawless skin. With a beige shade that's perfect for those with fair to medium skin tones, this foundation is easy to apply and blend. The matte finish helps to reduce shine and give your skin a natural look, making it perfect for everyday use.\n\nSpecifications:\n\n- shade: Beige\n\n- coverage: Medium\n\n- finish: Matte\n\n- features: SPF included",
+        "call_to_action": "Order now on Olx to get the best deal!"
+      },
+      "validation": {
+        "is_valid": true,
+        "issues": []
+      },
+      "scores": {
+        "privacy_score": 98,
+        "seo_score": 100,
+        "marketing_score": 90,
+        "overall_score": 94,
+        "feedback": "Excellent optimization. Copy is highly persuasive and well-structured."
+      }
+    }
+  },
+  "token_usage": null,
+  "estimated_cost": null,
+  "cache_hit": null,
+  "error": null,
+  "capability_metadata": {
+    "image_processing_supported": true,
+    "privacy_anonymization": true,
+    "rag_context": true,
+    "multi_agent_workflow": true
+  }
+}

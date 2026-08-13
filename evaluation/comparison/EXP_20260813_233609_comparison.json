@@ -1,0 +1,41 @@
+{
+  "experiment_id": "EXP_20260813_233609",
+  "metrics_source": "EXP_20260813_233609_metrics.json",
+  "comparisons": {
+    "success_rate_pct": {
+      "baseline_value": 100.0,
+      "verion_value": 100.0,
+      "absolute_difference": 0.0,
+      "directional_improvement_pct": 0.0,
+      "direction": "higher_is_better"
+    },
+    "avg_latency_ms": {
+      "baseline_value": 703.58,
+      "verion_value": 43888.81,
+      "absolute_difference": 43185.23,
+      "directional_improvement_pct": -6137.93,
+      "direction": "lower_is_better"
+    },
+    "p95_latency_ms": {
+      "baseline_value": 980.01,
+      "verion_value": 69193.78,
+      "absolute_difference": 68213.77,
+      "directional_improvement_pct": -6960.52,
+      "direction": "lower_is_better"
+    },
+    "overall_completeness_pct": {
+      "baseline_value": 100.0,
+      "verion_value": 100.0,
+      "absolute_difference": 0.0,
+      "directional_improvement_pct": 0.0,
+      "direction": "higher_is_better"
+    },
+    "pii_protection_rate_pct": {
+      "baseline_value": 100.0,
+      "verion_value": 100.0,
+      "absolute_difference": 0.0,
+      "directional_improvement_pct": 0.0,
+      "direction": "higher_is_better"
+    }
+  }
+}

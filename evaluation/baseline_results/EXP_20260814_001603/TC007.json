@@ -1,0 +1,19 @@
+{
+  "experiment_id": "EXP_20260814_001603",
+  "test_case_id": "TC007",
+  "system": "baseline",
+  "timestamp": "2026-08-14T00:19:34.694601",
+  "success": true,
+  "latency_ms": 5757.03,
+  "model": "llama-3.1-8b-instant",
+  "raw_output": "**Introducing the Philips Airfryer - A Revolutionary Kitchen Companion**\n\nElevate your cooking experience with the Philips Airfryer, a compact and versatile kitchen appliance designed to make everyday cooking a breeze. With its sleek and modern design, this air fryer is perfect for anyone looking to cook healthy, delicious meals without the hassle of traditional deep-frying.\n\n**Key Features:**\n\n- **Rapid Air Technology:** Our patented technology uses hot air to circulate around the food, resulting in crispy exterior and a tender interior, just like deep-frying, but with much less oil.\n- **Adjustable Temperature Control:** Easily adjust the temperature from 80\u00b0C to 200\u00b0C to suit your cooking needs, whether you're making crispy fries, succulent chicken, or a tender steak.\n- **Timer Functionality:** Set the timer to cook your food to perfection, ensuring that you never overcook or undercook your meals.\n- **Removable Basket:** Easily clean and maintain your air fryer with the removable basket, making it a breeze to cook and clean.\n- **Compact Design:** With a capacity of 4.1L and a power of 1400W, this air fryer is perfect for small kitchens or cooking for one or two people.\n\n**Cook Up a Storm with the Philips Airfryer**\n\nWhether you're a health-conscious individual, a busy parent, or a food enthusiast, the Philips Airfryer is the perfect addition to your kitchen. With its easy-to-use interface, adjustable temperature control, and Rapid Air technology, you'll be cooking like a pro in no time.\n\n**Get Ready to Experience the Ultimate in Air Frying**\n\nOrder your Philips Airfryer today and discover a world of delicious, healthy meals, made with ease and convenience.\n\n**Product Specifications:**\n\n- Capacity: 4.1L\n- Power: 1400W\n- Temperature Range: 80\u00b0C\u2013200\u00b0C\n- Color: Black\n\n**Order now and start cooking your way to a healthier, happier you!**",
+  "token_usage": null,
+  "estimated_cost": null,
+  "error": null,
+  "capability_metadata": {
+    "image_processing_supported": false,
+    "privacy_anonymization": false,
+    "rag_context": false,
+    "multi_agent_workflow": false
+  }
+}

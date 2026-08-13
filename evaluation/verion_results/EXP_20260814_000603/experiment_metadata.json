@@ -1,0 +1,19 @@
+{
+  "experiment_id": "EXP_20260814_000603",
+  "timestamp": "2026-08-14T00:06:03.170349",
+  "total_test_cases": 10,
+  "baseline_url": "http://localhost:8001/generate",
+  "verion_url": "http://localhost:8000/api/generate",
+  "test_case_ids": [
+    "TC001",
+    "TC002",
+    "TC003",
+    "TC004",
+    "TC005",
+    "TC006",
+    "TC007",
+    "TC008",
+    "TC009",
+    "TC010"
+  ]
+}

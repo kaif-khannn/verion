@@ -1,0 +1,73 @@
+{
+  "experiment_id": "EXP_20260813_233609",
+  "baseline": {
+    "system": "baseline",
+    "reliability": {
+      "total_executions": 10,
+      "successful_executions": 10,
+      "failed_executions": 0,
+      "success_rate_pct": 100.0,
+      "failure_rate_pct": 0.0
+    },
+    "performance": {
+      "avg_latency_ms": 703.58,
+      "median_latency_ms": 673.06,
+      "min_latency_ms": 516.49,
+      "max_latency_ms": 997.34,
+      "p95_latency_ms": 980.01
+    },
+    "content_completeness": {
+      "overall_completeness_pct": 100.0,
+      "component_presence_rates_pct": {
+        "title": 100.0,
+        "short_description": 100.0,
+        "key_features": 100.0,
+        "detailed_description": 100.0,
+        "specifications": 100.0,
+        "seo_keywords": 100.0
+      }
+    },
+    "privacy": {
+      "total_pii_checked": 4,
+      "exposed_pii_count": 0,
+      "protected_pii_count": 4,
+      "pii_protection_rate_pct": 100.0
+    },
+    "cope_simulation_note": "COPE scores represent synthetic / estimated simulations, not actual ground-truth conversion or CTR."
+  },
+  "verion": {
+    "system": "verion",
+    "reliability": {
+      "total_executions": 10,
+      "successful_executions": 10,
+      "failed_executions": 0,
+      "success_rate_pct": 100.0,
+      "failure_rate_pct": 0.0
+    },
+    "performance": {
+      "avg_latency_ms": 43888.81,
+      "median_latency_ms": 39325.25,
+      "min_latency_ms": 23896.97,
+      "max_latency_ms": 84762.93,
+      "p95_latency_ms": 69193.78
+    },
+    "content_completeness": {
+      "overall_completeness_pct": 100.0,
+      "component_presence_rates_pct": {
+        "title": 100.0,
+        "short_description": 100.0,
+        "key_features": 100.0,
+        "detailed_description": 100.0,
+        "specifications": 100.0,
+        "seo_keywords": 100.0
+      }
+    },
+    "privacy": {
+      "total_pii_checked": 4,
+      "exposed_pii_count": 0,
+      "protected_pii_count": 4,
+      "pii_protection_rate_pct": 100.0
+    },
+    "cope_simulation_note": "COPE scores represent synthetic / estimated simulations, not actual ground-truth conversion or CTR."
+  }
+}

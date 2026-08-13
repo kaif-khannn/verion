@@ -32,6 +32,10 @@ OPTIONAL_FIELDS = {
     "images": (list, type(None)),
     "category": (str, type(None)),
     "metadata": (dict, type(None)),
+    "expected_facts": (dict, type(None)),
+    "visual_facts": (list, type(None)),
+    "pii": (dict, bool, type(None)),
+    "expected_checks": (dict, type(None)),
 }
 
 def discover_test_cases(base_dir: Path) -> List[Path]:

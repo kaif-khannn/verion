@@ -1,0 +1,19 @@
+{
+  "experiment_id": "EXP_20260814_000603",
+  "test_case_id": "TC007",
+  "system": "baseline",
+  "timestamp": "2026-08-14T00:08:58.595101",
+  "success": true,
+  "latency_ms": 5593.5,
+  "model": "llama-3.1-8b-instant",
+  "raw_output": "**Product Title:** Philips Airfryer - Compact Air Fryer with Rapid Air Technology and Adjustable Temperature Control\n\n**Short Description:** Upgrade your cooking experience with the Philips Airfryer, a compact and versatile air fryer perfect for everyday cooking. With Rapid Air technology and adjustable temperature control, this kitchen essential makes it easy to achieve crispy results with minimal oil.\n\n**Key Features:**\n\n- Compact design for easy storage\n- Adjustable temperature control (80\u00b0C\u2013200\u00b0C)\n- Timer functionality for precise cooking\n- Rapid Air technology for crispy results\n- Removable basket for easy cleaning\n- 4.1L capacity\n\n**Detailed Description:** The Philips Airfryer is a game-changing kitchen appliance designed to make healthy cooking a breeze. With its compact size and adjustable temperature control, you can achieve a wide range of cooking results, from crispy fries to tender vegetables. The Rapid Air technology and timer functionality ensure that your food is cooked to perfection every time. Plus, the removable basket and easy-to-clean design make maintenance a snap.\n\n**Specifications:**\n\n- Capacity: 4.1L\n- Power: 1400W\n- Temperature Range: 80\u00b0C\u2013200\u00b0C\n- Features: Rapid Air technology, Adjustable temperature, Timer, Removable basket\n- Color: Black\n\n**SEO Keywords:** Philips Airfryer, air fryer, compact air fryer, Rapid Air technology, adjustable temperature control, kitchen appliance, cooking essentials, healthy cooking, easy cleaning, compact design",
+  "token_usage": null,
+  "estimated_cost": null,
+  "error": null,
+  "capability_metadata": {
+    "image_processing_supported": false,
+    "privacy_anonymization": false,
+    "rag_context": false,
+    "multi_agent_workflow": false
+  }
+}

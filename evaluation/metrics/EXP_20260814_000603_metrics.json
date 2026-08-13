@@ -1,0 +1,247 @@
+{
+  "experiment_id": "EXP_20260814_000603",
+  "baseline": {
+    "system": "baseline",
+    "per_case": {
+      "TC001": {
+        "condition": "Clean/complete",
+        "success": true,
+        "info_coverage": 62.5,
+        "spec_accuracy": 62.5,
+        "visual_recall": 66.67,
+        "hallucination": 0.0
+      },
+      "TC002": {
+        "condition": "Messy description",
+        "success": true,
+        "info_coverage": 90.0,
+        "spec_accuracy": 90.0,
+        "visual_recall": 66.67,
+        "hallucination": 0.0
+      },
+      "TC003": {
+        "condition": "Complete",
+        "success": true,
+        "info_coverage": 83.33,
+        "spec_accuracy": 83.33,
+        "visual_recall": 100.0,
+        "hallucination": 0.0
+      },
+      "TC004": {
+        "condition": "Messy/incomplete",
+        "success": true,
+        "info_coverage": 87.5,
+        "spec_accuracy": 87.5,
+        "visual_recall": 100.0,
+        "hallucination": 0.0
+      },
+      "TC005": {
+        "condition": "Complete",
+        "success": true,
+        "info_coverage": 100.0,
+        "spec_accuracy": 100.0,
+        "visual_recall": 100.0,
+        "hallucination": 0.0
+      },
+      "TC006": {
+        "condition": "Incomplete",
+        "success": true,
+        "info_coverage": 83.33,
+        "spec_accuracy": 83.33,
+        "visual_recall": 100.0,
+        "hallucination": 0.0
+      },
+      "TC007": {
+        "condition": "Complete",
+        "success": true,
+        "info_coverage": 100.0,
+        "spec_accuracy": 100.0,
+        "visual_recall": 100.0,
+        "hallucination": 0.0
+      },
+      "TC008": {
+        "condition": "Messy",
+        "success": true,
+        "info_coverage": 87.5,
+        "spec_accuracy": 87.5,
+        "visual_recall": 100.0,
+        "hallucination": 0.0
+      },
+      "TC009": {
+        "condition": "Complete",
+        "success": true,
+        "info_coverage": 100.0,
+        "spec_accuracy": 100.0,
+        "visual_recall": 75.0,
+        "hallucination": 0.0
+      },
+      "TC010": {
+        "condition": "Conflicting/messy specs",
+        "success": true,
+        "info_coverage": 87.5,
+        "spec_accuracy": 87.5,
+        "visual_recall": 100.0,
+        "hallucination": 0.0
+      }
+    },
+    "reliability": {
+      "total_executions": 10,
+      "successful_executions": 10,
+      "failed_executions": 0,
+      "success_rate_pct": 100.0,
+      "failure_rate_pct": 0.0
+    },
+    "performance": {
+      "avg_latency_ms": 5636.59,
+      "median_latency_ms": 5610.03,
+      "min_latency_ms": 5528.06,
+      "max_latency_ms": 5827.66,
+      "p95_latency_ms": 5773.34
+    },
+    "content_completeness": {
+      "overall_completeness_pct": 100.0,
+      "component_presence_rates_pct": {
+        "title": 100.0,
+        "short_description": 100.0,
+        "key_features": 100.0,
+        "detailed_description": 100.0,
+        "specifications": 100.0,
+        "seo_keywords": 100.0
+      },
+      "information_coverage_pct": 88.17,
+      "specification_accuracy_pct": 88.17,
+      "unsupported_claim_rate_pct": 0.0,
+      "visual_attribute_recall_pct": 90.83
+    },
+    "privacy": {
+      "total_pii_checked": 4,
+      "exposed_pii_count": 2,
+      "protected_pii_count": 2,
+      "pii_protection_rate_pct": 50.0,
+      "pii_leakage_rate_pct": 50.0
+    },
+    "cope_simulation_note": "COPE scores represent synthetic / estimated simulations, not actual ground-truth conversion or CTR."
+  },
+  "verion": {
+    "system": "verion",
+    "per_case": {
+      "TC001": {
+        "condition": "Clean/complete",
+        "success": true,
+        "info_coverage": 62.5,
+        "spec_accuracy": 62.5,
+        "visual_recall": 66.67,
+        "hallucination": 0.0
+      },
+      "TC002": {
+        "condition": "Messy description",
+        "success": true,
+        "info_coverage": 100.0,
+        "spec_accuracy": 100.0,
+        "visual_recall": 66.67,
+        "hallucination": 0.0
+      },
+      "TC003": {
+        "condition": "Complete",
+        "success": true,
+        "info_coverage": 100.0,
+        "spec_accuracy": 100.0,
+        "visual_recall": 100.0,
+        "hallucination": 0.0
+      },
+      "TC004": {
+        "condition": "Messy/incomplete",
+        "success": true,
+        "info_coverage": 87.5,
+        "spec_accuracy": 87.5,
+        "visual_recall": 100.0,
+        "hallucination": 0.0
+      },
+      "TC005": {
+        "condition": "Complete",
+        "success": true,
+        "info_coverage": 100.0,
+        "spec_accuracy": 100.0,
+        "visual_recall": 100.0,
+        "hallucination": 0.0
+      },
+      "TC006": {
+        "condition": "Incomplete",
+        "success": true,
+        "info_coverage": 100.0,
+        "spec_accuracy": 100.0,
+        "visual_recall": 100.0,
+        "hallucination": 0.0
+      },
+      "TC007": {
+        "condition": "Complete",
+        "success": true,
+        "info_coverage": 100.0,
+        "spec_accuracy": 100.0,
+        "visual_recall": 100.0,
+        "hallucination": 0.0
+      },
+      "TC008": {
+        "condition": "Messy",
+        "success": true,
+        "info_coverage": 100.0,
+        "spec_accuracy": 100.0,
+        "visual_recall": 100.0,
+        "hallucination": 0.0
+      },
+      "TC009": {
+        "condition": "Complete",
+        "success": true,
+        "info_coverage": 100.0,
+        "spec_accuracy": 100.0,
+        "visual_recall": 75.0,
+        "hallucination": 0.0
+      },
+      "TC010": {
+        "condition": "Conflicting/messy specs",
+        "success": true,
+        "info_coverage": 100.0,
+        "spec_accuracy": 100.0,
+        "visual_recall": 100.0,
+        "hallucination": 0.0
+      }
+    },
+    "reliability": {
+      "total_executions": 10,
+      "successful_executions": 10,
+      "failed_executions": 0,
+      "success_rate_pct": 100.0,
+      "failure_rate_pct": 0.0
+    },
+    "performance": {
+      "avg_latency_ms": 21861.68,
+      "median_latency_ms": 20941.61,
+      "min_latency_ms": 16538.83,
+      "max_latency_ms": 27973.34,
+      "p95_latency_ms": 27960.72
+    },
+    "content_completeness": {
+      "overall_completeness_pct": 100.0,
+      "component_presence_rates_pct": {
+        "title": 100.0,
+        "short_description": 100.0,
+        "key_features": 100.0,
+        "detailed_description": 100.0,
+        "specifications": 100.0,
+        "seo_keywords": 100.0
+      },
+      "information_coverage_pct": 95.0,
+      "specification_accuracy_pct": 95.0,
+      "unsupported_claim_rate_pct": 0.0,
+      "visual_attribute_recall_pct": 90.83
+    },
+    "privacy": {
+      "total_pii_checked": 4,
+      "exposed_pii_count": 0,
+      "protected_pii_count": 4,
+      "pii_protection_rate_pct": 100.0,
+      "pii_leakage_rate_pct": 0.0
+    },
+    "cope_simulation_note": "COPE scores represent synthetic / estimated simulations, not actual ground-truth conversion or CTR."
+  }
+}

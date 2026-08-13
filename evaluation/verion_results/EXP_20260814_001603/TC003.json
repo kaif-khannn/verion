@@ -1,0 +1,1021 @@
+{
+  "experiment_id": "EXP_20260814_001603",
+  "test_case_id": "TC003",
+  "system": "verion",
+  "timestamp": "2026-08-14T00:17:51.366761",
+  "success": true,
+  "latency_ms": 28097.8,
+  "model": "multi-agent",
+  "raw_output": {
+    "status": "success",
+    "message": "Workflow completed",
+    "data": {
+      "sanitized_input": "Product Name: Sony WH-1000XM5\nBrand: Sony\nPrice: \u20b929,990\nCategory: Wireless Headphones\nDescription: Over-ear wireless headphones with advanced noise cancellation, high-quality audio, comfortable earcups, and long battery life. Contact Arjun Mehta at <EMAIL_ADDRESS> or <PHONE_NUMBER> about the order.\nSpecifications: features: Active Noise Cancellation, Bluetooth, Multipoint, 30-hour battery, color: Black, customer_note: Contact Arjun Mehta at <EMAIL_ADDRESS> or <PHONE_NUMBER> about the order.",
+      "vision_analysis": "Error analyzing image with Groq Vision: LLMGateway call failed after 3 retries. Error: Error code: 413 - {'error': {'message': 'Request too large for model `qwen/qwen3.6-27b` in organization `org_01kvb5wdg5eq99np00tsjmwhtg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 8286, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "rag_context": "RAG database is empty. Please run the ingestion script first.",
+      "seo": {
+        "title": "Sony WH-1000XM5 Wireless Headphones",
+        "meta_description": "Experience advanced noise cancellation and high-quality audio with Sony WH-1000XM5 wireless headphones.",
+        "keywords": [
+          "sony wh-1000xm5",
+          "wireless headphones",
+          "noise cancellation",
+          "high-quality audio"
+        ],
+        "tags": [
+          "wireless headphones",
+          "noise cancellation",
+          "audio"
+        ],
+        "short_description": "Immerse yourself in advanced noise cancellation and high-quality audio with Sony's premium wireless headphones.",
+        "bullet_points": [
+          "**Active Noise Cancellation**: Block out distractions and focus on your music.",
+          "**Long Battery Life**: Enjoy up to 30 hours of playback on a single charge.",
+          "**Comfortable Earcups**: Relax with soft, cushioned earcups designed for long listening sessions.",
+          "**High-Quality Audio**: Experience rich, detailed sound with Sony's advanced audio technology.",
+          "**Bluetooth Connectivity**: Seamlessly connect to your device and enjoy wireless freedom."
+        ],
+        "detailed_description": "The Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. The comfortable earcups are designed for long listening sessions, and the long battery life means you can enjoy your music all day without interruption. Whether you're commuting, working out, or simply relaxing, the Sony WH-1000XM5 wireless headphones are the perfect choice.",
+        "specs": {
+          "Brand": "Sony",
+          "Model": "WH-1000XM5",
+          "Price": "\u20b929,990",
+          "Color": "Black",
+          "Battery Life": "Up to 30 hours",
+          "Weight": "Not specified"
+        },
+        "price": "\u20b929,990",
+        "description": "Immerse yourself in advanced noise cancellation and high-quality audio with Sony's premium wireless headphones.\n\nKey Features:\n\n\u2022 **Active Noise Cancellation**: Block out distractions and focus on your music.\n\n\u2022 **Long Battery Life**: Enjoy up to 30 hours of playback on a single charge.\n\n\u2022 **Comfortable Earcups**: Relax with soft, cushioned earcups designed for long listening sessions.\n\n\u2022 **High-Quality Audio**: Experience rich, detailed sound with Sony's advanced audio technology.\n\n\u2022 **Bluetooth Connectivity**: Seamlessly connect to your device and enjoy wireless freedom.\n\nThe Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. The comfortable earcups are designed for long listening sessions, and the long battery life means you can enjoy your music all day without interruption. Whether you're commuting, working out, or simply relaxing, the Sony WH-1000XM5 wireless headphones are the perfect choice.\n\nSpecifications:\n\n- Brand: Sony\n\n- Model: WH-1000XM5\n\n- Price: \u20b929,990\n\n- Color: Black\n\n- Battery Life: Up to 30 hours\n\n- Weight: Not specified"
+      },
+      "competitor_analysis": {
+        "recommended_price": "\u20b929,990",
+        "lowest_competitor_price": "\u20b925,000",
+        "highest_competitor_price": "\u20b935,000",
+        "average_market_price": "\u20b928,500",
+        "market_positioning": "Premium wireless headphones with advanced noise cancellation and high-quality audio.",
+        "pricing_strategy": "Positioned as a premium product with a focus on advanced noise cancellation and high-quality audio.",
+        "competitor_insights": [
+          "Competitors offer similar features, but with less advanced noise cancellation technology.",
+          "One competitor offers a lower price point, but with fewer features.",
+          "Another competitor offers a higher price point, but with additional features such as wireless charging."
+        ]
+      },
+      "generated_variants": [
+        {
+          "variant_id": "ce1a1f7b-b5c8-43dd-a4fe-11ca07ac47b5",
+          "type": "A",
+          "angle": "Feature & Tech Heavy",
+          "title": "Sony WH-1000XM5 Wireless Headphones - Advanced Noise Cancellation and High-Quality Audio",
+          "short_description": "Experience the ultimate in noise cancellation and high-quality audio with Sony's premium wireless headphones.",
+          "key_features": [
+            "**Advanced Noise Cancellation**: Block out distractions and focus on your music.",
+            "**High-Quality Audio**: Enjoy rich, detailed sound with Sony's advanced audio technology.",
+            "**Long Battery Life**: Enjoy up to 30 hours of playback on a single charge.",
+            "**Comfortable Earcups**: Relax with soft, cushioned earcups designed for long listening sessions.",
+            "**Bluetooth Connectivity**: Seamlessly connect to your device and enjoy wireless freedom."
+          ],
+          "detailed_description": "The Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. The comfortable earcups are designed for long listening sessions, and the long battery life means you can enjoy your music all day without interruption.",
+          "specifications": {
+            "Brand": "Sony",
+            "Model": "WH-1000XM5",
+            "Price": "\u20b929,990",
+            "Color": "Black",
+            "Battery Life": "Up to 30 hours",
+            "Weight": "Not specified"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Experience the ultimate in noise cancellation and high-quality audio with Sony's premium wireless headphones.\n\nKey Features:\n\n\u2022 **Advanced Noise Cancellation**: Block out distractions and focus on your music.\n\n\u2022 **High-Quality Audio**: Enjoy rich, detailed sound with Sony's advanced audio technology.\n\n\u2022 **Long Battery Life**: Enjoy up to 30 hours of playback on a single charge.\n\n\u2022 **Comfortable Earcups**: Relax with soft, cushioned earcups designed for long listening sessions.\n\n\u2022 **Bluetooth Connectivity**: Seamlessly connect to your device and enjoy wireless freedom.\n\nThe Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. The comfortable earcups are designed for long listening sessions, and the long battery life means you can enjoy your music all day without interruption.\n\nSpecifications:\n\n- Brand: Sony\n\n- Model: WH-1000XM5\n\n- Price: \u20b929,990\n\n- Color: Black\n\n- Battery Life: Up to 30 hours\n\n- Weight: Not specified",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Sony WH-1000XM5 Wireless Headphones - Advanced Noise Cancellation and High-Quality Audio",
+            "meta_description": "Experience advanced noise cancellation and high-quality audio with Sony WH-1000XM5 wireless headphones.",
+            "keywords": [
+              "sony wh-1000xm5",
+              "wireless headphones",
+              "noise cancellation",
+              "high-quality audio"
+            ],
+            "tags": [
+              "wireless headphones",
+              "noise cancellation",
+              "audio"
+            ],
+            "short_description": "Experience the ultimate in noise cancellation and high-quality audio with Sony's premium wireless headphones.",
+            "bullet_points": [
+              "**Advanced Noise Cancellation**: Block out distractions and focus on your music.",
+              "**High-Quality Audio**: Enjoy rich, detailed sound with Sony's advanced audio technology.",
+              "**Long Battery Life**: Enjoy up to 30 hours of playback on a single charge.",
+              "**Comfortable Earcups**: Relax with soft, cushioned earcups designed for long listening sessions.",
+              "**Bluetooth Connectivity**: Seamlessly connect to your device and enjoy wireless freedom."
+            ],
+            "detailed_description": "The Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. The comfortable earcups are designed for long listening sessions, and the long battery life means you can enjoy your music all day without interruption.",
+            "specs": {
+              "Brand": "Sony",
+              "Model": "WH-1000XM5",
+              "Price": "\u20b929,990",
+              "Color": "Black",
+              "Battery Life": "Up to 30 hours",
+              "Weight": "Not specified"
+            },
+            "price": "\u20b929,990",
+            "description": "Immerse yourself in advanced noise cancellation and high-quality audio with Sony's premium wireless headphones.\n\nKey Features:\n\n\u2022 **Active Noise Cancellation**: Block out distractions and focus on your music.\n\n\u2022 **Long Battery Life**: Enjoy up to 30 hours of playback on a single charge.\n\n\u2022 **Comfortable Earcups**: Relax with soft, cushioned earcups designed for long listening sessions.\n\n\u2022 **High-Quality Audio**: Experience rich, detailed sound with Sony's advanced audio technology.\n\n\u2022 **Bluetooth Connectivity**: Seamlessly connect to your device and enjoy wireless freedom.\n\nThe Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. The comfortable earcups are designed for long listening sessions, and the long battery life means you can enjoy your music all day without interruption. Whether you're commuting, working out, or simply relaxing, the Sony WH-1000XM5 wireless headphones are the perfect choice.\n\nSpecifications:\n\n- Brand: Sony\n\n- Model: WH-1000XM5\n\n- Price: \u20b929,990\n\n- Color: Black\n\n- Battery Life: Up to 30 hours\n\n- Weight: Not specified"
+          },
+          "cope_scores": {
+            "overall_score": 85,
+            "purchase_probability": 78.5,
+            "expected_ctr": 72.0,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 90,
+            "confidence_score": 88
+          }
+        },
+        {
+          "variant_id": "7baff6ed-3528-4eb1-be8d-64cb6fb09941",
+          "type": "B",
+          "angle": "Emotional & Value Driven",
+          "title": "Immerse Yourself in Music with Sony WH-1000XM5 Wireless Headphones",
+          "short_description": "Experience the joy of music without distractions with Sony's premium wireless headphones.",
+          "key_features": [
+            "**Escape the Noise**: Block out distractions and focus on your music.",
+            "**Unleash Your Creativity**: Enjoy rich, detailed sound with Sony's advanced audio technology.",
+            "**Relax and Recharge**: Enjoy up to 30 hours of playback on a single charge.",
+            "**Comfortable Listening**: Relax with soft, cushioned earcups designed for long listening sessions.",
+            "**Freedom to Move**: Seamlessly connect to your device and enjoy wireless freedom."
+          ],
+          "detailed_description": "The Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. Whether you're commuting, working out, or simply relaxing, the Sony WH-1000XM5 wireless headphones are the perfect choice.",
+          "specifications": {
+            "Brand": "Sony",
+            "Model": "WH-1000XM5",
+            "Price": "\u20b929,990",
+            "Color": "Black",
+            "Battery Life": "Up to 30 hours",
+            "Weight": "Not specified"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Experience the joy of music without distractions with Sony's premium wireless headphones.\n\nKey Features:\n\n\u2022 **Escape the Noise**: Block out distractions and focus on your music.\n\n\u2022 **Unleash Your Creativity**: Enjoy rich, detailed sound with Sony's advanced audio technology.\n\n\u2022 **Relax and Recharge**: Enjoy up to 30 hours of playback on a single charge.\n\n\u2022 **Comfortable Listening**: Relax with soft, cushioned earcups designed for long listening sessions.\n\n\u2022 **Freedom to Move**: Seamlessly connect to your device and enjoy wireless freedom.\n\nThe Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. Whether you're commuting, working out, or simply relaxing, the Sony WH-1000XM5 wireless headphones are the perfect choice.\n\nSpecifications:\n\n- Brand: Sony\n\n- Model: WH-1000XM5\n\n- Price: \u20b929,990\n\n- Color: Black\n\n- Battery Life: Up to 30 hours\n\n- Weight: Not specified",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Immerse Yourself in Music with Sony WH-1000XM5 Wireless Headphones",
+            "meta_description": "Experience advanced noise cancellation and high-quality audio with Sony WH-1000XM5 wireless headphones.",
+            "keywords": [
+              "sony wh-1000xm5",
+              "wireless headphones",
+              "noise cancellation",
+              "high-quality audio"
+            ],
+            "tags": [
+              "wireless headphones",
+              "noise cancellation",
+              "audio"
+            ],
+            "short_description": "Experience the joy of music without distractions with Sony's premium wireless headphones.",
+            "bullet_points": [
+              "**Escape the Noise**: Block out distractions and focus on your music.",
+              "**Unleash Your Creativity**: Enjoy rich, detailed sound with Sony's advanced audio technology.",
+              "**Relax and Recharge**: Enjoy up to 30 hours of playback on a single charge.",
+              "**Comfortable Listening**: Relax with soft, cushioned earcups designed for long listening sessions.",
+              "**Freedom to Move**: Seamlessly connect to your device and enjoy wireless freedom."
+            ],
+            "detailed_description": "The Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. Whether you're commuting, working out, or simply relaxing, the Sony WH-1000XM5 wireless headphones are the perfect choice.",
+            "specs": {
+              "Brand": "Sony",
+              "Model": "WH-1000XM5",
+              "Price": "\u20b929,990",
+              "Color": "Black",
+              "Battery Life": "Up to 30 hours",
+              "Weight": "Not specified"
+            },
+            "price": "\u20b929,990",
+            "description": "Immerse yourself in advanced noise cancellation and high-quality audio with Sony's premium wireless headphones.\n\nKey Features:\n\n\u2022 **Active Noise Cancellation**: Block out distractions and focus on your music.\n\n\u2022 **Long Battery Life**: Enjoy up to 30 hours of playback on a single charge.\n\n\u2022 **Comfortable Earcups**: Relax with soft, cushioned earcups designed for long listening sessions.\n\n\u2022 **High-Quality Audio**: Experience rich, detailed sound with Sony's advanced audio technology.\n\n\u2022 **Bluetooth Connectivity**: Seamlessly connect to your device and enjoy wireless freedom.\n\nThe Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. The comfortable earcups are designed for long listening sessions, and the long battery life means you can enjoy your music all day without interruption. Whether you're commuting, working out, or simply relaxing, the Sony WH-1000XM5 wireless headphones are the perfect choice.\n\nSpecifications:\n\n- Brand: Sony\n\n- Model: WH-1000XM5\n\n- Price: \u20b929,990\n\n- Color: Black\n\n- Battery Life: Up to 30 hours\n\n- Weight: Not specified"
+          },
+          "cope_scores": {
+            "overall_score": 82,
+            "purchase_probability": 76.0,
+            "expected_ctr": 70.0,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 88,
+            "confidence_score": 88
+          }
+        },
+        {
+          "variant_id": "14ade838-4ac1-4f81-b838-872cc5d6258e",
+          "type": "C",
+          "angle": "Urgency & Lifestyle Focused",
+          "title": "Limited Time Offer: Get Sony WH-1000XM5 Wireless Headphones Now!",
+          "short_description": "Don't miss out on this incredible offer - get Sony's premium wireless headphones now!",
+          "key_features": [
+            "**Limited Time Offer**: Get the Sony WH-1000XM5 wireless headphones at an unbeatable price.",
+            "**Advanced Noise Cancellation**: Block out distractions and focus on your music.",
+            "**High-Quality Audio**: Enjoy rich, detailed sound with Sony's advanced audio technology.",
+            "**Long Battery Life**: Enjoy up to 30 hours of playback on a single charge.",
+            "**Comfortable Earcups**: Relax with soft, cushioned earcups designed for long listening sessions."
+          ],
+          "detailed_description": "The Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. Don't miss out on this incredible offer - get the Sony WH-1000XM5 wireless headphones now!",
+          "specifications": {
+            "Brand": "Sony",
+            "Model": "WH-1000XM5",
+            "Price": "\u20b929,990",
+            "Color": "Black",
+            "Battery Life": "Up to 30 hours",
+            "Weight": "Not specified"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Don't miss out on this incredible offer - get Sony's premium wireless headphones now!\n\nKey Features:\n\n\u2022 **Limited Time Offer**: Get the Sony WH-1000XM5 wireless headphones at an unbeatable price.\n\n\u2022 **Advanced Noise Cancellation**: Block out distractions and focus on your music.\n\n\u2022 **High-Quality Audio**: Enjoy rich, detailed sound with Sony's advanced audio technology.\n\n\u2022 **Long Battery Life**: Enjoy up to 30 hours of playback on a single charge.\n\n\u2022 **Comfortable Earcups**: Relax with soft, cushioned earcups designed for long listening sessions.\n\nThe Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. Don't miss out on this incredible offer - get the Sony WH-1000XM5 wireless headphones now!\n\nSpecifications:\n\n- Brand: Sony\n\n- Model: WH-1000XM5\n\n- Price: \u20b929,990\n\n- Color: Black\n\n- Battery Life: Up to 30 hours\n\n- Weight: Not specified",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Limited Time Offer: Get Sony WH-1000XM5 Wireless Headphones Now!",
+            "meta_description": "Experience advanced noise cancellation and high-quality audio with Sony WH-1000XM5 wireless headphones.",
+            "keywords": [
+              "sony wh-1000xm5",
+              "wireless headphones",
+              "noise cancellation",
+              "high-quality audio"
+            ],
+            "tags": [
+              "wireless headphones",
+              "noise cancellation",
+              "audio"
+            ],
+            "short_description": "Don't miss out on this incredible offer - get Sony's premium wireless headphones now!",
+            "bullet_points": [
+              "**Limited Time Offer**: Get the Sony WH-1000XM5 wireless headphones at an unbeatable price.",
+              "**Advanced Noise Cancellation**: Block out distractions and focus on your music.",
+              "**High-Quality Audio**: Enjoy rich, detailed sound with Sony's advanced audio technology.",
+              "**Long Battery Life**: Enjoy up to 30 hours of playback on a single charge.",
+              "**Comfortable Earcups**: Relax with soft, cushioned earcups designed for long listening sessions."
+            ],
+            "detailed_description": "The Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. Don't miss out on this incredible offer - get the Sony WH-1000XM5 wireless headphones now!",
+            "specs": {
+              "Brand": "Sony",
+              "Model": "WH-1000XM5",
+              "Price": "\u20b929,990",
+              "Color": "Black",
+              "Battery Life": "Up to 30 hours",
+              "Weight": "Not specified"
+            },
+            "price": "\u20b929,990",
+            "description": "Immerse yourself in advanced noise cancellation and high-quality audio with Sony's premium wireless headphones.\n\nKey Features:\n\n\u2022 **Active Noise Cancellation**: Block out distractions and focus on your music.\n\n\u2022 **Long Battery Life**: Enjoy up to 30 hours of playback on a single charge.\n\n\u2022 **Comfortable Earcups**: Relax with soft, cushioned earcups designed for long listening sessions.\n\n\u2022 **High-Quality Audio**: Experience rich, detailed sound with Sony's advanced audio technology.\n\n\u2022 **Bluetooth Connectivity**: Seamlessly connect to your device and enjoy wireless freedom.\n\nThe Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. The comfortable earcups are designed for long listening sessions, and the long battery life means you can enjoy your music all day without interruption. Whether you're commuting, working out, or simply relaxing, the Sony WH-1000XM5 wireless headphones are the perfect choice.\n\nSpecifications:\n\n- Brand: Sony\n\n- Model: WH-1000XM5\n\n- Price: \u20b929,990\n\n- Color: Black\n\n- Battery Life: Up to 30 hours\n\n- Weight: Not specified"
+          },
+          "cope_scores": {
+            "overall_score": 79,
+            "purchase_probability": 73.5,
+            "expected_ctr": 68.0,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 86,
+            "confidence_score": 88
+          }
+        }
+      ],
+      "scored_variants": [
+        {
+          "variant_id": "ce1a1f7b-b5c8-43dd-a4fe-11ca07ac47b5",
+          "type": "A",
+          "angle": "Feature & Tech Heavy",
+          "title": "Sony WH-1000XM5 Wireless Headphones - Advanced Noise Cancellation and High-Quality Audio",
+          "short_description": "Experience the ultimate in noise cancellation and high-quality audio with Sony's premium wireless headphones.",
+          "key_features": [
+            "**Advanced Noise Cancellation**: Block out distractions and focus on your music.",
+            "**High-Quality Audio**: Enjoy rich, detailed sound with Sony's advanced audio technology.",
+            "**Long Battery Life**: Enjoy up to 30 hours of playback on a single charge.",
+            "**Comfortable Earcups**: Relax with soft, cushioned earcups designed for long listening sessions.",
+            "**Bluetooth Connectivity**: Seamlessly connect to your device and enjoy wireless freedom."
+          ],
+          "detailed_description": "The Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. The comfortable earcups are designed for long listening sessions, and the long battery life means you can enjoy your music all day without interruption.",
+          "specifications": {
+            "Brand": "Sony",
+            "Model": "WH-1000XM5",
+            "Price": "\u20b929,990",
+            "Color": "Black",
+            "Battery Life": "Up to 30 hours",
+            "Weight": "Not specified"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Experience the ultimate in noise cancellation and high-quality audio with Sony's premium wireless headphones.\n\nKey Features:\n\n\u2022 **Advanced Noise Cancellation**: Block out distractions and focus on your music.\n\n\u2022 **High-Quality Audio**: Enjoy rich, detailed sound with Sony's advanced audio technology.\n\n\u2022 **Long Battery Life**: Enjoy up to 30 hours of playback on a single charge.\n\n\u2022 **Comfortable Earcups**: Relax with soft, cushioned earcups designed for long listening sessions.\n\n\u2022 **Bluetooth Connectivity**: Seamlessly connect to your device and enjoy wireless freedom.\n\nThe Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. The comfortable earcups are designed for long listening sessions, and the long battery life means you can enjoy your music all day without interruption.\n\nSpecifications:\n\n- Brand: Sony\n\n- Model: WH-1000XM5\n\n- Price: \u20b929,990\n\n- Color: Black\n\n- Battery Life: Up to 30 hours\n\n- Weight: Not specified",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Sony WH-1000XM5 Wireless Headphones - Advanced Noise Cancellation and High-Quality Audio",
+            "meta_description": "Experience advanced noise cancellation and high-quality audio with Sony WH-1000XM5 wireless headphones.",
+            "keywords": [
+              "sony wh-1000xm5",
+              "wireless headphones",
+              "noise cancellation",
+              "high-quality audio"
+            ],
+            "tags": [
+              "wireless headphones",
+              "noise cancellation",
+              "audio"
+            ],
+            "short_description": "Experience the ultimate in noise cancellation and high-quality audio with Sony's premium wireless headphones.",
+            "bullet_points": [
+              "**Advanced Noise Cancellation**: Block out distractions and focus on your music.",
+              "**High-Quality Audio**: Enjoy rich, detailed sound with Sony's advanced audio technology.",
+              "**Long Battery Life**: Enjoy up to 30 hours of playback on a single charge.",
+              "**Comfortable Earcups**: Relax with soft, cushioned earcups designed for long listening sessions.",
+              "**Bluetooth Connectivity**: Seamlessly connect to your device and enjoy wireless freedom."
+            ],
+            "detailed_description": "The Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. The comfortable earcups are designed for long listening sessions, and the long battery life means you can enjoy your music all day without interruption.",
+            "specs": {
+              "Brand": "Sony",
+              "Model": "WH-1000XM5",
+              "Price": "\u20b929,990",
+              "Color": "Black",
+              "Battery Life": "Up to 30 hours",
+              "Weight": "Not specified"
+            },
+            "price": "\u20b929,990",
+            "description": "Immerse yourself in advanced noise cancellation and high-quality audio with Sony's premium wireless headphones.\n\nKey Features:\n\n\u2022 **Active Noise Cancellation**: Block out distractions and focus on your music.\n\n\u2022 **Long Battery Life**: Enjoy up to 30 hours of playback on a single charge.\n\n\u2022 **Comfortable Earcups**: Relax with soft, cushioned earcups designed for long listening sessions.\n\n\u2022 **High-Quality Audio**: Experience rich, detailed sound with Sony's advanced audio technology.\n\n\u2022 **Bluetooth Connectivity**: Seamlessly connect to your device and enjoy wireless freedom.\n\nThe Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. The comfortable earcups are designed for long listening sessions, and the long battery life means you can enjoy your music all day without interruption. Whether you're commuting, working out, or simply relaxing, the Sony WH-1000XM5 wireless headphones are the perfect choice.\n\nSpecifications:\n\n- Brand: Sony\n\n- Model: WH-1000XM5\n\n- Price: \u20b929,990\n\n- Color: Black\n\n- Battery Life: Up to 30 hours\n\n- Weight: Not specified"
+          },
+          "cope_scores": {
+            "overall_score": 85,
+            "purchase_probability": 78.5,
+            "expected_ctr": 72.0,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 90,
+            "confidence_score": 88
+          }
+        },
+        {
+          "variant_id": "7baff6ed-3528-4eb1-be8d-64cb6fb09941",
+          "type": "B",
+          "angle": "Emotional & Value Driven",
+          "title": "Immerse Yourself in Music with Sony WH-1000XM5 Wireless Headphones",
+          "short_description": "Experience the joy of music without distractions with Sony's premium wireless headphones.",
+          "key_features": [
+            "**Escape the Noise**: Block out distractions and focus on your music.",
+            "**Unleash Your Creativity**: Enjoy rich, detailed sound with Sony's advanced audio technology.",
+            "**Relax and Recharge**: Enjoy up to 30 hours of playback on a single charge.",
+            "**Comfortable Listening**: Relax with soft, cushioned earcups designed for long listening sessions.",
+            "**Freedom to Move**: Seamlessly connect to your device and enjoy wireless freedom."
+          ],
+          "detailed_description": "The Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. Whether you're commuting, working out, or simply relaxing, the Sony WH-1000XM5 wireless headphones are the perfect choice.",
+          "specifications": {
+            "Brand": "Sony",
+            "Model": "WH-1000XM5",
+            "Price": "\u20b929,990",
+            "Color": "Black",
+            "Battery Life": "Up to 30 hours",
+            "Weight": "Not specified"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Experience the joy of music without distractions with Sony's premium wireless headphones.\n\nKey Features:\n\n\u2022 **Escape the Noise**: Block out distractions and focus on your music.\n\n\u2022 **Unleash Your Creativity**: Enjoy rich, detailed sound with Sony's advanced audio technology.\n\n\u2022 **Relax and Recharge**: Enjoy up to 30 hours of playback on a single charge.\n\n\u2022 **Comfortable Listening**: Relax with soft, cushioned earcups designed for long listening sessions.\n\n\u2022 **Freedom to Move**: Seamlessly connect to your device and enjoy wireless freedom.\n\nThe Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. Whether you're commuting, working out, or simply relaxing, the Sony WH-1000XM5 wireless headphones are the perfect choice.\n\nSpecifications:\n\n- Brand: Sony\n\n- Model: WH-1000XM5\n\n- Price: \u20b929,990\n\n- Color: Black\n\n- Battery Life: Up to 30 hours\n\n- Weight: Not specified",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Immerse Yourself in Music with Sony WH-1000XM5 Wireless Headphones",
+            "meta_description": "Experience advanced noise cancellation and high-quality audio with Sony WH-1000XM5 wireless headphones.",
+            "keywords": [
+              "sony wh-1000xm5",
+              "wireless headphones",
+              "noise cancellation",
+              "high-quality audio"
+            ],
+            "tags": [
+              "wireless headphones",
+              "noise cancellation",
+              "audio"
+            ],
+            "short_description": "Experience the joy of music without distractions with Sony's premium wireless headphones.",
+            "bullet_points": [
+              "**Escape the Noise**: Block out distractions and focus on your music.",
+              "**Unleash Your Creativity**: Enjoy rich, detailed sound with Sony's advanced audio technology.",
+              "**Relax and Recharge**: Enjoy up to 30 hours of playback on a single charge.",
+              "**Comfortable Listening**: Relax with soft, cushioned earcups designed for long listening sessions.",
+              "**Freedom to Move**: Seamlessly connect to your device and enjoy wireless freedom."
+            ],
+            "detailed_description": "The Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. Whether you're commuting, working out, or simply relaxing, the Sony WH-1000XM5 wireless headphones are the perfect choice.",
+            "specs": {
+              "Brand": "Sony",
+              "Model": "WH-1000XM5",
+              "Price": "\u20b929,990",
+              "Color": "Black",
+              "Battery Life": "Up to 30 hours",
+              "Weight": "Not specified"
+            },
+            "price": "\u20b929,990",
+            "description": "Immerse yourself in advanced noise cancellation and high-quality audio with Sony's premium wireless headphones.\n\nKey Features:\n\n\u2022 **Active Noise Cancellation**: Block out distractions and focus on your music.\n\n\u2022 **Long Battery Life**: Enjoy up to 30 hours of playback on a single charge.\n\n\u2022 **Comfortable Earcups**: Relax with soft, cushioned earcups designed for long listening sessions.\n\n\u2022 **High-Quality Audio**: Experience rich, detailed sound with Sony's advanced audio technology.\n\n\u2022 **Bluetooth Connectivity**: Seamlessly connect to your device and enjoy wireless freedom.\n\nThe Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. The comfortable earcups are designed for long listening sessions, and the long battery life means you can enjoy your music all day without interruption. Whether you're commuting, working out, or simply relaxing, the Sony WH-1000XM5 wireless headphones are the perfect choice.\n\nSpecifications:\n\n- Brand: Sony\n\n- Model: WH-1000XM5\n\n- Price: \u20b929,990\n\n- Color: Black\n\n- Battery Life: Up to 30 hours\n\n- Weight: Not specified"
+          },
+          "cope_scores": {
+            "overall_score": 82,
+            "purchase_probability": 76.0,
+            "expected_ctr": 70.0,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 88,
+            "confidence_score": 88
+          }
+        },
+        {
+          "variant_id": "14ade838-4ac1-4f81-b838-872cc5d6258e",
+          "type": "C",
+          "angle": "Urgency & Lifestyle Focused",
+          "title": "Limited Time Offer: Get Sony WH-1000XM5 Wireless Headphones Now!",
+          "short_description": "Don't miss out on this incredible offer - get Sony's premium wireless headphones now!",
+          "key_features": [
+            "**Limited Time Offer**: Get the Sony WH-1000XM5 wireless headphones at an unbeatable price.",
+            "**Advanced Noise Cancellation**: Block out distractions and focus on your music.",
+            "**High-Quality Audio**: Enjoy rich, detailed sound with Sony's advanced audio technology.",
+            "**Long Battery Life**: Enjoy up to 30 hours of playback on a single charge.",
+            "**Comfortable Earcups**: Relax with soft, cushioned earcups designed for long listening sessions."
+          ],
+          "detailed_description": "The Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. Don't miss out on this incredible offer - get the Sony WH-1000XM5 wireless headphones now!",
+          "specifications": {
+            "Brand": "Sony",
+            "Model": "WH-1000XM5",
+            "Price": "\u20b929,990",
+            "Color": "Black",
+            "Battery Life": "Up to 30 hours",
+            "Weight": "Not specified"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Don't miss out on this incredible offer - get Sony's premium wireless headphones now!\n\nKey Features:\n\n\u2022 **Limited Time Offer**: Get the Sony WH-1000XM5 wireless headphones at an unbeatable price.\n\n\u2022 **Advanced Noise Cancellation**: Block out distractions and focus on your music.\n\n\u2022 **High-Quality Audio**: Enjoy rich, detailed sound with Sony's advanced audio technology.\n\n\u2022 **Long Battery Life**: Enjoy up to 30 hours of playback on a single charge.\n\n\u2022 **Comfortable Earcups**: Relax with soft, cushioned earcups designed for long listening sessions.\n\nThe Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. Don't miss out on this incredible offer - get the Sony WH-1000XM5 wireless headphones now!\n\nSpecifications:\n\n- Brand: Sony\n\n- Model: WH-1000XM5\n\n- Price: \u20b929,990\n\n- Color: Black\n\n- Battery Life: Up to 30 hours\n\n- Weight: Not specified",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Limited Time Offer: Get Sony WH-1000XM5 Wireless Headphones Now!",
+            "meta_description": "Experience advanced noise cancellation and high-quality audio with Sony WH-1000XM5 wireless headphones.",
+            "keywords": [
+              "sony wh-1000xm5",
+              "wireless headphones",
+              "noise cancellation",
+              "high-quality audio"
+            ],
+            "tags": [
+              "wireless headphones",
+              "noise cancellation",
+              "audio"
+            ],
+            "short_description": "Don't miss out on this incredible offer - get Sony's premium wireless headphones now!",
+            "bullet_points": [
+              "**Limited Time Offer**: Get the Sony WH-1000XM5 wireless headphones at an unbeatable price.",
+              "**Advanced Noise Cancellation**: Block out distractions and focus on your music.",
+              "**High-Quality Audio**: Enjoy rich, detailed sound with Sony's advanced audio technology.",
+              "**Long Battery Life**: Enjoy up to 30 hours of playback on a single charge.",
+              "**Comfortable Earcups**: Relax with soft, cushioned earcups designed for long listening sessions."
+            ],
+            "detailed_description": "The Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. Don't miss out on this incredible offer - get the Sony WH-1000XM5 wireless headphones now!",
+            "specs": {
+              "Brand": "Sony",
+              "Model": "WH-1000XM5",
+              "Price": "\u20b929,990",
+              "Color": "Black",
+              "Battery Life": "Up to 30 hours",
+              "Weight": "Not specified"
+            },
+            "price": "\u20b929,990",
+            "description": "Immerse yourself in advanced noise cancellation and high-quality audio with Sony's premium wireless headphones.\n\nKey Features:\n\n\u2022 **Active Noise Cancellation**: Block out distractions and focus on your music.\n\n\u2022 **Long Battery Life**: Enjoy up to 30 hours of playback on a single charge.\n\n\u2022 **Comfortable Earcups**: Relax with soft, cushioned earcups designed for long listening sessions.\n\n\u2022 **High-Quality Audio**: Experience rich, detailed sound with Sony's advanced audio technology.\n\n\u2022 **Bluetooth Connectivity**: Seamlessly connect to your device and enjoy wireless freedom.\n\nThe Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. The comfortable earcups are designed for long listening sessions, and the long battery life means you can enjoy your music all day without interruption. Whether you're commuting, working out, or simply relaxing, the Sony WH-1000XM5 wireless headphones are the perfect choice.\n\nSpecifications:\n\n- Brand: Sony\n\n- Model: WH-1000XM5\n\n- Price: \u20b929,990\n\n- Color: Black\n\n- Battery Life: Up to 30 hours\n\n- Weight: Not specified"
+          },
+          "cope_scores": {
+            "overall_score": 79,
+            "purchase_probability": 73.5,
+            "expected_ctr": 68.0,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 86,
+            "confidence_score": 88
+          }
+        }
+      ],
+      "decision": {
+        "action": "publish",
+        "reason": "Clear winner identified with high confidence.",
+        "recommended_variant_id": "ce1a1f7b-b5c8-43dd-a4fe-11ca07ac47b5"
+      },
+      "marketing": {
+        "platform": "olx",
+        "platform_description": "Experience the ultimate in noise cancellation and high-quality audio with Sony's premium wireless headphones.\n\nKey Features:\n\n\u2022 **Advanced Noise Cancellation**: Block out distractions and focus on your music.\n\n\u2022 **High-Quality Audio**: Enjoy rich, detailed sound with Sony's advanced audio technology.\n\n\u2022 **Long Battery Life**: Enjoy up to 30 hours of playback on a single charge.\n\n\u2022 **Comfortable Earcups**: Relax with soft, cushioned earcups designed for long listening sessions.\n\n\u2022 **Bluetooth Connectivity**: Seamlessly connect to your device and enjoy wireless freedom.\n\nThe Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. The comfortable earcups are designed for long listening sessions, and the long battery life means you can enjoy your music all day without interruption.\n\nSpecifications:\n\n- Brand: Sony\n\n- Model: WH-1000XM5\n\n- Price: \u20b929,990\n\n- Color: Black\n\n- Battery Life: Up to 30 hours\n\n- Weight: Not specified",
+        "call_to_action": "Order now on Olx to get the best deal!"
+      },
+      "validation": {
+        "is_valid": true,
+        "issues": []
+      },
+      "scores": {
+        "privacy_score": 100,
+        "seo_score": 80,
+        "marketing_score": 90,
+        "overall_score": 87,
+        "feedback": "SEO Title length is sub-optimal."
+      }
+    }
+  },
+  "complete_response": {
+    "status": "success",
+    "message": "Workflow completed",
+    "data": {
+      "sanitized_input": "Product Name: Sony WH-1000XM5\nBrand: Sony\nPrice: \u20b929,990\nCategory: Wireless Headphones\nDescription: Over-ear wireless headphones with advanced noise cancellation, high-quality audio, comfortable earcups, and long battery life. Contact Arjun Mehta at <EMAIL_ADDRESS> or <PHONE_NUMBER> about the order.\nSpecifications: features: Active Noise Cancellation, Bluetooth, Multipoint, 30-hour battery, color: Black, customer_note: Contact Arjun Mehta at <EMAIL_ADDRESS> or <PHONE_NUMBER> about the order.",
+      "vision_analysis": "Error analyzing image with Groq Vision: LLMGateway call failed after 3 retries. Error: Error code: 413 - {'error': {'message': 'Request too large for model `qwen/qwen3.6-27b` in organization `org_01kvb5wdg5eq99np00tsjmwhtg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 8286, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "rag_context": "RAG database is empty. Please run the ingestion script first.",
+      "seo": {
+        "title": "Sony WH-1000XM5 Wireless Headphones",
+        "meta_description": "Experience advanced noise cancellation and high-quality audio with Sony WH-1000XM5 wireless headphones.",
+        "keywords": [
+          "sony wh-1000xm5",
+          "wireless headphones",
+          "noise cancellation",
+          "high-quality audio"
+        ],
+        "tags": [
+          "wireless headphones",
+          "noise cancellation",
+          "audio"
+        ],
+        "short_description": "Immerse yourself in advanced noise cancellation and high-quality audio with Sony's premium wireless headphones.",
+        "bullet_points": [
+          "**Active Noise Cancellation**: Block out distractions and focus on your music.",
+          "**Long Battery Life**: Enjoy up to 30 hours of playback on a single charge.",
+          "**Comfortable Earcups**: Relax with soft, cushioned earcups designed for long listening sessions.",
+          "**High-Quality Audio**: Experience rich, detailed sound with Sony's advanced audio technology.",
+          "**Bluetooth Connectivity**: Seamlessly connect to your device and enjoy wireless freedom."
+        ],
+        "detailed_description": "The Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. The comfortable earcups are designed for long listening sessions, and the long battery life means you can enjoy your music all day without interruption. Whether you're commuting, working out, or simply relaxing, the Sony WH-1000XM5 wireless headphones are the perfect choice.",
+        "specs": {
+          "Brand": "Sony",
+          "Model": "WH-1000XM5",
+          "Price": "\u20b929,990",
+          "Color": "Black",
+          "Battery Life": "Up to 30 hours",
+          "Weight": "Not specified"
+        },
+        "price": "\u20b929,990",
+        "description": "Immerse yourself in advanced noise cancellation and high-quality audio with Sony's premium wireless headphones.\n\nKey Features:\n\n\u2022 **Active Noise Cancellation**: Block out distractions and focus on your music.\n\n\u2022 **Long Battery Life**: Enjoy up to 30 hours of playback on a single charge.\n\n\u2022 **Comfortable Earcups**: Relax with soft, cushioned earcups designed for long listening sessions.\n\n\u2022 **High-Quality Audio**: Experience rich, detailed sound with Sony's advanced audio technology.\n\n\u2022 **Bluetooth Connectivity**: Seamlessly connect to your device and enjoy wireless freedom.\n\nThe Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. The comfortable earcups are designed for long listening sessions, and the long battery life means you can enjoy your music all day without interruption. Whether you're commuting, working out, or simply relaxing, the Sony WH-1000XM5 wireless headphones are the perfect choice.\n\nSpecifications:\n\n- Brand: Sony\n\n- Model: WH-1000XM5\n\n- Price: \u20b929,990\n\n- Color: Black\n\n- Battery Life: Up to 30 hours\n\n- Weight: Not specified"
+      },
+      "competitor_analysis": {
+        "recommended_price": "\u20b929,990",
+        "lowest_competitor_price": "\u20b925,000",
+        "highest_competitor_price": "\u20b935,000",
+        "average_market_price": "\u20b928,500",
+        "market_positioning": "Premium wireless headphones with advanced noise cancellation and high-quality audio.",
+        "pricing_strategy": "Positioned as a premium product with a focus on advanced noise cancellation and high-quality audio.",
+        "competitor_insights": [
+          "Competitors offer similar features, but with less advanced noise cancellation technology.",
+          "One competitor offers a lower price point, but with fewer features.",
+          "Another competitor offers a higher price point, but with additional features such as wireless charging."
+        ]
+      },
+      "generated_variants": [
+        {
+          "variant_id": "ce1a1f7b-b5c8-43dd-a4fe-11ca07ac47b5",
+          "type": "A",
+          "angle": "Feature & Tech Heavy",
+          "title": "Sony WH-1000XM5 Wireless Headphones - Advanced Noise Cancellation and High-Quality Audio",
+          "short_description": "Experience the ultimate in noise cancellation and high-quality audio with Sony's premium wireless headphones.",
+          "key_features": [
+            "**Advanced Noise Cancellation**: Block out distractions and focus on your music.",
+            "**High-Quality Audio**: Enjoy rich, detailed sound with Sony's advanced audio technology.",
+            "**Long Battery Life**: Enjoy up to 30 hours of playback on a single charge.",
+            "**Comfortable Earcups**: Relax with soft, cushioned earcups designed for long listening sessions.",
+            "**Bluetooth Connectivity**: Seamlessly connect to your device and enjoy wireless freedom."
+          ],
+          "detailed_description": "The Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. The comfortable earcups are designed for long listening sessions, and the long battery life means you can enjoy your music all day without interruption.",
+          "specifications": {
+            "Brand": "Sony",
+            "Model": "WH-1000XM5",
+            "Price": "\u20b929,990",
+            "Color": "Black",
+            "Battery Life": "Up to 30 hours",
+            "Weight": "Not specified"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Experience the ultimate in noise cancellation and high-quality audio with Sony's premium wireless headphones.\n\nKey Features:\n\n\u2022 **Advanced Noise Cancellation**: Block out distractions and focus on your music.\n\n\u2022 **High-Quality Audio**: Enjoy rich, detailed sound with Sony's advanced audio technology.\n\n\u2022 **Long Battery Life**: Enjoy up to 30 hours of playback on a single charge.\n\n\u2022 **Comfortable Earcups**: Relax with soft, cushioned earcups designed for long listening sessions.\n\n\u2022 **Bluetooth Connectivity**: Seamlessly connect to your device and enjoy wireless freedom.\n\nThe Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. The comfortable earcups are designed for long listening sessions, and the long battery life means you can enjoy your music all day without interruption.\n\nSpecifications:\n\n- Brand: Sony\n\n- Model: WH-1000XM5\n\n- Price: \u20b929,990\n\n- Color: Black\n\n- Battery Life: Up to 30 hours\n\n- Weight: Not specified",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Sony WH-1000XM5 Wireless Headphones - Advanced Noise Cancellation and High-Quality Audio",
+            "meta_description": "Experience advanced noise cancellation and high-quality audio with Sony WH-1000XM5 wireless headphones.",
+            "keywords": [
+              "sony wh-1000xm5",
+              "wireless headphones",
+              "noise cancellation",
+              "high-quality audio"
+            ],
+            "tags": [
+              "wireless headphones",
+              "noise cancellation",
+              "audio"
+            ],
+            "short_description": "Experience the ultimate in noise cancellation and high-quality audio with Sony's premium wireless headphones.",
+            "bullet_points": [
+              "**Advanced Noise Cancellation**: Block out distractions and focus on your music.",
+              "**High-Quality Audio**: Enjoy rich, detailed sound with Sony's advanced audio technology.",
+              "**Long Battery Life**: Enjoy up to 30 hours of playback on a single charge.",
+              "**Comfortable Earcups**: Relax with soft, cushioned earcups designed for long listening sessions.",
+              "**Bluetooth Connectivity**: Seamlessly connect to your device and enjoy wireless freedom."
+            ],
+            "detailed_description": "The Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. The comfortable earcups are designed for long listening sessions, and the long battery life means you can enjoy your music all day without interruption.",
+            "specs": {
+              "Brand": "Sony",
+              "Model": "WH-1000XM5",
+              "Price": "\u20b929,990",
+              "Color": "Black",
+              "Battery Life": "Up to 30 hours",
+              "Weight": "Not specified"
+            },
+            "price": "\u20b929,990",
+            "description": "Immerse yourself in advanced noise cancellation and high-quality audio with Sony's premium wireless headphones.\n\nKey Features:\n\n\u2022 **Active Noise Cancellation**: Block out distractions and focus on your music.\n\n\u2022 **Long Battery Life**: Enjoy up to 30 hours of playback on a single charge.\n\n\u2022 **Comfortable Earcups**: Relax with soft, cushioned earcups designed for long listening sessions.\n\n\u2022 **High-Quality Audio**: Experience rich, detailed sound with Sony's advanced audio technology.\n\n\u2022 **Bluetooth Connectivity**: Seamlessly connect to your device and enjoy wireless freedom.\n\nThe Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. The comfortable earcups are designed for long listening sessions, and the long battery life means you can enjoy your music all day without interruption. Whether you're commuting, working out, or simply relaxing, the Sony WH-1000XM5 wireless headphones are the perfect choice.\n\nSpecifications:\n\n- Brand: Sony\n\n- Model: WH-1000XM5\n\n- Price: \u20b929,990\n\n- Color: Black\n\n- Battery Life: Up to 30 hours\n\n- Weight: Not specified"
+          },
+          "cope_scores": {
+            "overall_score": 85,
+            "purchase_probability": 78.5,
+            "expected_ctr": 72.0,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 90,
+            "confidence_score": 88
+          }
+        },
+        {
+          "variant_id": "7baff6ed-3528-4eb1-be8d-64cb6fb09941",
+          "type": "B",
+          "angle": "Emotional & Value Driven",
+          "title": "Immerse Yourself in Music with Sony WH-1000XM5 Wireless Headphones",
+          "short_description": "Experience the joy of music without distractions with Sony's premium wireless headphones.",
+          "key_features": [
+            "**Escape the Noise**: Block out distractions and focus on your music.",
+            "**Unleash Your Creativity**: Enjoy rich, detailed sound with Sony's advanced audio technology.",
+            "**Relax and Recharge**: Enjoy up to 30 hours of playback on a single charge.",
+            "**Comfortable Listening**: Relax with soft, cushioned earcups designed for long listening sessions.",
+            "**Freedom to Move**: Seamlessly connect to your device and enjoy wireless freedom."
+          ],
+          "detailed_description": "The Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. Whether you're commuting, working out, or simply relaxing, the Sony WH-1000XM5 wireless headphones are the perfect choice.",
+          "specifications": {
+            "Brand": "Sony",
+            "Model": "WH-1000XM5",
+            "Price": "\u20b929,990",
+            "Color": "Black",
+            "Battery Life": "Up to 30 hours",
+            "Weight": "Not specified"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Experience the joy of music without distractions with Sony's premium wireless headphones.\n\nKey Features:\n\n\u2022 **Escape the Noise**: Block out distractions and focus on your music.\n\n\u2022 **Unleash Your Creativity**: Enjoy rich, detailed sound with Sony's advanced audio technology.\n\n\u2022 **Relax and Recharge**: Enjoy up to 30 hours of playback on a single charge.\n\n\u2022 **Comfortable Listening**: Relax with soft, cushioned earcups designed for long listening sessions.\n\n\u2022 **Freedom to Move**: Seamlessly connect to your device and enjoy wireless freedom.\n\nThe Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. Whether you're commuting, working out, or simply relaxing, the Sony WH-1000XM5 wireless headphones are the perfect choice.\n\nSpecifications:\n\n- Brand: Sony\n\n- Model: WH-1000XM5\n\n- Price: \u20b929,990\n\n- Color: Black\n\n- Battery Life: Up to 30 hours\n\n- Weight: Not specified",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Immerse Yourself in Music with Sony WH-1000XM5 Wireless Headphones",
+            "meta_description": "Experience advanced noise cancellation and high-quality audio with Sony WH-1000XM5 wireless headphones.",
+            "keywords": [
+              "sony wh-1000xm5",
+              "wireless headphones",
+              "noise cancellation",
+              "high-quality audio"
+            ],
+            "tags": [
+              "wireless headphones",
+              "noise cancellation",
+              "audio"
+            ],
+            "short_description": "Experience the joy of music without distractions with Sony's premium wireless headphones.",
+            "bullet_points": [
+              "**Escape the Noise**: Block out distractions and focus on your music.",
+              "**Unleash Your Creativity**: Enjoy rich, detailed sound with Sony's advanced audio technology.",
+              "**Relax and Recharge**: Enjoy up to 30 hours of playback on a single charge.",
+              "**Comfortable Listening**: Relax with soft, cushioned earcups designed for long listening sessions.",
+              "**Freedom to Move**: Seamlessly connect to your device and enjoy wireless freedom."
+            ],
+            "detailed_description": "The Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. Whether you're commuting, working out, or simply relaxing, the Sony WH-1000XM5 wireless headphones are the perfect choice.",
+            "specs": {
+              "Brand": "Sony",
+              "Model": "WH-1000XM5",
+              "Price": "\u20b929,990",
+              "Color": "Black",
+              "Battery Life": "Up to 30 hours",
+              "Weight": "Not specified"
+            },
+            "price": "\u20b929,990",
+            "description": "Immerse yourself in advanced noise cancellation and high-quality audio with Sony's premium wireless headphones.\n\nKey Features:\n\n\u2022 **Active Noise Cancellation**: Block out distractions and focus on your music.\n\n\u2022 **Long Battery Life**: Enjoy up to 30 hours of playback on a single charge.\n\n\u2022 **Comfortable Earcups**: Relax with soft, cushioned earcups designed for long listening sessions.\n\n\u2022 **High-Quality Audio**: Experience rich, detailed sound with Sony's advanced audio technology.\n\n\u2022 **Bluetooth Connectivity**: Seamlessly connect to your device and enjoy wireless freedom.\n\nThe Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. The comfortable earcups are designed for long listening sessions, and the long battery life means you can enjoy your music all day without interruption. Whether you're commuting, working out, or simply relaxing, the Sony WH-1000XM5 wireless headphones are the perfect choice.\n\nSpecifications:\n\n- Brand: Sony\n\n- Model: WH-1000XM5\n\n- Price: \u20b929,990\n\n- Color: Black\n\n- Battery Life: Up to 30 hours\n\n- Weight: Not specified"
+          },
+          "cope_scores": {
+            "overall_score": 82,
+            "purchase_probability": 76.0,
+            "expected_ctr": 70.0,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 88,
+            "confidence_score": 88
+          }
+        },
+        {
+          "variant_id": "14ade838-4ac1-4f81-b838-872cc5d6258e",
+          "type": "C",
+          "angle": "Urgency & Lifestyle Focused",
+          "title": "Limited Time Offer: Get Sony WH-1000XM5 Wireless Headphones Now!",
+          "short_description": "Don't miss out on this incredible offer - get Sony's premium wireless headphones now!",
+          "key_features": [
+            "**Limited Time Offer**: Get the Sony WH-1000XM5 wireless headphones at an unbeatable price.",
+            "**Advanced Noise Cancellation**: Block out distractions and focus on your music.",
+            "**High-Quality Audio**: Enjoy rich, detailed sound with Sony's advanced audio technology.",
+            "**Long Battery Life**: Enjoy up to 30 hours of playback on a single charge.",
+            "**Comfortable Earcups**: Relax with soft, cushioned earcups designed for long listening sessions."
+          ],
+          "detailed_description": "The Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. Don't miss out on this incredible offer - get the Sony WH-1000XM5 wireless headphones now!",
+          "specifications": {
+            "Brand": "Sony",
+            "Model": "WH-1000XM5",
+            "Price": "\u20b929,990",
+            "Color": "Black",
+            "Battery Life": "Up to 30 hours",
+            "Weight": "Not specified"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Don't miss out on this incredible offer - get Sony's premium wireless headphones now!\n\nKey Features:\n\n\u2022 **Limited Time Offer**: Get the Sony WH-1000XM5 wireless headphones at an unbeatable price.\n\n\u2022 **Advanced Noise Cancellation**: Block out distractions and focus on your music.\n\n\u2022 **High-Quality Audio**: Enjoy rich, detailed sound with Sony's advanced audio technology.\n\n\u2022 **Long Battery Life**: Enjoy up to 30 hours of playback on a single charge.\n\n\u2022 **Comfortable Earcups**: Relax with soft, cushioned earcups designed for long listening sessions.\n\nThe Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. Don't miss out on this incredible offer - get the Sony WH-1000XM5 wireless headphones now!\n\nSpecifications:\n\n- Brand: Sony\n\n- Model: WH-1000XM5\n\n- Price: \u20b929,990\n\n- Color: Black\n\n- Battery Life: Up to 30 hours\n\n- Weight: Not specified",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Limited Time Offer: Get Sony WH-1000XM5 Wireless Headphones Now!",
+            "meta_description": "Experience advanced noise cancellation and high-quality audio with Sony WH-1000XM5 wireless headphones.",
+            "keywords": [
+              "sony wh-1000xm5",
+              "wireless headphones",
+              "noise cancellation",
+              "high-quality audio"
+            ],
+            "tags": [
+              "wireless headphones",
+              "noise cancellation",
+              "audio"
+            ],
+            "short_description": "Don't miss out on this incredible offer - get Sony's premium wireless headphones now!",
+            "bullet_points": [
+              "**Limited Time Offer**: Get the Sony WH-1000XM5 wireless headphones at an unbeatable price.",
+              "**Advanced Noise Cancellation**: Block out distractions and focus on your music.",
+              "**High-Quality Audio**: Enjoy rich, detailed sound with Sony's advanced audio technology.",
+              "**Long Battery Life**: Enjoy up to 30 hours of playback on a single charge.",
+              "**Comfortable Earcups**: Relax with soft, cushioned earcups designed for long listening sessions."
+            ],
+            "detailed_description": "The Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. Don't miss out on this incredible offer - get the Sony WH-1000XM5 wireless headphones now!",
+            "specs": {
+              "Brand": "Sony",
+              "Model": "WH-1000XM5",
+              "Price": "\u20b929,990",
+              "Color": "Black",
+              "Battery Life": "Up to 30 hours",
+              "Weight": "Not specified"
+            },
+            "price": "\u20b929,990",
+            "description": "Immerse yourself in advanced noise cancellation and high-quality audio with Sony's premium wireless headphones.\n\nKey Features:\n\n\u2022 **Active Noise Cancellation**: Block out distractions and focus on your music.\n\n\u2022 **Long Battery Life**: Enjoy up to 30 hours of playback on a single charge.\n\n\u2022 **Comfortable Earcups**: Relax with soft, cushioned earcups designed for long listening sessions.\n\n\u2022 **High-Quality Audio**: Experience rich, detailed sound with Sony's advanced audio technology.\n\n\u2022 **Bluetooth Connectivity**: Seamlessly connect to your device and enjoy wireless freedom.\n\nThe Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. The comfortable earcups are designed for long listening sessions, and the long battery life means you can enjoy your music all day without interruption. Whether you're commuting, working out, or simply relaxing, the Sony WH-1000XM5 wireless headphones are the perfect choice.\n\nSpecifications:\n\n- Brand: Sony\n\n- Model: WH-1000XM5\n\n- Price: \u20b929,990\n\n- Color: Black\n\n- Battery Life: Up to 30 hours\n\n- Weight: Not specified"
+          },
+          "cope_scores": {
+            "overall_score": 79,
+            "purchase_probability": 73.5,
+            "expected_ctr": 68.0,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 86,
+            "confidence_score": 88
+          }
+        }
+      ],
+      "scored_variants": [
+        {
+          "variant_id": "ce1a1f7b-b5c8-43dd-a4fe-11ca07ac47b5",
+          "type": "A",
+          "angle": "Feature & Tech Heavy",
+          "title": "Sony WH-1000XM5 Wireless Headphones - Advanced Noise Cancellation and High-Quality Audio",
+          "short_description": "Experience the ultimate in noise cancellation and high-quality audio with Sony's premium wireless headphones.",
+          "key_features": [
+            "**Advanced Noise Cancellation**: Block out distractions and focus on your music.",
+            "**High-Quality Audio**: Enjoy rich, detailed sound with Sony's advanced audio technology.",
+            "**Long Battery Life**: Enjoy up to 30 hours of playback on a single charge.",
+            "**Comfortable Earcups**: Relax with soft, cushioned earcups designed for long listening sessions.",
+            "**Bluetooth Connectivity**: Seamlessly connect to your device and enjoy wireless freedom."
+          ],
+          "detailed_description": "The Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. The comfortable earcups are designed for long listening sessions, and the long battery life means you can enjoy your music all day without interruption.",
+          "specifications": {
+            "Brand": "Sony",
+            "Model": "WH-1000XM5",
+            "Price": "\u20b929,990",
+            "Color": "Black",
+            "Battery Life": "Up to 30 hours",
+            "Weight": "Not specified"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Experience the ultimate in noise cancellation and high-quality audio with Sony's premium wireless headphones.\n\nKey Features:\n\n\u2022 **Advanced Noise Cancellation**: Block out distractions and focus on your music.\n\n\u2022 **High-Quality Audio**: Enjoy rich, detailed sound with Sony's advanced audio technology.\n\n\u2022 **Long Battery Life**: Enjoy up to 30 hours of playback on a single charge.\n\n\u2022 **Comfortable Earcups**: Relax with soft, cushioned earcups designed for long listening sessions.\n\n\u2022 **Bluetooth Connectivity**: Seamlessly connect to your device and enjoy wireless freedom.\n\nThe Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. The comfortable earcups are designed for long listening sessions, and the long battery life means you can enjoy your music all day without interruption.\n\nSpecifications:\n\n- Brand: Sony\n\n- Model: WH-1000XM5\n\n- Price: \u20b929,990\n\n- Color: Black\n\n- Battery Life: Up to 30 hours\n\n- Weight: Not specified",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Sony WH-1000XM5 Wireless Headphones - Advanced Noise Cancellation and High-Quality Audio",
+            "meta_description": "Experience advanced noise cancellation and high-quality audio with Sony WH-1000XM5 wireless headphones.",
+            "keywords": [
+              "sony wh-1000xm5",
+              "wireless headphones",
+              "noise cancellation",
+              "high-quality audio"
+            ],
+            "tags": [
+              "wireless headphones",
+              "noise cancellation",
+              "audio"
+            ],
+            "short_description": "Experience the ultimate in noise cancellation and high-quality audio with Sony's premium wireless headphones.",
+            "bullet_points": [
+              "**Advanced Noise Cancellation**: Block out distractions and focus on your music.",
+              "**High-Quality Audio**: Enjoy rich, detailed sound with Sony's advanced audio technology.",
+              "**Long Battery Life**: Enjoy up to 30 hours of playback on a single charge.",
+              "**Comfortable Earcups**: Relax with soft, cushioned earcups designed for long listening sessions.",
+              "**Bluetooth Connectivity**: Seamlessly connect to your device and enjoy wireless freedom."
+            ],
+            "detailed_description": "The Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. The comfortable earcups are designed for long listening sessions, and the long battery life means you can enjoy your music all day without interruption.",
+            "specs": {
+              "Brand": "Sony",
+              "Model": "WH-1000XM5",
+              "Price": "\u20b929,990",
+              "Color": "Black",
+              "Battery Life": "Up to 30 hours",
+              "Weight": "Not specified"
+            },
+            "price": "\u20b929,990",
+            "description": "Immerse yourself in advanced noise cancellation and high-quality audio with Sony's premium wireless headphones.\n\nKey Features:\n\n\u2022 **Active Noise Cancellation**: Block out distractions and focus on your music.\n\n\u2022 **Long Battery Life**: Enjoy up to 30 hours of playback on a single charge.\n\n\u2022 **Comfortable Earcups**: Relax with soft, cushioned earcups designed for long listening sessions.\n\n\u2022 **High-Quality Audio**: Experience rich, detailed sound with Sony's advanced audio technology.\n\n\u2022 **Bluetooth Connectivity**: Seamlessly connect to your device and enjoy wireless freedom.\n\nThe Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. The comfortable earcups are designed for long listening sessions, and the long battery life means you can enjoy your music all day without interruption. Whether you're commuting, working out, or simply relaxing, the Sony WH-1000XM5 wireless headphones are the perfect choice.\n\nSpecifications:\n\n- Brand: Sony\n\n- Model: WH-1000XM5\n\n- Price: \u20b929,990\n\n- Color: Black\n\n- Battery Life: Up to 30 hours\n\n- Weight: Not specified"
+          },
+          "cope_scores": {
+            "overall_score": 85,
+            "purchase_probability": 78.5,
+            "expected_ctr": 72.0,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 90,
+            "confidence_score": 88
+          }
+        },
+        {
+          "variant_id": "7baff6ed-3528-4eb1-be8d-64cb6fb09941",
+          "type": "B",
+          "angle": "Emotional & Value Driven",
+          "title": "Immerse Yourself in Music with Sony WH-1000XM5 Wireless Headphones",
+          "short_description": "Experience the joy of music without distractions with Sony's premium wireless headphones.",
+          "key_features": [
+            "**Escape the Noise**: Block out distractions and focus on your music.",
+            "**Unleash Your Creativity**: Enjoy rich, detailed sound with Sony's advanced audio technology.",
+            "**Relax and Recharge**: Enjoy up to 30 hours of playback on a single charge.",
+            "**Comfortable Listening**: Relax with soft, cushioned earcups designed for long listening sessions.",
+            "**Freedom to Move**: Seamlessly connect to your device and enjoy wireless freedom."
+          ],
+          "detailed_description": "The Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. Whether you're commuting, working out, or simply relaxing, the Sony WH-1000XM5 wireless headphones are the perfect choice.",
+          "specifications": {
+            "Brand": "Sony",
+            "Model": "WH-1000XM5",
+            "Price": "\u20b929,990",
+            "Color": "Black",
+            "Battery Life": "Up to 30 hours",
+            "Weight": "Not specified"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Experience the joy of music without distractions with Sony's premium wireless headphones.\n\nKey Features:\n\n\u2022 **Escape the Noise**: Block out distractions and focus on your music.\n\n\u2022 **Unleash Your Creativity**: Enjoy rich, detailed sound with Sony's advanced audio technology.\n\n\u2022 **Relax and Recharge**: Enjoy up to 30 hours of playback on a single charge.\n\n\u2022 **Comfortable Listening**: Relax with soft, cushioned earcups designed for long listening sessions.\n\n\u2022 **Freedom to Move**: Seamlessly connect to your device and enjoy wireless freedom.\n\nThe Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. Whether you're commuting, working out, or simply relaxing, the Sony WH-1000XM5 wireless headphones are the perfect choice.\n\nSpecifications:\n\n- Brand: Sony\n\n- Model: WH-1000XM5\n\n- Price: \u20b929,990\n\n- Color: Black\n\n- Battery Life: Up to 30 hours\n\n- Weight: Not specified",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Immerse Yourself in Music with Sony WH-1000XM5 Wireless Headphones",
+            "meta_description": "Experience advanced noise cancellation and high-quality audio with Sony WH-1000XM5 wireless headphones.",
+            "keywords": [
+              "sony wh-1000xm5",
+              "wireless headphones",
+              "noise cancellation",
+              "high-quality audio"
+            ],
+            "tags": [
+              "wireless headphones",
+              "noise cancellation",
+              "audio"
+            ],
+            "short_description": "Experience the joy of music without distractions with Sony's premium wireless headphones.",
+            "bullet_points": [
+              "**Escape the Noise**: Block out distractions and focus on your music.",
+              "**Unleash Your Creativity**: Enjoy rich, detailed sound with Sony's advanced audio technology.",
+              "**Relax and Recharge**: Enjoy up to 30 hours of playback on a single charge.",
+              "**Comfortable Listening**: Relax with soft, cushioned earcups designed for long listening sessions.",
+              "**Freedom to Move**: Seamlessly connect to your device and enjoy wireless freedom."
+            ],
+            "detailed_description": "The Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. Whether you're commuting, working out, or simply relaxing, the Sony WH-1000XM5 wireless headphones are the perfect choice.",
+            "specs": {
+              "Brand": "Sony",
+              "Model": "WH-1000XM5",
+              "Price": "\u20b929,990",
+              "Color": "Black",
+              "Battery Life": "Up to 30 hours",
+              "Weight": "Not specified"
+            },
+            "price": "\u20b929,990",
+            "description": "Immerse yourself in advanced noise cancellation and high-quality audio with Sony's premium wireless headphones.\n\nKey Features:\n\n\u2022 **Active Noise Cancellation**: Block out distractions and focus on your music.\n\n\u2022 **Long Battery Life**: Enjoy up to 30 hours of playback on a single charge.\n\n\u2022 **Comfortable Earcups**: Relax with soft, cushioned earcups designed for long listening sessions.\n\n\u2022 **High-Quality Audio**: Experience rich, detailed sound with Sony's advanced audio technology.\n\n\u2022 **Bluetooth Connectivity**: Seamlessly connect to your device and enjoy wireless freedom.\n\nThe Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. The comfortable earcups are designed for long listening sessions, and the long battery life means you can enjoy your music all day without interruption. Whether you're commuting, working out, or simply relaxing, the Sony WH-1000XM5 wireless headphones are the perfect choice.\n\nSpecifications:\n\n- Brand: Sony\n\n- Model: WH-1000XM5\n\n- Price: \u20b929,990\n\n- Color: Black\n\n- Battery Life: Up to 30 hours\n\n- Weight: Not specified"
+          },
+          "cope_scores": {
+            "overall_score": 82,
+            "purchase_probability": 76.0,
+            "expected_ctr": 70.0,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 88,
+            "confidence_score": 88
+          }
+        },
+        {
+          "variant_id": "14ade838-4ac1-4f81-b838-872cc5d6258e",
+          "type": "C",
+          "angle": "Urgency & Lifestyle Focused",
+          "title": "Limited Time Offer: Get Sony WH-1000XM5 Wireless Headphones Now!",
+          "short_description": "Don't miss out on this incredible offer - get Sony's premium wireless headphones now!",
+          "key_features": [
+            "**Limited Time Offer**: Get the Sony WH-1000XM5 wireless headphones at an unbeatable price.",
+            "**Advanced Noise Cancellation**: Block out distractions and focus on your music.",
+            "**High-Quality Audio**: Enjoy rich, detailed sound with Sony's advanced audio technology.",
+            "**Long Battery Life**: Enjoy up to 30 hours of playback on a single charge.",
+            "**Comfortable Earcups**: Relax with soft, cushioned earcups designed for long listening sessions."
+          ],
+          "detailed_description": "The Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. Don't miss out on this incredible offer - get the Sony WH-1000XM5 wireless headphones now!",
+          "specifications": {
+            "Brand": "Sony",
+            "Model": "WH-1000XM5",
+            "Price": "\u20b929,990",
+            "Color": "Black",
+            "Battery Life": "Up to 30 hours",
+            "Weight": "Not specified"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Don't miss out on this incredible offer - get Sony's premium wireless headphones now!\n\nKey Features:\n\n\u2022 **Limited Time Offer**: Get the Sony WH-1000XM5 wireless headphones at an unbeatable price.\n\n\u2022 **Advanced Noise Cancellation**: Block out distractions and focus on your music.\n\n\u2022 **High-Quality Audio**: Enjoy rich, detailed sound with Sony's advanced audio technology.\n\n\u2022 **Long Battery Life**: Enjoy up to 30 hours of playback on a single charge.\n\n\u2022 **Comfortable Earcups**: Relax with soft, cushioned earcups designed for long listening sessions.\n\nThe Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. Don't miss out on this incredible offer - get the Sony WH-1000XM5 wireless headphones now!\n\nSpecifications:\n\n- Brand: Sony\n\n- Model: WH-1000XM5\n\n- Price: \u20b929,990\n\n- Color: Black\n\n- Battery Life: Up to 30 hours\n\n- Weight: Not specified",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Limited Time Offer: Get Sony WH-1000XM5 Wireless Headphones Now!",
+            "meta_description": "Experience advanced noise cancellation and high-quality audio with Sony WH-1000XM5 wireless headphones.",
+            "keywords": [
+              "sony wh-1000xm5",
+              "wireless headphones",
+              "noise cancellation",
+              "high-quality audio"
+            ],
+            "tags": [
+              "wireless headphones",
+              "noise cancellation",
+              "audio"
+            ],
+            "short_description": "Don't miss out on this incredible offer - get Sony's premium wireless headphones now!",
+            "bullet_points": [
+              "**Limited Time Offer**: Get the Sony WH-1000XM5 wireless headphones at an unbeatable price.",
+              "**Advanced Noise Cancellation**: Block out distractions and focus on your music.",
+              "**High-Quality Audio**: Enjoy rich, detailed sound with Sony's advanced audio technology.",
+              "**Long Battery Life**: Enjoy up to 30 hours of playback on a single charge.",
+              "**Comfortable Earcups**: Relax with soft, cushioned earcups designed for long listening sessions."
+            ],
+            "detailed_description": "The Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. Don't miss out on this incredible offer - get the Sony WH-1000XM5 wireless headphones now!",
+            "specs": {
+              "Brand": "Sony",
+              "Model": "WH-1000XM5",
+              "Price": "\u20b929,990",
+              "Color": "Black",
+              "Battery Life": "Up to 30 hours",
+              "Weight": "Not specified"
+            },
+            "price": "\u20b929,990",
+            "description": "Immerse yourself in advanced noise cancellation and high-quality audio with Sony's premium wireless headphones.\n\nKey Features:\n\n\u2022 **Active Noise Cancellation**: Block out distractions and focus on your music.\n\n\u2022 **Long Battery Life**: Enjoy up to 30 hours of playback on a single charge.\n\n\u2022 **Comfortable Earcups**: Relax with soft, cushioned earcups designed for long listening sessions.\n\n\u2022 **High-Quality Audio**: Experience rich, detailed sound with Sony's advanced audio technology.\n\n\u2022 **Bluetooth Connectivity**: Seamlessly connect to your device and enjoy wireless freedom.\n\nThe Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. The comfortable earcups are designed for long listening sessions, and the long battery life means you can enjoy your music all day without interruption. Whether you're commuting, working out, or simply relaxing, the Sony WH-1000XM5 wireless headphones are the perfect choice.\n\nSpecifications:\n\n- Brand: Sony\n\n- Model: WH-1000XM5\n\n- Price: \u20b929,990\n\n- Color: Black\n\n- Battery Life: Up to 30 hours\n\n- Weight: Not specified"
+          },
+          "cope_scores": {
+            "overall_score": 79,
+            "purchase_probability": 73.5,
+            "expected_ctr": 68.0,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 86,
+            "confidence_score": 88
+          }
+        }
+      ],
+      "decision": {
+        "action": "publish",
+        "reason": "Clear winner identified with high confidence.",
+        "recommended_variant_id": "ce1a1f7b-b5c8-43dd-a4fe-11ca07ac47b5"
+      },
+      "marketing": {
+        "platform": "olx",
+        "platform_description": "Experience the ultimate in noise cancellation and high-quality audio with Sony's premium wireless headphones.\n\nKey Features:\n\n\u2022 **Advanced Noise Cancellation**: Block out distractions and focus on your music.\n\n\u2022 **High-Quality Audio**: Enjoy rich, detailed sound with Sony's advanced audio technology.\n\n\u2022 **Long Battery Life**: Enjoy up to 30 hours of playback on a single charge.\n\n\u2022 **Comfortable Earcups**: Relax with soft, cushioned earcups designed for long listening sessions.\n\n\u2022 **Bluetooth Connectivity**: Seamlessly connect to your device and enjoy wireless freedom.\n\nThe Sony WH-1000XM5 wireless headphones offer an unparalleled listening experience. With advanced noise cancellation and high-quality audio, you'll be able to immerse yourself in your music like never before. The comfortable earcups are designed for long listening sessions, and the long battery life means you can enjoy your music all day without interruption.\n\nSpecifications:\n\n- Brand: Sony\n\n- Model: WH-1000XM5\n\n- Price: \u20b929,990\n\n- Color: Black\n\n- Battery Life: Up to 30 hours\n\n- Weight: Not specified",
+        "call_to_action": "Order now on Olx to get the best deal!"
+      },
+      "validation": {
+        "is_valid": true,
+        "issues": []
+      },
+      "scores": {
+        "privacy_score": 100,
+        "seo_score": 80,
+        "marketing_score": 90,
+        "overall_score": 87,
+        "feedback": "SEO Title length is sub-optimal."
+      }
+    }
+  },
+  "token_usage": null,
+  "estimated_cost": null,
+  "cache_hit": null,
+  "error": null,
+  "capability_metadata": {
+    "image_processing_supported": true,
+    "privacy_anonymization": true,
+    "rag_context": true,
+    "multi_agent_workflow": true
+  }
+}

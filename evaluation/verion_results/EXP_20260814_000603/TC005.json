@@ -1,0 +1,997 @@
+{
+  "experiment_id": "EXP_20260814_000603",
+  "test_case_id": "TC005",
+  "system": "verion",
+  "timestamp": "2026-08-14T00:08:26.800102",
+  "success": true,
+  "latency_ms": 20603.03,
+  "model": "multi-agent",
+  "raw_output": {
+    "status": "success",
+    "message": "Workflow completed",
+    "data": {
+      "sanitized_input": "Product Name: Nike Air Max 270\nBrand: Nike\nPrice: \u20b913,995\nCategory: Running/Lifestyle Shoes\nDescription: Lifestyle sneakers with a breathable upper, visible Air cushioning, secure lace closure, and durable rubber outsole. Purchased for Rahul Verma, <EMAIL_ADDRESS>, delivery contact <PHONE_NUMBER>.\nSpecifications: color: Black/White, size: <LOCATION> 9, material: Mesh and synthetic upper, features: Air cushioning, Lace-up closure, Rubber outsole, customer_note: Purchased for Rahul Verma, <EMAIL_ADDRESS>, delivery contact <PHONE_NUMBER>.",
+      "vision_analysis": "Error analyzing image with Groq Vision: LLMGateway call failed after 3 retries. Error: Error code: 413 - {'error': {'message': 'Request too large for model `qwen/qwen3.6-27b` in organization `org_01kvb5wdg5eq99np00tsjmwhtg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 8286, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "rag_context": "RAG database is empty. Please run the ingestion script first.",
+      "seo": {
+        "title": "Nike Air Max 270 Lifestyle Sneakers",
+        "meta_description": "Nike Air Max 270 Lifestyle Sneakers for Men in Black/White. Breathable mesh upper, visible air cushioning, secure lace closure, and durable rubber outsole.",
+        "keywords": [
+          "Nike",
+          "Air Max 270",
+          "Lifestyle Sneakers",
+          "Running Shoes",
+          "Black/White",
+          "Size 9"
+        ],
+        "tags": [
+          "Nike",
+          "Sneakers",
+          "Running Shoes",
+          "Lifestyle",
+          "Black",
+          "White"
+        ],
+        "short_description": "Experience comfort and style with Nike Air Max 270 Lifestyle Sneakers. Featuring a breathable mesh upper, visible air cushioning, and a secure lace closure.",
+        "bullet_points": [
+          "**Breathable Mesh Upper**: Keep your feet cool and dry with our lightweight mesh upper.",
+          "**Visible Air Cushioning**: Enjoy superior comfort and impact protection with our visible air cushioning.",
+          "**Secure Lace Closure**: Get a secure fit with our lace closure system.",
+          "**Durable Rubber Outsole**: Tackle any terrain with our durable rubber outsole.",
+          "**Classic Style**: Elevate your style with our sleek and timeless design."
+        ],
+        "detailed_description": "The Nike Air Max 270 Lifestyle Sneakers are designed for comfort and style. The breathable mesh upper keeps your feet cool and dry, while the visible air cushioning provides superior comfort and impact protection. The secure lace closure system ensures a secure fit, and the durable rubber outsole tackles any terrain. Whether you're running errands or hitting the gym, these sneakers are perfect for any occasion.",
+        "specs": {
+          "color": "Black/White",
+          "size": "9",
+          "material": "Mesh and synthetic upper",
+          "features": "Air cushioning, Lace-up closure, Rubber outsole"
+        },
+        "price": "\u20b913,995.00",
+        "description": "Experience comfort and style with Nike Air Max 270 Lifestyle Sneakers. Featuring a breathable mesh upper, visible air cushioning, and a secure lace closure.\n\nKey Features:\n\n\u2022 **Breathable Mesh Upper**: Keep your feet cool and dry with our lightweight mesh upper.\n\n\u2022 **Visible Air Cushioning**: Enjoy superior comfort and impact protection with our visible air cushioning.\n\n\u2022 **Secure Lace Closure**: Get a secure fit with our lace closure system.\n\n\u2022 **Durable Rubber Outsole**: Tackle any terrain with our durable rubber outsole.\n\n\u2022 **Classic Style**: Elevate your style with our sleek and timeless design.\n\nThe Nike Air Max 270 Lifestyle Sneakers are designed for comfort and style. The breathable mesh upper keeps your feet cool and dry, while the visible air cushioning provides superior comfort and impact protection. The secure lace closure system ensures a secure fit, and the durable rubber outsole tackles any terrain. Whether you're running errands or hitting the gym, these sneakers are perfect for any occasion.\n\nSpecifications:\n\n- color: Black/White\n\n- size: 9\n\n- material: Mesh and synthetic upper\n\n- features: Air cushioning, Lace-up closure, Rubber outsole"
+      },
+      "competitor_analysis": {
+        "recommended_price": "\u20b913,995.00",
+        "lowest_competitor_price": "\u20b912,999.00",
+        "highest_competitor_price": "\u20b914,999.00",
+        "average_market_price": "\u20b913,499.50",
+        "market_positioning": "Competitive pricing for a high-quality lifestyle sneaker",
+        "pricing_strategy": "Positioned as a premium product with a competitive price point",
+        "competitor_insights": [
+          "Competitor A offers a similar product with a lower price point, but with less features.",
+          "Competitor B offers a more premium product with a higher price point, but with additional features.",
+          "Competitor C offers a similar product with a similar price point, but with a different design aesthetic."
+        ]
+      },
+      "generated_variants": [
+        {
+          "variant_id": "e7f41e58-452c-48b4-90f1-2bcc95aaa16f",
+          "type": "A",
+          "angle": "Feature & Tech Heavy",
+          "title": "Nike Air Max 270 Lifestyle Sneakers - Feature-Rich",
+          "short_description": "Experience the ultimate in comfort and style with our feature-rich Nike Air Max 270 Lifestyle Sneakers.",
+          "key_features": [
+            "**Advanced Cushioning System**: Enjoy superior comfort and impact protection with our advanced cushioning system.",
+            "**Breathable Mesh Upper**: Keep your feet cool and dry with our lightweight mesh upper.",
+            "**Secure Lace Closure**: Get a secure fit with our lace closure system.",
+            "**Durable Rubber Outsole**: Tackle any terrain with our durable rubber outsole.",
+            "**Premium Materials**: Elevate your style with our premium materials."
+          ],
+          "detailed_description": "The Nike Air Max 270 Lifestyle Sneakers are designed for comfort and style. The advanced cushioning system provides superior comfort and impact protection, while the breathable mesh upper keeps your feet cool and dry. The secure lace closure system ensures a secure fit, and the durable rubber outsole tackles any terrain. Whether you're running errands or hitting the gym, these sneakers are perfect for any occasion.",
+          "specifications": {
+            "color": "Black/White",
+            "size": "9",
+            "material": "Mesh and synthetic upper",
+            "features": "Air cushioning, Lace-up closure, Rubber outsole"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Experience the ultimate in comfort and style with our feature-rich Nike Air Max 270 Lifestyle Sneakers.\n\nKey Features:\n\n\u2022 **Advanced Cushioning System**: Enjoy superior comfort and impact protection with our advanced cushioning system.\n\n\u2022 **Breathable Mesh Upper**: Keep your feet cool and dry with our lightweight mesh upper.\n\n\u2022 **Secure Lace Closure**: Get a secure fit with our lace closure system.\n\n\u2022 **Durable Rubber Outsole**: Tackle any terrain with our durable rubber outsole.\n\n\u2022 **Premium Materials**: Elevate your style with our premium materials.\n\nThe Nike Air Max 270 Lifestyle Sneakers are designed for comfort and style. The advanced cushioning system provides superior comfort and impact protection, while the breathable mesh upper keeps your feet cool and dry. The secure lace closure system ensures a secure fit, and the durable rubber outsole tackles any terrain. Whether you're running errands or hitting the gym, these sneakers are perfect for any occasion.\n\nSpecifications:\n\n- color: Black/White\n\n- size: 9\n\n- material: Mesh and synthetic upper\n\n- features: Air cushioning, Lace-up closure, Rubber outsole",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Nike Air Max 270 Lifestyle Sneakers - Feature-Rich",
+            "meta_description": "Nike Air Max 270 Lifestyle Sneakers for Men in Black/White. Breathable mesh upper, visible air cushioning, secure lace closure, and durable rubber outsole.",
+            "keywords": [
+              "Nike",
+              "Air Max 270",
+              "Lifestyle Sneakers",
+              "Running Shoes",
+              "Black/White",
+              "Size 9"
+            ],
+            "tags": [
+              "Nike",
+              "Sneakers",
+              "Running Shoes",
+              "Lifestyle",
+              "Black",
+              "White"
+            ],
+            "short_description": "Experience the ultimate in comfort and style with our feature-rich Nike Air Max 270 Lifestyle Sneakers.",
+            "bullet_points": [
+              "**Advanced Cushioning System**: Enjoy superior comfort and impact protection with our advanced cushioning system.",
+              "**Breathable Mesh Upper**: Keep your feet cool and dry with our lightweight mesh upper.",
+              "**Secure Lace Closure**: Get a secure fit with our lace closure system.",
+              "**Durable Rubber Outsole**: Tackle any terrain with our durable rubber outsole.",
+              "**Premium Materials**: Elevate your style with our premium materials."
+            ],
+            "detailed_description": "The Nike Air Max 270 Lifestyle Sneakers are designed for comfort and style. The advanced cushioning system provides superior comfort and impact protection, while the breathable mesh upper keeps your feet cool and dry. The secure lace closure system ensures a secure fit, and the durable rubber outsole tackles any terrain. Whether you're running errands or hitting the gym, these sneakers are perfect for any occasion.",
+            "specs": {
+              "color": "Black/White",
+              "size": "9",
+              "material": "Mesh and synthetic upper",
+              "features": "Air cushioning, Lace-up closure, Rubber outsole"
+            },
+            "price": "\u20b913,995.00",
+            "description": "Experience comfort and style with Nike Air Max 270 Lifestyle Sneakers. Featuring a breathable mesh upper, visible air cushioning, and a secure lace closure.\n\nKey Features:\n\n\u2022 **Breathable Mesh Upper**: Keep your feet cool and dry with our lightweight mesh upper.\n\n\u2022 **Visible Air Cushioning**: Enjoy superior comfort and impact protection with our visible air cushioning.\n\n\u2022 **Secure Lace Closure**: Get a secure fit with our lace closure system.\n\n\u2022 **Durable Rubber Outsole**: Tackle any terrain with our durable rubber outsole.\n\n\u2022 **Classic Style**: Elevate your style with our sleek and timeless design.\n\nThe Nike Air Max 270 Lifestyle Sneakers are designed for comfort and style. The breathable mesh upper keeps your feet cool and dry, while the visible air cushioning provides superior comfort and impact protection. The secure lace closure system ensures a secure fit, and the durable rubber outsole tackles any terrain. Whether you're running errands or hitting the gym, these sneakers are perfect for any occasion.\n\nSpecifications:\n\n- color: Black/White\n\n- size: 9\n\n- material: Mesh and synthetic upper\n\n- features: Air cushioning, Lace-up closure, Rubber outsole"
+          }
+        },
+        {
+          "variant_id": "e6285959-455c-445d-a816-cf39574538f5",
+          "type": "B",
+          "angle": "Emotional & Value Driven",
+          "title": "Nike Air Max 270 Lifestyle Sneakers - Elevate Your Style",
+          "short_description": "Elevate your style with our Nike Air Max 270 Lifestyle Sneakers. Perfect for any occasion, these sneakers will make you feel confident and stylish.",
+          "key_features": [
+            "**Classic Style**: Elevate your style with our sleek and timeless design.",
+            "**Comfortable Fit**: Enjoy a comfortable fit with our secure lace closure system.",
+            "**Durable Materials**: Tackle any terrain with our durable rubber outsole.",
+            "**Breathable Upper**: Keep your feet cool and dry with our lightweight mesh upper.",
+            "**Premium Quality**: Experience the ultimate in comfort and style with our premium materials."
+          ],
+          "detailed_description": "The Nike Air Max 270 Lifestyle Sneakers are designed to elevate your style. With a classic design and comfortable fit, these sneakers are perfect for any occasion. Whether you're running errands or hitting the gym, these sneakers will make you feel confident and stylish.",
+          "specifications": {
+            "color": "Black/White",
+            "size": "9",
+            "material": "Mesh and synthetic upper",
+            "features": "Air cushioning, Lace-up closure, Rubber outsole"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Elevate your style with our Nike Air Max 270 Lifestyle Sneakers. Perfect for any occasion, these sneakers will make you feel confident and stylish.\n\nKey Features:\n\n\u2022 **Classic Style**: Elevate your style with our sleek and timeless design.\n\n\u2022 **Comfortable Fit**: Enjoy a comfortable fit with our secure lace closure system.\n\n\u2022 **Durable Materials**: Tackle any terrain with our durable rubber outsole.\n\n\u2022 **Breathable Upper**: Keep your feet cool and dry with our lightweight mesh upper.\n\n\u2022 **Premium Quality**: Experience the ultimate in comfort and style with our premium materials.\n\nThe Nike Air Max 270 Lifestyle Sneakers are designed to elevate your style. With a classic design and comfortable fit, these sneakers are perfect for any occasion. Whether you're running errands or hitting the gym, these sneakers will make you feel confident and stylish.\n\nSpecifications:\n\n- color: Black/White\n\n- size: 9\n\n- material: Mesh and synthetic upper\n\n- features: Air cushioning, Lace-up closure, Rubber outsole",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Nike Air Max 270 Lifestyle Sneakers - Elevate Your Style",
+            "meta_description": "Nike Air Max 270 Lifestyle Sneakers for Men in Black/White. Breathable mesh upper, visible air cushioning, secure lace closure, and durable rubber outsole.",
+            "keywords": [
+              "Nike",
+              "Air Max 270",
+              "Lifestyle Sneakers",
+              "Running Shoes",
+              "Black/White",
+              "Size 9"
+            ],
+            "tags": [
+              "Nike",
+              "Sneakers",
+              "Running Shoes",
+              "Lifestyle",
+              "Black",
+              "White"
+            ],
+            "short_description": "Elevate your style with our Nike Air Max 270 Lifestyle Sneakers. Perfect for any occasion, these sneakers will make you feel confident and stylish.",
+            "bullet_points": [
+              "**Classic Style**: Elevate your style with our sleek and timeless design.",
+              "**Comfortable Fit**: Enjoy a comfortable fit with our secure lace closure system.",
+              "**Durable Materials**: Tackle any terrain with our durable rubber outsole.",
+              "**Breathable Upper**: Keep your feet cool and dry with our lightweight mesh upper.",
+              "**Premium Quality**: Experience the ultimate in comfort and style with our premium materials."
+            ],
+            "detailed_description": "The Nike Air Max 270 Lifestyle Sneakers are designed to elevate your style. With a classic design and comfortable fit, these sneakers are perfect for any occasion. Whether you're running errands or hitting the gym, these sneakers will make you feel confident and stylish.",
+            "specs": {
+              "color": "Black/White",
+              "size": "9",
+              "material": "Mesh and synthetic upper",
+              "features": "Air cushioning, Lace-up closure, Rubber outsole"
+            },
+            "price": "\u20b913,995.00",
+            "description": "Experience comfort and style with Nike Air Max 270 Lifestyle Sneakers. Featuring a breathable mesh upper, visible air cushioning, and a secure lace closure.\n\nKey Features:\n\n\u2022 **Breathable Mesh Upper**: Keep your feet cool and dry with our lightweight mesh upper.\n\n\u2022 **Visible Air Cushioning**: Enjoy superior comfort and impact protection with our visible air cushioning.\n\n\u2022 **Secure Lace Closure**: Get a secure fit with our lace closure system.\n\n\u2022 **Durable Rubber Outsole**: Tackle any terrain with our durable rubber outsole.\n\n\u2022 **Classic Style**: Elevate your style with our sleek and timeless design.\n\nThe Nike Air Max 270 Lifestyle Sneakers are designed for comfort and style. The breathable mesh upper keeps your feet cool and dry, while the visible air cushioning provides superior comfort and impact protection. The secure lace closure system ensures a secure fit, and the durable rubber outsole tackles any terrain. Whether you're running errands or hitting the gym, these sneakers are perfect for any occasion.\n\nSpecifications:\n\n- color: Black/White\n\n- size: 9\n\n- material: Mesh and synthetic upper\n\n- features: Air cushioning, Lace-up closure, Rubber outsole"
+          }
+        },
+        {
+          "variant_id": "988dc9e8-d6f1-45c5-88e6-46859a8ea009",
+          "type": "C",
+          "angle": "Urgency & Lifestyle Focused",
+          "title": "Nike Air Max 270 Lifestyle Sneakers - Limited Time Offer",
+          "short_description": "Don't miss out on our limited time offer! Get the Nike Air Max 270 Lifestyle Sneakers at an unbeatable price.",
+          "key_features": [
+            "**Limited Time Offer**: Don't miss out on our limited time offer!",
+            "**Unbeatable Price**: Get the Nike Air Max 270 Lifestyle Sneakers at an unbeatable price.",
+            "**Classic Style**: Elevate your style with our sleek and timeless design.",
+            "**Comfortable Fit**: Enjoy a comfortable fit with our secure lace closure system.",
+            "**Durable Materials**: Tackle any terrain with our durable rubber outsole."
+          ],
+          "detailed_description": "The Nike Air Max 270 Lifestyle Sneakers are designed to elevate your style. With a classic design and comfortable fit, these sneakers are perfect for any occasion. Don't miss out on our limited time offer and get these sneakers at an unbeatable price.",
+          "specifications": {
+            "color": "Black/White",
+            "size": "9",
+            "material": "Mesh and synthetic upper",
+            "features": "Air cushioning, Lace-up closure, Rubber outsole"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Don't miss out on our limited time offer! Get the Nike Air Max 270 Lifestyle Sneakers at an unbeatable price.\n\nKey Features:\n\n\u2022 **Limited Time Offer**: Don't miss out on our limited time offer!\n\n\u2022 **Unbeatable Price**: Get the Nike Air Max 270 Lifestyle Sneakers at an unbeatable price.\n\n\u2022 **Classic Style**: Elevate your style with our sleek and timeless design.\n\n\u2022 **Comfortable Fit**: Enjoy a comfortable fit with our secure lace closure system.\n\n\u2022 **Durable Materials**: Tackle any terrain with our durable rubber outsole.\n\nThe Nike Air Max 270 Lifestyle Sneakers are designed to elevate your style. With a classic design and comfortable fit, these sneakers are perfect for any occasion. Don't miss out on our limited time offer and get these sneakers at an unbeatable price.\n\nSpecifications:\n\n- color: Black/White\n\n- size: 9\n\n- material: Mesh and synthetic upper\n\n- features: Air cushioning, Lace-up closure, Rubber outsole",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Nike Air Max 270 Lifestyle Sneakers - Limited Time Offer",
+            "meta_description": "Nike Air Max 270 Lifestyle Sneakers for Men in Black/White. Breathable mesh upper, visible air cushioning, secure lace closure, and durable rubber outsole.",
+            "keywords": [
+              "Nike",
+              "Air Max 270",
+              "Lifestyle Sneakers",
+              "Running Shoes",
+              "Black/White",
+              "Size 9"
+            ],
+            "tags": [
+              "Nike",
+              "Sneakers",
+              "Running Shoes",
+              "Lifestyle",
+              "Black",
+              "White"
+            ],
+            "short_description": "Don't miss out on our limited time offer! Get the Nike Air Max 270 Lifestyle Sneakers at an unbeatable price.",
+            "bullet_points": [
+              "**Limited Time Offer**: Don't miss out on our limited time offer!",
+              "**Unbeatable Price**: Get the Nike Air Max 270 Lifestyle Sneakers at an unbeatable price.",
+              "**Classic Style**: Elevate your style with our sleek and timeless design.",
+              "**Comfortable Fit**: Enjoy a comfortable fit with our secure lace closure system.",
+              "**Durable Materials**: Tackle any terrain with our durable rubber outsole."
+            ],
+            "detailed_description": "The Nike Air Max 270 Lifestyle Sneakers are designed to elevate your style. With a classic design and comfortable fit, these sneakers are perfect for any occasion. Don't miss out on our limited time offer and get these sneakers at an unbeatable price.",
+            "specs": {
+              "color": "Black/White",
+              "size": "9",
+              "material": "Mesh and synthetic upper",
+              "features": "Air cushioning, Lace-up closure, Rubber outsole"
+            },
+            "price": "\u20b913,995.00",
+            "description": "Experience comfort and style with Nike Air Max 270 Lifestyle Sneakers. Featuring a breathable mesh upper, visible air cushioning, and a secure lace closure.\n\nKey Features:\n\n\u2022 **Breathable Mesh Upper**: Keep your feet cool and dry with our lightweight mesh upper.\n\n\u2022 **Visible Air Cushioning**: Enjoy superior comfort and impact protection with our visible air cushioning.\n\n\u2022 **Secure Lace Closure**: Get a secure fit with our lace closure system.\n\n\u2022 **Durable Rubber Outsole**: Tackle any terrain with our durable rubber outsole.\n\n\u2022 **Classic Style**: Elevate your style with our sleek and timeless design.\n\nThe Nike Air Max 270 Lifestyle Sneakers are designed for comfort and style. The breathable mesh upper keeps your feet cool and dry, while the visible air cushioning provides superior comfort and impact protection. The secure lace closure system ensures a secure fit, and the durable rubber outsole tackles any terrain. Whether you're running errands or hitting the gym, these sneakers are perfect for any occasion.\n\nSpecifications:\n\n- color: Black/White\n\n- size: 9\n\n- material: Mesh and synthetic upper\n\n- features: Air cushioning, Lace-up closure, Rubber outsole"
+          }
+        }
+      ],
+      "scored_variants": [
+        {
+          "variant_id": "e7f41e58-452c-48b4-90f1-2bcc95aaa16f",
+          "type": "A",
+          "angle": "Feature & Tech Heavy",
+          "title": "Nike Air Max 270 Lifestyle Sneakers - Feature-Rich",
+          "short_description": "Experience the ultimate in comfort and style with our feature-rich Nike Air Max 270 Lifestyle Sneakers.",
+          "key_features": [
+            "**Advanced Cushioning System**: Enjoy superior comfort and impact protection with our advanced cushioning system.",
+            "**Breathable Mesh Upper**: Keep your feet cool and dry with our lightweight mesh upper.",
+            "**Secure Lace Closure**: Get a secure fit with our lace closure system.",
+            "**Durable Rubber Outsole**: Tackle any terrain with our durable rubber outsole.",
+            "**Premium Materials**: Elevate your style with our premium materials."
+          ],
+          "detailed_description": "The Nike Air Max 270 Lifestyle Sneakers are designed for comfort and style. The advanced cushioning system provides superior comfort and impact protection, while the breathable mesh upper keeps your feet cool and dry. The secure lace closure system ensures a secure fit, and the durable rubber outsole tackles any terrain. Whether you're running errands or hitting the gym, these sneakers are perfect for any occasion.",
+          "specifications": {
+            "color": "Black/White",
+            "size": "9",
+            "material": "Mesh and synthetic upper",
+            "features": "Air cushioning, Lace-up closure, Rubber outsole"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Experience the ultimate in comfort and style with our feature-rich Nike Air Max 270 Lifestyle Sneakers.\n\nKey Features:\n\n\u2022 **Advanced Cushioning System**: Enjoy superior comfort and impact protection with our advanced cushioning system.\n\n\u2022 **Breathable Mesh Upper**: Keep your feet cool and dry with our lightweight mesh upper.\n\n\u2022 **Secure Lace Closure**: Get a secure fit with our lace closure system.\n\n\u2022 **Durable Rubber Outsole**: Tackle any terrain with our durable rubber outsole.\n\n\u2022 **Premium Materials**: Elevate your style with our premium materials.\n\nThe Nike Air Max 270 Lifestyle Sneakers are designed for comfort and style. The advanced cushioning system provides superior comfort and impact protection, while the breathable mesh upper keeps your feet cool and dry. The secure lace closure system ensures a secure fit, and the durable rubber outsole tackles any terrain. Whether you're running errands or hitting the gym, these sneakers are perfect for any occasion.\n\nSpecifications:\n\n- color: Black/White\n\n- size: 9\n\n- material: Mesh and synthetic upper\n\n- features: Air cushioning, Lace-up closure, Rubber outsole",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Nike Air Max 270 Lifestyle Sneakers - Feature-Rich",
+            "meta_description": "Nike Air Max 270 Lifestyle Sneakers for Men in Black/White. Breathable mesh upper, visible air cushioning, secure lace closure, and durable rubber outsole.",
+            "keywords": [
+              "Nike",
+              "Air Max 270",
+              "Lifestyle Sneakers",
+              "Running Shoes",
+              "Black/White",
+              "Size 9"
+            ],
+            "tags": [
+              "Nike",
+              "Sneakers",
+              "Running Shoes",
+              "Lifestyle",
+              "Black",
+              "White"
+            ],
+            "short_description": "Experience the ultimate in comfort and style with our feature-rich Nike Air Max 270 Lifestyle Sneakers.",
+            "bullet_points": [
+              "**Advanced Cushioning System**: Enjoy superior comfort and impact protection with our advanced cushioning system.",
+              "**Breathable Mesh Upper**: Keep your feet cool and dry with our lightweight mesh upper.",
+              "**Secure Lace Closure**: Get a secure fit with our lace closure system.",
+              "**Durable Rubber Outsole**: Tackle any terrain with our durable rubber outsole.",
+              "**Premium Materials**: Elevate your style with our premium materials."
+            ],
+            "detailed_description": "The Nike Air Max 270 Lifestyle Sneakers are designed for comfort and style. The advanced cushioning system provides superior comfort and impact protection, while the breathable mesh upper keeps your feet cool and dry. The secure lace closure system ensures a secure fit, and the durable rubber outsole tackles any terrain. Whether you're running errands or hitting the gym, these sneakers are perfect for any occasion.",
+            "specs": {
+              "color": "Black/White",
+              "size": "9",
+              "material": "Mesh and synthetic upper",
+              "features": "Air cushioning, Lace-up closure, Rubber outsole"
+            },
+            "price": "\u20b913,995.00",
+            "description": "Experience comfort and style with Nike Air Max 270 Lifestyle Sneakers. Featuring a breathable mesh upper, visible air cushioning, and a secure lace closure.\n\nKey Features:\n\n\u2022 **Breathable Mesh Upper**: Keep your feet cool and dry with our lightweight mesh upper.\n\n\u2022 **Visible Air Cushioning**: Enjoy superior comfort and impact protection with our visible air cushioning.\n\n\u2022 **Secure Lace Closure**: Get a secure fit with our lace closure system.\n\n\u2022 **Durable Rubber Outsole**: Tackle any terrain with our durable rubber outsole.\n\n\u2022 **Classic Style**: Elevate your style with our sleek and timeless design.\n\nThe Nike Air Max 270 Lifestyle Sneakers are designed for comfort and style. The breathable mesh upper keeps your feet cool and dry, while the visible air cushioning provides superior comfort and impact protection. The secure lace closure system ensures a secure fit, and the durable rubber outsole tackles any terrain. Whether you're running errands or hitting the gym, these sneakers are perfect for any occasion.\n\nSpecifications:\n\n- color: Black/White\n\n- size: 9\n\n- material: Mesh and synthetic upper\n\n- features: Air cushioning, Lace-up closure, Rubber outsole"
+          },
+          "cope_scores": {
+            "variant_id": "e7f41e58-452c-48b4-90f1-2bcc95aaa16f",
+            "overall_score": 90,
+            "purchase_probability": 85.0,
+            "expected_ctr": 80.0,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 95,
+            "confidence_score": 92
+          }
+        },
+        {
+          "variant_id": "e6285959-455c-445d-a816-cf39574538f5",
+          "type": "B",
+          "angle": "Emotional & Value Driven",
+          "title": "Nike Air Max 270 Lifestyle Sneakers - Elevate Your Style",
+          "short_description": "Elevate your style with our Nike Air Max 270 Lifestyle Sneakers. Perfect for any occasion, these sneakers will make you feel confident and stylish.",
+          "key_features": [
+            "**Classic Style**: Elevate your style with our sleek and timeless design.",
+            "**Comfortable Fit**: Enjoy a comfortable fit with our secure lace closure system.",
+            "**Durable Materials**: Tackle any terrain with our durable rubber outsole.",
+            "**Breathable Upper**: Keep your feet cool and dry with our lightweight mesh upper.",
+            "**Premium Quality**: Experience the ultimate in comfort and style with our premium materials."
+          ],
+          "detailed_description": "The Nike Air Max 270 Lifestyle Sneakers are designed to elevate your style. With a classic design and comfortable fit, these sneakers are perfect for any occasion. Whether you're running errands or hitting the gym, these sneakers will make you feel confident and stylish.",
+          "specifications": {
+            "color": "Black/White",
+            "size": "9",
+            "material": "Mesh and synthetic upper",
+            "features": "Air cushioning, Lace-up closure, Rubber outsole"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Elevate your style with our Nike Air Max 270 Lifestyle Sneakers. Perfect for any occasion, these sneakers will make you feel confident and stylish.\n\nKey Features:\n\n\u2022 **Classic Style**: Elevate your style with our sleek and timeless design.\n\n\u2022 **Comfortable Fit**: Enjoy a comfortable fit with our secure lace closure system.\n\n\u2022 **Durable Materials**: Tackle any terrain with our durable rubber outsole.\n\n\u2022 **Breathable Upper**: Keep your feet cool and dry with our lightweight mesh upper.\n\n\u2022 **Premium Quality**: Experience the ultimate in comfort and style with our premium materials.\n\nThe Nike Air Max 270 Lifestyle Sneakers are designed to elevate your style. With a classic design and comfortable fit, these sneakers are perfect for any occasion. Whether you're running errands or hitting the gym, these sneakers will make you feel confident and stylish.\n\nSpecifications:\n\n- color: Black/White\n\n- size: 9\n\n- material: Mesh and synthetic upper\n\n- features: Air cushioning, Lace-up closure, Rubber outsole",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Nike Air Max 270 Lifestyle Sneakers - Elevate Your Style",
+            "meta_description": "Nike Air Max 270 Lifestyle Sneakers for Men in Black/White. Breathable mesh upper, visible air cushioning, secure lace closure, and durable rubber outsole.",
+            "keywords": [
+              "Nike",
+              "Air Max 270",
+              "Lifestyle Sneakers",
+              "Running Shoes",
+              "Black/White",
+              "Size 9"
+            ],
+            "tags": [
+              "Nike",
+              "Sneakers",
+              "Running Shoes",
+              "Lifestyle",
+              "Black",
+              "White"
+            ],
+            "short_description": "Elevate your style with our Nike Air Max 270 Lifestyle Sneakers. Perfect for any occasion, these sneakers will make you feel confident and stylish.",
+            "bullet_points": [
+              "**Classic Style**: Elevate your style with our sleek and timeless design.",
+              "**Comfortable Fit**: Enjoy a comfortable fit with our secure lace closure system.",
+              "**Durable Materials**: Tackle any terrain with our durable rubber outsole.",
+              "**Breathable Upper**: Keep your feet cool and dry with our lightweight mesh upper.",
+              "**Premium Quality**: Experience the ultimate in comfort and style with our premium materials."
+            ],
+            "detailed_description": "The Nike Air Max 270 Lifestyle Sneakers are designed to elevate your style. With a classic design and comfortable fit, these sneakers are perfect for any occasion. Whether you're running errands or hitting the gym, these sneakers will make you feel confident and stylish.",
+            "specs": {
+              "color": "Black/White",
+              "size": "9",
+              "material": "Mesh and synthetic upper",
+              "features": "Air cushioning, Lace-up closure, Rubber outsole"
+            },
+            "price": "\u20b913,995.00",
+            "description": "Experience comfort and style with Nike Air Max 270 Lifestyle Sneakers. Featuring a breathable mesh upper, visible air cushioning, and a secure lace closure.\n\nKey Features:\n\n\u2022 **Breathable Mesh Upper**: Keep your feet cool and dry with our lightweight mesh upper.\n\n\u2022 **Visible Air Cushioning**: Enjoy superior comfort and impact protection with our visible air cushioning.\n\n\u2022 **Secure Lace Closure**: Get a secure fit with our lace closure system.\n\n\u2022 **Durable Rubber Outsole**: Tackle any terrain with our durable rubber outsole.\n\n\u2022 **Classic Style**: Elevate your style with our sleek and timeless design.\n\nThe Nike Air Max 270 Lifestyle Sneakers are designed for comfort and style. The breathable mesh upper keeps your feet cool and dry, while the visible air cushioning provides superior comfort and impact protection. The secure lace closure system ensures a secure fit, and the durable rubber outsole tackles any terrain. Whether you're running errands or hitting the gym, these sneakers are perfect for any occasion.\n\nSpecifications:\n\n- color: Black/White\n\n- size: 9\n\n- material: Mesh and synthetic upper\n\n- features: Air cushioning, Lace-up closure, Rubber outsole"
+          },
+          "cope_scores": {
+            "variant_id": "e6285959-455c-445d-a816-cf39574538f5",
+            "overall_score": 88,
+            "purchase_probability": 79.5,
+            "expected_ctr": 72.4,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 92,
+            "confidence_score": 90
+          }
+        },
+        {
+          "variant_id": "988dc9e8-d6f1-45c5-88e6-46859a8ea009",
+          "type": "C",
+          "angle": "Urgency & Lifestyle Focused",
+          "title": "Nike Air Max 270 Lifestyle Sneakers - Limited Time Offer",
+          "short_description": "Don't miss out on our limited time offer! Get the Nike Air Max 270 Lifestyle Sneakers at an unbeatable price.",
+          "key_features": [
+            "**Limited Time Offer**: Don't miss out on our limited time offer!",
+            "**Unbeatable Price**: Get the Nike Air Max 270 Lifestyle Sneakers at an unbeatable price.",
+            "**Classic Style**: Elevate your style with our sleek and timeless design.",
+            "**Comfortable Fit**: Enjoy a comfortable fit with our secure lace closure system.",
+            "**Durable Materials**: Tackle any terrain with our durable rubber outsole."
+          ],
+          "detailed_description": "The Nike Air Max 270 Lifestyle Sneakers are designed to elevate your style. With a classic design and comfortable fit, these sneakers are perfect for any occasion. Don't miss out on our limited time offer and get these sneakers at an unbeatable price.",
+          "specifications": {
+            "color": "Black/White",
+            "size": "9",
+            "material": "Mesh and synthetic upper",
+            "features": "Air cushioning, Lace-up closure, Rubber outsole"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Don't miss out on our limited time offer! Get the Nike Air Max 270 Lifestyle Sneakers at an unbeatable price.\n\nKey Features:\n\n\u2022 **Limited Time Offer**: Don't miss out on our limited time offer!\n\n\u2022 **Unbeatable Price**: Get the Nike Air Max 270 Lifestyle Sneakers at an unbeatable price.\n\n\u2022 **Classic Style**: Elevate your style with our sleek and timeless design.\n\n\u2022 **Comfortable Fit**: Enjoy a comfortable fit with our secure lace closure system.\n\n\u2022 **Durable Materials**: Tackle any terrain with our durable rubber outsole.\n\nThe Nike Air Max 270 Lifestyle Sneakers are designed to elevate your style. With a classic design and comfortable fit, these sneakers are perfect for any occasion. Don't miss out on our limited time offer and get these sneakers at an unbeatable price.\n\nSpecifications:\n\n- color: Black/White\n\n- size: 9\n\n- material: Mesh and synthetic upper\n\n- features: Air cushioning, Lace-up closure, Rubber outsole",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Nike Air Max 270 Lifestyle Sneakers - Limited Time Offer",
+            "meta_description": "Nike Air Max 270 Lifestyle Sneakers for Men in Black/White. Breathable mesh upper, visible air cushioning, secure lace closure, and durable rubber outsole.",
+            "keywords": [
+              "Nike",
+              "Air Max 270",
+              "Lifestyle Sneakers",
+              "Running Shoes",
+              "Black/White",
+              "Size 9"
+            ],
+            "tags": [
+              "Nike",
+              "Sneakers",
+              "Running Shoes",
+              "Lifestyle",
+              "Black",
+              "White"
+            ],
+            "short_description": "Don't miss out on our limited time offer! Get the Nike Air Max 270 Lifestyle Sneakers at an unbeatable price.",
+            "bullet_points": [
+              "**Limited Time Offer**: Don't miss out on our limited time offer!",
+              "**Unbeatable Price**: Get the Nike Air Max 270 Lifestyle Sneakers at an unbeatable price.",
+              "**Classic Style**: Elevate your style with our sleek and timeless design.",
+              "**Comfortable Fit**: Enjoy a comfortable fit with our secure lace closure system.",
+              "**Durable Materials**: Tackle any terrain with our durable rubber outsole."
+            ],
+            "detailed_description": "The Nike Air Max 270 Lifestyle Sneakers are designed to elevate your style. With a classic design and comfortable fit, these sneakers are perfect for any occasion. Don't miss out on our limited time offer and get these sneakers at an unbeatable price.",
+            "specs": {
+              "color": "Black/White",
+              "size": "9",
+              "material": "Mesh and synthetic upper",
+              "features": "Air cushioning, Lace-up closure, Rubber outsole"
+            },
+            "price": "\u20b913,995.00",
+            "description": "Experience comfort and style with Nike Air Max 270 Lifestyle Sneakers. Featuring a breathable mesh upper, visible air cushioning, and a secure lace closure.\n\nKey Features:\n\n\u2022 **Breathable Mesh Upper**: Keep your feet cool and dry with our lightweight mesh upper.\n\n\u2022 **Visible Air Cushioning**: Enjoy superior comfort and impact protection with our visible air cushioning.\n\n\u2022 **Secure Lace Closure**: Get a secure fit with our lace closure system.\n\n\u2022 **Durable Rubber Outsole**: Tackle any terrain with our durable rubber outsole.\n\n\u2022 **Classic Style**: Elevate your style with our sleek and timeless design.\n\nThe Nike Air Max 270 Lifestyle Sneakers are designed for comfort and style. The breathable mesh upper keeps your feet cool and dry, while the visible air cushioning provides superior comfort and impact protection. The secure lace closure system ensures a secure fit, and the durable rubber outsole tackles any terrain. Whether you're running errands or hitting the gym, these sneakers are perfect for any occasion.\n\nSpecifications:\n\n- color: Black/White\n\n- size: 9\n\n- material: Mesh and synthetic upper\n\n- features: Air cushioning, Lace-up closure, Rubber outsole"
+          },
+          "cope_scores": {
+            "variant_id": "988dc9e8-d6f1-45c5-88e6-46859a8ea009",
+            "overall_score": 85,
+            "purchase_probability": 75.0,
+            "expected_ctr": 65.0,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 90,
+            "confidence_score": 88
+          }
+        }
+      ],
+      "decision": {
+        "action": "publish",
+        "reason": "Clear winner identified with high confidence.",
+        "recommended_variant_id": "e7f41e58-452c-48b4-90f1-2bcc95aaa16f"
+      },
+      "marketing": {
+        "platform": "olx",
+        "platform_description": "Experience the ultimate in comfort and style with our feature-rich Nike Air Max 270 Lifestyle Sneakers.\n\nKey Features:\n\n\u2022 **Advanced Cushioning System**: Enjoy superior comfort and impact protection with our advanced cushioning system.\n\n\u2022 **Breathable Mesh Upper**: Keep your feet cool and dry with our lightweight mesh upper.\n\n\u2022 **Secure Lace Closure**: Get a secure fit with our lace closure system.\n\n\u2022 **Durable Rubber Outsole**: Tackle any terrain with our durable rubber outsole.\n\n\u2022 **Premium Materials**: Elevate your style with our premium materials.\n\nThe Nike Air Max 270 Lifestyle Sneakers are designed for comfort and style. The advanced cushioning system provides superior comfort and impact protection, while the breathable mesh upper keeps your feet cool and dry. The secure lace closure system ensures a secure fit, and the durable rubber outsole tackles any terrain. Whether you're running errands or hitting the gym, these sneakers are perfect for any occasion.\n\nSpecifications:\n\n- color: Black/White\n\n- size: 9\n\n- material: Mesh and synthetic upper\n\n- features: Air cushioning, Lace-up closure, Rubber outsole",
+        "call_to_action": "Order now on Olx to get the best deal!"
+      },
+      "validation": {
+        "is_valid": true,
+        "issues": []
+      },
+      "scores": {
+        "privacy_score": 100,
+        "seo_score": 90,
+        "marketing_score": 90,
+        "overall_score": 91,
+        "feedback": "SEO Title length is sub-optimal."
+      }
+    }
+  },
+  "complete_response": {
+    "status": "success",
+    "message": "Workflow completed",
+    "data": {
+      "sanitized_input": "Product Name: Nike Air Max 270\nBrand: Nike\nPrice: \u20b913,995\nCategory: Running/Lifestyle Shoes\nDescription: Lifestyle sneakers with a breathable upper, visible Air cushioning, secure lace closure, and durable rubber outsole. Purchased for Rahul Verma, <EMAIL_ADDRESS>, delivery contact <PHONE_NUMBER>.\nSpecifications: color: Black/White, size: <LOCATION> 9, material: Mesh and synthetic upper, features: Air cushioning, Lace-up closure, Rubber outsole, customer_note: Purchased for Rahul Verma, <EMAIL_ADDRESS>, delivery contact <PHONE_NUMBER>.",
+      "vision_analysis": "Error analyzing image with Groq Vision: LLMGateway call failed after 3 retries. Error: Error code: 413 - {'error': {'message': 'Request too large for model `qwen/qwen3.6-27b` in organization `org_01kvb5wdg5eq99np00tsjmwhtg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 8286, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "rag_context": "RAG database is empty. Please run the ingestion script first.",
+      "seo": {
+        "title": "Nike Air Max 270 Lifestyle Sneakers",
+        "meta_description": "Nike Air Max 270 Lifestyle Sneakers for Men in Black/White. Breathable mesh upper, visible air cushioning, secure lace closure, and durable rubber outsole.",
+        "keywords": [
+          "Nike",
+          "Air Max 270",
+          "Lifestyle Sneakers",
+          "Running Shoes",
+          "Black/White",
+          "Size 9"
+        ],
+        "tags": [
+          "Nike",
+          "Sneakers",
+          "Running Shoes",
+          "Lifestyle",
+          "Black",
+          "White"
+        ],
+        "short_description": "Experience comfort and style with Nike Air Max 270 Lifestyle Sneakers. Featuring a breathable mesh upper, visible air cushioning, and a secure lace closure.",
+        "bullet_points": [
+          "**Breathable Mesh Upper**: Keep your feet cool and dry with our lightweight mesh upper.",
+          "**Visible Air Cushioning**: Enjoy superior comfort and impact protection with our visible air cushioning.",
+          "**Secure Lace Closure**: Get a secure fit with our lace closure system.",
+          "**Durable Rubber Outsole**: Tackle any terrain with our durable rubber outsole.",
+          "**Classic Style**: Elevate your style with our sleek and timeless design."
+        ],
+        "detailed_description": "The Nike Air Max 270 Lifestyle Sneakers are designed for comfort and style. The breathable mesh upper keeps your feet cool and dry, while the visible air cushioning provides superior comfort and impact protection. The secure lace closure system ensures a secure fit, and the durable rubber outsole tackles any terrain. Whether you're running errands or hitting the gym, these sneakers are perfect for any occasion.",
+        "specs": {
+          "color": "Black/White",
+          "size": "9",
+          "material": "Mesh and synthetic upper",
+          "features": "Air cushioning, Lace-up closure, Rubber outsole"
+        },
+        "price": "\u20b913,995.00",
+        "description": "Experience comfort and style with Nike Air Max 270 Lifestyle Sneakers. Featuring a breathable mesh upper, visible air cushioning, and a secure lace closure.\n\nKey Features:\n\n\u2022 **Breathable Mesh Upper**: Keep your feet cool and dry with our lightweight mesh upper.\n\n\u2022 **Visible Air Cushioning**: Enjoy superior comfort and impact protection with our visible air cushioning.\n\n\u2022 **Secure Lace Closure**: Get a secure fit with our lace closure system.\n\n\u2022 **Durable Rubber Outsole**: Tackle any terrain with our durable rubber outsole.\n\n\u2022 **Classic Style**: Elevate your style with our sleek and timeless design.\n\nThe Nike Air Max 270 Lifestyle Sneakers are designed for comfort and style. The breathable mesh upper keeps your feet cool and dry, while the visible air cushioning provides superior comfort and impact protection. The secure lace closure system ensures a secure fit, and the durable rubber outsole tackles any terrain. Whether you're running errands or hitting the gym, these sneakers are perfect for any occasion.\n\nSpecifications:\n\n- color: Black/White\n\n- size: 9\n\n- material: Mesh and synthetic upper\n\n- features: Air cushioning, Lace-up closure, Rubber outsole"
+      },
+      "competitor_analysis": {
+        "recommended_price": "\u20b913,995.00",
+        "lowest_competitor_price": "\u20b912,999.00",
+        "highest_competitor_price": "\u20b914,999.00",
+        "average_market_price": "\u20b913,499.50",
+        "market_positioning": "Competitive pricing for a high-quality lifestyle sneaker",
+        "pricing_strategy": "Positioned as a premium product with a competitive price point",
+        "competitor_insights": [
+          "Competitor A offers a similar product with a lower price point, but with less features.",
+          "Competitor B offers a more premium product with a higher price point, but with additional features.",
+          "Competitor C offers a similar product with a similar price point, but with a different design aesthetic."
+        ]
+      },
+      "generated_variants": [
+        {
+          "variant_id": "e7f41e58-452c-48b4-90f1-2bcc95aaa16f",
+          "type": "A",
+          "angle": "Feature & Tech Heavy",
+          "title": "Nike Air Max 270 Lifestyle Sneakers - Feature-Rich",
+          "short_description": "Experience the ultimate in comfort and style with our feature-rich Nike Air Max 270 Lifestyle Sneakers.",
+          "key_features": [
+            "**Advanced Cushioning System**: Enjoy superior comfort and impact protection with our advanced cushioning system.",
+            "**Breathable Mesh Upper**: Keep your feet cool and dry with our lightweight mesh upper.",
+            "**Secure Lace Closure**: Get a secure fit with our lace closure system.",
+            "**Durable Rubber Outsole**: Tackle any terrain with our durable rubber outsole.",
+            "**Premium Materials**: Elevate your style with our premium materials."
+          ],
+          "detailed_description": "The Nike Air Max 270 Lifestyle Sneakers are designed for comfort and style. The advanced cushioning system provides superior comfort and impact protection, while the breathable mesh upper keeps your feet cool and dry. The secure lace closure system ensures a secure fit, and the durable rubber outsole tackles any terrain. Whether you're running errands or hitting the gym, these sneakers are perfect for any occasion.",
+          "specifications": {
+            "color": "Black/White",
+            "size": "9",
+            "material": "Mesh and synthetic upper",
+            "features": "Air cushioning, Lace-up closure, Rubber outsole"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Experience the ultimate in comfort and style with our feature-rich Nike Air Max 270 Lifestyle Sneakers.\n\nKey Features:\n\n\u2022 **Advanced Cushioning System**: Enjoy superior comfort and impact protection with our advanced cushioning system.\n\n\u2022 **Breathable Mesh Upper**: Keep your feet cool and dry with our lightweight mesh upper.\n\n\u2022 **Secure Lace Closure**: Get a secure fit with our lace closure system.\n\n\u2022 **Durable Rubber Outsole**: Tackle any terrain with our durable rubber outsole.\n\n\u2022 **Premium Materials**: Elevate your style with our premium materials.\n\nThe Nike Air Max 270 Lifestyle Sneakers are designed for comfort and style. The advanced cushioning system provides superior comfort and impact protection, while the breathable mesh upper keeps your feet cool and dry. The secure lace closure system ensures a secure fit, and the durable rubber outsole tackles any terrain. Whether you're running errands or hitting the gym, these sneakers are perfect for any occasion.\n\nSpecifications:\n\n- color: Black/White\n\n- size: 9\n\n- material: Mesh and synthetic upper\n\n- features: Air cushioning, Lace-up closure, Rubber outsole",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Nike Air Max 270 Lifestyle Sneakers - Feature-Rich",
+            "meta_description": "Nike Air Max 270 Lifestyle Sneakers for Men in Black/White. Breathable mesh upper, visible air cushioning, secure lace closure, and durable rubber outsole.",
+            "keywords": [
+              "Nike",
+              "Air Max 270",
+              "Lifestyle Sneakers",
+              "Running Shoes",
+              "Black/White",
+              "Size 9"
+            ],
+            "tags": [
+              "Nike",
+              "Sneakers",
+              "Running Shoes",
+              "Lifestyle",
+              "Black",
+              "White"
+            ],
+            "short_description": "Experience the ultimate in comfort and style with our feature-rich Nike Air Max 270 Lifestyle Sneakers.",
+            "bullet_points": [
+              "**Advanced Cushioning System**: Enjoy superior comfort and impact protection with our advanced cushioning system.",
+              "**Breathable Mesh Upper**: Keep your feet cool and dry with our lightweight mesh upper.",
+              "**Secure Lace Closure**: Get a secure fit with our lace closure system.",
+              "**Durable Rubber Outsole**: Tackle any terrain with our durable rubber outsole.",
+              "**Premium Materials**: Elevate your style with our premium materials."
+            ],
+            "detailed_description": "The Nike Air Max 270 Lifestyle Sneakers are designed for comfort and style. The advanced cushioning system provides superior comfort and impact protection, while the breathable mesh upper keeps your feet cool and dry. The secure lace closure system ensures a secure fit, and the durable rubber outsole tackles any terrain. Whether you're running errands or hitting the gym, these sneakers are perfect for any occasion.",
+            "specs": {
+              "color": "Black/White",
+              "size": "9",
+              "material": "Mesh and synthetic upper",
+              "features": "Air cushioning, Lace-up closure, Rubber outsole"
+            },
+            "price": "\u20b913,995.00",
+            "description": "Experience comfort and style with Nike Air Max 270 Lifestyle Sneakers. Featuring a breathable mesh upper, visible air cushioning, and a secure lace closure.\n\nKey Features:\n\n\u2022 **Breathable Mesh Upper**: Keep your feet cool and dry with our lightweight mesh upper.\n\n\u2022 **Visible Air Cushioning**: Enjoy superior comfort and impact protection with our visible air cushioning.\n\n\u2022 **Secure Lace Closure**: Get a secure fit with our lace closure system.\n\n\u2022 **Durable Rubber Outsole**: Tackle any terrain with our durable rubber outsole.\n\n\u2022 **Classic Style**: Elevate your style with our sleek and timeless design.\n\nThe Nike Air Max 270 Lifestyle Sneakers are designed for comfort and style. The breathable mesh upper keeps your feet cool and dry, while the visible air cushioning provides superior comfort and impact protection. The secure lace closure system ensures a secure fit, and the durable rubber outsole tackles any terrain. Whether you're running errands or hitting the gym, these sneakers are perfect for any occasion.\n\nSpecifications:\n\n- color: Black/White\n\n- size: 9\n\n- material: Mesh and synthetic upper\n\n- features: Air cushioning, Lace-up closure, Rubber outsole"
+          }
+        },
+        {
+          "variant_id": "e6285959-455c-445d-a816-cf39574538f5",
+          "type": "B",
+          "angle": "Emotional & Value Driven",
+          "title": "Nike Air Max 270 Lifestyle Sneakers - Elevate Your Style",
+          "short_description": "Elevate your style with our Nike Air Max 270 Lifestyle Sneakers. Perfect for any occasion, these sneakers will make you feel confident and stylish.",
+          "key_features": [
+            "**Classic Style**: Elevate your style with our sleek and timeless design.",
+            "**Comfortable Fit**: Enjoy a comfortable fit with our secure lace closure system.",
+            "**Durable Materials**: Tackle any terrain with our durable rubber outsole.",
+            "**Breathable Upper**: Keep your feet cool and dry with our lightweight mesh upper.",
+            "**Premium Quality**: Experience the ultimate in comfort and style with our premium materials."
+          ],
+          "detailed_description": "The Nike Air Max 270 Lifestyle Sneakers are designed to elevate your style. With a classic design and comfortable fit, these sneakers are perfect for any occasion. Whether you're running errands or hitting the gym, these sneakers will make you feel confident and stylish.",
+          "specifications": {
+            "color": "Black/White",
+            "size": "9",
+            "material": "Mesh and synthetic upper",
+            "features": "Air cushioning, Lace-up closure, Rubber outsole"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Elevate your style with our Nike Air Max 270 Lifestyle Sneakers. Perfect for any occasion, these sneakers will make you feel confident and stylish.\n\nKey Features:\n\n\u2022 **Classic Style**: Elevate your style with our sleek and timeless design.\n\n\u2022 **Comfortable Fit**: Enjoy a comfortable fit with our secure lace closure system.\n\n\u2022 **Durable Materials**: Tackle any terrain with our durable rubber outsole.\n\n\u2022 **Breathable Upper**: Keep your feet cool and dry with our lightweight mesh upper.\n\n\u2022 **Premium Quality**: Experience the ultimate in comfort and style with our premium materials.\n\nThe Nike Air Max 270 Lifestyle Sneakers are designed to elevate your style. With a classic design and comfortable fit, these sneakers are perfect for any occasion. Whether you're running errands or hitting the gym, these sneakers will make you feel confident and stylish.\n\nSpecifications:\n\n- color: Black/White\n\n- size: 9\n\n- material: Mesh and synthetic upper\n\n- features: Air cushioning, Lace-up closure, Rubber outsole",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Nike Air Max 270 Lifestyle Sneakers - Elevate Your Style",
+            "meta_description": "Nike Air Max 270 Lifestyle Sneakers for Men in Black/White. Breathable mesh upper, visible air cushioning, secure lace closure, and durable rubber outsole.",
+            "keywords": [
+              "Nike",
+              "Air Max 270",
+              "Lifestyle Sneakers",
+              "Running Shoes",
+              "Black/White",
+              "Size 9"
+            ],
+            "tags": [
+              "Nike",
+              "Sneakers",
+              "Running Shoes",
+              "Lifestyle",
+              "Black",
+              "White"
+            ],
+            "short_description": "Elevate your style with our Nike Air Max 270 Lifestyle Sneakers. Perfect for any occasion, these sneakers will make you feel confident and stylish.",
+            "bullet_points": [
+              "**Classic Style**: Elevate your style with our sleek and timeless design.",
+              "**Comfortable Fit**: Enjoy a comfortable fit with our secure lace closure system.",
+              "**Durable Materials**: Tackle any terrain with our durable rubber outsole.",
+              "**Breathable Upper**: Keep your feet cool and dry with our lightweight mesh upper.",
+              "**Premium Quality**: Experience the ultimate in comfort and style with our premium materials."
+            ],
+            "detailed_description": "The Nike Air Max 270 Lifestyle Sneakers are designed to elevate your style. With a classic design and comfortable fit, these sneakers are perfect for any occasion. Whether you're running errands or hitting the gym, these sneakers will make you feel confident and stylish.",
+            "specs": {
+              "color": "Black/White",
+              "size": "9",
+              "material": "Mesh and synthetic upper",
+              "features": "Air cushioning, Lace-up closure, Rubber outsole"
+            },
+            "price": "\u20b913,995.00",
+            "description": "Experience comfort and style with Nike Air Max 270 Lifestyle Sneakers. Featuring a breathable mesh upper, visible air cushioning, and a secure lace closure.\n\nKey Features:\n\n\u2022 **Breathable Mesh Upper**: Keep your feet cool and dry with our lightweight mesh upper.\n\n\u2022 **Visible Air Cushioning**: Enjoy superior comfort and impact protection with our visible air cushioning.\n\n\u2022 **Secure Lace Closure**: Get a secure fit with our lace closure system.\n\n\u2022 **Durable Rubber Outsole**: Tackle any terrain with our durable rubber outsole.\n\n\u2022 **Classic Style**: Elevate your style with our sleek and timeless design.\n\nThe Nike Air Max 270 Lifestyle Sneakers are designed for comfort and style. The breathable mesh upper keeps your feet cool and dry, while the visible air cushioning provides superior comfort and impact protection. The secure lace closure system ensures a secure fit, and the durable rubber outsole tackles any terrain. Whether you're running errands or hitting the gym, these sneakers are perfect for any occasion.\n\nSpecifications:\n\n- color: Black/White\n\n- size: 9\n\n- material: Mesh and synthetic upper\n\n- features: Air cushioning, Lace-up closure, Rubber outsole"
+          }
+        },
+        {
+          "variant_id": "988dc9e8-d6f1-45c5-88e6-46859a8ea009",
+          "type": "C",
+          "angle": "Urgency & Lifestyle Focused",
+          "title": "Nike Air Max 270 Lifestyle Sneakers - Limited Time Offer",
+          "short_description": "Don't miss out on our limited time offer! Get the Nike Air Max 270 Lifestyle Sneakers at an unbeatable price.",
+          "key_features": [
+            "**Limited Time Offer**: Don't miss out on our limited time offer!",
+            "**Unbeatable Price**: Get the Nike Air Max 270 Lifestyle Sneakers at an unbeatable price.",
+            "**Classic Style**: Elevate your style with our sleek and timeless design.",
+            "**Comfortable Fit**: Enjoy a comfortable fit with our secure lace closure system.",
+            "**Durable Materials**: Tackle any terrain with our durable rubber outsole."
+          ],
+          "detailed_description": "The Nike Air Max 270 Lifestyle Sneakers are designed to elevate your style. With a classic design and comfortable fit, these sneakers are perfect for any occasion. Don't miss out on our limited time offer and get these sneakers at an unbeatable price.",
+          "specifications": {
+            "color": "Black/White",
+            "size": "9",
+            "material": "Mesh and synthetic upper",
+            "features": "Air cushioning, Lace-up closure, Rubber outsole"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Don't miss out on our limited time offer! Get the Nike Air Max 270 Lifestyle Sneakers at an unbeatable price.\n\nKey Features:\n\n\u2022 **Limited Time Offer**: Don't miss out on our limited time offer!\n\n\u2022 **Unbeatable Price**: Get the Nike Air Max 270 Lifestyle Sneakers at an unbeatable price.\n\n\u2022 **Classic Style**: Elevate your style with our sleek and timeless design.\n\n\u2022 **Comfortable Fit**: Enjoy a comfortable fit with our secure lace closure system.\n\n\u2022 **Durable Materials**: Tackle any terrain with our durable rubber outsole.\n\nThe Nike Air Max 270 Lifestyle Sneakers are designed to elevate your style. With a classic design and comfortable fit, these sneakers are perfect for any occasion. Don't miss out on our limited time offer and get these sneakers at an unbeatable price.\n\nSpecifications:\n\n- color: Black/White\n\n- size: 9\n\n- material: Mesh and synthetic upper\n\n- features: Air cushioning, Lace-up closure, Rubber outsole",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Nike Air Max 270 Lifestyle Sneakers - Limited Time Offer",
+            "meta_description": "Nike Air Max 270 Lifestyle Sneakers for Men in Black/White. Breathable mesh upper, visible air cushioning, secure lace closure, and durable rubber outsole.",
+            "keywords": [
+              "Nike",
+              "Air Max 270",
+              "Lifestyle Sneakers",
+              "Running Shoes",
+              "Black/White",
+              "Size 9"
+            ],
+            "tags": [
+              "Nike",
+              "Sneakers",
+              "Running Shoes",
+              "Lifestyle",
+              "Black",
+              "White"
+            ],
+            "short_description": "Don't miss out on our limited time offer! Get the Nike Air Max 270 Lifestyle Sneakers at an unbeatable price.",
+            "bullet_points": [
+              "**Limited Time Offer**: Don't miss out on our limited time offer!",
+              "**Unbeatable Price**: Get the Nike Air Max 270 Lifestyle Sneakers at an unbeatable price.",
+              "**Classic Style**: Elevate your style with our sleek and timeless design.",
+              "**Comfortable Fit**: Enjoy a comfortable fit with our secure lace closure system.",
+              "**Durable Materials**: Tackle any terrain with our durable rubber outsole."
+            ],
+            "detailed_description": "The Nike Air Max 270 Lifestyle Sneakers are designed to elevate your style. With a classic design and comfortable fit, these sneakers are perfect for any occasion. Don't miss out on our limited time offer and get these sneakers at an unbeatable price.",
+            "specs": {
+              "color": "Black/White",
+              "size": "9",
+              "material": "Mesh and synthetic upper",
+              "features": "Air cushioning, Lace-up closure, Rubber outsole"
+            },
+            "price": "\u20b913,995.00",
+            "description": "Experience comfort and style with Nike Air Max 270 Lifestyle Sneakers. Featuring a breathable mesh upper, visible air cushioning, and a secure lace closure.\n\nKey Features:\n\n\u2022 **Breathable Mesh Upper**: Keep your feet cool and dry with our lightweight mesh upper.\n\n\u2022 **Visible Air Cushioning**: Enjoy superior comfort and impact protection with our visible air cushioning.\n\n\u2022 **Secure Lace Closure**: Get a secure fit with our lace closure system.\n\n\u2022 **Durable Rubber Outsole**: Tackle any terrain with our durable rubber outsole.\n\n\u2022 **Classic Style**: Elevate your style with our sleek and timeless design.\n\nThe Nike Air Max 270 Lifestyle Sneakers are designed for comfort and style. The breathable mesh upper keeps your feet cool and dry, while the visible air cushioning provides superior comfort and impact protection. The secure lace closure system ensures a secure fit, and the durable rubber outsole tackles any terrain. Whether you're running errands or hitting the gym, these sneakers are perfect for any occasion.\n\nSpecifications:\n\n- color: Black/White\n\n- size: 9\n\n- material: Mesh and synthetic upper\n\n- features: Air cushioning, Lace-up closure, Rubber outsole"
+          }
+        }
+      ],
+      "scored_variants": [
+        {
+          "variant_id": "e7f41e58-452c-48b4-90f1-2bcc95aaa16f",
+          "type": "A",
+          "angle": "Feature & Tech Heavy",
+          "title": "Nike Air Max 270 Lifestyle Sneakers - Feature-Rich",
+          "short_description": "Experience the ultimate in comfort and style with our feature-rich Nike Air Max 270 Lifestyle Sneakers.",
+          "key_features": [
+            "**Advanced Cushioning System**: Enjoy superior comfort and impact protection with our advanced cushioning system.",
+            "**Breathable Mesh Upper**: Keep your feet cool and dry with our lightweight mesh upper.",
+            "**Secure Lace Closure**: Get a secure fit with our lace closure system.",
+            "**Durable Rubber Outsole**: Tackle any terrain with our durable rubber outsole.",
+            "**Premium Materials**: Elevate your style with our premium materials."
+          ],
+          "detailed_description": "The Nike Air Max 270 Lifestyle Sneakers are designed for comfort and style. The advanced cushioning system provides superior comfort and impact protection, while the breathable mesh upper keeps your feet cool and dry. The secure lace closure system ensures a secure fit, and the durable rubber outsole tackles any terrain. Whether you're running errands or hitting the gym, these sneakers are perfect for any occasion.",
+          "specifications": {
+            "color": "Black/White",
+            "size": "9",
+            "material": "Mesh and synthetic upper",
+            "features": "Air cushioning, Lace-up closure, Rubber outsole"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Experience the ultimate in comfort and style with our feature-rich Nike Air Max 270 Lifestyle Sneakers.\n\nKey Features:\n\n\u2022 **Advanced Cushioning System**: Enjoy superior comfort and impact protection with our advanced cushioning system.\n\n\u2022 **Breathable Mesh Upper**: Keep your feet cool and dry with our lightweight mesh upper.\n\n\u2022 **Secure Lace Closure**: Get a secure fit with our lace closure system.\n\n\u2022 **Durable Rubber Outsole**: Tackle any terrain with our durable rubber outsole.\n\n\u2022 **Premium Materials**: Elevate your style with our premium materials.\n\nThe Nike Air Max 270 Lifestyle Sneakers are designed for comfort and style. The advanced cushioning system provides superior comfort and impact protection, while the breathable mesh upper keeps your feet cool and dry. The secure lace closure system ensures a secure fit, and the durable rubber outsole tackles any terrain. Whether you're running errands or hitting the gym, these sneakers are perfect for any occasion.\n\nSpecifications:\n\n- color: Black/White\n\n- size: 9\n\n- material: Mesh and synthetic upper\n\n- features: Air cushioning, Lace-up closure, Rubber outsole",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Nike Air Max 270 Lifestyle Sneakers - Feature-Rich",
+            "meta_description": "Nike Air Max 270 Lifestyle Sneakers for Men in Black/White. Breathable mesh upper, visible air cushioning, secure lace closure, and durable rubber outsole.",
+            "keywords": [
+              "Nike",
+              "Air Max 270",
+              "Lifestyle Sneakers",
+              "Running Shoes",
+              "Black/White",
+              "Size 9"
+            ],
+            "tags": [
+              "Nike",
+              "Sneakers",
+              "Running Shoes",
+              "Lifestyle",
+              "Black",
+              "White"
+            ],
+            "short_description": "Experience the ultimate in comfort and style with our feature-rich Nike Air Max 270 Lifestyle Sneakers.",
+            "bullet_points": [
+              "**Advanced Cushioning System**: Enjoy superior comfort and impact protection with our advanced cushioning system.",
+              "**Breathable Mesh Upper**: Keep your feet cool and dry with our lightweight mesh upper.",
+              "**Secure Lace Closure**: Get a secure fit with our lace closure system.",
+              "**Durable Rubber Outsole**: Tackle any terrain with our durable rubber outsole.",
+              "**Premium Materials**: Elevate your style with our premium materials."
+            ],
+            "detailed_description": "The Nike Air Max 270 Lifestyle Sneakers are designed for comfort and style. The advanced cushioning system provides superior comfort and impact protection, while the breathable mesh upper keeps your feet cool and dry. The secure lace closure system ensures a secure fit, and the durable rubber outsole tackles any terrain. Whether you're running errands or hitting the gym, these sneakers are perfect for any occasion.",
+            "specs": {
+              "color": "Black/White",
+              "size": "9",
+              "material": "Mesh and synthetic upper",
+              "features": "Air cushioning, Lace-up closure, Rubber outsole"
+            },
+            "price": "\u20b913,995.00",
+            "description": "Experience comfort and style with Nike Air Max 270 Lifestyle Sneakers. Featuring a breathable mesh upper, visible air cushioning, and a secure lace closure.\n\nKey Features:\n\n\u2022 **Breathable Mesh Upper**: Keep your feet cool and dry with our lightweight mesh upper.\n\n\u2022 **Visible Air Cushioning**: Enjoy superior comfort and impact protection with our visible air cushioning.\n\n\u2022 **Secure Lace Closure**: Get a secure fit with our lace closure system.\n\n\u2022 **Durable Rubber Outsole**: Tackle any terrain with our durable rubber outsole.\n\n\u2022 **Classic Style**: Elevate your style with our sleek and timeless design.\n\nThe Nike Air Max 270 Lifestyle Sneakers are designed for comfort and style. The breathable mesh upper keeps your feet cool and dry, while the visible air cushioning provides superior comfort and impact protection. The secure lace closure system ensures a secure fit, and the durable rubber outsole tackles any terrain. Whether you're running errands or hitting the gym, these sneakers are perfect for any occasion.\n\nSpecifications:\n\n- color: Black/White\n\n- size: 9\n\n- material: Mesh and synthetic upper\n\n- features: Air cushioning, Lace-up closure, Rubber outsole"
+          },
+          "cope_scores": {
+            "variant_id": "e7f41e58-452c-48b4-90f1-2bcc95aaa16f",
+            "overall_score": 90,
+            "purchase_probability": 85.0,
+            "expected_ctr": 80.0,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 95,
+            "confidence_score": 92
+          }
+        },
+        {
+          "variant_id": "e6285959-455c-445d-a816-cf39574538f5",
+          "type": "B",
+          "angle": "Emotional & Value Driven",
+          "title": "Nike Air Max 270 Lifestyle Sneakers - Elevate Your Style",
+          "short_description": "Elevate your style with our Nike Air Max 270 Lifestyle Sneakers. Perfect for any occasion, these sneakers will make you feel confident and stylish.",
+          "key_features": [
+            "**Classic Style**: Elevate your style with our sleek and timeless design.",
+            "**Comfortable Fit**: Enjoy a comfortable fit with our secure lace closure system.",
+            "**Durable Materials**: Tackle any terrain with our durable rubber outsole.",
+            "**Breathable Upper**: Keep your feet cool and dry with our lightweight mesh upper.",
+            "**Premium Quality**: Experience the ultimate in comfort and style with our premium materials."
+          ],
+          "detailed_description": "The Nike Air Max 270 Lifestyle Sneakers are designed to elevate your style. With a classic design and comfortable fit, these sneakers are perfect for any occasion. Whether you're running errands or hitting the gym, these sneakers will make you feel confident and stylish.",
+          "specifications": {
+            "color": "Black/White",
+            "size": "9",
+            "material": "Mesh and synthetic upper",
+            "features": "Air cushioning, Lace-up closure, Rubber outsole"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Elevate your style with our Nike Air Max 270 Lifestyle Sneakers. Perfect for any occasion, these sneakers will make you feel confident and stylish.\n\nKey Features:\n\n\u2022 **Classic Style**: Elevate your style with our sleek and timeless design.\n\n\u2022 **Comfortable Fit**: Enjoy a comfortable fit with our secure lace closure system.\n\n\u2022 **Durable Materials**: Tackle any terrain with our durable rubber outsole.\n\n\u2022 **Breathable Upper**: Keep your feet cool and dry with our lightweight mesh upper.\n\n\u2022 **Premium Quality**: Experience the ultimate in comfort and style with our premium materials.\n\nThe Nike Air Max 270 Lifestyle Sneakers are designed to elevate your style. With a classic design and comfortable fit, these sneakers are perfect for any occasion. Whether you're running errands or hitting the gym, these sneakers will make you feel confident and stylish.\n\nSpecifications:\n\n- color: Black/White\n\n- size: 9\n\n- material: Mesh and synthetic upper\n\n- features: Air cushioning, Lace-up closure, Rubber outsole",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Nike Air Max 270 Lifestyle Sneakers - Elevate Your Style",
+            "meta_description": "Nike Air Max 270 Lifestyle Sneakers for Men in Black/White. Breathable mesh upper, visible air cushioning, secure lace closure, and durable rubber outsole.",
+            "keywords": [
+              "Nike",
+              "Air Max 270",
+              "Lifestyle Sneakers",
+              "Running Shoes",
+              "Black/White",
+              "Size 9"
+            ],
+            "tags": [
+              "Nike",
+              "Sneakers",
+              "Running Shoes",
+              "Lifestyle",
+              "Black",
+              "White"
+            ],
+            "short_description": "Elevate your style with our Nike Air Max 270 Lifestyle Sneakers. Perfect for any occasion, these sneakers will make you feel confident and stylish.",
+            "bullet_points": [
+              "**Classic Style**: Elevate your style with our sleek and timeless design.",
+              "**Comfortable Fit**: Enjoy a comfortable fit with our secure lace closure system.",
+              "**Durable Materials**: Tackle any terrain with our durable rubber outsole.",
+              "**Breathable Upper**: Keep your feet cool and dry with our lightweight mesh upper.",
+              "**Premium Quality**: Experience the ultimate in comfort and style with our premium materials."
+            ],
+            "detailed_description": "The Nike Air Max 270 Lifestyle Sneakers are designed to elevate your style. With a classic design and comfortable fit, these sneakers are perfect for any occasion. Whether you're running errands or hitting the gym, these sneakers will make you feel confident and stylish.",
+            "specs": {
+              "color": "Black/White",
+              "size": "9",
+              "material": "Mesh and synthetic upper",
+              "features": "Air cushioning, Lace-up closure, Rubber outsole"
+            },
+            "price": "\u20b913,995.00",
+            "description": "Experience comfort and style with Nike Air Max 270 Lifestyle Sneakers. Featuring a breathable mesh upper, visible air cushioning, and a secure lace closure.\n\nKey Features:\n\n\u2022 **Breathable Mesh Upper**: Keep your feet cool and dry with our lightweight mesh upper.\n\n\u2022 **Visible Air Cushioning**: Enjoy superior comfort and impact protection with our visible air cushioning.\n\n\u2022 **Secure Lace Closure**: Get a secure fit with our lace closure system.\n\n\u2022 **Durable Rubber Outsole**: Tackle any terrain with our durable rubber outsole.\n\n\u2022 **Classic Style**: Elevate your style with our sleek and timeless design.\n\nThe Nike Air Max 270 Lifestyle Sneakers are designed for comfort and style. The breathable mesh upper keeps your feet cool and dry, while the visible air cushioning provides superior comfort and impact protection. The secure lace closure system ensures a secure fit, and the durable rubber outsole tackles any terrain. Whether you're running errands or hitting the gym, these sneakers are perfect for any occasion.\n\nSpecifications:\n\n- color: Black/White\n\n- size: 9\n\n- material: Mesh and synthetic upper\n\n- features: Air cushioning, Lace-up closure, Rubber outsole"
+          },
+          "cope_scores": {
+            "variant_id": "e6285959-455c-445d-a816-cf39574538f5",
+            "overall_score": 88,
+            "purchase_probability": 79.5,
+            "expected_ctr": 72.4,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 92,
+            "confidence_score": 90
+          }
+        },
+        {
+          "variant_id": "988dc9e8-d6f1-45c5-88e6-46859a8ea009",
+          "type": "C",
+          "angle": "Urgency & Lifestyle Focused",
+          "title": "Nike Air Max 270 Lifestyle Sneakers - Limited Time Offer",
+          "short_description": "Don't miss out on our limited time offer! Get the Nike Air Max 270 Lifestyle Sneakers at an unbeatable price.",
+          "key_features": [
+            "**Limited Time Offer**: Don't miss out on our limited time offer!",
+            "**Unbeatable Price**: Get the Nike Air Max 270 Lifestyle Sneakers at an unbeatable price.",
+            "**Classic Style**: Elevate your style with our sleek and timeless design.",
+            "**Comfortable Fit**: Enjoy a comfortable fit with our secure lace closure system.",
+            "**Durable Materials**: Tackle any terrain with our durable rubber outsole."
+          ],
+          "detailed_description": "The Nike Air Max 270 Lifestyle Sneakers are designed to elevate your style. With a classic design and comfortable fit, these sneakers are perfect for any occasion. Don't miss out on our limited time offer and get these sneakers at an unbeatable price.",
+          "specifications": {
+            "color": "Black/White",
+            "size": "9",
+            "material": "Mesh and synthetic upper",
+            "features": "Air cushioning, Lace-up closure, Rubber outsole"
+          },
+          "marketing": {
+            "platform": "olx",
+            "platform_description": "Don't miss out on our limited time offer! Get the Nike Air Max 270 Lifestyle Sneakers at an unbeatable price.\n\nKey Features:\n\n\u2022 **Limited Time Offer**: Don't miss out on our limited time offer!\n\n\u2022 **Unbeatable Price**: Get the Nike Air Max 270 Lifestyle Sneakers at an unbeatable price.\n\n\u2022 **Classic Style**: Elevate your style with our sleek and timeless design.\n\n\u2022 **Comfortable Fit**: Enjoy a comfortable fit with our secure lace closure system.\n\n\u2022 **Durable Materials**: Tackle any terrain with our durable rubber outsole.\n\nThe Nike Air Max 270 Lifestyle Sneakers are designed to elevate your style. With a classic design and comfortable fit, these sneakers are perfect for any occasion. Don't miss out on our limited time offer and get these sneakers at an unbeatable price.\n\nSpecifications:\n\n- color: Black/White\n\n- size: 9\n\n- material: Mesh and synthetic upper\n\n- features: Air cushioning, Lace-up closure, Rubber outsole",
+            "call_to_action": "Order now on Olx to get the best deal!"
+          },
+          "seo": {
+            "title": "Nike Air Max 270 Lifestyle Sneakers - Limited Time Offer",
+            "meta_description": "Nike Air Max 270 Lifestyle Sneakers for Men in Black/White. Breathable mesh upper, visible air cushioning, secure lace closure, and durable rubber outsole.",
+            "keywords": [
+              "Nike",
+              "Air Max 270",
+              "Lifestyle Sneakers",
+              "Running Shoes",
+              "Black/White",
+              "Size 9"
+            ],
+            "tags": [
+              "Nike",
+              "Sneakers",
+              "Running Shoes",
+              "Lifestyle",
+              "Black",
+              "White"
+            ],
+            "short_description": "Don't miss out on our limited time offer! Get the Nike Air Max 270 Lifestyle Sneakers at an unbeatable price.",
+            "bullet_points": [
+              "**Limited Time Offer**: Don't miss out on our limited time offer!",
+              "**Unbeatable Price**: Get the Nike Air Max 270 Lifestyle Sneakers at an unbeatable price.",
+              "**Classic Style**: Elevate your style with our sleek and timeless design.",
+              "**Comfortable Fit**: Enjoy a comfortable fit with our secure lace closure system.",
+              "**Durable Materials**: Tackle any terrain with our durable rubber outsole."
+            ],
+            "detailed_description": "The Nike Air Max 270 Lifestyle Sneakers are designed to elevate your style. With a classic design and comfortable fit, these sneakers are perfect for any occasion. Don't miss out on our limited time offer and get these sneakers at an unbeatable price.",
+            "specs": {
+              "color": "Black/White",
+              "size": "9",
+              "material": "Mesh and synthetic upper",
+              "features": "Air cushioning, Lace-up closure, Rubber outsole"
+            },
+            "price": "\u20b913,995.00",
+            "description": "Experience comfort and style with Nike Air Max 270 Lifestyle Sneakers. Featuring a breathable mesh upper, visible air cushioning, and a secure lace closure.\n\nKey Features:\n\n\u2022 **Breathable Mesh Upper**: Keep your feet cool and dry with our lightweight mesh upper.\n\n\u2022 **Visible Air Cushioning**: Enjoy superior comfort and impact protection with our visible air cushioning.\n\n\u2022 **Secure Lace Closure**: Get a secure fit with our lace closure system.\n\n\u2022 **Durable Rubber Outsole**: Tackle any terrain with our durable rubber outsole.\n\n\u2022 **Classic Style**: Elevate your style with our sleek and timeless design.\n\nThe Nike Air Max 270 Lifestyle Sneakers are designed for comfort and style. The breathable mesh upper keeps your feet cool and dry, while the visible air cushioning provides superior comfort and impact protection. The secure lace closure system ensures a secure fit, and the durable rubber outsole tackles any terrain. Whether you're running errands or hitting the gym, these sneakers are perfect for any occasion.\n\nSpecifications:\n\n- color: Black/White\n\n- size: 9\n\n- material: Mesh and synthetic upper\n\n- features: Air cushioning, Lace-up closure, Rubber outsole"
+          },
+          "cope_scores": {
+            "variant_id": "988dc9e8-d6f1-45c5-88e6-46859a8ea009",
+            "overall_score": 85,
+            "purchase_probability": 75.0,
+            "expected_ctr": 65.0,
+            "seo_ranking_potential": "High",
+            "brand_compliance": 90,
+            "confidence_score": 88
+          }
+        }
+      ],
+      "decision": {
+        "action": "publish",
+        "reason": "Clear winner identified with high confidence.",
+        "recommended_variant_id": "e7f41e58-452c-48b4-90f1-2bcc95aaa16f"
+      },
+      "marketing": {
+        "platform": "olx",
+        "platform_description": "Experience the ultimate in comfort and style with our feature-rich Nike Air Max 270 Lifestyle Sneakers.\n\nKey Features:\n\n\u2022 **Advanced Cushioning System**: Enjoy superior comfort and impact protection with our advanced cushioning system.\n\n\u2022 **Breathable Mesh Upper**: Keep your feet cool and dry with our lightweight mesh upper.\n\n\u2022 **Secure Lace Closure**: Get a secure fit with our lace closure system.\n\n\u2022 **Durable Rubber Outsole**: Tackle any terrain with our durable rubber outsole.\n\n\u2022 **Premium Materials**: Elevate your style with our premium materials.\n\nThe Nike Air Max 270 Lifestyle Sneakers are designed for comfort and style. The advanced cushioning system provides superior comfort and impact protection, while the breathable mesh upper keeps your feet cool and dry. The secure lace closure system ensures a secure fit, and the durable rubber outsole tackles any terrain. Whether you're running errands or hitting the gym, these sneakers are perfect for any occasion.\n\nSpecifications:\n\n- color: Black/White\n\n- size: 9\n\n- material: Mesh and synthetic upper\n\n- features: Air cushioning, Lace-up closure, Rubber outsole",
+        "call_to_action": "Order now on Olx to get the best deal!"
+      },
+      "validation": {
+        "is_valid": true,
+        "issues": []
+      },
+      "scores": {
+        "privacy_score": 100,
+        "seo_score": 90,
+        "marketing_score": 90,
+        "overall_score": 91,
+        "feedback": "SEO Title length is sub-optimal."
+      }
+    }
+  },
+  "token_usage": null,
+  "estimated_cost": null,
+  "cache_hit": null,
+  "error": null,
+  "capability_metadata": {
+    "image_processing_supported": true,
+    "privacy_anonymization": true,
+    "rag_context": true,
+    "multi_agent_workflow": true
+  }
+}

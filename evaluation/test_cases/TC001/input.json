@@ -1,0 +1,62 @@
+{
+  "test_case_id": "TC001",
+  "product_name": "Samsung Galaxy S25",
+  "brand": "Samsung",
+  "category": "Smartphone",
+  "price": "₹74,999",
+  "description": "A premium compact smartphone with a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance.",
+  "specifications": {
+    "display": "6.2-inch Dynamic AMOLED 2X, 120Hz",
+    "processor": "Snapdragon 8 Elite",
+    "ram": "12GB",
+    "storage": "256GB",
+    "camera": "50MP main + 12MP ultrawide + 10MP telephoto",
+    "battery": "4000mAh",
+    "os": "Android"
+  },
+  "images": [
+    "images/Screenshot 2026-08-13 223130.png",
+    "images/Screenshot 2026-08-13 223144.png",
+    "images/Screenshot 2026-08-13 223159.png"
+  ],
+  "product": "Smartphone",
+  "niche": "Electronics & Smartphone",
+  "input_condition": "Clean/complete",
+  "pii": {
+    "present": false,
+    "fields": []
+  },
+  "product_input": {
+    "name": "Samsung Galaxy S25",
+    "brand": "Samsung",
+    "category": "Smartphone",
+    "price": "₹74,999",
+    "display": "6.2-inch Dynamic AMOLED 2X, 120Hz",
+    "processor": "Snapdragon 8 Elite",
+    "ram": "12GB",
+    "storage": "256GB",
+    "camera": "50MP main + 12MP ultrawide + 10MP telephoto",
+    "battery": "4000mAh",
+    "os": "Android",
+    "description": "A premium compact smartphone with a high-refresh-rate AMOLED display, flagship processor, versatile camera system, and all-day battery performance."
+  },
+  "image": {
+    "provided": true,
+    "path": "images/Screenshot 2026-08-13 223130.png"
+  },
+  "expected_facts": {
+    "name": "iPhone 15 Pro Max",
+    "brand": "Apple",
+    "category": "Smartphone",
+    "storage": "256GB",
+    "color": "Natural Titanium",
+    "display": "6.7-inch Super Retina XDR",
+    "chip": "A17 Pro",
+    "camera": "48MP Main, 5x Telephoto"
+  },
+  "visual_facts": [
+    "Smartphone design",
+    "Titanium finish",
+    "Multiple camera lenses"
+  ]
+}

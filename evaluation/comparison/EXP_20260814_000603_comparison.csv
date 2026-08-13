@@ -1,0 +1,11 @@
+Metric,Baseline,Verion AI,Abs Difference,Improvement (%),Metric Goal
+success_rate_pct,100.0,100.0,0.0,0.0%,higher_is_better
+avg_latency_ms,5636.59,21861.68,16225.09,-287.85%,lower_is_better
+p95_latency_ms,5773.34,27960.72,22187.38,-384.31%,lower_is_better
+overall_completeness_pct,100.0,100.0,0.0,0.0%,higher_is_better
+information_coverage_pct,88.17,95.0,6.83,7.75%,higher_is_better
+specification_accuracy_pct,88.17,95.0,6.83,7.75%,higher_is_better
+unsupported_claim_rate_pct,0.0,0.0,0.0,0.0%,lower_is_better
+visual_attribute_recall_pct,90.83,90.83,0.0,0.0%,higher_is_better
+pii_protection_rate_pct,50.0,100.0,50.0,100.0%,higher_is_better
+pii_leakage_rate_pct,50.0,0.0,-50.0,100.0%,lower_is_better

@@ -1,0 +1,19 @@
+{
+  "experiment_id": "EXP_20260813_233609",
+  "test_case_id": "TC001",
+  "system": "baseline",
+  "timestamp": "2026-08-13T23:36:12.641461",
+  "success": true,
+  "latency_ms": 958.82,
+  "model": "llama-3.1-8b-instant",
+  "raw_output": "**Product Title:** Samsung Galaxy S25 - Premium Compact Smartphone with High-Refresh-Rate Display\n\n**Short Description:** Upgrade your mobile experience with the Samsung Galaxy S25, a compact powerhouse featuring a high-refresh-rate AMOLED display, flagship processor, and versatile camera system.\n\n**Key Features:**\n\n- High-refresh-rate 6.2-inch Dynamic AMOLED 2X display for seamless visuals\n- Snapdragon 8 Elite processor for lightning-fast performance\n- Versatile camera system with 50MP main, 12MP ultrawide, and 10MP telephoto lenses\n- All-day battery performance with 4000mAh battery\n- 12GB RAM and 256GB storage for smooth multitasking\n- Runs on Android operating system\n\n**Detailed Description:** Experience the future of smartphones with the Samsung Galaxy S25, designed to deliver exceptional performance, stunning visuals, and unparalleled camera capabilities. With its high-refresh-rate Dynamic AMOLED 2X display, you can enjoy seamless visuals and responsive interactions. The powerful Snapdragon 8 Elite processor ensures that every task is handled with ease, while the versatile camera system captures life's moments with precision and beauty.\n\n**Specifications:**\n\n- Display: 6.2-inch Dynamic AMOLED 2X, 120Hz\n- Processor: Snapdragon 8 Elite\n- RAM: 12GB\n- Storage: 256GB\n- Camera: 50MP main + 12MP ultrawide + 10MP telephoto\n- Battery: 4000mAh\n- Operating System: Android\n\n**SEO Keywords:** Samsung Galaxy S25, compact smartphone, high-refresh-rate display, flagship processor, versatile camera system, all-day battery performance, Android smartphone, premium mobile phone.",
+  "token_usage": null,
+  "estimated_cost": null,
+  "error": null,
+  "capability_metadata": {
+    "image_processing_supported": false,
+    "privacy_anonymization": false,
+    "rag_context": false,
+    "multi_agent_workflow": false
+  }
+}

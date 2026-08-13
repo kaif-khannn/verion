@@ -1,0 +1,19 @@
+{
+  "experiment_id": "EXP_20260814_000603",
+  "test_case_id": "TC005",
+  "system": "baseline",
+  "timestamp": "2026-08-14T00:08:06.188716",
+  "success": true,
+  "latency_ms": 5528.06,
+  "model": "llama-3.1-8b-instant",
+  "raw_output": "**Product Title:** Nike Air Max 270 Lifestyle Sneakers - Black/White\n\n**Short Description:** Elevate your style with the Nike Air Max 270, a sleek and comfortable lifestyle sneaker featuring a breathable upper and visible Air cushioning.\n\n**Key Features:**\n\n- Breathable mesh and synthetic upper\n- Visible Air cushioning for superior comfort\n- Secure lace closure for a snug fit\n- Durable rubber outsole for long-lasting wear\n\n**Detailed Description:**\n\nThe Nike Air Max 270 is a versatile and stylish lifestyle sneaker designed to keep your feet comfortable all day long. This shoe features a breathable mesh and synthetic upper that allows for airflow and moisture-wicking properties. The visible Air cushioning provides superior comfort and support, while the secure lace closure ensures a snug fit. The durable rubber outsole offers long-lasting traction and wear.\n\n**Specifications:**\n\n- Color: Black/White\n- Size: UK 9\n- Material: Mesh and synthetic upper\n- Features: Air cushioning, Lace-up closure, Rubber outsole\n- Customer Note: Purchased for Rahul Verma, rahul.verma.test@example.com, delivery contact +91-91111-22222\n\n**Price:** \u20b913,995\n\n**SEO Keywords:** Nike Air Max 270, Lifestyle Sneakers, Black/White, UK 9, Breathable Upper, Visible Air Cushioning, Secure Lace Closure, Durable Rubber Outsole, Mesh and Synthetic Upper",
+  "token_usage": null,
+  "estimated_cost": null,
+  "error": null,
+  "capability_metadata": {
+    "image_processing_supported": false,
+    "privacy_anonymization": false,
+    "rag_context": false,
+    "multi_agent_workflow": false
+  }
+}
